@@ -1,0 +1,13 @@
+- name: cfp
+  title: Call for Papers and Performances
+  sections:
+    - name: timeline
+      title: Timeline
+    - name: themes
+      title: Themes
+    - name: special
+      title: Performance sessions
+- name: location
+  title: Location
+- name: committee
+  title: Committee

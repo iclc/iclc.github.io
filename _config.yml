@@ -1,0 +1,21 @@
+name: ICLC 2015
+permalink: /:categories/:title.html
+baseurl: ""
+markdown: redcarpet
+redcarpet:
+  smart: true
+collections:
+   cfp:
+
+defaults:
+  -
+    scope:
+      path: "cfp"
+    values:
+      layout: default
+  -
+    scope:
+      path: "location"
+    values:
+      layout: default
+
