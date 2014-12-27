@@ -35,19 +35,14 @@
         </div>
     </nav>
     {% assign grps = site[page.category] | group_by: "category" %} {% assign chapter = site.data.chapters | where: "name", page.category | first %} {% assign sections = chapter.sections %} {% if page.category == "homepage" %}
-    <div class="jumbotron main-content iclc-hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-6 col-sm-8 col-xs-10">
-                    <h1><span class="iclc-logo-prefix">International Conference on</span><br />Live Coding 2015</h1>
-                </div>
-            </div>
-        </div>
+
+    <div class="iclc-hero">
+                    <h1><img src="../images/header-1200.jpg" alt="International Conference on Live Coding 2015" /></h1>
     </div>
     <div class="jumbotron iclc-teaser">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-md-6 col-sm-8 col-xs-10">
+            <div class="col-md-9">
                     {{ content }}
 
                 </div>

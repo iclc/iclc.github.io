@@ -87,6 +87,8 @@
 
 
 body {
+    margin: 0 auto;
+    max-width: 1200px;
     position: relative;
 
     padding-top: 44px;
@@ -122,11 +124,21 @@ section {
     font-family: $headings-font-family;
 }
 
+.navbar {
+  margin-bottom: 0px;
+}
+
+.iclc-hero img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+}
 
 .iclc-hero {
     border: none;
     background-color: #fff;
-/*    background-image: url(../img/iclc-bg.png); 
+/*    background-image: url(../images/ICLC-Website-Header.jpg); 
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;*/
@@ -222,24 +234,8 @@ section {
     width: 0;
 }
 
-@media (min-width: 768px) {
-    .iclc-hero h1 {
-        font-size: 50px;
+.iclc-hero h1 {
 
-        padding-top: .3em;
-    }
-}
-
-@media (min-width: 992px) {
-    .iclc-hero h1 {
-        font-size: 60px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .iclc-hero h1 {
-        font-size: 70px;
-    }
 }
 
 .alert {
