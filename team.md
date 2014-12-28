@@ -16,11 +16,16 @@ layout: default
 * [Ash Sagar](http://ashleysagar.com/)
 * [Franzi Florack](http://exploringfilmliteracy.blogspot.co.uk/)
 
-## Advisors
+## External advisors
 
 * [Juan A. Romero](http://www.rukano.de/)
 * [Patrick Borgeat](http://www.cappel-nord.de/)
 
-## Programme Committee
+## Programme committee
 
 * To be announced
+
+## Design
+
+* Graphic design [DP Creative](http://www.dp-creative.co.uk/)
+* Web layout by adapted from work originally by [Lennart Melzer](https://github.com/lennart)
