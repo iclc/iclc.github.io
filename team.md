@@ -1,6 +1,6 @@
 ---
-title: Committee
-category: committee
+title: Team
+category: team
 layout: default
 ---
 
