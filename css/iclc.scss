@@ -124,6 +124,14 @@ section {
     font-family: $headings-font-family;
 }
 
+.navbar-brand img {
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: -15px;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
