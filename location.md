@@ -12,3 +12,16 @@ and [traintimes](http://traintimes.org.uk/ "TrainTimes") to find
 trains.
 
 We will add recommendations for hotels soon. In the meantime, you can find accommodation via the [booking.com](http://booking.com) and [airbnb](https://www.airbnb.co.uk/) websites.
+
+## Other happenings and local attractions
+
+There will likely be live coding related activities before and/or
+after the conference (if you're planning something let us know, we
+will be happy to co-promote).
+
+For now here are some local attractions.
+
+* [Leeds Museums and Galleries](http://www.leeds.gov.uk/museumsandgalleries/Pages/default.aspx)
+* [Royal Armories](http://www.royalarmouries.org/)
+* [Yorkshire Sculpture Park](http://www.ysp.co.uk/)
+* [Peak District National Park](http://www.peakdistrict.gov.uk/)
