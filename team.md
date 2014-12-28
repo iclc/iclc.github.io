@@ -27,5 +27,5 @@ layout: default
 
 ## Design
 
-* Graphic design [DP Creative](http://www.dp-creative.co.uk/)
+* Ident and graphic design by [DP Creative](http://www.dp-creative.co.uk/)
 * Web design adapted from Tidal website by [Lennart Melzer](https://github.com/lennart)
