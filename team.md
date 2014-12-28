@@ -28,4 +28,4 @@ layout: default
 ## Design
 
 * Graphic design [DP Creative](http://www.dp-creative.co.uk/)
-* Web layout by adapted from work originally by [Lennart Melzer](https://github.com/lennart)
+* Web design adapted from Tidal website originally by [Lennart Melzer](https://github.com/lennart)
