@@ -37,6 +37,7 @@ layout: default
 * [Julio D'Escriván](https://www.hud.ac.uk/ourstaff/profile/index.php?staffuid=smusjd3) (University of Huddersfield)
 * [Georg Essl](http://web.eecs.umich.edu/~gessl/) (University of Michigan)
 * [Andrew Fischer](https://github.com/andyfischer)
+* [Matthew Fuller](http://www.gold.ac.uk/cultural-studies/staff/m-fuller/) (Goldsmiths, University of London)
 * [Shelly Knotts](http://shelly-knotts.wordpress.com) (University of Durham)
 * [Sang Won Lee](http://sangwonlee.com) (University of Michigan)
 * [Norah Lorway](http://www.norahlorway.com) (University of Birmingham)
@@ -53,8 +54,10 @@ layout: default
 * [Duncan Rowland](http://staff.lincoln.ac.uk/drowland) (University of Lincoln)
 * [Adriana Sa](http://adrianasa.planetaclix.pt/) (Goldsmiths, London University)
 * [Uwe Seifert](http://uk-online.uni-koeln.de/cgi-bin/show.pl/page?uni=1&i_nr=19&id=230) (University of Cologne)
+* [Kate Sicchio](http://sicchio.com/) (Parsons)
 * [Steve Tanimoto](http://www.cs.washington.edu/people/faculty/tanimoto) (University of Washington)
 * [Graham Wakefield](http://www.mat.ucsb.edu/~wakefield/) (UCSB)
+* [Simon Yuill](http://www.lipparosa.org/) (The Strickland Distribution)
 
 ## Design
 
