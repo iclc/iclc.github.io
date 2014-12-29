@@ -36,7 +36,7 @@ layout: default
 * Geoff Cox (University of Aarhus)
 * Julio D'Escriván (University of Huddersfield)
 * Georg Essl (University of Michigan)
-* Andrew Fischer (Independent)
+* Andrew Fischer
 * Shelly Knotts (University of Durham)
 * Sang Won Lee (University of Michigan)
 * Norah Lorway (University of Birmingham)
