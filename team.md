@@ -25,36 +25,36 @@ layout: default
 
  Confirmed so far:
 
-* Samuel Aaron (University of Cambridge)
-* Craig Anslow (University of Caglary)
-* Alan Blackwell (Cambridge University)
-* Patrick Borgeat
-* Andrew Brown (Queensland Conservatorium, Griffith University)
-* Alexandra Cardenas (Universität der Künste Berlin)
-* Luke Church (University of Cambridge)
-* Nick Collins (University of Durham)
-* Geoff Cox (University of Aarhus)
-* Julio D'Escriván (University of Huddersfield)
-* Georg Essl (University of Michigan)
-* Andrew Fischer
-* Shelly Knotts (University of Durham)
-* Sang Won Lee (University of Michigan)
-* Norah Lorway (University of Birmingham)
-* Thor Magnusson (University of Sussex)
-* Alex McLean (University of Leeds)
-* James Mooney (University of Leeds)
-* Kia Ng (University of Leeds)
-* James Noble (Victoria University of Wellington)
-* Chris Parnin (Georgia Institute of Technology)
-* Roly Perera (University of Edinburgh)
-* Charlie Roberts (UCSB)
-* Julian Rohrhuber (Institute for Music and Media Düsseldorf)
-* Juan A. Romero (HfM Karlsruhe)
-* Duncan Rowland (University of Lincoln)
-* Adriana Sa (Goldsmiths, London University)
-* Uwe Seifert (University of Cologne)
-* Steve Tanimoto (University of Washington)
-* Graham Wakefield (UCSB)
+* [Samuel Aaron (University of Cambridge)](http://sam.aaron.name]
+* [Craig Anslow (University of Caglary)](http://homepages.ecs.vuw.ac.nz/~craig/Site/Home.html]
+* [Alan Blackwell (Cambridge University)](http://www.cl.cam.ac.uk/~afb21/]
+* [Patrick Borgeat](http://www.cappel-nord.de/b/]
+* [Andrew Brown (Queensland Conservatorium, Griffith University)](http://andrewrbrown.net.au]
+* [Alexandra Cardenas (Universität der Künste Berlin)](http://cargocollective.com/tiemposdelruido]
+* [Luke Church (University of Cambridge)](http://www.luke.church.name]
+* [Nick Collins (University of Durham)](https://www.dur.ac.uk/music/staff/profile/?id=11477]
+* [Geoff Cox (University of Aarhus)](http://pure.au.dk/portal/en/persons/id%2812ea26ce-0032-475a-b951-74c8ba44d239%29.html]
+* [Julio D'Escriván (University of Huddersfield)](https://www.hud.ac.uk/ourstaff/profile/index.php?staffuid=smusjd3]
+* [Georg Essl (University of Michigan)](http://web.eecs.umich.edu/~gessl/]
+* [Andrew Fischer](https://github.com/andyfischer]
+* [Shelly Knotts (University of Durham)](http://shelly-knotts.wordpress.com]
+* [Sang Won Lee (University of Michigan)](http://sangwonlee.com]
+* [Norah Lorway (University of Birmingham)](http://www.norahlorway.com]
+* [Thor Magnusson (University of Sussex)](http://www.ixi-audio.net]
+* [Alex McLean (University of Leeds)](http://yaxu.org/]
+* [James Mooney (University of Leeds)](http://music.leeds.ac.uk/people/james-mooney/]
+* [Kia Ng (University of Leeds)](http://www.kcng.org]
+* [James Noble (Victoria University of Wellington)](http://ecs.vuw.ac.nz/~kjx/]
+* [Chris Parnin (Georgia Institute of Technology)](http://www.cc.gatech.edu/~vector]
+* [Roly Perera (University of Edinburgh)](http://dynamicaspects.org/]
+* [Charlie Roberts (UCSB)](http://charlie-roberts.com/]
+* [Julian Rohrhuber (Institute for Music and Media Düsseldorf)](http://musikundmedien.net/en/studies/faculty/julian-rohrhuber/]
+* [Juan A. Romero (HfM Karlsruhe)](http://www.rukano.de/]
+* [Duncan Rowland (University of Lincoln)](http://staff.lincoln.ac.uk/drowland]
+* [Adriana Sa (Goldsmiths, London University)](http://adrianasa.planetaclix.pt/]
+* [Uwe Seifert (University of Cologne)](http://uk-online.uni-koeln.de/cgi-bin/show.pl/page?uni=1&i_nr=19&id=230]
+* [Steve Tanimoto (University of Washington)](http://www.cs.washington.edu/people/faculty/tanimoto]
+* [Graham Wakefield (UCSB)](http://www.mat.ucsb.edu/~wakefield/]
 
 ## Design
 
