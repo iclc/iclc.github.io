@@ -47,6 +47,7 @@ layout: default
 * [James Mooney](http://music.leeds.ac.uk/people/james-mooney/) (University of Leeds)
 * [Kia Ng](http://www.kcng.org) (University of Leeds)
 * [James Noble](http://ecs.vuw.ac.nz/~kjx/) (Victoria University of Wellington)
+* [David Ogborn](http://csmm.mcmaster.ca/faculty/profile_ogborn.html) (McMaster University)
 * [Chris Parnin](http://www.cc.gatech.edu/~vector) (Georgia Institute of Technology)
 * [Roly Perera](http://dynamicaspects.org/) (University of Edinburgh)
 * [Charlie Roberts](http://charlie-roberts.com/) (UCSB)
