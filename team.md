@@ -23,7 +23,38 @@ layout: default
 
 ## Programme committee
 
-* To be announced
+ Confirmed so far:
+
+* Samuel Aaron (University of Cambridge)
+* Craig Anslow (University of Caglary)
+* Alan Blackwell (Cambridge University)
+* Patrick Borgeat
+* Andrew Brown (Queensland Conservatorium, Griffith University)
+* Alexandra Cardenas (Universität der Künste Berlin)
+* Luke Church (University of Cambridge)
+* Nick Collins (University of Durham)
+* Geoff Cox (University of Aarhus)
+* Julio D'Escriván (University of Huddersfield)
+* Georg Essl (University of Michigan)
+* Andrew Fischer (Independent)
+* Shelly Knotts (University of Durham)
+* Sang Won Lee (University of Michigan)
+* Norah Lorway (University of Birmingham)
+* Thor Magnusson (University of Sussex)
+* Alex McLean (University of Leeds)
+* James Mooney (University of Leeds)
+* Kia Ng (University of Leeds)
+* James Noble (Victoria University of Wellington)
+* Chris Parnin (Georgia Institute of Technology)
+* Roly Perera (University of Edinburgh)
+* Charlie Roberts (UCSB)
+* Julian Rohrhuber (Institute for Music and Media Düsseldorf)
+* Juan A. Romero (HfM Karlsruhe)
+* Duncan Rowland (University of Lincoln)
+* Adriana Sa (Goldsmiths, London University)
+* Uwe Seifert (University of Cologne)
+* Steve Tanimoto (University of Washington)
+* Graham Wakefield (UCSB)
 
 ## Design
 
