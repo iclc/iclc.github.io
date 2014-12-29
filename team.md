@@ -26,7 +26,7 @@ layout: default
  Confirmed so far:
 
 * [Samuel Aaron](http://sam.aaron.name) (University of Cambridge)
-* [Craig Anslow](http://homepages.ecs.vuw.ac.nz/~craig/Site/Home.html) (University of Caglary)
+* [Craig Anslow](http://homepages.ecs.vuw.ac.nz/~craig/Site/Home.html) (University of Calgary)
 * [Alan Blackwell](http://www.cl.cam.ac.uk/~afb21/) (Cambridge University)
 * [Patrick Borgeat](http://www.cappel-nord.de/b/)
 * [Andrew Brown](http://andrewrbrown.net.au) (Queensland Conservatorium, Griffith University)
