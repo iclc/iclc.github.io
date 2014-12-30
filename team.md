@@ -28,6 +28,7 @@ layout: default
 * [Samuel Aaron](http://sam.aaron.name) (University of Cambridge)
 * [Craig Anslow](http://homepages.ecs.vuw.ac.nz/~craig/Site/Home.html) (University of Calgary)
 * [Holger Ballweg](http://uiae.de/)
+* [Yael Benn](https://www.sheffield.ac.uk/psychology/staff/research/yael-benn) (University of Sheffield)
 * [Alan Blackwell](http://www.cl.cam.ac.uk/~afb21/) (Cambridge University)
 * [Patrick Borgeat](http://www.cappel-nord.de/b/)
 * [Andrew Brown](http://andrewrbrown.net.au) (Queensland Conservatorium, Griffith University)
