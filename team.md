@@ -59,6 +59,7 @@ layout: default
 * [Adriana Sa](http://adrianasa.planetaclix.pt/) (Goldsmiths, UK)
 * [Uwe Seifert](http://uk-online.uni-koeln.de/cgi-bin/show.pl/page?uni=1&i_nr=19&id=230) (University of Cologne, DE)
 * [Kate Sicchio](http://sicchio.com/) (Parsons, USA)
+* [Benjamin Swift](http://benswift.me/) (Australian National University, AU)
 * [Steve Tanimoto](http://www.cs.washington.edu/people/faculty/tanimoto) (University of Washington, USA)
 * [Graham Wakefield](http://www.mat.ucsb.edu/~wakefield/) (UCSB, USA)
 * [Simon Yuill](http://www.lipparosa.org/) (The Strickland Distribution, UK)
