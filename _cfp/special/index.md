@@ -50,11 +50,11 @@ include other instrumentalists. In that case we are unable to
 contribute towards related costs, but may be able to help with
 equipment/instruments.
 
-
 ## Algorave performances
 
 No academic conference is complete without an
 [algorave](http://algorave.com/), a chance to dance to algorithms with friends new and old.
 
-We will have at least one club night, at the excellent [Wharf Chambers](http://www.wharfchambers.org/) co-op.
+We will have at least one club night, at the excellent [Wharf Chambers](http://www.wharfchambers.org/) co-op. More details to follow.
+
 
