@@ -4,6 +4,8 @@ category: team
 layout: default
 ---
 
+To contact the core organising team please email [livecodenet@gmail.com](mailto:livecodenet@gmail.com)
+
 ## Core organising committee
 
 * [Alex McLean](http://music.leeds.ac.uk/people/alex-mclean/), Co-chair (University of Leeds)

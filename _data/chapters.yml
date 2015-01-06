@@ -3,10 +3,10 @@
   sections:
     - name: timeline
       title: Timeline
-    - name: themes
-      title: Themes
-    - name: special
-      title: Performance sessions
+    - name: scientific
+      title: Papers
+    - name: performance
+      title: Performances
 - name: location
   title: Location
 - name: team
