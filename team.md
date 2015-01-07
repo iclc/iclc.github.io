@@ -52,6 +52,7 @@ To contact the core organising team please email [livecodenet@gmail.com](mailto:
 * [James Mooney](http://music.leeds.ac.uk/people/james-mooney/) (University of Leeds, UK)
 * [Kia Ng](http://www.kcng.org) (University of Leeds, UK)
 * [James Noble](http://ecs.vuw.ac.nz/~kjx/) (Victoria University of Wellington, NZ)
+* [Sally-Jane Norman](http://www.sussex.ac.uk/profiles/240005) (University of Sussex, UK)
 * [David Ogborn](http://csmm.mcmaster.ca/faculty/profile_ogborn.html) (McMaster University, CA)
 * [Chris Parnin](http://www.cc.gatech.edu/~vector) (Georgia Institute of Technology, USA)
 * [Roly Perera](http://dynamicaspects.org/) (University of Glasgow, UK)
