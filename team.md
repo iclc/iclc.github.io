@@ -67,6 +67,7 @@ To contact the core organising team please email [livecodenet@gmail.com](mailto:
 * [Benjamin Swift](http://benswift.me/) (Australian National University, AU)
 * [Steve Tanimoto](http://www.cs.washington.edu/people/faculty/tanimoto) (University of Washington, USA)
 * [Graham Wakefield](http://www.mat.ucsb.edu/~wakefield/) (UCSB, USA)
+* [Scott Wilson](http://www.birmingham.ac.uk/staff/profiles/music/wilson-scott.aspx) (Birmingham, UK)
 * [Matthew Yee-King](http://www.gold.ac.uk/computing/staff/m-yee-king/) (Goldsmiths, UK)
 * [Simon Yuill](http://www.lipparosa.org/) (The Strickland Distribution, UK)
 
