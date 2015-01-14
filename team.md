@@ -32,6 +32,7 @@ To contact the core organising team please email [livecodenet@gmail.com](mailto:
 * [Alan Blackwell](http://www.cl.cam.ac.uk/~afb21/) (University of Cambridge, UK)
 * [Patrick Borgeat](http://www.cappel-nord.de/b/) (DE)
 * [Andrew Brown](http://andrewrbrown.net.au) (Queensland Conservatorium, Griffith University, AU)
+* [Karen Burland](http://music.leeds.ac.uk/people/karen-burland/) (University of Leeds, UK)
 * [Pam Burnard](http://www.educ.cam.ac.uk/people/staff/burnard/) (University of Cambridge, UK)
 * [Alexandra Cardenas](http://cargocollective.com/tiemposdelruido) (Universität der Künste Berlin, DE)
 * [Luke Church](http://www.luke.church.name) (University of Cambridge, UK)
