@@ -4,18 +4,20 @@ category: coc
 layout: default
 ---
 
-Our goal is to be inclusive to the largest range of contributors, with the most varied and diverse backgrounds possible. On our part, we will work hard to provide a friendly, safe, accessible and welcoming environment for all. We invite all those who participate in the conference, and the community surrounding it, to help us create safe and positive experiences for everyone.
+Our goal is to be inclusive to the largest range of contributors, with the most varied and diverse backgrounds possible. It is now standard practice for tech conferences to have codes of conduct. Is is less common for academic oriented events to have them, but as ICLC bridges both research and practice, we felt we should set an example.
 
-Be aware of the effect your words and actions may have on others. Harassment and other exclusionary behaviour aren't acceptable, including homophobic, racist, transphobic, ableist or sexist behaviour.
+As organisers, we will work hard to provide a friendly, safe, accessible and welcoming environment for all. We invite all those who participate in the conference, and the community surrounding it, to help us create safe and positive experiences for everyone.
 
-If you are being harassed or witness a breach of this code of conduct, you can get in touch with us either by:
+At participants, please be mindful of the effect your words and actions may have on others. Harassment and other exclusionary behaviour will not be tolerated, including homophobic, racist, transphobic, ableist or sexist behaviour or imagery.
 
-Finding a member of the [organising team](/team.html) (they'll be clearly identifiable) and let them know.
+You can help identify any breaches of this code of conduct either by:-
 
-Dropping us an email at
-[livecodenet@gmail.com](mailto:livecodenet@gmail.com).
+* finding a member of the [organising team](/team.html) (they'll be clearly identifiable) and let them know.
+* dropping us an email at [livecodenet@gmail.com](mailto:livecodenet@gmail.com).
 
-We also welcome suggested edits to the above.
+We promise to take the situation seriously and deal with it as quickly as we can.
+
+We welcome comment on and suggested edits to the above.
 
 ### Credits
 
