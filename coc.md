@@ -31,8 +31,8 @@ We also welcome suggested edits to the above.
 
 These values are inspired by the following works.
 
-[EMFCamp CoC](https://www.emfcamp.org/code-of-conduct)
-[Breathing Code CoC](http://breathing-code.de/codeofconduct.html)
-[Django CoC](https://www.djangoproject.com/conduct/)
-[Citizenship CoC](http://citizencodeofconduct.org/)
-[SoCraTes Conference Values](http://www.socrates-conference.de/values.html)
+* [EMFCamp CoC](https://www.emfcamp.org/code-of-conduct)
+* [Breathing Code CoC](http://breathing-code.de/codeofconduct.html)
+* [Django CoC](https://www.djangoproject.com/conduct/)
+* [Citizenship CoC](http://citizencodeofconduct.org/)
+* [SoCraTes Conference Values](http://www.socrates-conference.de/values.html)
