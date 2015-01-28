@@ -4,23 +4,13 @@ category: coc
 layout: default
 ---
 
-Our goal is to be inclusive to the largest number of contributors,
-with the most varied and diverse backgrounds possible. As such, we are
-committed to providing a friendly, safe and welcoming environment for
-all. We invite all those who participate in the conference, and the
-community surrounding it, to help us create safe and positive
-experiences for everyone.
+Our goal is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. On our part, we will work hard to provide a friendly, safe, accessible and welcoming environment for all. We invite all those who participate in the conference, and the community surrounding it, to help us create safe and positive experiences for everyone.
 
-Be aware of the effect your words may have on others. Do not insult
-other participants. Harassment and other exclusionary behaviour aren't
-acceptable, including homophobic, racist, transphobic, ableist or
-sexist behaviour.
-	
-If you are being harassed or witness a breach of this code of conduct,
-you can get in touch with us either by:
+Be aware of the effect your words and actions may have on others. Do not insult other participants. Harassment and other exclusionary behaviour aren't acceptable, including homophobic, racist, transphobic, ableist or sexist behaviour.
 
-Finding a member of the [organising team](/team.html) (they'll be
-clearly identifiable) and let them know.
+If you are being harassed or witness a breach of this code of conduct, you can get in touch with us either by:
+
+Finding a member of the [organising team](/team.html) (they'll be clearly identifiable) and let them know.
 
 Dropping us an email at
 [livecodenet@gmail.com](mailto:livecodenet@gmail.com).
