@@ -8,7 +8,7 @@ Our goal is to be inclusive to the largest range of contributors, with the most 
 
 As organisers, we will work hard to provide a friendly, safe, accessible and welcoming environment for all. We invite all those who participate in the conference, and the community surrounding it, to help us create safe and positive experiences for everyone.
 
-At participants, please be mindful of the effect your words and actions may have on others. Harassment and other exclusionary behaviour will not be tolerated, including homophobic, racist, transphobic, ableist or sexist behaviour or imagery.
+As participants, please be mindful of the effect your words and actions may have on others. Harassment and other exclusionary behaviour will not be tolerated, including homophobic, racist, transphobic, ableist or sexist behaviour or imagery.
 
 You can help identify any breaches of this code of conduct either by:-
 
