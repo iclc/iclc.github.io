@@ -26,7 +26,7 @@ To contact the core organising team please email [livecodenet@gmail.com](mailto:
 ## Programme committee
 
 * [Samuel Aaron](http://sam.aaron.name) (University of Cambridge, UK)
-* [Craig Anslow](http://homepages.ecs.vuw.ac.nz/~craig/Site/Home.html) (University of Calgary, NZ)
+* [Craig Anslow](http://anslow.cpsc.ucalgary.ca/) (University of Calgary, CA)
 * [Holger Ballweg](http://uiae.de/) (Northumbria University, UK)
 * [Yael Benn](https://www.sheffield.ac.uk/psychology/staff/research/yael-benn) (University of Sheffield, UK)
 * [Alan Blackwell](http://www.cl.cam.ac.uk/~afb21/) (University of Cambridge, UK)
