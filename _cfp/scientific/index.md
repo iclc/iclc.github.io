@@ -9,6 +9,7 @@ We are accepting paper submissions for the following categories:
 * Long papers (6-12 pages)
 * Short papers (4-6 pages)
 * Poster/demo papers (2-4 pages)
+* Workshop (300 words)
 
 All submissions must use the conference template and follow the
 instructions within, available in both Microsoft Word and Markdown
