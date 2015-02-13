@@ -19,8 +19,7 @@ video, and a technical rider. The rider should state:
 * Video outputs
 * Lighting requirements
 
-You are welcome to use the above paper templates, but this is not
-mandatory for performance submissions.
+You are welcome to use the above paper templates, but this is not mandatory for performance submissions. However, please submit your proposal as a PDF file, and via [the same easychair link](https://easychair.org/conferences/?conf=iclc2015) as for papers. Indicate that your submission is for a performance in the 'other information'.
 
 The following performance venues and opportunities are available.
 
