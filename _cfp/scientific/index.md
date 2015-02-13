@@ -17,7 +17,7 @@ formats. Download the [latest version
 here](https://github.com/livecodenetwork/templates/archive/master.zip),
 as a zipfile.
 
-All submissions must be in PDF format, and submitted via Easychair.
+All submissions must be in PDF format, and submitted [via Easychair](https://easychair.org/conferences/?conf=iclc2015).
 
 ICLC is an interdisciplinary conference, so a wide range of approaches
 are encouraged and we recognise that the appropriate length of a paper
