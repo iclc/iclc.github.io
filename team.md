@@ -15,8 +15,9 @@ To contact the core organising team please email [livecodenet@gmail.com](mailto:
 
 ## Co-producers
 
-* [Ash Sagar](http://ashleysagar.com/)
+* [Joanne Armitage](http://music.leeds.ac.uk/people/joanne-armitage/)
 * [Franzi Florack](http://exploringfilmliteracy.blogspot.co.uk/)
+* [Ash Sagar](http://ashleysagar.com/)
 
 ## External advisors
 
