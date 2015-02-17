@@ -11,6 +11,8 @@
       title: Workshops
 - name: location
   title: Location
+- name: registration
+  title: Registration
 - name: team
   title: Team
 - name: community
