@@ -4,10 +4,6 @@ category: registration
 layout: default
 ---
 
-Registration will open during March 2015. We are still calculating
-costs but expect that registration will be in the region of £60 for
-the full three days of the conference, including lunch.
+Registration will open during March 2015, and will be £60 (£50 concessions) for the full three days of the conference, including lunch, tshirt, stickers and USB key.
 
-There will be concessionary rates and volunteering opportunities, and
-we may be able to provide financial assistance to those who would
-otherwise be unable to attend.
+There will volunteering opportunities, and we also have a small travel bursary to apply to.
