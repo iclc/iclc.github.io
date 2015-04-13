@@ -13,7 +13,7 @@ In the meantime, here are the accepted submissions following blind peer review.
 
 * Giovanni Mori. "Analysing Live Coding with Ethnographical Approach"
 * Chris Kiefer. "Approximate Programming"
-* Antonio D. "Carvalho Jr, Sang Won Lee and Georg Essl"
+* Antonio D. Carvalho Jr, Sang Won Lee and Georg Essl. "SuperCopair: Collaborative Live Coding on Supercollider through the cloud"
 * Felienne Hermans and Rico Huijbers. "Coda Lisa: Collaborative Art in the Browser"
 * Tim Sayer. "Cognition and Improvisation: Some Implications for Live Coding"
 * Felienne Hermans and Tijs Van Der Storm. "Copy-Paste Tracking: Fixing Spreadsheets Without Breaking Them"
