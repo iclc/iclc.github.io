@@ -73,7 +73,7 @@ excited to share the emerging programme at the earliest opportunity.
 * David Ogborn and Shawn Mativetsky. "Very long cat"
 * Dragica Kahlina. "Living sound"
 * Fabrice Mogini. "The augmented Live Coding Orchestra"
-* Felipe Ignacio Noriega and Jon Bittman. "Off<>zz"
+* Anne Veinberg and Felipe Ignacio Noriega. "Off<>zz"
 * Fredrik Olofsson. "Chain reaction"
 * Jason Levine. "Polygons and Polyrhythms"
 * Joseph Wilk. "Repl Electric: End of Buffer"
