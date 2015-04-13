@@ -65,7 +65,7 @@ excited to share the emerging programme at the earliest opportunity.
 * Andrew Sorensen. "Algorave performance"
 * Aris Bezas and Ioannis Zannos. "Gea Duo: a live Audio- and Video-Scape Duet"
 * Birmingham Laptop Ensemble (BILE). "Mind Your Own Business"
-* Calum Gunn. "Time Phase"
+* Calum Gunn. "Unorganised Music"
 * Charles Roberts. "Gibberings & Mutterings"
 * Chris Kiefer. "Live Coded Controllerism: Performing the Design of a New Instrument"
 * Dagobert Sondervan and Kasper Jordaens. "Heuristic ALgorithmic Interactive Controllers"
