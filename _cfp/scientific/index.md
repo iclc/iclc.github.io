@@ -26,7 +26,7 @@ submissions must propose an original contribution to Live Coding
 research, cite relevant previous work, and apply appropriate research
 methods.
 
-The proceedings will be published with ISSN, and there will also be an
+The proceedings will be published with ISBN and article DOIs, and there will also be an
 follow-on opportunity to contribute to a special issue of the Journal
 on Performance Arts and Digital Media; details will be announced soon.
 
