@@ -81,7 +81,7 @@ excited to share the emerging programme at the earliest opportunity.
 * Kate Sicchio. "Hacking the Body 2.0"
 * Lina Bautista. "Linalab"
 * Luis Navarro Del Angel and Emilio Ocelotl Reyes. "Algorave Performance"
-* Marcel Wierckx. "Ostinato and Gopher"
+* Marcel Wierckx. "Gopher"
 * Marije Baalman. "Wezen-Gewording"
 * Matthew Yee-King and Alex Mclean. "Canute"
 * Mike Hodnick. "Kindohm"
