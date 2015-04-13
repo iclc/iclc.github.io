@@ -7,7 +7,10 @@ layout: default
 We are currently constructing the programme of events, taking place at
 the University of Leeds as well as evening venues in the city.
 
-In the meantime, here are the accepted submissions following blind peer review.
+In the meantime, here are the accepted submissions following blind
+peer review. The peer review cogs are still turning, and further
+papers will be added, as well as special sessions. However, we are
+excited to share the emerging programme at the earliest opportunity.
 
 ## Papers
 
