@@ -8,7 +8,7 @@ Our goal is to be inclusive to the largest range of contributors, with the most 
 
 As organisers, we will work hard to provide a friendly, safe, accessible and welcoming environment for all. We invite all those who participate in the conference, and the community surrounding it, to help us create safe and positive experiences for everyone.
 
-As participants, please be mindful of the effect your words and actions may have on others and that your boundaries may not be the same as the boundaries of others. If you act or speak in a way that someone finds inappropriate, it’s inappropriate to that time, place and/or person. If somebody tells you that you are making them uncomfortable, you must stop making them uncomfortable. If you tell someone who is uncomfortable that they are wrong to feel that way, you are most definitely putting yourself in the wrong.
+As participants, please be mindful of the effect your words and actions may have on others and that your boundaries may not be the same as the boundaries of others. If you act or speak in a way that someone finds inappropriate, it’s inappropriate to that time, place and/or person. If somebody tells you that you are making them uncomfortable, please stop making them uncomfortable. If you tell someone who is uncomfortable that they are wrong to feel that way, you are most definitely putting yourself in the wrong.
 
 Harassment, and other exclusionary behaviour are not welcomed at the conference. Harassment includes:
 
@@ -20,14 +20,7 @@ Harassment, and other exclusionary behaviour are not welcomed at the conference.
 
 This applies to all events and venues of the conference whether they be talks, performances, late-night events, at the bar, or through Twitter or other online media.
 
-This Code of Conduct exist to help us create a positive environment at the conference for all participants as well as to encourage participants to report behaviour that makes them feel uncomfortable - no matter how minor. If you experience or witness breaches of this Code of Conduct, or have any other concerns, please help us by letting us know, either by:-
-
-* finding a member of the [organising team](/team.html) (they'll be clearly identifiable) and let them know.
-* dropping us an email at [livecodenet@gmail.com](mailto:livecodenet@gmail.com).
-
-We promise to take the situation seriously and deal with it as quickly as we can.
-
-Breaching the Code of Conduct may lead to the perpetrator being asked to leave the conference.
+This Code of Conduct exists to help us create a positive environment at the conference for all participants. If you have any concerns please find a member of the [organising team](/team.html) (they'll be clearly identifiable during the conference) and let them know, or otherwise drop us an email at [livecodenet@gmail.com](mailto:livecodenet@gmail.com).
 
 We welcome comments on and suggested edits to the above.
 
