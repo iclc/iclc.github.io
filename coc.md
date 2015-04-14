@@ -8,9 +8,9 @@ Our goal is to be inclusive to the largest range of contributors, with the most 
 
 As organisers, we will work hard to provide a friendly, safe, accessible and welcoming environment for all. We invite all those who participate in the conference, and the community surrounding it, to help us create safe and positive experiences for everyone.
 
-As participants, please be mindful of the effect your words and actions may have on others and that your boundaries may not be the same as the boundaries of others. If you act or speak in a way that someone finds inappropriate, it’s inappropriate to that time, place and/or person. If somebody tells you that you are making them uncomfortable, please stop making them uncomfortable. If you tell someone who is uncomfortable that they are wrong to feel that way, you are most definitely putting yourself in the wrong.
+As participants, please be mindful of the effect your words and actions may have on others and that your boundaries may not be the same as the boundaries of others. If you act or speak in a way that someone finds inappropriate, it’s inappropriate to that time, place and/or person. If somebody tells you that you are making them uncomfortable, please stop doing so.
 
-Harassment, and other exclusionary behaviour are not welcomed at the conference. Harassment includes:
+Harassment, and other exclusionary behaviour are not welcome at the conference. Harassment includes:
 
 * offensive verbal comments or attitudes related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion;
 * deliberate intimidation, stalking or following;
