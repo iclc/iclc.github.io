@@ -57,7 +57,6 @@ excited to share the emerging programme at the earliest opportunity.
 
 ## Performances
 
-* Abraham Pazos Solatie. "Joukkue performance"
 * Alan Blackwell, Samuel Aaron and Afrodita Nikolova. "Slamming Street 0110 0110"
 * Alexandra Cárdenas, Ian Jarvis, Alex McLean, David Ogborn and Eldad Tsabary. "Shared buffer: networked collaborative live coding"
 * Alexandra Cárdenas. "Feedforward - an electric guitar and live code performance"
