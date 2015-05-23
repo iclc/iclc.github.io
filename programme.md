@@ -86,7 +86,6 @@ Here are the accepted submissions following blind peer review. The peer review c
 * Marije Baalman. "Wezen-Gewording"
 * Matthew Yee-King and Alex Mclean. "Canute"
 * Mike Hodnick. "Kindohm"
-* Niall Quinn and Oliver Wilshen. "REMAP: Roland Electro-Mechanical Audio Plotter"
 * Nick Collins. "Type a Personality"
 * Niklas Reppel. "Cult of graa - live coding performance"
 * Renick Bell. "Algorave Performance"
