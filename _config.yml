@@ -6,6 +6,7 @@ redcarpet:
   smart: true
 collections:
    cfp:
+   workshops:
 
 defaults:
   -
@@ -16,6 +17,11 @@ defaults:
   -
     scope:
       path: "location"
+    values:
+      layout: default
+  -
+    scope:
+      path: "workshops"
     values:
       layout: default
 

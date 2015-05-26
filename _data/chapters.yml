@@ -1,5 +1,22 @@
 - name: programme
   title: Programme
+- name: workshops
+  title: Workshops
+  sections:
+    - name: slow
+      title: Slowness
+    - name: movement
+      title: Movement
+    - name: fragments
+      title: Fragments
+    - name: audiovisual
+      title: Audiovisual
+    - name: utopia
+      title: Utopia
+    - name: extramuros
+      title: Extramuros
+    - name: opusmodus
+      title: Opusmodus
 - name: location
   title: Location
 - name: registration
