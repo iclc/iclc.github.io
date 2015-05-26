@@ -4,6 +4,6 @@ category: registration
 layout: default
 ---
 
-Registration will open during April 2015, and will be in the region of £80 (£50 concessions) for the full three days of the conference, including lunch, tshirt, stickers and USB key.
+Registration is now open, and is in a two stage process, paying for registration, and then filling out a form.
 
-For those who have financial difficulties in attending, there will volunteering opportunities, and we also have a small travel bursary to apply to.
+Please [register here](http://yaxu.typeform.com/to/nEpU8e).

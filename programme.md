@@ -4,13 +4,15 @@ category: programme
 layout: default
 ---
 
-We are currently constructing the programme of events, taking place at
-the University of Leeds as well as evening venues in the city.
+We are currently constructing the programme of events, taking place at the University of Leeds as well as evening venues in the city. We are still confirming the details, but here is the broad outline:
 
-In the meantime, here are the accepted submissions following blind
-peer review. The peer review cogs are still turning, and further
-papers will be added, as well as special sessions. However, we are
-excited to share the emerging programme at the earliest opportunity.
+* Monday 13th July: Morning workshops, keynote, afternoon papers and concert hall performances, followed by night programme
+* Tuesday 14th July: Daytime papers, keynote and theatre performances
+* Wednesday 15th July: Daytime papers, keynote and concert hall performances, followed by night programme
+
+In addition, we intend to hold a warm-up party in Sheffield, on Saturday the 11th July.
+
+Here are the accepted submissions following blind peer review. The peer review cogs are still turning, and further papers will be added, as well as special sessions. However, we are excited to share the emerging programme at the earliest opportunity.
 
 ## Papers
 
@@ -24,7 +26,7 @@ excited to share the emerging programme at the earliest opportunity.
 * Adam Parkinson and Renick Bell. "Deadmau5, Derek Bailey, and the Laptop Instrument -- Improvisation, Composition, and Liveness in Live Coding"
 * Timothy Jones and James Noble. "def Gribber = (Grace + Gibber)"
 * Marije Baalman. "Embodiment of code"
-* David Ogborn, Eldad Tsabary, Ian Jarvis, Alexandra Cardenas and Alex McLean. "Extramuros: making music in a browser-based, language-neutral collaborative live coding environment"
+* David Ogborn, Eldad Tsabary, Ian Jarvis, Alexandra Cardenas and Alex . "Extramuros: making music in a browser-based, language-neutral collaborative live coding environment"
 * Nikolai Suslov and Tatiana Soshenina. "From Live Coding to Virtual Being"
 * Nick Collins. "Live Coding and Machine Listening"
 * Antonio Goulart and Miguel Antar. "Live Coding the computer as part of a free improvisation orchestra of acoustic instruments"
@@ -53,11 +55,10 @@ excited to share the emerging programme at the earliest opportunity.
 * Ioannis Zannos and Aris Bezas. "Live Coding for Graphics and Sound with SuperCollider, openFrameworks, Lua and JavaScript"
 * Shawn Lawson. "Live Coding the OpenGL Fragement Shader with Audio Responsiveness"
 * Marije Baalman. "Livecoding relations between body movement and sound"
-* David Ogborn, Eldad Tsabary, Ian Jarvis, Alexandra Cárdenas and Alex McLean. "Extramuros: collaborative live coding and distributed JavaScript visualizations"
+* David Ogborn, Eldad Tsabary, Ian Jarvis, and Alexandra Cárdenas. "Extramuros: collaborative live coding and distributed JavaScript visualizations"
 
 ## Performances
 
-* Abraham Pazos Solatie. "Joukkue performance"
 * Alan Blackwell, Samuel Aaron and Afrodita Nikolova. "Slamming Street 0110 0110"
 * Alexandra Cárdenas, Ian Jarvis, Alex McLean, David Ogborn and Eldad Tsabary. "Shared buffer: networked collaborative live coding"
 * Alexandra Cárdenas. "Feedforward - an electric guitar and live code performance"
@@ -81,11 +82,10 @@ excited to share the emerging programme at the earliest opportunity.
 * Kate Sicchio. "Hacking the Body 2.0"
 * Lina Bautista. "Linalab"
 * Luis Navarro Del Angel and Emilio Ocelotl Reyes. "Algorave Performance"
-* Marcel Wierckx. "Ostinato and Gopher"
+* Marcel Wierckx. "Gopher"
 * Marije Baalman. "Wezen-Gewording"
 * Matthew Yee-King and Alex Mclean. "Canute"
 * Mike Hodnick. "Kindohm"
-* Niall Quinn and Oliver Wilshen. "REMAP: Roland Electro-Mechanical Audio Plotter"
 * Nick Collins. "Type a Personality"
 * Niklas Reppel. "Cult of graa - live coding performance"
 * Renick Bell. "Algorave Performance"
