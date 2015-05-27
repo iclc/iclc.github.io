@@ -1,5 +1,12 @@
 - name: programme
   title: Programme
+  sections:
+  - name: programme
+    title: Draft programme
+  - name: papers
+    title: Papers
+  - name: performances
+    title: Performances
 - name: workshops
   title: Workshops
   sections:
