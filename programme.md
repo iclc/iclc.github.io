@@ -12,3 +12,5 @@ University of Leeds, with an additional performance venue on Tuesday.
 
 By night, we will enjoy the Left Bank venue on Monday, and Wharf
 Chambers on Wednesday. Tuesday night will be for relaxing.
+
+The schedule below is subject to change.
