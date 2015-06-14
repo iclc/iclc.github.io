@@ -27,3 +27,16 @@ For now here are some local attractions.
 * [Royal Armories](http://www.royalarmouries.org/)
 * [Yorkshire Sculpture Park](http://www.ysp.co.uk/)
 * [Peak District National Park](http://www.peakdistrict.gov.uk/)
+
+Eating and Drinking around Leeds
+
+* Bundobust for great veggie Indian street food
+* North Bar for the best (but expensive) beer
+* Shears Yard for a posher dinner...
+* ... and Calls Landing opposite for delicious and cheap stews (and drinks) on the canal
+* Mr Foley's for a great cider selection and local beers
+* Nothern Monk (and the Cross Keys) to discover Holbeck and a local brewery
+* Lazy Lounge for Gin and Tonics
+* Friend of Ham for light dinner
+* The Alchemist for posh cocktails with a view of Leeds...
+* ... or the Belgrave for a more relaxed roof terrace and great pizza

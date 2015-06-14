@@ -12,10 +12,10 @@ To contact the core organising team please email [livecodenet@gmail.com](mailto:
 * [Thor Magnusson](http://www.sussex.ac.uk/profiles/164902), Co-chair (University of Sussex)
 * [Kia Ng](http://music.leeds.ac.uk/people/kia-ng/), Scientific programme committee chair (University of Leeds)
 * [Shelly Knotts](https://shellyknotts.wordpress.com/), Artistic programme committee chair (University of Durham)
+* [Joanne Armitage](http://music.leeds.ac.uk/people/joanne-armitage/), Workshop and special events chair (University of Leeds)
 
 ## Co-producers
 
-* [Joanne Armitage](http://music.leeds.ac.uk/people/joanne-armitage/)
 * [Franzi Florack](http://exploringfilmliteracy.blogspot.co.uk/)
 * [Ash Sagar](http://ashleysagar.com/)
 

@@ -20,6 +20,8 @@ Harassment, and other exclusionary behaviour are not welcome at the conference. 
 
 This applies to all events and venues of the conference whether they be talks, performances, late-night events, at the bar, or through Twitter or other online media.
 
+Wharf chambers, who will host our final evening event, have their own [safer spaces policy](http://www.wharfchambers.org/safer-spaces-policy.html).
+
 This Code of Conduct exists to help us create a positive environment at the conference for all participants. If you have any concerns please find a member of the [organising team](/team.html) (they'll be clearly identifiable during the conference) and let them know, or otherwise drop us an email at [livecodenet@gmail.com](mailto:livecodenet@gmail.com).
 
 We welcome comments on and suggested edits to the above.
