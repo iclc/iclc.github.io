@@ -11,7 +11,7 @@ Manchester, with other options further afield. Try the
 and [traintimes](http://traintimes.org.uk/ "TrainTimes") to find
 trains.
 
-We will add recommendations for hotels soon. In the meantime, you can find accommodation via the [booking.com](http://booking.com) and [airbnb](https://www.airbnb.co.uk/) websites. For on-campus accommodation see the [Meet in Leeds](http://www.meetinleeds.co.uk/short-breaks-at-university-of-leeds) website, although rooms there are currently booked up.
+You can find accommodation via the [booking.com](http://booking.com) and [airbnb](https://www.airbnb.co.uk/) websites. For on-campus accommodation see the [Meet in Leeds](http://www.meetinleeds.co.uk/short-breaks-at-university-of-leeds) website, although rooms there are currently booked up.
 
 ## Other happenings and local attractions
 
