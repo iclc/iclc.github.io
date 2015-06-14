@@ -1,12 +1,12 @@
 - name: programme
   title: Programme
   sections:
-  - name: programme
-    title: Draft programme
-  - name: papers
-    title: Papers
-  - name: performances
-    title: Performances
+  - name: monday
+    title: Monday 13th July
+  - name: tuesday
+    title: Tuesday 14th July
+  - name: wednesday
+    title: Wednesday 15th July
 - name: workshops
   title: Workshops
   sections:
