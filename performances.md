@@ -376,3 +376,11 @@ www.felipeignacio.info
 
 See separate bio for Anne Veinberg.
 </em><br clear="left"/>
+
+## Feedforward -an electric guitar and live code performance - [Alexandra Cárdenas](http://alexandracardenas.net/feedforward) (Monday, Concert B)
+
+![Alexandra Cárdenas](images/performances/thumb.47.jpeg)Feedforward is a system, a cyber instrument composed by performer, electric guitar and laptop. The guitar sounds trigger previously written code and will make the laptop live code itself. The performer reacts to the choices of the computer. The initial settings of the system are a composition that is open to improvisation for both the performer and the laptop. Synths created in SuperCollider will analyse the sound of the guitar and trigger the autocode function of IXI lang. This will be an interaction of preexistent code and new born code, of preexistent sounds and new born sounds. Synthesis and transformations of the electric guitar sounds will make a piece that emerges from the electroacoustic tradition merging it with the noise tradition through an automatic live coding generative environment.
+
+<em>
+Composer and improviser of music ranging from writing orchestral works to improvising with electric guitar and laptop. Using mainly the software SuperCollider to turn her computer into another musical instrument, her work has focused recently in creating pieces with Live Electronics and exploring the musicality of coding and the algorithmic behaviour in the music. An important part of this exploration is the practice of live coding. Currently she lives in Berlin, Germany and studies the masters Sound Studies at the University of the Arts. www.tiemposdelruido.net
+</em><br clear=""left""/>
