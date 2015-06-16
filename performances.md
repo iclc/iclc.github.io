@@ -392,6 +392,7 @@ Composer and improviser of music ranging from writing orchestral works to improv
 Technical set-up is as follows: Sam performs with Sonic Pi, the live coding environment that he has developed with support from Raspberry Pi Foundation, in a recent release augmented with support for live audio input that is used here for processing Afrodita's voice. Alan performs with Palimpsest, a visual language that he has created for live algorithmic image transformation. Sam and Alan's previous collaboration as ""The Humming Wires"" was originally formed to investigate the ways in which live coding undermines considerations of copyright in mashup and homage, through improvised re-codings of Red Right Hand by Nick Cave and the Bad Seeds. Subsequently used as the basis for networked algorave performance, use of the same systems (with some performance-oriented enhancements) in Slamming Street 01100110 gives us an opportunity to push genre and media boundaries through working with text and human voice.
 
 <em>
+
 * Afrodita Nikolova - text/voice
 * Sam Aaron - sound/Sonic Pi
 * Alan Blackwell - image/Palimpsest 
