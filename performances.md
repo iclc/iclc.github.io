@@ -384,17 +384,17 @@ See separate bio for Anne Veinberg.
 <em>
 Composer and improviser of music ranging from writing orchestral works to improvising with electric guitar and laptop. Using mainly the software SuperCollider to turn her computer into another musical instrument, her work has focused recently in creating pieces with Live Electronics and exploring the musicality of coding and the algorithmic behaviour in the music. An important part of this exploration is the practice of live coding. Currently she lives in Berlin, Germany and studies the masters Sound Studies at the University of the Arts. www.tiemposdelruido.net
 </em><br clear="left"/>
-## Slamming Street 01100110 - [Afrodita Nikolova, Sam Aaron and Alan Blackwell](http://) (Wednesday, Concert E)
+
+## Slamming Street 01100110 - Afrodita Nikolova, Sam Aaron and Alan Blackwell (Wednesday, Concert E)
 
 ![Afrodita Nikolova, Sam Aaron and Alan Blackwell](images/performances/thumb.57.png)Slamming Street 01100110 is an experimental performance collaboration involving poetry and live coding. Our goal is to explore the borderlands between computation and human experience; between media and algorithms; and between structures and interpretations as a creative intercultural encounter. Using Linton Kwesi Johnson's dub poem 'Street 66' as a shared starting point, Sam Aaron, Afrodita Nikolova and Alan Blackwell have worked together to understand their experiences as improvisers and boundary-crossers. Encounters with authority, as framed by national cultures on the international stage, suggest resonances between 1970s Brixton, 1990s New Zealand, and the Macedonia of today. In the live coding context, the introduction of poetry performance (Nikolova is a Macedonian poetry slam champion) raises challenging questions about the nature of text, and the experience of voice, when juxtaposed with sonic structures, sampled sound and processed media imagery. 
 
-Technical set-up is as follows: Sam performs with Sonic Pi, the live coding environment that he has developed with support from Raspberry Pi Foundation, in a recent release augmented with support for live audio input that is used here for processing Afrodita's voice. Alan performs with Palimpsest, a visual language that he has created for live algorithmic image transformation. Sam and Alan's previous collaboration as "The Humming Wires" was originally formed to investigate the ways in which live coding undermines considerations of copyright in mashup and homage, through improvised re-codings of Red Right Hand by Nick Cave and the Bad Seeds. Subsequently used as the basis for networked algorave performance, use of the same systems (with some performance-oriented enhancements) in Slamming Street 01100110 gives us an opportunity to push genre and media boundaries through working with text and human voice.
+Technical set-up is as follows: Sam performs with Sonic Pi, the live coding environment that he has developed with support from Raspberry Pi Foundation, in a recent release augmented with support for live audio input that is used here for processing Afrodita's voice. Alan performs with Palimpsest, a visual language that he has created for live algorithmic image transformation. Sam and Alan's previous collaboration as ""The Humming Wires"" was originally formed to investigate the ways in which live coding undermines considerations of copyright in mashup and homage, through improvised re-codings of Red Right Hand by Nick Cave and the Bad Seeds. Subsequently used as the basis for networked algorave performance, use of the same systems (with some performance-oriented enhancements) in Slamming Street 01100110 gives us an opportunity to push genre and media boundaries through working with text and human voice.
 
 <em>
-Afrodita Nikolova - text/voice
-Sam Aaron - sound/Sonic Pi
-Alan Blackwell - image/Palimpsest 
+* Afrodita Nikolova - text/voice
+* Sam Aaron - sound/Sonic Pi
+* Alan Blackwell - image/Palimpsest 
 
 Afrodita Nikolova is a PhD student in Education at the University of Cambridge, having previously studied English literature and arts creativity education. She is a prize-winning poet, interested in poetry slams, and is the first Macedonian student awarded the Gates Cambridge scholarship. Sam Aaron is a computer scientist and live coder, who performs constantly around the UK and internationally. He developed the popular Sonic Pi system, and is committed to helping young people understand the creative opportunities in computer science. Alan Blackwell is Reader in Interdisciplinary Design at the University of Cambridge Computer Laboratory. Alan and Afrodita's participation in ICLC has been generously funded by the Boeing Corporation, and Sam's research is funded by a donation from the Raspberry Pi Foundation.
-</em><br clear="left"/>
-
+</em><br clear=""left""/>
