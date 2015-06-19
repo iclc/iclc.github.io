@@ -4,6 +4,6 @@ category: registration
 layout: default
 ---
 
-Registration is now open, and is in a two stage process, paying for registration, and then filling out a form.
+Registration is open until 6th July 2015, and is in a two stage process, paying for registration, and then filling out a form.
 
 Please [register here](http://yaxu.typeform.com/to/nEpU8e).

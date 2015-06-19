@@ -4,6 +4,10 @@ category: community
 layout: default
 ---
 
+Please read our [Code of Conduct](/coc.html).
+
+Online resources for the live coding community:
+
 ## Live coding research network
 
 The [Live Coding Research Network](http://livecodenetwork.org/) is

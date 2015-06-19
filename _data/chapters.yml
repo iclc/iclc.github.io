@@ -7,6 +7,10 @@
     title: Tuesday 14th July
   - name: wednesday
     title: Wednesday 15th July
+- name: papers
+  title: Papers
+- name: performances
+  title: Performances
 - name: workshops
   title: Workshops
   sections:
@@ -32,18 +36,3 @@
   title: Team
 - name: community
   title: Community
-- name: coc
-  title: Code of Conduct
-- name: cfp
-  title: CFP
-  sections:
-    - name: timeline
-      title: Timeline
-    - name: scientific
-      title: Papers
-    - name: performance
-      title: Performances
-    - name: workshop
-      title: Workshops
-- name: edit
-  title: Edit
