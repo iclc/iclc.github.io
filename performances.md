@@ -407,15 +407,15 @@ Andrew Sorensen is an artist-programmer whose interests lie at the intersection 
 ![Canute](images/performances/thumb.59.jpeg) Yee-King plays a set of digital v-drums which trigger percussion sounds and longer, synthesized sounds. McLean livecodes in the Tidal language, generating polyrhythmic patterns, melodic synthesizer lines and some sampled vocal patterns. They cover a range of rave inspired styles including industrial techno, drill and bass, dubstep and so forth, with occasional bursts of noise and free improv. The performance will be fully improvised, and will experiment with introducing autocoding into collaboration between percussionist and coder.
 
 <em>
-Canute is a performance collaboration between Matthew Yee­-King and Alex McLean, exploring improvisatory practice through programming languages and percussion. Their performances bridge techno, drill n bass, and experimental free jazz improv.
+Canute is a performance collaboration between Matthew Yee-King and Alex McLean, exploring improvisatory practice through programming languages and percussion. Their performances bridge techno, drill n bass, and experimental free jazz improv.
 
-Matthew Yee-­King is a computer music composer and performer, and postdoctoral research fellow at Goldsmiths College, where he works on a project to develop a social network for music learners. He has worked in a range of musics from the use of agent
+Matthew Yee-King is a computer music composer and performer, and postdoctoral research fellow at Goldsmiths College, where he works on a project to develop a social network for music learners. He has worked in a range of musics from the use of agent
 based live improvisers through more straight ahead electronic music to free improv with jazz players. He has performed live internationally and has recorded many sessions for BBC Radio. In the past his solo music has been released on electronic music imprints such
 as Warp Records and Richard James’ Rephlex Records. Past collaborators include Jamie Lidell, Tom Jenkinson (Squarepusher), Finn Peters and Max de Wardener.
-http://www.yeeking.net/ http://www.gold.ac.uk/computing/staff/m­yee­king/
+http://www.yeeking.net/ http://www.gold.ac.uk/computing/staff/m-yee-king/
 
-Alex McLean is a musician and researcher based in Yorkshire, UK. Alex is Research Fellow in Human/Technology Interface and Deputy Director within ICSRiM, University of Leeds. He created Tidal, the mini-­language for live coding pattern. He performs internationally as a live coder, including as one third of the long­-lived band Slub with Dave Griffiths and Adrian Ward. He coordinates promoters Algorave and algorithmic record label ChordPunch with Nick Collins, and has co-­organised around 80 Dorkbot electronic art events in Sheffield and London. Alex completed his PhD thesis "Artist-­Programmers and Programming Languages for the Arts" at Goldsmiths in 2011. He recently released Peak Cut EP on Computer Club, in the form of a bootable USB key.
-http://yaxu.org/ http://music.leeds.ac.uk/people/alex­mclean/
+Alex McLean is a musician and researcher based in Yorkshire, UK. Alex is Research Fellow in Human/Technology Interface and Deputy Director within ICSRiM, University of Leeds. He created Tidal, the mini-language for live coding pattern. He performs internationally as a live coder, including as one third of the long-lived band Slub with Dave Griffiths and Adrian Ward. He coordinates promoters Algorave and algorithmic record label ChordPunch with Nick Collins, and has co-organised around 80 Dorkbot electronic art events in Sheffield and London. Alex completed his PhD thesis "Artist-Programmers and Programming Languages for the Arts" at Goldsmiths in 2011. He recently released Peak Cut EP on Computer Club, in the form of a bootable USB key.
+http://yaxu.org/ http://music.leeds.ac.uk/people/alex-mclean/
 </em><br clear="left"/>
 
 ### Tlaxcaltech - ~ON [Emilio Ocelotl + Luis Navarro] Club B, Wednesday
