@@ -4,7 +4,9 @@ category: community
 layout: default
 ---
 
-Please read our [Code of Conduct](/coc.html).
+Please read our community [Code of Conduct](/coc.html).
+
+There's a [twitter list](https://twitter.com/livecodenet/lists/iclc2015-people) of ICLC registrants with twitter accounts (that we know of).
 
 Online resources for the live coding community:
 
