@@ -98,6 +98,8 @@ body {
 section {
     header {
         position: relative;
+        z-index: -1;
+
         &::before {
             content: "»";
             display: block;
@@ -114,7 +116,7 @@ section {
     }
 
     article {
-        h1 { 
+        h1 {
             font-size: $font-size-h2;
             color: $text-color;
         }
@@ -147,7 +149,7 @@ section {
 .iclc-hero {
     border: none;
     background-color: #fff;
-/*    background-image: url(../images/ICLC-Website-Header.jpg); 
+/*    background-image: url(../images/ICLC-Website-Header.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;*/
@@ -164,7 +166,7 @@ section {
 .iclc-logo-prefix {
     font-size: 0.4em;
 }
- 
+
 .iclc-teaser {
     border: none;
     background-color: $body-bg;
