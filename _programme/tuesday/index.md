@@ -57,7 +57,6 @@ Performance and Cultural Industries.
 <tr><th colspan="2">Stage one, Stage@Leeds</th></tr>
 <tr><td>[15:30]</td><td>Performance session D<br />
 <ul>
-<li>Shelly Knotts, Holger Ballweg and Jonas Hummel. Performance Submission: Flock</li>
 <li>Kate Sicchio. Hacking the Body 2.0</li>
 <li>Joseph Wilk. Repl Electric performance: "End of Buffer"</li>
 </ul>

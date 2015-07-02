@@ -69,7 +69,10 @@ University of Leeds.
 
 The Night programme for Wednesday will take place at [Wharf
 Chambers](http://www.wharfchambers.org/), a 20 minute stroll or 10-15
-minute taxi ride from the University.
+minute taxi ride from the University. Submission is £5 on the door
+(but you must [join Wharf Chambers
+first](http://www.wharfchambers.org/join.html)), or free with
+conference badge.
 
 <ul>
 <li>Darren Mothersele and Matt Wood. Cyril vs Microscopadelica</li>
