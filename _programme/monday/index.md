@@ -97,8 +97,8 @@ Fredrik Olofsson. chain reaction
 <li>Alexandra Cárdenas. Feedforward - an electric guitar and live code performance</li>
 <li>Andres Villa Torres. Warp Hole Sounds</li>
 <li>Shelly Knotts, Holger Ballweg and Jonas Hummel. Flock</li>
-<li>Samuel Aaron and Alan F. Blackwell. Sonic Miner</li>
+<li>Sam Aaron and Alan Blackwell. Sonic Miner</li>
 <li>Chris Kiefer. Live Coded Controllerism: Performing the Design of a New Instrument
 </li>
-<li>Matthew Yee-King and Alex Mclean. Canute </li>
+<li>Matthew Yee-King and Alex McLean. Canute </li>
 </ul>
