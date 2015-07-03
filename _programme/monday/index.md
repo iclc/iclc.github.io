@@ -48,11 +48,11 @@ CCCH, School of Music
 
 <tr><td>[14:40]</td><td>Performance session A - CePRA special session with Anne Veinberg and Greta Eacott<br />
 <ul>
-<li>Marcel Wierckx and Anna Veinberg. Gopher</li>
-<li>Juan A. Romero and Anna Veinberg. Improvisation for Pianist (Disklavier) and Live Coder</li>
+<li>Marcel Wierckx and Anne Veinberg. Gopher</li>
+<li>Juan A. Romero and Anne Veinberg. Improvisation for Pianist (Disklavier) and Live Coder</li>
 <li>Thor Magnusson and Greta Eacott. Encoding the Marimbist.</li>
-<li>Nick Collins and Anna Veinberg. Type a Personality</li>
-<li>Felipe Ignacio Noriega and Anna Veinberg. Off&lt;&gt;zz</li>
+<li>Nick Collins and Anne Veinberg. Type a Personality</li>
+<li>Felipe Ignacio Noriega and Anne Veinberg. Off&lt;&gt;zz</li>
 </ul>
 </td>
 </tr>
