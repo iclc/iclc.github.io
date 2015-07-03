@@ -67,7 +67,7 @@ University of Leeds.
 
 ### Night programme
 
-The Night programme for Wednesday will take place at [Wharf
+The final algorave will take place from 8pm at [Wharf
 Chambers](http://www.wharfchambers.org/), a 20 minute stroll or 10-15
 minute taxi ride from the University. Submission is £5 on the door
 (but you must [join Wharf Chambers
