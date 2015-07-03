@@ -13,7 +13,7 @@ University of Leeds.
 <tr><th colspan="2">LT1, School of Music</th></tr>
 <tr><td>[09:15]</td><td>Tea and Coffee</td></tr>
 <tr><td>[09:45]</td><td>Sally-Jane Norman - Keynote</td></tr>
-<tr><td>[10:25]</td><td>Paper session F (Chair: Nikolay Suslov)<br />
+<tr><td>[10:25]</td><td>Paper session F (Chair: Nicolai Suslov)<br />
 <ul>
 <li>Sang Won Lee and Georg Essl. Live Writing: Asynchronous Playback of Live Coding and Writing (20min)</li>
 <li>Jun Kato, Tomoyasu Nakano and Masataka Goto. TextAlive Online: Live Programming of Kinetic Typography Videos with Online Music (15min)</li>
@@ -69,10 +69,10 @@ University of Leeds.
 
 The final algorave will take place from 8pm at [Wharf
 Chambers](http://www.wharfchambers.org/), a 20 minute stroll or 10-15
-minute taxi ride from the University. Submission is £5 on the door
-(but you must [join Wharf Chambers
-first](http://www.wharfchambers.org/join.html)), or free with
-conference badge.
+minute taxi ride from the University.  he club is free with the
+conference badge, or else there is £5 submission on the door (but you
+must [join Wharf Chambers
+first](http://www.wharfchambers.org/join.html)).
 
 <ul>
 <li>Darren Mothersele and Matt Wood. Cyril vs Microscopadelica</li>
