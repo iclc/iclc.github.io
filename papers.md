@@ -4,8 +4,9 @@ category: papers
 layout: default
 ---
 
-The full proceedings will be available shortly, in the meantime you
-can read the abstracts below.
+The proceedings are available as a [combined
+PDF](/2015/iclc2015-proceedings.pdf). We will make individual PDFs
+available shortly, in the meantime you can read the abstracts below.
 
 <div id="paper5" class="paper">
 
