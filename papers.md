@@ -7,7 +7,7 @@ layout: default
 The combined proceedings are [available
 online](/2015/iclc2015-proceedings.pdf), ISBN 9780853163404.
 
-We have also archived individual PDFs of the papers:
+We have also archived individual papers:
 
 <style>
 .main-content td {
