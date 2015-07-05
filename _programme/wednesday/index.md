@@ -51,7 +51,6 @@ University of Leeds.
 <tr><td>[15:30]</td><td>Paper session H (Chair: Marije Baalman)<br />
 <ul>
 <li>Antonio Goulart and Miguel Antar. Live Coding the computer as part of a free improvisation orchestra of acoustic instruments (20min)</li>
-<li>Giovanni Mori. Pietro Grossi's live coding. An early case of computer music performance (20min)</li>
 <li>Antonio D. Carvalho Jr, Sang Won Lee and Georg Essl. SuperCopair: Collaborative Live Coding on Supercollider through the cloud (20min)</li>
 </ul>
 </td></tr>
