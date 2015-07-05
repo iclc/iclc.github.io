@@ -38,7 +38,6 @@ University of Leeds.
 <tr><th colspan="2">LT1, School of Music</th></tr>
 <tr><td>[14:00]</td><td>Paper session G (Chair: Kate Sicchio)<br />
 <ul>
-<li>Antonio D. Carvalho Jr, Sang Won Lee and Georg Essl. SuperCopair: Collaborative Live Coding on Supercollider through the cloud (20min)</li>
 <li>Nikolai Suslov and Tatiana Soshenina. From Live Coding to Virtual Being (15min)</li>
 <li>Carolina Di Prospero. Social Imagination (15min)</li>
 <li>Charles Hutchins. Live Patch / Live Code (15min)</li>
@@ -46,23 +45,24 @@ University of Leeds.
 </td></tr>
 <tr><th colspan="2">CCCH Foyer, School of Music</th></tr>
 <tr>
-<td>[15:30]</td><td>Tea and Coffee</td>
+<td>[15:10]</td><td>Tea and Coffee</td>
 </tr>
 <tr><th colspan="2">LT1, School of Music</th></tr>
-<tr><td>[15:50]</td><td>Paper session H (Chair: Marije Baalman)<br />
+<tr><td>[15:30]</td><td>Paper session H (Chair: Marije Baalman)<br />
 <ul>
 <li>Antonio Goulart and Miguel Antar. Live Coding the computer as part of a free improvisation orchestra of acoustic instruments (20min)</li>
 <li>Giovanni Mori. Pietro Grossi's live coding. An early case of computer music performance (20min)</li>
+<li>Antonio D. Carvalho Jr, Sang Won Lee and Georg Essl. SuperCopair: Collaborative Live Coding on Supercollider through the cloud (20min)</li>
 </ul>
 </td></tr>
 <tr><th colspan="2">CCCH, School of Music</th></tr>
-<tr><td>[16:40]</td><td>Performance session F<br />
+<tr><td>[16:20]</td><td>Performance session F<br />
 <ul>
 <li>Niklas Reppel. Cult of graa - live coding performance</li>
 <li>David Ogborn and Shawn Mativetsky. very long cat</li>
 </ul>
 </td></tr>
-<tr><td>[17:20]</td><td>Wrap-up panel - Clothworkers’ Centenary Concert Hall</td></tr>
+<tr><td>[17:00]</td><td>Wrap-up panel - Clothworkers’ Centenary Concert Hall</td></tr>
 </table>
 
 ### Night programme
