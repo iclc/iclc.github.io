@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>def Gribber = (Grace + Gibber)</title>
+  <script src="jquery-1.11.3.min.js"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="css/iclc.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title"><strong>def</strong> Gribber = (Grace + Gibber)</h1>
+<table id="authorlist"><tr>
+<td>  Timothy Jones<br />
+  Victoria University of Wellington, NZ
+</td>
+<td>  James Noble<br />
+  Victoria University of Wellington, NZ
+</td>
+</tr></table>
+</div>
+
+<h2 class="abstract">Abstract</h2>
+<div id="abstract">
+<p>Grace is a new object-oriented education programming language that we are designing. One of the Grace implementations, Hopper, is an interpreter that runs on top of JavaScript. Gibber is series of libraries that support real-time audio processing, and also a simple livecoding interactive development environment, also on top of JavaScript. In this demonstration, we will present Gribber, a web-based IDE that incorporates the Hopper interpreter into the Gibber IDE, and so gives Grace live access to the Gibber audio libraries. Because of Hopper's continuation-passing design, Gribber programs can appear multi-threaded, apparently running one or more loops in parallel, each pseudo-thread generating sound and graphics in simultaneously. We will demonstrate how Gribber can be used for <em>BALSA</em>-style algorithm animation, and <em>Sorting Out Sorting</em> style algorithm races.</p>
+</div>
+
+<h1 id="introduction-to-grace"><span class="header-section-number">1</span> Introduction to Grace</h1>
+<p>We are engaged in the design of Grace, a new object-oriented open source programming language aimed at instructors and students in introductory programming courses <span class="citation">(Black et al. 2012; Black et al. 2013; Homer et al. 2014)</span>. Grace aims to include features that have been found useful in software practice, while allowing multiple different teaching approaches without requiring that concepts be introduced to students before they are ready.</p>
+<p>While many aspects of Grace's design will be familiar to most object-oriented programmers --- we hope Grace's syntax, declarations, control structures, and method semantics appear relatively conventional --- there are some aspects of Grace's design that are unique. In particular, Grace tries to separate the concepts of <em>object</em>, <em>class</em>, and <em>type</em>. In Grace, objects can be created without classes (like JavaScript or Self), or with classes (like most other object-oriented languages). Classes in turn can be built <em>by hand</em> out of objects (like Emerald, if anyone's counting). Grace types are optional (gradual): types in Grace programs may be left out all together (like Python or JavaScript), always included (like Java or C<span class="math">$\sharp$</span>), or used in some mixture (like Dart or Dylan).</p>
+<p>To give the flavour of the language, we show the Grace code for an imperative Insertion Sort, as may be found in many introductory programming course sequences. Hopefully this example is comprehensible to readers from a wide range of programming backgrounds:</p>
+<pre class="sourceCode java"><code class="sourceCode java">method <span class="fu">insertionSort</span>(array) {
+  var i := <span class="dv">2</span>
+  <span class="kw">while</span> {i &lt;= array.<span class="fu">size</span>} <span class="kw">do</span> {
+    var j := i
+    <span class="kw">while</span> {(j &gt; <span class="dv">2</span>) &amp;&amp; (array.<span class="fu">at</span>(j<span class="dv">-1</span>) &gt; array.<span class="fu">at</span>(j))} <span class="kw">do</span> {
+       array.<span class="fu">swap</span>(j) <span class="fu">and</span>(j<span class="dv">-1</span>)
+       j := j - <span class="dv">1</span>
+       }
+    i := i + <span class="dv">1</span>
+  }
+  print <span class="st">&quot;done insertion&quot;</span>
+}</code></pre>
+<p>The first Grace implementation, Minigrace <span class="citation">(Homer 2014)</span> was a self-hosted prototype compiler to C and JavaScript. More recently, Jones has built Hopper <span class="citation">(Jones 2015)</span>, a continuation-passing style interpreter written in JavaScript.</p>
+<h1 id="livecoding-in-grace"><span class="header-section-number">2</span> Livecoding in Grace</h1>
+<p>As well as being artistically and philosophically interesting in its own right <span class="citation">(Blackwell et al. 2014)</span>, livecoding promises to increase engagement and learning in Computer Science pedagogy --- indeed pedagogy has motivated much of the early work in live programming of many kinds <span class="citation">(Papert 1980; Goldberg and Robson 1983)</span>. More recently, projects such as SonicPi <span class="citation">(Aaron 2015)</span>, for example, use livecoding both to increase student engagement in programming, and also to support learning; indeed there is some evidence that livecoding can increase both engagement and learning even when it replaces static slide shows of the same content <span class="citation">(Rubin 2013)</span>.</p>
+<p>Unfortunately, our existing first Grace programming environment prototypes did not support livecoding. While Minigrace could self-host in JavaScript in a browser, it ran only in batch mode: code could not be modified on the fly, and loops (e.g. sort methods) would lock up the browser until they completed <span class="citation">(Homer 2014)</span>. This is a problem for introductory programming courses where sorting is a common topic.</p>
+<h1 id="grace-in-gibber"><span class="header-section-number">3</span> Grace in Gibber</h1>
+<p>We were able to solve these problems by combining our second-generation Hopper interpreter <span class="citation">(Jones 2015)</span> with the Gibber livecoding environment <span class="citation">(Roberts and Kuchera-Morin 2012; Roberts et al. 2014)</span>. Gibber provides powerful audio and video libraries, and an IDE particularly suited to livecoding that can be easily extended to support different languages. JavaScript livecoding in Gibber unfortunately suffers from the problem that loops in programs will effectively delay the browser until they complete --- this is a problem of JavaScript's single-threaded event-based programming model: each event must run to completion before the next event can begin execution. For e.g. livecoding and visualising a sorting algorithm, we need to visualise each interesting event in the algorithm as it happens, rather that just flick from an unsorted to a sorted array in a single time step.</p>
+<div class="figure">
+<embed src="Gribber.pdf" /><p class="caption"><em>A Grace insertion sort running under Gribber in the Gibber IDE. Note the translucent squares visualising element values: these are updated as the algorithm runs.</em></p>
+</div>
+<p>The Hopper interpreter solves this problem by running Grace programs in a continuation-passing style. Each Grace subexpression (<em>method request</em> in Grace terminology) is executed one step, and then control is returned to the main loop, with the next step reified as a continuation <span class="citation">(Abelson and Sussman 1985)</span>. After a timeout to allow other events, browser (or Gibber tasks), or indeed other Grace expressions to run, the delayed continuation will be picked up, again executed one step, again reified as a continuation and control yielded again. The effect is quite similar to SonicPi's use of Ruby's threading <span class="citation">(Aaron and Blackwell 2014)</span> except implemented solely in an interpreter written in JavaScript: the continuation passing and time slicing is not visible to the Grace programs. This allows Gribber to support <em>BALSA</em>-style algorithm animation <span class="citation">(Brown 1988; Brown and Hershberger 1991)</span>, and <em>Sorting Out Sorting</em> style algorithm races <span class="citation">(Baecker and Sherman 1981)</span>, which cannot be supported in Gibber in naked JavaScript. Figure 1 shows a Grace insertion sort running under Gribber in the Gibber IDE.</p>
+<h1 id="conclusion"><span class="header-section-number">4</span> Conclusion</h1>
+<p>We have combined the Grace Hopper interpreter with the Gibber livecoding environment to produce Gribber --- a livecoding environment for the Grace educational programming language. We hope Gribber will help communicate the advantages of livecoding to the educational programming languages community, and the advantages of a clean educational programming language design to the livecoding community.</p>
+<h1 id="acknowledgements"><span class="header-section-number">5</span> Acknowledgements</h1>
+<p>We thank the reviewers for their comments. This work is supported in part by the Royal Society of New Zealand Marsden Fund and James Cook Fellowship.</p>
+
+<div class="references">
+<p>Aaron, Sam. 2015. “<span class="math"><em>π</em>)))</span>: Sonic Pi.” <code>http://sonic-pi.net</code>.</p>
+<p>Aaron, Sam, and Alan Blackwell. 2014. “Temporal Semantics for a Live Coding Language.” In <em>FARM</em>.</p>
+<p>Abelson, Harold, and Gerald Jay Sussman. 1985. <em>Structure and Interpretation of Computer Programs</em>. MIT Press; McGraw-Hill.</p>
+<p>Baecker, Ronald M., and David Sherman. 1981. “Sorting Out Sorting.” 16 mm colour sound film.</p>
+<p>Black, Andrew P., Kim B. Bruce, Michael Homer, and James Noble. 2012. “Grace: the Absence of (Inessential) Difficulty.” In <em>Onward!</em>, 85–98.</p>
+<p>Black, Andrew P., Kim B. Bruce, Michael Homer, James Noble, Amy Ruskin, and Richard Yannow. 2013. “Seeking Grace: a New Object-Oriented Language for Novices.” In <em>SIGCSE</em>, 129–134.</p>
+<p>Blackwell, Alan, Alex McLean, James Noble, and Julian Rohrhuber. 2014. “Collaboration and Learning Through Live Coding (Dagstuhl Seminar 13382).” <em>Dagstuhl Reports</em> 3 (9): 130–168.</p>
+<p>Brown, Marc H. 1988. <em>Algorithm Animation</em>. ACM Distinguished Dissertation. MIT Press.</p>
+<p>Brown, Marc H., and John Hershberger. 1991. “Color and Sound in Algorithm Animation.” <em>IEEE Computer</em> 25 (12) (December).</p>
+<p>Goldberg, Adele, and David Robson. 1983. <em>Smalltalk-80: the Language and Its Implementation</em>. aw.</p>
+<p>Homer, Michael. 2014. “Graceful Language Extensions and Interfaces.” PhD thesis, Victoria University of Wellington.</p>
+<p>Homer, Michael, Timothy Jones, James Noble, Kim B. Bruce, and Andrew P. Black. 2014. “Graceful Dialects.” In <em>ECOOP</em>, 131–156.</p>
+<p>Jones, Timothy. 2015. “Hop, Skip, Jump: Implementing a Concurrent Interpreter with Promises.” Presented at <code>linuxconf.au</code>.</p>
+<p>Papert, Seymour. 1980. <em>Mindstorms: Children, Computers, and Powerful Ideas</em>. Basic Books, Inc.</p>
+<p>Roberts, C., and J. Kuchera-Morin. 2012. “Gibber: Live Coding Audio in the Browser.” In <em>ICMC</em>.</p>
+<p>Roberts, C., M. Wright, J. Kuchera-Morin, and T H<span>ö</span>llerer. 2014. “Gibber: Abstractions for Creative Multimedia Programming.” In <em>ACM Multimedia</em>.</p>
+<p>Rubin, Marc J. 2013. “The Effectiveness of Live-Coding to Teach Introductory Programming.” In <em>SIGCSE</em>, 651–656.</p>
+</div>
+</body>
+</html>

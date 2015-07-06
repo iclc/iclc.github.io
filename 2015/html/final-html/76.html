@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Performative Code: Strategies for Live Coding Graphics</title>
+  <script src="jquery-1.11.3.min.js"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="css/iclc.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Performative Code: Strategies for Live Coding Graphics</h1>
+<table id="authorlist"><tr>
+<td>  Shawn Lawson<br />
+  Rensselaer Polytechnic Institute
+</td>
+</tr></table>
+</div>
+
+<h2 class="abstract">Abstract</h2>
+<div id="abstract">
+<p>Performing real-time, live coded graphics requires a streamlined programming environment, efficient implementation techniques, improvisatory inventiveness, a tuned ear, and above all, aesthetic sensibility. The performer must not only pull together these concepts, but maintain an awareness and forethought, of the graphical results of and performance expectations of the live coding environment.</p>
+</div>
+
+<h1 id="introduction"><span class="header-section-number">1</span> Introduction</h1>
+<p>Live coding is a unique and extend-able area of computer-based research and artistic practice, as evidenced by the wide variety of integrated development environments (IDEs) that currently exist for live coding.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a><a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+<p>This text includes observations, thoughts, and discoveries the author has made over the past year of developing and performing with his own live coding IDE.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> Specifically, this text addresses the challenges the live-coding graphic artist faces when collaborating with an audio performer on a set piece, including primarily the necessity for for an efficient and accurate coding environment. The IDE, which runs in Google Chrome, uses the OpenGL fragment shader language, features autocompilation and execution, has a customizable autocompletion engine, real-time FFT analysis and Open Sound Control (OSC) connectivity, and supports multi-output projection-mapping. Code writing and editing occurs in a text editor layer on top of the computed visual output.</p>
+<p>While the autocompilation and autocompletion features contribute to the performer’s speed and flexibility in a live situation, one must be aware of code artifacts, lines or blocks inadvertently uncommented or simply unintended, must be taken into account. While introducing the potentials for interesting discoveries, these artifacts may also produce undesirable effects, and by understanding these fallibilities to the degree that their implementation, expected or not, can be successfully integrated, the live coder expands his or her aesthetic toolbox beyond what is already known.</p>
+<h1 id="language-hacks"><span class="header-section-number">2</span> Language Hacks</h1>
+<p>The OpenGL shader language (GLSL), which executes directly on the graphics hardware, not sandboxed by another environment, is syntactically strict. Below are several low-level techniques that have become integral my performance practice; techniques that have improved aesthetic flexibility and coding speed, while satisfying the aforementioned syntactical requirements. These descriptions are specific to GLSL, but their concepts are applicable to other IDEs and languages.</p>
+<h2 id="safety-first"><span class="header-section-number">2.1</span> Safety First</h2>
+<p>It is common practice to initialize a value at variable declaration, not only to prime each variable for instantaneous implementation, but to eliminate the potential for bugs and unexpected results. In the code sample below the value of color1 is unknown, whereas the value of color2 is black. In its current, undefined instantiation, adding <em>red</em> to color1, would likely return an unknown, potentially jarring result depending on the context. Color2, which is initialized to be black, can more accurately predict the result of adding red: black becomes increasingly red.</p>
+<pre class="glsl"><code>//vec4(red, green, blue, alpha) with 0.0 - 1.0 range. 
+vec4 color1;
+vec4 color2 = vec4(0.0, 0.0, 0.0, 1.0);
+
+color1 = color1 + vec4(1.0, 0.0, 0.0, 1.0);
+color2 = color2 + vec4(1.0, 0.0, 0.0, 1.0);
+
+//  unknown output color
+gl_FragColor = color1;
+//  output color will be black plus red
+gl_FragColor = color2;</code></pre>
+<p>Furthermore, if the a performer decides to delete the line of code that adds red to color2, the outgoing fragment color would revert back to the initialized value of black, thereby reducing the potential for rogue values to modify the color if that line is implemented in some other process(es). Similarly, if the performer deletes the line of code that adds red to color1, the resultant value is unknown, and may lead to an undesirable, or at least unexpected outgoing fragment color.</p>
+<h2 id="commenting"><span class="header-section-number">2.2</span> Commenting</h2>
+<p>A simple method of working within the functionalities of an auto-compiling and executing IDE is to write code behind a single line comment maker (see example below).</p>
+<pre class="glsl"><code>//line of code written, ready to be uncommented
+//vec4 color1 = vec4(1.0, 1.0, 1.0, 1.0);</code></pre>
+<p>It has proven, effective to implement a key command into the IDE to toggle comment/uncomment on the current line(s). The potential pitfall of this functionality is that if the code behind the comment marker has errors, they won't be apparent until after the uncommenting (which will be addressed in the next subsection), but as a process for hiding/revealing code from/to the compiler quickly, it is generally effective. Specific to GLSL, if lines or blocks of code are not directly needed then commenting out portions of code can have large performance improvements, specifically regarding frame rate and rendering resolution, but also legibility.</p>
+<p>As in most programming environments, comments can be used to organize and structure. An IDE with a color syntax highlighter on a static background color will substantially reduce the performer's visual search for specific code locations. When the code lengthens to the degree that it scrolls off the screen, a higher level of search can be implemented using single line comments. In the comment below, the performer can do a quick visual scan of the reverse indented, color-coded comments, then narrow the search to the specific code desired, as opposed to the performer hunting through the syntax-colored code on what may be a similarly-colored, animated background. In the code example the comment color is light blue whereas in the IDE it is grey, causing it to stand out more, not dissimilar to a written text's section headings that may be in bold and larger font. The offset and color difference simply makes the comment easy to find and mentally parse.</p>
+<pre class="glsl"><code>    vec4 color1 = vec4(1.0, 1.0, 1.0, 1.0);
+    vec4 color2 = vec4(0.0, 0.0, 0.0, 1.0);
+
+//H Bars
+    color1 = color1 * step(.4, fract(gl_FragCoord.x * .1));
+    color2 = color2 * step(.6, fract(gl_FragCoord.x * .2));</code></pre>
+<h2 id="conditional-help"><span class="header-section-number">2.3</span> Conditional Help</h2>
+<p>As previously mentioned, there are potential issues with the single line commenting method. Below is a workaround to those potential pitfalls that subtly exploit the auto-compiler.</p>
+<pre class="glsl"><code>vec4 color1 = vec4(0.0, 0.0, 0.0, 1.0);
+
+if (false) {
+    color1 = color1 + vec4(1.0, 0.0, 0.0, 1.0);
+}</code></pre>
+<p>Using a conditional statement that always evaluates false allows the embedded code to be auto-compiled, but prevents it from executing. This encapsulation within a conditional statement provides the performer with a safety net for building complex or detailed code sections without worry for inadvertent or premature compilation. When successfully compiled, the performer can utilize the comment method to hide this code from the compiler, and safely remove the conditional wrapper (this is expanded in the snippets section).</p>
+<h2 id="decimal-cheats"><span class="header-section-number">2.4</span> Decimal Cheats</h2>
+<p>During a performance, the performer may want to create a transition or continuously change a value. Slowly increasing a value from 0.1 to 0.9 is quite easy; whereas, changing from 0.9 to 1.0 is not. To change the leading 0 to 1 would result in an intermediate value of 1.9 before being able to change the 9 to 0. A similar problem exists in the reverse direction. To change the trailing 9 to 0 would result in an intermediate value of 0.0 before being able to change the leading 0 to 1. Both 1.9 and 0.0 are quite far out of sequence from our value of 0.9.</p>
+<p>The cheat is to intentionally commit an error, then rely on the autocompiler's memory. When an error occurs, the autocompiler retains the most recent successfully compiled shader. The performer simply inserts a second decimal point, in this example, next to the existing decimal, resulting in 0..9. Changing numbers on either side of the decimal can now happen without consequence. Once we have our desired value of 1..0, the extra decimal point is removed resulting in a final value of 1.0, which the autocompiler will accept (an additional method towards continuous change is addressed in the external input section).</p>
+<h1 id="linguistics"><span class="header-section-number">3</span> Linguistics</h1>
+<pre class="glsl"><code>vec4 white = vec4(1.0, 1.0, 1.0, 1.0);
+
+//each line below has one error
+vec4 color1 = whie;
+vec4 color2 = vec4(1.0, 1.0, 1.0 1.0);</code></pre>
+<p>It is much easier to see the letter &quot;t&quot; missing from the word &quot;white&quot; in the declaration of color1, than to find the comma missing after the third parameter in color2. When performing, typing and text scanning are virtually simultaneous, and without considerable legibility error resolution becomes increasingly difficult. Anxiety and stress mounts when while tracking down errors, because a set performance piece continues; gradually, one falls behind and misses cues.</p>
+<p>Debugging color2, under some time pressure, we would mentally check type (vec4); the operation (=); the parameters (count of 4 matches vec4), values (1.0 1.0 1.0 1.0), type (float float float float), separated (yes yes no yes) - finally we have the problem. And, it is a very detail oriented problem, which is not an ideal situation.</p>
+<p>In the case of color1, we would mentally check type (vec4); the operation (=); the value (whie) - spelled incorrectly. We're more easily able to locate the spelling mistake than to dig down into the nitty-gritty.</p>
+<p>To conclude this sub-section, one is less error-prone when using &quot;white&quot; than &quot;vec4(1.0, 1.0, 1.0, 1.0)&quot;, so long as &quot;white&quot; is correctly defined. Plus readability and comprehension are much faster. Predefining commonly utilized variables like colors and functions, as we will discuss in the next subsection, is one way to achieve this.</p>
+<h2 id="helper-functions"><span class="header-section-number">3.1</span> Helper Functions</h2>
+<p>The development and utilization of helper functions aid with the overall performance and help to maintain a graphical pacing and aesthetic interest. In the case of GLSL, a random function does not exist in many Graphics Processing Unit (GPU) hardware implementations. To write a random function for the performance may certainly have some appeal if it were integral to the primary concept of the performance; however, when needed solely to have some random data to work with, the writing out of helper functions can consume valuable time. A resolution to the issue was to include a select set of often used helper functions into the IDE for random numbers, shapes, and sprite sheet animation.</p>
+<h1 id="debugging"><span class="header-section-number">4</span> Debugging</h1>
+<p>While the integration of a step through debugger may be an interesting aspect of one's performance, should the debugging process drag-on too long, the flow of the visual experience may be compromised. In order to avoid a protracted debugging session, a graceful, scale-able debugger can be an excellent addition. One method of subtle error indication is to make a slight change to the line's background color (see Figure 1).</p>
+<div class="figure">
+<img src="images/simpleDebug.png" alt="Example of a debugger highlighting a line of code that has an error. Note, the missing comma again." /><p class="caption"><em>Example of a debugger highlighting a line of code that has an error. Note, the missing comma again.</em></p>
+</div>
+<p>Should more assistance or information about the error be needed to resolve the issue, a slightly more intrusive technique can be used. In figure 2, error markers are placed in the line number column. Additionally, when the cursor hovers over one of these markers a debug message is displayed. There is some efficiency lost with this method; because, the performer must pause typing, move the cursor, read, move the cursor to hide the message, and finally start to type again.</p>
+<div class="figure">
+<img src="images/errorMarkerDebug.png" alt="Left: Example of an error marker. Right: Revealed debug message." /><p class="caption"><em>Left: Example of an error marker. Right: Revealed debug message.</em></p>
+</div>
+<p>An even more visually intrusive method would be an in-line debug message information system (see Figure 3). While this example is visually disruptive, especially when it shifts down lines of code when inserted, it is significantly faster for the performer to see the debugging information and make a correction.</p>
+<div class="figure">
+<img src="images/complexDebug.png" alt="Example of a debugger providing additional information, in-line to the code. Note, again, the missing comma." /><p class="caption"><em>Example of a debugger providing additional information, in-line to the code. Note, again, the missing comma.</em></p>
+</div>
+<p>All of these approaches detract less from the overall show experience by avoiding a separate panel with a GDB style breakpoint debugger. And, as with most things, with experience and practice, these assistive debugging indicators can be scaled back as the performer gains confidence and proficiency.</p>
+<h1 id="autocompletion-and-snippets"><span class="header-section-number">5</span> Autocompletion and Snippets</h1>
+<p>Many autocompletion engines exist in many forms, but it is important that they are <em>configure-able</em> for one's specific needs: accuracy and speed.</p>
+<div class="figure">
+<img src="images/autocomplete.png" alt="Example of autocompletor showing possible known completions." /><p class="caption"><em>Example of autocompletor showing possible known completions.</em></p>
+</div>
+<h2 id="reducing-and-appending"><span class="header-section-number">5.1</span> Reducing and Appending</h2>
+<p>The OpenGL specification for WebGL contains many built-in OpenGL functions. By default, many autocompletors will contain all the OpenGL functions, storage classes, built-in math functions, reserved words, etc. To reduce clutter from the autocompletor, anything relating to the vertex shader is removed. Furthermore, anything that is not commonly used is removed. Predefined variables and functions are included in the autocompletor list, for example: colors, shapes, helper functions, and uniform names. This custom reduction and addition creates a highly optimized list, meaning that in most cases our desired autocompetion match is reduced to a single solution faster.</p>
+<h2 id="defining-snippets"><span class="header-section-number">5.2</span> Defining Snippets</h2>
+<p>Snippets are generally small code blocks that are entered to save time or reduce errors. The snippets are written by the user into a configuration file. The autocompletor's engine builds snippets from the file as seen in the code example below. The first line is a comment that appears when the autocompletor's snippet pop-up appears. The second line starts with the <em>snippet</em> declaration, followed by the snippet's <em>key</em>. The third line is the snippet's <em>value</em>. This particular snippet enters the circle helper function. To breakdown further, <em>${}</em> indicates the location of a parameter, and where the next tab-jump point is. The number inside the curly braces gives the tab-order of the parameters. The text following the colon will be the default value for those parameters. In this case, the word <em>float</em> is a hint as to the type of value that needs to be entered. Note the fifth tab-point was added as a quick way to jump outside the parenthesis.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"># circle
+snippet cir
+    <span class="fu">circle</span>(${<span class="dv">1</span>:float}, ${<span class="dv">2</span>:float}, ${<span class="dv">3</span>:float}, ${<span class="dv">4</span>:float})${<span class="dv">5</span>}</code></pre>
+<p>In figure 5, the circle fuction has been autocompleted. The first value is highlighted, meaning it will be overwritten when typing begins. Pressing &quot;tab&quot; will jump to the next &quot;float&quot; parameter and highlight it for overwriting.</p>
+<div class="figure">
+<img src="images/snippetCircle.png" alt="Example of autocompletor completing the circle function snippet." /><p class="caption"><em>Example of autocompletor completing the circle function snippet.</em></p>
+</div>
+<h2 id="common-snippets"><span class="header-section-number">5.3</span> Common Snippets</h2>
+<p>Some testing has led to the implementation of a variety of snippets; the following are a few of the key:value pairs integrated into the IDE. The first example is a for loop with conditional check against an integer (a float version also exists with the <em>forf</em> snippet key). The second example, <em>iff</em>, we recognize from the conditional help section above. Last is a selection of commonly used data types.</p>
+<pre class="glsl"><code>//snippet fori 
+for (int i = 0; i &lt; int; i++) {
+        
+}
+
+//snippet iff
+if (false) {
+    
+}
+
+//snippet vv
+vec2
+//snippet vvc
+vec3
+//snippet ft
+float</code></pre>
+<h1 id="external-input"><span class="header-section-number">6</span> External Input</h1>
+<p>Many audio visual performers use hardware input devices to launch processes, activate functions, adjust values, or simply inject a sense of physicality into the live performance. In a live coding performance, additional hardware devices can similarly help to improve efficiency, facilitate real-time and continuous access to parameter values, and inject a more perceptible layer of physicality. Additionally, performers frequently configure their software to communicate with each other. This inter-performer communication adds a rich cohesiveness.</p>
+<p>For this IDE, the Open Sound Control (OSC) protocol was implemented. This was chosen due to a familiarity with OSC, a need to receive OSC messages from both hardware (iPad with Lemur<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>) and other performers, and in preparation for the future possibilities that may include a variety of data types and ranges.</p>
+<p>How might this be used? Let's say that an OSC device produces data that ranges from 0.0-1.0 and is coming into an GLSL shader as a uniform labeled <em>fader</em>, see the code example below.</p>
+<pre class="glsl"><code>uniform float fader;
+
+void main() {
+    vec3 black = vec3(0.0, 0.0, 0.0);
+    vec3 white = vec3(1.0, 1.0, 1.0);
+    color = mix(black, white, fader);
+
+    gl_FragColor = vec4(color, 1.0);
+}</code></pre>
+<p>With an external OSC controller, a performer could blend or mix between the black and white colors. This method could be applied to back buffers for adding motion blur, mixing effects, cross-fading between effects, or provide more accurate cuing with audio transitions. While seemingly trivial, in the above example, this OSC technique provides a stream of continuous numbers whereas the deliberate typing of numbers into the autocompiler may have very jarring or unexpected/undesired outcomes. This input method resolves the 0.9 to 1.0 discontinuity problem as mentioned in the decimal cheats section.</p>
+<h1 id="conclusion"><span class="header-section-number">7</span> Conclusion</h1>
+<p>Live coding introduces a particular set of technical, performative, and aesthetic challenges. While this is certainly not intended to be a comprehensive survey of these issues and their potential solutions, it is meant to contribute to the already emerging dialogue, framed primarily by the author's work. To this end, the aforementioned strategies for live coding graphics are applicable to other areas of live coding.</p>
+<h1 id="acknowledgments"><span class="header-section-number">8</span> Acknowledgments</h1>
+<p>Thank you to my audio collaborator, Ryan Ross Smith.<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> And, thank you to CultureHub for providing us the time and space to continue building the <em>Sarlacc</em> set.<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a><a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a></p>
+<div class="references">
+
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>&quot;Live Coding.&quot; 2015. <a href="http://en.wikipedia.org/wiki/Live_coding">http://en.wikipedia.org/wiki/Live_coding</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>&quot;Software.&quot; 2015. <a href="http://toplap.org/category/software/">http://toplap.org/category/software/</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>“ToplapSystems.” 2015. <a href="http://toplap.org/wiki/ToplapSystems">http://toplap.org/wiki/ToplapSystems</a><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Link to IDE <em>The_Force</em>: <a href="http://shawnlawson.github.io/The_Force/">http://shawnlawson.github.io/The_Force/</a> Link to github repository: <a href="https://github.com/shawnlawson/The_Force">https://github.com/shawnlawson/The_Force</a><a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>App interface building and performance IDE. <a href="https://liine.net/en/products/lemur/">https://liine.net/en/products/lemur/</a><a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p><a href="http://ryanrosssmith.com">http://ryanrosssmith.com</a><a href="#fnref6">↩</a></p></li>
+<li id="fn7"><p><a href="http://www.culturehub.org">http://www.culturehub.org</a><a href="#fnref7">↩</a></p></li>
+<li id="fn8"><p>Video link to <em>Sarlacc</em>: <a href="https://vimeo.com/121493283">https://vimeo.com/121493283</a><a href="#fnref8">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>
