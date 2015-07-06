@@ -27,7 +27,7 @@ University of Leeds.
 <tr><th colspan="2">CCCH, School of Music</th></tr>
 <tr><td>[11:50]</td><td>Performance session E<br />
 <ul>
-<li>Alan Blackwell, Samuel Aaron and Afrodita Nikolova. Slamming Street 0110 0110</li>
+<li>Alan Blackwell, Sam Aaron and Afrodita Nikolova. Slamming Street 0110 0110</li>
 <li>Jonas Hummel and Birmingham Laptop Ensemble Bile. Mind Your Own Business</li>
 <li>Rodrigo Velasco and Ollinca Torres. vida breve</li>
 </ul>
@@ -81,7 +81,7 @@ first](http://www.wharfchambers.org/join.html)).
 <li>Alexandra Cárdenas, Ian Jarvis, Alex McLean, David Ogborn and Eldad Tsabary. shared buffer: networked collaborative live coding
 </li>
 <li>Dagobert Sondervan and Kasper Jordaens. Heuristic ALgorithmic Interactive Controllers </li>
-<li>Mike Hodnick </li>
+<li>Mike Hodnick. Kindohm</li>
 <li>Luis Navarro Del Angel and Emilio Ocelotl Reyes. Algorave Performance </li>
-<li>Renick Bell.</li>
+<li>Renick Bell. Conductive</li>
 </ul>
