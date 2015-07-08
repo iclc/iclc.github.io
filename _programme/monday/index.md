@@ -45,13 +45,6 @@ University of Leeds.
 <th colspan="2">
 CCCH, School of Music
 </th></tr>
-
-" Type a Personality"-Nick Collins
-" Improvisation for disklavier, live coder and pianist"= Juan A Romero
--solo disklavier piece if still scheduled here-
-"Gopher"- Marcel Weirckx
-"Off<>zz"- Felipe Ignacio
-
 <tr><td>[14:40]</td><td>Performance session A - CePRA special session with Anne Veinberg and Greta Eacott<br />
 <ul>
 <li>Nick Collins and Anne Veinberg. Type a Personality</li>
