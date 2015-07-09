@@ -14,9 +14,8 @@ To contact the core organising team please email [livecodenet@gmail.com](mailto:
 * [Shelly Knotts](https://shellyknotts.wordpress.com/), Artistic programme committee chair (University of Durham)
 * [Joanne Armitage](http://music.leeds.ac.uk/people/joanne-armitage/), Workshop and special events chair (University of Leeds)
 
-## Co-producers
+## Evening event producer
 
-* [Franzi Florack](http://exploringfilmliteracy.blogspot.co.uk/)
 * [Ash Sagar](http://ashleysagar.com/)
 
 ## External advisors

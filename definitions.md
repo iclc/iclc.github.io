@@ -63,3 +63,17 @@ a form of self expression aided by real-time feedback from programming environme
 * life coding
 * Responding to an environment
 * Computer-mediated interaction with multi-sensory performance.
+* Programming as performance.
+* fluid development at the speed of thought
+* Writing code without the requirement to lip-sync.
+* A feedback loop involving the insertion of code into a running process, which then changes, and causes new responses, which in turn stimulates the insertion of further code and so on.
+* Pre-arranged coding on the spot during a performance
+* as something that will always outstrip my attempts to define it
+* thinking while diving
+* Personal toll and understanding with God
+* Hearing and seeing on projectors or tv shows live the words and instructions from God through pastor Chris our papa
+* The use of programming languages to compose and perform music, usually to an audience that can view the information on the screen
+* Run time is all the time.
+* Spontaneous and synergistic generation of digital control structures
+* The act and process of producing creative sounds or visuals by programming.
+* not live codding
