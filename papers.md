@@ -1,11 +1,21 @@
 ---
-title: Papers
+title: Proceedings
 category: papers
 layout: default
 ---
 
 The combined proceedings are [available
 online](/2015/iclc2015-proceedings.pdf), ISBN 9780853163404.
+
+~~~~
+@proceedings{ICLC2015,
+    title = {Proceedings of the First International Conference on Live Coding},
+    editor = {McLean, Alex and Magnusson, Thor and Ng, Kia and Knotts, Shelly and Armitage, Joanne},
+    isbn = {9780853163404},
+    publisher = {ICSRiM, University of Leeds},
+    pages = {300}
+}
+~~~~
 
 We have also archived individual papers as PDF files, with web
 versions for those prepared using our Markdown template:
