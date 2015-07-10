@@ -30,19 +30,6 @@ For now here are some local attractions.
 
 ## Eating and Drinking around Leeds
 
-Handy map:
+Click on the pins or [open the map on a new page](https://www.google.com/maps/d/u/0/edit?mid=zXlxXqKOpiYA.kPCn4rXkuTIE) to see them all.
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zXlxXqKOpiYA.kPCn4rXkuTIE" width="640" height="480"></iframe>
-
-Other suggestions..
-
-* Bundobust for great veggie Indian street food
-* North Bar for the best (but expensive) beer
-* Shears Yard for a posher dinner...
-* ... and Calls Landing opposite for delicious and cheap stews (and drinks) on the canal
-* Mr Foley's for a great cider selection and local beers
-* Nothern Monk (and the Cross Keys) to discover Holbeck and a local brewery
-* Lazy Lounge for Gin and Tonics
-* Friend of Ham for light dinner
-* The Alchemist for posh cocktails with a view of Leeds...
-* ... or the Belgrave for a more relaxed roof terrace and great pizza
