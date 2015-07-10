@@ -28,7 +28,13 @@ For now here are some local attractions.
 * [Yorkshire Sculpture Park](http://www.ysp.co.uk/)
 * [Peak District National Park](http://www.peakdistrict.gov.uk/)
 
-Eating and Drinking around Leeds
+## Eating and Drinking around Leeds
+
+Handy map:
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zXlxXqKOpiYA.kPCn4rXkuTIE" width="640" height="480"></iframe>
+
+Other suggestions..
 
 * Bundobust for great veggie Indian street food
 * North Bar for the best (but expensive) beer
