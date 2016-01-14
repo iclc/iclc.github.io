@@ -7,7 +7,7 @@ category: homepage
 * 13-15th July 2015, University of Leeds, UK
 * 12-15th October 2016, McMaster University, Ontario CA.
 
-The first International Conference on Live Coding took place in the University of Leeds, UK, funded by the Arts and Humanities Research Council (AHRC), and chaired by Alex McLean and Thor Magnusson.
+The first International Conference on Live Coding took place in the University of Leeds, UK, funded by the Arts and Humanities Research Council (AHRC), and chaired by Alex McLean and Thor Magnusson. [Papers](http://iclc.livecodenetwork.org/papers.html) are available open access, and [videos](https://www.youtube.com/channel/UCN-9RKW_izkIUMH0eQ60H2g/videos?view=0&shelf_id=0&sort=dd) of the talks and many of the performances are now online.
 
 We are pleased to announce that the second edition will take place from 12-15th October 2016 in McMaster University, Canada, chaired by David Ogborn. The full call for proposals will be announced soon, with deadline for all submissions on 29th April 2016.
 
