@@ -4,9 +4,12 @@ layout: default
 category: homepage
 ---
 
-13-15th July 2015, University of Leeds, UK
+* 13-15th July 2015, University of Leeds, UK
+* 12-15th October 2016, McMaster University, Ontario CA.
 
-With pleasure we announce the first International Conference on Live Coding, hosted by ICSRiM in the School of Music, University of Leeds, UK, and funded by the Arts and Humanities Research Council (AHRC) as part of the [Live Coding Research Network](http://livecodenetwork.org).
+The first International Conference on Live Coding took place in the University of Leeds, UK, funded by the Arts and Humanities Research Council (AHRC), and chaired by Alex McLean and Thor Magnusson.
+
+We are pleased to announce that the second edition will take place from 12-15th October 2016 in McMaster University, Canada, chaired by David Ogborn. The full call for proposals will be announced soon, with deadline for all submissions on 29th April 2016.
 
 Live coding is where changes to a running computer program are made by editing the underlying source code, with live feedback through the programming environment and/or via the program's output. Since 2003, a growing movement has explored live coding to create live music and visuals, and in recent years latent activity in software engineering has seen a burst of new research directions and tools in live programming language design. Wider still, teachers, choreographers, psychologists, ethnographers, technologists and many other disciplines have seen the potential that live coding has in throwing new light on research questions, problems, and ways of working.
 
@@ -18,4 +21,4 @@ This conference follows a long line of international events on liveness in compu
 ![Sam Aaron, Live Notation Unit, Arnolfini, July 2012](aaron.jpg)
 *Sam Aaron, Live Notation Unit, Arnolfini, July 2012. Photo: pixelwitch*
 
-We hope that this conference will act as a confluence for all this work, helping establish live coding as an interdisciplinary field, exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.
+This conference is a confluence for all this work, aiming to establish live coding as an interdisciplinary field, exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.
