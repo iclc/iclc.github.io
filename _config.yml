@@ -1,6 +1,6 @@
 name: ICLC 2015
 permalink: /:categories/:title.html
-baseurl: ""
+baseurl: "/2015"
 markdown: redcarpet
 redcarpet:
   smart: true

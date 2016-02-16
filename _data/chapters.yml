@@ -2,11 +2,11 @@
   title: Programme
   sections:
   - name: monday
-    title: Monday 13th July
+    title: Monday 13th July 2015
   - name: tuesday
-    title: Tuesday 14th July
+    title: Tuesday 14th July 2015
   - name: wednesday
-    title: Wednesday 15th July
+    title: Wednesday 15th July 2015
 - name: papers
   title: Papers
 - name: performances
@@ -28,8 +28,6 @@
       title: Opusmodus
 - name: location
   title: Location
-- name: registration
-  title: Registration
 - name: team
   title: Team
 - name: community
