@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Sharing Time and Code in a Browser-Based Live Coding Environment</title>
+  <script src="jquery-1.11.3.min.js"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="css/iclc.css" type="text/css" />
+</head>
+<body><img src="/images/ICLC-Website-Logo.png" /><br />Proceedings of the <a href="/papers.html">First International Conference on Live Coding</a><hr />
+<div id="header">
+<h1 class="title">Sharing Time and Code in a Browser-Based Live Coding Environment</h1>
+<table id="authorlist"><tr>
+<td>  Charlie Roberts<br />
+  University of California at Santa Barbara
+</td>
+<td>  Karl Yerkes<br />
+  University of California at Santa Barbara
+</td>
+<td>  Danny Bazo<br />
+  University of California at Santa Barbara
+</td>
+<td>  Matthew Wright<br />
+  University of California at Santa Barbara
+</td>
+<td>  JoAnn Kuchera-Morin<br />
+  University of California at Santa Barbara
+</td>
+</tr></table>
+</div>
+
+<h2 class="abstract">Abstract</h2>
+<div id="abstract">
+<p>We describe research extending the live coding environment Gibber with affordances for ensemble, networked, live coding performances. These include shared editing of code documents, remote code execution, an extensible chat system, shared state, and clock synchronization via proportional-integral control. We discuss these features using the framework provided by Lee and Essl in their 2014 paper <em>Models and Opportunities for Networked Live Coding</em>.</p>
+</div>
+
+<h1 id="introduction"><span class="header-section-number">1</span> Introduction</h1>
+<p>Collaborative editing of documents has been a staple of browser-based authoring tools for many years, with operational transforms <span class="citation">(Ellis and Gibbs 1989)</span> enabling writers to freely edit documents with other authors concurrently. Concurrent editing of shared documents is especially promising for ensemble live-coding performance, as it offers performers the ability to view and edit the work of their fellow performers, but it also creates a variety of challenges. Having implemented concurrent editing of code in two different environments for live coding performance, we share lessons learned and outline feedback mechanisms to help inform ensemble members when code is executed during performance and who executed it. In addition, we describe research that automatically synchronizes Gibber instances to a master rhythmic clock via PI control structures, even with the inherent jitter imposed on communications by the TCP-based WebSocket protocol.</p>
+<p>Our research enables a group of performers to sit in a room with their laptops, join a network, execute a single line of code, and immediately enter an ensemble performance where each performer's code is freely available for editing by every member and all clocks are synchronized. We call this system <em>Gabber</em>; it works inside of the browser-based live coding environment <em>Gibber</em> <span class="citation">(Roberts and Kuchera-Morin 2012)</span>.</p>
+<h1 id="strategies-for-networked-ensemble-performance"><span class="header-section-number">2</span> Strategies for Networked Ensemble Performance</h1>
+<p>Lee and Essl survey strategies enabling networked live coding performances in <span class="citation">(Lee and Essl 2014a)</span>. Gibber incorporates many of these strategies; this section builds off their work by describing Gibber’s networked ensemble affordances using their terminology.</p>
+<h2 id="time-sharing"><span class="header-section-number">2.1</span> Time Sharing</h2>
+<p>The first strategy discussed by Lee and Essl is <em>time sharing</em>, which concerns synchronizing events between performers. Although Gibber initially had no methods for sharing time, we have addressed this problem by phase-syncing all schedulers in ensemble performances as described in Section 3. Despite the research outlined here on temporal synchronization, we note that there is a rich terrain of performance possibilities that can be explored without synchronization; three authors on this paper have successfully given a number of such performances <span class="citation">(Roberts et al. 2014)</span>. <!--- Synchronization can also be achieved manually. For example, in one performance using Gibber by the Laptop Orchestra of Louisiana a single computer was connected to the audiovisual projection system and controlled by an ensemble member playing the role of ‘conductor’. Ensemble members sent code to the conductor through Gibber’s chat system; the conductor would subsequently execute the received code at musically salient points of the performance. Since all code was executed on the conductor’s computer, it was all synchronized. ---></p>
+<h2 id="code-sharing"><span class="header-section-number">2.2</span> Code Sharing</h2>
+<p>Gibber implements code sharing at a number of different levels. For asynchronous collaboration, Gibber provides a centralized database enabling users to save and retrieve the programs (aka giblets) they create. This database is searchable, and users can provide a variety of metadata about giblets to aid in the search process. Giblets can be easily iterated and a versioning system enables users to examine changes throughout a giblet’s development. Most importantly, every giblet can be accessed via a unique dedicated link, providing an easy mechanism for users to distribute their work to others.</p>
+<p>Gibber's initial synchronous affordances enable any registered Gibber user to start collaboratively editing a code document with a remote user (who can be located anywhere with internet access) by simply clicking their name in one of Gibber's chatrooms; this feature also enables users to remotely execute code across the network if permission is granted. In this instance, users can either find each other through happenstance by joining the same chat room, or users who know each other can agree to meet in a particular chat room to participate in a shared editing session together. We envision the second instance being particularly useful for classes taught in computer labs or via distance learning; a teacher can have all students meet her/him in a particular chat room and then assist students as needed via the collaborative editing features.</p>
+<p>Although performances consisting of a single, shared code editor initially seemed promising, in practice they proved problematic <span class="citation">(Wakefield et al. 2014)</span>, as program fragments frequently shifted in screen location during performances and disturbed the coding of performers. A better strategy is to provide a dedicated shared editor for every member of the performance; this strategy was adopted in the <em>Lich.js</em> live coding environment <span class="citation">(McKinney 2014)</span> with read-only code editors. In other words, with <span class="math"><em>N</em></span> players there are <span class="math"><em>N</em></span> collaboratively editable documents, along with a social convention that each document uniquely &quot;belongs to&quot; or is somehow primarily associated with a single person. Our implementation of Gabber provides this capability, enabling everyone to code in their own personal editor and also read and edit the code of other users as necessary.</p>
+<p>Although Gibber’s original code-sharing model allowed this, quadratic growth of managing code sharing permissions made it too cumbersome for <span class="math"><em>N</em> &gt; 2</span>. We subsequently implemented a much simpler method for beginning networked ensemble performances in Gibber. After performers agree upon a unique name for a Gabber session, they begin the session with a single line of code:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">Gabber</span>.<span class="fu">init</span>( <span class="st">&#39;uniqueSessionName’ )</span></code></pre>
+<p>Executing this either creates (if necessary) or joins (if already existing) a named networked live coding session on the worldwide Gibber server, and triggers the local browser to:</p>
+<ol style="list-style-type: decimal">
+<li><p>Open a Gibber chatroom named identically to the Gabber session that contains all the session participants.</p></li>
+<li><p>Create a new user interface column containing everybody else’s shared code editors (and updating dynamically as people join or leave).</p></li>
+<li><p>Share the code editor where the call to <code>Gabber.init</code> was executed with all members of the session.</p></li>
+</ol>
+<p>After these actions are carried out, the user interface of the Gibber environment will resemble Figure 1. Clicking on a tab in the shared editing column reveals the associated user’s code editor.</p>
+<div class="figure">
+<img src="images/gabber_screencap_2.png" alt="A screenshot of the Gabber interface in a networked performance with three performers: Peter, Paul and Mary. The screenshot shows what Paul is seeing. Note the two highlighted code fragments; the blue highlight indicates code that the performer (Peter) has sent over the network to be executed. The red highlight indicates code that another member (Paul) of the ensemble has remotely executed on Peter&#39;s machine." /><p class="caption"><em>A screenshot of the Gabber interface in a networked performance with three performers: Peter, Paul and Mary. The screenshot shows what Paul is seeing. Note the two highlighted code fragments; the blue highlight indicates code that the performer (Peter) has sent over the network to be executed. The red highlight indicates code that another member (Paul) of the ensemble has remotely executed on Peter's machine.</em></p>
+</div>
+<h2 id="state-sharing"><span class="header-section-number">2.3</span> State Sharing</h2>
+<p>There are two modes of state sharing in a Gabber session. The default <em>local</em> mode is designed for physically co-located performances: each user explicitly selects code (from anybody, as described in Section 2, although performers will commonly execute code they authored) and triggers execution on their own computer to generate a unique audio stream which renders only their personal actions. Users can also explicitly execute code on the machines of other ensemble members using specific keystroke macros. If the executed code is contained in personal editor of the executing performer then it is broadcast and run on all machines on the network. If instead the code is contained in the shared editor of another performer it is only executed on the associated performer's computer, enabling, for example, a user to lower the amplitude of a particular ugen they find to be too loud.</p>
+<p>In contrast, <em>remote</em> mode assumes performers are in physically disparate locations; this in turn means that each computer must locally render the entire performance. Executing any code in remote mode automatically also sends it across the network for execution by all ensemble members. Although prior research has streamed audio between ensemble members <span class="citation">(Wang et al. 2005)</span>, remotely executing code offers a much lower bandwidth footprint, but comes with potentially higher CPU usage for each computer and the inability to share stochastic or interactive components of a performance.</p>
+<p>In order to mitigate this, Gabber provides an easy mechanism for sharing arbitrary JavaScript data, drawing inspiration from the tuple approach adopted by <em>Impromptu</em> <span class="citation">(Sorensen 2010)</span> and the shared namespace used in <em>urMus</em> <span class="citation">(Lee and Essl 2014b)</span>. The main <code>Gabber</code> object contains a <code>shared</code> data object which is distributed among all members of a Gabber performance. Defining a shared variable consists of a single method call; after executing this method any changes to the variable are distributed to all ensemble members. An example of defining a shared variable and changing it is given below:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">Gabber</span>.<span class="ot">shared</span>.<span class="fu">add</span>( ‘pattern’, [ ‘c4’,’d4’,’g4’ ] ) <span class="co">// define &amp; distribute the initial ‘pattern’ variable</span>
+<span class="ot">Gabber</span>.<span class="ot">shared</span>.<span class="fu">pattern</span> = [ ‘d4’,’d#<span class="dv">4</span>’,’g#<span class="dv">4</span>’ ]       <span class="co">// change the pattern and distribute changes</span></code></pre>
+<p>Importantly, properties of the PI controller used to synchronize the clocks of Gibber instances (discussed in Section 4) are all properties of this shared object, enabling users to easily tune the controller and automatically propagate changes to all participants.</p>
+<h2 id="access-control-and-catching-them-red-handed"><span class="header-section-number">2.4</span> Access Control and Catching Them Red Handed</h2>
+<p>Although various strategies for limiting code execution on the machines of other ensemble members have been explored <span class="citation">(Lee and Essl 2014b)</span>, Gibber uses a simpler, fully permissive scheme similar to the <em>Republic</em> quark for SuperCollider <span class="citation">(Rohrhuber et al. 2007)</span>. Remote code execution, while presenting powerful opportunities for spatialized code execution, also has great potential for misuse and mischief. In performances by the CREATE Ensemble at UC Santa Barbara, one notorious user named <code>killbot</code> would routinely start algorithms running on remote machines that would gradually kill off running unit generators. As a result, designing killbot-proof algorithms became a game for the ensemble. A call to <code>Gabber.block( 'userNameToBlock' )</code> blocks remote execution by a particular performer, removing the challenge of blocking killbot but perhaps making for less stressful ensemble dynamics.</p>
+<p>Even assuming that ensemble members have each others' best interests at heart, there is a need for performers to understand when (and by whom) code is remotely executed on their computers, e.g., so performers understand sudden changes in the sounds they are generating. For this reason we have added a number of simple visual annotations to Gibber to indicate remote code execution in <em>local</em> mode, as shown in Figure 2. When code is executed and sent to all members of a performance, it is highlighted in red in all editors. When code is remotely executed on the computer of a single performer it is highlighted in blue. <!--- In both cases, the name of the user who remotely executed the code is added in a comment next to the code block. ---></p>
+<h2 id="communication-facilitation"><span class="header-section-number">2.5</span> Communication Facilitation</h2>
+<p>Each Gabber session has an associated chatroom for coordinating performance structure, discussing code, and banter. There are also programmatic hooks enabling users to detect when chat messages arrive and take action based on their content and/or author. These hooks have been used in summer camps for high school students to explore generative music-making in a program run by the Experimental Music and Digital Media program at Louisiana State University, and in classes at UC Santa Barbara.</p>
+<!---
+~~~~ {.javascript}
+mySynth = Synth()
+
+Chat.onMsg = function( user,msg ) {
+  // optionally ignore your own messages
+  if ( user !== 'your_name_here' ) {
+    // choose a random pitch using the msg length
+    var frequency = rndi( 100, 100 + msg.length * 40 )
+    mysynth.note( frequency )
+  }
+}
+~~~~
+--->
+
+<h1 id="centralized-and-decentralized-network-structures"><span class="header-section-number">3</span> Centralized and Decentralized Network Structures</h1>
+<p>Lee and Essl define a <em>centralized</em> performance network as one where clients submit code to a server for rendering. The first ensemble Gibber performance, performed in April of 2012, adopted this model <span class="citation">(Roberts and Kuchera-Morin 2012; Roberts et al. 2014)</span>: a single server computer drove both the audio and visual projection systems, with scrolling displays of all code sent from clients and of the performers’ chatroom. As Lee and Essl describe, this model automatically synchronizes time and state according to when the server executes each received code block. One additional benefit is the potential to preview code changes before submitting them to the server. Gibber’s different keystroke macros to execute code locally vs. remotely enable performers to audition code for execution on headphones before sending it to the server for projection through the house speakers. This style of previewing only works in performances where each ensemble member is submitting code that does not rely on the state of the master computer; accordingly, in our first Gibber performance each member had particular ugens that they were responsible for creating and manipulating. Gabber can easily mimic these early performances. Ensemble members can use headphones on their personal laptops while a single, central, computer is connected to the audiovisual projection systems. Users target their personal computer (to audition) or the central computer (to present to the audience) for code execution as described in Section 2.3</p>
+<p>Research presented in this paper extends Gibber to support the other two network models discussed by Lee and Essl. The <em>remote</em> mode of performance, described in Section 2.3, supports the <em>decentralized</em> model, where every machine runs all elements of the performance concurrently. The <em>local</em> mode of performance supports <em>decentralized programming with central timing</em>, enabling users to have personal control over state on their computers while providing temporal synchronization.</p>
+<p><!---
+The `Chat.broadcast()` method sends a message containing executable code to all chatroom participants; this code is only evaluated if users have defined a handler for the command included in the message. By providing the ability to easily extend Gibber’s chat system we hope to encourage other ensembles to customize their own networked performance systems.
+
+In the example below, any code received is appended to the code editor in the first column of Gibber’s user interface and executed; the command to send code is mapped to a keystroke.
+
+
+~~~~ {.javascript}
+// create handler for execute msg
+Chat.handlers.execute = function( msg ) {
+  Columns[0].editor.appendText( msg.text )
+  Gibber.run( msg.text )
+}
+
+// create command to send text across network for execution
+Chat.sendRemote = function( code ) {
+  var msg = {
+    cmd:’execute’, // must match the name of our handler
+    value: code
+  }
+  
+  // serialize code and broadcast
+  Chat.broadcast( JSON.stringify( msg ) )
+}
+
+// example call to create a drum beat on all ensemble computers.
+// this could also be mapped to a keystroke passing any highlighted code in an editor.
+Chat.sendRemote( 'drums = Drums( "x*ox*xo-" )' )
+~~~~
+
+By providing the ability to easily extend Gibber’s chat system we hope to encourage other ensembles to customize their own networked performance systems.
+
+---></p>
+<h1 id="network-time-synchronization"><span class="header-section-number">4</span> Network time synchronization</h1>
+<p>Many network time synchronization solutions exist (e.g., GPS, NTP, PTP), but most are implemented at the system level, requiring software installation and careful configuration of each machine in the network. Furthermore, these common solutions only maintain synchronization of system clocks (which Gibber does not use), not audio clocks (which Gibber does use). By implementing network time synchronization entirely within Gibber, we free users from the need to run external software to achieve synchronization. In effect, setting up a shared performance requires nothing more than an internet connection enabling users to connect to the worldwide Gibber server. The Gibber server is freely available on GitHub if users need to run their own local instance; this could be useful in a performance where an internet connection is unavailable or unreliable.</p>
+<h2 id="synchronization-with-a-hybrid-proportional-controller"><span class="header-section-number">4.1</span> Synchronization with a Hybrid Proportional Controller</h2>
+<p>The Gabber server broadcasts its time (in samples) to all Gibber instances (clients) on the network via TCP/WebSockets once per audio buffer (typically 1024 samples). Upon receiving the server’s time (now out-of-date because of network latency), each client subtracts its local time. Controller code within each client uses this difference (aka error) to decide how to correct the client’s local time such that the client’s timer converges to synchronize with that of the master.</p>
+<p>We use a hybrid controller <span class="citation">(Lygeros and Sastry 1999)</span> with two modes: coarse and fine. The coarse mode operates when the client is out of sync beyond a particular threshold, and immediately sets the client’s time to the most recently received master’s time, disregarding any discontinuities this causes. For example, the first time a Gibber instance receives the server’s time (when someone joins a performance already in progress), the coarse mode takes effect immediately, getting the new performer roughly in sync with the rest of the group. Audio dropouts caused by spikes in CPU usage in the client can also cause this type of correction.</p>
+<p>The fine mode, which operates when the error is below the threshold, uses a proportional controller to make small, smooth adjustments to the client’s time. The default proportional constant was chosen empirically following experimentation and observation but can be freely edited by users; as described in Section 2.3 such changes to the controller are immediately propagated to all members of a performance. The controller acts on a low-passed version of the error signal due to the relatively low rate at which the error calculation and control is performed (typically 44100/1024 Hz, once per audio block callback). Changing the length of the running mean involves a tradeoff between fast response (short mean length) and smooth operation but long convergence time (long mean length).</p>
+<p>Our nominal value of the threshold for switching control modes was also determined empirically through consideration of the minimum amount of time that a client would have to be out of sync for the coarse correction to be more aesthetically pleasing (approximately 100 ms for 120bpm 44100Hz sample rate group performance, varying according to musical features such as tempo). The threshold used for coarse correction is exposed to the user via Gabber’s shared data object.</p>
+<p>The code below is our controller implementation in JavaScript pseudocode:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript">K_p = .<span class="dv">05</span>
+coarseThreshold = .<span class="dv">1</span> * sampleRate
+runningMean = <span class="fu">RunningMean</span>( <span class="dv">50</span> )
+localPhase = <span class="dv">0</span>
+
+<span class="kw">function</span> <span class="fu">onMessageFromServer</span>( masterPhase ) {
+  error = masterPhase - localPhase
+  <span class="kw">if</span>( <span class="fu">abs</span>( error ) &gt; coarseThreshold ) {
+    <span class="co">// coarse controller</span>
+    localPhase = masterPhase
+    <span class="ot">Gibber</span>.<span class="fu">setPhase</span>( localPhase )
+    <span class="ot">runningMean</span>.<span class="fu">reset</span>()
+  }<span class="kw">else</span>{
+    <span class="co">// fine controller</span>
+    <span class="kw">var</span> phaseCorrection = K_p * <span class="fu">runningMean</span>( error )
+    localPhase += phaseCorrection
+    <span class="ot">Gibber</span>.<span class="fu">adjustPhaseBy</span>( phaseCorrection )
+  }
+}</code></pre>
+<p><span class="citation">(Brandt and Dannenberg 1999)</span> presents a method of &quot;Forward-synchronous&quot; audio clock synchronization using PI-control. Their implementation accounts for noisy error measurement using a second PI controller that takes advantage of local, low-jitter system clocks on clients. We use signal conditioning (moving average) instead. Their system makes control adjustments much less often than ours.</p>
+<p><span class="citation">(Ogborn 2012)</span> describes EspGrid, a protocol/system for sharing time and code, as well as audio and video among players in networked laptop orchestras. EspGrid uses Cristian's algorithm <span class="citation">(Cristian 1989)</span> to present a synchronized system clock to each user so that s/he might schedule the playing of shared beat structures. We implemented Cristian’s algorithm in Gibber, but found the results unsatisfying compared to our current solution. EspGrid has the benefit of using UDP while Gibber is limited to TCP/WebSockets (and the jitter associated with its error correction) for network messages. This could be one reason for our comparatively subpar results with Cristian’s algorithm.</p>
+<h2 id="results"><span class="header-section-number">4.2</span> Results</h2>
+<p>In tests, clock synchronization in Gibber has produced aesthetically satisfying results. Sound events feel like they happen “in beat” even on a WiFi network, with users experiencing quickly fixed audio glitches. However in unfavorable WiFi conditions (i.e., heavy traffic, many overlapping networks, interference) the controllers in Gibber instances may exhibit thrashing and/or non-convergent correction. By adjusting the proportional control constant, coarse mode threshold time, and error signal low-pass length, the system can be made more tolerant of various differing conditions, but as a general rule it is best to use a wired LAN in performances where wireless conditions are less than ideal.</p>
+<p>When a Gibber instance becomes “out of beat” for whatever reason (i.e. network problems, jitter, high CPU load, etc), it typically heals within the coarse mode threshold time. In our tests, measurements of the steady-state error for clients on a WiFi network had a mean of 13.5 samples with a standard deviation of 39.2 samples. For comparison, the measured network jitter was approximately 2ms (~88 samples).</p>
+<h1 id="conclusions-and-future-work"><span class="header-section-number">5</span> Conclusions and Future Work</h1>
+<p>We have described an extension to Gibber, named Gabber, that significantly eases setup of networked live coding performances. Joining a Gabber performance requires only a single line of code to be executed, and provides clock synchronization, code and state sharing, remote execution of code, and an extensible chat system for networked performances.</p>
+<p>In the future, we are particularly interested in additional visual indicators documenting the actions of individual performers to their fellow ensemble members. For example, given that a performer is responsible for creating and manipulating a particular set of ugens, a waveform and/or spectral visualization of their summed output could be displayed in the associated tab of their shared editor on remote machines. This would enable users to, at a glance, see the overall spectrum and amplitude contributions of each member, potentially giving them an idea of who is responsible for each instrument.</p>
+<p>Further future work will be informed by performances given using Gabber. Although the CREATE Ensemble has successfully performed a number of networked pieces using Gibber (as has the Laptop Orchestra of Louisiana) we have yet to perform with Gabber in its current incarnation. We are excited about the introduction of a shared clock for ensemble performances, and the resulting possibilities for networked algorave participation.</p>
+<h1 id="acknowledgments"><span class="header-section-number">6</span> Acknowledgments</h1>
+<p>We’d gratefully acknowledge the Robert W. Deutsch foundation, who made this research possible.</p>
+
+<div class="references">
+<p>Brandt, Eli, and Roger B Dannenberg. 1999. “Time in Distributed Real-Time Systems.”</p>
+<p>Cristian, Flaviu. 1989. “Probabilistic Clock Synchronization.” <em>Distributed Computing</em> 3 (3): 146–158.</p>
+<p>Ellis, Clarence A, and Simon J Gibbs. 1989. “Concurrency Control in Groupware Systems.” In <em>ACM SIGMOD Record</em>, 18:399–407. 2. ACM.</p>
+<p>Lee, Sang Won, and Georg Essl. 2014a. “Models and Opportunities for Networked Live Coding.” In <em>Proceedings of the Live Coding and Collaboration Symposium</em>.</p>
+<p>———. 2014b. “Communication, Control, and State Sharing in Networked Collaborative Live Coding.” In <em>Proceedings of the 2014 Conference on New Interfaces for Musical Expression</em>, 263–268.</p>
+<p>Lygeros, J., and S. Sastry. 1999. “Hybrid Systems: Modeling, Analysis and Control.” UCB/ERL M99/34. Electronic Research Laboratory, University of California, Berkeley, CA.</p>
+<p>McKinney, Chad. 2014. “Quick Live Coding Collaboration in the Web Browser.” In <em>Proceedings of the 2014 Conference on New Interfaces for Musical Expression</em>, 379–382.</p>
+<p>Ogborn, David. 2012. “EspGrid: a Protocol for Participatory Electronic Ensemble Performance.” In <em>Audio Engineering Society Convention 133</em>. Audio Engineering Society.</p>
+<p>Roberts, C., and J.A. Kuchera-Morin. 2012. “Gibber: Live Coding Audio in the Browser.” In <em>Proceedings of the International Computer Music Conference</em>.</p>
+<p>Roberts, Charles, Matthew Wright, JoAnn Kuchera-Morin, and Tobias H<span>ö</span>llerer. 2014. “Gibber: Abstractions for Creative Multimedia Programming.” In <em>Proceedings of the ACM International Conference on Multimedia</em>, 67–76. ACM.</p>
+<p>Rohrhuber, Julian, Alberto de Campo, Renate Wieser, Jan-Kees van Kampen, Echo Ho, and Hannes H<span>ö</span>lzl. 2007. “Purloined Letters and Distributed Persons.” In <em>Music in the Global Village Conference (Budapest)</em>.</p>
+<p>Sorensen, Andrew C. 2010. “A Distributed Memory for Networked Livecoding Performance.” In <em>Proceedings of the ICMC2010 International Computer Music Conference</em>, 530–533.</p>
+<p>Wakefield, Graham, Charles Roberts, Matthew Wright, Timothy Wood, and Karl Yerkes. 2014. “Collaborative Live-Coding Virtual Worlds with an Immersive Instrument.” In <em>Proceedings of the 2014 Conference on New Interfaces for Musical Expression</em>.</p>
+<p>Wang, Ge, Ananya Misra, Philip Davidson, and Perry R Cook. 2005. “CoAudicle: a Collaborative Audio Programming Space.” In <em>In Proceedings of the International Computer Music Conference</em>. Citeseer.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'libertine';
+  font-weight: normal;
+  src: url('../fonts/libertine.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/libertine.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/libertine.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/libertine.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'libertine';
+  font-weight: bold;
+  src: url('../fonts/libertine.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/libertine.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/LinLibertine_RB.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/libertine.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+body {
+  padding: 3em;
+  max-width: 60em;
+  font-family: libertine, Fallback, serif;
+  counter-reset: figures;
+}
+
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    margin: 1em;
+}
+
+.figure {
+    border: 0.15em solid #ddd;
+    float: right;
+    margin: 0 0 .5em 1em;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+}
+
+.figure .caption {
+    counter-increment: figures;
+    background-color: #fff;
+    display: block;
+    border-width: 0.15em 0 0 0;
+    border-style: solid;
+    border-color: #ddd;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.figure .caption:before {
+	content: 'Figure ' counter(figures) ': ';
+}
+
+.figure img {
+    margin: 0 auto;
+    display: block;
+    max-width: 30em;
+}
+
+

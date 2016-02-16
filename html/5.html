@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Live Coding and Machine Listening</title>
+  <script src="jquery-1.11.3.min.js"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="css/iclc.css" type="text/css" />
+</head>
+<body><img src="/images/ICLC-Website-Logo.png" /><br />Proceedings of the <a href="/papers.html">First International Conference on Live Coding</a><hr />
+<div id="header">
+<h1 class="title">Live Coding and Machine Listening</h1>
+<table id="authorlist"><tr>
+<td>  Nick Collins<br />
+  Durham University, Department of Music
+</td>
+</tr></table>
+</div>
+
+<h2 class="abstract">Abstract</h2>
+<div id="abstract">
+Live coding control of machine listening processes, or more radically, machine listening control of live coding, provides an exciting area of crossover between two research frontiers in computer music. This article surveys the state of the art, and reports a number of experimental projects that point to potentially productive further directions.
+</div>
+
+<h1 id="introduction"><span class="header-section-number">1</span> Introduction</h1>
+<!---
+your comment goes here
+and here
+[nick.collins@durham.ac.uk](mailto:nick.collins@durham.ac.uk)
+
+
+~~~~ {.bash}
+pandoc --template=pandoc/iclc.html --filter pandoc-citeproc -N livecodingandmachinelistening.txt -o livecodingandmachinelistening.html
+~~~~
+
+To produce a PDF document, make sure you have LaTeX installed (see
+above), and run the following:
+
+~~~~ {.bash}
+pandoc --template=pandoc/iclc.latex --filter pandoc-citeproc -N livecodingandmachinelistening.txt -o livecodingandmachinelistening.pdf
+~~~~
+
+pandoc --latex-engine=xelatex --template=pandoc/iclc.latex --filter pandoc-citeproc -N livecodingandmachinelistening.txt -o livecodingandmachinelistening.pdf
+
+For a higher quality output, add the option `--latex-engine=xelatex`
+to the above. You will need the [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) and [Linux Libertine](http://www.linuxlibertine.org/index.php?id=91&L=1) opentype fonts installed.
+
+-->
+
+<p>Live coding has established itself as a viable and productive method of computer music performance and prototyping, embracing the immedicacy of modern computer programming languages <span class="citation">(Collins et al. 2003; Ward et al. 2004; Blackwell and Collins 2005; Brown and Sorensen 2009; Collins 2011; McLean 2011; Magnusson 2014)</span>. New avenues in interfacing for programming are being embraced, including tangible computing of unit generator graphs and musical sequences (see for example Mónica Rikić's <a href="http://www.monicarikic.com/buildacode-tangible-sound-programming-tool/"><em>buildacode</em></a>), natural language processing (e.g., Craig Latta's Quoth) and computer vision (e.g., Nik Hanselmann’s <em>bodyfuck</em> (2009) <a href="http://nikhanselmann.com/?/projects/bodyfuck/">brainfuck interface</a>). Performance ventures range from the current vogue for algoraves, showcasing generative and interactive creation of electronic dance music <span class="citation">(Collins and McLean 2014)</span> to contemporary dance and live arts.</p>
+<p>Complementing existing work, this paper explores the interaction of live coding with machine listening, from listening functionality within existing performance systems towards the use of live audio analysis as programming interface itself. Although there are some existing projects which have utilised machine listening components, this area of computer music has received less attention in live coding, perhaps because of its technical challenges. Machine listening is not a solved problem, and whilst such elements as realtime monophonic pitch tracking, percussive onset detection and timbral feature detection are by now a staple part of computer music environments, more involved polyphonic pitch tracking, auditory scene analysis and live music information retrieval inspired work remains at the cutting edge <span class="citation">(Casey et al. 2008; Klapuri and Davy 2006)</span>. It is implausible to claim any parity of machine algorithms to human listening at the present time, though many interesting artificial listening resources have been developed.</p>
+<p>The paper proceeds after some further review of the confluence of live coding and machine listening within live code performance, to experiments of the author pointing to further possibilities for interaction.</p>
+<h1 id="machine-listening-as-resource-within-a-live-coding-performance-system"><span class="header-section-number">2</span> Machine listening as resource within a live coding performance system</h1>
+<p>Musical live coding performance systems have predominantly explored deterministic and probabilistic sequencing of samples and synthesized sound events, driven from an interpreted or jit-compiled textual or graphical computer music language. Audio input, and particularly live analysis of audio input, is much rarer than direct synthesis.</p>
+<p>Nonetheless, the work of Dan Stowell on beat boxing analysis <span class="citation">(Stowell 2010)</span> and associated <a href="http://www.mcld.co.uk/shows/">MCLD</a> live coding and beat boxing performances is a good example of the co-occurence of machine listening and live coding <span class="citation">(Stowell and McLean 2013)</span>. Matthew Yee-King has also embraced dynamic live code control of listening systems, notably in improvised collaboration with Finn Peters <span class="citation">(Yee-King 2011)</span> with Markovian and evolutionary systems reconfigured on-the-fly to track a saxophonist-flutist. The feedback system between live coder and dancer set up by <span class="citation">McLean and Sicchio (2014)</span> utilises both computer vision (tracking the dancer) and machine listening (onset detection on the audio output), perturbing graphical placement of code elements within McLean's wonderfully idiosyncatic Texture language to affect choreographic instruction and audio synthesis code respectively. Such feedback loops of audio and video analysis were anticipated by the now defunct audiovisual collaboration klipp av, who live coded and live remapped audiovisual algorithms simultaneously in SuperCollider and Max/MSP <span class="citation">(Collins and Olofsson 2006)</span>.</p>
+<!--- including a best session of 2009 for [BBC Radio 3](http://www.bbc.co.uk/programmes/b00pdwgn); -->
+
+
+
+<h2 id="machine-listening-as-controller-alongside-live-coding"><span class="header-section-number">2.1</span> Machine listening as controller alongside live coding</h2>
+<p>Machine listening unit generators are available to the live coder, and highly beneficial in creating more involved synthesis patches, as well as feature adaptive processing of live audio input. Examples are provided here within the SuperCollider audio programming language, much used for live coding and well suited to live analysis and synthesis. For instance, an abstract feedback loop can easily be constructed where an audio construct's output is analyzed, the analysis result used to feedback into control of the audio, and parameters of this graph (or the complete graph) made available for live coding manipulation:</p>
+<pre class="sourceCode c"><code class="sourceCode c">(
+a = {arg feedbackamount = <span class="fl">0.5</span>;
+
+    var feedback, sound, sound2, freq;
+
+    feedback = LocalIn.kr(<span class="dv">2</span>);
+
+    <span class="co">//source sound, feedback into first input (frequency)</span>
+    sound = Pulse.ar( 
+                ((<span class="fl">1.0</span>-feedbackamount)* (LFNoise0.ar(<span class="dv">2</span>).range(<span class="dv">10</span>,<span class="dv">1000</span>))) 
+                    + 
+                (feedbackamount*feedback[<span class="dv">0</span>]),
+                feedback[<span class="dv">1</span>] 
+            );
+
+    freq = Pitch.kr(sound)[<span class="dv">0</span>]; <span class="co">//pitch detection analysis of output sound frequency</span>
+
+    LocalOut.kr([freq,(freq.cpsmidi%<span class="dv">12</span>)/<span class="fl">12.0</span>]); <span class="co">//send feedback around the loop</span>
+
+    sound
+
+}.play
+)
+
+a.set(\feedbackamount, <span class="fl">0.98</span>) <span class="co">//change later</span></code></pre>
+<!---  (or the whole graph substitutable) -->
+
+<p>Triggering sound processes from analysis of a driving sound process, through the use of onset detection, provides a typical use case (derived rhythms can be productive, for instance via onset detection interpretation of a source sound). The very typing of a live coder can spawn new events, or combinations of voice and typing drive the musical flow:</p>
+<pre class="sourceCode c"><code class="sourceCode c">(
+a = {arg threshold = <span class="fl">0.5</span>, inputstrength = <span class="fl">0.1</span>;
+
+    var audioinput, onsets, sound;
+
+    audioinput = SoundIn.ar;
+
+    <span class="co">//run onset detector on audioinput via FFT analysis</span>
+    onsets = Onsets.kr(FFT(LocalBuf(<span class="dv">512</span>),audioinput),threshold);
+
+    <span class="co">//nonlinear oscillator is retriggered by percussive onsets</span>
+    sound = WeaklyNonlinear2.ar(inputstrength*audioinput,reset:onsets, freq: Pitch.kr(audioinput)[<span class="dv">0</span>] );
+
+    sound
+
+}.play
+)
+
+a.set(\threshold, <span class="fl">0.1</span>, \inputstrength,<span class="fl">0.01</span>)
+
+a.set(\threshold, <span class="fl">0.8</span>, \inputstrength,<span class="fl">0.7</span>)</code></pre>
+<p>It is possible to experiment with a much larger number of interesting processes than onset and pitch detection, whether timbral descriptors, or more elaborate sound analysis and resynthesis such as utilising a source separation algorithm to extract the tonal and percussive parts of a signal.</p>
+<!---  pubcode piece? -->
+
+<h2 id="the-algoravethmic-remix-system"><span class="header-section-number">2.2</span> The Algoravethmic remix system</h2>
+<div class="figure">
+<img src="images/algoravethmic.jpg" alt="Algoravethmic session in progress with live coding mixer and onset detection GUI" /><p class="caption"><em>Algoravethmic session in progress with live coding mixer and onset detection GUI</em></p>
+</div>
+<p>An example of a more involved relationship between machine listening algorithms and live coding control is the <em>Algoravethmic</em> system (for SuperCollider), which empowers live remixing of an existing source work. The audio from the piece to be remixed is tracked by a variety of feature detectors, including beat tracking, onset detection, timbral and pitch content, and the results fed to control busses for re-use in feature-led synthesis and sound processing . The live coder works on patches exploiting the source-driven data to produce their remix. The live remix process is carried out within a live coding mixer, so that many different coded layers can be interwoven, including processing of the original source audio according to feature-adaptive effects and re-synthesis driven by feature data <span class="citation">(Verfaille and Arfib 2001; Park, Li, and Biguenet 2008)</span>.</p>
+<p>Line by line commands from a typical session might look like:</p>
+<pre class="sourceCode c"><code class="sourceCode c">a = Algoravethmic();
+
+(
+<span class="co">//fluctuate with beat tracking</span>
+l.addnf(\origbasssweep,{
+    BLowPass.ar(
+        DelayN.ar(InFeedback.ar(a.busnum,<span class="dv">1</span>),<span class="fl">0.02</span>,<span class="fl">0.02</span>)*<span class="dv">5</span>,
+        SinOsc.ar(a.beatkr(<span class="dv">3</span>)/<span class="dv">4</span>).range(<span class="dv">200</span>,<span class="dv">3000</span>)
+        )
+    })
+)
+
+<span class="co">//l contains the live coding mixer system, to be sent new sounds on the fly</span>
+
+<span class="co">//drum triggering</span>
+(
+l.addnf(\kickhit,{
+    PlayBuf.ar(<span class="dv">1</span>,~dubstepkicks[<span class="dv">1</span>],trigger:a.onsetkr(<span class="dv">4</span>))*<span class="dv">3</span>
+})
+)
+
+l.addnf(\wobblyacid,{Blip.ar(a.pitchkr(<span class="dv">0</span>),a.timbrekr(<span class="dv">3</span>).range(<span class="dv">1</span>,<span class="dv">100</span>));})
+
+<span class="co">//original track, delayed to help sync after machine listening delay</span>
+l.addnf(\original,{DelayN.ar(InFeedback.ar(a.busnum,<span class="dv">1</span>),<span class="fl">0.02</span>,<span class="fl">0.02</span>)*<span class="dv">5</span>})</code></pre>
+<p>where the beatkr, pitchkr, onsetkr and timbrekr are accessing different feature detector outputs on particular control busses.</p>
+<p>Figure 1 illustrates the live coding mixer and a GUI for the bank of onset detectors (with threshold sensitivity controls) used for triggering new percussive events from the track to be remixed. Two of these detectors are adaptations of code from <span class="citation">(Collins 2005; Goto 2001)</span> specifically for kick and snare detection, implemented in custom SuperCollider UGens. <!--- figure from session?  \centerline{\includegraphics[width=7in]{images/algoravethmic.jpg}}
+(images/algoravethmic.jpg) <img src="images/algoravethmic.jpg" width="200" height="200" />--></p>
+<h1 id="machine-listening-as-programming-interface"><span class="header-section-number">3</span> Machine listening as programming interface</h1>
+<p>The aforementioned graphical language perturbations of <span class="citation">McLean and Sicchio (2014)</span> provide a rare precedent for machine listening actually influencing the code interface itself. In this section two examples consider machine listening control of the instruction state list and memory contents of a running sound synthesis program. This should be understood as the radical adoption of machine listening as the basis for writing computer programs. In the two examples here, the programs so generated act within novel small scale programming languages specialised to musical output, but it is possible to envisage a machine listening frontend as the entry point to a more general purpose programming language.</p>
+<!--- BEER piano code precedent? -->
+<!--- any live code performance from Karlsruhe festival? -->
+
+<h2 id="toplapapp-variations-in-the-web-browser"><span class="header-section-number">3.1</span> TOPLAPapp variations in the web browser</h2>
+<p><em>TOPLAPapp</em> is a promotional app for the TOPLAP organisation by this author, originally released as a free and open source iPhone app, and now <a href="http://composerprogrammer.com/livecode/toplapappjs/toplapapp.html">available</a> within the web browser in a javascript implementation thanks to Web Audio API. Javascript has enabled some immediate experiments extending the core TOPLAPapp instruction synthesis engine, for example, including a convolution reverb.</p>
+<p>A version of <em>TOPLAPapp</em> with machine listening control has been devised (Figure 2). Machine listening with Web Audio API is a little more involved due to permissions requirements, but still feasible give or take a user having to allow a served web page access to their microphone. Indeed, the core code calls come down to:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">navigator</span>.<span class="fu">getUserMedia</span>({<span class="dt">audio</span>:<span class="kw">true</span>}, initAudio, <span class="kw">function</span>(e) {
+            <span class="fu">alert</span>(<span class="st">&#39;Error getting audio&#39;</span>);
+            <span class="ot">console</span>.<span class="fu">log</span>(e);
+        });
+
+<span class="kw">function</span> <span class="fu">initAudio</span>(inputstream) {
+
+audiocontext = <span class="kw">new</span> <span class="fu">AudioContext</span>();
+
+audioinput = <span class="ot">audiocontext</span>.<span class="fu">createMediaStreamSource</span>(inputstream);
+                               
+node = <span class="ot">audiocontext</span>.<span class="fu">createScriptProcessor</span>(<span class="dv">1024</span>, <span class="dv">1</span>, <span class="dv">1</span>); <span class="co">//mono in, mono out</span>
+      
+<span class="ot">audioinput</span>.<span class="fu">connect</span>(node);
+
+<span class="ot">node</span>.<span class="fu">onaudioprocess</span> = processAudio; <span class="co">//sample by sample processing function</span>
+
+}</code></pre>
+<div class="figure">
+<img src="images/TOPLAPappML.jpg" alt="TOPLAPapp with machine listening front end" /><p class="caption"><em>TOPLAPapp with machine listening front end</em></p>
+</div>
+<p>As a prelude to live spectral feature extraction, Nick Jones' <a href="https://github.com/dntj/jsfft">fft.js</a> code was co-opted; spectral centroid and 60% spectral energy percentile were then straight forward to calculate. The features were accumulated over multiple (non-overlapping) FFT frames to form feature means, where the duration between means is available as a user set parameter. For each new mean, one state in <em>TOPLAPapp</em>'s limited instruction set is updated, and one associated state value, according to:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">stategrid</span>.<span class="fu">states</span>[statepos] = <span class="ot">Math</span>.<span class="fu">floor</span>(<span class="fl">5.9999</span>*spectralcentroidmean);
+
+<span class="ot">stategrid</span>.<span class="fu">setSlider2</span>(statepos,spectralpercentilemean);
+
+statepos = (statepos +<span class="dv">1</span> )%(<span class="ot">stategrid</span>.<span class="fu">numunits</span>);</code></pre>
+<p>Aside from vocal control of the state engine mediated via human ears, the system can also be sent into direct feedback, for example, by the simple expedient of having the built-in mic in a laptop allow feedback from built-in speakers, or via a virtual or physical patch cable. The reader can try out the process <a href="http://composerprogrammer.com/livecode/toplapappjs/toplapappwithextrasML.html">here</a> with a recent compatible browser such as Chrome, and is encouraged to make a variety of brightnesses/frequency ranges of noise to reach different states and levels. The app can find itself restricted to only one state if left unstimulated by input, but also has allowed access to novel sonic outputs that the previous drag and drop state construction interface was too slow and deliberative to quickly explore, and the random function didn't tend to find.</p>
+<!---via internal mic possible to have direct loop:
+feedback of code instructions -> synthesis engine -> audio -> machine listening -> code symbols and memory values
+else mediated via human ears
+
+running locally for demoes without internet connection 
+navigate to directory 
+python -m SimpleHTTPServer
+http://127.0.0.1:8000/toplapappwithextrasML.html
+
+-->
+
+
+<h2 id="timbral-instructions"><span class="header-section-number">3.2</span> Timbral instructions</h2>
+<p>A further experiment in machine listening control of a program was conducted in SuperCollider, with instruction states again determined from extracted features (in this case, perceptual loudness and spectral centroid). As the program stepped through the instruction list, it in turn influenced a memory array of floating point numbers, which are themselves used as source data for a monophonic pitched sequence (Figure 3).</p>
+<div class="figure">
+<img src="images/lcml.jpg" alt="Machine listening to instruction state engine to memory sequencer demonstration screenshot" /><p class="caption"><em>Machine listening to instruction state engine to memory sequencer demonstration screenshot</em></p>
+</div>
+<p>Each instruction slot has a corresponding state value (from 0.0 to 1.0 for easy remapping) to influence the result of the instruction applied to the memory. The (cyclic) instruction list is stepped through (clocked) at the same rate as the memory block (a slider lets a user set the clock rate), though their relative positions can diverge. The list of instructions in pseudocode are:</p>
+<ol start="0" style="list-style-type: decimal">
+<li><p>NULL : do nothing</p></li>
+<li><p>JUMP : move in memory block to a position given proportionally by the state value</p></li>
+<li><p>RJUMP : move in memory to a new random position</p></li>
+<li><p>LOOP : loop on current memory location 2 to 8 times</p></li>
+<li><p>SET : set memory contents at current location to state value</p></li>
+<li><p>COPY : store state value for later use</p></li>
+<li><p>PASTE : set memory contents at current location to last stored value</p></li>
+<li><p>RAND : randomise memory contents at current location</p></li>
+</ol>
+<!---  8) CONDITIONAL? -->
+
+
+<p>The abstract relationship of the musical result to the machine listening is that from the contents of the memory block to the limited instruction set state engine which modulates it. Although there is little sense of reproducible controllability, there is a certain virtue to the unpredictable outputs easily obtained through audio input.</p>
+<h2 id="further-possibilities"><span class="header-section-number">3.3</span> Further possibilities</h2>
+<p>The examples elucidated above are by no means exhaustive and are only meant to promote some of the potential interactions of machine listening and live coding.</p>
+<p>A possibility not yet seriously exploited in live coding practice is the use of speech recognition to drive a live coding language. Hacking something together is perfectly possible using current generation tools; indeed, the dictation and speech system preference within recent versions of OS X allows access to speech recognition within any text environment, including SuperCollider's IDE.</p>
+<!---speech recognition built into OS X? then to OSC? to control ixi lang, or TOPLAPapp or... -->
+
+<p>Live coding the fundamentals of a machine listening algorithm itself (aside from basic control parameters like a threshold or window size) remains a further tantilizing possibility. Aside from work to construct machine listening algorithms out of existing UGens (for instance, a SuperCollider SynthDef for a custom onset detector), just-in-time compilation facilities such as those in Extempore, Max/MSP's Gen, chuck's Chugins, or the ClangUGen for SuperCollider, provide routes to the live coding of sample by sample analysis DSP.</p>
+<!---not just changing a parameter of existing algorithm but working more from scratch -->
+
+<p>Are there worthwhile musical purposes, or would effort in coding of such live analysis DSP just be time wasted that could have been spent on details of the audio output? Well, changing the very nature of the computational listening experience underlying a current musical texture would seem an interesting avenue. Live coding offers unconventional takes on computer music performance, and for performance action to engage with an audio input tracking process as a dependent component within a signal chain has potential in this light.</p>
+<p>A further option, feasible within the research domain, is an automated machine listening critic. Machine listening and learning over larger audio databases empowers this capability, and a specific corpus of live coding performances seems a feasible target. Deployment in live coding performance remains speculative at present; performance systems with live critics trained from MIR processes over larger audio databases have already been built by this author, though the on stage re-coding of such a critic is a challenge to come.</p>
+<p>More unfettered speculation might ponder the future aesthetics of live coded machine listening work. Value may well be placed on individualised languages, perhaps through speech recognition or other sound taxonomic classification enabling coding to head to the territory of a unique constructed language between a given human and machine symbiont. A partnership of human and computer may build such a language as they grow up together; the virtuosity acheivable through such an interface, given substantial investment of learning, would be considerable, though it may only ever be intended for private use. For the form of a performance, the blank slate starting point frequently used in live coding extends straight forwardly from the blank page awaiting text to silence awaiting sound. Continuing the analogy, the full slate performance beginning from pre-composed code can be paralleled by an existing sound, analyzed via machine listening, the sound's features initialising the live code system which must be performed within; this may provide an alternative method of handover from performance to performance or performer to performer. Existing feedback systems incorporating audio, visual and textual material can themselves be extended through additional pathways, allowing generalised functions of multiple audiovisual and textual sources called via iteration or more complicated recursion. This article has said less concerning the multi-performer situation of multiple channels of machine listening information passed around a network, but interesting complexity lies therein. Whilst human listening remains the essential research challenge and touch point, there is also potential for aesthetics of novel machine listening systems divergent from the human ear; ultrasound and infrasound live coding, sensor data/live coding conglomerates, and the future artificially intelligent live coders with alternative auditory capabilities may provide some inspiration to researchers and artists, even if such systems will confound human audiences in further directions!</p>
+<!---Technically feasible, if challenging to build--->
+
+<h1 id="conclusion"><span class="header-section-number">4</span> Conclusion</h1>
+<p>This paper has covered the conflation of live coding and machine listening, exploring different levels of re-configuration for such live analysis processes. There are a number of precedents, and this paper has also explored a number of projects including example code meant to illustrate the potential.</p>
+<div class="references">
+<h1><span class="header-section-number">4</span> References</h1>
+<p>Blackwell, Alan, and Nick Collins. 2005. “The Programming Language as a Musical Instrument.” <em>Proceedings of PPIG05 (Psychology of Programming Interest Group)</em>.</p>
+<p>Brown, Andrew R, and Andrew Sorensen. 2009. “Interacting with Generative Music Through Live Coding.” <em>Contemporary Music Review</em> 28 (1): 17–29.</p>
+<p>Casey, Michael, Remco Veltkamp, Masataka Goto, Marc Leman, Christophe Rhodes, and Malcolm Slaney. 2008. “Content-Based Music Information Retrieval: Current Directions and Future Challenges.” <em>Proceedings of the IEEE</em> 96 (4) (April): 668–696.</p>
+<p>Collins, Nick. 2005. “DrumTrack: Beat Induction from an Acoustic Drum Kit with Synchronised Scheduling.” <em>Icmc</em>. Barcelona.</p>
+<p>———. 2011. “Live Coding of Consequence.” <em>Leonardo</em> 44 (3): 207–211.</p>
+<p>Collins, Nick, and Alex McLean. 2014. “Algorave: Live Performance of Algorithmic Electronic Dance Music.” <em>Proceedings of New Interfaces for Musical Expression</em>. London.</p>
+<p>Collins, Nick, and Fredrik Olofsson. 2006. “Klipp Av: Live Algorithmic Splicing and Audiovisual Event Capture.” <em>Computer Music Journal</em> 30 (2): 8–18.</p>
+<p>Collins, Nick, Alex McLean, Julian Rohrhuber, and Adrian Ward. 2003. “Live Coding Techniques for Laptop Performance.” <em>Organised Sound</em> 8 (3): 321–29.</p>
+<p>Goto, Masataka. 2001. “An Audio-Based Real-Time Beat Tracking System for Music with or Without Drum-Sounds.” <em>Journal of New Music Research</em> 30 (2): 159–71.</p>
+<p>Klapuri, Anssi, and Manuel Davy, ed. 2006. <em>Signal Processing Methods for Music Transcription</em>. New York, NY: Springer.</p>
+<p>Magnusson, Thor. 2014. “Herding Cats: Observing Live Coding in the Wild.” <em>Computer Music Journal</em> 38 (1): 8–16.</p>
+<p>McLean, Alex. 2011. “Artist-Programmers and Programming Languages for the Arts.” PhD thesis, Department of Computing, Goldsmiths, University of London.</p>
+<p>McLean, Alex, and Kate Sicchio. 2014. “Sound Choreography&lt;&gt; Body Code.” In <em>Proceedings of the 2nd Conference on Computation, Communcation, Aesthetics and X (XCoAx)</em>, 355–362.</p>
+<p>Park, Tae Hong, Zhiye Li, and Jonathan Biguenet. 2008. “Not Just More FMS: Taking It to the Next Level.” In <em>Proceedings of the International Computer Music Conference</em>. Belfast.</p>
+<p>Stowell, Dan. 2010. “Making Music Through Real-Time Voice Timbre Analysis: Machine Learning and Timbral Control.” PhD thesis, School of Electronic Engineering; Computer Science, Queen Mary University of London. <a href="http://www.mcld.co.uk/thesis/">http://www.mcld.co.uk/thesis/</a>.</p>
+<p>Stowell, Dan, and Alex McLean. 2013. “Live Music-Making: a Rich Open Task Requires a Rich Open Interface.” In <em>Music and Human-Computer Interaction</em>, 139–152. Springer.</p>
+<p>Verfaille, Vincent, and Daniel Arfib. 2001. “A-DAFx: Adaptive Digital Audio Effects.” In <em>International Conference on Digital Audio Effects (DAFx)</em>. Limerick.</p>
+<p>Ward, Adrian, Julian Rohrhuber, Fredrik Olofsson, Alex McLean, Dave Griffiths, Nick Collins, and Amy Alexander. 2004. “Live Algorithm Programming and a Temporary Organisation for Its Promotion.” In <em>Proceedings of the README Software Art Conference</em>, 243–261.</p>
+<p>Yee-King, Matthew John. 2011. “Automatic Sound Synthesizer Programming: Techniques and Applications.” PhD thesis, University of Sussex.</p>
+</div>
+</body>
+</html>
