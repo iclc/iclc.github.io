@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="{{site.baseurl}}/"><img src="../images/ICLC-Website-Logo.png" alt="ICLC 2015"></a>
+                <a class="navbar-brand" href="/"><img src="../images/ICLC-Website-Logo.png" alt="ICLC 2015"></a>
             </div>
             <div class="navbar-collapse collapse" id="iclc-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -36,7 +36,7 @@
     {% assign grps = site[page.category] | group_by: "category" %} {% assign chapter = site.data.chapters | where: "name", page.category | first %} {% assign sections = chapter.sections %} {% if page.category == "homepage" %}
 
     <div class="iclc-hero">
-                    <h1><img src="../images/header-800.jpg" alt="International Conference on Live Coding 2015" /></h1>
+                    <h1><img src="../images/header-800.jpg" alt="First International Conference on Live Coding, 2015" /></h1>
     </div>
     <div class="jumbotron iclc-teaser">
         <div class="container">
