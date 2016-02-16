@@ -1,11 +1,13 @@
 ---
-title: Proceedings
+title: 2015 Proceedings
 category: papers
 layout: default
 ---
 
-The combined proceedings are [available
-online](/2015/iclc2015-proceedings.pdf), ISBN 9780853163404.
+The combined proceedings for 2015 are
+[available online](/2015/iclc2015-proceedings.pdf),
+ISBN 9780853163404. You can also find videos of the paper
+and keynote presentations on <a href="https://www.youtube.com/channel/UCN-9RKW_izkIUMH0eQ60H2g/videos">our youtube account</a>.
 
 ~~~~
 @proceedings{ICLC2015,

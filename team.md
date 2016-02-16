@@ -1,10 +1,12 @@
 ---
-title: Team
+title: 2015 Team
 category: team
 layout: default
 ---
 
-To contact the core organising team please email [livecodenet@gmail.com](mailto:livecodenet@gmail.com)
+The first ICLC was made possible by the fine people listed below, as
+well as many other volunteers and all the people who joined the
+conference and made it a great success! Thanks to all.
 
 ## Core organising committee
 

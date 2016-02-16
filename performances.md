@@ -1,5 +1,5 @@
 ---
-title: Performances
+title: 2015 Performances
 category: performances
 layout: default
 ---
@@ -9,6 +9,10 @@ img {
  margin: 0 1em 1em 0;
 }
 </style>
+
+You can find videos of the many of the 2015 performances on <a
+href="https://www.youtube.com/channel/UCN-9RKW_izkIUMH0eQ60H2g/videos">our
+youtube account</a>.
 
 ## Concert A, Monday
 

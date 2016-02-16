@@ -1,11 +1,10 @@
 ---
-title: International Conference on Live Coding - Home
+title: First International Conference on Live Coding - Home
 layout: default
 category: homepage
 ---
 
-* 13-15th July 2015, University of Leeds, UK
-* 12-15th October 2016, McMaster University, Ontario CA.
+13-15th July 2015, University of Leeds, UK
 
 The first International Conference on Live Coding took place in the University of Leeds, UK, funded by the Arts and Humanities Research Council (AHRC), and chaired by Alex McLean, Thor Magnusson, Kia Ng, Shelly Knotts and Joanne Armitage. [Papers](http://iclc.livecodenetwork.org/papers.html) are available open access, and [videos](https://www.youtube.com/channel/UCN-9RKW_izkIUMH0eQ60H2g/videos?view=0&shelf_id=0&sort=dd) of the talks and many of the performances are now online.
 
