@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Your paper title goes here</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="css/iclc.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Your paper title goes here</h1>
+<ul id="authorlist">
+<li>true</li>
+<li>true</li>
+</ul>
+</div>
+
+<h2 class="abstract">Abstract</h2>
+<div id="abstract">
+<p>Replace this text with a 100-250 word abstract. You'll find it in the 'metadata block' at the top of your markdown document), be sure that each line of the abstract is indented.</p>
+</div>
+
+<h1 id="introduction"><span class="header-section-number">1</span> Introduction</h1>
+<p>Welcome to the markdown (aka commonmark) template for the International Conference on Live Coding 2016.</p>
+<p>This document is a guide to using markdown for the conference, and is itself written in markdown. For full understanding, refer to iclc2016.txt to see the source of this document, and iclc2016.pdf to see the typeset output. Use of this template is currently only recommended for those familiar with commandline tools.</p>
+<p>We suggest you take a copy of this template (iclc2016.txt), and use it as a starting point for your ICLC paper.</p>
+<p>Preparing your submission using markdown will enable us to make proceedings available both in PDF files suitable for print, and in HTML suitable for the web. This is useful for making sure your paper is fully accessible, via Internet search, and with assistive technology such as screen readers for blind people. We recommend taking a straightforward approach to formatting your document.</p>
+<p>If you do not wish to use markdown, please do not be discouraged from submitting your paper. There is also a word document template available from the conference website.</p>
+<h1 id="learning-and-using-markdown"><span class="header-section-number">2</span> Learning and using markdown</h1>
+<p>We are happy to answer any questions you have about markdown in connection with your conference submission.</p>
+<p>This is best done via our online community forum: <a href="http://lurk.org/groups/lcrn/" class="uri">http://lurk.org/groups/lcrn/</a></p>
+<p>Alternatively you may email the conference chairs directly: <script type="text/javascript">
+<!--
+h='&#x6d;&#x63;&#x6d;&#x61;&#x73;&#116;&#x65;&#114;&#46;&#x63;&#x61;';a='&#64;';n='&#x6f;&#x67;&#98;&#x6f;&#114;&#110;&#100;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x6f;&#x67;&#98;&#x6f;&#114;&#110;&#100;&#32;&#x61;&#116;&#32;&#x6d;&#x63;&#x6d;&#x61;&#x73;&#116;&#x65;&#114;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x61;</noscript></p>
+<h2 id="pandoc"><span class="header-section-number">2.1</span> Running pandoc</h2>
+<p>Pandoc is software which turns text written in markdown into a beautiful looking document, complete with references. You will need to run it to create PDF documents of your paper for checking and uploading for peer review.</p>
+<p>You may download pandoc for all major operating systems (including MS Windows, Apple Mac OS and GNU/Linux) from the following website: <a href="http://johnmacfarlane.net/pandoc/" class="uri">http://johnmacfarlane.net/pandoc/</a></p>
+<p>As an alternative to the above downloads, on OS X only, the homebrew package manager can be used to install pandoc: <a href="http://brew.sh/" class="uri">http://brew.sh/</a></p>
+<p>If you use homebrew to install on OS X you will need to install both the pandoc and pandoc-citeproc packages as follows:</p>
+<pre><code>brew update
+brew install pandoc
+brew install pandoc-citeproc</code></pre>
+<p>To produce PDF files you will need to have LaTeX installed, as well as pandoc. See the pandoc website for installation instructions: <a href="http://johnmacfarlane.net/pandoc/installing.html" class="uri">http://johnmacfarlane.net/pandoc/installing.html</a>. LaTeX is used internally, you will not have to edit any LaTeX documents.</p>
+<p>To render your markdown source as HTML, open a terminal window, change into the folder where the template is and run the following command:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> --template=pandoc/iclc.html --filter pandoc-citeproc -N iclc2016.txt -o iclc2016.html</code></pre></div>
+<p>To produce a PDF document, make sure you have LaTeX installed (see above), and run the following:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> --template=pandoc/iclc.latex --filter pandoc-citeproc -N iclc2016.txt -o iclc2016.pdf</code></pre></div>
+<p>For a higher quality output, add the option <code>--latex-engine=xelatex</code> to the above. You will need the <a href="http://levien.com/type/myfonts/inconsolata.html">Inconsolata</a> and <a href="http://www.linuxlibertine.org/index.php?id=91&amp;L=1">Linux Libertine</a> opentype fonts installed.</p>
+<p>An example Makefile is also provided to run these commands for you.</p>
+<h2 id="bibliographic-references"><span class="header-section-number">2.2</span> Bibliographic references</h2>
+<p>Pandoc accepts bibliographic databases in a range of formats, so make sure you have the right extension on your file.</p>
+<table>
+<caption>Supported bibliography formats with file extension.</caption>
+<thead>
+<tr class="header">
+<th align="left">Format</th>
+<th align="left">File extension</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">MODS</td>
+<td align="left">.mods</td>
+</tr>
+<tr class="even">
+<td align="left">BibLaTeX</td>
+<td align="left">.bib</td>
+</tr>
+<tr class="odd">
+<td align="left">BibTeX</td>
+<td align="left">.bibtex</td>
+</tr>
+<tr class="even">
+<td align="left">RIS</td>
+<td align="left">.ris</td>
+</tr>
+<tr class="odd">
+<td align="left">EndNote</td>
+<td align="left">.enl</td>
+</tr>
+<tr class="even">
+<td align="left">EndNote XML</td>
+<td align="left">.xml</td>
+</tr>
+<tr class="odd">
+<td align="left">ISI</td>
+<td align="left">.wos</td>
+</tr>
+<tr class="even">
+<td align="left">MEDLINE</td>
+<td align="left">.medline</td>
+</tr>
+<tr class="odd">
+<td align="left">Copac</td>
+<td align="left">.copac</td>
+</tr>
+<tr class="even">
+<td align="left">JSON citeproc</td>
+<td align="left">.json</td>
+</tr>
+</tbody>
+</table>
+<p>Authors may be referenced in two ways; inline, e.g. <span class="citation">Schwitters (1932)</span> wrote the Ursonate sound poem, or in parenthesis, e.g. Ursonate is a sound poem <span class="citation">(Schwitters 1932)</span>. Multiple references should be grouped together like so <span class="citation">(Schwitters 1932; Miller 1956; Greenewalt 1946)</span>.</p>
+<p>The pandoc command given in the <a href="#pandoc">above section</a> will automatically render your references according to Chicago author-date style.</p>
+<p>At the head of the markdown source file for this template, you will see an entry for &quot;bibliography&quot; that points to the file references.bib. Here you'll find examples of bibliography entries in BibLaTex format, including examples for articles, books, book chapters and items from conference proceedings.</p>
+<h2 id="code"><span class="header-section-number">2.3</span> Code</h2>
+<p>We have chosen a single column layout to better support code examples without having to break lines. The following shows how to include a code example with syntax highlighting:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">d1 <span class="fu">$</span> every <span class="dv">3</span> (iter <span class="dv">4</span>) <span class="fu">$</span> brak <span class="fu">$</span> <span class="st">&quot;bd [sn [[sn bd] sn]]*1/3&quot;</span></code></pre></div>
+<p>For a list of supported languages, you can visit this page: [http://johnmacfarlane.net/highlighting-kate/]</p>
+<p>If your favourite language isn't listed, perhaps a language with a similar syntax will still work.</p>
+<h2 id="figures"><span class="header-section-number">2.4</span> Figures</h2>
+<p>Images should be included as figures, with captions provided and formatted as shown in Figure 1. Be prepared for the page layout and image size to be changed during the editing and layout process, and consider this when referring to the figures in the text.</p>
+<div class="figure">
+<img src="images/pomeroy.jpg" alt="A descriptive caption should be given for all figures, understandable without reference to the rest of the article." />
+<p class="caption"><em>A descriptive caption should be given for all figures, understandable without reference to the rest of the article.</em></p>
+</div>
+<h1 id="conclusion"><span class="header-section-number">3</span> Conclusion</h1>
+<p>We look forward to receiving your completed papers. Submission is through the online peer review system at http://iclc2016.mcmaster.ca only. Do not send papers directly by e-mail. In all cases, please submit a PDF version of your paper for peer review. At a later stage in preparing the proceedings, we may ask for the markdown or Word versions of your paper.</p>
+<h2 id="acknowledgments"><span class="header-section-number">3.1</span> Acknowledgments</h2>
+<p>At the end of the Conclusions, acknowledgements to people, projects, funding agencies, etc. can be included after the second-level heading “Acknowledgments”.</p>
+<p>Again, if you have any questions or problems, please share them on the forum: http://lurk.org/groups/lcrn/</p>
+<p>Or email conference chair David Ogborn directly: ogbornd@mcmaster.ca</p>
+<h1 id="references" class="unnumbered">References</h1>
+<div id="refs" class="references">
+<div id="ref-Greenewalt46">
+<p>Greenewalt, Mary H. 1946. <em>Nourathar, the Fine Art of Light Color Playing</em>. Philadelphia. Pa. Westbrook.</p>
+</div>
+<div id="ref-Miller56">
+<p>Miller, G. A. 1956. “The Magical Number Seven Plus or Minus Two: Some Limits on Our Capacity for Processing Information.” <em>Psychological Review</em> 63 (2): 81–97.</p>
+</div>
+<div id="ref-Schwitters32">
+<p>Schwitters, Kurt. 1932. “Ursonate.” <em>Merz</em> 24. Merz.</p>
+</div>
+</div>
+</body>
+</html>
