@@ -1,46 +1,29 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ICLC 2016 Schedule</title>
-    <link rel="stylesheet" href="../2015/css/iclc.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Conference on Live Coding 2016 - Schedule</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/iclc.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
 </head>
-
 <body data-spy="scroll" data-target=".iclc-sidebar">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#iclc-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Populated by buildMenu(); -->
+      </div>
+  </nav>
 
-                <a class="navbar-brand" href="/"><img src="../images/ICLC-Website-Logo.png" alt="ICLC 2016"></a>
-            </div>
-            <div class="navbar-collapse collapse" id="iclc-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-
-                  <li><a href="calls.html">Calls</a></li>
-                  <li><a href="travel.html">Travel</a></li>
-                  <li><a href="schedule.html">Schedule</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="community.html">Community</a></li>
-
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="jumbotron iclc-teaser">
-        <div class="container">
+    <div class="container main-content">
             <div class="row">
             <div class="col-md-9">
+              <div class="page-header">
+                  <h1>Schedule</h1>
+              </div>
+
 
 <p>This overall schedule for the conference will be updated with specific details as they are confirmed:</p>
 
@@ -69,21 +52,26 @@
 <li>8 PM - 2 AM: Closing Algorave at the Spice Factory (downtown Hamilton)</li>
 </ul>
 
-</div></div></div></div>
+</div></div></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script async="" src="js/analytics.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/linkify.min.js"></script>
+<script src="js/linkify-jquery.min.js"></script>
+<script src="js/animatescroll.min.js"></script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58060921-1', 'auto');
-  ga('send', 'pageview');
-
+  $( document ).ready(function() {
+    setupMenu();
+    setupAnalytics();
+    setupScrolling();
+    setupFooter();
+  });
 </script>
-</body>
 
-</html>
+
+
+</body></html>

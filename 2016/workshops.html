@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Conference on Live Coding 2016 - Workshops</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/iclc.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".iclc-sidebar" data-offset="120">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Populated by buildMenu(); -->
+      </div>
+  </nav>
+
+<script>
+function setupWorkshops(){
+  var theWorkshops = [
+    { 'title': 'Live Coding with Utopia',
+      'detail':'Birmingham Ensemble for Electroacoustic Research',
+      'instructor' :'Scott Wilson, Luca Danieli, Tsun Yeung, Konstantinos Vasilakos',
+      'condensed':[
+        'This workshop will introduce participants to networked live coding in SuperCollider using the Utopia library (https://github.com/muellmusik/Utopia).'
+      ],
+      'content': ["This workshop will introduce participants to networked live coding in SuperCollider using the Utopia library (https://github.com/muellmusik/Utopia). Utopia is a modular library for the creation of networked music applications, and builds upon the work of the Republic Quark and other older network systems in SuperCollider to create environments in which people can share code, data, and create musical structure over a network. Unlike Republic, which took a monolithic approach, Utopia aims to be modular (features available largely 'à la carte'), secure (provides methods for authentication to user groups; allows Open SSL-based encryption on platforms which support it), and flexible (to the extent possible, it tries not to impose a particular design or architecture). In this way users can build custom network music applications that include only those library features they desire. It provides functionality for peer discovery (decentralised, centralised or manual), clock synchronization (decentralised pseudo Reference Broadcast Synchronisation, or centralised Conductor/Follower clocks), communication (chat, shout), code sharing, and data sharing (shared data and object spaces).",
+                  "For the last two years, the Birmingham Ensemble for Electroacoustic Research has used Utopia as the primary platform for its activities, and actively developed it in workshops, rehearsals, and concerts. In these sessions, members of BEER will introduce participants to the library and its possibilities for live coding through hands-on activities, with a particular emphasis on creating networked structures for live coded improvisation. This will be through a detailed introduction to Utopia and its features, and culminate in a group performance of a collaborative piece. Participants should bring their own laptop computer (OSX, Linux, or Windows). Experience with SuperCollider is desirable but not required."],
+      'bio':'BEER, the Birmingham Ensemble for Electroacoustic Research, was founded by Scott Wilson in 2011 as a project to explore aspects of realtime electroacoustic music making. Particular interests include networked music performance over ad hoc wi-fi systems, and live coding (programming music in real time using algorithms that can be altered while they are running). In keeping with post-free jazz developments in improvisation (e.g. Zorn, Braxton), we create structures in software that impose limitations and formal articulations on the musical flow (with networked software systems serving as intervention mechanism / arbiter / structural provocateur par excellence). Musical influences run the gamut from Xenakis to Journey. Past and current members include Konstantinos Vasilakos, Norah Lorway, Tim Moyers, Martin Ozvold, Luca Danieli, Winston Yeung, Roz Coull, Visa Kuoppala and Scott Wilson.'
+    },
+    {
+      'title' :'Design a Mini Live Coding Language',
+      'detail': 'Invent your own language!',
+      'url':'https://grrrwaaa.github.io/workshop_iclc_2016',
+      'instructor' : 'Graham Wakefield and Charlie Roberts',
+      'condensed':[
+        "In this workshop participants will design and develop an idiosyncratic (perhaps even esoteric) language for live coding. Participants will use an open-source, browser-based code editor capable of communicating with a variety of audio platforms (such as the native browser audio API, Ableton Live, and Max/MSP). The workshop will give a gentle introduction to the construction of grammars for parsing, using friendly browser-based libraries, with which participants will design their own mini-languages for defining musical patterns. Participants will take turns experimenting with the other languages created in the workshop, obtaining feedback and inspiration from each other, and will leave with the knowledge required to continue development of their language on their own."
+      ],
+      'content' : [
+        'In this workshop participants will create their own, idiosyncratic (perhaps even esoteric) mini-languages for live coding. These languages will be designed and run in a readily-accessible browser-based code editor. The workshop will give a gentle introduction to the construction of languages via parsing expression grammars. No experience in any of these specific technologies is necessary. However, some programming experience will be helpful. An open-source browser-based editing environment and support library will be provided to participants. This environment leverages the codemirror and peg.js projects, and can dynamically evaluate code to communicate via websockets or OSC with a variety of platforms for generating audiovisual content. The workshop concentrates upon the editing, parsing, scheduling and annotation of live code within this environment, but examples will be worked through driving standalone engines including Max/MSP and Ableton Live (we will provide a standalone app for participants who do not have Live and Max), as well as addressing the Web Audio API (available in most modern browsers). Although participants will develop for the target of their choice many language features will be agnostic to the intended target platform.',
+        'Time-permitting, language features explored in the workshop will include:',
+        "<ul><li>Basic concepts of grammars: rules, literals, sequences, alternatives, actions, etc.</li><li>Triggering code fragments</li>     <li>Sequencing and the creation of patterns</li>     <li>Pattern manipulation and transformation</li>     <li>Modulation of properties using nested expressions</li>     <li>Perhaps even self-modifying code</li></ul>",
+        "By the end of the workshop users will have created a small idiosyncratic (and perhaps esoteric) live-coding language capable of targeting a variety of platforms. We will reserve time for participants to experiment with other languages created in the workshop, so that they can obtain feedback and inspiration from each other. Participants will leave with the knowledge required to continue development of their language on their own."
+      ],
+      'bios':[
+        "Charlie Roberts is an Assistant Professor in the School of Interactive Games and Media at the Rochester Institute of Technology, where his research examines human-centered computing in digital arts practice. He designed and developed a creative coding environment for the browser, Gibber, that he uses both for educational research and audiovisual performances. Gibber is used to teach computational media to middle school, high school and university students in locations around the world, and he has performed with it throughout the US, UK and Asia in the experimental performance genre known as live coding. charlie@charlie-roberts.com",
+        "Graham Wakefield is an Assistant Professor and Canada Research Chair (Tier II) in the School of Arts, Media, Performance and Design at York University, Canada, where he founded the Alice lab for Computational Worldmaking. This research-creation facility is dedicated to the development of transferable knowledge, technology, and computationally literate art practice through the construction of responsive worlds experienced through emerging mixed-reality technologies. He is an internationally exhibited artist of biologically-inspired generative art, and an integral developer of creative coding software for computational worldmaking, utilized at UC Santa Barbara’s Allosphere instrument, and by artists worldwide. Through his doctoral work he extended the widely-used media art software Max/MSP/Jitter by co-authoring a new workspace called Gen, which now has tens of thousands of users, is lauded by many artists, while also being utilized within industrial design labs and taught within major universities. grrrwaaa@gmail.com"
+      ]
+    },
+    {
+      'title': 'Sonic Pi workshop',
+      'instructor':'Scott Fradkin',
+      'detail': '<a href="http://sonic-pi.net">sonic-pi.net</a>',
+      'condensed':[
+        'This half-­day workshop will guide attendees in learning how to compose and live code music using Sonic Pi.  Sonic Pi is a Ruby­-based environment for live coding music.  It is known for  being easy for kids to use, yet powerful enough for performing live in clubs.  Join the workshop to learn about Sonic Pi from its history to its importance in  computing education.  Sam and Scott will guide attendees from the beginning commands to  create simple bleeps through manipulating samples and managing multiple live loops at once.  There will also be a preview of what’s coming next in Sonic Pi as well as thoughts about the  future of Sonic Pi.  More information about Sonic Pi and downloads can be found at  http://sonic­pi.net.    Attendees can expect the workshop to be a series of short lectures and demonstrations followed  by time to practice what was demonstrated.'
+      ],
+      'content': [
+          'This half-­day workshop will guide attendees in learning how to compose and live code music using Sonic Pi.  Sonic Pi is a Ruby­-based environment for live coding music.  It is known for  being easy for kids to use, yet powerful enough for performing live in clubs.  Join the workshop to learn about Sonic Pi from its history to its importance in  computing education.  Sam and Scott will guide attendees from the beginning commands to  create simple bleeps through manipulating samples and managing multiple live loops at once.  There will also be a preview of what’s coming next in Sonic Pi as well as thoughts about the  future of Sonic Pi.  More information about Sonic Pi and downloads can be found at  http://sonic­pi.net.  Attendees can expect the workshop to be a series of short lectures and demonstrations followed by time to practice what was demonstrated.',
+          'Some of the topics that can be expected are:  ­ Installing Sonic Pi, Overview of the environment,  ­ Sonic Pi Basics, Chords and Scales, Rings and Looping, Using Different Synths, Playing and Manipulating Samples, Using FX, Using Sonic Pi for Composition or Live Coding, Advanced topics for Live Coding. Attendees can look forward to having a good time making music and a possible impromptu  Sonic Pi jam session at the end. '
+      ],
+      'url' :'http://sonic-pi.net',
+      'bio': 'Scott Fradkin​ is a project team lead and developer for a consulting company, Flexion. When  not working he enjoys live coding in Sonic Pi and Tidal. He likes to give back to his local  community and volunteers to talk to kids at schools. He also teaches programming classes to  kids of all ages through his local community education program. He has teamed up with a local  company to teach Sonic Pi workshops to kids in underserved areas in the county. He believes  that music can be a great catalyst for kids of all ages to learn how to program and have fun  doing it.'
+    },
+    {
+      'title':'Music and Functional Reactive Programming in Haskell',
+      'detail': 'Exploring the Vivid and Midair libraries',
+      'instructor' : 'Tom Murphy',
+      'condensed' :[
+        'Vivid and Midair are two Haskell libraries for livecoding music. Vivid is a library for interacting with SuperCollider, comparable to Overtone for Clojure. It is full-featured and can be used both for live performance and non-realtime synthesis. Midair, a newer library, is a Functional Reactive Programming (FRP) system for livecoding. FRP allows the programmer to describe a program as a function of time-varying values. For example: a programmer can describe the amplitude of a synth as being a function of the position of a MIDI knob, instead of describing explicitly the actions to take each time the knob is turned. Midair is specifically built to support livecoding. Participants will learn how to use the libraries together and separately, and can follow along on their laptops during the workshop.'
+      ],
+      'content' :[
+          "Haskell is a programming language that looks at the world fundamentally differently than most languages. It is lazy (values are only computed when needed, and are often infinite), it has a strong inferred algebraic type system (values are precise, expressive, and their type signatures don't usually need to be written), and it is purely functional (most values and functions are restricted from performing side effects). Haskell has proven itself very amenable to live coding and music composition." ,
+          "We will explore Vivid, a library for creating sound and music in Haskell, and Midair, a library for managing user interaction in Haskell. Participants will have a chance to try the tools and techniques as we go, and should bring laptops if they would like to. We will explore the tools, as well as the unique challenges and opportunities that come from using Haskell for live coding art, regardless of the libraries used. Pure functions, type inference, algebraic types, and laziness all present interesting expressive possibilities.",
+          "<b>About the libraries:</b>",
+          "Vivid is an Embedded Domain-Specific Language (EDSL) in Haskell for sound synthesis with the SuperCollider synthesis engine. It is a full- featured language, allowing access to nearly everything the SuperCollider server is able to do, from realtime performance and control to non-realtime rendering of music or other audio. It is very performant and amenable to parallelization and concurrency. It is comparable to Overtone in Clojure. Vivid draws inspiration from the SuperCollider language, Overtone, and other SuperCollider EDSLs, as well as the Euterpea music programming language created by Paul Hudak and collaborators. Vivid can be found at http://hackage.haskell.org/package/vivid and http://vivid-synth.com",
+          "Midair is a new livecoding Functional Reactive Programming (FRP) system. FRP is a way to model time-varying values (the current time, MIDI input messages, sensor inputs) in a functional way. It allows the programmer to describe their program in terms of the time-varying values, without explicitly handling changes in state. As a simple example, the programmer can describe the volume of an instrument as being a function of the current value of a MIDI CC knob. The FRP takes care of internal state, so the programmer only needs to describe the relationship between the two. This allows for both correctness guarantees about the program (fewer bugs onstage!), and compositionality guarantees: if two FRP actions are combined, they are guaranteed to behave identically to how they would behave if they were run separately. To our knowledge, Midair is the first FRP to introduce an explicit semantics for hot-swapping arbitrary pieces of the program at runtime while preserving the current state of the program – livecoding is at its heart. Midair can be found at http://hackage.haskell.org/package/midair"
+      ],
+      'bio': "Tom Murphy is a professional Haskell programmer. He is the author of Vivid, an Embedded Domain-Speciﬁc Language (EDSL) for controlling SuperCollider from Haskell (comparable to Overtone for Clojure), and Midair, a functional reactive programming system speciﬁcally designed for livecoding. His performance works are built with Vivid and Midair. Vivid is the basis for a Computer Science course at Geumgang University (S. Korea) in Spring 2016, where he will be a visiting lecturer. He is an alumnus of the Recurse Center. He has performed at Yale University, New York University, The Storefront for Art and Architecture (NYC), and underground venues around Brooklyn. He is a co-organizer for the NYC SuperCollider Users’ Group, and Livecode.NYC, a new organization. He was the organizer for the SOURCE festival, a livecode festival in NYC."
+    },
+    {
+      'title':'TidalCycles Workshop',
+      'detail':'<a href="http://tidalcycles.org/">tidalcycles.org</a>',
+      'instructor':'Mike Hodnick, Scott Fradkin, Alex McLean and Rodrigo Velasco',
+      'condensed':[
+        'A TidalCycles “birds of a feather” half-day workshop consisting of 20-30 minute talks and demos, each with 10 minutes Q&A. TidalCycles is a live coding environment for pattern, based upon the pure functional programming language Haskell. The TidalCycles community is comparatively small and so the programme will be arrived at by consensus. The workshop will be organised by Mike Hodnick, Scott Fradkin, Rodrigo Velasco and Alex McLean, with abstracts and supporting slides, code, notes gathered and shared under a creative commons license, and archived on Zenodo (CERN). It will include talks <i>“Using Tempo-Constrained Samples in Tidal”, “You Don’t Need to be a Musician to Make Music”, “s2hs2 - on the fly code poetry”</i>, and <i>“Past futures of Tidal”</i>, as well as late breaking talks and demonstrations, and a group improvisation session.'
+      ],
+      'content' :[
+        "A TidalCycles “birds of a feather” half day workshop consisting of 20-30 minute talks and demos, each with 10 minutes Q&A. TidalCycles is a live coding environment for pattern, based upon the pure functional programming language Haskell. The TidalCycles community is comparatively small and so the programme will be arrived at by consensus. The workshop will be organised by Mike Hodnick, Scott Fradkin, Alex McLean and Rodrigo Velasco, with abstracts and supporting slides, code, notes gathered and shared under a creative commons license, and archived on Zenodo (CERN). For more information on TidalCycles, please see http://tidalcycles.org/.",
+        "<b>Talks will include:</b>",
+        "Using Tempo-Constrained Samples in Tidal (Hodnick) - in this talk I’ll present the idea of using tempo-constrained samples to create a new twist on improvising with Tidal. We’ve all used one-shots (kicks, snares, bass stabs, “arpy”, etc) to create Tidal patterns, but what about pre-programmed, bpm-specific, bite-sized sequences? In this session I’ll use a DAW to create some sequences on the spot and then show some ways of improvising with them.",
+        "TidalCycles is for Everyone (Fradkin) - Making music by programming in Haskell may seem daunting, but TidalCycles makes it easy.  Recent versions of the software make this even easier.  I will present an introduction to TidalCycles for anyone new to live coding, Haskell, or creating music.  This will include the basics of sample and synth manipulation and I'll talk about my favorite pattern transformation functions to make interesting sounds.",
+        "Past futures of Tidal (McLean) - A talk about the history of Tidal, with focus on paths talked/written about and prototyped but otherwise untravelled, such as interactive and collaborative editing, visual programming, and vocable synthesis. This will lead into group discussion about what a radical roadmap for Tidal might look like.",
+        "s2hs2 (Velasco) - A talk and demonstration of s2hs2, an interface between TidalCycles and Processing. A visual form can be assigned to each letter on the computer keyboard, visualising patterns of words sent from Tidal. s2hs2 is a collaborative project undertaken by Rodrigo Velasco and Alex McLean in January 2015 in the School of Music, University of Leeds.",
+        "The workshop will also include late-breaking and lightning talk/demos, and finish with a group improv session, with constraints decided and modified by the group."
+      ],
+      'bios': [
+          "Alex McLean is a researcher and practitioner based in Sheffield, UK. He works across disciplines, co-founding the TOPLAP and Algorave live coding movements, and collaborating on many national research projects including leading the Arts and Humanities Research Council project “Weaving Codes, Coding Weaves”. He was awarded his PhD by Goldsmiths, University of London in 2011, with his thesis titled “Artist-Programmers and Programming Languages for the Arts”, and is currently editing the Oxford Handbook on Algorithmic Music with Prof Roger Dean, for publication in late 2016. Alex has performed widely as a live coder, solo, and as part of Slub, Canute and other collaborations, including at Sonar, Incubate, ISEA, Earzoom, NODE, Lovebytes, Lambda, STRP, Ars Electronica, Sonic Acts, Dissonanze and Transmediale festivals. He is currently developing his first solo album for the Computer Club label, and is sound artist in residence at the Open Data Institute during 2016.",
+          "Mike Hodnick is an independent programmer and musician from Chaska, Minnesota, USA. He has produced two full-length albums with Tidal (“Expedition” and “I Am a Computer”), and regularly performs livecoding sets in the Minneapolis metro area. He produced the 365 Tidal Patterns project, in which he created a pattern a day (well, almost) with Tidal over the course of a year. In 2016 he helped bring the first Algorave to Minnesota. In 2014 he received the Minnesota Emerging Composer Award.",
+          "Scott Fradkin is a project team lead and developer for a consulting company, Flexion. When not working he enjoys live coding in Sonic Pi and Tidal. He likes to give back to his local community and volunteers to talk to kids at schools. He also teaches programming classes to kids of all ages through his local community education program. He has teamed up with a local company to teach Sonic Pi workshops to kids in underserved areas in the county. He believes that music can be a great catalyst for kids of all ages to learn how to program and have fun doing it.",
+          "Rodrigo Velasco is a visual artist based in México, interested in synesthetic relations between image and sound through live coding, also he is playing slow, nostalgic and break live coded algorave overtones as <a href='https://twitter.com/_yect'>yèct</a>, and part of a live coded feedback duo called <a href='https://soundcloud.com/tristetren'>tristeTren</a>. He is organizing occasional meetings through <a href='http://cargocollective.com/onfcopoe'>onfcopoe</a>, an open group seeking to explore uncertain - sensible ways that express, reflect or cross the poetics of live coding."
+      ]
+    },
+    {
+      'title':'Meta live alive Oh!',
+      'detail':'Live coding a language: The creation of Molly',
+      'instructor':'Luke Church and Mariana Marasoiu',
+      'condensed':[
+        'We propose to collaboratively construct a new programming language, live, during the workshop.'
+      ],
+      'content':[
+        "Programming language design and construction is often a hidden activity, performed by solitary clans of wizards in dark rooms and foisted on unsuspecting publics. These languages are slow to build, expensive to maintain and difficult to iterate upon.",
+        "In this workshop we explore an alternative: the live, collaborative, highly visible construction and evolution of a language, Molly.",
+        "At the start of the workshop the participants will self-organise into groups wishing to explore implementing various areas of the language, for example: the literacy layer (syntax), the synchroniser (temporal semantics), the perfectioniser (type system), the interrogator (debugger), the jogger (execution system), the bridger (foreign function interface) and the standard library.",
+        "We will provide the basic infrastructure to seed the process: an extremely minimal implementation of each of the components, a continuous performance [build] system, a repository for each component and a basic visualisation system showing the interaction between the systems, which will be projected continuously during the workshop.",
+        "The participants will work in groups on their component. At any time they wish, they can commit to the component’s repo. Should the basic validation pass, the deployment will be updated with the new code. The organisers of the workshop will participate in this process, coding against the language as it emerges. Their code, illustrating the (current) capabilities of the language at any given moment will be projected alongside the visualisation of the components.",
+        "In order to ensure maximum freedom of development, each component will be separated by an RPC interface, for example gRPC. This will allow the components to be built in a large number of different languages and independently of each other, but working together.",
+        "The outcome of the workshop will be a condensed, as-experienced history of the development of a new language, and a concluding performance. All constructed source will be shared under an open licence and attributed to the attendees.",
+        "Inspirations for this work include Racket (Racket 2016), McLean and Wiggin’s Bricolage (Mc Lean and Wiggins 2010) and Warth’s Experimenting with Programming Languages (Warth 2009)."
+      ],
+      'bios':[
+        "Luke Church specialises in the design and implementation of usable programming languages for end-users. He has published in programming language design, data analysis, privacy, the politics and philosophy of computation, metabolic bone disease and the protection of hedgehogs. He now applies this intellectual commitment anxiety to building tools that let people change their minds during design and analysis.",
+        "Mariana Marasoiu is currently a Ph.D. student at the University of Cambridge in the Computer Laboratory, working under the supervision of Prof. Alan Blackwell. She received her MPhil degree in Advanced Computer Science from the University of Cambridge, and her BSc in Computer Science from the University 'Politehnica' of Bucharest. Her current work focuses on building tools for creating dynamic data visualisations aimed at end user programmers."
+      ]
+    }
+  ];
+
+
+  theWorkshops.sort(function(a,b) {return (a.title > b.sidebar) ? 1 : ((b.sidebar > a.sidebar) ? -1 : 0);} );
+
+  for ( i in theWorkshops ){
+    var theLong = '';
+    for (j in theWorkshops[i].content){
+      theLong += '<p>'+theWorkshops[i].content[j]+'</p>';
+    }
+    var theShort = '';
+    for (j in theWorkshops[i].condensed){
+      theShort += '<p>'+theWorkshops[i].condensed[j]+'</p>';
+    }
+    var theBio = '';
+    if (typeof(theWorkshops[i].bios) != 'undefined'){
+      for (k in theWorkshops[i].bios){
+        theBio += '<p><i>'+theWorkshops[i].bios[k]+'</i></p>';
+      }
+    }
+    else{
+      theBio = '<p><i>'+theWorkshops[i].bio+'</i></p>';
+    }
+    var bioName = theWorkshops[i].instructor;
+
+    // if you find 'and' in the instructor field use a plural users icon.
+    var theBioIconClass = 'fa-user';
+    if (theWorkshops[i].instructor.includes("and")){
+       theBioIconClass= 'fa-users';
+    }
+
+    $('<h2 id="workshop'+i+'">' + theWorkshops[i].title + '<br/>'+
+        '<small>' + theWorkshops[i].detail + '</small></h2>'+
+        '<div class="panel-group">'+
+          '<div class="panel panel-default">'+
+            '<div class="panel-heading">'+
+              '<h4 class="panel-title">'+
+                '<a data-toggle="collapse" href="#bio'+i+'"><i class="fa '+ theBioIconClass+'" aria-hidden="true"></i> '+bioName+'</a>'+
+              '</h4>'+
+            '</div>'+
+            '<div id="bio'+i+'" class="bio panel-collapse collapse">'+
+              '<div class="panel-body">'+theBio+'</div>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+        '<ul class="nav nav-tabs">'+
+          '<li class="active"><a data-toggle="tab" href="#short_'+i+'">Short Abstract</a></li>'+
+          '<li><a data-toggle="tab" href="#full_'+i+'">Detailed Abstract</a></li>'+
+          /*'<li><a data-toggle="tab" href="#bio_'+i+'">'+bioName+'</a></li>'+*/
+        '</ul>'+
+        '<div class="tab-content">'+
+          '<div id="short_'+i+'" class="tab-pane fade in active">'+
+              theShort+
+          '</div>'+
+          '<div id="full_'+i+'" class="tab-pane fade">'+
+            theLong+
+          '</div>'+
+        /*  '<div id="bio_'+i+'" class="tab-pane fade">'+
+            theBio+
+          '</div>'+*/
+        '</div>'
+
+    ).linkify({
+        target: "_blank"
+    }).appendTo('#theWorkshops');
+
+    $('<li><a href="#workshop'+i+'">'+  theWorkshops[i].title +'</a></li>').appendTo('.iclc-sidebar ul');
+
+  }
+}
+</script>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-9" id="theWorkshops">
+                <div class="page-header">
+                    <h1>Workshops</h1>
+                </div>
+
+
+                <!-- content end -->
+            </div>
+
+                <div class="hidden-sm hidden-xs col-md-3 iclc-sidebar">
+                  <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="340">
+                  </ul>
+                </div>
+                <!-- sidebar end -->
+
+        </div>
+    </div>
+
+    <script async="" src="js/analytics.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/linkify.min.js"></script>
+    <script src="js/linkify-jquery.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+        setupMenu();
+        setupAnalytics();
+        setupFooter();
+        setupWorkshops();
+        setupScrolling();
+      });
+    </script>
+
+
+
+  </body></html>

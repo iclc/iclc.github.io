@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Conference on Live Coding 2016 - Keynotes</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/iclc.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".iclc-sidebar" data-offset="120">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Populated by buildMenu(); -->
+      </div>
+  </nav>
+
+<script>
+function setupKeynotes(){
+  var theKeynotes = [
+    { 'title': 'Keynote',
+      'detail':'First Keynote',
+      'speaker' :'Speaker Name',
+      'content': [
+        "This talk is about this topic."
+      ],
+      'bios':[
+        'This is a speaker bio.'
+      ]
+    }
+  ];
+  for ( i in theKeynotes ){
+    var theContent = '';
+    for (j in theKeynotes[i].content){
+      theContent += '<p>'+theKeynotes[i].content[j]+'</p>';
+    }
+    var theBio = '';
+    if (typeof(theKeynotes[i].bios) != 'undefined'){
+      for (k in theKeynotes[i].bios){
+        theBio += '<p><i>'+theKeynotes[i].bios[k]+'</i></p>';
+      }
+    }
+    else{
+      theBio = '<p><i>'+theKeynotes[i].bio+'</i></p>';
+    }
+    var bioName = theKeynotes[i].speaker;
+
+    $('<h2 id="workshop'+i+'">' + theKeynotes[i].title + '<br/>'+
+        '<small>' + theKeynotes[i].detail + '</small></h2>'+
+        '<div class="panel-group">'+
+          '<div class="panel panel-default">'+
+            '<div class="panel-heading">'+
+              '<h4 class="panel-title">'+
+                '<a data-toggle="collapse" href="#bio'+i+'">'+bioName+'</a>'+
+              '</h4>'+
+            '</div>'+
+            '<div id="bio'+i+'" class="bio panel-collapse collapse">'+
+              '<div class="panel-body">'+theBio+'</div>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+        theContent
+
+    ).linkify({
+        target: "_blank"
+    }).appendTo('#theKeynotes');
+
+    $('<li><a href="#workshop'+i+'">'+  theKeynotes[i].title +'</a></li>').appendTo('.iclc-sidebar ul');
+
+  }
+}
+</script>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-9" id="theKeynotes">
+                <div class="page-header">
+                    <h1>Keynotes</h1>
+                </div>
+
+
+                <!-- content end -->
+            </div>
+
+                <div class="col-md-3 iclc-sidebar">
+                  <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="340">
+                  </ul>
+                </div>
+                <!-- sidebar end -->
+
+        </div>
+    </div>
+
+    <script async="" src="js/analytics.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/linkify.min.js"></script>
+    <script src="js/linkify-jquery.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+        setupMenu();
+        setupAnalytics();
+        setupFooter();
+        setupKeynotes();
+        setupScrolling();
+      });
+    </script>
+
+
+
+  </body></html>

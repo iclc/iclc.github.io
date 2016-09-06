@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Conference on Live Coding 2016 - Performances</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/iclc.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".iclc-sidebar" data-offset="120">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Populated by buildMenu(); -->
+      </div>
+  </nav>
+
+<script>
+function setupPerformances(){
+  var thePerformances = [
+    { 'title': 'Hollow Vertices',
+      'algorave':true,
+      'detail':'an immersive improv live coding performance',
+      'author' :'Norah Lorway, Kiran Bhumber, Nancy Lee, and Laine Butler',
+      'sidebar': 'Lorway, Bhumer, Lee, and Butler',
+      'content': [
+        "Hollow Vertices is an immersive, improvisatory audio-visual performance by Norah Lorway, Kiran Bhumber and Nancy Lee. The audio components are live coded using Supercollider. Two sources are linked through a network allowing each performer to have control over the others’ code. This is combined with an amplified clarinetist using a programmed pedal board in Max/MSP to drive live effects. The visual projection displays code which is framed by video content manipulated in real-time through an internal video feedback process programmed in SuperCollider and CoGe VJ.",
+      ],
+      'bios':[
+        "<b>Lorway, Norah (Falmouth University)</b>",
+        "Norah Lorway is a live coder, software developer, composer and computer music researcher who performs at Algoraves and other such events. She holds PhD in Computer Music from University of Birmingham, where she worked on music and software in SuperCollider and performed on the BEAST multichannel system. She has had works performed throughout North America and Europe, at conferences and events such as NIME, ISEA, ICLC, EarZoom Festival and is involved with various new media collaborations in the UK and Canada. Most recently, she has been working as a Postdoctoral Fellow at the University of British Columbia,  working at the intersection of live coding and gesture control, building new Digital Musical Instruments (DMI). Norah is currently a Lecturer in Creative Music Technology at Falmouth University.",
+        "<b>Bhumber, Kiran (ModalMix)</b>",
+        "Kiran Bhumber is a composer, performer, programmer and music-educator from Vancouver, Canada. She completed her BMus in 2014, majoring in Secondary Music Education (Clarinet Concentration) at the University of British Columbia. Her work focuses on building interactive audio and visual systems for live performances and installation applications, as well as new interfaces for musical expression. She is currently involved in a variety of musical projects and teaches music technology workshops at VIVO Media Arts. Kiran has collaborated with Nancy Lee on Pendula, an interactive installation which has had showing at Vancouver Jazz Festival and ISEAS in 2015. She will be commencing an MA program at the University of Michigan in Fall 2016.",
+        "<b>Lee, Nancy (ModalMix)</b>",
+        "Nancy Lee is a curator of interactions based in Vancouver, Canada. The notion of staging is a constant in Nancy’s work and underpins her projects from early days as a more traditional filmmaker, through her conception and planning of live events, and into the realms of new media and interactive installation, where her art practices continue to coalesce and evolve. Throughout her different endeavours, Nancy has consistently challenged binaries: between artist and observer, individual and environment, audience and performer, to name just a few. Her work enlivens space, making a provocative statement about how inescapably interconnected we are with our surroundings. She holds a BSc from the University of British Columbia",
+        "<b>Butler, Laine</b>",
+        "Laine Butler is a sound designer, graphic designer, and visual artist. He combines technology with art to create interesting spaces sonically, visually and virtually. Laine’s passion for the creation of soundscapes for any application are rooted in his admiration and knowledge of sound synthesis and audio recording. Laine has experience in theatre, film and video games as a sound designer, dialogue editor and composer and most recently, as a visual jockey and motion designer working at local art exhibitions, night clubs, warehouse spaces, and music festivals. His creation of 3D spaces results in a visually reactive work of art that will embolden and astound the synapses."
+
+      ]
+    },
+    {
+      'title':'Humanly Organized Sound',
+      'algorave':true,
+      'detail':'Kindohm',
+      'content':[
+        "Kindohm uses the TidalCycles livecoding environment to create bass and drum music. He combines improvised patterns and algorithmic instruction with pre-composed motifs, custom samples, and MIDI synthesizer programming via TidalCycles. The result is an algorithmic breakcore-industrial-techno-DnB-jungle-IDM-footwork-glitch hybrid."
+      ],
+      'author': 'Mike Hodnick',
+      'sidebar':'Hodnick',
+      'bios':[
+        '<b>Hodnick, Mike (Independent)</b>',
+        'Kindohm (Mike Hodnick) is an electronic music producer, composer, and programmer from Chaska, MN, USA. He uses livecoding techniques exclusively for live performance and also in the studio. In 2015 he released "Expedition", a full length album, and in 2016 he released the "Zero Likes" EP; both were composed and performed with TidalCycles. In 2014, Mike completed the 365 Tidal Patterns project. You can find him performing regularly in the Minneapolis/St. Paul area.',
+        "Kindohm uses the TidalCycles livecoding environment to create bass and drum music. He combines improvised patterns and algorithmic instruction with pre-composed motifs, custom samples, and MIDI synthesizer programming via TidalCycles. The result is an algorithmic breakcore-industrial-techno-DnB-jungle-IDM-footwork-glitch hybrid."
+      ]
+    },
+    {
+      'title':'Owego System Trade Routes',
+      'algorave':true,
+      'detail':'AppiOSC',
+      'content':[
+          'This performance will highlight the AppiOSC, a live interface that enables wireless, bi-directional control between a live coding graphics interface The Force and a modular synthesizer. Our intention with the AppiOSC in the context of Owego System Trade Routes is to extend beyond the typical, unidirectional manifestation of interactivity in audio-visual performance, in which the audio signal drives, or influences the graphics, while the graphics signal has little to no direct impact on the audio. With bidirectional control, both the visual and audio artist can explicitly impact the other’s outcome, enabling performative possibilities beyond a unidirectional system.'
+      ],
+      'author':'Shawn Lawson and Ryan Ross Smith',
+      'sidebar':'Lawson and Smith',
+      'bios':[
+          '<b>Lawson, Shawn (Rensselaer Polytechnic Institute)</b>',
+          'Shawn Lawson is an experiential media artist creating the computational sublime.[^shawn] As Obi-Wan Codenobi, he live-codes, real-time computer graphics with his open source software, The Force. He has performed or exhibited in England, Scotland, Spain, Denmark, Russia, Italy, Korea, Portugal, Brazil, Turkey, Malaysia, Iran, Canada, and the USA. He received grants from NYSCA and the Experimental Television Center, and he has been in residence at CultureHub and Signal Culture. Lawson studied at CMU and ÉNSBA. He received his MFA in Art and Technology Studies from SAIC. He is an Associate Professor in the Department of Art at RPI.',
+          '<b>Smith, Ryan Ross (Rensselaer Polytechnic Institute)</b>',
+          'Ryan Ross Smith is a composer and performer currently based in Fremont Center, NY.[^ryan] Smith has performed throughout the US, Europe and UK, including performances at MoMA and PS1 [NYC] and Le Centre Pompidou [Paris, FR], has had his music performed throughout North America, Iceland, Australia and the UK, has presented his work and research at conferences including NIME, ISEA, ICLI, the Deep Listening Conference and Tenor2015, and has lectured at various colleges and universities. Smith earned his MFA in Electronic Music from Mills College in 2012, and is currently a PhD candidate in Electronic Arts at the Rensselaer Polytechnic Institute in Troy, NY.'
+      ]
+
+    },
+    {
+      'title':'Guide our glance',
+      'detail':'Lecture recital',
+      'author': 'Felipe Ignacio Noriega and Anne Veinberg',
+      'sidebar':'Noriega and Veinberg',
+      'content':[
+        "Off<>zz is a duo featuring Felipe Ignacio Noriega (live coding) and Anne Veinberg (piano). Our style ranges from blended piano/computer soundscapes, to vibrant grooves and contrary expressions which eventually morph together. The “Guide our glance” performance will be an interactive experience, inviting the audience to contribute to two elements of our performance. Firstly, to dictate when the pianist and live coder should make visual contact and secondly, to suggest ideas for sound synthesis or musical development. We believe this interaction brings liveness into the foreground, which is a key element of live coding collaborations for us."
+      ],
+      'bios':[
+        '<b>Noriega, Felipe Ignacio</b>',
+        "Felipe Ignacio Noriega was born in Mexico City. He lives nowadays in Amsterdam, where he works as composer, laptop performer, and electronics developer in diverse projects. Common threads in his work include live coding, the importance of fantasy, and a strong emphasis on the visual and theatrical imagination. He is founder of Robot Theater Electronics, and co-founder of Amsterdam Chamber Opera, Panda Zooicide, Off<>zz, Bo is Burning, and A'hm Trio.Ensembles which incorporate livecoding together with acoustic instruments in various formats, always looking for innovative forms of collaboration and dramaturgical narrative. Under the pseudonym Narcode, He is becoming a specialist in solo and ensemble Live Coding performance and live-streaming, having performed for festivals such as La Escucha Errante (Spain), ICLC 2015 (UK), Dance Music Hack Days (NL), 3er Encuentro de Arte Sonoro 2016(Mexico City), and many other public venues in NL and abroad. ",
+        '<b>Veinberg, Anne (Orpheus Institute/Leiden University/Conservatorium Amsterdam)</b>',
+        "Pianist Anne Veinberg is active as soloist, improvisor and ensemble player in Europe and Australia. With her keen interest in contemporary music, Anne regularly collaborates with composers and has premiered numerous works. She is particularly interested in exploring works for piano and live electronics/live coding and the more theatrical contemporary piano repertoire. As a collaborative pianist, Anne is a member of Duo Kolthof/Veinberg, Duo Neshome, Duo H|A, Ensemble SCALA (microtonal music) and Off<>zz (livecode/piano). Classically trained, Anne studied at the Sydney Conservatorium High School, obtained her Bachelor in Music from the University of Melbourne, and completed her Master of Music at the Conservatory of Amsterdam. As of September 2015, she is a doctorate candidate at Leiden University, as part of the DocArtes program in Ghent, focusing her research on exploring chamber music possibilities between a pianist and live coder.",
+      ]
+    },
+    {
+      'title':'Sound sonata in C',
+      'detail':'Panaeolus and Csound',
+      'content':[
+        "In this improvisation the performer blends Csound synthesizers into the high-level and functional realm of Clojure. The synths are either designed by Hlöðver Sigurðsson or borrowed from Iain McCurdy's collection of Csound instruments. These instruments are often based on old and lesser known techniques of sound synthesis, producing sometimes CPU intensive audio calculations, which is often the case with scanned, granular and waveguide synthesis based instruments. As well as instruments based on physical modelling, that often have very low degree of forgiveness for out of range parameters. Designing an organic musical landscape with these instruments in real-time requires powerful tools, which Panaeolus attempts to be."
+      ],
+      'author':'Hlödver Sigurdsson',
+      'sidebar':'Hlödver Sigurdsson',
+      'bios':[
+        '<b>Sigurdsson, Hlödver (Iceland Academy of the Arts)</b>',
+        "Hlöðver Sigurdsson was born in Reykjavik and studied piano and music theory in Reykjavik College of Music and later composition in Iceland Academy of the Arts. With a great influence from his composition teacher and computer musician, Rikhardur H. Fridriksson, he quickly adopted music coding trough Csound. Initially composing exclusivley non-realtime spatial computer music with slow transition into live-coding. Having adapted to various live-coding platforms, today Hlöðver crafts his own environment to interact with musical patterns and acoustical explorations. Hlöðver is now based in Berlin"
+      ]
+    },
+    {
+      'title':'WebPage Act I, II and III',
+      'detail':'Choreography and coding',
+      'author':'Joana Chicau Brito',
+      'sidebar':'Brito',
+      'content':[
+        '<b>WebPage Act I, II and III</b> is an assemblage of graphic experiments emerging from a new hybrid form of composition combining principles of choreography within the formal structures of coding.',
+        'This performance follows an investigation on possible connections - and coexistence of choreography and web design. In this process, the idea of a performance became relevant as a way to expose the compositional process that is being researched, making the relations between the abstractness of code and its manifestation in the web interface more clearly visible.',
+        'This piece happens in a rather minimal setting, with a series of projections of webpages working as stages for cross-referencing choreographic concepts and methods with web design scripts and processes.'
+      ],
+      bios:[
+        "Joana Chicau [PT] is a communication designer, with a background in performance - classical ballet and contemporary dance. In her practice she investigates the possible connections between – and coexistence of – choreography and graphic design, aiming to open the possibilities for new aesthetic, energetic and social dimensions in design production processes.",
+        "Her research started as a cross-referencing of composition methods, with the aim to transcend the boundaries between the fields of choreography and graphic design. In her project she presents an assemblage of graphic experiments in a live performance setting combining principles of choreography within the formal structures of coding. Seeing choreography as a tool for a wider conceptual, perceptual view of code in graphic design. website/further info: http://pzwart1.wdka.hro.nl/~jo/notebook/series/series_thinkinginaction.html"
+      ]
+    },
+    {
+      'title':'The Last Cloud',
+      'detail': 'Narrative media collage',
+      'author':'Ben Taylor',
+      'sidebar':'Taylor',
+      'content':[
+        "The Last Cloud is a live net art performance in which web browsing is approached as an art form. The performance uses live coding to control several browser windows with HTML media, including HTML5 audio and video players, Google Maps, GIFs, and images. This media is mashed up and glitched in a narrative media collage. The work is accompanied by a web audio composition which uses samples, synthesis, and processed media element streams to put the sound of web browsing in a musical context.",
+        "The Last Cloud is inspired by the history of media artists who have turned media for reproducing content into instruments for generating content. In this case, the web browser, which was first used for viewing reproductions of 20th century media (such as newspapers, photographs, and recorded songs), is used as an instrument for collaging those media, creating a new form of art that is native to the browser."
+      ],
+      'bios':[
+        '<b>Taylor, Benjamin (Goucher College)</b>',
+        "Ben Taylor is an interdisciplinary artist and creative coder who specializes in web art, web audio, and networked performance practices. His research investigates the way ideas translate between the arts, and how we can apply that history to guide the artistic use of networks. Ben has presented his research internationally at conferences and festivals including the Pixilerations New Media Festival, New Interfaces for Musical Expression, Web Audio Conference, Leaders in Software and Art, the International Computer Music Conference, and others. He received an M.F.A. In Electronic Music & Recording Media from Mills College and has studied with members of the League of Automatic Music Composers and The Hub, Brian Harnetty, Jesse Allison, and Pauline Oliveros. He teaches creative code at Goucher College Digital Arts."
+      ]
+    },
+    {
+      'title':'Algorave performance',
+      'algorave':true,
+      'author':'Alexandra Cárdenas',
+      'sidebar':'Cardenas',
+      'content':[
+        "For the Second International Conference on Live Coding, I propose a set for the Algorave. I am currently working on my first album to be released by the label Chord Punch. With the implementation of Super Dirt, I find myself working in my dream environment for composing and live coding, in which I can design my own sounds in Super Collider and perform them on Tidal. This album will be the result of the exploration of the union of these two tools that have been my preferred for many years. I will perform a set of two of the songs I am composing at the moment. So it will be the first time I perform composed material on an Algorave. Still it will be purely live coded, much a la mexicana. A lot of typing and messing with code."
+      ],
+      'bios':[
+        '<b>Cárdenas, Alexandra Maria (University of the Arts Berlin)</b>',
+        'Alexandra Cárdenas (born 1976) is a Colombian/Mexican composer and improviser now based in Berlin, who has followed a path from Western classical composition to improvisation and live electronics. Her recent work has included live coding performance, including performances at the forefront of the Algorave scene. She also co-organised a live coding community in Mexico City. At the 2014 Kurukshetra Festival Cardenas was a keynote speaker and hosted a music live coding workshop, the first of its kind in India. Cardenas has been invited to talk about and perform live coding at events such as the Berlin based Transmediale festival and the Ableton sponsored Loop symposium and held residencies including at Tokyo Wonder Site in Japan and Centre for the Arts in Mexico City.'
+      ]
+    },
+    {
+      'title': "yèct algorave performance",
+      'algorave':true,
+      'content':[
+        "Abstract: yèct is a solo project that took place a couple of years ago, I like to create images, sounds and explorations through live coding, since a couple of years I have focused on creating danceable downtempo landscapes e.g. deep and dubbed techno sounds, so my proposal to joining ICLC Algorave is to live code an audiovisual set of improvised previously created stuff and often from the scratch through Tidal and SuperDirt, using SynthDefs and samples bound to encounter something vibrant, but dead; full of sad noises, slow, break and nostalgic Algorave overtones. Furthermore I will also share data between Tidal and Processing through 's2hs2' to live code audioreactive visual forms."
+      ],
+      'author': 'Rodrigo Velasco',
+      'sidebar':'Velasco',
+      'bios':[
+        "Rodrigo Velasco is a live coder, visual artist and teacher based in Mexico. He is researching poetics of live code and electronic literature. He creates slow and nostalgic algorave overtones as ‘yèct’, he is part of a live coded feedback duo ‘tristeTren’ with Ollinca Torres and also he is organizing occasional meetings trough ‘onfcopoe’ an open group seeking to explote uncertain - sensible ways that express, reflect or cross the poetics of live code."
+      ]
+    },
+    {
+      'title':'Flow',
+      'content': [
+        "Flow is a solo live coding performance that explores and subverts aspects of flow. SuperCollider generates and runs a large number of live codable snippets of code, and changes at regular intervals which snippet is available to the performer for editing. The performer uses an EEG device to track their own engagement with the performance. The system either enforces or subverts engagement by changing code availability more quickly the more engaged the performer is. Live visuals represent the engagement levels of the performer, their physical action of typing, and the editing of code."
+      ],
+      'author':  'Shelly Knotts',
+      'sidebar':'Knotts',
+      'bios':[
+        "Shelly Knotts produces live-coded and network music performances which explore aspects of data. She performs internationally at Algorave and other live coding events, collaborating with computers and other humans.",
+        "She is currently studying for a PhD with Nick Collins and Peter Manning at Durham University. Her research interests lie in computer music improvisation practices and performance systems which explore data structures for algorithmic and improvised music creation. She has received commmissions and residencies from Sound and Music, Sonic Pi: Live & Coding, Digital Media Labs and Performing Rights Society for Music Foundation.",
+        "Current collaborative projects include network laptop bands BiLE (Birmingham Laptop Ensemble) and OFFAL (Orchestra For Females and Laptops), and live coding duos UIAESK! (with Holger Ballweg) and [Sisesta Pealkiri] (with Alo Allik).",
+        "Web: http://datamusician.net",
+        "Music: http://soundcloud.com/shelly-knotts"
+      ]
+    },
+    {
+      "title":'Dark Matter',
+      'author':'BEER',
+      'sidebar':'BEER',
+      'content':[
+        "This performance, created in collaboration with the Art@CMS project at CERN in Switzerland, involves the real-time sonification of data streams from the Large Hadron Collider, the world’s largest and most complex particle accelerator. Experimental data containing clues towards possible 'new physics' becomes the raw material for improvised music and visualisations programmed by the ensemble with an aim to creating a result that while beautiful, is both musically and scientifically meaningful."
+      ],
+      'bios':[
+        "BEER, the Birmingham Ensemble for Electroacoustic Research, was founded by Scott Wilson in 2011 as a project to explore aspects of realtime electroacoustic music making. Particular interests include networked music performance over ad hoc wi-fi systems, and live coding (programming music in real time using algorithms that can be altered while they are running). In keeping with post-free jazz developments in improvisation (e.g. Zorn, Braxton), we create structures in software that impose limitations and formal articulations on the musical flow (with networked software systems serving as intervention mechanism / arbiter / structural provocateur par excellence). Musical influences run the gamut from Xenakis to Journey. Past and current members include Konstantinos Vasilakos, Norah Lorway, Tim Moyers, Martin Ozvold, Luca Danieli, Winston Yeung, Roz Coull, Visa Kuoppala and Scott Wilson."
+      ]
+
+    },
+    {
+      'title' : "An Algorave with FoxDot",
+      'algorave':true,
+      'content' : [
+          "The performance will be a showcasing of my Live Coding system, FoxDot, which is derived from the programming language, Python. FoxDot focusses on minimalistic syntax and rapid sound creation and was designed with making electronic dance music in mind. The term “algorave” often refers to dance/techno music that is generated by algorithms being written during the performance, but I personally believe that it reflects the context, or even the attitude, of the Live Coding performance more than the style of music itself. This performance will demonstrate how easy it is to start with a blank screen and create a fun and exciting piece of dance music with FoxDot within minutes, and hopefully prompt a discussion about the project’s future development."
+      ],
+      'author':'Ryan Kirkbride',
+      'sidebar':'Kirkbride',
+      'bios':[
+        '<b>Kirkbride, Ryan (University of Leeds)</b>',
+        "Ryan Kirkbride first encountered Live Coding while studying for his MA in Computer Music at the University of Leeds in 2014, learning his trade from pioneer of the art, Alex McLean. He began work on his Python driven Live Coding environment, FoxDot, as part of his module in Composition Studies during this time. Ryan is currently attending the University of Leeds as a postgraduate research student in the School of Music funded by the White Rose College of Arts and Humanities as part of the network of Expressive Nonverbal Communication in Ensemble Performance. His research interests lie in computer analysis of expressive gestures in musical performance and creative programming."
+      ]
+    },
+    {
+      'title':'Algorave Performance for Two Conductor Players',
+      'algorave':true,
+      'content':[
+          "This performance demonstrates an improvement to the Conductive live coding library, written by the performer. The system previously consisted of agents which triggered samples and a conductor agent which controlled which agents were currently operating. The improvement, the addition of affective conductor agents to control various system parameters, is used to automatically change parameters such as rhythm patterns while the performer is otherwise manipulating the system. The new conductors take action based on an internal affective state and in relation to the state of other conductors. Through this addition, more dynamic performances can be realized than were previously possible."
+      ],
+      'author': 'Renick Bell',
+      'sidebar':'Bell',
+      'bios':[
+        "<b>Bell, Renick (independent)</b>",
+        "Renick Bell is a computer musician, programmer, and teacher living in Tokyo, Japan. He is a graduate of the doctoral program at Tama Art University in Tokyo, Japan. His current research interests are live coding, improvisation, and algorithmic composition using open source software. He is the author of Conductive, a library for live coding in the Haskell programming language. Previously, he was a doctoral student at Tokyo Denki University. He has a masters degree in music technology from Indiana University and an interdisciplinary bachelors degree in electronic music, studio art, and philosophy from Texas Tech University. He has performed in numerous countries in Asia and Europe, as well as Australia and the US. He is from West Texas but has lived in Tokyo since 2006; he previously lived in New York City from 1999-2001 and Taipei, Taiwan from 2001-2006."
+      ]
+    },
+    {
+      'title':"'tome.' 2.0",
+      'detail':'',
+      'author':'Sean Martin Cotterill and Charlie Dearnley',
+      'sidebar':'Cotterill and Dearnley',
+      'content':[
+        "'tome.' is a performance by digital artist and Live Coder Sean Cotterill and spoken word artist and dancer Charlie Dearnley. It is a work originally developed for FutureEverything Festival featuring a bespoke Arduino-based interactive system. Working with SuperCollider, Python and Q Lighting Controller, Dearnley's movement is used to manipulate sound and light as part of an emotive, narrative-driven performance.",
+        "For 'tome.' 2.0, the work will be re-imagined as a collaborative, improvised performance centred around using Live Coding alongside a detailed library of Dearnley's movements to create an immersive audiovisual experience. This library, along with all components of the performance, will subsequently be released online. This performance represents a merging of performative approaches common to Algoraves and other Live Coding music events; the possibilities offered by open source, high resolution, low cost sensing technology; and Dearnley's powerful dance practice."
+      ] ,
+      'bios':[
+        "<b>Cotterill, Sean Martin (Newcastle University)</b>",
+        "Sean Cotterill is a Live Coder and digital artist working in Newcastle-upon-Tyne, UK. Inspired by a fascination with technology, multi-sensory performances and transdisciplinary collaboration he creates work using sound, light, video, text, data, (live) code(ing), movement and digital interaction managed through open source software/hardware. Sean's previous work includes many live-coded 'Algorave' sets, code-poetry for ICLC 2015, performances for TUSK, Occasion and RECON Festivals and recently a collaborative performance of Live Coding, poetry and digital movement sensing for Future Everything festival. From September 2016 he will be undertaking PhD study in open source arts practice at Culture Lab, Newcastle University as a recipient of the Northern Bridge Doctoral Training Studentship. http://seancotterill.com",
+        "<b>Charlie Dearnley</b>",
+        "Charlie Dearnley’s interdisciplinary practice uses performance to explore themes of spirituality and mortality. Using text as a basis, Dearnley performs (often collaboratively) utilising dance, spoken word and digital media in acknowledgement of the inadequacy of words alone to convey experience. Dearnley has shown work, delivered workshops and curated events in venues across the country, including the Baltic Centre for Contemporary Art Gateshead, Islington Mill Salford, and The Northern Charter Newcastle. Dearnley also writes and performs freelance, recently touring Lizzie J Klotz’s Dance Theatre piece ‘To Suit’, performing at Dance City Newcastle, Yorkshire Dance Leeds and The Place London. Dearnley is a core ensemble member of State of Grace, part of The Occasion Collective (TOC - an arts events organisation), co-founding director of performance collective Late to the Conversation, and a co-founding director of independent publishing house UnstapledPress CIC."
+      ]
+    },
+    {
+      'title':'It is only MIDI',
+      'content':[
+        "This performance will combine live coding and haptic technologies to explore an approach to physically connecting the body in between the auditory and visual elements. MIDI note of/off messages and velocity will be mapped to haptic parameters and rendered on the listener’s back using a bespoke grid of vibrating motors. As a performer, the challenge will be to create disparity, and abstractions between the ‘heard’ and ‘felt’ versions of the MIDI note information by altering timbral parameters on the synthesizer. The form of the performance will be improvised freely around this concept."
+      ],
+      'author':'Joanne Armitage',
+      'sidebar':'Armitage',
+      'bios':[
+        '<b>Armitage, Joanne (University of Leeds)</b>',
+        "Joanne is a creative technologist and/or artist working with sound, physical computing, digital media and interaction design. Currently, she is completing a practice-based PhD candidacy whilst teaching in music production and new/digital media at University of Leeds. Active as a live coder, she improvises regularly around the UK, mainly within the Algorave and experimental electronic/techno scenes. Notable shows include a headline slot at Deep Hedonia, Everyman Bistro, Liverpool (18th March 2016); Golden Cabinet, Shipley w/ Shapednoise and Blood Music (29th January 2016) and a future performance w/ AGF at Fuse, Bradford (23rd April 2016) - more info at www.joannnne.github.io."
+      ]
+    },
+    {
+      'title':'screenBashing',
+      'author':'Magno Caliman',
+      'sidebar':'Caliman',
+      'content':[
+          "screenBashing deals with impossibilities and limits. Code is created in real time - using C and SuperCollider - in such a way as to give the performer limited control over the parameters of both sound and video synthesis. Performance directives are set envisioning a dwelling of the limits of both the human-machine interaction and the threshold of the machine itself.",
+          "The superposition of immutable layers (of both sound and a video animation) is treated and embraced as both a natural consequence of the restrains the system enforces on the performer, but also as a sub-product of a mode of interaction, a power play between performer and machine, where both sides are in a pursuit to enforce their will on one another."
+      ],
+      'bios':[
+        "<b>Caliman, Magno (UNIRIO - Universidade Federal do Estado do Rio de Janeiro / Federal University of Rio de Janeiro State)</b>",
+        "Magno Caliman Is active both in the contemporary music academic scene, as in the underground circuit of experimental and noise music in Brazil, especially in Rio de Janeiro and São Paulo. Writes for acoustic, electronic and multimedia means, and also performs as a free improviser. Is interested in building electronic circuits for performance, guitar modifications and using programming languages as artistic tools. Currently plays in the black metal/noise duo II|III with composer and philosopher J.P. Caron and in the guitar duo Butai Karakuri with composer and improviser Paulo Dantas. Works developing interactive systems for art exhibitions and teaching sound and programming related topics in different circumstances. Is currently enrolled in the masters program at UNIRIO - Brazil, developing teaching/learning material for sound oriented programming."
+      ]
+    },
+    {
+      'title':"Space and Time",
+      'content':[
+          "Time and Space is a live coding performance that explores the succinct development of multiple musical sections that can be fluidly combined. It features a rhythmically subtle, yet stable, foundation overlayed by ephemeral synthesized and prerecorded timbral elements. The result is an ambient pulse-based work that moves through a variety of moods as the work progresses. A series of algorithmic textural motifs are developed and re-used and re-combined in a variety of ways to produce this developing variety over time."
+      ],
+      'author':'Andrew R Brown',
+      'sidebar':'Brown',
+      'bios':[
+        '<b>Brown, Andrew R (Griffith University)</b>',
+        "Andrew R. Brown is an educator, researcher, musician, author and programmer. He holds a Ph.D. in music and is Professor of Digital Arts at Griffith University in Brisbane, Australia. His academic expertise is in technologies that support creativity and learning, the creation of computational music and art, and the philosophy of technology. Andrew’s creative activities focus on real time audio-visual works using generative processes and live coding performance. He has performed live coding and interactive music in many parts of the world and his digital art works have been shown in galleries across Australia, USA and China. He is the author of Music Technology and Education: Amplifying Musicality , co-author of Making Music with Computers: Creative Programming in Python,  and editor of Sound Musicianship: Understanding the Crafts of Music . For more information visit http://andrewrbrown.net.au"
+      ]
+    },
+    {
+      'title': "Embracing the Voice",
+      "content": [
+        "I present <i>Embracing the Voice</i>, a performance piece that focuses on the diverse transformation of the voice during a live coded performance. In particular this piece is interested in bridging the gap between performer and the audience by exploring spatialization techniques. What opportunities and challenges do mobile devices present for the spatialization of live coded sound? What kinds of transformations can be applied to vocalized sounds during live coding performance? What are the possibilities for presenting the voice in a spatialized live coding performance?"
+      ],
+      'author': 'Tanya Goncalves',
+      'sidebar':'Goncalves',
+      'bios':[
+          '<b>Goncalves, Tanya (McMaster University)</b>',
+          "Tanya Goncalves is an artist-researcher who has a focus in audio programming, live coding and electroacoustic composition. Her work explores a curiosity for sound and the complex relationships between computer programming and the development of musical composition. She is currently a graduate student at McMaster University (Hamilton ON), where she is completing a M.A. in Communication and New Media. "
+      ]
+    },
+    {
+      'title':'Mico Rex',
+      "content":[
+          "Mico Rex is an experimental electro-pop Mexican duo founded in 2010 by Ernesto Romero and Jorge Ramírez, pionners in live programming in Mexico. Described as sticky, melodic and danceable, within a kaleidoscope of styles such as 8bits/glitch, oldschool/electro, romantic style,punk, geek, breakz, fresh, bolero, vocal, finura, 80's from the future!!! The live performance is a combination of networked structured pieces and improvisation with code accompanied with voice and home - made joystick controllers in pain and reactive algorithmic visuals. The sound design, visuals, structure and composition are made upon programming code for hardware and software developed by the group members themselves. They consider code as the most flexible media for live electronics performance. Code+networking+gui+physicalInterface."
+      ],
+      'author': 'Mico Rex',
+      'sidebar':'Romero',
+      'bios':[
+          '<b>Romero, Ernesto (Centro Multimedia, top lap)</b>',
+          "Ernesto Romero Mariscal Guasp. Composer, performer, programmer. Studied Music Composition, Choir Conducting, Mathematics. Focused in real time electronic music, live coding, physical interfaces development for the performance. Performed in U.S. Latin America, Europe. Explores algorithmic composition/performance, generative music, sonification, popular music forms re-utilization. Member of “Mico Rex” experimental electro-pop music duo, closing the SuperCollider Symposium (London 2012), artists in ChordPunch net label, performing in Algorave tour 2013, going for their 3rd european tour (2014). Led the National Center for the Arts Audio Workshop Mexico (2007-2013) researching, developing and promoting live electronics and FLOSS. Important livecoding promoter in Mexico.",
+          '<b>Ramírez, Jorge</b>',
+          "Jorge Ramírez. Architect, composer, sound artist. Transfers marginal processes between music and architecture, in the imminence of the intractable. The precise and the indeterminate, error, repetition and exception and the perceptual repercussions of time and space are all questioned in the manipulation of material from its essential physical characteristics. Creating anomalous microdetails and using error as structure provides an analogy to tectonics, where the precision of accidents, the order in the midst of chaos, creates a dialogue that envisions landscapes beyond sound. His work about form-finding processes through material properties has been shown in events like SONOM, International Sound Art Festival of Monterrey,(MX), Mitos Oficiales, La Curtiduria,(MX) and the 3rd Art and Science International Exhibition and Symposium, Beijing, CH. As LiveCoder and improviser with his solo project, AVONREVLON, has presented in multiple contexts like Visiones Sonoras CMMAS, Volta (DF), Sound Emissions International soundart festival(CH), Piksel (NOR) y “Vivo” festival internacional de livecoding, Centro Multimedia (MX), and shared stages with artists like Ash Wednesday (Einstürzende Neubauten), Yan Jun (CH), Sean Baxter (Aus) and Marco Fussinato (Aus). With the duo MicoRex, he played in the closing concert of the Supercollider Symposium (UK), the Network Music Festival (UK), and put out an EP with ChordPunch label. (UK)"
+      ]
+
+    },
+    {
+      "title":"Intersperse",
+      "content": [
+        "'Intersperse' is a new audiovisual collaborative performance by Sean Lee and Tom Murphy. It builds on relatively new tools for livecoding audio via the SuperCollider synthesis engine, visuals via GLSL shaders, and human-computer interaction via MIDI instruments coordinated with functional reactive programming (FRP). The performers intend to use their tools primarily in service of aesthetically engaging art, with the technical advances themselves secondary to the enhanced expression they allow the performers. However, the code-as-performance is integral to the overall collaboration. Code from both performers is projected live, and is meant to be absorbed by the audience, whether consciously understanding the meanings of the programs or only discerning their shape. The music and visuals form a cohesive whole, with each of the four parts (visual, two audio, and physical) connected to each other in multiple ways. Visuals take as parameters various properties of the currently-playing music (amplitude, spectral information, etc), as well as parameters sent over websockets from the MIDI instruments. Music and audio are controlled both by live changes to their code and by information sent from the MIDI instruments. MIDI instruments, which influence audio and visuals, are also livecoded: their parameter mappings and functions are updated in real time with the Midair FRP system."
+      ],
+      "author": 'Tom Murphy and Sean Lee',
+      'sidebar':'Murphy',
+      'bios': [
+        '<b>Murphy, Tom (Independent)</b>',
+        "Tom Murphy is a professional Haskell programmer. He is the author of <a href='http://hackage.haskell.org/package/vivid'>Vivid</a>, an embedded domain-specific language (EDSL) for controlling SuperCollider from Haskell (comparable to Overtone for Clojure), and <a href='http://hackage.haskell.org/package/midair'>Midair</a>, a functional reactive programming system specifically designed for livecoding. His performance works are built with Vivid and Midair. Vivid is the basis for a Computer Science course at Geumgang University (S. Korea) in Spring 2016, where he will be a visiting lecturer. He is an alumnus of the Recurse Center. He has performed at Yale University, New York University, The Storefront for Art and Architecture (NYC), and underground venues around Brooklyn. He was the organizer for the <a href='http://source2016.com/'>SOURCE festival</a>, a livecode festival in NYC. He is a co-organizer for the NYC SuperCollider Users’ Group, and Livecode.NYC, a new organization.",
+        '<b>Lee, Sean</b>',
+        "Sean Lee is a programmer and multidisciplinary musician. He is the author of <a href='https://github.com/sleexyz/hylogen'>Hylogen</a>, an embedded domain specific language (EDSL) for livecoding fragment shaders in Haskell. He has performed live at SOURCE 2016 and at underground venues in NYC, and has had his audio visualizations featured at the Storefront for Art and Architecture and ICMC 2015. He is a member of Livecode.NYC and an alumnus of the Recurse Center. He enjoys livecoding, lambda calculi, and is lactose intolerant."
+      ]
+    },
+    {
+      'title': 'Crowd in C[loud]',
+      'author':'Sang Won Lee, Antonio Deusany de Carvalho Jr., and Georg Essl',
+      'sidebar':'Lee, de Carvalho Jr., and Essl',
+      'content':[
+        "Crowd in C[loud] utilizes a distributed musical instrument implemented entirely on a web browser for an audience to easily participate in music making with their smartphones. This web-based instrument is designed to encourage the audience to play music together and to interact with other audience members. Each participant composes a short musical tune that will be a musical profile of themselves. The use of the musical profile is a metaphor for online dating websites and the network created by the instrument mimics such social interactions where a user writes a personal profile, scans other profiles, likes someone, and mingle with other online users. A live coder can actively progress the music and orchestrate the crowd by changing the instrument on the fly."
+      ],
+      'bios':[
+        "<b>Sang Won Lee</b>",
+        "Sang Won Lee is a Ph.D. Candidate in Computer Science at the University of Michigan. His works lie at the intersection of music and computer science, focusing on collaborative music making, live coding, and interactive music. He seeks to create environments that help people feel connected to music and he creates new ways to interact with other people and machines. Lee received his Master’s Degree in Music Technology from Georgia Tech and has performed in many computer music concerts including NIME, ICMC, ACM Creativity and Cognition, and Guthman Musical Instrument Competition. ",
+        "<b>Antonio Deusany de Carvalho Jr.</b>",
+        "Born in 1986 at João Pessoa, Paraíba, Brazil, Antonio Deusany de Carvalho Junior, better known as dj, is a Computer Scientist that works in the intersection between music and computer science through network technologies. dj started his studies in music and computer science 15 years ago, and now he keeps merging every new technology into his musical experiences. Even his mice have participated in some experimental musical pieces, and some classical art concepts are always included in his music, science, and other arts.",
+        "<b>Georg Essl.</b>",
+        "Georg Essl is an Assistant Professor in Electrical Engineering & Computer Science as well as Music at the University of Michigan.  He received his Ph.D. from Princeton University in 2002 working with Perry Cook on real-time sound synthesis method for solid objects. He completed his undergraduate degree in Telematics at Graz University of Technology in 1996. He has been on the Faculty of the University of Floria, worked at MIT Media Lab Europe and the Deutsche Telekom Laboratories at the Technical University of Berlin. He co-founded and co-directed the Stanford Mobile Phone Orchestra and founded and directed the Berlin and Michigan Mobile Phone Ensembles. He is a member of IEEE, ASA, ACM, AMS, ICMA, and serves on the advisory board of NIME. His research interests are computer music, mobile HCI and mobile music making, human-computer interfaces, real-time physical simulation of audio, tactile feedback and foundations of numerical methods for interactive applications."
+      ],
+    },
+    {
+      'title': "Tempus Percussus",
+      'content':[
+        "Can an off-kilter groove give a listener the abstract feeling of limping or skipping? Can a well-crafted polyrhythm bisect a listeners body? Can a phasing melody make listener feel in present in two diverging moments?",
+        "Tempus Percussus is an improvised livecoded performance that explores how different kinds of rhythms affect our personal sense of time and experience."
+      ],
+      'author': 'Jason Levine',
+      'sidebar':'Levine',
+      'bios':[
+        '<b>Levine, Jason (Live Code NYC)</b>',
+        "I am an independent artist based in New York.  I have a computer science degree, and a strong performance background.  I have always been on a quest to find the next peak in the energy field of live performance with technology. I began with programmable guitar loops, pedals, but couldn’t reroute signals during the performance. I mastered Max/MSP but longed for low-level control of data. I moved to openframeworks, but the audio abilities were lacking and I couldn’t modify my program at run-time.  So for the last two years my main artistic pursuit has been livecoding with Extempore.  I’m fascinated by the concept of process as performance, and writing algorithms live as art.  I am especially fascinated by the ability to precisely control time while livecoding. Consequently, my  work focuses on off-kilter grooves, polyrhythms, polymetres, phasing, and rhythmic effects derived from physical simulations. Despite my abstract leanings, I aim to create music to uplift and inspire listeners."
+      ]
+    },
+    {
+      'title': 'Improvisation in Gibber',
+      'content':[
+        "This improvisation uses recent research on pattern manipulation and representation in live coding performance practice. Using <i>Gibber</i>, a browser-based live coding environment, I create rhythmic and melodic patterns and sequence their subsequent transformations. These transformations are visualized in the source code itself, alongside visual annotations depicting the phase of musical sequences as well as the output they create.",
+        "The implementation of the visual annotations draws on previous experiments. For example, in the <i>ixi lang</i> project by Thor Magnusson, the display of musical sequences in source code is updated to reflect their manipulation by algorithms; Gibber provides the same affordance. In <i>feedback.pl</i> by Alex McLean, data structures could be represented and manipulated in the comments of source code. In Gibber, we use automatically generated code comments to visually display the output of functions that are executed over time, most typically by Gibber’s sequencer objects. This is particularly useful for visualizing the results of stochastic functions; in the performance provided here I use this annotation to show random numbers as they are generated.",
+        "While other projects (notably <i>Extempore</i> and <i>Impromptu</i> in the live coding community) have used the addition of extra graphical widgets to the editing environment to visualize state in realtime, in Gibber we have focused on using text annotations to the source code text itself."
+      ],
+      'author':'Charlie Roberts',
+      'sidebar':'Roberts',
+      'bios':[
+        '<b>Roberts, Charlie (Rochester Institute of Technology)</b>',
+        "I am an Assistant Professor in the <a href='http://igm.rit.edu/'><span>School of Interactive Games and Media</span></a> at the <a href='http://rit.edu/'><span>Rochester Institute of Technology</span></a>, where my research examines human-centered computing in digital arts practice. I designed and developed a creative coding environment for the browser, <a href='http://www.charlie-roberts.com/gibber'><span><em>Gibber</em></span></a>, that I use both for educational research and audiovisual performances. Gibber is used to teach computational media to middle school, high school and university students in locations around the world, and I've performed with it throughout the US, UK and Asia in the experimental performance genre known as <a href='http://en.wikipedia.org/wiki/Live_coding'><span>live coding</span></a>."
+      ]
+    },
+    {
+      'title':'live canadoodling 16',
+      'content':[
+        "Benoît and the Mandelbrots is a live coding quartet formed in 2009 in Karlsruhe (Germany). Together they played over 70 concerts all over Europe in a variety of different styles and settings, including Algoraves, music for silent film, improvisation with acoustic musicians or just plain experimental blank slate live coding sessions. All members use SuperCollider and are connected via BenoitLib for tempo synchronization, communication and data sharing." ,
+        "They received an Honorary Mention at Prix Ars Electronica 2012 in the category Digital Musics & Sound Art. A self-titled first album was released in Spring 2016.",
+        "In “live canadoodling 16” the audience can witness the evolutionary establishment of an experimental soundscape. Having played and rehearsed together on various occasions, the performers know what to expect from each other, but experience shows that those expectations will be broken and decimal points misplaced."
+      ],
+      'author': 'Benoît and the Mandelbrots',
+      'sidebar':'Benoît and the Mandelbrots',
+      'bios':[
+          "Benoît and the Mandelbrots was formed in winter 2009 by Holger Ballweg, Patrick Borgeat, Juan A. Romero and Matthias Schneiderbanger. At that time they were all students at IMWI (Institute for Musicology and Music Informatics) at the Karlsruhe University of Music. Juan and Patrick previously played in the controllerism laptop ensemble Grainface. After SuperCollider workshops with Alberto de Campo and Julian Rohrhuber they teamed up with Holger and Matthias to form the group to explore live coding as a pure way to interact with sound and music algorithms. Starting with playing mostly experimental music in an academic computer music context they tried to expand early on by performing in bars and other venues to reach a broader audience. In their hometown of Karlsruhe this extended to public appearances at large events such as playing the big stage at the city anniversary twice and performing music for silent film in the renowned Schauburg cinema. Overall they have played over 70 concerts in a variety of styles ranging from Algorave performances to live coded live electronics in collaboration with acoustic musicians, and have performed at festivals such as Performing Sound, Playing Technology 2016 at ZKM in Karlsruhe, RADICALdb 2014 in Zaragoza, live.code.festival 2013 in Karlsruhe, Ars Electronica 2012 in Linz, BEAM Festival 2012 in Uxbridge, SuperCollider Symposium 2012 in London, Network Music Festival 2012 in Birmingham and Laptops Meet Musicians Festival 2011 in Venice. They received an Honorary Mention at Prix Ars Electronica 2012 in the category Digital Musics & Sound Art. An album of live coding improvisations was released in Spring 2016 as double vinyl and extended digital download on the the Karlsruhe based label Syff."
+      ]
+    },
+    {
+      'title':'0b10 BEATS',
+      'content':[
+          "An improvised live coding algorave duet, using the Just In Time Library and Jam.sc for Supercollider and EspGrid. Ali Khajehei will be programming distinctively rhythmic and pattern based events using Jam.sc, an extension which was made to mimic the elegant syntactic features of the Tidal programming language in SuperCollider. Jamie Beverley will primarily be programming with the Just In Time Library for SuperCollider. The performance will experiment with integrating the longer duration drone-like layers common with JITLib performances, and rhythmic layers produced using the Jam.sc extension in an algorave setting."
+      ],
+      'author':'Ali Khajehei and Jamie Beverley',
+      'sidebar':'Khajehei and Beverley',
+      'bio': [
+          '<b>Khajehei, Ali - Undergraduate Chemical & Bioengineering</b>',
+          "Ali Khajehei is currently in his third year of undergraduate studies for chemical and bio-engineering at McMaster University. He has been a member of the McMaster Cybernetic Orchestra since fall 2015. During his time, he has explored two distinct audio programming languages that the orchestra uses for their performances, SuperCollider and Tidal. He performed along with the Cybernetic Orchestra at their latest concert (series 10dB) at McMaster LIVELab, where he also performed his first solo show.",
+          '<b>Beverley, Jamie - Undergraduate Arts & Sciences</b>',
+          "Jamie Beverley has been a member of the Cybernetic Orchestra since September of 2014. Jamie has performed several times with the Orchestra, as a soloist, and most recently in a duet with improvise saxophonist Connor Bennet at the Series 10dB, and was featured on the Cybernetic Orchestra’s 3rd album entitled ‘Bilingual’."
+      ]
+    },
+    {
+      'title':'OFFAL Command-Line',
+      'content':[
+        'OFFAL Command-Line is a language which allows participants with no live coding experience to participate in live coding activity through programming, or being programmed by, other members of the ensemble, alongside contributing their own audio content (streamed via icecast) in a telematic performance.',
+        'Building on the community forming function of online chat clients, OFFAL Command-Line provides a site where musical messages can be issued to other players in the form of successive lines of texts (command lines). New commands must be approved by group members via a quick-fire voting system.',
+        'Live Coding humans has some precedence, and it could be argued all live coding performances involve some level of indirectly ‘coding the performer’, as the performer is always reacting to the output of their code. OFFAL Command-Line explores live coding humans in telematic contexts where perceiving the reaction to a direction is obscured by the lack of visual feedback adding another layer of unpredictability to the command->output->perception feedback loop.'
+      ],
+      'author':'OFFAL',
+      'sidebar':'OFFAL',
+      'bios':[
+        "OFFAL is an international collective of women laptop performers who devise performances involving multilocation collaborative improvisation. The group was formed in 2015 in response to research around gender in digital technology and laptop ensemble practice . As a non-hierarchical collective it aims to connect an international group of women engaged in electronic music by developing technological systems and organisational structures that facilitate collaboration. The group provides a platform for the creation and performance of new laptop music by women. • Joanne Armitage (UK) works with code and physical computing to explore physical aspects of sound whilst lecturing in Digital/New Media and Computer Music at the University of Leeds. • Lina Bautista (SP) is media artist, performer and artistic developer of applications for music and sound. She is member of Orquestra del Caos and Sons de Barcelona. Professor of new technologies on music and sound. • Alexandra Cárdenas (CO/MX) is a composer and improviser now based in Berlin. Her work is focused on live electronics and more recently on live coding.  • Libertad Figueroa (MX) performs and improvises live-coded music with SuperCollider; senior student of the BA in Communication Science (Faculty of Political and Social Sciences-UNAM). • Annie Goh (UK/DE) is an artist, researcher & computer musician, currently doing PhD research on echo & archaeoacoustics at Goldsmiths, London. • Shelly Knotts (UK) produces live coded and network music systems and performances, which explore data and collaboration.  • Andrea Young (CA) sends an amplified, processed and resynthesized voice, as well as a repurposed, sound-controlling voice enabled through feature extraction and data-driven live electronics.  • Diana Medina (ESP) • Jenny Pickett (FR) • Amble Skuse (UK)"
+      ]
+    },
+    {
+      'title': "Sedimentary",
+      'detail': 'Panoramas and Mobile Devices',
+      'author':'Harold Sikkema',
+      'sidebar':'Sikkema',
+      'content':[
+        "Sedimentary is a livecoding performance that brings together panoramic photography, audience participation via networked smartphones, and a poetic and accessible approach to code. The work employs the web browser as a platform for both the performer (on a laptop) and the audience (on their mobile devices). The performer’s laptop is connected to a large projection display, on which we see a wide-format photograph, and a number of coloured ‘lenses’ hovering and roaming across it. These lenses correspond to channel buttons on the audience members’ devices. To make sound, the interface is connected to a server, which distributes signals to connected audience smartphones."
+      ],
+      'bios':[
+        '<b>Sikkema, Harold (Graduate Student, Communications and New Media, McMaster University)</b>',
+        '<a href="http://www.nsitu.ca">Harold Sikkema</a> is an artist and visual communicator with a photography-based practice. His recent MA work, supervised by <a href="http://csmm.mcmaster.ca/faculty/profile_ogborn.html">David Ogborn</a>, explores crossings of panoramic imagery with smartphone tools and choral sensibilities. Harold has performed with ensembles including the Cybernetic Orchestra, Strata Vocal Ensemble, and the McMaster Choir. He has exhibited internationally and designed award winning websites and publications. A poetic orientation underscores his exhibiting, teaching, consulting, and community engagements. http://www.nsitu.ca'
+      ]
+    }
+    /*,
+    {
+      'title':'Encoding Data into Sound and Music',
+      'detail':'A LiveCoding Approach',
+      'author':'Takahiko Tsuchiya',
+      'sidebar': 'Tsuchiya',
+      'content':[
+        "Introducing data sonification to livecoding performance brings uncertainty but also excitement and creative possibilities. This study discusses the use of external data in the livecoding process as a mechanism to achieve such uncertainty in livecoding performance. When exploring unseen data, livecoders naturally attempt to find patterns or a structure within the data while addressing the seeming randomness of unwanted noise in the data. The structure and random components, when isolated well, may be used as the sources for musical algorithms (predictable) and modulation (unpredictable). This paper discusses the techniques for analyzing, transforming, and mapping non-musical data to musical structures, borrowing ideas from data analytics and compression. The discussion focuses on the DataToMusic API, a browser-based JavaScript livecoding framework developed by the authors, to explain the steps of structural analysis, coding, and decision-making as data is observed through sound and transformed into music."
+      ],
+      'bios':[
+        "<b>Tsuchiya, Takahiko (Georgia Institute of Technology)</b>",
+        "Takahiko Tsuchiya holds bachelor's degrees in music from the Berklee College of Music as well as humanities (musicology) from the International Christian University in Tokyo. As a fully-­‐funded research assistant, he earned his M.S. in music technology from the Georgia Institute of Technology, and currently continues in the same major as a doctoral student. His main research interests are data sonification and analytics, including the development of a data-­‐agnostic sonification framework for the web environment and data encoding in musical structure models. In his sonification projects, he has collaborated with many departments at Georgia Tech such as bio-­‐molecular chemistry, psychology, civil engineering and GTRI. Most recently, his work with the GTRI Configurable Laboratory was presented at Atlanta Science Festival, in which, a real-­‐time musical sonification was rendered by members of Atlanta Symphony Orchestra. As a multimedia developer, he has collaborated with professional artists such as Nona Hendryx and BT and showcased his work at UCSB, NYU, and Incontri in Hanover, Germany.  "
+      ]
+    }*/
+  ];
+  thePerformances.sort(function(a,b) {return (a.sidebar > b.sidebar) ? 1 : ((b.sidebar > a.sidebar) ? -1 : 0);} );
+
+  for ( i in  thePerformances ){
+
+    var theAlgo = '';
+    var theAlgoSidebar = '';
+    if ( typeof(thePerformances[i].algorave) !='undefined'){
+      if (thePerformances[i].algorave == true){
+        /*theAlgo = '<i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;';*/
+        theAlgo = '<span class="algoIcon">ALGORAVE</span>';
+        theAlgoSidebar = '<span class="algoIconSidebar">&nbsp;</span>';
+        /*theAlgo = '<img src="images/algo-icon-16.png" width="16" height="16" style="padding: 0px 10px 0px 0px" /><span style="color:#ddd;"></span>';*/
+      }
+    }
+
+    var theContent = '';
+    for (j in  thePerformances[i].content){
+      theContent += '<p>'+ thePerformances[i].content[j]+'</p>';
+    }
+    var theBio = '';
+    if (typeof( thePerformances[i].bios) != 'undefined'){
+      for (k in  thePerformances[i].bios){
+        theBio += '<p><i>'+ thePerformances[i].bios[k]+'</i></p>';
+      }
+    }
+    else{
+      theBio = '<p><i>'+ thePerformances[i].bio+'</i></p>';
+    }
+    var bioName =  thePerformances[i].author;
+/*
+    var sideBarName = bioName;
+    if ( typeof(thePerformances[i].sidebar) !='undefined'){
+      sideBarName =  thePerformances[i].sidebar ;
+    }*/
+
+    var theSubtitle = thePerformances[i].title;
+    if ( typeof(thePerformances[i].detail) !='undefined'){
+      theSubtitle +=  ' &mdash; '+thePerformances[i].detail ;
+    }
+    if ( theAlgo !=''){
+      theSubtitle +=  '&nbsp;'+theAlgo;
+    }
+    theSubtitle = '<small>'+theSubtitle+'</small>';
+
+    // if you find 'and' in the instructor field use a plural users icon.
+    var theBioIconClass = 'fa-user';
+    if (thePerformances[i].author.includes("and")){
+       theBioIconClass= 'fa-users';
+    }
+
+      $('<h2 id="performance'+i+'">' +  bioName + '<span style="color: #ddd;">&nbsp;|&nbsp;</span>'+ theSubtitle +'</h2>'+
+        '<div class="panel-group">'+
+          '<div class="panel panel-default">'+
+            '<div class="panel-heading">'+
+              '<h4 class="panel-title">'+
+                '<a data-toggle="collapse" href="#bio'+i+'"><i class="fa '+ theBioIconClass +'" aria-hidden="true"></i>&nbsp; Biography <span style="color:#bbb; font-size: 12px;">&nbsp;CLICK TO EXPAND</span></a>'+
+              '</h4>'+
+            '</div>'+
+            '<div id="bio'+i+'" class="bio panel-collapse collapse">'+
+              '<div class="panel-body">'+theBio+'</div>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+        theContent
+
+    ).linkify({
+        target: "_blank"
+    }).appendTo('#thePerformances');
+
+    $('<li><a href="#performance'+i+'">'+  theAlgoSidebar +' '+ bioName  +'</a></li>').appendTo('.iclc-sidebar ul');
+
+  }
+}
+</script>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-9" id="thePerformances">
+                <div class="page-header">
+                    <h1>Performances</h1>
+                </div>
+
+
+                <!-- content end -->
+            </div>
+
+                <div class="hidden-sm hidden-xs col-md-3 iclc-sidebar">
+                  <ul class="nav nav-pills nav-stacked" data-spy="affix" >
+                  </ul>
+                </div>
+                <!-- sidebar end -->
+
+        </div>
+    </div>
+
+    <script async="" src="js/analytics.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/linkify.min.js"></script>
+    <script src="js/linkify-jquery.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+
+
+    <script>
+      $( document ).ready(function() {
+        setupMenu();
+        setupAnalytics();
+        setupFooter();
+        setupPerformances();
+        setupScrolling();
+      });
+    </script>
+
+
+
+  </body></html>

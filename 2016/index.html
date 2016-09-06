@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Second International Conference on Live Coding - Home</title>
-    <link rel="stylesheet" href="../2015/css/iclc.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Conference on Live Coding 2016 - Home</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/iclc.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".iclc-sidebar">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#iclc-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Populated by buildMenu(); -->
+      </div>
+  </nav>
 
-                <a class="navbar-brand" href="/"><img src="../images/ICLC-Website-Logo.png" alt="ICLC 2016"></a>
-            </div>
-            <div class="navbar-collapse collapse" id="iclc-navbar-collapse-1">
-                <ul class="nav navbar-nav">
 
-                  <li><a href="calls.html">Calls</a></li>
-                  <li><a href="travel.html">Travel</a></li>
-                  <li><a href="schedule.html">Schedule</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="community.html">Community</a></li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="jumbotron iclc-teaser">
-        <div class="container">
+    <div class="container main-content">
             <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-8 col-sm-11">
 
-<h2>Second International Conference on Live Coding (ICLC 2016)</h2>
+<h2>International Conference on Live Coding 2016 (ICLC 2016)</h2>
 
 <p>
-Live coding is making changes to algorithms as they run, with the possibility for both live feedback and a live audience. A growing movement has explored live coding to create music and visuals in performance settings, while software engineering has investigated new directions in live programming language design. Researchers in many other disciplines (education, dance, psychology, ethnography and others) have begun to examine live coding’s potential to generate new research questions, methods and solutions. For more information on live coding, please refer to the <a href="http://toplap.org">TOPLAP website</a>, and to the <a href="https://zenodo.org/collection/user-iclc2015">proceedings</a> and <a href="http://is.gd/iclcvid">video archive</a> of <a href="http://iclc.livecodenetwork.org/2015/">ICLC 2015</a>.
+Live coding is making changes to algorithms as they run, with the possibility for both live feedback and a live audience. A growing movement has explored live coding to create music and visuals in performance settings, while software engineering has investigated new directions in live programming language design. Researchers in many other disciplines (education, dance, psychology, ethnography and others) have begun to examine live coding’s potential to generate new research questions, methods and solutions. For more information on live coding, please refer to the <a href="http://toplap.org/">TOPLAP website</a>, and to the <a href="https://zenodo.org/collection/user-iclc2015">proceedings</a> and <a href="http://is.gd/iclcvid">video archive</a> of <a href="http://iclc.livecodenetwork.org/2015/">ICLC 2015</a>.
 </p>
 
 <p>The International Conference on Live Coding 2016 (ICLC 2016) is being hosted by McMaster University in Hamilton, Ontario, Canada (see <a href="travel.html">"Travel"</a>), with support from the Social Sciences and Humanities Research Council of Canada and the Faculty of Humanities at McMaster, as well as many other individuals and organizations (see <a href="team.html">"Team"</a>). Live coding performances during ICLC 2016 will take place at a diverse selection of venues both on the McMaster University campus and in downtown Hamilton. Some performance sessions will take place in McMaster’s LIVELab, a research centre and performance space that includes an active acoustics system, a large multi-channel speaker array addressed via network audio, a video wall and a Disklavier piano. The conference has been timed to coincide with Hamilton’s monthly art crawl and will involve collaboration with a number of local arts organizations. The final event of the conference will be an algorave at Hamilton’s Spice Factory (see <a href="schedule.html">"Schedule"</a>).</p>
@@ -54,38 +36,40 @@ Live coding is making changes to algorithms as they run, with the possibility fo
 <p>A late-breaking call for posters/demos and art crawl performances at the conference is also currently open. For full details, see <a href="calls.html">"Calls"</a>.</p>
 
 <p>Please email feedback and/or questions to conference chair <a href="mailto:ogbornd@mcmaster.ca">David Ogborn</a>.</p>
-
+</div>
+<div class="col-md-4">
 <h3>Timeline</h3>
-<ul>
-<li>8<super>th</super> April 2016* - deadline for submissions to first call (see <a href="calls.html">"Calls"</a>)</li>
-<li>29<super>th</super> April 2016 - notifications of acceptance for submissions to the first call</li>
-<li>30<super>th</super> June 2016 - camera-ready deadline for proceedings</li>
-<li>22<super>nd</super> July 2016 - conference registration opens</li>
-<li>29<super>th</super> August 2016 - general conference registration closes</li>
-<li>29<super>th</super> August 2016 - deadline for late-breaking submission of posters/demos and art crawl performances (see <a href="calls.html">"Calls"</a>)</li>
-<li>12<super>th</super> September 2016 - notification of acceptance for late-breaking submissions</li>
-<li>12-15<super>th</super> October 2016 - conference</li>
+<ul id="theTimeline">
+<li>8<super>th</super> April 2016*<br/><small> deadline for submissions to first call (see <a href="calls.html">"Calls"</a>)</small></li>
+<li>29<super>th</super> April 2016 <br/><small> notifications of acceptance for submissions to the first call</small></li>
+<li>30<super>th</super> June 2016 <br/><small>camera-ready deadline for proceedings</small></li>
+<li>22<super>nd</super> July 2016 <br/><small>conference registration opens</small></li>
+<li>29<super>th</super> August 2016 <br/><small> general conference registration closes</small></li>
+<li>29<super>th</super> August 2016 <br/><small> deadline for late-breaking submission of posters/demos and art crawl performances (see <a href="calls.html">"Calls"</a>)</small></li>
+<li>12<super>th</super> September 2016 <br/><small> notification of acceptance for late-breaking submissions</small></li>
+<li>12-15<super>th</super> October 2016 <br/><small> conference</small></li>
 </ul>
             </div>
         </div>
-    </div>
-
-    <!-- homepage end -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-58060921-1', 'auto');
-  ga('send', 'pageview');
+        <script async="" src="js/analytics.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/linkify.min.js"></script>
+        <script src="js/linkify-jquery.min.js"></script>
+        <script src="js/animatescroll.min.js"></script>
+        
+  <script>
+    $( document ).ready(function() {
+      setupMenu();
+      setupAnalytics();
+      setupScrolling();
+      setupFooter();
+    });
+  </script>
 
-</script>
-</body>
-
-</html>
+</div></body></html>

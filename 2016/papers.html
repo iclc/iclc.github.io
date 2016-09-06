@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Conference on Live Coding 2016 - Papers</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/iclc.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".iclc-sidebar" data-offset="120">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Populated by buildMenu(); -->
+      </div>
+  </nav>
+
+<script>
+function setupPapers(){
+  var thePapers = [
+    { 'title': 'Vibe Shirt: Reflections on a Duet for Coder and Dancer',
+      'type': 'Short',
+      'author': 'Kate Sicchio',
+      'sidebar': 'Sicchio',
+      'institution' : 'New York University',
+      'email': 'sicchio@nyu.edu',
+      'abstract': "This artistic paper explores a live coded dance performance 'Vibe Shirt', created by the author. It focuses on three aspects of the work, including the use of code as a choreographic score, the interpretations of haptic feedback within dance improvisation and the real-time compositional feedback loop created within live coded dance performance. It is meant to be a reflective discussion of the performance work, rather than an in depth analysis of the practice of live coding dance performance and hopes to raise questions rather than present new knowledge.",
+      'bios':[
+          '<b>Sicchio, Kate (Parsons the New School for Design)</b>',
+          'Kate Sicchio is a choreographer, media artist and performer whose work explores the interface between choreography and technology. Her work includes performances, installations, web and video projects and has been shown in Philadelphia, New York City, Canada, Germany, Australia, Belgium, and the UK at venues such as Banff New Media Institute (Canada), WAX Brooklyn (New York), FoAM (Brussels) and Arnolfini Arts Centre (UK). She has given artist talks at Times Up (Linz), Node Code (Frankfurt) and EU Commission (Brussels). She is adjunct faculty at Parsons The New School for Design and New York University in New York City. http://sicchio.com/'
+      ]
+    },
+    { 'title' : 'Encoding Data into Sound and Music: A Live-Coding Approach',
+      'author' : 'Takahiko Tsuchiya and Jason Freeman',
+      'sidebar': 'Tsuchiya and Freeman',
+      'type': 'Short',
+      'institution' : 'Georgia Institute of Technology',
+      'email' : 'jason.freeman@gatech.edu',
+      'abstract' : 'This study proposes the use of external data in live-coding performance as a mechanism to achieve constraint- or theme-driven creativity. It discusses the analysis of data structures and transforming them to various musical structures, while addressing common issues such as the choice of data-processing techniques in time-critical context, handling of previously unseen data, aesthetic presentation of data, and comprehension of data through sound.',
+      'bios':[
+        "<b>Tsuchiya, Takahiko (Georgia Institute of Technology)</b>",
+        "Takahiko Tsuchiya holds bachelor's degrees in music from the Berklee College of Music as well as humanities (musicology) from the International Christian University in Tokyo. As a fully-­‐funded research assistant, he earned his M.S. in music technology from the Georgia Institute of Technology, and currently continues in the same major as a doctoral student. His main research interests are data sonification and analytics, including the development of a data-­‐agnostic sonification framework for the web environment and data encoding in musical structure models. In his sonification projects, he has collaborated with many departments at Georgia Tech such as bio-­‐molecular chemistry, psychology, civil engineering and GTRI. Most recently, his work with the GTRI Configurable Laboratory was presented at Atlanta Science Festival, in which, a real-­‐time musical sonification was rendered by members of Atlanta Symphony Orchestra. As a multimedia developer, he has collaborated with professional artists such as Nona Hendryx and BT and showcased his work at UCSB, NYU, and Incontri in Hanover, Germany.  ",
+        "<b>Freeman, Jason (Georgia Institute of Technology)</b>",
+        "Jason Freeman is an Associate Professor of Music at Georgia Tech. His artistic practice and scholarly research focus on using technology to engage diverse audiences in collaborative, experimental, and accessible musical experiences. He also develops educational interventions in K-­‐12, university, and MOOC environments that broaden and increase engagement in STEM disciplines through authentic integrations of music and computing. His music has been performed at Carnegie Hall, exhibited at ACM SIGGRAPH, published by Universal Edition, broadcast on public radio’s Performance Today, and commissioned through support from the National Endowment for the Arts. Freeman’s wide-­‐ranging work has attracted support from sources such as the National Science Foundation, Google, and the Aaron Copland Fund for Music. He has published his research in leading conferences and journals such as Computer Music Journal, Organised Sound, NIME, and ACM SIGCSE. Freeman received his B.A. in music from Yale University and his M.A. and D.M.A. in composition from Columbia University. "
+      ]
+    },
+    {
+      'title':'Closing the Circuit: Live Coding the Modular Synthesizer',
+      'author': 'Shawn Lawson, Ryan Ross Smith, and Frank Appio',
+      'sidebar': 'Lawson, Smith, and Appio',
+      'type': 'Short',
+      'abstract': 'This paper extends upon the real-time audio-visual collaboration that the authors have engaged with since 2014. Previous iterations of this collaboration have focused on formalizing a structured response-relationship between the audio and visual components, but more recently, the integration of improvisatory live coding and modular synthesis techniques have enabled an increasingly responsive and chaotic feedback loop between the audio and visual components. This paper will provide an overview of the technical details of the AppiOSC, a custom device designed to facilitate streams of correspondent yet unpredictable bi-directional communication data between The Force, a live coding environment for graphics, and the modular synthesizer.',
+      'bios':[
+        "<b>Lawson, Shawn (Rensselaer Polytechnic Institute)</b>",
+        "Shawn Lawson is an experiential media artist creating the computational sublime.1 As Obi-Wan Codenobi, he live-codes, real-time computer graphics with his open source software, The Force. He has performed or exhibited in England, Scotland, Spain, Denmark, Russia, Italy, Korea, Portugal, Brazil, Turkey, Malaysia, Iran, Canada, and the USA. He received grants from NYSCA and the Experimental Television Center, and he has been in residence at CultureHub and Signal Culture. Lawson studied at CMU and ÉNSBA. He received his MFA in Art and Technology Studies from SAIC. He is an Associate Professor in the Department of Art at RPI.",
+        "<b>Smith, Ryan Ross (Rensselaer Polytechnic Institute)</b>",
+        "Ryan Ross Smith is a composer and performer currently based in Fremont Center, NY.2 Smith has performed throughout the US, Europe and UK, including performances at MoMA and PS1 [NYC] and Le Centre Pompidou [Paris, FR], has had his music performed throughout North America, Iceland, Australia and the UK, has presented his work and research at conferences including NIME, ISEA, ICLI, the Deep Listening Conference and Tenor2015, and has lectured at various colleges and universities.Smith earned his MFA in Electronic Music from Mills College in 2012, and is currently a PhD candidate in Electronic Arts at the Rensselaer Polytechnic Institute in Troy, NY.",
+        "<b>Appio, Frank</b>",
+        "--"
+      ]
+    },
+    {
+      'title':'Live Writing the Live Coding Book',
+      'author':'Alan F. Blackwell, Geoff Cox, and Sang Won Lee',
+      'sidebar': 'Blackwell, Cox, and Lee',
+      'type': 'Long',
+      'abstract':"This paper is a speculation on the relationship between coding and writing, and the ways in which technical innovations and capabilities enable us to rethink each in terms of the other. As a case study, we draw on recent experiences of preparing a book on live coding, which integrates a wide range of personal, historical, technical and critical perspectives. This book project has been both experimental and reflective, in a manner that allows us to draw on critical understanding of both code and writing, and point to the potential for new practices in the future.",
+      'bios':[
+        '<b>Blackwell, Alan Frank (University of Cambridge)</b>',
+        'Alan Blackwell is Professor of Interdisciplinary Design at the University of Cambridge Computer Laboratory. His research is concerned with notation systems and programming languages, with a side interest in music perception, performance and technology. He has been involved in the live coding community as a research supervisor and mentor since 2005, and created the live image processing language Palimpsest.',
+        "<b>Cox, Geoff (Aarhus University)</b>",
+        "Geoff Cox is Associate Professor in the Dept. of Aesthetics and Communication, and <a href='http://pit.au.dk/'>Participatory IT Research Centre</a>, Aarhus University (DK), and Adjunct faculty <a href='http://www.transartinstitute.org/'>Transart Institute</a> (DE/US). He is also an occasional artist/curator, as part of the self-institution <a href='http://www.ordure.org/'>Museum of Ordure</a>. He is an editor for the <a href='http://www.data-browser.net/'>DATA Browser</a> book series (published by Autonomedia), and co-edited <i>Economising Culture</i> (2004), <i>Engineering Culture</i> (2005), <i>Creating Insecurity</i> (2009) and <i>Disrupting Business</i> (2013). He co-runs a yearly workshop/conference in collaboration with transmediale and is co-editor of the associated open access online journal <a href='http://www.aprja.net/'>APRJA</a>. With Alex McLean, he wrote <a href='http://www.speaking-code.net/'>Speaking Code: coding as aesthetic and political expression</a> (MIT Press 2013), and amongst other things is currently working on a book project about live coding.",
+        "<b>Lee, Sang Won (University of Michigan)</b>",
+        "Sang Won Lee is a PhD Candidate in Computer Science at the University of Michigan, supervised by <a href='http://web.eecs.umich.edu/%7Egessl/'>Dr. Georg Essl</a>, and previously completed an MSc in Music Technology at Georgia Tech, supervised by <a href='http://jasonfreeman.net/'>Jason Freeman</a>. The main focus of his research is on Live Writing."
+      ]
+    },
+    {
+      'title':'Liveness becomes Entelechy - A scheme for L6',
+      'author' : 'Luke Church, Emma Söderberg, Gilad Bracha, and Steven Tanimoto',
+      'sidebar': 'Church, Söderberg, Bracha, and Tanimoto',
+      'type': 'Long',
+      'abstract': 'Integrated development environments have provided increasingly powerful tools for software creation, and yet the creation of complex computer programs remains difficult and time-consuming. Liveness in a programming environment has been identified as one direction in which to pursue further improvements in programmer productivity. We propose a scheme for achieving strategically predictive liveness, that is a scheme which can predict and evaluate considerable features of an application. The scheme exploits statistical properties of code to allow for synthesis and evaluation of code that is most likely to be useful to the developer. We hypothesise that this will help inculcate liveness into mainstream technical practice.',
+      'bios':[
+        "<b>Luke Church</b>",
+        "Luke Church is a software engineer at Google working on Dart. He specialises in the design and implementation of usable programming languages for end-users. He has published in programming language design, data analysis, privacy, the politics and philosophy of computation, metabolic bone disease and the protection of hedgehogs. He now applies this intellectual commitment anxiety to building tools that let people change their minds during design and analysis. ",
+         "<b>Emma Söderberg</b>",
+         "Emma Söderberg is a software engineer at Google in Mountain View, CA, where she works on developer infrastructure with focus on usability. She is a contributor and maintainer of the static analysis pipeline at Google and the open-source version of it called Shipshape. In the past, she has worked on error recovery, meta-compilation, incremental evaluation and generation of developer tooling for domain-specific languages. She received her Ph.D. in Computer Science from Lund University, Sweden.",
+         "<b>Gilad Bracha</b>",
+         "Gilad Bracha is the creator of the ​ Newspeak​ programming language and a software engineer at Google where he works on ​ Dart​ . Previously, he was a VP at SAP Labs, a Distinguished Engineer at Cadence, and a Computational Theologist​ and Distinguished Engineer at Sun. He is co-author of the ​ Java Language Specification​ , and a researcher in the area of object-oriented programming languages. Prior to joining Sun, he worked on Strongtalk, the ​ Animorphic Smalltalk System​ . He received his  B.Sc in Mathematics and Computer Science from ​ Ben Gurion University​ in Israel and a Ph.D. in Computer Science from the University of Utah.",
+         "<b>Steven Tanimoto</b>",
+         "Steven Tanimoto is Professor of Computer Science and Adjunct Professor of Electrical Engineering at the University of Washington in Seattle. After working on parallel image processing techniques his research has concentrated on visual languages and computational tools for education.  His current research is focused on collaborative problem solving, as well as learnability and liveness in programming environments.  He has served as an editor-in-chief for the IEEE Transactions on Pattern Analysis and Machine Intelligence, and served on the Publications Board and Board of Governors of the IEEE Computer Society.  He is a fellow of the IEEE and also a fellow of the International Association for Pattern Recognition."
+      ]
+    },
+    {
+      'author' : 'Neil C. Smith',
+      'sidebar': 'Smith',
+      'type': 'Short',
+      'title': 'Praxis LIVE - hybrid visual IDE for (live) creative coding',
+      'abstract' : "This paper introduces Praxis LIVE, a hybrid visual IDE and actor-model inspired runtime for (live) creative coding. Originally designed as a rapid development environment for audio-visual projects, Praxis LIVE blurs the lines between visual dataflow (patcher) and code editing, allowing components to be written and extended on-the-fly. Recent releases have placed increased emphasis on Praxis LIVE’s utility as an environment for live-coding alongside its use as a development tool. This paper discusses Praxis LIVE’s runtime architecture, its visual & code editing support, comparisons with similar tools, and some pros and cons of its design.",
+      'bios':[
+        '<b>Neil C Smith</b>',
+        "Neil C Smith is an Artist & Technologist living and working in Oxford (UK). He has a BA(Hon) in Contemporary Musics (Bretton Hall, 1999) and an MA in Contemporary Art (Oxford Brookes, 2002). Working sonically and visually, solo and in collaboration, he creates live improvised performances and interactive installations. His work explores ways of opening up and challenging the nature of creativity itself, in particular through the use of computational algorithms. A passionate advocate for open source software, he is the developer of Praxis LIVE, a hybrid visual IDE for creative coding, as well as various other audio-visual libraries. A former government Arts Officer, in his “spare time” he runs a company developing web services for the cultural and third-sector. www.neilcsmith.net"
+      ]
+    },
+    {
+    'title' : 'Programming in Time: New Implications for Temporality in Live Coding',
+    'author' : 'Ryan Kirkbride',
+    'sidebar': 'Kirkbride',
+    'type': 'Short',
+    'abstract' : "Traditional western music is a temporally-dynamic system built on inter-dependent and time-varying relationships between rhythms and pitches. This paper provides an insight into a means of abstraction for representing such a system in Live Coding through the use of time-varying values that interact with one another to create a template for organic musical performances. As producing this behaviour in computer programming languages can prove difficult, this paper will also discuss the problems that temporality can present in Live Coding and the methods used to address them. Finally, the novel programmatic function, “time-dependent variables”, is presented as part of the Python-based Live Coding system, FoxDot.",
+    'bios':[
+      "<b>Kirkbride, Ryan (University of Leeds)</b>",
+      "Ryan Kirkbride first encountered Live Coding while studying for his MA in Computer Music at the University of Leeds in 2014, learning his trade from pioneer of the art, Alex McLean. He began work on his Python driven Live Coding environment, FoxDot, as part of his module in Composition Studies during this time. Ryan is currently attending the University of Leeds as a postgraduate research student in the School of Music funded by the White Rose College of Arts and Humanities as part of the network of Expressive Nonverbal Communication in Ensemble Performance. His research interests lie in computer analysis of expressive gestures in musical performance and creative programming."
+    ]
+  },
+  {
+    'title': "Live Coding the Digital Audio Workstation",
+    'author':'Charles Roberts and Graham Wakefield',
+    'sidebar': 'Roberts and Wakefield',
+    'type': 'Long',
+    'abstract' : "We describe a new live-coding system, named Gibberwocky, which integrates the Ableton Live digital audio workstation with a browser-based textual coding environment derived from the Gibber project. The live-coding interface emphasizes sequencing of events and parameter changes as opposed to audio synthesis, but also affords rapid construction of audio graphs to modulate any parameter in Ableton Live with much greater resolution than is typically found in live-coding systems outputting MIDI. It also extends earlier research on dynamic code annotations with more specific solutions for individual pattern generators, and abstractions for musical scores.",
+    'bios':[
+      "<b>Roberts, Charlie (Rochester Institute of Technology)</b>",
+      "Charlie is an Assistant Professor in the <a href='http://igm.rit.edu/'>School of Interactive Games and Media</a> at the <a href='http://rit.edu/'>Rochester Institute of Technology</a>, where his research examines human-centered computing in digital arts practice.",
+      "<b>Wakefield, Graham (York University)</b>",
+      "Graham Wakefield is an Assistant Professor, Canada Research Chair (Tier II), in the department of Digital Media, Visual Art & Art History at York University."
+    ]
+  },
+  {
+    'title':'Live Coding the Audience Participation',
+    'author':'Sang Won Lee and Georg Essl',
+    'sidebar': 'Lee and Essl',
+    'type': 'Long',
+    'abstract': 'In this paper, we discuss live coding in the context of audience participation performances. A live-coder can modify the distributed musical instruments that large numbers of audience members use by sending executable code text to each participant using cloud-based messaging mechanisms. We discuss how this idea was realized as part of the web-based mobile audience participation piece Crowd in C[loud] (Lee, Carvalho Jr, and Essl 2016). We introduce basic probabilistic schemes to allow sectioning off large scale audiences through live coding. While the demonstrated realization of this idea is simple, we believe that not only this structure can support a wide range of large-scale audience participation pieces under the control of live coding performers but also the concept of live coding the array of multiple machines can push the boundary of live coding music.',
+    'bios':[
+      "<b>Lee, Sang Won (University of Michigan)</b>",
+      "Sang Won Lee is a Ph.D. Candidate in Computer Science at the University of Michigan. His works lie at the intersection of music and computer science, focusing on collaborative music making, live coding, and interactive music. He seeks to create environments that help people feel connected to music and he creates new ways to interact with other people and machines. Lee received his Master’s Degree in Music Technology from Georgia Tech and has performed in many computer music concerts including NIME, ICMC, ACM Creativity and Cognition, and Guthman Musical Instrument Competition.",
+      "<b>Essl, Georg (University of Michigan)</b>",
+      "Georg Essl is an Assistant Professor in Electrical Engineering & Computer Science as well as Music at the University of Michigan.  He received his Ph.D. from Princeton University in 2002 working with Perry Cook on real-time sound synthesis method for solid objects. He completed his undergraduate degree in Telematics at Graz University of Technology in 1996. He has been on the Faculty of the University of Floria, worked at MIT Media Lab Europe and the Deutsche Telekom Laboratories at the Technical University of Berlin. He co-founded and co-directed the Stanford Mobile Phone Orchestra and founded and directed the Berlin and Michigan Mobile Phone Ensembles. He is a member of IEEE, ASA, ACM, AMS, ICMA, and serves on the advisory board of NIME. His research interests are computer music, mobile HCI and mobile music making, human-computer interfaces, real-time physical simulation of audio, tactile feedback and foundations of numerical methods for interactive applications."
+    ]
+  },
+  {
+    'title': 'A Block Based Music Live Coding Environment for Kids',
+    'author':'Scott Fradkin',
+    'sidebar': 'Fradkin',
+    'type': 'Short',
+    "abstract" : "There are a number of great live coding languages available for creating music, many of which are inaccessible to young children for a variety of reasons. Sonic Pi is perhaps the most kid friendly live coding environment for music currently available, but requires the user to be able to read and write. I propose an environment, Snap Music, that is accessible for young children, the same audience that uses applications such as Scratch or ScratchJr to learn how to code. This would be a similar block based environment that can be used for live coding music and learning how to code at the same time. To this end, I have begun to create this environment as a browser based application that uses the Snap! environment and the Tone.js library",
+    'bios':[
+      "<b>Fradkin, Scott (Flexion, Inc.)</b>",
+      "Scott Fradkin​ is a project team lead and developer for a consulting company, Flexion. When not working he enjoys live coding in Sonic Pi and Tidal. He likes to give back to his local community and volunteers to talk to kids at schools. He also teaches programming classes to kids of all ages through his local community education program. He has teamed up with a local company to teach Sonic Pi workshops to kids in underserved areas in the county. He believes that music can be a great catalyst for kids of all ages to learn how to program and have fun doing it."
+    ]
+  },
+  {
+    'title' : 'Kairotic Coding –Performing Thinking in Action',
+    'author': 'Emma Cocker',
+    'sidebar': 'Cocker',
+    'type': 'Long',
+    'abstract': 'This paper addresses how the twin principles of liveness and visibility within the performance of live coding might be used for showing and sharing the practising within the practice, conceived as both the ‘performing of thinking’ in action and the performing of ‘thinking-in-action’.1 Underpinned by the principle of performing its thinking through ‘showing the screen’, live coding ‘makes visible’ the process of its own unfolding through the public sharing of live decision-making within improvisatory performance practice, emphasizing the durational ‘taking place’ of something happening (live). This making visible of thinking ‘in action’ has epistemological import, shedding light on the nature of knowledge production and mode of intelligence operative therein, generating insights into this habitually unseen aspect of creative endeavour. Drawing on the Ancient Greek concepts of kairos (opportune timing) and mêtis (cunning intelligence), in this paper I explore how certain live coding practices can be conceived as an embodied ‘thought exercise’ for cultivating the human qualities of heightened attention, cognitive agility and tactical intelligence.',
+    'bios':[
+      "<b>Cocker, Emma (Nottingham Trent University)</b>",
+      "Emma Cocker is a writer-artist and Reader in Fine Art at Nottingham Trent University. Cocker's recent writing has been published in Failure (2010); Stillness in a Mobile World (2011); Drawing a Hypothesis: Figures of Thought (2011); Hyperdrawing: Beyond the Lines of Contemporary Art (2012); On Not Knowing: How Artists Think (2013); and Reading/Feeling (2013). The first collection of Cocker’s writing entitled The Yes of the No is published by Site Gallery (2015). She is currently a key researcher on the project Choreo-graphic Figures: Deviations of the Line, a collaboration with artist Nikolaus Gansterer and choreographer Mariella Greil."
+    ]
+  },
+  {
+    'title': 'Revealing Timelines: Live Coding and its Gestures',
+    'author' : "Joanne Armitage",
+    'sidebar': 'Armitage',
+    'type': 'Long',
+	  'abstract': "As a highly mediatized, laptop-based improvisation practice, the human gesture of live coding is often just small motions. The physical connection of the performer and their interface is limited to a small surface area of skin making singular temporal connections, one by one, with a computer keyboard. Live coders have often been somewhat teased for the lack of ‘expressivity’ in their physical performance. As a response, practitioners have combined a range of visual stimuli with their code as a visual distraction from their limited gestures. In this paper I consider the key presses of a live coding in the context of expressive gesture, and present a technological approach to amplifying, or highlighting them in live performance as auditory and non-auditory stimuli. I will then describe the application of the system in two performances (three for the final paper), and conclude with some thoughts as to how this idea could progress and expand.",
+    'bios':[
+      "<b>Armitage, Joanne (University of Leeds)</b>",
+      "Joanne is a creative technologist and/or artist working with sound, physical computing, digital media and interaction design. Currently, she is completing a practice-based PhD candidacy whilst teaching in music production and new/digital media at University of Leeds. Active as a live coder, she improvises regularly around the UK, mainly within the Algorave and experimental electronic/techno scenes. Notable shows include a headline slot at Deep Hedonia, Everyman Bistro, Liverpool (18th March 2016); Golden Cabinet, Shipley w/ Shapednoise and Blood Music (29th January 2016) and a future performance w/ AGF at Fuse, Bradford (23rd April 2016) - more info at www.joannnne.github.io."
+    ]
+  },
+  {
+    'title':'Scheduled Visual Contact as a Strategy for Improved Communication in a Live Coder and Piano Ensemble',
+    'author' : 'Anne Veinberg and Felipe Ignacio Noriega',
+    'sidebar': 'Veinberg and Noriega',
+    'type': 'Lecture recital',
+    'abstract': "This paper discusses some of the performance issues associated with the hybrid ensemble of an acoustic musician and live coder. The role of visual contact and non-verbal communication is a key element of conventional ensemble playing and one that is largely absent in live coding practice. Through a series of exercises, we experimented with the imposition of compulsory visual contact moments, and consequent non-verbal communication, between the live coder and acoustic musician at various time intervals. A reflection on these exercises, alongside further deliberations on hybrid ensemble techniques, are discussed in the paper. ",
+    'bios':[
+      '<b>Noriega, Felipe Ignacio</b>',
+      "Felipe Ignacio Noriega was born in Mexico City. He lives nowadays in Amsterdam, where he works as composer, laptop performer, and electronics developer in diverse projects. Common threads in his work include live coding, the importance of fantasy, and a strong emphasis on the visual and theatrical imagination. He is founder of Robot Theater Electronics, and co-founder of Amsterdam Chamber Opera, Panda Zooicide, Off<>zz, Bo is Burning, and A'hm Trio.Ensembles which incorporate livecoding together with acoustic instruments in various formats, always looking for innovative forms of collaboration and dramaturgical narrative. Under the pseudonym Narcode, He is becoming a specialist in solo and ensemble Live Coding performance and live-streaming, having performed for festivals such as La Escucha Errante (Spain), ICLC 2015 (UK), Dance Music Hack Days (NL), 3er Encuentro de Arte Sonoro 2016(Mexico City), and many other public venues in NL and abroad. ",
+      '<b>Veinberg, Anne (Orpheus Institute/Leiden University/Conservatorium Amsterdam)</b>',
+      "Pianist Anne Veinberg is active as soloist, improvisor and ensemble player in Europe and Australia. With her keen interest in contemporary music, Anne regularly collaborates with composers and has premiered numerous works. She is particularly interested in exploring works for piano and live electronics/live coding and the more theatrical contemporary piano repertoire. As a collaborative pianist, Anne is a member of Duo Kolthof/Veinberg, Duo Neshome, Duo H|A, Ensemble SCALA (microtonal music) and Off<>zz (livecode/piano). Classically trained, Anne studied at the Sydney Conservatorium High School, obtained her Bachelor in Music from the University of Melbourne, and completed her Master of Music at the Conservatory of Amsterdam. As of September 2015, she is a doctorate candidate at Leiden University, as part of the DocArtes program in Ghent, focusing her research on exploring chamber music possibilities between a pianist and live coder.",
+    ]
+  }
+
+  ];
+
+  thePapers.sort(function(a,b) {return (a.sidebar > b.sidebar) ? 1 : ((b.sidebar > a.sidebar) ? -1 : 0);} );
+  for ( i in thePapers ){
+
+
+    var paperIcon = '';
+    var sidebarIcon = '';
+    if (thePapers[i].type == "Long"){
+      paperIcon = '<span class="tagBox"><i class="fa fa-files-o" aria-hidden="true"></i>&nbsp;LONG&nbsp;PAPER</span>';
+      sidebarIcon = '<i class="fa fa-files-o sidebarTagIcon" aria-hidden="true"></i>';
+    }
+    else if (thePapers[i].type == "Short"){
+      paperIcon = '<span class="tagBox"><i class="fa fa-file-o" aria-hidden="true"></i>&nbsp;SHORT&nbsp;PAPER</span>';
+      sidebarIcon = '<i class="fa fa-file-o sidebarTagIcon" aria-hidden="true"></i>';
+    }
+    else{
+      paperIcon = '<span class="tagBox"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp;LECTURE&nbsp;RECITAL</span>';
+      sidebarIcon = '<i class="fa fa-star-o sidebarTagIcon" aria-hidden="true"></i>';
+    }
+    var theBio = '';
+    if (typeof( thePapers[i].bios) != 'undefined'){
+      for (k in  thePapers[i].bios){
+        theBio += '<p><i>'+ thePapers[i].bios[k]+'</i></p>';
+      }
+    }
+    else{
+      theBio = '<p><i>'+ thePapers[i].bio+'</i></p>';
+    }
+
+    var theBioIconClass = 'fa-user';
+    if (thePapers[i].author.includes("and")){
+       theBioIconClass= 'fa-users';
+    }
+
+
+    $('<h2 id="paper'+i+'">' + thePapers[i].author + '<br/><small>' + thePapers[i].title + ' ' + paperIcon +'</small></h2>'+
+    '<div class="panel-group">'+
+      '<div class="panel panel-default">'+
+        '<div class="panel-heading">'+
+          '<h4 class="panel-title">'+
+            '<a data-toggle="collapse" href="#bio'+i+'"><i class="fa '+ theBioIconClass +'" aria-hidden="true"></i>&nbsp; Biography <span style="color:#bbb; font-size: 12px;">&nbsp;CLICK TO EXPAND</span></a>'+
+          '</h4>'+
+        '</div>'+
+        '<div id="bio'+i+'" class="bio panel-collapse collapse">'+
+          '<div class="panel-body">'+theBio+'</div>'+
+        '</div>'+
+      '</div>'+
+    '</div>'+
+      '<p>'+ thePapers[i].abstract + '</p>'
+    ).linkify({
+        target: "_blank"
+    }).appendTo('#thePapers');
+    /*if (typeof(thePapers[i].sidebar) != 'undefined')
+      { var sideBar = thePapers[i].sidebar; }
+        else{ var sideBar = thePapers[i].author; }*/
+    $('<li><a href="#paper'+i+'">'+ sidebarIcon + ' '+thePapers[i].author +'</a></li>').appendTo('.iclc-sidebar ul');
+
+  }
+}
+</script>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-9" id="thePapers">
+                <div class="page-header">
+                    <h1>Papers</h1>
+                </div>
+
+
+                <!-- content end -->
+            </div>
+
+                <div class="hidden-sm hidden-xs col-md-3 iclc-sidebar">
+                  <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="340">
+                  </ul>
+                </div>
+                <!-- sidebar end -->
+
+        </div>
+    </div>
+
+    <script async="" src="js/analytics.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/linkify.min.js"></script>
+    <script src="js/linkify-jquery.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+        setupMenu();
+        setupAnalytics();
+        setupFooter();
+        setupPapers();
+        setupScrolling();
+      });
+    </script>
+
+
+
+  </body></html>
