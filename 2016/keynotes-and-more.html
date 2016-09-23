@@ -62,8 +62,8 @@ function setupKeynotes(){
   ];
   for ( i in theKeynotes ){
 
-    var theAlgo = '';
-    var theAlgoSidebar = '';
+    var theAlgo = '<span class="keynoteIcon">KEYNOTE</span>';
+    var theAlgoSidebar = '<span class="keynoteIconSidebar">&nbsp;</span>';
     if ( typeof(theKeynotes[i].algorave) !='undefined'){
       if (theKeynotes[i].algorave == true){
         theAlgo = '<span class="algoIcon">ALGORAVE</span>';

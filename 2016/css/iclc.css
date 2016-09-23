@@ -945,6 +945,27 @@ body {
   background-image: url(../images/algo-icon-16-w.png);
 }
 
+
+.keynoteIcon, .keynoteIconSidebar {
+  font-family: 'Catamaran', sans-serif;
+  vertical-align: center;
+    padding: 4px 5px 1px 26px;
+    background: url(../images/keynote-icon-16-w.png) no-repeat 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a2d0d0;
+}
+.keynoteIconSidebar{
+  padding: 5px 0px 0px 18px;
+  background-image: url(../images/keynote-icon-16-g.png);
+  background-color: transparent;
+}
+
+.active .keynoteIconSidebar{
+  background-image: url(../images/keynote-icon-16-w.png);
+}
+
 @media (min-width: 692px) {  #bannerText { background-size: 692px 304px; }    }
 
 
