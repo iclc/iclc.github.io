@@ -72,7 +72,7 @@ function setupMenu() {
          '<li class="dropdown">'+
            '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Proceedings <span class="caret"></span></a>'+
              '<ul class="dropdown-menu">'+
-                /*'<li><a href="keynotes.html">Keynotes</a></li>'+*/
+                '<li><a href="keynotes-and-more.html">Keynotes &amp; More</a></li>'+
                 '<li><a href="papers.html">Papers</a></li>'+
                 '<li><a href="performances.html">Performances</a></li>'+
                '<li><a href="workshops.html">Workshops</a></li>'+

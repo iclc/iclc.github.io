@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Conference on Live Coding 2016 - Keynotes &amp; More</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/iclc.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".iclc-sidebar" data-offset="120">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Populated by buildMenu(); -->
+      </div>
+  </nav>
+
+<script>
+function setupKeynotes(){
+  var theKeynotes = [
+    { 'title': 'At the Margins: A look at marginal approaches to coding, art, and performance',
+      'image':'images/amy-curt.jpg',
+      'credit':'Nichole Speciale',
+      'speaker' :'Amy Alexander and Curt Miller',
+      'content': [
+        'Women have often participated in non-traditionally female fields by operating at the margins. They frequently have developed practices distinct from those of men, either by choice or through socialization. While these “marginal” practices have generally been perceived as peripheral in their time, they have in many cases proved to have substantial long-term impact on their fields. Amy Alexander will introduce some of these historical practices — by both women and men — in computer science and the arts, as well as some contemporary practices that populate the margins of live coding. Amy Alexander and Curt Miller will then introduce their current performance and research project, PIGS (“Percussive Image Gestural System”), which, through an amalgam of live data, improvisation, viscerality, and punk influence, situates itself in the margins of live coding. Alexander and Miller will conclude with a live audiovisual performance featuring the PIGS “video drums and guiros” algorithmic video system and Miller’s custom “talkbox clarinet” audio synthesis setup.',
+        "Amy Alexander and Curt Miller’s keynote at ICLC 2016 is made possible in part by support from the Gender Studies and Feminist Research program, and the School of the Arts, at McMaster University, as well as by support from the Social Sciences and Humanities Research Council of Canada (SSHRC)."
+      ],
+      'bios':[
+        "<b>Amy Alexander</b>",
+        "Amy Alexander is a digital media, audiovisual and performance artist who has also worked in film, video, music, tactical media and information technology. She has been making films since 1990 and creating art through programming since 1994. Much of Alexander’s work is performance-­based, often working at intersections of cinema, performing arts, humor, politics, and popular culture. Her current research and practice focuses on expanded approaches to the moving image that reflect contemporary cultural and technological shifts. Alexander has performed and exhibited internationally in clubs and on the street as well as in festivals, museums and on the Internet. She has written and lectured on software art, software as culture, and audiovisual performance, and she has served as a reviewer for festivals and commissions for digital media art, video, and computer music. She was a founding organizer of the runme.org software repository, and she has done residencies at The Media Centre in Huddersfield, UK, and the iotaCenter for visual music in Los Angeles. She is an Associate Professor of Visual Arts at the University of California, San Diego. More information at: http://amy-alexander.com",
+        "<b>Curt Miller</b>",
+        "Curt Miller is a musician working with clarinets, scores, code and electronics. His current performance project, Transcripture, transforms recorded performances from the machine to the spiritual through transcription and translation. As a clarinetist Curt has worked internationally as soloist and member of ensembles such as Nashville’s Intersection Contemporary Music Ensemble, Monday Evening Concerts in Los Angeles, the Harvard Fromm Players series and the Lucerne Festival Academy under Pierre Boulez. He is a founding member of ensemble et cetera and the Dunscombe/Miller Duo, dedicated to performances of Pierluigi Billone’s bass clarinet masterwork 1+1=1. Curt completed a DMA in contemporary music performance from UC San Diego under Anthony Burr in 2015."
+      ]
+    },
+    { 'title': 'The Art and Science of Livecoding',
+      'image':'images/andrew.jpg',
+      'speaker' :'Andrew Sorensen',
+      'content': [
+        'In this narrated live-coding "performance" Andrew will explore the idea of exploring the world through code. Weaving his way through a minefield of pre and post conditions, Andrew will explore how code supports experimental computation in the physical environment. Along the way, Andrew will touch on an impossibly diverse range of topics from semiotics to CPU registers, from Jean-Michel Jarre to Paul Hindemith, from acoustics to astrophysics and virtually everything in between. Above all, this talk will be practical, with narration and code blending together into a live-coding performance of ideas, as well as sounds.',
+        "Andrew Sorensen’s keynote at ICLC 2016 is made possible in part by support from the Department of Communication Studies and Multimedia at McMaster Univesity, as well as by support from the Social Sciences and Humanities Research Council of Canada (SSHRC)."
+      ],
+      'bios':[
+        "Andrew Sorensen is an artist, a programmer, and a computer scientist. His interests are diverse, but unify under a common theme - the programming language as an interface for real-time dialogue between human, machine, and environment. In exploring these ideas Andrew is as likely to be found hacking code in nightclubs as steering scientific codes on distributed high performance computing clusters.",
+        "Andrew is well known for creating the programming languages that he uses in live performance to generate audiovisual theater. He is regularly invited to perform these contemporary improvisations all around the world. Andrew is also a well known speaker, with regular  appearances at computing, science and arts conferences around the globe.",
+        "Andrew is the author of the Extempore programming language - a systems programming language designed for high-performance 'live' programming. Andrew is a PhD candidate at the Australian National University.  He promises that he really is 'nearly' finished!"
+      ]
+    },
+    { 'title': "Algorave headline act",
+      'algorave':true,
+      'image':'images/alex.jpg',
+      'speaker' :'Alex McLean',
+      'content': [
+        "Free techno improvisations with TidalCycles, mixed in with pre-prepared algorithms from Yaxu's forthcoming album Spicule."
+      ],
+      'bios':[
+        "Yaxu is the solo project of Alex McLean, a live coding musician and software artist based in Sheffield UK. He’s been making people dance to code since the year 2001 through a range of musical collaborations, including with Slub, Canute, xynaaxmue and aalleexx. He releases his “polyrhythmic and hyperreal strand of techno” (bleep.com) on Sheffield label Computer Club, in particular Peak Cut EP (2015) and his forthcoming album Spicule. Alex co-founded the Algorave and TOPLAP live coding movements, and the AlgoMech festival of algorithmic and mechanical movement, the first edition of which takes place 12-20 November 2016 in Sheffield. Alex works as a generalist as a member of FoAM Kernow, and during 2016 he is Sound Artist in Residence at ODI HQ, supported by the Sound and Music national organisation for new music."
+      ]
+    }
+  ];
+  for ( i in theKeynotes ){
+
+    var theAlgo = '';
+    var theAlgoSidebar = '';
+    if ( typeof(theKeynotes[i].algorave) !='undefined'){
+      if (theKeynotes[i].algorave == true){
+        theAlgo = '<span class="algoIcon">ALGORAVE</span>';
+        theAlgoSidebar = '<span class="algoIconSidebar">&nbsp;</span>';
+      }
+    }
+
+    var theContent = '';
+    for (j in theKeynotes[i].content){
+      theContent += '<p>'+theKeynotes[i].content[j]+'</p>';
+    }
+    var theBio = '';
+    if (typeof(theKeynotes[i].bios) != 'undefined'){
+      for (k in theKeynotes[i].bios){
+        theBio += '<p><i>'+theKeynotes[i].bios[k]+'</i></p>';
+      }
+    }
+    else{
+      theBio = '<p><i>'+theKeynotes[i].bio+'</i></p>';
+    }
+    var bioName = theKeynotes[i].speaker;
+
+    var theSubtitle = theKeynotes[i].title;
+    if ( typeof(theKeynotes[i].detail) !='undefined'){
+      theSubtitle +=  ' &mdash; '+theKeynotes[i].detail ;
+    }
+    if ( theAlgo !=''){
+      theSubtitle +=  '&nbsp;'+theAlgo;
+    }
+    theSubtitle = '<small>'+theSubtitle+'</small>';
+
+    // if you find 'and' in the instructor field use a plural users icon.
+    var theBioIconClass = 'fa-user';
+    if (theKeynotes[i].speaker.includes("and")){
+       theBioIconClass= 'fa-users';
+    }
+    var theCredit = '';
+    if (typeof(theKeynotes[i].credit) != 'undefined'){
+       theCredit = ' (Photo: '+theKeynotes[i].credit+')';
+    }
+
+    $(
+      '<h2 id="keynote'+i+'">' +bioName + '<span style="color: #ddd;">&nbsp;|&nbsp;</span>'+
+        theSubtitle + '</h2>'+
+
+        '<div class="panel-group">'+
+          '<div class="panel panel-default">'+
+            '<div class="panel-heading">'+
+              '<h4 class="panel-title">'+
+                '<a data-toggle="collapse" href="#bio'+i+'"><i class="fa '+ theBioIconClass +'" aria-hidden="true"></i>&nbsp; Biography <span style="color:#bbb; font-size: 12px;">&nbsp;CLICK TO EXPAND</span></a>'+
+              '</h4>'+
+            '</div>'+
+            '<div id="bio'+i+'" class="bio panel-collapse collapse">'+
+              '<div class="panel-body">'+theBio+'</div>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+
+        '<p><img src="'+theKeynotes[i].image+'" style="width:100%"><i>'+bioName+theCredit +'</i></p>'+
+
+        theContent
+
+    ).linkify({
+        target: "_blank"
+    }).appendTo('#theKeynotes');
+
+    $('<li><a href="#keynote'+i+'">'+  theAlgoSidebar +' '+ bioName  +'</a></li>').appendTo('.iclc-sidebar ul');
+
+
+
+  }
+}
+</script>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-9" id="theKeynotes">
+                <div class="page-header">
+                    <h1>Keynotes &amp; More</h1>
+                </div>
+
+
+                <!-- content end -->
+            </div>
+
+                <div class="col-md-3 iclc-sidebar">
+                  <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="340">
+                  </ul>
+                </div>
+                <!-- sidebar end -->
+
+        </div>
+    </div>
+
+    <script async="" src="js/analytics.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/linkify.min.js"></script>
+    <script src="js/linkify-jquery.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+        setupMenu();
+        setupAnalytics();
+        setupFooter();
+        setupKeynotes();
+        setupScrolling();
+      });
+    </script>
+
+
+
+  </body></html>
