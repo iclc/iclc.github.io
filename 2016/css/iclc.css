@@ -925,6 +925,29 @@ body {
   color: #fff;
 }
 
+
+.acIcon, .acIconSidebar {
+  font-family: 'Catamaran', sans-serif;
+  vertical-align: center;
+    padding: 4px 5px 1px 26px;
+    background: url(../images/ac-icon-16-w.png) no-repeat 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a2d0d0;
+}
+.acIconSidebar{
+  padding: 5px 0px 0px 18px;
+  background-image: url(../images/ac-icon-16-g.png);
+  background-color: transparent;
+}
+
+.active .acIconSidebar{
+  background-image: url(../images/ac-icon-16-w.png);
+}
+
+
+
 .algoIcon, .algoIconSidebar {
   font-family: 'Catamaran', sans-serif;
   vertical-align: center;

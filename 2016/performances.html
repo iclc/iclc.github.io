@@ -20,6 +20,19 @@
 <script>
 function setupPerformances(){
   var thePerformances = [
+    { 'title': 'On/Off',
+      'artcrawl':true,
+      'author' :'Susanne Palzer',
+      'image':'images/sp.jpg',
+      'sidebar': 'Palzer, Susanne',
+      'content': [
+        "On/Off is a series of performance pieces which explore the intersection of performance and digital technology by deconstruction and re-interpretation. At the centre of On/Off is the body, performing the digital with physical means. On/Off radically reduces 'performance' and the 'digital' to the act of 'going on/off' and binary machine code of ones and zeros. A performer steps on and off a platform saying 'on'/'off', embodying computational processes in physical performance by 'writing' and 'executing script' simultaneously. The performer is both actor, 'live coder' and embodied running software. All 'live coded' performances are improvised but draw on a pool of 'samples': (emotional) mental images which are accessed semi-randomly to create a dramaturgy for the live performance. I am currently looking into possibilities of making the idea of (emotional) 'samples' more concrete and may perform an experimental version of On/Off at ICLC which could involve the audience"
+      ],
+      'bios':[
+        "Susanne Palzer is a cross-disciplinary artist, researcher and performer based in Sheffield, UK. Her current practice investigates the intersection of digital and analogue forms, in particular the fusion of digital technology and physical performance. She is the curator of OPENPLATFORM/RAP(s)-TwT., a micro event that explores the digital with physical means by asking performers to present digital work without using anything digital. Susanne Palzer is a co-director at Access Space, Sheffield."
+      ]
+    },
+
     { 'title': 'Hollow Vertices',
       'algorave':true,
       'detail':'an immersive improv live coding performance',
@@ -443,6 +456,16 @@ function setupPerformances(){
       }
     }
 
+    if ( typeof(thePerformances[i].artcrawl) !='undefined'){
+      if (thePerformances[i].artcrawl == true){
+        /*theAlgo = '<i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;';*/
+        theAlgo = '<span class="acIcon">ARTCRAWL</span>';
+        theAlgoSidebar = '<span class="acIconSidebar">&nbsp;</span>';
+        /*theAlgo = '<img src="images/algo-icon-16.png" width="16" height="16" style="padding: 0px 10px 0px 0px" /><span style="color:#ddd;"></span>';*/
+      }
+    }
+
+
     var theContent = '';
     for (j in  thePerformances[i].content){
       theContent += '<p>'+ thePerformances[i].content[j]+'</p>';
@@ -467,9 +490,7 @@ function setupPerformances(){
     if ( typeof(thePerformances[i].detail) !='undefined'){
       theSubtitle +=  ' &mdash; '+thePerformances[i].detail ;
     }
-    if ( theAlgo !=''){
-      theSubtitle +=  '&nbsp;'+theAlgo;
-    }
+    if ( theAlgo !=''){ theSubtitle +=  '&nbsp;'+theAlgo; }
     theSubtitle = '<small>'+theSubtitle+'</small>';
 
     // if you find 'and' in the instructor field use a plural users icon.
