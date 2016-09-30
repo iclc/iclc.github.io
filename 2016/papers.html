@@ -95,6 +95,7 @@ function setupPapers(){
     },
     {
       'author' : 'Neil C. Smith',
+      'image':'images/ncs.jpg',
       'sidebar': 'Smith',
       'type': 'Short',
       'title': 'Praxis LIVE - hybrid visual IDE for (live) creative coding',
@@ -118,6 +119,8 @@ function setupPapers(){
   {
     'title': "Live Coding the Digital Audio Workstation",
     'author':'Charles Roberts and Graham Wakefield',
+    'image':'images/gw.jpg',
+    'caption':'Graham Wakefield',
     'sidebar': 'Roberts and Wakefield',
     'type': 'Long',
     'abstract' : "We describe a new live-coding system, named Gibberwocky, which integrates the Ableton Live digital audio workstation with a browser-based textual coding environment derived from the Gibber project. The live-coding interface emphasizes sequencing of events and parameter changes as opposed to audio synthesis, but also affords rapid construction of audio graphs to modulate any parameter in Ableton Live with much greater resolution than is typically found in live-coding systems outputting MIDI. It also extends earlier research on dynamic code annotations with more specific solutions for individual pattern generators, and abstractions for musical scores.",
@@ -144,6 +147,7 @@ function setupPapers(){
   {
     'title': 'A Block Based Music Live Coding Environment for Kids',
     'author':'Scott Fradkin',
+    'image':'images/sf.jpg',
     'sidebar': 'Fradkin',
     'type': 'Short',
     "abstract" : "There are a number of great live coding languages available for creating music, many of which are inaccessible to young children for a variety of reasons. Sonic Pi is perhaps the most kid friendly live coding environment for music currently available, but requires the user to be able to read and write. I propose an environment, Snap Music, that is accessible for young children, the same audience that uses applications such as Scratch or ScratchJr to learn how to code. This would be a similar block based environment that can be used for live coding music and learning how to code at the same time. To this end, I have begun to create this environment as a browser based application that uses the Snap! environment and the Tone.js library",
@@ -223,8 +227,16 @@ function setupPapers(){
        theBioIconClass= 'fa-users';
     }
 
+    var theCaption = thePapers[i].author;
+    if (typeof(thePapers[i].caption) != 'undefined'){   theCaption = thePapers[i].caption;   }
 
-    $('<h2 id="paper'+i+'">' + thePapers[i].author + '<br/><small>' + thePapers[i].title + ' ' + paperIcon +'</small></h2>'+
+    var theImage = '';
+    if (typeof(thePapers[i].image) != 'undefined'){
+      theImage = '<p><img src="'+thePapers[i].image+'" style="width:100%"><i>'+theCaption +'</i></p>';
+    }
+
+
+    $('<h2 id="paper'+i+'">' + thePapers[i].author +  '<span style="color: #ddd;">&nbsp;|&nbsp;</span>' + '<small>' + thePapers[i].title + ' ' + paperIcon +'</small></h2>'+
     '<div class="panel-group">'+
       '<div class="panel panel-default">'+
         '<div class="panel-heading">'+
@@ -237,6 +249,9 @@ function setupPapers(){
         '</div>'+
       '</div>'+
     '</div>'+
+
+    theImage+
+
       '<p>'+ thePapers[i].abstract + '</p>'
     ).linkify({
         target: "_blank"

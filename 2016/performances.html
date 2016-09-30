@@ -349,6 +349,8 @@ function setupPerformances(){
     },
     {
       'title':'live canadoodling 16',
+      'image':'images/m.jpg',
+      'caption':'Holger Ballweg and Patrick Borgeat at live.code.festival 2013 in Karlsruhe (Photo: Daniel Bollinger)',
       'content':[
         "Benoît and the Mandelbrots is a live coding quartet formed in 2009 in Karlsruhe (Germany). Together they played over 70 concerts all over Europe in a variety of different styles and settings, including Algoraves, music for silent film, improvisation with acoustic musicians or just plain experimental blank slate live coding sessions. All members use SuperCollider and are connected via BenoitLib for tempo synchronization, communication and data sharing." ,
         "They received an Honorary Mention at Prix Ars Electronica 2012 in the category Digital Musics & Sound Art. A self-titled first album was released in Spring 2016.",
@@ -357,7 +359,8 @@ function setupPerformances(){
       'author': 'Benoît and the Mandelbrots',
       'sidebar':'Benoît and the Mandelbrots',
       'bios':[
-          "Benoît and the Mandelbrots was formed in winter 2009 by Holger Ballweg, Patrick Borgeat, Juan A. Romero and Matthias Schneiderbanger. At that time they were all students at IMWI (Institute for Musicology and Music Informatics) at the Karlsruhe University of Music. Juan and Patrick previously played in the controllerism laptop ensemble Grainface. After SuperCollider workshops with Alberto de Campo and Julian Rohrhuber they teamed up with Holger and Matthias to form the group to explore live coding as a pure way to interact with sound and music algorithms. Starting with playing mostly experimental music in an academic computer music context they tried to expand early on by performing in bars and other venues to reach a broader audience. In their hometown of Karlsruhe this extended to public appearances at large events such as playing the big stage at the city anniversary twice and performing music for silent film in the renowned Schauburg cinema. Overall they have played over 70 concerts in a variety of styles ranging from Algorave performances to live coded live electronics in collaboration with acoustic musicians, and have performed at festivals such as Performing Sound, Playing Technology 2016 at ZKM in Karlsruhe, RADICALdb 2014 in Zaragoza, live.code.festival 2013 in Karlsruhe, Ars Electronica 2012 in Linz, BEAM Festival 2012 in Uxbridge, SuperCollider Symposium 2012 in London, Network Music Festival 2012 in Birmingham and Laptops Meet Musicians Festival 2011 in Venice. They received an Honorary Mention at Prix Ars Electronica 2012 in the category Digital Musics & Sound Art. An album of live coding improvisations was released in Spring 2016 as double vinyl and extended digital download on the the Karlsruhe based label Syff."
+          "Benoît and the Mandelbrots was formed in winter 2009 by Holger Ballweg, Patrick Borgeat, Juan A. Romero and Matthias Schneiderbanger. At that time they were all students at IMWI (Institute for Musicology and Music Informatics) at the Karlsruhe University of Music. Juan and Patrick previously played in the controllerism laptop ensemble Grainface. After SuperCollider workshops with Alberto de Campo and Julian Rohrhuber they teamed up with Holger and Matthias to form the group to explore live coding as a pure way to interact with sound and music algorithms. Starting with playing mostly experimental music in an academic computer music context they tried to expand early on by performing in bars and other venues to reach a broader audience. In their hometown of Karlsruhe this extended to public appearances at large events such as playing the big stage at the city anniversary twice and performing music for silent film in the renowned Schauburg cinema. Overall they have played over 70 concerts in a variety of styles ranging from Algorave performances to live coded live electronics in collaboration with acoustic musicians, and have performed at festivals such as Performing Sound, Playing Technology 2016 at ZKM in Karlsruhe, RADICALdb 2014 in Zaragoza, live.code.festival 2013 in Karlsruhe, Ars Electronica 2012 in Linz, BEAM Festival 2012 in Uxbridge, SuperCollider Symposium 2012 in London, Network Music Festival 2012 in Birmingham and Laptops Meet Musicians Festival 2011 in Venice. They received an Honorary Mention at Prix Ars Electronica 2012 in the category Digital Musics & Sound Art. An album of live coding improvisations was released in Spring 2016 as double vinyl and extended digital download on the the Karlsruhe based label Syff.",
+          "At ICLC 2016 Benoît and the Mandelbrots will be represented by Holger Ballweg and Patrick Borgeat."
       ]
     },
     {
@@ -420,6 +423,15 @@ function setupPerformances(){
 
   for ( i in  thePerformances ){
 
+
+        var theCaption = thePerformances[i].author;
+        if (typeof(thePerformances[i].caption) != 'undefined'){   theCaption = thePerformances[i].caption;   }
+
+        var theImage = '';
+        if (typeof(thePerformances[i].image) != 'undefined'){
+          theImage = '<p><img src="'+thePerformances[i].image+'" style="width:100%"><i>'+theCaption +'</i></p>';
+        }
+
     var theAlgo = '';
     var theAlgoSidebar = '';
     if ( typeof(thePerformances[i].algorave) !='undefined'){
@@ -479,6 +491,7 @@ function setupPerformances(){
             '</div>'+
           '</div>'+
         '</div>'+
+        theImage+
         theContent
 
     ).linkify({
