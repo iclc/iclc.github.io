@@ -67,7 +67,13 @@ function setupMenu() {
               '<li><a href="late-breaking-call.html">Late Breaking Call</a></li>'+
            '</ul>'+
        '</li>'+
-         '<li><a href="travel.html">Travel</a></li>'+
+         '<li class="dropdown">'+
+           '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Travel <span class="caret"></span></a>'+
+             '<ul class="dropdown-menu">'+
+               '<li><a href="travel.html">Arrival</a></li>'+
+               '<li><a href="local.html">Local</a></li>'+
+             '</ul>'+
+         '</li>'+
          '<li><a href="schedule.html">Schedule</a></li>'+
          '<li class="dropdown">'+
            '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Proceedings <span class="caret"></span></a>'+
