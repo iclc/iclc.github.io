@@ -1,0 +1,224 @@
+/*!
+ * qué ven?
+ */
+
+/* Global Styles */
+
+html,
+body {
+  position: relative;
+    height: 100%;
+    /*font-family: Inconsolata;*/
+    font-family: Inconsolata;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+ul {
+  font-size: 13.5px;
+  margin: auto;
+  width:50%;
+}
+
+.navbar-right {
+  width: auto;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Fondo */
+
+.logito {
+  width: 50px;
+  height: 50px;
+}
+
+.iclc-logo_cont {
+background-image: url("../images/logo.png");
+height: 100%;
+background-repeat: no-repeat;
+background-size: 37%;
+background-position: center;
+background-color: rgba(0, 0, 0, 0.3);
+position: absolute;
+top: 0px;
+z-index: 23;
+width: 100%;
+}
+
+#fondochido {
+    height: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    display:none;
+}
+
+header {
+  height: 100%;
+background-color: black;
+}
+
+#inicio {
+  top: 0px;
+position: absolute;
+height: 1px;
+z-index: 999;
+}
+
+#click {
+position: absolute;
+top: 34%;
+left: 39%;
+z-index: 99;
+height: 32%;
+width: 22%;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+p {
+  margin-left: center;
+  margin-right: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  text-align: justify;
+  z-index: 2;
+  font-family: Inconsolata;
+  font-size: 13.5px;
+}
+
+/* Footer Styles */
+
+.iclc-title {
+
+}
+
+.iclc-date {
+font-style: italic;
+}
+
+.iclc-div {
+  margin-top: 20px;
+}
+
+.iclc-link {
+  color: #9500FF;
+  font-weight: bold;
+}
+
+.iclc-link:visited {
+  color: #9500FF;
+  font-weight: bold;
+  text-decoration: none
+}
+
+.iclc-link:hover {
+  color: #FF00B7;
+  text-decoration: none
+}
+
+#iclc-logo {
+  width: 361px;
+  height:313px;
+  margin: auto
+}
+
+.offset-r {
+  margin-left: 8%;
+}
+
+.offset-r2 {
+  margin-left: 10%;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar-inverse {
+background-color: black!important;
+}
+
+navbar-inverse .navbar-nav>li>a {
+    color: white!important;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+
+.iclc-logo_cont {
+  background-size: 95%;
+  }
+
+p {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+}
+
+@media(max-width:767px) {
+
+.iclc-logo_cont {
+  background-size: 95%;
+  }
+
+p {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul {
+  width: 90%;
+}
+
+}
+
+  @font-face {
+      font-family: Inconsolata;
+      src: url("../Inconsolata-Regular.ttf");
+    }
+
+    div {
+      font-family: Inconsolata;
+    }
+
+    #main {
+      font-family: Inconsolata;
+    }
