@@ -222,3 +222,7 @@ ul {
     #main {
       font-family: Inconsolata;
     }
+
+.navbar-nav > li > a {
+  font-size: 120%;
+}
