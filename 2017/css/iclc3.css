@@ -23,6 +23,24 @@ ul {
   width:50%;
 }
 
+.carousel {
+width: 612px;
+margin-top: 62px;
+margin: 62px auto auto;
+}
+
+.keynote {
+  padding:0;
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-menu > li > a {
+  color: white;
+}
+
 .navbar-right {
   width: auto;
 }
@@ -193,6 +211,9 @@ p {
 }
 
 @media(max-width:767px) {
+.carousel {
+  width: 100%;
+}
 
 .iclc-logo_cont {
   background-size: 95%;
