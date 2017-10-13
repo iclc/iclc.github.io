@@ -29,8 +29,21 @@ margin-top: 62px;
 margin: 62px auto auto;
 }
 
+.keynote1 {
+  margin-left: center;
+  margin-right: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: justify;
+}
+
+
 .keynote {
-  padding:0;
+  margin-left: center;
+  margin-right: center;
+  padding-right: 70px;
+  padding-left: 70px;
+  text-align: justify;
 }
 
 .dropdown-menu {
