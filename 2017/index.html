@@ -224,15 +224,12 @@ los artículos definitivos para publicación de las actas de la conferencia
     <!-- Script fondo chido-->
     <script>
 var array = ["url(images/pic1.png)", "url(images/pic2.png)",
-"url(images/pic3.png)", "url(images/pic4.png)",
-"url(images/pic5.png)", "url(images/pic6.png)",
-"url(images/pic7.png)", "url(images/pic8.png)",
-"url(images/pic9.png)"];
+"url(images/pic3.png)"];
 fondorand(array);
 
   function fondorand(array) {
   var fondo = document.querySelector('#fondochido');
-  var num = Math.floor(Math.random() * 8);
+  var num = Math.floor(Math.random() * 3);
 
   fondo.style.backgroundImage = array[num];
 

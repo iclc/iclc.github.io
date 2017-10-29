@@ -74,7 +74,7 @@ margin: 62px auto auto;
 }
 
 .iclc-logo_cont {
-background-image: url("../images/logo.png");
+/*background-image: url("../images/logo.png");*/
 height: 100%;
 background-repeat: no-repeat;
 background-size: 37%;
