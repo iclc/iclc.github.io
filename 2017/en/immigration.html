@@ -9,6 +9,12 @@
     <meta name="description" content="ICLC 2017, International Conference on Live Coding">
     <meta name="author" content="narcode + veería">
 
+    <meta property="og:title" content="ICLC 2017" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://iclc.livecodenetwork.org/2017/index.html" />
+    <meta property="og:image" content="https://iclc.livecodenetwork.org/2017/images/social_media-img.png" />
+    <meta property="og:description" content="ICLC 2017 website" />
+
     <title>ICLC 2017</title>
 
     <!-- Bootstrap Core CSS -->
@@ -88,7 +94,7 @@
                                 <a href="accommodation.html">Accommodation</a>
                             </li>
                             </ul>
-                      </li>
+                     </li>
                      <li class="dropdown">
                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
                          <ul class="dropdown-menu">
@@ -121,71 +127,23 @@
      </div>
      <!-- /.container -->
  </nav>
+         <!-- /.navbar-collapse -->
+     </div>
+     <!-- /.container -->
+ </nav>
 
-    <!-- Page Content -->
     <div id="call" style="height:10px"></div>
     <div class="container">
-      <p style="font-size:122%;">
-      <br>  <b>
-      Traveling to ICLC 2017
-      </b></p>
-      <br>
-      <p>
-      ICLC 2017 will be held in the historic <a href=https://www.visitmexico.com/en/main-destinations/michoacan/morelia>city of Morelia</a>, Michoacán, located in the central region of Mexico.
-      The Conference will take place in 3 important cultural centers: the Centro Mexicano para la Música y las Artes Sonoras (CMMAS), the Centro Cultural Clavijero, and the Comité de Asuntos Intangibles.
-      <br><br>
-  <a href=http://cmmas.org/?lan=en>Centro Mexicano para la Música y las Artes Sonoras (CMMAS)</a>
-  <br>
-  Casa de la Cultura (2do. piso)
-  <br>
-  Av. Morelos Norte 485, Centro.
- <br>
- Morelia, Michoacán, México.
-  <br>
-  Tel: +52 (443) 317 5679 y +52 (443) 313 8343
-  <br><br>
-  <a href=http://www.mexicoescultura.com/recinto/58790/en/>Centro Cultural Clavijero</a>
-  <br>
-  El Nigromante 79, Centro Histórico, c.p. 58000.
-  <br>
-  Morelia, Michoacán, México.
-  <br>
-  Tel: +52 443 312 0412
-  <br><br>
-  <a href=https://www.facebook.com/comiteAsuntosIntangibles/>Comité de Asuntos Intangibles</a>
-  <br>
-  Bartolomé de Las Casas 488, Centro Histórico, c.p. 58000.
-  <br>
-   Morelia, Michoacán, México.
-      </br></br>
-      <p style="font-size:122%;">
-         <b>
-      Traveling to Morelia from outside Mexico
- </b></p><p><br>
-To travel to Morelia from a different country than Mexico you need to take a flight to <i>Benito Juarez</i> international airport (MEX)
-located in Mexico City and then, take either a flight to Morelia's <i>General Francisco Mújica</i> international airport (MLM) or a bus from
-<i>Observatorio</i> bus station in Mexico City to Morelia. Please consult the following link to book international
-<a href=https://www.expedia.com/>flights</a>.
+                <p style="font-size:122%;">
+                   <br> <br> <b>
+                     Mexican Visa policy
+                </b></p><p>
+                  Please make sure to revise the Mexican visa policy before traveling to ICLC 2017.
+                  <br> <a href=https://en.wikipedia.org/wiki/Visa_policy_of_Mexico>Countries that need a visa to enter Mexico</a>
+                  <br><a href=https://www.gob.mx/sre/acciones-y-programas/visa-de-visitante-sin-permiso-para-realizar-actividades-remuneradas>Tourist visa information</a>
+                  <br> <a href=https://www.gob.mx/tramites/ficha/visa-de-visitante-sin-permiso-para-realizar-actividades-remuneradas/SRE232>Application for visitor visa</a>
+                <br>
 
-<p style="font-size:122%;">
-<br>  <b>
-Taking a flight to Morelia from Mexico City
-</b></p><p><br>
-To book domestic flights from Mexico City (MEX) to Morelia (MLM) please check the following <a href=https://www.aeromar.com.mx/index.php?idioma=en>link</a>.
-<br>
-
-<p style="font-size:122%;">
-<br>  <b>
-Taking a bus to Morelia from Mexico City
-</b></p><p><br>
-Take a cab from <i>Benito Juarez</i> international airport (MEX) in Mexico City to the <i>Observatorio</i> bus station. <i>Observatorio</i> bus station is between 45 minutes to 1 hour away from Mexico City's airport.
-Once you have arrived to <i>Observatorio</i> bus station locate the bus services ETN or Primera Plus and purchase your tickets directly at the booth.
-Buses depart every 30 or 45 minutes to Morelia. Consult bus schedules from <i>Observatorio</i> bus station to Morelia's bus station at the following links:
-<br>
-<a href=https://www.primeraplus.com.mx/en/web/primerapluspublico/home/>Autobuses Primera Plus</a>
-<br>
-<a href=https://etn.com.mx/english/>Autobuses ETN</a>
-</br>
     </br></br>
 </div>
         </div>
@@ -210,6 +168,7 @@ Buses depart every 30 or 45 minutes to Morelia. Consult bus schedules from <i>Ob
               </div>
             </div>
         </footer>
+
     </div>
     <!-- /.container -->
 
@@ -218,6 +177,22 @@ Buses depart every 30 or 45 minutes to Morelia. Consult bus schedules from <i>Ob
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Script fondo chido-->
+    <script>
+var array = ["url(../images/pic1.png)", "url(../images/pic2.png)",
+"url(../images/pic3.png)"];
+fondorand(array);
+
+  function fondorand(array) {
+  var fondo = document.querySelector('#fondochido');
+  var num = Math.floor(Math.random() * 3);
+
+  fondo.style.backgroundImage = array[num];
+
+  $('#fondochido').fadeIn(100);
+  }
+    </script>
 </body>
 
 </html>
