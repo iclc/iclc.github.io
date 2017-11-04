@@ -13,6 +13,28 @@ body {
     overflow-x: hidden;
 }
 
+
+sub1 {
+  background-color: rgba(255,0,170,0.35);
+}
+
+sub2 {
+  background-color: rgba(255,0,219,0.05);
+}
+
+sub3 {
+  background-color: rgba(0,250,219,0.172);
+}
+
+sub5 {
+  background-color: rgba(255,0,219,2);
+}
+
+sub6 {
+  background-color: rgba(255,0,219,0.9);
+}
+
+
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }

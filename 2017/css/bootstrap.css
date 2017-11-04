@@ -9,6 +9,29 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+
+
+sub1 {
+  background-color: rgba(255,0,170,0.35);
+}
+
+sub2 {
+  background-color: rgba(250,170,0,0.4);
+}
+
+sub3 {
+  background-color: rgba(0,250,219,0.4);
+}
+
+sub5 {
+  background-color: rgba(255,0,219,2);
+}
+
+sub6 {
+  background-color: rgba(255,0,219,0.9);
+}
+
+
 body {
   margin: 0;
 }
