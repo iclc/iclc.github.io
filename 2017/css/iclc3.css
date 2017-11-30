@@ -4,6 +4,10 @@
 
 /* Global Styles */
 
+.narcordion {
+  color: #c03fff;
+}
+
 html,
 body {
   position: relative;
