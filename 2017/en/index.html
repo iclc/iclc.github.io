@@ -249,6 +249,22 @@ The deadline for proposals to the International Conference on Live Coding 2017 (
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- Script fondo chido-->
+    <script>
+var array = ["url(../images/pic1.png)", "url(../images/pic2.png)",
+"url(../images/pic3.png)"];
+fondorand(array);
+
+  function fondorand(array) {
+  var fondo = document.querySelector('#fondochido');
+  var num = Math.floor(Math.random() * 3);
+
+  fondo.style.backgroundImage = array[num];
+
+  $('#fondochido').fadeIn(100);
+  }
+
+    </script>
 </body>
 
 </html>
