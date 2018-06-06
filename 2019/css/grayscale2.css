@@ -39,12 +39,17 @@ ul {
     padding: 0;
 }
 
+li {
+  margin-bottom: 10px;
+}
+
 .iclc-justify {
   text-align: justify;
 }
 
 .iclc-black {
   color: black;
+  font-weight: bold;
 }
 
 .iclc-black a {
