@@ -21,6 +21,9 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale2.css" rel="stylesheet">
 
+    <!-- FAVICON -->
+    <link rel="icon" href="img/favicon_color.ico" type="image/x-icon">
+    
   </head>
 
   <body id="page-top">
@@ -102,8 +105,8 @@
                 <a href="https://www.facebook.com/groups/1683408058575303/">TOPLAP Node Yorkshire</a> (UK),
                 <a href="https://www.facebook.com/groups/897471030365142/">TOPLAP Node North-East</a> (UK),
                 <a href="https://www.facebook.com/groups/649065301912229/">TOPLAP Node México</a> (MX),
-                <a href="https://www.facebook.com/groups/897471030365142/">Cybernetic Orchestra</a> (CA),
-                <a href="https://www.facebook.com/groups/897471030365142/">TOPLAP Berlín</a> (DE),
+                <a href="https://www.facebook.com/CyberneticOrchestra/">Cybernetic Orchestra</a> (CA),
+                <a href="https://www.facebook.com/groups/toplapnodeberlin/1725919034313087/">TOPLAP Berlín</a> (DE),
                 <a href="https://noiskate.hotglue.me/?ToplapMedellin">TOPLAP Medellín</a> (CO),
                 <a href="https://livecodear.github.io/">TOPLAP Buenos Aires</a> (AR) o
                 <a href="http://livecodemad.org/">Live Code Mad</a> (SP) o
@@ -241,26 +244,43 @@
       </div>
     </section>
 
-    <!--
+    <!-- Map Section -->
+
     <div id="map">
       <script>
       function initMap() {
-        var uluru = {lat:40.4105268, lng: -3.6959795};
+        var uluru = {lat:40.4105268, lng: -3.6937908};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 15,
+          styles: [
+            {
+              stylers: [
+                { saturation: -90 },
+                { lightness: 50 }
+              ]
+            },
+          ],
           center: uluru
         });
         var marker = new google.maps.Marker({
           position: uluru,
-          map: map
+          map: map,
+          title: "Medialab-Prado",
+          url: "https://www.google.es/maps/place/Medialab-Prado/@40.4105268,-3.6937908,15z/data=!4m5!3m4!1s0x0:0xd69ac9ed8a94df3d!8m2!3d40.4105268!4d-3.6937908"
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            // window.location.href = this.url;
+            $('<a href="'+ this.url +'" target="_blank">External Link</a>')[0].click();
         });
       }
     </script>
-    </div>Map Section -->
+    </div>
 
     <!-- Footer -->
     <footer>
       <div class="container text-center">
+        <!-- ICLC 2019 Madrid | Medialab-Prado | LiveCodeMad -->
+        <a href="https://www.michaelbromley.co.uk/experiments/chromata/" target="_blank">Chromata.js by Michael Bromley</a>
       </div>
     </footer>
 
