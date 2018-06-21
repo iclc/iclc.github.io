@@ -56,6 +56,10 @@ li {
   color: #1d9b6c;
 }
 
+.iclc-small {
+  font-size:1rem;
+}
+
 @media (min-width: 768px) {
   p {
     font-size: 18px;
