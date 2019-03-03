@@ -1,0 +1,176 @@
+/*=================================
+Start Off Canvas Area Wrapper
+==================================*/
+.off-canvas-area-wrapper, .off-canvas-responsive-menu, .off-canvas-search-box {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 0.4s;
+  height: 100vh;
+  width: 100vw;
+
+  .off-canvas-content-wrap {
+    background-color: white;
+    margin-left: auto;
+    height: 100%;
+    position: relative;
+    transform: translateX(calc(100% + 40px));
+    transition: 0.4s;
+    max-width: 360px;
+    width: 100%;
+
+    @media #{$xs-device} {
+      max-width: 250px !important;
+    }
+
+    .off-canvas-content {
+      padding: 40px;
+      height: 100%;
+      overflow-y: auto;
+
+      @media #{$xs-device} {
+        padding: 30px 15px;
+      }
+
+      .off-canvas-item {
+        margin-bottom: 60px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        h2 {
+          font-size: 16px;
+          line-height: 1;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-bottom: 23px;
+          margin-top: -2px;
+        }
+      }
+    }
+
+    .btn-close {
+      background-color: white;
+      position: absolute;
+      right: 100%;
+      top: 100px;
+      line-height: 40px;
+      height: 40px;
+      width: 40px;
+
+      &:hover {
+        background-color: $brand-color;
+        color: white;
+      }
+    }
+  }
+
+  // Overlay
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    z-index: 9999;
+    .off-canvas-overlay {
+      background-color: rgba(black, 0.5);
+      content: "";
+      cursor: url('../img/icons/cancel.png'), auto;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .off-canvas-content-wrap {
+      transform: none;
+    }
+  }
+}
+
+// Search Box Style
+.search-box-wrap {
+  background-color: #f4f4f4;
+  margin: -40px -40px 0 -40px;
+  padding: 35px 40px;
+
+  @media #{$xs-device} {
+    margin: -30px -15px 0 -15px;
+  }
+
+  form {
+    position: relative;
+
+    input {
+      background-color: transparent;
+      border: none;
+      display: block;
+      padding-right: 20px;
+      outline: none;
+      width: 100%;
+    }
+
+    .btn-search {
+      font-size: 13px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// Useful Links Style
+.useful-link-menu {
+  margin-top: -20px;
+  overflow: hidden;
+
+  li {
+    float: left;
+    margin-top: 20px;
+    max-width: 50%;
+    width: 100%;
+
+    a {
+      color: $paragraph;
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+}
+
+// Social Link Icons
+.social-links {
+  position: relative;
+  a {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    color: $paragraph;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $brand-color;
+      color: white;
+    }
+  }
+}

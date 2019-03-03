@@ -1,0 +1,81 @@
+/*=============================
+56. Start Pricing Content Area
+==============================*/
+.pricing-title-area {
+  color: $black-soft;
+  font-size: 16px;
+  font-weight: 700;
+
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: -10px;
+  }
+}
+
+// Start single Pricing Item
+.pricing {
+  &-item-wrap {
+    background-color: $white;
+    padding: 70px 15px;
+    margin-top: 30px;
+
+    .btn {
+      padding: 15px 35px;
+      margin-top: 40px;
+    }
+
+    &--feature {
+      .pricing__info {
+        background-color: $brand-color;
+
+        &__duration {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+
+  &__info {
+    border: 5px solid $brand-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 40px auto;
+
+    &__amount {
+      color: $black-soft;
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__package-feature {
+    li {
+      border-bottom: 1px solid $border-color;
+      padding: 20px 10px;
+
+      &:first-child {
+        border-top: 1px solid $border-color;
+      }
+    }
+
+    strong {
+      color: $black-soft;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+/*===============================
+43. Start Business Feature Area
+================================*/
+.business-feature-area {
+  background-color: lighten($black, 6.7%);
+  color: $white;
+  padding: 120px 0 115px;
+  position: relative;
+
+  @media #{$md-device} {
+    padding: 80px 0 75px;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0 55px;
+  }
+
+  &:before {
+    background: url("../img/home-business/business-b.png") no-repeat 150px center;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+
+    @media #{$lg-device, $xlmax-device} {
+      background-size: 200px 200px;
+      background-position: 50px center;
+    }
+
+    @media #{$md-device, $sm-device} {
+      display: none;
+    }
+  }
+}
+
+.single-desc-item-wrap {
+  .desc-number {
+    margin-right: 15px;
+    flex-basis: 50px;
+  }
+
+  .busi-fea-info {
+    color: #CCCCCC;
+    flex-basis: calc(100% - 50px);
+    h3 {
+      margin-top: 0;
+      color: $white;
+    }
+
+    .btn-view {
+      color: $white;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-top: 23px;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+
+  &.layout--2 {
+    .desc-number {
+      border-color: $black-soft;
+      color: $black-soft;
+    }
+
+    .busi-fea-info {
+      color: $paragraph;
+      h3 {
+        margin-top: 0;
+        color: $black-soft;
+      }
+
+      .btn-view {
+        color: $black-soft;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: 23px;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
+
+/*=============================
+Start Business Progress Area
+===============================*/
+.business-progress-area {
+  position: relative;
+  padding: 120px 0;
+
+  @media #{$md-device} {
+    padding: 80px 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0;
+  }
+}
+
+.business-progress-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+
+  @media #{$sm-device} {
+    min-height: 300px;
+    width: 100%;
+  }
+}
+
+.full-width-bg {
+  position: static;
+}

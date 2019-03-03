@@ -1,0 +1,130 @@
+/*===============================
+54. Start Team Member Content Area
+================================*/
+.team-member-area-wrapper {
+  .speaker-member-wrap {
+    .designation {
+      color: $paragraph;
+    }
+  }
+}
+
+.team-member {
+  &-item {
+    overflow: hidden;
+  }
+
+  &-pro-pic {
+    @media #{$lg-device} {
+      max-height: 400px;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-info {
+    padding: 30px 15px !important;
+
+    @media #{$xl-device} {
+      padding: 30px 60px !important;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1;
+
+      @media #{$md-device, $lg-device, $xlmax-device} {
+        font-size: 30px;
+      }
+
+      @media #{$sm-device} {
+        font-size: 24px;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+
+      @media #{$sm-device} {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/*==================================
+Start Team Member Content Area
+===================================*/
+
+.team-member-content-item {
+  color: #222222;
+  line-height: 2;
+  margin-top: 100px;
+
+  @media #{$md-device} {
+    margin-top: 70px;
+  }
+
+  @media #{$sm-device} {
+    margin-top: 55px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 37px;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+  }
+
+  address {
+    color: $black-soft;
+    font-weight: 700;
+  }
+}
+
+.team-member-profile {
+  h2 {
+    font-size: 70px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+    @media #{$sm-device} {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 50px;
+
+    @media #{$sm-device} {
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+  }
+}
+
+.awards-list {
+  padding-left: 20px;
+  li {
+    list-style-type: inherit;
+  }
+}
+
+.team-member-item.row {
+  align-items: center;
+}

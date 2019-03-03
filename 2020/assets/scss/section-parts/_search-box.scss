@@ -1,0 +1,63 @@
+/*======================
+Start Search Box Area
+========================*/
+
+.off-canvas-search-box {
+  &.show {
+    .off-canvas-overlay {
+      background-color: rgba($white, 0.8) !important;
+    }
+
+    .search-box-content {
+      //transform: scale(1);
+      opacity: 1;
+      visibility: visible;
+      animation: slideInUp 1s forwards;
+    }
+  }
+}
+
+.search-box-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.search-box-content {
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  form {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+
+  input {
+    background-color: $white;
+    border: none;
+    outline: none;
+    padding: 15px 80px 15px 15px;
+    display: block;
+    width: 100%;
+  }
+
+  .btn-search {
+    background-color: $brand-color;
+    color: $white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    transition: 0.5s;
+    height: 100%;
+    width: 60px;
+
+    &:hover {
+      background-color: $black-soft;
+    }
+  }
+}

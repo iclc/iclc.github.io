@@ -1,0 +1,14 @@
+/*==============================
+59. Start 404 Error Page Content
+================================*/
+.error-page-bg {
+  height: 100%;
+
+  @media #{$md-device} {
+    height: 600px;
+  }
+
+  @media #{$sm-device} {
+    height: 300px;
+  }
+}

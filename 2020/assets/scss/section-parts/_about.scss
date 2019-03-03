@@ -1,0 +1,100 @@
+/*=======================
+25. Start About Me Area
+==========================*/
+.about-me-area {
+  padding: 150px 0;
+
+  @media #{$md-device} {
+    padding: 80px 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0;
+  }
+}
+
+.about-me-content {
+  .about-author-thumb {
+    border-radius: 50%;
+    flex-basis: 170px;
+    height: 170px;
+    width: 170px;
+    overflow: hidden;
+    margin: auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .about-author-info {
+    flex-basis: calc(100% - 200px);
+    margin-left: 30px;
+
+    @media #{$xs-device} {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 34px;
+      margin-top: -3px;
+
+      @media #{$sm-device} {
+        margin-bottom: 20px;
+      }
+    }
+
+    .author-sign {
+      margin-top: 24px;
+    }
+  }
+}
+
+/*===============================================
+Start About Area Wrapper  [Index Creative Studio]
+=================================================*/
+.about-area-wrapper {
+  padding: 180px 0;
+
+  @media #{$md-device} {
+    padding: 80px 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0;
+  }
+
+  .about-content {
+    background-color: $white;
+    padding: 100px 60px;
+
+    @media #{$sm-device} {
+      padding: 50px 15px;
+    }
+
+    h2 {
+      font-size: 40px;
+      line-height: 1;
+      margin-bottom: 40px;
+
+      @media #{$sm-device} {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+    }
+
+    .btn {
+      margin-top: 29px;
+
+      @media #{$sm-device} {
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+/*==============================
+40. Start Freelancer Hero Area
+================================*/
+.freelancer-hero-area-wrapper {
+  height: 100vh;
+  position: relative;
+
+  &:before {
+    @include overlay($black-soft, 0.4);
+  }
+}
+
+// Freelancer Name Style
+.single-freelancer-name {
+  h2 {
+    color: $white;
+    font-size: 70px;
+    line-height: 1;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+  }
+
+  .freelance-title {
+    color: $brand-color;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: $font-family-pd;
+    line-height: 1;
+
+    @media #{$sm-device} {
+      font-size: 16px;
+    }
+  }
+}
+
+.name-divider {
+  color: $white;
+  font-size: 88px;
+  font-weight: 700;
+  font-family: $font-family-pd;
+  line-height: 1;
+  margin: -10px 15px 0;
+
+  @media #{$sm-device} {
+    font-size: 20px;
+
+    margin: 10px 0;
+  }
+}
+
+.freelancer-hero-content {
+  color: $white;
+  font-weight: 500;
+
+  .hero-desc {
+    max-width: 50%;
+    margin: 40px auto auto;
+
+    @media #{$md-device} {
+      max-width: 80%;
+    }
+
+    @media #{$sm-device} {
+      max-width: 100%;
+      margin: 15px auto auto;
+    }
+  }
+}
+
+// Mouse Wheel Button
+.mouse-wheel {
+  border: 1px solid $white;
+  border-radius: 50px;
+  display: block;
+  height: 60px;
+  width: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -15px;
+
+  @media #{$sm-device} {
+    height: 40px;
+    width: 20px;
+    bottom: 15px;
+  }
+
+  &:before {
+    background-color: $white;
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+    display: block;
+    height: 10px;
+    width: 4px;
+    animation: drop 1.5s infinite;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  33.33% {
+    top: 15px;
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+
+/*==================================
+Start Freelancer Skills Area
+=====================================*/
+.freelancer-skills-area {
+  padding: 120px 0;
+
+  @media #{$md-device} {
+    padding: 80px 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0;
+  }
+}
+
+.freelancer-info {
+  h2 {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}

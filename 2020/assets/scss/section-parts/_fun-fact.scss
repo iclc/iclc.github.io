@@ -1,0 +1,93 @@
+/*=============================
+09. Start Fun Fact Area Wrapper
+==============================*/
+.single-fun-fact-wrap {
+  background-color: #161616;
+  padding: 145px 0;
+  border-right: 1px solid #222222;
+
+  @media #{$md-device} {
+    padding: 80px 0;
+    border-bottom: 1px solid #222222;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0;
+    border-bottom: 1px solid #222222;
+  }
+
+  .fun-fact-number {
+    color: $white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+
+    @media #{$xs-device} {
+      font-size: 30px;
+    }
+  }
+
+  h4 {
+    color: $brand-color;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    @media #{$xs-device} {
+      font-size: 13px;
+    }
+  }
+
+  // Fun Fact Layout Two
+
+  &.layout--2 {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    margin-top: 30px;
+
+    .fun-fact-number, h4 {
+      color: $black-soft;
+    }
+  }
+
+  &.layout--3 {
+    background: transparent bottom center;
+    border: 0;
+
+    .fun-fact-number {
+      color: $black-soft;
+    }
+
+    h4 {
+      @media #{$sm-device} {
+        color: $black;
+      }
+    }
+  }
+}
+
+[class*="col-6"] {
+  &:nth-child(1n+3) {
+    .single-fun-fact-wrap {
+      &.layout--3 {
+        @media #{$sm-device, $md-device} {
+          border-top: 1px solid $border-color;
+        }
+      }
+    }
+  }
+  &:nth-child(2n+2) {
+    .single-fun-fact-wrap {
+      &.layout--3 {
+        @media #{$sm-device, $md-device} {
+          border-left: 1px solid $border-color;
+        }
+      }
+    }
+  }
+}

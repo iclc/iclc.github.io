@@ -1,0 +1,68 @@
+/*==================================
+22. Start Shop Creative Banner Area
+====================================*/
+.single-creative-shop-banner {
+  padding: 200px 0 350px;
+
+  @media #{$md-device,$lg-device} {
+    padding: 150px 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 100px 0;
+  }
+
+  @media #{$xs-device} {
+    padding: 60px 0;
+  }
+
+  .creative-shop-banner-content {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+    @media #{$xs-device} {
+      font-size: 16px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 110px;
+      line-height: 1;
+      margin: 0 0 23px;
+      position: relative;
+      padding-bottom: 17px;
+
+      @media #{$lg-device} {
+        font-size: 90px;
+        padding-bottom: 20px;
+      }
+
+      @media #{$md-device} {
+        font-size: 60px;
+        padding-bottom: 24px;
+      }
+
+      @media #{$sm-device} {
+        font-size: 50px;
+        padding-bottom: 30px;
+      }
+
+      @media #{$xs-device} {
+        font-size: 30px;
+        padding-bottom: 30px;
+      }
+
+      &:before {
+        background-color: white;
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        height: 3px;
+        width: 60%;
+      }
+    }
+  }
+}

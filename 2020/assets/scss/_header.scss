@@ -1,0 +1,373 @@
+/*=============================
+02. Start Header Area Wrapper
+===============================*/
+.header-area-wrapper {
+  padding: 70px 0;
+  @media #{$md-device} {
+    padding: 40px 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 30px 0;
+  }
+
+  button {
+    @media #{$md-device, $sm-device} {
+      font-size: 20px;
+    }
+  }
+
+  .row {
+    align-items: center;
+  }
+}
+
+// Logo Area Style
+.logo-wrap {
+  img {
+    &.sticky-logo {
+      display: none;
+    }
+  }
+}
+
+// Off Canvas Button
+.off-canvas-area-wrap {
+  margin-left: 60px;
+
+  @media #{$md-device, $sm-device} {
+    margin-left: 0;
+  }
+
+  button {
+    color: white;
+    line-height: 1;
+    transition: 0.4s;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    .bar-txt {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-right: 100px;
+    }
+  }
+}
+
+// Sticky Header Style
+.sticky-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: padding 0.5s;
+  z-index: 1030;
+
+  &.sticky {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .05);
+    padding: 25px 0;
+    animation: fadeInDown 1s forwards;
+
+    * {
+      color: $black-soft;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+
+    .logo-wrap {
+      img {
+        display: none;
+
+        &.sticky-logo {
+          display: inline-block;
+        }
+      }
+    }
+
+    .main-menu {
+      & > .dropdown-navbar {
+        & > .dropdown-nav {
+          margin-top: 29px;
+
+          &:before {
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .header-left-wrapper, .off-canvas-area-wrap {
+      &:before {
+        height: 20px !important;
+      }
+    }
+  }
+}
+
+// Header Style Two
+.black-header {
+  .sticky-logo {
+    display: inline-block !important;
+  }
+  ul {
+    li {
+      a {
+        color: $black-soft;
+      }
+    }
+  }
+
+  button {
+    color: $black-soft;
+  }
+}
+
+// Header Small Padding
+.header-padding {
+  padding: 41px 0;
+  box-shadow: none;
+
+  @media #{$sm-device} {
+    padding: 25px 0;
+  }
+}
+
+// Header Four Style Here
+.header-four {
+  border-bottom: 1px solid rgba(white, 0.2);
+  padding: 41px 0;
+
+  .container-fluid {
+    @media #{$xlmax-device, $lg-device} {
+      padding: 0 15px;
+    }
+  }
+
+  .header-left-wrapper {
+    position: relative;
+    padding-right: 60px;
+    margin-right: 60px;
+
+    @media #{$lg-device} {
+      padding-right: 20px;
+      margin-right: 20px;
+    }
+
+    @media #{$md-device, $sm-device} {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    &:before {
+      background-color: rgba(white, 0.2);
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -42px;
+      transition: 0.2s;
+      height: 107px;
+      width: 1px;
+
+      @media #{$md-device, $sm-device} {
+        display: none;
+      }
+    }
+  }
+
+  .header-right-wrapper {
+
+    @media #{$xl-device, $lg-device} {
+      width: 100%;
+    }
+
+    .off-canvas-area-wrap {
+      position: relative;
+      padding-left: 60px;
+
+      @media (max-width: 1599px) {
+        padding-left: 15px;
+        margin-left: 15px;
+      }
+
+      &:before {
+        background-color: rgba(white, 0.2);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -47px;
+        transition: 0.3s;
+        height: 107px;
+        width: 1px;
+        display: none;
+
+        @media (min-width: 1600px) {
+          display: block;
+        }
+      }
+
+      .off-canvas-btn {
+        @media #{$xlmax-device, $lg-device} {
+          font-size: 20px;;
+          line-height: 1;
+          color: #aaaaaa;
+        }
+
+        .bar-txt {
+          @media #{$xlmax-device, $lg-device} {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .footer-social-icons {
+      @media #{$md-device, $sm-device} {
+        a {
+          font-size: 20px;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+// Header Left Fix Style
+.header-fix-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 15px 0;
+  max-width: 1140px;
+  margin: auto;
+  z-index: 999;
+
+  @media #{$lg-device} {
+    max-width: 960px;
+  }
+
+  @media #{$md-device} {
+    max-width: 720px;
+  }
+
+  @media #{$sm-device} {
+    max-width: 540px;
+  }
+
+  @media screen and (min-width: 991.99px) and (max-width: 1599.99px) {
+    justify-content: flex-start;
+
+    .logo-area-wrap {
+      margin-right: 100px;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: block;
+    max-width: 265px;
+    width: 100%;
+
+    .logo-area-wrap {
+      margin-bottom: 60px;
+      padding: 114px 80px 0;
+    }
+
+    .main-menu {
+      &.nav {
+        display: block !important;
+        width: 200px;
+
+        & > li {
+          margin-bottom: 10px;
+          margin-right: 0;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            padding: 10px 80px;
+          }
+
+          .dropdown-nav {
+            left: 100%;
+            top: 0;
+            margin-top: -50px;
+
+            &.mega-menu-wrap {
+              min-width: 1140px;
+            }
+          }
+        }
+
+        .full-width {
+          position: relative;
+        }
+
+        & > .arrow {
+          & > a {
+            &:after {
+              content: '\f105';
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-two {
+    padding: 41px 15px;
+    @media screen and (min-width: 1600px) {
+      background-color: $white;
+      padding: 0;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+
+      .logo-area-wrap {
+        padding: 0;
+        margin: 100px 0 80px;
+        text-align: center;
+      }
+
+      .main-menu {
+        text-align: center;
+        &.nav {
+          width: auto;
+
+          & > li {
+            margin-bottom: 0;
+            border-bottom: 1px solid rgba($black, 0.05);
+
+            &:last-child {
+              border-bottom: 0;
+            }
+
+            &:hover {
+              & > a {
+                background-color: $brand-color;
+                color: $white;
+              }
+            }
+
+            & > a {
+              padding: 25px 10px;
+              display: block;
+            }
+
+            ul {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

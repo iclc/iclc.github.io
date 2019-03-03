@@ -1,0 +1,80 @@
+/*============================
+17. Start Product Slider Area
+==============================*/
+.single-product-slide {
+  .product-content {
+    min-height: 600px;
+    height: 100%;
+    @media #{$sm-device} {
+      min-height: 400px;
+    }
+
+    h2 {
+      font-size: 40px;
+      color: #202020;
+      font-weight: 600;
+      margin-top: -5px;
+
+      @media #{$sm-device} {
+        font-size: 25px;
+      }
+    }
+
+    .price-group {
+      font-size: 16px;
+      font-weight: 600;
+
+      .old-price {
+        color: #c6c8ca;
+        margin-right: 5px;
+      }
+    }
+
+    .btn-shop {
+      color: $brand-color;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 33px;
+
+      &:hover {
+        color: $black-soft;
+      }
+
+      @media #{$sm-device} {
+        margin-top: 13px;
+      }
+    }
+  }
+}
+
+// Product Slider Arrows and Dots
+.product-slider-area {
+  .slick-dots {
+    position: absolute;
+    margin-top: 0 !important;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+  }
+
+  .ht-slick-nav {
+    button {
+      @media #{$xlmax-device} {
+        left: -50px;
+      }
+
+      &.next-arrow {
+        @media #{$xlmax-device} {
+          left: auto;
+          right: -50px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1500px) {
+      display: none;
+    }
+  }
+}

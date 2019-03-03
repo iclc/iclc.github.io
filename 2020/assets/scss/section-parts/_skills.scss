@@ -1,0 +1,48 @@
+/*===========================
+29. Start Our Skills Area
+==============================*/
+.our-skills-content-wrapper {
+  .section-title-wrap {
+    padding-bottom: 0;
+    margin-bottom: 42px;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+// Skills Progress Bar Style
+.single-skill-bar {
+  margin-top: 50px;
+
+  @media #{$sm-device} {
+    margin-top: 30px;
+  }
+
+  .skills-info {
+    margin-bottom: 20px;
+
+    .skill-title, .skill-percent {
+      font-weight: 600;
+      font-size: $font-size-base;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .skill-percent {
+      font-weight: 700;
+    }
+  }
+
+  .progress {
+    background-color: #eee;
+    border-radius: 0;
+    height: 10px;
+
+    .progress-bar {
+      background-color: $black-soft;
+    }
+  }
+}

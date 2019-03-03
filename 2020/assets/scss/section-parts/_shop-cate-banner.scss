@@ -1,0 +1,79 @@
+/*==============================
+18. Start Category Banner Area
+================================*/
+
+.single-cate-banner {
+  margin-top: 30px;
+  .cate-banner-thumb {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      transition: 0.6s;
+      width: 100%;
+    }
+
+    .cate-banner-info {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.left {
+        left: 50px;
+      }
+
+      &.right {
+        right: 50px;
+      }
+
+      h4 {
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 600;
+        transition: 0.4s;
+      }
+
+      .price {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .cate-banner-info {
+      h4 {
+        color: $brand-color;
+      }
+    }
+  }
+}
+
+// Sale Badge
+.sale-badge {
+  background-color: $brand-color;
+  border-radius: 50%;
+  color: $white;
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  line-height: 130px;
+  height: 130px;
+  width: 130px;
+
+  &.small {
+    font-size: 16px;
+    line-height: 70px;
+    height: 70px;
+    width: 70px;
+  }
+}

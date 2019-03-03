@@ -1,0 +1,58 @@
+/*=======================
+01. Background Colors
+==========================*/
+.bg {
+  &-egg-white {
+    background-color: #FFEFBF;
+  }
+
+  &-offwhite {
+    background-color: $offwhite;
+  }
+
+  &-ash {
+    background-color: #f1f1f1;
+  }
+
+  &-soft-pink {
+    background-color: #FFCFBF;
+  }
+
+  &-dodger-blue {
+    background-color: #cde2ff;
+  }
+
+  &-magic-mint {
+    background-color: #AFF1D3;
+  }
+
+  &-brand {
+    background-color: $brand-color;
+  }
+
+  &-black {
+    background-color: $black !important;
+  }
+
+  &-soft-black {
+    background-color: $black-soft;
+  }
+
+  &-blue {
+    background-color: #1e2165;
+  }
+
+  &-soft-sweet {
+    background-color: #FFDFBF;
+  }
+}
+
+.product-tab-wrapper {
+  .slick-list {
+    .slick-active {
+      &:first-child, &:last-child {
+        opacity: 0.4;
+      }
+    }
+  }
+}

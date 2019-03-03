@@ -1,0 +1,59 @@
+/*=============================
+15. Start Banner Area Wrapper
+==============================*/
+.banner-thumb {
+  @media #{$lg-device,$xl-device} {
+    margin-left: -250px;
+    img {
+      max-width: inherit;
+    }
+  }
+}
+
+.banner-content-wrap {
+  color: $black-soft;
+  font-size: 16px;
+  font-weight: 600;
+
+  @media #{$sm-device} {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: -13px;
+    margin-bottom: 60px;
+
+    @media #{$lg-device} {
+      font-size: 40px;
+    }
+
+    @media #{$md-device} {
+      font-size: 40px;
+      margin-bottom: 18px;
+    }
+
+    @media #{$sm-device} {
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: -5px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .btn {
+    margin-top: 68px;
+    padding: 20px 50px;
+
+    @media #{$md-device} {
+      margin-top: 13px;
+    }
+
+    @media #{$sm-device} {
+      padding: 10px 20px;
+      margin-top: 9px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+/*====================================
+37. Start Parallax Bg Content Wrapper
+=====================================*/
+.single-parallax-wrap {
+  .parallax-image-wrap {
+    height: 100vh;
+
+    @media #{$md-device, $sm-device} {
+      height: 50vh;
+    }
+  }
+
+  .parallax-content-wrap {
+    background-color: $white;
+    padding: 100px 0;
+
+    @media #{$md-device} {
+      padding: 80px 0;
+    }
+
+    @media #{$sm-device} {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 0;
+      margin-top: 14px;
+
+      a {
+        color: $black-soft;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+
+      @media #{$sm-device} {
+        font-size: 24px;
+      }
+    }
+
+    .btn {
+
+      i.fa {
+        transition: transform 0.4s;
+      }
+
+      &:hover {
+        i.fa {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}
+
+// Breadcrumb Style
+.breadcrumb-wrap {
+  li {
+    position: relative;
+
+    &:after {
+      content: "/";
+      margin: 0 8px 0 10px;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    a {
+      color: #888888;
+      font-size: 18px;
+      line-height: 1;
+
+      @media #{$sm-device} {
+        font-size: 15px;
+      }
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+}

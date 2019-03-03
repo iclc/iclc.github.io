@@ -1,0 +1,1301 @@
+/*===============================
+00. Typography Style Start
+================================*/
+body {
+  font-size: $font-size-base;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: $font-family-base;
+  color: $paragraph;
+}
+
+a {
+  transition: 0.4s;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+  color: $black-soft;
+  line-height: 1.3;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  margin-bottom: 14px;
+
+  @media #{$sm-device} {
+    font-size: 30px;
+  }
+}
+
+h2, .h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+
+  @media #{$sm-device} {
+    font-size: 28px;
+  }
+}
+
+h3, .h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+
+  @media #{$sm-device} {
+    font-size: 26px;
+  }
+}
+
+h4, .h4 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+h5, .h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+h6, .h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  box-shadow: none;
+  transition: 0.4s;
+  &:active, &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// Fieldset Style;
+fieldset {
+  margin-top: 30px;
+  legend {
+    border-bottom: 1px solid #e7e7e7;
+    color: $black;
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+}
+
+// Blockquote
+blockquote, .blockquote {
+  background-color: $black;
+  color: $white;
+  font-size: 16px;
+  line-height: 2;
+  font-family: $font-family-pd;
+  padding: 30px 20px;
+  margin-bottom: 0;
+  position: relative;
+
+  &:before {
+    background-color: $brand-color;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+  }
+
+  &-right {
+    text-align: right;
+
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &--2 {
+    background-color: $offwhite;
+    color: $black-soft;
+    font-weight: 600;
+    font-family: $font-family-base;
+    padding: 60px 35px 35px;
+
+    &:after {
+      content: "\f10e";
+      color: #dddddd;
+      font-family: $font-font_awesome;
+      font-size: 30px;
+      position: absolute;
+      top: 15px;
+      right: 25px;
+    }
+
+    .blockquote-footer {
+      color: $paragraph;
+      font-size: 15px;
+      line-height: 1;
+      font-weight: 400;
+    }
+
+    &.blockquote-right {
+      &:after {
+        content: '\f10d';
+        left: 25px;
+        right: auto;
+      }
+    }
+  }
+}
+
+// Selection Style
+::-moz-selection {
+  color: $white;
+  background: $brand-color;
+}
+
+::selection {
+  color: $white;
+  background: $brand-color;
+}
+
+/*===============================
+Responsive Table Scrollbar
+================================*/
+body, .table-responsive, .list {
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    border: 0;
+    background-color: $brand-color;
+  }
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 5px;
+    background-color: rgba($brand-color, 0.3);
+  }
+
+}
+
+/*=======================================
+Product Quantity Increment & Decrement
+==========================================*/
+.pro-qty {
+  background-color: $offwhite;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+
+  @media #{$sm-device, $md-device} {
+    width: 120px;
+  }
+
+  input {
+    background-color: $offwhite;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    padding: 21px 0;
+    outline: none;
+    width: 100%;
+
+    @media #{$md-device} {
+      padding: 15px 0;
+    }
+
+    @media #{$sm-device} {
+      padding: 12px 0;
+    }
+
+  }
+
+  a {
+    background-color: darken($offwhite, 8%);
+    color: $black;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    line-height: 63px;
+    height: 100%;
+    width: 60px;
+
+    @media #{$md-device} {
+      width: 35px;
+      line-height: 54px;
+    }
+
+    @media #{$sm-device} {
+      width: 35px;
+      line-height: 48px;
+    }
+
+    &:hover {
+      background-color: $brand-color;
+      color: $white;
+    }
+
+    &.inc {
+      right: 0;
+    }
+
+    &.dec {
+      left: 0;
+    }
+  }
+}
+
+/*===============================
+Nice Select Customization
+================================*/
+.nice-select {
+  border-radius: 0;
+  float: none;
+  height: auto;
+  text-transform: capitalize;
+  line-height: inherit;
+  padding: 8px 30px 8px 15px;
+  width: 100%;
+
+  span.current {
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .list {
+    border-radius: 0;
+    width: 100%;
+
+    .option {
+      line-height: 30px;
+      min-height: 30px;
+    }
+  }
+}
+
+/*===============================
+Custom Checkbox & Radio Button
+================================*/
+.custom-checkbox, .custom-radio {
+  label, .custom-control-label {
+    color: $black-soft;
+    font-size: 13px;
+    line-height: 1;
+    padding-left: 10px;
+    cursor: pointer;
+
+    &:before {
+      background-color: #e7e7e7;
+      border: 1px solid #e7e7e7;
+      border-radius: 0;
+      height: 15px;
+      top: 0;
+      width: 15px;
+    }
+
+    &:after {
+      background-size: 10px 10px;
+      height: 15px;
+      top: 0;
+      width: 15px;
+    }
+
+    a {
+      color: $black-soft;
+      font-weight: 500;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+
+  input, .custom-control-input {
+    outline: none;
+
+    &:focus {
+      ~ .custom-control-label, label {
+        &:before {
+          box-shadow: none;
+        }
+      }
+    }
+
+    &:checked {
+      ~ .custom-control-label, label {
+        &:before {
+          background-color: $brand-color;
+          border-color: $brand-color;
+        }
+      }
+    }
+  }
+}
+
+.custom-radio {
+  label, .custom-control-label {
+    &:before {
+      border-radius: 50%;
+      height: 14px;
+      width: 14px;
+    }
+
+    &:after {
+      background-position: 1px 1px;
+      background-size: 9px 8px;
+      left: -13px;
+      top: 2px;
+      height: 10px;
+      width: 10px;
+    }
+  }
+}
+
+/*===============================
+Bootstrap Tooltip Customization
+================================*/
+.tooltip {
+  z-index: 9999;
+
+  .tooltip-inner {
+    background-color: $brand-color;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 1;
+    text-shadow: none;
+    padding: 5px 10px 7px;
+  }
+
+  .arrow {
+    &:before {
+      border-top-color: $brand-color !important;
+    }
+  }
+
+  &.show {
+    opacity: 1 !important;
+  }
+}
+
+/*===============================
+Tippy Js Tooltip Customization
+================================*/
+.tippy-popper {
+  .tippy-tooltip {
+    background-color: $brand-color;
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 8px;
+  }
+
+  &[x-placement^='top'] {
+    .tippy-arrow {
+      border-top-color: $brand-color !important;
+    }
+  }
+
+  &[x-placement^='bottom'] {
+    .tippy-arrow {
+      border-bottom-color: $brand-color !important;
+    }
+  }
+
+  &[x-placement^='left'] {
+    .tippy-arrow {
+      border-left-color: $brand-color !important;
+    }
+  }
+
+  &[x-placement^='right'] {
+    .tippy-arrow {
+      border-right-color: $brand-color !important;
+    }
+  }
+}
+
+/*=======================
+Buttons Style
+=========================*/
+.btn-group {
+  .btn {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn {
+  border-radius: 0;
+  border-width: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $black-soft;
+  text-transform: uppercase;
+  outline: none;
+  box-shadow: none;
+  transition: 0.4s;
+  display: inline-block;
+  padding: 20px 30px;
+
+  i {
+    margin-right: 5px;
+  }
+
+  @media #{$md-device,$sm-device} {
+    padding: 13px 25px;
+  }
+
+  @media #{$xs-device} {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  &:active, &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &-small {
+    padding: 10px 15px;
+    font-size: 11px;
+  }
+
+  &-brand {
+    background-color: $brand-color;
+    color: white;
+
+    &:hover {
+      background-color: $black-soft;
+    }
+  }
+
+  &-bordered {
+    border: 3px solid $black-soft;
+
+    &:hover {
+      border-color: $brand-color;
+    }
+  }
+
+  &-black {
+    @extend .btn-bordered;
+    background-color: $black-soft;
+    color: $white;
+
+    &:hover {
+      background-color: $brand-color;
+      border-color: $brand-color;
+      color: $white;
+    }
+  }
+
+  &-offWhite {
+    background-color: #f2f2f2;
+    color: $black-soft;
+
+    &:hover {
+      background-color: $brand-color;
+      color: $white;
+    }
+  }
+
+  &-event {
+    border: 2px solid $black-soft;
+
+    &:hover {
+      background-color: $black-soft;
+      color: $white;
+    }
+  }
+
+  &-transparent {
+    border: 1px solid $brand-color;
+
+    &:hover {
+      background-color: $brand-color;
+      color: $white;
+    }
+  }
+
+  &-append {
+    i {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      i {
+        opacity: 1;
+        visibility: visible;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &-wishlist {
+    color: $paragraph;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+/*=======================
+Start Section title
+=========================*/
+.section-title-wrap {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 80px;
+  padding-bottom: 50px;
+  position: relative;
+
+  @media #{$md-device} {
+    margin-bottom: 60px;
+  }
+
+  @media #{$sm-device} {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+
+  &:after {
+    background-color: $brand-color;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 70px;
+  }
+
+  h2 {
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: -4px;
+    margin-bottom: 40px;
+
+    @media #{$sm-device} {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.layout--2 {
+    font-size: $font-size-base;
+    font-weight: 400;
+    padding-bottom: 0;
+    margin-bottom: 72px;
+
+    @media #{$md-device} {
+      margin-bottom: 53px;
+    }
+
+    @media #{$sm-device} {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 45px;
+    }
+
+    i.fa {
+      color: $brand-color;
+      font-size: 50px;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+
+      @media #{$sm-device} {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  p {
+    span {
+      color: $brand-color;
+    }
+  }
+
+  &.white {
+    color: $white;
+    h2 {
+      color: $white;
+    }
+
+    i.fa {
+      color: $black-soft;
+    }
+  }
+}
+
+/*=============================
+Slick Slider Customization
+===============================*/
+.slick-slider {
+  margin-bottom: 0;
+  transition: 0.4s;
+
+  .slick-slide > div > div,
+  .slick-slide > div > figure {
+    vertical-align: middle;
+  }
+
+  // Slick Dots Style
+  .slick-dots {
+    margin-top: 35px;
+    text-align: center;
+    line-height: 1;
+    li {
+      border: 1px solid #D4D4D4;
+      background-color: #D4D4D4;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      transition: 0.4s;
+      margin-right: 10px;
+      height: 10px;
+      width: 10px;
+
+      &:hover, &.slick-active {
+        background-color: $black-soft;
+        border-color: $black-soft;
+      }
+
+      button {
+        display: none;
+      }
+    }
+  }
+
+  &.dots-style-two {
+    .slick-dots {
+      li {
+        border-color: rgba($white, 0.5);
+        background-color: rgba($white, 0.5);
+        margin-right: 20px;
+        position: relative;
+
+        &:before {
+          @include overlay($white);
+          border-radius: 50%;
+          transform: scale(2);
+          opacity: 0;
+          transition: 0.4s;
+        }
+
+        &:hover, &.slick-active {
+          background-color: $white;
+          border-color: $white;
+
+          &:before {
+            display: block;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &.dots-style-three {
+    .slick-dots {
+      bottom: 20px;
+      position: absolute;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  // Vertical Slick Slider Arrow
+  &.slick-vertical {
+    .slick-arrow {
+      top: 5px;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      &.slick-prev {
+        top: auto;
+        bottom: 10px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  // After Slick Slider Hover
+  &:hover {
+    .slick-arrow {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: visible;
+    }
+  }
+
+  // Slick Slider Gutters
+  @for $i from 3 through 15 {
+    &.slick-row-#{1 * $i} {
+      .slick-list {
+        margin: 0 #{-1px * $i};
+
+        .slick-slide {
+          margin: 0 #{1px * $i};
+        }
+      }
+    }
+
+    @media #{$sm-device} {
+      &.slick-sm-row-#{1 * $i} {
+        .slick-list {
+          margin: 0 #{-1px * $i} !important;
+
+          .slick-slide {
+            margin: 0 #{1px * $i} !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Slick Slider Arrow Style
+.ht-slick-nav {
+  button {
+    color: rgba($black-soft, 0.5);
+    font-size: 40px;
+    line-height: 1;
+    position: absolute;
+    left: -150px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s;
+
+    @media #{$xlmax-device, $lg-device} {
+      left: -100px;
+    }
+
+    @media #{$md-device, $sm-device} {
+      display: none !important;
+    }
+
+    &.next-arrow {
+      left: auto;
+      right: -150px;
+
+      @media #{$xlmax-device, $lg-device} {
+        right: -100px;
+      }
+    }
+
+    &:hover {
+      color: $black-soft;
+    }
+  }
+
+  &--two {
+    button {
+      background-color: $offwhite;
+      font-size: 30px;
+      left: 0;
+      height: 50px;
+      width: 50px;
+
+      &.gallery-next-arrow {
+        left: auto;
+        right: 0;
+      }
+
+      &:hover {
+        background-color: $brand-color;
+        color: $white;
+      }
+    }
+  }
+
+  &--three {
+    button {
+      background-color: $white;
+      border-radius: 50px;
+      color: $black-soft;
+      font-size: 20px;
+      line-height: 1;
+      left: -50px;
+      height: 100px;
+      width: 100px;
+
+      &:hover {
+        background-color: $brand-color;
+        color: $white;
+      }
+
+      i {
+        padding-left: 35px;
+      }
+
+      &.next-arrow, &.next-arrow-cat {
+        left: auto;
+        right: -50px;
+
+        i {
+          padding-left: 0;
+          padding-right: 35px;
+        }
+      }
+    }
+  }
+
+  &--four {
+    button {
+      color: $white;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+
+  &--five {
+    button {
+      left: 100px;
+
+      &.next-arrow {
+        right: 100px;
+      }
+    }
+  }
+}
+
+.ht-slick-slider-wrapper {
+  position: relative;
+
+  .slick-disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    .ht-slick-nav {
+      button {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+/*=============================
+Magnific Popup Customization
+===============================*/
+.mfp-wrap {
+  &.imagesGallery {
+    .mfp-container {
+      .mfp-close {
+        display: none;
+      }
+    }
+
+    .mfp-arrow {
+      opacity: 1;
+      height: 65px;
+
+      &:before {
+        color: $white;
+        border: 1px solid $brand-color;
+        border-radius: 50%;
+        font-family: $font-font_awesome;
+        font-size: 20px;
+        text-align: center;
+        opacity: 1;
+        transition: 0.4s;
+        line-height: 48px;
+        height: 50px;
+        width: 50px;
+      }
+
+      &:after {
+        display: none;
+      }
+
+      &-left {
+        &:before {
+          content: '\f104';
+        }
+      }
+
+      &-right {
+        margin-right: 20px;
+        &:before {
+          content: '\f105';
+        }
+      }
+
+      &:hover {
+        &:before {
+          background-color: $brand-color;
+        }
+      }
+    }
+
+    .mfp-close {
+      color: $white;
+      border: 1px solid $brand-color;
+      border-radius: 50%;
+      font-family: $font-font_awesome;
+      font-size: 20px;
+      text-align: center;
+      opacity: 1;
+      right: 30px;
+      top: 30px;
+      transition: 0.4s;
+      line-height: 48px;
+      height: 50px;
+      width: 50px;
+
+      @media #{$sm-device} {
+        line-height: 33px;
+        height: 35px;
+        width: 35px;
+      }
+
+      &:hover {
+        background-color: $brand-color;
+      }
+    }
+
+    .mfp-bottom-bar {
+      background-color: $brand-color;
+      height: 30px;
+      padding: 0 20px;
+      margin-top: -40px;
+
+      .mfp-counter {
+        color: $black-soft;
+        font-size: 16px;
+        line-height: 2;
+        padding: 0 10px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
+  &.video-popup-wrap {
+    &.mfp-ready {
+      .mfp-content {
+        border: 10px solid $brand-color;
+        animation: fadeInDown 0.5s forwards;
+      }
+    }
+
+    .mfp-close {
+      background-color: $black-soft;
+      height: 60px;
+      width: 60px;
+      opacity: 1;
+      text-align: center;
+      line-height: 60px;
+      padding: 0;
+      top: -70px;
+      right: -10px;
+
+      @media #{$xl-device} {
+        left: calc(100% + 10px);
+        right: auto;
+        top: -10px;
+      }
+
+      &:hover {
+        background-color: $brand-color;
+      }
+    }
+  }
+
+  &.mfp-auto-cursor {
+    cursor: url("../img/icons/cancel.png"), auto;
+  }
+}
+
+/*===========================
+Start Page Breadcrumb
+============================*/
+.page-breadcrumb-wrapper {
+  background-color: #fff9f9;
+  padding: 80px 0 70px;
+
+  @media #{$sm-device} {
+    padding: 53px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin-top: -3px;
+    margin-bottom: 23px;
+
+    @media #{$sm-device} {
+      margin-bottom: 13px;
+    }
+
+    @media #{$xs-device} {
+      font-size: 26px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+
+  li {
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      content: '>';
+      color: $black;
+      font-weight: 700;
+      vertical-align: middle;
+      padding-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    color: $black;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    &.active {
+      color: #8d8d8d;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}
+
+/*==================
+Dropcaps Style
+====================*/
+.dropcap {
+  color: $black-soft;
+  display: block;
+  float: left;
+  font-size: 60px;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 10px;
+  margin-top: 6px;
+  text-transform: uppercase;
+
+  &-brand {
+    color: $brand-color;
+  }
+
+  &-rounded {
+    border-radius: 50%;
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+  }
+
+  &-square {
+    color: $white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/*==============
+List Style
+================*/
+.list {
+  line-height: 2.5;
+
+  li {
+    i, span {
+      color: $black-soft;
+      margin-right: 10px;
+      font-weight: 600;
+    }
+
+    ul {
+      margin-left: 25px;
+      font-size: 90%;
+    }
+  }
+}
+
+/*=============================
+Short Classes
+===============================*/
+.bg-img {
+  background: #dddddd no-repeat center center;
+  background-size: cover;
+}
+
+// Off White Background Color
+.off-white-bg {
+  background-color: $offwhite;
+}
+
+// Custom Content Width
+.custom-width {
+  max-width: 1360px;
+  margin: auto;
+}
+
+// Custom Container
+.container-fluid {
+  @media screen and (min-width: 1600px) {
+    padding: 0 100px;
+  }
+}
+
+// Parallax Bg
+.parallaxBg {
+  background-attachment: fixed;
+}
+
+// Overflow Hidden
+.fix {
+  overflow: hidden;
+
+  &-x {
+    overflow-x: hidden;
+  }
+
+  &-y {
+    overflow-y: hidden;
+  }
+}
+
+// Height Classes
+.hv-100 {
+  height: 100vh;
+  @media #{$md-device, $sm-device} {
+    height: auto;
+  }
+}
+
+// Width Classes
+@for $i from 1 through 4 {
+  .w-#{$i * 25} {
+    width: $i * 25%;
+  }
+
+  @media #{$sm-device} {
+    .w-sm-#{$i * 25} {
+      width: $i * 25% !important;
+    }
+  }
+
+  @media #{$md-device} {
+    .w-md-#{$i * 25} {
+      width: $i * 25% !important;
+    }
+  }
+}
+
+mark, .mark {
+  background-color: $black-soft;
+  color: $white;
+}

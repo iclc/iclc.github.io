@@ -1,0 +1,286 @@
+/*===========================================
+65. Single Product Page (single-product.html)
+=============================================*/
+.prod-details-info-content {
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 7px;
+
+    @media #{$sm-device, $md-device} {
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
+
+  .price-group {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    @media #{$sm-device, $md-device} {
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    del {
+      margin-right: 10px;
+    }
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Product Config Content Style
+.config-item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .config-name {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 13px;
+
+    b {
+      text-transform: capitalize;
+      margin-left: 5px;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 500;
+    }
+  }
+  .config-list {
+    li {
+      border: 1px solid #D4D4D4;
+      cursor: pointer;
+      color: #8d8d8d;
+      height: 40px;
+      padding: 3px;
+      font-size: 14px;
+      line-height: 1;
+      display: block;
+      text-align: center;
+      transition: 0.3s;
+      margin-right: 5px;
+      overflow: hidden;
+      width: 40px;
+
+      &.active, &:hover {
+        border-color: $brand-color;
+        color: $black-soft;
+      }
+
+      span {
+        line-height: 30px;
+        display: block;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Description Review Product
+.product-description-review {
+  #myTabContent {
+    border: 1px solid $border-color;
+    padding: 33px 30px;
+
+    @media #{$xxs-device} {
+      padding: 30px 15px;
+    }
+  }
+
+  .desc-review-tab-menu {
+    border-bottom: 0;
+    li {
+      a {
+        background-color: $offwhite;
+        color: $black-soft;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 30px;
+        text-transform: uppercase;
+
+        @media #{$xxs-device} {
+          font-size: 13px;
+          padding: 10px 20px;
+        }
+
+        &.active {
+          background-color: $brand-color;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.product-ratting-wrap {
+  .pro-avg-ratting {
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    & h4 {
+      font-size: 18px;
+      margin: 0 0 7px;
+      font-weight: 600;
+      & span {
+        color: $black;
+        font-size: 12px;;
+      }
+    }
+    & > span {
+      display: block;
+    }
+  }
+
+  .ratting-list {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+    & .sin-list {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+      & i {
+        color: $yellow;
+      }
+      & span {
+        color: #666666;
+      }
+    }
+  }
+
+  .sin-rattings {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & .ratting-author {
+      float: left;
+      width: 100%;
+      margin-bottom: 10px;
+      & h3 {
+        float: left;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        line-height: 18px;
+        margin-right: 15px;
+      }
+      & .ratting-star {
+
+        & i, & span {
+          color: $yellow;
+          font-size: 13px;
+          float: left;
+        }
+        & span {
+          margin-left: 5px;
+          color: #8d8d8d;
+        }
+      }
+    }
+    & p {
+      color: #8d8d8d;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+  }
+
+  /*-- Ratting Form Wrap --*/
+  .ratting-form-wrapper {
+    margin-top: 30px;
+    & h3 {
+      font-size: 18px;
+      margin: 0 0 20px;
+      text-transform: capitalize;
+    }
+  }
+
+  /*-- Ratting Form --*/
+  .ratting-form {
+    & h5 {
+      float: left;
+      font-size: 14px;
+      line-height: 1;
+      margin-right: 10px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    & .ratting-star {
+      & i {
+        color: #D4D4D4;
+        font-size: 14px;
+        float: left;
+        line-height: 18px;
+        display: block;
+        margin-right: 3px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          color: $yellow;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    & label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: $black-soft;
+    }
+    & input {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #dddddd;
+      font-size: 13px;
+      line-height: 24px;
+      padding: 8px 15px;
+      color: #666666;
+      outline: none;
+      transition: 0.1s;
+
+      &:focus {
+        border-color: $brand-color;
+      }
+
+    }
+    & textarea {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #dddddd;
+      font-size: 13px;
+      line-height: 24px;
+      padding: 8px 15px;
+      color: #666666;
+      height: 100px;
+      outline: none;
+      resize: none;
+      transition: 0.1s;
+      &:focus {
+        border-color: $brand-color;
+      }
+    }
+
+    .btn {
+      padding: 15px 40px;
+    }
+  }
+}

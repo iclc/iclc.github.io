@@ -1,0 +1,46 @@
+/*===============================
+16. Start Discover Area Wrapper
+=================================*/
+
+.single-discover-item-wrap {
+  margin-top: 30px;
+
+  .discover-chart {
+    position: relative;
+
+    .discover-amount {
+      color: $black-soft;
+      font-size: 34px;
+      font-weight: 700;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 40px 0 25px;
+
+    @media #{$md-device, $sm-device} {
+      margin: 15px 0 10px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  canvas {
+    @media #{$md-device} {
+      height: 180px;
+      width: 180px;
+    }
+    @media #{$sm-device} {
+      height: 140px;
+      width: 140px;
+    }
+  }
+}

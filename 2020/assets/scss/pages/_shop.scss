@@ -1,0 +1,39 @@
+/*===================
+64. Start Shop Page
+=====================*/
+.product-filter-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$xs-device} {
+    display: block;
+  }
+}
+
+.product-sorting {
+  .nice-select {
+    background-color: $offwhite;
+    border: 0;
+    padding: 15px 40px 15px 15px;
+    min-width: 280px;
+
+    &:after {
+      right: 20px;
+      border-color: $black-soft;
+      width: 8px;
+      height: 8px;
+    }
+
+    .list {
+      right: 0;
+      left: auto;
+    }
+
+    .current {
+      color: $black-soft;
+      font-weight: 400;
+      font-size: $font-size-base;
+    }
+  }
+}

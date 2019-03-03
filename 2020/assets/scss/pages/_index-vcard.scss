@@ -1,0 +1,171 @@
+/*================================
+38. Start vCard Container Wrapper
+==================================*/
+.vCard-container-wrapper {
+  color: $white;
+  padding: 250px 0 200px;
+  position: relative;
+
+  @media #{$lg-device, $xlmax-device} {
+    padding: 250px 0 100px;
+  }
+
+  &:before {
+    @include overlay();
+  }
+
+  @media #{$md-device} {
+    padding: 200px 0 80px;
+  }
+
+  @media #{$sm-device} {
+    padding: 150px 0 60px;
+  }
+}
+
+.vCard-content-item {
+  margin-top: 100px;
+
+  @media #{$sm-device} {
+    margin-top: 60px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 44px;
+    margin-top: -4px;
+
+    @media #{$sm-device} {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// Start Author About Content
+.vCard-profile-about-wrap {
+  h1 {
+    color: $white;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+
+    span {
+      color: $brand-color;
+      display: block;
+      font-size: 80px;
+      margin-top: 15px;
+
+      @media #{$sm-device} {
+        font-size: 40px;
+      }
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 31px 0 35px;
+
+    @media #{$sm-device} {
+      margin: 15px 0 25px;
+    }
+  }
+
+  .author-sign {
+    img {
+      max-width: 200px;
+    }
+  }
+}
+
+//Start vCard Work Experience Wrap
+.work-experience-item {
+  margin-bottom: 42px;
+
+  @media #{$sm-device} {
+    margin-bottom: 35px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    color: $brand-color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+}
+
+// Start vCard Skills Wrap
+.vCard-skills-area {
+  .single-skill-bar {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-title, .skill-percent {
+      color: $brand-color;
+      font-weight: 600;
+    }
+
+    .progress {
+      background-color: $black-soft;
+      .progress-bar {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+// Start vCard Contact Wrap
+.vCard-contact-area {
+  span {
+    display: block;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.vCard-social-links {
+  margin-top: 50px;
+
+  @media #{$sm-device} {
+    margin-top: 30px;
+  }
+
+  a {
+    color: $white;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

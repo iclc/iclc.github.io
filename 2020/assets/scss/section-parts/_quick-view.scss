@@ -1,0 +1,121 @@
+/*=======================
+05. Quick View Style Here
+=========================*/
+#quick-view {
+  &.modal {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.4s;
+    animation: fadeOut 0.3s forwards;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: visible;
+      z-index: 9999;
+      animation: fadeIn 0.3s forwards;
+    }
+
+    .modal-content {
+      border: none;
+      border-radius: 0;
+
+      @media #{$sm-device} {
+        max-height: 400px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+
+    .modal-dialog {
+      max-width: 920px;
+
+      @media #{$md-device} {
+        max-width: 720px;
+      }
+
+      @media #{$sm-device} {
+        max-width: 540px;
+      }
+
+      .modal-body {
+        padding: 0;
+      }
+
+      .close {
+        background-color: $black-soft;
+        font-weight: 400;
+        color: $white;
+        opacity: 1;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 99;
+
+        &:hover {
+          background-color: $brand-color-dark;
+        }
+
+        @media #{$sm-device,$md-device,$lg-device,$xlmax-device} {
+          left: auto;
+          right: 0;
+          top: 0;
+          height: 40px;
+          width: 40px;
+        }
+
+        @media #{$lg-device,$xlmax-device} {
+          top: auto;
+          bottom: 100%;
+        }
+      }
+    }
+  }
+
+  .product-thumb-area {
+    max-height: 450px;
+    overflow: hidden;
+
+    @media #{$sm-device} {
+      max-height: 250px;
+    }
+  }
+
+  .product-details-info-content-wrap {
+    padding: 0 30px 0 0;
+    max-height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+
+    @media #{$md-device} {
+      max-height: 352px;
+    }
+
+    @media #{$sm-device} {
+      max-height: inherit;
+      height: 100%;
+      padding: 0 30px;
+    }
+
+    @media #{$xs-device} {
+      padding: 0 15px;
+    }
+
+    .prod-details-info-content {
+      padding: 50px 0;
+
+      h2 {
+        font-weight: 500;
+
+        @media #{$md-device} {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

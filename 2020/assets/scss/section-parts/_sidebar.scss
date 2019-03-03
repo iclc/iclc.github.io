@@ -1,0 +1,285 @@
+/*==================================
+27. Start Sidebar Content Wrapper
+====================================*/
+.single-sidebar-item-wrap {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .sidebar-title {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: -3px;
+
+    &:before {
+      background-color: $brand-color;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 30px;
+    }
+  }
+}
+
+// Sidebar List Style
+.sidebar-list {
+  li {
+    a {
+      border: 1px solid $border-color;
+      border-bottom: 0;
+      color: $black-soft;
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+      padding: 20px;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+  }
+}
+
+// Feature Post Style
+.sidebar-body {
+  .latest-blog-widget {
+    .single-blog-item {
+
+      &:after {
+        background-color: $border-color;
+      }
+
+      .post-info {
+        a {
+          color: $black-soft;
+
+          &:hover {
+            padding-left: 0;
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      .post-thumb {
+        max-width: 65px;
+        flex-basis: 65px;
+        max-height: 65px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// Sidebar Newsletter
+.sidebar-newsletter {
+  background-color: $black;
+  padding: 56px 30px 60px;
+
+  @media #{$lg-device} {
+    padding: 56px 10px 60px;
+  }
+
+  h3 {
+    color: $white;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 26px;
+  }
+
+  form {
+    input {
+      border: none;
+      display: block;
+      outline: none;
+      padding: 15px;
+      width: 100%;
+
+      @media #{$lg-device} {
+        padding: 15px 10px;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 15px;
+    }
+  }
+}
+
+// Instagram Feed
+.sidebar-body {
+  .instagram-feed {
+    .instagram-gallery {
+      margin: -5px -2.5px 0;
+      .instagram-item {
+        max-width: calc(33.333% - 5px);
+        display: inline-block;
+        margin: 5px 2.5px 0;
+
+        img {
+          filter: grayscale(70%);
+          transition: 0.4s;
+
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+    }
+
+    .insta-follow {
+      color: $paragraph;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1;
+      margin-top: 29px;
+      margin-bottom: 0;
+
+      a {
+        color: $black;
+        font-weight: 600;
+      }
+
+      i {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+// Price Range Slider
+.price-range-wrap {
+  padding-top: 2px;
+  .price-range {
+    &.ui-widget-content {
+      border: none;
+      border-radius: 0;
+      background: #eeeeee;
+      height: 10px;
+
+      .ui-slider-range {
+        background: lighten($black, 67%);
+        border-radius: 0;
+      }
+
+      .ui-slider-handle {
+        border-radius: 50%;
+        border: none;
+        background: $black-soft;
+        height: 16px;
+        width: 16px;
+        outline: none;
+        top: -3px;
+        cursor: ew-resize;
+        margin-left: -.5em;
+      }
+    }
+  }
+  .range-slider {
+    line-height: 1;
+    margin-top: 22px;
+    * {
+      margin: 0;
+      line-height: 1;
+    }
+    input#amount {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      line-height: 1;
+      pointer-events: none;
+      margin-left: 10px;
+    }
+
+    .range-inner {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// Search box
+.src-from-content {
+  input {
+    background-color: $offwhite;
+    border: 1px solid $offwhite;
+    display: block;
+    padding: 15px 10px;
+    outline: none;
+    max-width: calc(100% - 60px);
+    flex-basis: calc(100% - 60px);
+  }
+
+  .btn-search {
+    background-color: $brand-color;
+    color: $white;
+    max-width: 60px;
+    flex-basis: 60px;
+  }
+}
+
+// Recent View Product Widget
+.single-recent-view-prod {
+  justify-content: space-between;
+
+  &:nth-child(1n + 2) {
+    margin-top: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: -3px;
+
+    a {
+      color: $black-soft;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+
+  .rating {
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .price-group {
+    font-weight: 700;
+
+    .price-old {
+      opacity: 0.8;
+      margin-right: 5px;
+    }
+  }
+
+  .prod-thumb {
+    max-width: 80px;
+    flex-basis: 80px;
+  }
+}

@@ -1,0 +1,29 @@
+/*==========================================
+41. Start Tracking Order Page Wrapper
+===========================================*/
+.portfolio-metro-hero-area {
+  position: relative;
+  padding: 230px 0;
+
+  @media #{$sm-device} {
+    padding: 100px 0 150px;
+  }
+
+  &:before {
+    @include overlay();
+  }
+}
+
+.port-metro-content-wrap {
+  margin-top: 96px;
+  h3 {
+    color: $white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: -15px;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+  }
+}

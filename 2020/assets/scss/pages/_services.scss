@@ -1,0 +1,92 @@
+/*==========================================
+53. Start Our Services Area // services.html
+===========================================*/
+.service {
+  &-item-wrap {
+    margin-top: 30px;
+  }
+
+  &-thumb {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.our-service-content-area {
+  [class*='col-'] {
+    &:nth-child(2n) {
+      .single-call-action-wrap {
+        @media #{$sm-device} {
+          background-color: darken($black-soft, 4%) !important;
+        }
+      }
+    }
+  }
+}
+
+// Service Left Side Fixed Bg Image
+.service-bg-img {
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  top: 0;
+  right: 0;
+
+  @media #{$md-device, $sm-device} {
+    position: static;
+    width: 100%;
+    height: 350px;
+  }
+}
+
+// Service Left Side Services Item
+.service-item {
+
+  &-2 {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &-icon {
+    color: $black-soft;
+    font-size: 36px;
+    line-height: 1;
+    min-width: 60px;
+    margin-right: 30px;
+
+    @media #{$sm-device} {
+      margin-right: 0;
+    }
+  }
+
+  &-desc {
+    h3 {
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    p {
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.service-left-con-inner {
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+
+    @media #{$md-device, $sm-device} {
+      font-size: 24px;
+    }
+
+    @media #{$lg-device} {
+      font-size: 30px;
+    }
+  }
+}

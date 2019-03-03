@@ -1,0 +1,132 @@
+/*============================
+12. Start Team Area Wrapper
+============================*/
+.single-team-member-wrap {
+  max-width: 20%;
+  flex-basis: 20%;
+  margin-top: 30px;
+  overflow: hidden;
+
+  @media #{$md-device,$sm-device} {
+    max-width: 50%;
+    flex-basis: calc(50% - 30px);
+    margin: 30px 15px 0;
+    width: 100%;
+  }
+
+  @media #{$xs-device} {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .team-member-pic {
+    position: relative;
+
+    &:after {
+      background-color: rgba(black, 0.7);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: 0.6s;
+      opacity: 0;
+      visibility: hidden;
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      transition: 0.6s;
+      width: 100%;
+    }
+
+    .member-info {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.4s;
+      opacity: 0;
+      visibility: hidden;
+      width: 100%;
+      z-index: 2;
+
+      .team-member-name {
+        color: white;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      .team-member-desi {
+        color: #aaa;
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &:hover {
+    .team-member-pic {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      img {
+        transform: scale(1.07);
+      }
+
+      .member-info {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &.layout--2 {
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+
+    .member-info {
+      padding: 0 30px;
+
+      .team-member-name {
+        font-size: 40px;
+        text-transform: capitalize;
+
+        @media #{$xlmax-device, $md-device} {
+          font-size: 30px;
+        }
+
+        @media #{$lg-device, $sm-device} {
+          font-size: 24px;
+        }
+      }
+
+      .team-member-desi {
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .about-social-icons {
+        a {
+          background-color: rgba(255, 255, 255, .15);
+          color: $white;
+
+          &:hover {
+            background-color: $white;
+            color: $black-soft;
+          }
+        }
+      }
+    }
+  }
+}

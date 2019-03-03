@@ -1,0 +1,157 @@
+/*================================
+63. Start Portfolio Details Content
+===================================*/
+.port-con-item {
+  h2 {
+    color: $brand-color;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 52px;
+
+    @media #{$md-device} {
+      margin-bottom: 42px;
+    }
+
+    @media #{$sm-device} {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.port-feature-content-inner {
+  .single-welcome-feature {
+    margin-top: 0;
+
+    &:nth-child(1n + 2) {
+      margin-top: 54px;
+
+      @media #{$sm-device} {
+        margin-top: 35px;
+      }
+    }
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.port-details-con-inner {
+  .single-post-details__footer {
+    display: block;
+    margin-top: 0;
+
+    &__item {
+      max-width: 100%;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 1px solid $border-color;
+      padding: 20px 0;
+      justify-content: flex-start;
+
+      &:first-child {
+        border-top: 1px solid $border-color;
+      }
+
+      .footer-item-left {
+        min-width: 25%;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+// Start Portfolio Details Pagination
+.port-details-pagination {
+  padding: 100px;
+
+  @media #{$md-device} {
+    padding: 50px 30px;
+  }
+
+  @media #{$sm-device} {
+    padding: 50px 15px;
+  }
+
+  a {
+    color: $black-soft;
+    font-size: 40px;
+    line-height: 1;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+
+    &.middle-icon {
+      font-size: 14px;
+      border: 2px solid;
+      text-align: center;
+      line-height: 56px;
+      width: 60px;
+      height: 60px;
+
+      @media #{$sm-device} {
+        line-height: 36px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+// Full Width Section Title
+.full-width-section-title-con {
+  color: $white;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media #{$sm-device} {
+    height: 180px;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 40px;
+    margin-bottom: 0;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+  }
+}
+
+// Work Process Area
+
+.work-process-content {
+  .single-desc-item-wrap {
+    color: $paragraph;
+
+    P {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .desc-number {
+      border-color: $brand-color;
+      color: $brand-color;
+      font-weight: 600;
+    }
+
+  }
+}
+
+.port.is-affixed {
+  .inner-wrapper-sticky {
+    bottom: -20px !important;
+  }
+}

@@ -1,0 +1,67 @@
+/*===============================
+ 60 .Start Coming Soon Page Content
+================================*/
+.coming-soon-page-wrapper {
+  height: 100vh;
+
+  @media #{$sm-device} {
+    height: auto;
+  }
+}
+
+.coming-soon-content {
+  background-color: rgba($black, 0.9);
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 200px;
+
+  @media #{$xlmax-device,$lg-device} {
+    padding: 100px 30px;
+  }
+
+  @media #{$md-device} {
+    padding: 200px 50px;
+  }
+
+  @media #{$sm-device} {
+    padding: 100px 15px;
+  }
+
+  h2 {
+    color: $white;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+    @media #{$sm-device} {
+      font-size: 40px;
+    }
+
+    @media #{$xxs-device} {
+      font-size: 30px;
+    }
+  }
+
+  .text-brand {
+    color: $brand-color;
+  }
+
+  .about-social-icons {
+    a {
+      background-color: #303030;
+      color: #aaaaaa;
+
+      &:hover {
+        background-color: $brand-color;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+/*==========================================
+21. Start Newsletter Area Wrapper
+===========================================*/
+.newsletter-content-wrap {
+  background: #dddddd url("../img/extra/newsletter-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 80px 0;
+
+  @media #{$sm-device} {
+    padding: 60px 0;
+  }
+
+  .area-title {
+    h2 {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+// Newsletter Area Layout Two
+.newsletter-area-wrapper {
+  &.layout--2 {
+    background-color: $black-soft;
+
+    .newsletter-content-wrap {
+      background: transparent none;
+
+      .area-title {
+        h2 {
+          color: $white;
+          margin-right: 30px;
+
+          @media #{$xl-device, $lg-device} {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .newsletter-form-wrap {
+        .btn-newsletter {
+          &:hover {
+            background-color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.layout--3 {
+    background-color: #111111;
+    .newsletter-content-wrap {
+      background: transparent none;
+    }
+  }
+
+}
+
+// Newsletter Form Layout Two
+.newsletter-form-wrap {
+  &.layout--2 {
+    form {
+      input {
+        background-color: $white;
+        padding: 20px;
+        color: $black-soft;
+      }
+
+      .btn-newsletter {
+        background-color: #fdc657;
+        color: #fff;
+        padding: 25px 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: static;
+        transform: none;
+
+        &:hover {
+          background-color: $black-soft;
+        }
+
+        @media #{$sm-device} {
+          padding: 25px;
+        }
+
+        @media #{$xs-device} {
+          margin-top: 15px;
+          padding: 15px 20px;
+          width: 100%;
+        }
+      }
+    }
+
+    .mailchimp-alerts {
+      position: absolute;
+      margin-top: 5px;
+      font-weight: 600;
+      line-height: 1;
+
+      .mailchimp-submitting {
+        color: $black-soft;
+      }
+
+      .mailchimp-success {
+        color: darken($green, 10%);
+      }
+
+      .mailchimp-error {
+        color: $red;
+      }
+    }
+
+    &.black-input {
+      form {
+        input {
+          background-color: #444444;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+// Newsletter Form Transparent Layout
+.newsletter-form-wrap {
+  &.layout--transparent {
+    form {
+      input {
+        background-color: transparent;
+        border: 2px solid $black-soft;
+        color: $black-soft;
+      }
+
+      .btn-newsletter {
+        background-color: $black-soft;
+        color: #fff;
+        padding: 25px 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: static;
+        transform: none;
+
+        @media #{$sm-device} {
+          padding: 25px;
+        }
+
+        @media #{$xs-device} {
+          margin-top: 15px;
+          padding: 15px 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.btn-newsletter {
+  &.black {
+    background-color: $black-soft !important;
+
+    &:hover {
+      background-color: $offwhite !important;
+      color: $black-soft !important;
+    }
+  }
+}
+
+.bg-brand {
+  .btn-black {
+    &:hover {
+      background-color: $offwhite;
+      border-color: $offwhite;
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+/*==================================
+33. Start Get App Now Area Wrapper
+===================================*/
+.get-app-now-wrapper {
+  height: 80vh;
+  position: relative;
+
+  @media #{$md-device} {
+    height: 50vh;
+  }
+
+  &:before {
+    @include overlay($black, 0.3);
+  }
+
+  .get-app-now-content {
+    h2 {
+      color: $white;
+      font-size: 70px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 15px;
+      margin-top: -10px;
+      margin-bottom: 89px;
+
+      @media #{$sm-device} {
+        font-size: 30px;
+        margin-bottom: 25px;
+        letter-spacing: 5px;
+      }
+
+    }
+
+    .btn-group {
+      a {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @media #{$sm-device} {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

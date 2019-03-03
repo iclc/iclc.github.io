@@ -1,0 +1,50 @@
+/*==========================================
+36. Start Video Background Content Area
+===========================================*/
+.video-bg-content-wrap {
+  background-image: url('../img/extra/home_video_01.jpg');
+  color: $white;
+  font-size: 18px;
+  font-weight: 600;
+  height: 100vh;
+
+  .video-bg-txt {
+    margin-top: 100px;
+    h2 {
+      color: $white;
+      font-size: 90px;
+      line-height: 1;
+      letter-spacing: 30px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+
+      @media #{$lg-device} {
+        font-size: 80px;
+      }
+
+      @media #{$md-device} {
+        font-size: 70px;
+        letter-spacing: 20px;
+      }
+
+      @media #{$sm-device} {
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+    }
+
+    p {
+      max-width: 60%;
+      margin: 25px auto 43px;
+
+      @media #{$md-device, $sm-device} {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .YTPOverlay {
+    background-color: $black;
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Totentanz WEB_Slanted';
+    src:    url('Totentanz_WEB-Slanted.eot');
+    src:    url('Totentanz_WEB-Slanted.eot?#iefix') format('embedded-opentype'),
+            url('Totentanz_WEB-Slanted.woff') format('woff'),
+            url('Totentanz_WEB-Slanted.woff2') format('woff2');
+}

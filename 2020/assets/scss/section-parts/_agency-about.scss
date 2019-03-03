@@ -1,0 +1,50 @@
+/*===============================
+31. Start Agency About Wrapper
+================================*/
+.agency-about-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+
+  @media #{$sm-device} {
+    position: static;
+    width: 100%;
+  }
+
+  &:before {
+    @include overlay($white);
+
+    @media #{$xl-device} {
+      display: none;
+    }
+  }
+}
+
+.agency-about-content-wrap {
+  h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 40px;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+    }
+  }
+}
+
+.portfolio-area-wrapper {
+  &.w-50 {
+    @media #{$sm-device} {
+      width: 100% !important;
+    }
+  }
+
+  .container {
+    @media screen and (min-width: 1600px) {
+      padding: 0 100px;
+    }
+  }
+}

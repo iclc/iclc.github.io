@@ -1,0 +1,125 @@
+/*=========================
+44. Start Who About Area
+==========================*/
+.team-content-wrap {
+  .single-team-member-wrap {
+    max-width: 100%;
+    flex-basis: 100%;
+    margin: 30px 0 0;
+  }
+}
+
+/*=============================
+Start Service Area Wrapper
+==============================*/
+#landing-service-area-wrapper {
+  background-color: lighten($black, 6.7%);
+}
+
+.single-service-wrap {
+  margin-top: 53px;
+
+  @media #{$sm-device} {
+    margin-top: 38px;
+  }
+
+  .service-icon {
+    color: $brand-color;
+    font-size: 40px;
+    line-height: 1;
+    margin-right: 30px;
+    width: 50px;
+    flex-basis: 50px;
+  }
+
+  .service-info {
+    color: #888888;
+    flex-basis: calc(100% - 50px);
+    h3 {
+      color: $white;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .btn-view {
+      color: $white;
+      display: inline-block;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 18px;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+}
+
+/*==============================
+Start Portfolio Area Wrapper
+================================*/
+.portfolio-filter-menu {
+  margin-bottom: 100px;
+
+  @media #{$md-device, $sm-device} {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    li {
+      border: 1px solid $border-color;
+      color: $black-soft;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      padding: 20px 30px;
+      margin-right: 10px;
+      text-transform: uppercase;
+      position: relative;
+
+      @media #{$md-device} {
+        padding: 15px 20px;
+        font-size: 13px;
+      }
+
+      @media #{$sm-device} {
+        padding: 10px;
+        font-size: 11px;
+      }
+
+      @media #{$xs-device} {
+        margin-bottom: 5px;
+      }
+
+      &:before {
+        background-color: $brand-color;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        height: 3px;
+        width: 100%;
+      }
+
+      &.active {
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

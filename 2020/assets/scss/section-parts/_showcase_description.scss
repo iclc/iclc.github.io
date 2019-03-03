@@ -1,0 +1,46 @@
+/*=================================
+32. Start Showcase Description Area
+===================================*/
+.single-desc-item-wrap {
+  color: $black-soft;
+  margin-top: 50px;
+
+  .desc-number {
+    border: 3px solid $black-soft;
+    border-radius: 50%;
+    color: $black-soft;
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    line-height: 45px;
+    height: 50px;
+    width: 50px;
+
+    &-white {
+      color: $white;
+      border-color: $white;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 30px 0;
+
+    @media #{$sm-device} {
+      margin: 20px 0;
+    }
+  }
+
+  .showcase-desc-list {
+    line-height: 2;
+    padding-left: 18px;
+
+    li {
+      list-style-type: inherit;
+    }
+  }
+}

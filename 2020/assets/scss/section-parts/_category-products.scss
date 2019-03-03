@@ -1,0 +1,143 @@
+/*===============================
+23. Start Category Product Area
+=================================*/
+.single-category-product {
+  margin-bottom: 120px;
+
+  @media #{$md-device} {
+    margin-bottom: 85px;
+  }
+
+  @media #{$sm-device} {
+    margin-bottom: 65px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .cate-product-banner-area {
+    position: relative;
+
+    @media #{$md-device, $sm-device} {
+      margin-bottom: 45px;
+    }
+
+    h2 {
+      font-size: 60px;
+      line-height: 1.1;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 20px;
+      margin-top: -15px;
+
+      &:before {
+        background-color: $black-soft;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 70px;
+      }
+
+      @media #{$lg-device, $md-device} {
+        font-size: 40px;
+      }
+
+      @media #{$sm-device} {
+        font-size: 25px;
+      }
+    }
+
+    .cate-thumb {
+      margin-left: 100px;
+      margin-top: -75px;
+      display: inline-block;
+
+      @media #{$lg-device, $md-device, $sm-device} {
+        margin: 15px 0 0;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .banner-offer-text {
+        font-size: 20px;
+        line-height: 1.2;
+        font-family: $font-family-pd;
+        font-style: italic;
+        margin-top: 50px;
+
+        @media #{$md-device, $sm-device} {
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .banner-rotate-text {
+      color: #222;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      text-decoration: underline;
+      transform: rotate(-270deg);
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+
+      @media #{$lg-device} {
+        display: none;
+      }
+
+      @media #{$xlmax-device} {
+        right: -25px;
+      }
+
+      @media #{$sm-device} {
+        font-size: 12px;
+        position: static;
+        transform: none;
+        margin-top: 15px;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+    .cate-product-banner-area {
+      margin-left: 80px;
+
+      @media #{$md-device, $sm-device} {
+        margin-left: 0;
+      }
+
+      .banner-rotate-text {
+        right: -50px;
+
+        @media #{$md-device} {
+          right: 30px;
+        }
+      }
+    }
+
+    [class*="col-"] {
+      &:first-child {
+        @media #{$sm-device, $md-device} {
+          order: 1;
+        }
+      }
+      &:last-child {
+        @media #{$sm-device, $md-device} {
+          order: 0;
+        }
+      }
+    }
+  }
+}

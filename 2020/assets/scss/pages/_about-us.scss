@@ -1,0 +1,473 @@
+/*================================
+52. Start About Us Container Wrapper
+==================================*/
+.about-us-content {
+  color: $black-soft;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 600;
+  padding: 30px;
+
+  @media #{$md-device, $sm-device} {
+    font-size: 14px;
+    padding: 100px 15px;
+  }
+
+  h2 {
+    font-size: 70px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 62px;
+
+    @media #{$xlmax-device, $lg-device} {
+      font-size: 50px;
+    }
+
+    @media #{$md-device, $sm-device} {
+      font-size: 30px;
+      margin-bottom: 19px;
+    }
+  }
+
+  &.white {
+    color: $white;
+
+    h2 {
+      color: $white;
+    }
+  }
+}
+
+.about-thumbnail-area {
+  height: 100%;
+
+  @media #{$sm-device} {
+    max-height: 350px;
+    overflow: hidden;
+  }
+
+  img {
+    @media #{$md-device} {
+      height: 100%;
+    }
+  }
+}
+
+.paragraph-width {
+  max-width: 65%;
+  margin: auto;
+
+  @media #{$md-device, $sm-device} {
+    min-width: 100%;
+  }
+}
+
+.video-popup-area {
+  margin-top: -300px;
+
+  @media #{$lg-device} {
+    margin-top: -200px;
+  }
+
+  @media #{$md-device} {
+    margin-top: 58px;
+  }
+
+  @media #{$sm-device} {
+    margin-top: 50px;
+  }
+
+  .btn-video-popup {
+    background-color: $brand-color;
+    border-color: $brand-color;
+    line-height: 115px;
+    height: 120px;
+    width: 120px;
+
+    @media #{$sm-device} {
+      line-height: 80px;
+      height: 90px;
+      width: 90px;
+    }
+
+    &:hover, &:focus {
+      background-color: $black-soft;
+      border-color: $black-soft;
+      color: $white;
+    }
+  }
+}
+
+.a-m-3 {
+  h2 {
+    font-weight: 600;
+  }
+
+  .bold-paragraph {
+    font-weight: 600;
+    font-size: 20px;
+    color: $black-soft;
+  }
+}
+
+/*===============================
+Start About Hero Area Wrapper
+=================================*/
+.fixed-height {
+  height: 550px;
+
+  @media #{$sm-device} {
+    height: 350px;
+  }
+}
+
+/*========================================
+Start Testimonial Area Wrapper About Page
+==========================================*/
+.about-page-testimonial {
+  .single-testimonial-wrap {
+    &.layout--4 {
+      background-color: $offwhite;
+      color: $black-soft;
+      text-align: left;
+      padding: 40px 30px;
+
+      .author-thumb {
+        img {
+          border: 0;
+          margin: 0 0 23px;
+        }
+      }
+
+      h3.client-name {
+        color: $black;
+        margin-top: 32px;
+      }
+
+      &.slick-slide {
+        &.slick-current {
+          background-color: $offwhite;
+        }
+      }
+    }
+  }
+}
+
+/*=========================
+Start Team Area Wrapper
+==========================*/
+.about-team-content-wrap {
+  .speaker-member-wrap {
+    text-align: left;
+
+    .designation {
+      color: $paragraph;
+      font-weight: 400;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*=========================
+Start Banner Area Wrapper
+==========================*/
+.about-banner-area {
+  position: relative;
+
+  @media #{$md-device, $sm-device} {
+    height: 300px;
+  }
+
+  &:before {
+    @include overlay(black, 0.2);
+  }
+}
+
+.bolder-heading {
+  color: $white;
+  font-size: 90px;
+  text-transform: uppercase;
+
+  @media #{$md-device} {
+    font-size: 60px;
+  }
+
+  @media #{$sm-device} {
+    font-size: 40px;
+  }
+}
+
+.about-social-icons {
+  a {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 500px;
+    color: $black-soft;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    margin-right: 10px;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $black-soft;
+      color: $white;
+    }
+
+    @media #{$lg-device, $sm-device} {
+      font-size: 14px;
+      line-height: 35px;
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+
+/*=======================================
+Start About Description Content Area
+========================================*/
+.about-desc-item {
+  margin-top: 30px;
+  h3 {
+    color: $brand-color;
+    margin-bottom: 8px;
+    margin-top: -9px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+}
+
+/*================================
+Start About Skill Area Wrapper
+==================================*/
+.about-skills-wrapper {
+  img {
+    width: 100%;
+  }
+
+  .single-skill-bar {
+    @media #{$md-device} {
+      margin-top: 30px;
+    }
+  }
+}
+
+.skills-wrapper-about {
+  position: relative;
+  &:before {
+    background: url(../img/about/about-man.png) center center;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+
+    @media #{$md-device, $sm-device} {
+      display: none;
+    }
+  }
+}
+
+/*================================
+Start About Call to Action
+==================================*/
+.call-to-action-left {
+  h3 {
+    color: $white;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}
+
+/*============================
+Start Funfact Countdown Area
+==============================*/
+.funfact {
+  &-item-wrap {
+    background-color: $white;
+    padding: 80px 15px;
+    margin-top: 30px;
+
+    @media #{$md-device} {
+      padding: 50px 15px;
+    }
+  }
+
+  &-number {
+    color: $black-soft;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 20px;
+
+    @media #{$md-device} {
+      font-size: 50px;
+    }
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+
+  &-icon {
+    background-color: $brand-color;
+    border-radius: 50%;
+    color: $white;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+  }
+
+  &-offwhite {
+    background-color: $offwhite;
+
+    @media #{$sm-device} {
+      padding: 60px 15px;
+    }
+
+    .funfact-number {
+      @media #{$sm-device} {
+        font-size: 30px;
+      }
+    }
+
+    .funfact-title {
+      @media #{$sm-device} {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-port-layout {
+    background-color: transparent;
+    color: $white;
+    padding: 0;
+
+    .funfact-number {
+      color: $white;
+      @media #{$sm-device} {
+        font-size: 30px;
+      }
+    }
+
+    h4 {
+      color: $white;
+    }
+  }
+}
+
+/*================================
+Start About Me Bottom Area
+==================================*/
+.about-me-bottom-area {
+  position: relative;
+  z-index: 1;
+}
+
+.agency-about-wrapper {
+  &.about-me {
+    @media #{$md-device} {
+      position: static;
+      width: 100%;
+      height: 600px;
+    }
+  }
+}
+
+/*============================
+Start Author Content Wrap
+============================*/
+.author-con-wrapper {
+  padding: 120px 0;
+  margin-top: 70px;
+
+  @media #{$md-device} {
+    padding: 65px 0 80px;
+    margin-top: 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 52px 0 60px;
+    margin-top: 0;
+  }
+}
+
+.author-profile-thumb {
+  @media #{$md-device, $sm-device} {
+    height: 600px;
+  }
+}
+
+.author-con-inner {
+  color: $black-soft;
+  font-weight: 500;
+  font-size: 18px;
+
+  h2 {
+    color: $brand-color;
+    font-size: 48px;
+    margin-top: -12px;
+
+    @media #{$sm-device} {
+      font-size: 34px;
+    }
+
+  }
+
+  h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+
+    @media #{$sm-device} {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  h2, h3 {
+    font-weight: 600;
+  }
+}
+
+.white-overlay {
+  position: relative;
+  z-index: 1;
+
+  .single-welcome-feature {
+    color: $black-soft;
+  }
+
+  &:after {
+    @include overlay($white, 0.8);
+    z-index: -1;
+    display: none;
+
+    @media #{$md-device, $sm-device} {
+      display: block;
+    }
+  }
+}

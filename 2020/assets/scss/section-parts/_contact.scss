@@ -1,0 +1,96 @@
+/*================================
+30. Start Contact Area Wrapper
+==================================*/
+
+//Map Area Wrapper Start
+.contact-map-area-wrap {
+  height: 650px;
+
+  @media #{$md-device, $sm-device} {
+    height: 400px;
+  }
+
+  #map_content {
+    height: 100%;
+  }
+
+  &.home-baber {
+    height: 480px;
+
+    @media #{$md-device, $sm-device} {
+      height: 300px;
+    }
+  }
+}
+
+//Contact Information Area Start
+.contact-info-area-wrapper {
+  .contact-info-content-wrap {
+    margin-top: -120px;
+    position: relative;
+    z-index: 999;
+  }
+
+  .contact-info-thumb {
+    img {
+      width: 100%
+    }
+  }
+
+  &.layout--2 {
+    position: absolute;
+
+    @media #{$md-device, $sm-device} {
+      position: static;
+    }
+  }
+}
+
+.contact-info-content {
+  background-color: $white;
+  padding: 60px;
+
+  @media #{$lg-device, $sm-device} {
+    padding: 50px 30px;
+  }
+
+  &.layout--2 {
+    @extend .contact-info-content-wrap;
+    transform: translateY(-100%);
+
+    @media #{$md-device, $sm-device} {
+      transform: none;
+    }
+  }
+}
+
+// Contact Method Item
+.con-method-item {
+  position: relative;
+  line-height: 1.8;
+  padding-left: 40px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $paragraph;
+  }
+
+  i {
+    color: $brand-color;
+    font-size: 16px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    text-align: center;
+    width: 25px;
+  }
+}

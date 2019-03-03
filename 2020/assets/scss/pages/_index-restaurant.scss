@@ -1,0 +1,137 @@
+/*===============================
+42. Start Restaurant About Area
+=================================*/
+.restaurant-about-content {
+  h2 {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: -5px;
+    margin-bottom: 19px;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+
+  .btn {
+    margin-top: 20px;
+
+    @media #{$sm-device} {
+      margin-top: 15px;
+    }
+  }
+}
+
+.restaurant-about-gallery {
+  img {
+    width: 100%;
+  }
+}
+
+/*===============================
+Start Restaurant Chefs Area
+=================================*/
+.restaurant-chef-area {
+  position: relative;
+  padding: 120px 0;
+
+  @media #{$md-device} {
+    padding: 80px 0;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 0;
+  }
+
+  &:before {
+    @include overlay();
+  }
+}
+
+.our-chefs-content {
+  color: $white;
+
+  h2 {
+    color: $white;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: -5px;
+    margin-bottom: 21px;
+  }
+
+  .chefs-thumbnail {
+    margin-top: 30px;
+  }
+
+  .chef-footer {
+    margin-top: 30px;
+    h4 {
+      color: $brand-color;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/*============================
+Start Why Us Area Wrapper
+==============================*/
+.why-us-left-area-content {
+  h2 {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: -5px;
+    margin-bottom: 28px;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.restaurant-why-us-accordion {
+  .card {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-header {
+      border: 0;
+      background-color: $offwhite;
+      padding: 0;
+      cursor: pointer;
+      h3 {
+        font-size: 15px;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 25px 15px;
+        margin-bottom: 0;
+
+        span {
+          font-size: 25px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .card-body {
+      padding: 15px;
+      border: 1px solid $offwhite;
+      border-top: 0;
+
+      p {
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

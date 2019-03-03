@@ -1,0 +1,132 @@
+/*==========================
+50. Start Help Banner Area
+==========================*/
+.help-banner-content {
+  color: $white;
+  font-size: 20px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media #{$sm-device} {
+    font-size: 16px;
+  }
+
+  @media #{$sm-device} {
+    height: 100vh;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 80px;
+    line-height: 1;
+    margin: 10px 0 33px;
+
+    @media #{$sm-device} {
+      font-size: 35px;
+      margin: 0 0 33px;
+    }
+
+    span {
+      color: $brand-color;
+    }
+  }
+}
+
+/*============================
+Start Custom Search Page Area
+=============================*/
+.single-custom-search-item {
+  background-color: $white;
+  padding: 80px 30px;
+
+  @media screen and (min-width: 1600px) {
+    padding: 115px 130px;
+  }
+
+  @media #{$md-device, $sm-device} {
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+
+  @media #{$sm-device} {
+    padding: 50px 15px;
+  }
+
+  i {
+    color: $brand-color;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 30px 0 22px;
+  }
+
+  .btn-know-more {
+    color: $black-soft;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 26px;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+// Select 2nd Child
+[class*='col-'] {
+  @media #{$lg-device, $xl-device} {
+    &:nth-child(odd) {
+      .single-custom-search-item {
+        background-color: $offwhite;
+      }
+    }
+  }
+}
+
+.extra-more-custom-search {
+  background: url('../img/home-help/mark.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    @media #{$xlmax-device} {
+      font-size: 32px;
+    }
+
+    @media #{$lg-device} {
+      font-size: 26px;
+    }
+
+    @media #{$sm-device} {
+      font-size: 22px;
+    }
+  }
+
+  .btn {
+    &-offWhite {
+      margin: 11px auto 0;
+      &:hover {
+        background-color: $black-soft;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+//== Typography Variable
+$font-family-base: 'Poppins', sans-serif;
+$font-family-pd: 'Playfair Display', serif;
+$font-font_awesome: 'FontAwesome';
+$font-size-base: 15px;
+
+// Site Typography Colors
+$paragraph: #666666;
+$gray-color: #929292;
+$light-gray: #f2f2f3;
+$light-white: #f4f5f7;
+$ash-color: #d2d2d2;
+
+//== Brand Color
+$brand-color: #fdc657;
+$brand-color-dark: darken($brand-color, 15%);
+$brand-color-light: lighten($brand-color, 15%);
+$border-color: #e7e7e7;
+
+//== Alternative Color
+$white: #fff;
+$offwhite: #f4f4f4;
+$black: #000;
+$black-soft: #222222;
+$navy: #3b5998;
+$pink: #FF69B4;
+$violet: #9933cc;
+$olive: #559137;
+$green: #008000;
+$red: #e74c3c;
+$orange: #f5740a;
+$yellow: #fbbf00;
+
+//== Social Media Icons Color
+$facebook: #3B5999;
+$twitter: #1DA1F2;
+$pinterest: #CB2028;
+$youtube: #CC332D;
+$reddit: #FF4500;
+
+//== Responsive Variables
+$xlmax-device: 'only screen and (min-width: 1200px) and (max-width: 1599.98px)';
+$xl-device: 'only screen and (min-width: 1200px)';
+$lg-device: 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$md-device: 'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$sm-device: 'only screen and (max-width: 767.98px)';
+$xs-device: 'only screen and (max-width: 575.98px)';
+$xxs-device: 'only screen and (max-width: 479.98px)';

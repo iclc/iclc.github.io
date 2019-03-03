@@ -1,0 +1,27 @@
+/*========================
+57. Start Faq Content Area
+=========================*/
+.faq-title-area {
+  h2 {
+    font-size: 70px;
+    margin-bottom: 54px;
+    margin-top: -20px;
+
+    @media #{$sm-device} {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.faq-item-wrap {
+  margin-top: 50px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}

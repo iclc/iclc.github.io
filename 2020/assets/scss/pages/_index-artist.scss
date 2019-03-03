@@ -1,0 +1,335 @@
+/*=================================
+51. Start Recent Singers Area Wrapper
+==================================*/
+.recent-singer {
+  text-align: center;
+
+  &-pic {
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 auto 46px;
+
+    @media #{$sm-device} {
+      margin: 0 auto 26px;
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+
+  &-info {
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .btn-enjoy {
+      color: $paragraph;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-top: 32px;
+
+      @media #{$sm-device} {
+        margin-top: 28px;
+      }
+
+      i {
+        color: $black-soft;
+        margin-right: 5px;
+        transition: 0.4s;
+        font-weight: 300;
+        font-size: 12px;
+      }
+
+      &:hover {
+        color: $brand-color;
+
+        i {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
+
+/*=================================
+Start Spring Day Album Area
+==================================*/
+.song {
+  &-table {
+    color: $white;
+    white-space: nowrap;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+
+    tr {
+      th, td {
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        padding: 23px .7rem;
+        vertical-align: middle;
+        text-align: right;
+      }
+
+      th {
+        padding-left: 0;
+        text-align: left;
+      }
+
+      td {
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    @media #{$sm-device} {
+      font-size: 15px;
+    }
+  }
+}
+
+/*=================================
+Start Upcoming Event Area
+==================================*/
+.event {
+  &-item {
+    border-bottom: 1px solid $border-color;
+    padding: 60px 0;
+
+    @media #{$md-device, $sm-device} {
+      border: none;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &-date {
+    max-width: 20%;
+    width: 100%;
+
+    @media #{$md-device, $sm-device} {
+      margin-bottom: 25px;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      color: #212121;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+
+    &-day {
+      color: $brand-color;
+      display: block;
+      font-size: 65px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+  }
+
+  &-body {
+    color: #999999;
+    max-width: 60%;
+    width: 100%;
+
+    @media #{$md-device, $sm-device} {
+      max-width: 100%;
+    }
+
+    a {
+      color: #999999;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  &-pricing {
+    margin-left: 60px;
+
+    @media #{$md-device, $sm-device} {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+
+  &-location {
+    i.fa {
+      color: $brand-color;
+      margin-right: 5px;
+    }
+  }
+
+  &-action {
+    max-width: 20%;
+    width: 100%;
+
+    @media #{$md-device, $sm-device} {
+      margin-top: 25px;
+      max-width: 100%;
+    }
+
+    .btn {
+      padding: 20px 60px;
+      display: block;
+
+      @media #{$md-device, $sm-device} {
+        padding: 15px 30px;
+        display: inline-block;
+      }
+
+      &.disabled {
+        background-color: #ddd;
+        border-color: #ddd;
+        color: #999999;
+        cursor: not-allowed;
+        opacity: 1;
+        pointer-events: visible;
+      }
+    }
+  }
+}
+
+// Responsive Margin Manage
+.upcoming-event-wrapper {
+  [class*="col"] {
+    &:nth-child(1n +3) {
+      .event-item {
+        @media #{$md-device} {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    &:nth-child(1n + 2) {
+      .event-item {
+        @media #{$sm-device} {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    &:first-child {
+      .event-item {
+        @media #{$lg-device, $xl-device} {
+          padding-top: 0;
+        }
+      }
+    }
+
+    &:last-child {
+      .event-item {
+        @media #{$lg-device, $xl-device} {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Load More Button
+.event-load-more-btn {
+  .btn-load-more {
+    color: $black-soft;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+
+    i {
+      font-size: 12px;
+      font-weight: 400;
+      margin-right: 3px;
+    }
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+/*=================================
+Start Latest Video Gallery Area
+===================================*/
+.video-content-wrapper {
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    @include overlay($black, 0.4);
+  }
+
+  img {
+    transition: 0.5s;
+    transform: scale(1.05);
+    width: 100%;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1);
+    }
+  }
+}
+
+/*=================================
+Start Social Button Action Area
+===================================*/
+.single-social-button {
+  background-color: $offwhite;
+  font-size: 30px;
+  flex: 1;
+  line-height: 100px;
+  text-align: center;
+  transition: 0.4s;
+
+  &:nth-child(2n) {
+    background-color: darken($offwhite, 8%);
+  }
+
+  &:hover {
+    background-color: $brand-color;
+
+    a {
+      color: $white;
+    }
+  }
+
+  a {
+    color: #999999;
+    display: block;
+  }
+
+  @media #{$sm-device} {
+    font-size: 20px;
+    line-height: 50px;
+  }
+}

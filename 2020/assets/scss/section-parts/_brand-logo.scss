@@ -1,0 +1,38 @@
+/*================================
+14. Start Brand Logo Area Wrapper
+==================================*/
+.brand-logo-wrapper {
+  padding: 55px 0;
+}
+
+.brand-logo-content {
+  .single-brand-logo {
+    text-align: center;
+
+    img {
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -10px;
+
+    .slick-slide {
+      padding: 0 10px;
+    }
+  }
+}
+
+/*========================================
+Start Architecture Clients Area
+=========================================*/
+.our-client-area {
+  .single-client-item {
+    margin-top: 80px;
+    text-align: center;
+  }
+}

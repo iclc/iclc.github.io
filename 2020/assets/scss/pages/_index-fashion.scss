@@ -1,0 +1,55 @@
+/*==================================
+45. Start Fashion Call to action Area
+====================================*/
+.fashion-call-to-action-area {
+  img {
+    width: 100%;
+  }
+}
+
+.fashion-call-action-left {
+  h2 {
+    font-size: 40px;
+    margin-top: -10px;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    span {
+      color: $brand-color;
+    }
+  }
+}
+
+/*==========================
+Start Fashion Banner Area
+===========================*/
+.fashion-banner-wrapper {
+  height: 570px;
+  position: relative;
+
+  @media #{$md-device} {
+    height: 400px;
+  }
+
+  @media #{$sm-device} {
+    height: 300px;
+  }
+
+  &:before {
+    @include overlay($black-soft, 0.2);
+  }
+
+  h2 {
+    color: $white;
+    font-size: 50px;
+    line-height: 1.6;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+}

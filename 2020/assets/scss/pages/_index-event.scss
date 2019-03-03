@@ -1,0 +1,533 @@
+/*===============================
+39. Start Event Hero Banner Area
+=================================*/
+.event-hero-area-banner {
+  padding: 183px 0 120px;
+
+  @media #{$md-device} {
+    padding: 143px 0 80px;
+  }
+
+  @media #{$sm-device} {
+    padding: 156px 0 100px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 100vh;
+  }
+}
+
+// Hero Content Style
+.hero-content-wrap {
+  color: $white;
+  font-size: 18px;
+
+  @media #{$md-device, $sm-device} {
+    font-size: 15px;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 65px;
+    margin-bottom: 30px;
+
+    @media #{$lg-device} {
+      font-size: 50px;
+    }
+
+    @media #{$md-device} {
+      font-size: 40px;
+    }
+
+    @media #{$sm-device} {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: $brand-color;
+    }
+  }
+
+  .btn-bordered {
+    border-color: $white;
+    color: $white;
+    margin-top: 28px;
+
+    @media #{$sm-device} {
+      margin-top: 10px;
+    }
+
+    &:hover {
+      background-color: $brand-color;
+      border-color: $brand-color;
+    }
+  }
+}
+
+// Start Event Registration Area
+.event-registration-wrapper {
+  background-color: $white;
+  padding: 80px 60px;
+
+  @media #{$md-device, $sm-device} {
+    padding: 30px 15px;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+
+  .registration-form {
+    .single-input-item {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.event-reg-ticket-wrap {
+  .section-title-wrap {
+    i.fa {
+      color: $brand-color;
+    }
+  }
+}
+
+// Form Input Style
+.single-input-item {
+  input {
+    border: 2px solid $border-color;
+    color: $paragraph;
+    display: block;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .nice-select {
+    border: 2px solid $border-color;
+    line-height: 23px;
+    padding: 20px;
+
+    .current {
+      font-weight: 400;
+      font-size: 15px;
+    }
+  }
+}
+
+/*==========================
+Start Event About Area
+===========================*/
+.event-about-accordion {
+  .card {
+    border-radius: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-header {
+      background-color: transparent;
+      padding: 0;
+      line-height: 1;
+
+      h3 {
+        cursor: pointer;
+        font-size: 15px;
+        padding: 20px 20px 16px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+
+        span.icons {
+          float: right;
+
+          i.fa-minus {
+            display: none;
+          }
+        }
+
+        &[aria-expanded="true"] {
+          color: $brand-color;
+
+          span.icons {
+            i.fa {
+              &.fa-plus {
+                display: none;
+              }
+
+              &.fa-minus {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .card-body {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/*===========================
+Start Event Banner Wrapper
+=============================*/
+.single-banner-wrap {
+  text-align: center;
+  position: relative;
+  padding: 230px 200px;
+  max-width: 50%;
+  width: 100%;
+  z-index: 1;
+
+  @media #{$xlmax-device} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media #{$lg-device} {
+    padding: 180px 15px;
+  }
+
+  @media #{$md-device} {
+    padding: 80px 15px;
+  }
+
+  @media #{$sm-device} {
+    padding: 60px 15px;
+    max-width: 100%;
+  }
+
+  &:before {
+    @include overlay($brand-color, 0.9);
+    z-index: -1;
+  }
+
+  h2 {
+    font-size: 60px;
+    margin-top: -15px;
+    margin-bottom: 35px;
+
+    @media #{$md-device} {
+      font-size: 45px;
+      margin-top: -11px;
+    }
+
+    @media #{$sm-device} {
+      font-size: 30px;
+      margin-top: -8px;
+      margin-bottom: 22px;
+    }
+
+    span {
+      color: $brand-color;
+    }
+  }
+
+  .btn-bordered {
+    &:hover {
+      border-color: $white;
+      color: $white;
+    }
+  }
+
+  &:nth-child(2n) {
+    &:before {
+      @include overlay($black, 0.7);
+    }
+
+    h2 {
+      color: $white;
+    }
+
+    .btn-bordered {
+      border-color: $white;
+      color: $white;
+
+      &:hover {
+        @extend .btn-bordered;
+        color: $brand-color;
+      }
+    }
+  }
+}
+
+/*=============================
+Start Event Speaker Wrapper
+==============================*/
+.speaker-member-wrap {
+  margin-top: 50px;
+
+  @media #{$sm-device} {
+    margin-top: 30px;
+  }
+
+  .speaker-thumbnail {
+    overflow: hidden;
+
+    img {
+      transition: 0.5s;
+      width: 100%;
+    }
+  }
+
+  .speaker-info {
+    margin-top: 30px;
+
+    h3 {
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h6, .designation {
+      color: $brand-color;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    .speaker-thumbnail {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/*===============================
+Start Event Call to Action Area
+=================================*/
+.event-call-to-action-area {
+  padding: 170px 0 160px;
+
+  @media #{$sm-device} {
+    padding: 60px 0 54px;
+  }
+}
+
+.event-call-to-action-content {
+  .btn-video-popup {
+    border-width: 2px;
+    position: static;
+    margin: auto;
+    transform: none;
+    line-height: 96px;
+    height: 100px;
+    width: 100px;
+
+    &:hover {
+      border-color: $brand-color;
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 40px;
+
+    @media #{$sm-device} {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    span {
+      color: $brand-color;
+      display: block;
+    }
+  }
+}
+
+/*===============================
+Start Event Schedule Wrapper
+=================================*/
+.event-schedule-day-menu {
+  ul {
+    border: 1px solid $border-color;
+    border-left: 0;
+
+    li {
+      border-right: 1px solid $border-color;
+
+      &:first-child {
+        border-left: 1px solid $border-color;
+      }
+
+      a {
+        color: #bbbbbb;
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 20px 80px;
+
+        @media #{$md-device} {
+          font-size: 15px;
+          padding: 15px 20px;
+        }
+
+        @media #{$sm-device} {
+          font-size: 12px;
+          padding: 10px;
+        }
+
+        &.active {
+          background-color: $brand-color;
+          color: $black-soft;
+        }
+      }
+    }
+  }
+}
+
+.event-schedule-item-content {
+  background-color: $white;
+  border: 1px solid $border-color;
+  border-top: 0;
+  padding: 60px 45px;
+
+  @media #{$sm-device} {
+    padding: 30px 15px;
+  }
+
+  .event-topic-time {
+    color: $black-soft;
+    line-height: 1;
+
+    @media #{$sm-device} {
+      margin-bottom: 15px;
+    }
+
+    i {
+      color: $brand-color;
+      margin-right: 10px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .event-topic-details {
+    color: #999999;
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      @media #{$sm-device} {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .topic-speaker-member {
+    margin-right: 10px;
+    margin-top: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      max-width: 80px;
+    }
+  }
+}
+
+/*======================================
+Start Event Registration Ticket Area
+========================================*/
+.registration-ticket-price-item {
+  background-color: $white;
+  padding: 80px 40px;
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+
+  .ticket-price {
+    color: $black-soft;
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    margin-top: -7px;
+
+    sup {
+      font-size: 20px;
+      left: 100%;
+      top: 15px;
+      position: absolute;
+    }
+  }
+
+  .ticket-plane-name {
+    border-top: 1px solid $border-color;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .btn-bordered {
+    border-color: $border-color;
+    color: darken($border-color, 10%);
+    margin-top: 40px;
+  }
+
+  &:hover {
+    .btn-bordered {
+      border-color: $black-soft;
+      color: $black-soft;
+
+      &:hover {
+        border-color: $brand-color;
+        color: $brand-color;
+      }
+    }
+  }
+
+  // Featured Ticket
+  &.featured {
+    &:before {
+      border: 40px solid $brand-color;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .ticket-feature-icon {
+      color: $white;
+      position: absolute;
+      line-height: 1;
+      top: 20px;
+      right: 14px;
+    }
+  }
+}
