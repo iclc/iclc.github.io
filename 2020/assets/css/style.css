@@ -27,6 +27,11 @@ p{
     color: #ff1234;
 }
 
+pw{
+    margin-bottom: 15px;
+    color: #fff;
+}
+
 h1,
 .h1,
 h2,
@@ -374,8 +379,7 @@ Start Section title
 .section-title-wrap.layout--2 {
     font-size: 15px;
     font-weight: 400;
-    padding-bottom: 0;
-    margin-bottom: 72px;
+    margin-bottom: 2px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -402,6 +406,15 @@ Start Section title
 .section-title-wrap.layout--2 h4 {
     font-size: 40px;
     font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: "Totentanz WEB_Slanted";
+}
+
+.section-title-wrap.layout--2 h4w {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-family: "Totentanz WEB_Slanted";
@@ -1161,10 +1174,20 @@ Start Main Navigation Wrap
 
 
 .single-discover-item-wrap h3 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 200;
     color: white;
     margin: 5px 0 25px;
+    padding-top: 20px;
+}
+
+.single-discover-item-wrap h3u {
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: white;
+    margin: 5px 0 25px;
+    padding-top: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767.98px) {
