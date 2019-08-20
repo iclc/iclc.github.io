@@ -27,11 +27,6 @@ p{
     color: #ff1234;
 }
 
-pw{
-    margin-bottom: 15px;
-    color: #fff;
-}
-
 h1,
 .h1,
 h2,
@@ -348,7 +343,7 @@ Start Section title
 }
 
 .section-title-wrap:after {
-    background-color: #fdc657;
+    background-color: #ff1234;
     content: '';
     position: absolute;
     bottom: 0;
@@ -367,7 +362,10 @@ Start Section title
     text-transform: uppercase;
     margin-top: -4px;
     margin-bottom: 40px;
+    font-family: "Totentanz WEB_Slanted";
 }
+
+
 
 @media only screen and (max-width: 767.98px) {
     .section-title-wrap h2 {
@@ -379,7 +377,8 @@ Start Section title
 .section-title-wrap.layout--2 {
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 2px;
+    padding-bottom: 0;
+    margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -411,15 +410,6 @@ Start Section title
     font-family: "Totentanz WEB_Slanted";
 }
 
-.section-title-wrap.layout--2 h4w {
-    font-size: 40px;
-    font-weight: 700;
-    color: white;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-family: "Totentanz WEB_Slanted";
-}
-
 @media only screen and (max-width: 767.98px) {
     .section-title-wrap.layout--2 h4 {
         font-size: 30px;
@@ -443,6 +433,25 @@ Start Section title
     color: #fff;
 }
 
+.section-title-wrap.white p {
+    color: #fff;
+}
+
+.section-title-wrap.white a {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    text-decoration: underline;
+    color: white;
+}
+
+.section-title-wrap.white a:hover, a:focus {
+    color: #fff;
+    outline: none;
+    text-decoration: underline;
+}
+
+
 .section-title-wrap.white i.fa {
     color: #222222;
 }
@@ -463,6 +472,10 @@ Start Section title
 
 .bg-red {
     background-color: #ff1234;
+}
+
+.bg-dodger-blue {
+    background-color: #cde2ff;
 }
 
 
@@ -495,6 +508,21 @@ Start Section title
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+
+.red-header .sticky-logo {
+    display: inline-block !important;
+}
+
+.red-header ul li a {
+    color: #ff1234;
+    text-decoration: none;
+}
+
+.red-header button,
+.red-header a {
+    color: #ff1234;
 }
 
 .logo-wrap img.sticky-logo {
@@ -659,8 +687,8 @@ Start Section title
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: space-between;
     padding: 50px 15px 0;
     max-width: 1140px;
@@ -688,9 +716,9 @@ Start Section title
 
 @media screen and (min-width: 991.99px) and (max-width: 1599.99px) {
     .header-fix-left {
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .header-fix-left .logo-area-wrap {
@@ -893,23 +921,22 @@ Start Section title
     }
 }
 
-.page-header-wrapper .page-header-content h1 {
-    font-size: 60px;
+.page-header-wrapper .page-header-content h4 {
+    color: #ff1234;
+    font-size: 50px;
     line-height: 1;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 0;
+    font-family: "Totentanz WEB_Slanted";
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-    .page-header-wrapper .page-header-content h1 {
-        font-size: 50px;
+    .page-header-wrapper .page-header-content h4 {
+        font-size: 40px;
     }
 }
 
 @media only screen and (max-width: 767.98px) {
-    .page-header-wrapper .page-header-content h1 {
-        font-size: 35px;
+    .page-header-wrapper .page-header-content h4 {
+        font-size: 25px;
     }
 }
 
@@ -962,7 +989,8 @@ Start Main Navigation Wrap
 }
 
 .main-menu > li:hover > a {
-    color: #fdc657;
+    color: #fff;
+    background-color: #ff1234;
 }
 
 .main-menu > li a {
@@ -1174,20 +1202,10 @@ Start Main Navigation Wrap
 
 
 .single-discover-item-wrap h3 {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 200;
     color: white;
     margin: 5px 0 25px;
-    padding-top: 20px;
-}
-
-.single-discover-item-wrap h3u {
-    font-size: 20px;
-    font-weight: 400;
-    
-    color: white;
-    margin: 5px 0 25px;
-    padding-top: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767.98px) {
@@ -1380,14 +1398,14 @@ Start Main Navigation Wrap
 32. Start Showcase Description Area
 ===================================*/
 .single-desc-item-wrap {
-    color: #222222;
+    color: #ff1234;
     margin-top: 50px;
 }
 
 .single-desc-item-wrap .desc-number {
-    border: 3px solid #222222;
+    border: 3px solid #ff1234;
     border-radius: 50%;
-    color: #222222;
+    color: #ff1234;
     display: block;
     font-weight: 700;
     font-size: 28px;
@@ -3367,7 +3385,7 @@ Start Event Registration Ticket Area
 }
 
 .registration-ticket-price-item .ticket-price {
-    color: #222222;
+    color: #ff1234;
     display: inline-block;
     font-size: 70px;
     font-weight: 700;
@@ -3384,7 +3402,7 @@ Start Event Registration Ticket Area
 }
 
 .registration-ticket-price-item .ticket-plane-name {
-    border-top: 1px solid #e7e7e7;
+    border-top: 1px solid #ff1234;
     font-size: 18px;
     line-height: 1;
     text-transform: uppercase;
@@ -3394,19 +3412,19 @@ Start Event Registration Ticket Area
 }
 
 .registration-ticket-price-item .btn-bordered, .registration-ticket-price-item .btn-black, .registration-ticket-price-item .single-banner-wrap:nth-child(2n) .btn-bordered:hover, .single-banner-wrap:nth-child(2n) .registration-ticket-price-item .btn-bordered:hover {
-    border-color: #e7e7e7;
-    color: #cecece;
+    border-color: #ffcfd6;
+    color: #ffcfd6;
     margin-top: 40px;
 }
 
 .registration-ticket-price-item:hover .btn-bordered, .registration-ticket-price-item:hover .btn-black, .registration-ticket-price-item:hover .single-banner-wrap:nth-child(2n) .btn-bordered:hover, .single-banner-wrap:nth-child(2n) .registration-ticket-price-item:hover .btn-bordered:hover {
-    border-color: #222222;
-    color: #222222;
+    border-color: #ff1234;
+    color: #ff1234;
 }
 
 .registration-ticket-price-item:hover .btn-bordered:hover, .registration-ticket-price-item:hover .btn-black:hover {
-    border-color: #fdc657;
-    color: #fdc657;
+    border-color: #ff1234;
+    color: #ff1234;
 }
 
 .registration-ticket-price-item.featured:before {
@@ -3447,7 +3465,7 @@ Start Event Registration Ticket Area
 
 .single-freelancer-name h4 {
     color: #ff1234;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 1;
     font-family: "Totentanz WEB_Slanted";
 }
@@ -4493,6 +4511,51 @@ Start Spring Day Album Area
         font-size: 15px;
     }
 }
+
+
+
+/*=================================
+Accommodation
+==================================*/
+
+.about-us-content {
+    color: #222222;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 600;
+    padding: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px),
+only screen and (max-width: 767.98px) {
+    .about-us-content {
+        font-size: 14px;
+        padding: 100px 15px;
+    }
+}
+
+.about-us-content h2 {
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 62px;
+    font-family: "Totentanz WEB_Slanted";
+}
+
+.about-team-content-wrap .speaker-member-wrap {
+    text-align: left;
+}
+
+.about-team-content-wrap .speaker-member-wrap .designation {
+    color: #ff1234;
+    font-weight: 400;
+}
+
+.about-team-content-wrap .speaker-member-wrap img {
+    width: 100%;
+}
+
 
 /*=================================
 Start Upcoming Event Area
