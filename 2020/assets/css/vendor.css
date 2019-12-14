@@ -162,14 +162,13 @@ sup {
 
 a {
     color: #ff1234;
-    text-decoration: underline;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
 }
 
 a:hover {
     color: #0056b3;
-    text-decoration: underline
+   
 }
 
 a:not([href]):not([tabindex]) {
