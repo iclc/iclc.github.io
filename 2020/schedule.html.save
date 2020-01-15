@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+
+    <title>ICLC 2020 - Limerick, Ireland</title>
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700%7CPlayfair+Display:400,400i"
+          rel="stylesheet">
+
+    <!--=== All Plugins CSS ===-->
+    <link href="assets/css/plugins.css" rel="stylesheet">
+    <!--=== All Vendor CSS ===-->
+    <link href="assets/css/vendor.css" rel="stylesheet">
+    <!--=== Main Style CSS ===-->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="preloader-active">
+
+<!--== Start PreLoader Wrap ==-->
+<div class="preloader-area-wrap">
+    <div class="spinner d-flex justify-content-center align-items-center h-100">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+
+    <header class="header-area-wrapper black-header narrow  header-padding sticky-header bg-white">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Start Logo Area Wrap -->
+                <div class="col-6 col-lg-4">
+                    <a href="index.html" class="logo-wrap ">
+                        <h4>ICLC 2020</h4>
+                        </a>
+                        <ph>International Conference on Live Coding, 5 - 7 February 2020</ph>
+                </div>
+                <!-- End Logo Area Wrap -->
+
+                <!-- Start Main Navigation Wrap -->
+                <div class="col-6 col-lg-8 my-auto ml-auto position-static">
+                    <div class="header-right-area d-flex justify-content-end align-items-center">
+                        <div class="navigation-area-wrap d-none d-lg-block">
+                            <nav class="main-navigation">
+                                <ul class="main-menu nav justify-content-end">
+                                    <li> <a href="index.html">ICLC 2020</a></li>
+                                    <!--<li> <a href="schedule.html">SCHEDULE</a></li>-->
+                                    <!--<li> <a href="locations.html">LOCATIONS</a></li>-->
+                                    <li> <a href="register.html">REGISTRATION</a></li>
+                                    <li> <a href="travel.html">TRAVEL & ACCOMMODATION</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <!-- End Main Navigation Wrap -->
+            </div>
+        </div>
+    </header>
+    
+    
+    <section class="fun-fact-area-wrapper bg-offwhite pt-92 pt-md-70 pt-sm-46 pb-96 pb-md-76 pb-sm-48">
+        <div class="container">
+            <div class="row mtm-30">
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap layout--2">
+                        <p class="fun-fact-number"><span class="odometer" data-count="20"></span>+</p>
+                        <h4>Talks</h4>
+                    </div>
+                </div>
+                <!-- Single FunFact End -->
+
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap layout--2">
+                        <p class="fun-fact-number"><span class="odometer" data-count="30"></span>+</p>
+                        <h4>A/V Performances</h4>
+                    </div>
+                </div>
+                <!-- Single FunFact End -->
+
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap layout--2">
+                        <p class="fun-fact-number"><span class="odometer" data-count="9"></span></p>
+                        <h4>Workshops</h4>
+                    </div>
+                </div>
+                <!-- Single FunFact End -->
+
+                <!-- Single FunFact Start -->
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="single-fun-fact-wrap layout--2">
+                        <p class="fun-fact-number"><span class="odometer" data-count="6"></span>
+                        </p>
+                        <h4>Installations</h4>
+                    </div>
+                </div>
+                <!-- Single FunFact End -->
+            </div>
+        </div>
+    </section>
+    
+
+<div class="timeline-element-2 mt-120 mb-20 mt-md-80 mt-sm-60">
+            <div class="container">
+                <div class="col-lg-6 m-auto text-center">
+                    <div class="section-title-wrap layout--2">
+                        <h2>ICLC 2020 Schedule</h2>
+                        <p class="mb-0"><a href="">Download pdf version here</a></p>
+                    </div>
+                </div>
+                <!-- WEDNESDAY FEB 5-->
+                <div class="row">    
+                    <div class="col-4 order-1 order-lg-0 ">
+                        <h3 class="mb-0">Wed, Feb 5</h3>
+                        <p>9am, Irish World Academy, University of Limerick</p>
+                        <div class="section-title-wrap pb-26"></div>
+                        
+                        <!-- PAPER SESSIONS-->
+                        <div class="cd-timeline-wrap">
+                            <div class="cd-timeline cd-timeline--aligned">
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <h5>9.30: KEYNOTE </h5>
+                                        <p>Prof. Emma Cocker</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <h5>10.00: Live coding in Western classical music </h5>
+                                        <p>Alvaro Cáceres Muñoz (Theatre, Film, TV and Interactive Media, University of York)</p>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #02 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                        <h5>10.30: Recoding the Musical Cyborg</h5>
+                                        <p>Jake Witz (indipendent researcher)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #03 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>11.00: Cibo v2: Realtime Livecoding A.I. Agent</h5>
+                                            <p>Jeremy Stewart*, Shawn Lawson* (* Rensselaer Polytechnic Institute, Troy, NY), <br>  
+					       Mike Hodnick (Indipendent Researcher), <br>
+					       Ben Gold (Independent Researcher) </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #04 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>11.30: Live Coding From Scratch: The Case of Practice in Mexico City and Barcellona</h5>
+                                            <p>Hernani Villaseñor (Graduate Music Program, UNAM), <br> Iván Paz (Computer Science Department BarcelonaTech)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                  <!-- Start Timeline Item #05 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.00: Designing for an Accessible and Pluralist Live Code Language Ecosystem with Sema</h5>
+                                            <p> Francisco Bernardo*, Chris Kiefer*, Thor Magnusson* (*Emute Lab, School of Music University of Sussex) </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                  <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Disabled Approaches to Live Coding, Cripping the Code</h5>
+                                            <p>Amble Skuse (Independent Researcher)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section-title-wrap pb-26"></div>
+                        
+                         <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                    </div>
+
+                     <!-- THURS FEB 6-->
+                    <div class="col-4 order-2 order-lg-1 ">
+                        <h3 class="mb-0">Thurs, Feb 6</h3>
+                        <p> Time, Location</p>
+                        <div class="section-title-wrap pb-26"></div>
+                        
+                        <!-- PAPER SESSIONS-->
+                        <div class="cd-timeline-wrap">
+                            <div class="cd-timeline cd-timeline--aligned">
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <h5>9.30: KEYNOTE </h5>
+                                        <p>Joanne Armitage</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <h5>10.00:  Terpsicode dance tool</h5>
+                                        <p>Dr. Kate Sicchio*, Zeshan Wang*, Marissa Forbes* (*Virginia Commonwealth University)</p>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #02 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                        <h5>10.30: The Mégra System - Small Data Music Compositionand Live Coding Performance</h5>
+                                        <p>Niklas Reppel ( Eurecat Barcelona )</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #03 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>11.00: Poly-temporality  Towards an ecology of time-oriented live coding</h5>
+                                            <p>Diego Villaseñor*, Alejandro Franco Briones (* waiting)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #04 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>11.30: Liveness, Code, and DeadCode in  Code Jockeying Practice</h5>
+                                            <p>Jamie Beverley (University of Toronto, McMaster University)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                  <!-- Start Timeline Item #05 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.00: Live Coding Procedural Textures of Implicit Surfaces</h5>
+                                            <p>Charles Roberts (Department of Computer Science, Worcester Polytechnic Institute)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                  <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: The Live Loom</h5>
+                                            <p>Alex McLean (Deutsches Museum)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-title-wrap pb-26"></div>
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <!-- FRI FEB 7-->
+                    <div class="col-4 order-3 order-lg-2">
+                        <h3 class="mb-0">Fri, Feb 7</h3>
+                        <p> Time 10am, Computer Science Building (CSIS)</p>
+                        <div class="section-title-wrap pb-26"></div>
+                        
+                        <!-- PAPER SESSIONS-->
+                        <div class="cd-timeline-wrap">
+                            <div class="cd-timeline cd-timeline--aligned">
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <h5>10am: Poster Presentations </h5>
+                                        <p>Poster Presentation</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <h5>10.00: RIPPLE: integrated audio visualization for livecoding based on code analysis and machine learning</h5>
+                                        <p>Hiroki Matsui, Keiko Ochi, Yasunari Obuchi (Tokyo University of Technology) </p>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #02 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                        <h5>10.30: Jack Purvis, Craig Anslow, James Noble (Victoria University of Wellington, New Zeland)</h5>
+                                        <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #03 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>11.00: PAPER TITLE</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Start Timeline Item #04 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>11.30: PAPER TITLE</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                  <!-- Start Timeline Item #05 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.00: PAPER TITLE</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                  <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: PAPER TITLE</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="section-title-wrap pb-26"></div>
+                            
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                             <!-- Start Timeline Item #06 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        <div class="cd-heading">
+                                            <h5>12.30: Concert</h5>
+                                            <p>Author, Institution, Author, Institution</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>    
+            </div>
+        </div>
+    <div class="section-title-wrap pb-26"></div>
+
+<section>    
+<div class="latest-portfolio-content-wrapper">
+            <!-- Start Latest Portfolios Element #01 -->
+            <div class="latest-portfolio-element-1 pb-20 pt-md-80 pt-sm-60  pb-md-80 pb-sm-60">
+                <div class="container">
+                    <div class="row masonry-grid ">
+                        <!-- Start Single Portfolio -->
+                        
+                        <div class="col-lg-3 col-sm-6">
+                            
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Workshop name" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop1.html">Author Name</a>
+                                                <a href="workshop1.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop1.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Single Portfolio -->
+
+                        <!-- Start Single Portfolio -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Workshop name" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop2.html">Author Name</a>
+                                                <a href="workshop2.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop2.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Single Portfolio -->
+
+                        <!-- Start Single Portfolio -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Portfolio Image" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop3.html">Author Name</a>
+                                                <a href="workshop3.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop3.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Single Portfolio -->
+
+                        <!-- Start Single Portfolio -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Portfolio Image" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop4.html">Author Name</a>
+                                                <a href="workshop4.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop4.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Single Portfolio -->
+
+                        <!-- Start Single Portfolio -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Portfolio Image" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop5.html">Author Name</a>
+                                                <a href="workshop5.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop5.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Single Portfolio -->
+
+                        <!-- Start Single Portfolio -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Portfolio Image" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop6.html">Author Name</a>
+                                                <a href="workshop6.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop6.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- End Single Portfolio -->
+                        
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Portfolio Image" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop7.html">Author Name</a>
+                                                <a href="workshop7.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop7.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-portfolio-wrap">
+                                <figure class="portfolio-thumb">
+                                    <img src="assets/img/01.jpg" alt="Portfolio Image" />
+
+                                    <figcaption class="portfolio-details">
+                                        <div class="port-info">
+                                            <h3>Workshop Name</h3>
+                                            <nav class="nav portfolio-cate">
+                                                <a href="workshop8.html">Author Name</a>
+                                                <a href="workshop8.html">Author Name</a>
+                                            </nav>
+                                        </div>
+
+                                        <a href="workshop8.html" class="btn-view-work">Info & Register <i class="fa fa-long-arrow-right"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Latest Portfolios Element #01 -->
+     <div class="section-title-wrap pb-26"></div>
+        </div>  
+  </section> 
+    
+    <section class="feature-service-area bg-offwhite pt-50 pt-md-80 pt-sm-60  pb-100 pb-md-60 pb-sm-40">
+        <div class="container">
+            <div class="row">
+                <!-- Start Section title -->
+                <div class="col-lg-6 m-auto text-center">
+                    <div class="section-title-wrap">
+                        <h2>ICLC 2020 Installations</h2>
+                        <p>Installations are available for viewing from 9.30 - 17.00 on Feb 5, Feb 6 and Feb 7. The installations are set up in the atrium of the Computer Science Building</p>
+                    </div>
+                </div>
+                <!-- End Section title -->
+            </div>
+
+            <div class="row mtm-60 mtm-sm-14 mtm-md-14">
+                <!-- Start Single Special Function -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-welcome-feature d-flex">
+
+                        <div class="feature-info">
+                            <h3>Installation Name</h3>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Special Function -->
+
+                <!-- Start Single Special Function -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-welcome-feature d-flex">
+                    
+                        <div class="feature-info">
+                            <h3>Installation Name</h3>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Special Function -->
+
+                <!-- Start Single Special Function -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-welcome-feature d-flex">
+                        <div class="feature-info">
+                            <h3>Installation Name</h3>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Special Function -->
+
+                <!-- Start Single Special Function -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-welcome-feature d-flex">
+                        <div class="feature-info">
+                            <h3>Installation Name</h3>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Special Function -->
+
+                <!-- Start Single Special Function -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-welcome-feature d-flex">
+                        <div class="feature-info">
+                            <h3>Installation Name</h3>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Special Function -->
+
+                <!-- Start Single Special Function -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-welcome-feature d-flex">
+                        <div class="feature-info">
+                            <h3>Installation Name</h3>
+                            <p>Author Name</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Special Function -->
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="timeline-element-2 mt-50 mb-20 mt-md-80 mt-sm-60">
+            <div class="container">
+                <div class="col-lg-6 m-auto text-center">
+                    <div class="section-title-wrap layout--2">
+                        <h2>ICLC 2020 Evening Schedule</h2>
+                    </div>
+                </div>
+                <!-- WEDNESDAY FEB 5-->
+                <div class="row">    
+                    <div class="col-4 order-1 order-lg-0 ">
+                        <h3 class="mb-0">Wed, Feb 5</h3>
+                        <p>19.30: Irish World Academy, University of Limerick</p>
+                        <div class="section-title-wrap pb-26"></div>
+                        
+                        <!-- CONCERT SESSIONS-->
+                        <div class="cd-timeline-wrap">
+                            <div class="cd-timeline cd-timeline--aligned">
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        
+                                        <p>J Simon van der Walt<br>
+                                        Evan Saul Raskob<br>
+                                        Kate Sicchio<br>
+                                        Alex MacLean<br>
+                                        Hiroki Matsui<br>
+                                        Steven Yi<br>
+                                        Francisco Bernardo, Chris Kiefer, Thor Magnusson<br>
+                                        Gerard Roma
+                                        </p>
+        
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="section-title-wrap pb-26"></div>
+                        </div>
+
+                     <!-- THURS FEB 6-->
+                    <div class="col-4 order-1 order-lg-0 ">
+                        <h3 class="mb-0">Thurs, Feb 6</h3>
+                        <p>19.30: Irish World Academy, University of Limerick</p>
+                        <div class="section-title-wrap pb-26"></div>
+                        
+                        <!-- CONCERT SESSIONS-->
+                        <div class="cd-timeline-wrap">
+                            <div class="cd-timeline cd-timeline--aligned">
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        
+                                        <p>J Simon van der Walt<br>
+                                            Shawn Lawson <br>
+                                            Giovanni Muzio<br>
+                                            Rafaele Maria Andrade<br>
+                                            Jahanzeb Safder Khawaja<br>
+                                            Claudio Cabral<br>
+                                            Zeshan Wang<br>
+                                            Char Stiles
+                                        </p>
+        
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="section-title-wrap pb-26"></div>
+                        </div>
+                    
+                    <!-- FRI FEB 7-->
+                    <div class="col-4 order-1 order-lg-0 ">
+                        <h3 class="mb-0">Fri, Feb 7</h3>
+                        <p>19.30: Flannery's</p>
+                        <div class="section-title-wrap pb-26"></div>
+                        
+                        <!-- CONCERT SESSIONS-->
+                        <div class="cd-timeline-wrap">
+                            <div class="cd-timeline cd-timeline--aligned">
+                                
+                                <!-- Start Timeline Item #01 -->
+                                <div class="cd-timeline-block">
+                                    <div class="cd-timeline-dot"></div>
+
+                                    <div class="cd-timeline-content">
+                                        
+                                        <p>Carla Sophie Tapparo<br>
+                                            Alison Merri Amet<br>
+                                            Kate Sicchio<br>
+                                            Niklas Reppel
+                                        </p>
+        
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="section-title-wrap pb-26"></div>
+                        </div>
+                    
+                    
+                </div>    
+            </div>
+        </div>
+        </section>
+
+
+
+    
+    
+
+
+ 
+
+
+
+
+
+<!--== Start Footer Area Wrapper ==-->
+<footer class="footer-wrapper">
+    <!-- Start Footer Widget Area -->
+    <div class="footer-widget-wrapper pt-120 pt-md-80 pt-sm-60 pb-116 pb-md-78 pb-sm-60">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-7 order-last">
+                    <div class="footer-copyright-area mt-xs-10 text-center text-sm-left">
+                        <p>ICLC 2020 - Limerick, Ireland </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 order-first order-sm-last">
+                    <div class="footer-social-icons nav justify-content-center justify-content-md-end">
+                        <a href="https://www.facebook.com/livecodenet/" target="_blank" class="trio-tooltip" data-tippy-content="Facebook"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/incolico" target="_blank" class="trio-tooltip" data-tippy-content="Twitter"><i
+                                class="fa fa-twitter"></i></a>
+                        <a href="https://talk.lurk.org/home " target="_blank" class="trio-tooltip" data-tippy-content="Lurk"><i class="fa fa-rocket"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!--== End Footer Area Wrapper ==-->
+
+    <!--== End Off Canvas Area Wrapper ==-->
+
+    <!--== Start Off Canvas Area Wrapper ==-->
+    <aside class="off-canvas-responsive-menu">
+        <!-- Off Canvas Overlay -->
+        <div class="off-canvas-overlay"></div>
+
+        <!-- Start Off Canvas Content Area -->
+        <div class="off-canvas-content-wrap">
+            <div class="off-canvas-content">
+
+            </div>
+            <!-- Off Canvas Close Icon -->
+            <button class="btn-close trio-tooltip" data-tippy-content="Close" data-tippy-placement="right"><i class="fa fa-close"></i>
+            </button>
+        </div>
+        <!-- End Off Canvas Content Area -->
+    </aside>
+    <!--== End Off Canvas Area Wrapper ==-->
+
+    <!--== Start Off Canvas Area Wrapper ==-->
+    <aside class="off-canvas-search-box">
+        <!-- Off Canvas Overlay -->
+        <div class="off-canvas-overlay"></div>
+
+        <!--== Start Search Box Area ==-->
+        <div class="search-box-wrapper text-center">
+            <div class="search-box-content">
+                <form action="#" method="post">
+                    <input type="search" placeholder="Search" />
+                    <button class="btn-search"><i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!--== End Search Box Area ==-->
+    </aside>
+
+
+
+<!--=======================Javascript============================-->
+<!--=== All Vendor Js ===-->
+<script src="assets/js/vendor.js"></script>
+<!--=== All Plugins Js ===-->
+<script src="assets/js/plugins.js"></script>
+<!--=== Active Js ===-->
+<script src="assets/js/active.min.js"></script>
+
+</body>
+</html>

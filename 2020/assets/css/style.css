@@ -49,7 +49,9 @@ h4,
 h5,
 .h5,
 h6,
-.h6 {
+.h6,
+h7,
+.h7{
     font-weight: 700;
     color: #ff1234;
     line-height: 1.3;
@@ -117,6 +119,12 @@ h6, .h6 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 9px;
+}
+
+h7, .h7 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 ul {
