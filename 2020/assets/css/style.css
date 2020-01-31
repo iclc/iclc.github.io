@@ -5389,7 +5389,6 @@ Start Off Canvas Area Wrapper
 .off-canvas-responsive-menu .off-canvas-content-wrap .btn-close,
 .off-canvas-search-box .off-canvas-content-wrap .btn-close {
     background-color: white;
-     color: #ff1234;
     position: absolute;
     right: 100%;
     top: 100px;
@@ -5401,7 +5400,7 @@ Start Off Canvas Area Wrapper
 .off-canvas-area-wrapper .off-canvas-content-wrap .btn-close:hover,
 .off-canvas-responsive-menu .off-canvas-content-wrap .btn-close:hover,
 .off-canvas-search-box .off-canvas-content-wrap .btn-close:hover {
-    background-color: #ff1234;
+    background-color: #fdc657;
     color: white;
 }
 
