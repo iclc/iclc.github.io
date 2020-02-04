@@ -19,9 +19,9 @@ a {
 
 a:hover, a:focus {
     color: #ff1234;
-    outline: none; 
-   
-    
+    outline: none;
+
+
 }
 
 p{
@@ -72,7 +72,7 @@ h2, .h2 {
     font-size: 32px;
     margin-bottom: 15px;
     font-family: "Totentanz WEB_Slanted";
-    
+
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -205,7 +205,16 @@ Bootstrap Tooltip Customization
     opacity: 1 !important;
 }
 
-
+.blink {
+      animation: blinker 1.6s linear infinite;
+      color: #1c87c9;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: sans-serif;
+      }
+      @keyframes blinker {
+      50% { opacity: 0; }
+      }
 /*=======================
 Buttons Style
 =========================*/
@@ -3701,7 +3710,7 @@ Start Event Registration Ticket Area
 @media only screen and (max-width: 767.98px) {
     .single-freelancer-name h4 {
         font-size: 30px;
-        
+
     }
 }
 
@@ -6748,7 +6757,7 @@ only screen and (min-width: 768px) and (max-width: 991.98px) {
     font-size: 13px;
     line-height: 1;
     margin: 0 5px;
-    
+
 }
 
 .single-portfolio-wrap .portfolio-details .port-info .portfolio-cate a:last-child:after {
