@@ -9,8 +9,17 @@
 .padding-20 {
 	padding: 10px 30px 10px 30px;
 }
+.padding-50-r {
+	padding: 20px 80px 20px 0;
+}
 .amarillo {
 	color: #e3a102;
+}
+.nav-link.amarillo {
+	color: #e3a102;
+}
+.nav-link.amarillo:hover {
+	color: #fff;
 }
 
 .lista li {
@@ -97,4 +106,13 @@ hr.style2 {
 
 .margin-30{
 	margin: 30px 0;
+}
+/*columnas iguales*/
+/*.igual {
+  min-height: 600px;
+}*/
+@media (min-width: 768px) {
+  .igual {
+    min-height: 400px;
+  }
 }
