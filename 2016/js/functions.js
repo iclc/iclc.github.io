@@ -56,7 +56,7 @@ function setupMenu() {
            '<span class="icon-bar"></span>'+
            '<span class="icon-bar"></span>'+
        '</button>'+
-       '<a class="navbar-brand" href="http://iclc.livecodenetwork.org/2016/"><img src="images/ICLC-Website-Logo-2016-300.png" alt="ICLC 2016"></a>'+
+       '<a class="navbar-brand" href="https://iclc.toplap.org/2016/"><img src="images/ICLC-Website-Logo-2016-300.png" alt="ICLC 2016"></a>'+
    '</div>'+
    '<div class="navbar-collapse collapse" id="iclc-navbar-collapse-1">'+
        '<ul class="nav navbar-nav navbar-right">'+
