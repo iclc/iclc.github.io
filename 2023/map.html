@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+	<!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="css/styles.css" rel="stylesheet" />
+
+	<title>Map</title>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+</head>
+<body id="page-top">
+	<!-- Generate the main menu bar -->
+	<!-- <script src="./js/scripts-extension.js"></script> -->
+	<!-- <script>makeMenu();</script> -->
+
+	<!-- Page contents here -->
+	<section class="about-section" id="section1">
+		<div class="container px-4 px-lg-5">
+			<div id ="map" style="height:600px;"></div>
+		</div>
+	</section>
+	<script>
+		// Creating a map object
+		var map = L.map('map').setView([52.092638508604196, 5.113223791122437], 14);
+
+		// default open streetmap tiles
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
+
+		// dark map from stadiamaps.com
+		// seems you need a subscription for these tiles to run on a website
+		// L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+		// 	maxZoom: 19,
+		// 	attribution: '(c) <a href="https://stadiamaps.com/">Stadia Maps</a>, (c) <a href="https://openmaptiles.org/">OpenMapTiles</a> (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+		// }).addTo(map);
+
+		// navigate to current location if allowed
+		// map.locate({ setView: true, maxZoom: 16 });
+
+		// if location found show with accuracy radius
+		function onLocationFound(e) {
+			var radius = e.accuracy;
+
+			// L.circle(e.latlng, radius).bindPopup()
+			// L.marker(e.latlng)
+			L.popup()
+			.setLatLng(e.latlng)
+			.addTo(map)
+			.setContent("Hi there! You are here<br><br>Click somewhere on the map to add a location where you had an encounter with coding :)<br><br>This could be in a venue during an event, a meetup place, a library, on the street, you name it!")
+			.openPopup();
+		}
+		map.on('locationfound', onLocationFound);
+
+		// if location not found throw error
+		function onLocationError(e) {
+			alert('Not allowed to get current your location');
+		}
+		map.on('locationerror', onLocationError);
+
+		// create a marker
+		function createMarker(obj){
+			var m = L.marker(obj.geometry.coordinates).addTo(map);
+			
+			var div = document.createElement('div');
+			
+			var h = document.createElement('p');
+			h.innerHTML = obj.properties.name;
+			
+			var u = document.createElement('p');
+			u.innerHTML = `<a href="http://${obj.properties.web}" target='_blank'>${obj.properties.web}</a>`;
+			
+			var d = document.createElement('p');
+			d.innerHTML = obj.properties.description;
+			
+			div.appendChild(h).appendChild(u).appendChild(d);
+			m.bindPopup(div);
+			return m;
+		}
+
+		map.on('click', (e) => console.log(e.latlng));
+
+		// Tivoli Cloud Nine
+		// {lat: 52.092638508604196, lng: 5.113223791122437}
+		var geoLoc = {
+			"type": "Feature",
+			"properties": {
+				"name": 'Tivoli Cloud Nine',
+				"web": 'www',
+				"description": "Algorave",
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": { 
+					lat: 52.092638508604196, lng: 5.113223791122437 },
+			}
+		}
+		createMarker(geoLoc);
+
+		// Vogelfrei
+		// {lat: 52.10066641943944, lng: 5.082472264766694}
+		geoLoc = {
+			"type": "Feature",
+			"properties": {
+				"name": 'Vogelfrei',
+				"web": 'www',
+				"description": "Talks",
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": { 
+					lat: 52.10066641943944, lng: 5.082472264766694 },
+			}
+		}
+		createMarker(geoLoc);
+
+		// HKU IBB-Laan
+		// {lat: 52.080495031782355, lng: 5.13475924730301}
+		geoLoc = {
+			"type": "Feature",
+			"properties": {
+				"name": 'HKU IBB-Laan',
+				"web": 'www',
+				"description": "Workshops",
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": { 
+					lat: 52.080495031782355, lng: 5.13475924730301 },
+			}
+		}
+		createMarker(geoLoc);
+	</script>
+
+	<!-- Generate contacs and copyright footer -->
+	<script>
+		// socials();
+		// footer();
+	</script>
+
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>

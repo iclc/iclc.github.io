@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<title>About</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+	
+	<!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+	<!-- Generate the main menu bar -->
+	<script src="./js/scripts-extension.js"></script>
+	<script>makeMenu();</script>
+
+	<section class="about-section" id="about"></section>
+	<script>
+		// add a paragraph, arguments: section-id, header, text
+		paragraph('about', 'About',
+		`The International Conference on Live Coding (ICLC) is dedicated to practices and research focused on technologies and philosophies that interpret the use of computer code as gesture within the context of live performances. In its previous editions the community has offered important insights on this practice from many diverse perspectives &ndash; technical, philosophical, educational, political and more.<br><br>
+		ICLC 2023 takes place in Utrecht, The Netherlands from April 19 to April 23 2023, and we wish to challenge our community to bridge even further to its multidisciplinary strengths. We are pleased to host this year's ICLC and hope it will be full of amazing theoretical works, live and live-recorded audio/visual performances, videos, workshops and satellite events.
+        `);
+
+		paragraph('about', 'Who we are', 
+		`The 2023 ICLC edition is organized by four live coding communities and artistic institutions based in the Netherlands, Ljubljana, Barcelona and Karlsruhe. This partnership emerged from the <a href="https://onthefly.space">on-the-fly</a> project carried out by a spread network across those places. Therefore, this ICLC edition is produced with a commitment to distributed work, where the organization process occurs as a feedback loop between communities.</p>
+
+        <p><strong>Organizing Institutions:</strong> <a href="https://creativecodingutrecht.nl/">Creative Coding Utrecht (CCU)</a>, <a href="https://www.toplap.cat/">TOPLAP Barcelona</a>, <a href="https://wiki.ljudmila.org/">LJUDMILA Art and Science Laboratory</a>, <a href="https://toplap-ka.de/">TOPLAP Karlsruhe</a>, <a href="https://netherlands-coding-live.github.io/">Netherlands Coding Live</a></p>
+
+        <p><strong>Organizing Committee:</strong> Fabian van Sluijs, Saskia Freeke, Felipe Ignacio Noriega, Rafaele Andrade, Raphael Sousa Santos, Iván Paz, Lina Bautista, Ludovica Michelin, Alicia Champlin, Niklas Reppel, Luka Frelih, Patrick Borgeat, Timo Hoogland, Roger Pibernat</p>
+
+        <p><strong>Institutional Partners:</strong> <a href="https://www.hku.nl/">HKU University of the Arts Utrecht</a>, <a href="http://sonology.org/">Institute of Sonology</a>, <a href="https://www.conservatoriumvanamsterdam.nl/">Conservatory of Amsterdam</a>, more tbc</p>
+
+        <p><strong>Location: Utrecht, The Netherlands</strong></p>
+        <p>Live coding performances during ICLC 2023 will take place at a diverse selection of venues both in and around Utrecht.`);
+
+		paragraph('about', 'Code of Conduct', `All participants are expected to read and adhere to the <a href="code-of-conduct.html">ICLC 2023 official Code of Conduct</a>, not only at the Conference but in all related proceedings and interactions with the ICLC community, online or in person.`);
+
+		paragraph('about', 'Environmental Statement', 
+		`We invite everyone to reflect on the impact that our research and practice has on our environment and ecosystems. Acknowledging this, we are incorporating sustainability and conservation criteria as guidelines for the conference planning. We invite everyone to take this into consideration before and after the conference. In the spirit of coming together for a live event, we want to encourage in-person attendance, and also encourage that attendees joining us make choices to minimize the impact of their travel with low-carbon options whenever possible. We also commit to fostering connections among attendees and nearby satellite events, to make the most of long distance travel with opportunities to turn your visit into a mini-tour. The presentations and performances of the conference will be live-streamed whenever possible. We are also open to hosting remote presentations when this is the best option.`)
+	</script>
+
+	<script>
+		socials();
+		footer();
+	</script>
+
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
