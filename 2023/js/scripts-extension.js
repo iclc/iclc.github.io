@@ -32,13 +32,25 @@ function makeMenu() {
 	</nav>`;
 }
 
-function paragraph(id, head = '', txt = '') {
+function header(id, head = ''){
 	let d = document.getElementById(id);
 	d.innerHTML += `
 	<div class="container px-4 px-lg-5">
 		<div class="row gx-4 gx-lg-5 justify-content-center">
 			<div class="col-lg-8">
 			<h1 class="mt-5 mb-5" id="themes">${head}</h1>
+			</div>
+		</div>
+	</div>`;
+}
+
+function paragraph(id, head = '', txt = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-lg-8">
+			<h2 class="mt-5 mb-5" id="themes">${head}</h2>
 			<p>${txt}</p>
 			</div>
 		</div>
