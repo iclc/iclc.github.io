@@ -118,7 +118,7 @@ function socials() {
 				<a class="mx-2" href="https://assemblag.es/@incolico" target="blank"><i class="fab fa-mastodon"></i></a>
 				<a class="mx-2" href="https://www.instagram.com/iclc_2023/" target="blank"><i class="fab fa-instagram"></i></a>
 				<a class="mx-2" href="https://www.facebook.com/livecodenet" target="blank"><i class="fab fa-facebook"></i></a>
-				<a class="mx-2" href="https://www.youtube.com/@Eulerroom" target="blank"><i class="fab fa-youtube"></i></a>
+				<!-- <a class="mx-2" href="https://www.youtube.com/@Eulerroom" target="blank"><i class="fab fa-youtube"></i></a> -->
 				<!-- <a class="mx-2" href="https://twitter.com/incolico" target="blank"><i class="fab fa-twitter"></i></a> -->
 			</div>
 		</div>
