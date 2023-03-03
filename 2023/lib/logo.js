@@ -158,8 +158,8 @@ function setup() {
 setDimensions();
 
 let c = createCanvas(windowWidth, windowHeight, WEBGL);
-// c.parent('p5Canvas');
-
+c.parent('p5Canvas');
+c.style('max-width', 'calc(100dvw - 20px)');
 
 textFont(myFont);
 
