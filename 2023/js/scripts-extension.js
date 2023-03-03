@@ -59,6 +59,19 @@ function paragraph(id, head = '', txt = '') {
 	</div>`;
 }
 
+function satelliteEvent(id, anchor = '', head = '', txt = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-lg-8">
+			<h2 class="mt-5 mb-5" id="${anchor}">${head}</h2>
+			<p>${txt}</p>
+			</div>
+		</div>
+	</div>`;
+}
+
 function paragraphImageLeft(id, head = '', txt = '', img = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
