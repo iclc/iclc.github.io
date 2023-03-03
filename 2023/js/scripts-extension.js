@@ -1,5 +1,5 @@
 // publish bools
-let publishCall = false;
+let publishCall = true;
 let publishAbout = true;
 let publishTravel = true;
 let publishVenues = true;
