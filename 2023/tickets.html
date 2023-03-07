@@ -28,34 +28,100 @@
 		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
 			<div class="d-flex justify-content-center">
 				<div class="text-center">
-					<h1 class="mx-auto my-0 text-uppercase">Passes & Tickets coming soon</h1>
-					<!-- <h2 class="text-white mx-auto blink" style="background:none">⬇︎</h2> -->
+					<h2 class="text-white mx-auto mt-4 mb-5 text-center">Passes & Tickets</h2>
+
+					<a class="btn btn-primary" href="#passes" style="font-weight:bold">Conference Passes</a><br>
+					<a class="btn btn-primary" href="#tickets" style="font-weight:bold">Concert Tickets</a><br>
+					<a class="btn btn-primary" href="#workshops" style="font-weight:bold">Workshop Registration</a><br>
+
+					<br>
+					<h4 class="text-white mx-auto blink" style="background:none;"><a href="#conference">Conference Info</a></h4><br>
+					<h4 class="text-white mx-auto blink" style="background:none;"><a href="#concerts">Concerts Info</a></h4><br>
+					<!-- <h4 class="text-white mx-auto blink" style="background:none;"><a href="#tickets">⬇︎ Concert Tickets ⬇︎</a></h4> -->
 				</div>
 			</div>
 		</div>
 	</header>
 	
+	<section class="about-section" id="passes">
+		<div class="container px-4 px-lg-5 text-center">
+			<h2 class="text-white mx-auto mt-4 mb-5 text-center">Passes</h2>
+			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271931" style="font-weight:bold">Full Conference Pass</a> incl. Presentations, Keynotes, Workshops, Concerts<br>
+			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275255">Daypass Wednesday 19-04</a> incl. Presentations, Keynote<br>
+			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275258">Daypass Thursday 20-04</a> incl. Presentations, Lunch Concert, Keynote<br>
+			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275261">Daypass Friday 21-04</a> incl. Presentations, Lunch Concert, Keynote<br>
+		</div>
+	</section>
 	
-	<!-- <section class="about-section" id="r1"> -->
-		<!-- <div class="container px-4 px-lg-5">		
-		<script>
-			// paragraph(`r1`, `Conference Passes`, `
-			// <a class="btn btn-primary" href="">Full Conference Pass, 19-23 April</a><br>
-			// <a class="btn btn-primary" href="">Wednesday Pass, 19 April (Paper Sessions, Keynote, Concert)</a><br>
-			// <a class="btn btn-primary" href="">Thursday Pass, 20 April (Paper session, Lunch Concert, Keynote, Workshop, Concert)</a><br>
-			// <a class="btn btn-primary" href="">Friday Pass, 21 April (Paper session, Lunch Concert, Keynote, Workshop, Concert)</a><br>
-			// `);
+	<section class="about-section" id="tickets">
+		<div class="container px-4 px-lg-5 text-center">
+			<h2 class="text-white mx-auto mt-4 mb-5 text-center">Concert Tickets</h2>
+			<a class="btn btn-primary" href="">Wed 19-04: Choreographic Coding @ Het Huis Utrecht</a> (coming soon...)<br>
+			<a class="btn btn-primary" href="">Thu 20-04: Alternative Algorithms @ Ekko</a> (coming soon...)<br>
+			<a class="btn btn-primary" href="">Fri 21-04: Immersed in Code @ Former Pieter Baan Centrum</a> (coming soon...)<br>
+			<a class="btn btn-primary" href="https://tivolivredenburg.nl/algorave">Sat 22-04: Algorave @ Pandora Tivoli Vredenburg</a><br>
+			<a class="btn btn-primary" href="">Sun 23-04: Hybrid Acoustics @ Nicolaïkerk</a> (coming soon...)<br>
+		</div>
+	</section>
 
-			// paragraph(`r1`, `Concert Tickets`,`
-			// <a class="btn btn-primary" href="">Concert @ Het Huis, 19 April</a><br>
-			// <a class="btn btn-primary" href="">Concert @ Ekko, 20 April</a><br>
-			// <a class="btn btn-primary" href="">Concert @ Pieter Baan Centrum, 21 April</a><br>
-			// <a class="btn btn-primary" href="">Algorave @ Tivoli, 22 April</a><br>
-			// <a class="btn btn-primary" href="">Concert @ Nicolaikerk, 23 April</a>
-			// `);
-		</script>
-		</div> -->
-	<!-- </section> -->
+	<section class="projects-section bg-black">
+		<div class="container px-4 px-lg-5" id="concerts">
+			<script>
+		paragraphImageLeft('concerts', 'Algorave', `
+		22 april 22:00 – 03:00<br>
+		TivoliVredenburg, Utrecht<br><br>
+
+		During this club night, the raw edges of raves come together with futuristic sounds, having the crowd dance to algorithms! Algoraves are a new movement in club culture. The artists, who take center stage, create their beats and visuals by writing code in real-time. This will be the biggest Algorave in Utrecht so far with a line-up packed with international artists from the livecoding community. Come and experience it yourself!
+		<br><br>
+		<a class="btn btn-primary" href="https://tivolivredenburg.nl/algorave">Sat 22-04: Algorave @ Pandora Tivoli Vredenburg</a><br>
+		`, `assets/img/algorave.png`);
+			</script>
+		</div>
+	</section>
+
+	<section class="projects-section bg-black">
+		<div class="container px-4 px-lg-5" id="conference">
+			<script>
+		paragraphImageRight('conference', 'Conference Passes', `
+		If you are interested in visiting the International Conference on Live Coding (ICLC) program for one or multiple days, you can purchase a full conference pass or daypass. ICLC is dedicated to practices and research focused on technologies and philosophies that interpret the use of computer code as gesture within the context of live performances. In its previous editions the community has offered important insights on this practice from many diverse perspectives – technical, philosophical, educational, political and more. Find out more about the conference in the <a href="./about.html">About</a>
+		<br><br> 
+		The conference takes place at De Havenloods, Utrecht in the venue VOGELFREI. You can find all the details on the <a href="./map.html">map</a>
+
+		A full conference ticket gives you acces to:<br>
+		- the full conference (Wed – Fri) <br>
+		- all concerts (Wed – Sun) <br>
+		- free sign up for the workshops (Thu - Sat) <br>
+		<br>
+		(NB: workshops have limited access so make sure to sign up when the workshops open up.)
+		<br><br>
+		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271931" style="font-weight:bold">Full Conference Pass</a>
+		<br><br>
+		(Photo © Maren van der Burgth)
+		`, 'assets/img/havenloods-maren-van-der-burght.jpg')
+
+		paragraphImageLeft('conference', 'Day Passes', `
+		These tickets give access to the conference of this specific day. It does not give access to the concert or workshop on this day, you can purchase separate tickets for those on this webpage.
+		<br><br>
+
+		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275255">Daypass Wednesday 19-04</a><br>
+		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275258">Daypass Thursday 20-04</a><br>
+		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275261">Daypass Friday 21-04</a><br>
+		<br>
+		(Photo © Vogelfrei)
+		`, `assets/img/vogelfrei.jpg`);
+			</script>
+		</div>
+	</section>
+
+	<section class="projects-section bg-black">
+		<div class="container px-4 px-lg-5" id="workshops">
+			<script>
+		paragraph('workshops', 'Workshop Registration', `
+		coming soon...
+		`)
+			</script>
+		</div>
+	</section>
 
 	<!-- Generate contacs and copyright footer -->
 	<script>

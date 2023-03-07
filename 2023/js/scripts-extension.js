@@ -2,10 +2,10 @@
 let publishCall = true;
 let publishAbout = true;
 let publishTravel = true;
-let publishVenues = true;
+let publishVenues = false;
 let publishSatellite = true;
 let publishTable = true;
-let publishMap = false;
+let publishMap = true;
 let publishRegistration = true;
 let publishTickets = true;
 
@@ -23,9 +23,9 @@ function makeMenu() {
 				${(publishRegistration)?`<li class="nav-item"><a class="nav-link" href="./registration.html">Registration</a></li>`:''}
 				${(publishTickets)?`<li class="nav-item"><a class="nav-link" href="./tickets.html">Passes & Tickets</a></li>`:''}
 				${(publishTable)?`<li class="nav-item"><a class="nav-link" href="./timetable.html">Timetable</a></li>`:''}
+				${(publishMap)?`<li class="nav-item"><a class="nav-link" href="./map.html">Map</a></li>`:''}
 				${(publishVenues)?`<li class="nav-item"><a class="nav-link" href="./venues.html">Venues</a></li>`:''}
 				${(publishTravel)?`<li class="nav-item"><a class="nav-link" href="./travel-stay.html">Travel & Stay</a></li>`:''}
-				${(publishMap)?`<li class="nav-item"><a class="nav-link" href="./map.html">Map</a></li>`:''}
 				${(publishSatellite)?`<li class="nav-item"><a class="nav-link" href="./satellite.html">Satellite Events</a></li>`:''}
 				${(publishCall)?`<li class="nav-item"><a class="nav-link" href="./open-call.html">Open Call</a></li>`:''}
 				${(publishAbout)?`<li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>`:''}
