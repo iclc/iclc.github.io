@@ -15,7 +15,6 @@
 	<link href="css/styles.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="./lib/timetablejs.css">
-	<link rel="stylesheet" href="./lib/timetablejs2.css">
 	<script src="./lib/timetable.js"></script>
 </head>
 <body id="page-top">
@@ -24,67 +23,150 @@
 	<script>makeMenu();</script>
 
 	<!-- Page contents here -->
-	<section class="about-section" id="timetable">
-		<div class="container px-4 px-lg-5">
+	<!-- <h2>Saturday 22 April</h2> -->
+	<!-- <div id="table" class="timetable"></div> -->
+	<script>
+	// entries structured as
+	// "Event name" : {
+	// 	"Date" : [year, month (0-indexed), day],
+	// 	"Venue" : [
+	// 		[ "Event", [starthour, startminute], [lengthhour, lengthminute], 'url' (optional)]
+	// 	]
+	// }
+	var schedule = {
+		"Tuesday 18 April" : {
+			"Date" : [2023, 3, 18],
+			"Institute of Sonology" : [
+				[ "Multi-channel Satellite Concert" , [19,30], [3,30], "http://sonology.org/satellite-multi-channel-concert-on-18-april-2023/"]
+			]
+		},
+		"Wednesday 19 April" : {
+			"Date" : [2023, 3, 19],
+			"Vogelfrei Bar" : [
+				[ "Collect your Badge", [9,00], [3,00]],
+			],
+			"Vogelfrei" : [
+				[ "Welcome & Paper session 1", [9,45], [1,30]],
+				[ "Paper session 2", [11,30], [1,15]],
+				[ "Opening & Keynote", [13,45], [1,15]],
+				[ "Paper session 3", [15,15], [1,15]]
+			],
+			"Nar Café der Kunsten" : [
+				[ "Lunch" , [12,45], [1,00]]
+			],
+			"Het Huis" : [
+				[ "Choreographic Coding", [19,30], [4,30]],
+			]
+		}, 
+		"Thursday 20 April" : {
+			"Date" : [2023, 3, 20],
+			"Vogelfrei Bar" : [
+				[ "Collect your Badge", [9,30], [3,00]],
+			],
+			"Vogelfrei" : [
+				[ "Paper session 4", [10,00], [1,15]],
+				[ "Paper session 5", [11,30], [1,15]],
+				[ "Keynote", [14,00], [1,00]],
+				[ "Workshops", [15,15], [3,00]],
+			],
+			"Nar Café der Kunsten" : [
+				[ "Lunch & Concerts" , [12,45], [1,15]],
+			],
+			"Ekko" : [
+				[ "Alternative Algorithms", [19,30], [3,00]],
+			],
+			"Bar Walden" : [
+				[ "From Scratch", [23,00], [2,00]]
+			]
+		},
+		"Friday 21 April" : {
+			"Date" : [2023, 3, 21],
+			"Vogelfrei Bar" : [
+				[ "Collect your Badge", [9,30], [3,00]],
+			],
+			"Vogelfrei" : [
+				[ "Community session 1", [10,00], [1,15]],
+				[ "Community session 2", [11,30], [1,15]],
+				[ "Keynote & Closing Words", [14,00], [1,15]],
+				[ "Workshops", [15,30], [3,00]],
+			],
+			"Nar Café der Kunsten" : [
+				[ "Lunch & Concerts" , [12,45], [1,15]],
+			],
+			"HKU IBB-Laan" : [
+				[ "HKU Students WaveFieldSynthesis Concert", [16,00], [1,30]]
+			],
+			"Pieter Baan Centrum" : [
+				[ "Immersed in Code", [19,00], [5,00]],
+			]
+		},
+		"Saturday 22 April" : {
+			"Date" : [2023, 3, 22],
+			"HKU IBB-Laan" : [
+				[ "Workshops", [12,00], [3,30]],
+			],
+			"Tivoli Pandora" : [
+				[ "Algorave", [21,30], [5,30]],
+			]
+		},
+		"Sunday 23 April" : {
+			"Date" : [2023, 3, 23],
+			"Nicolaïchurch" : [
+				[ "Hybrid Acoustics", [15,30], [3,30]],
+			]
+		}
+	}
 
-		<script>
-			paragraph(`timetable`, '', 'Disclaimer: This is a preliminary schedule for the conference and may still subject to change.'
-			);
-			paragraph(`timetable`, 'Wednesday 19 April', `
-				<li>Collect your badge</li>
-				<li>Paper session</li> 
-				<li>Lunch concert</li>
-				<li>Official opening</li>
-				<li>Keynote</li>
-				<li>Paper session</li>
-				<li>Concert</li>
-			`);
-			paragraph(`timetable`, 'Thursday 20 April', `
-				<li>Collect your badge</li>
-				<li>Paper session</li> 
-				<li>Lunch concert</li>
-				<li>Keynote</li>
-				<li>Workshops</li>
-				<li>Concert</li>
-			`);
-			paragraph(`timetable`, 'Friday 21 April', `
-				<li>Collect your badge</li>
-				<li>Community-reports session</li> 
-				<li>Lunch concert</li>
-				<li>Keynote</li>
-				<li>Closing words</li>
-				<li>Workshops</li>
-				<li>Concert</li>
-			`);
-			paragraph(`timetable`, 'Saturday 22 April', `
-				<li>Workshops</li>
-				<li>Algorave</li>
-			`);
-			paragraph(`timetable`, 'Sunday 23 April', `
-				<li>Afternoon Concert</li>
-			`);
-		</script>
+	// prototype to add hours/minutes to a Date()
+	Date.prototype.addTime = function(hours=0, minutes=0) {
+		this.setTime(this.getTime() + (hours * 60 + minutes) * 60000);
+		return this;
+	}
 
-		<!-- <h2>Saturday 22 April</h2> -->
-		<!-- <div class="timetable"></div>
+	
+	Object.keys(schedule).forEach((day) => {
+		let header = day;
+		let date = [2023, 3, 19];
+		
+		var t = new Timetable();
+		t.setScope(8, 4); // optional, only whole hours between 0 and 23
+		
+		Object.keys(schedule[day]).forEach((venue) => {
+			if (venue === 'Date'){
+				date = schedule[day][venue];
+				return;
+			}
+			try {
+				t.addLocations([venue]);
+			} catch (e) {}
 
-		<script>
-			var timetable = new Timetable();
-			timetable.setScope(10, 6); // optional, only whole hours between 0 and 23
+			schedule[day][venue].map((event) => {
+				let name = event[0];
+				let starttime = new Date(...date, ...event[1]);
+				let endtime = new Date(starttime.getTime()).addTime(...event[2]);
+				let url = event[3];
+				
+				if (url){
+					t.addEvent(name, venue, starttime, endtime, { url: url });
+				} else {
+					t.addEvent(name, venue, starttime, endtime);
+				}
+			});
+		});
 
-			timetable.addLocations(['Vogelfrei', 'Nijverheid', 'HKU', 'Cloud Nine']);
+		document.body.innerHTML += `
+			<section class="about-section">
+				<div style="margin:10px">
+					<h2>${header}</h2>
+					<div id="${header}" class="timetable"></div>
+					<p class="blink">scroll →</p>
+				</div>
+			</section>`
 
-			timetable.addEvent('Talk', 'Vogelfrei', new Date(2023,4,22,10,30), new Date(2023,4,22,12,30), { url: './index.html' });
-			timetable.addEvent('Lunch', 'Nijverheid', new Date(2023,4,22,12,30), new Date(2023,4,22,13,30));
-			timetable.addEvent('Workshop', 'HKU', new Date(2023,4,22,14,00), new Date(2023,4,22,17,00));
-			timetable.addEvent('Algorave', 'Cloud Nine', new Date(2023,4,22,21,30), new Date(2023,4,23,04,00));
-			timetable.addEvent('Talk', 'Vogelfrei', new Date(2023,4,23,10,30), new Date(2023,4,23,12,30));
-			
-			var renderer = new Timetable.Renderer(timetable);
-			renderer.draw('.timetable'); // any css selector
-		</script> -->
-		</div>
-	</section>
+		var renderer = new Timetable.Renderer(t);
+		renderer.draw(`${header}`);
+	});
+	</script>
 
 	<!-- Generate contacs and copyright footer -->
 	<script>
