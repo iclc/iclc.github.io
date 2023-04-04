@@ -27,20 +27,13 @@
 	<!-- Generate the main menu bar -->
 	<script src="./js/scripts-extension.js?cachebust=100001"></script>
 	<script>makeMenu();</script>
-	<section class="about-section">
-		<div class="container px-4 px-lg-5">
-			<div class="row gx-4 gx-lg-5 justify-content-center">
-				<img src="assets/img/workshops-header.jpg" style="width: 80%; margin-top: 30px;" />
-			</div>
-		</div>
-	</section>
-
 	<section class="about-section" id="workshops">
 		<div class="container px-4 px-lg-5">
 			<div class="row gx-4 gx-lg-5 justify-content-center">
 				<div class="col-lg-8">
-					<h2 class="mt-5 mb-5">Workshops Overview</h2>
-					<br>
+					<img src="assets/img/workshops-header.jpg" style="width: 100%; margin-top: 30px;" />
+					
+					<h2 class="mt-5 mb-5">Overview</h2>
 					<ul id="workshops-overview">
 
 					</ul>
@@ -51,7 +44,7 @@
 
 	<script>
 		// add a paragraph with arguments: section-id, header, text
-		paragraph('workshops', 'Workshop Registration',
+		paragraph('workshops', 'Registration',
 		`All workshops can be attended using the following ticket link:<br><a href="https://ccu.stager.nl/ICLC-workshops/tickets">https://ccu.stager.nl/ICLC-workshops/tickets</a>
 		<br><br>
 		<strong>Please note: if you are a contributor or bought a full conference pass you have free access to the workshops. Use the code provided on your conference ticket to unlock the free ticket.</strong>
@@ -136,7 +129,7 @@
 		workshop(
 			'workshops',
 			'megra',
-			'Easy Stochastic Live Coding with Mégra 3',
+			'Easy Stochastic Live Coding with Mégra&nbsp;3',
 			'Niklas Reppel, Alicia Champlin',
 			'April 21st, 15:30 &ndash; 17:30',
 			'Nijverheid: Kas (Greenhouse)',
