@@ -1,5 +1,6 @@
 // publish bools
-let publishCall = true;
+let publishCall = false;
+let publishWorkshops = true;
 let publishAbout = true;
 let publishTravel = true;
 let publishVenues = false;
@@ -22,6 +23,7 @@ function makeMenu() {
 				<ul class="navbar-nav ms-auto">
 				${(publishRegistration)?`<li class="nav-item"><a class="nav-link" href="./registration.html">Registration</a></li>`:''}
 				${(publishTickets)?`<li class="nav-item"><a class="nav-link" href="./tickets.html">Passes & Tickets</a></li>`:''}
+				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link" href="./workshops.html">Workshops</a></li>`:''}
 				${(publishTable)?`<li class="nav-item"><a class="nav-link" href="./timetable.html">Timetable</a></li>`:''}
 				${(publishMap)?`<li class="nav-item"><a class="nav-link" href="./map.html">Map</a></li>`:''}
 				${(publishVenues)?`<li class="nav-item"><a class="nav-link" href="./venues.html">Venues</a></li>`:''}
@@ -72,6 +74,37 @@ function satelliteEvent(id, anchor = '', head = '', txt = '') {
 			</div>
 		</div>
 	</div>`;
+}
+
+function workshop(id, anchor = '', title= '', artists='', date='', venue='', text='', requirements='', bio='') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-lg-8">
+			<h3 class="mt-5 mb-5" id="${anchor}">${title}</h3>
+			<p><strong>Date:</strong> ${date}<br>
+			<strong>Location:</strong> ${venue}<br>
+			<strong>Host${artists.includes(",")? "s" : ""}:</strong> ${artists}</p>
+			<p>${text}</p>
+			<p><strong>Requirements:</strong> ${requirements}</p>
+			<p><em>${bio}</em></p>
+			<hr />
+			</div>
+		</div>
+	</div>`;
+
+	let o = document.getElementById("workshops-overview");
+	o.innerHTML += `
+		<li><a href="#${anchor}"><strong>${title}</strong></a></li>
+	`;
+}
+
+function workshop_date(date='') {
+	let o = document.getElementById("workshops-overview");
+	o.innerHTML += `
+		<li style="list-style: none;" class="mt-3 mb-2">${date}<br></li>
+	`;
 }
 
 function paragraphImageLeft(id, head = '', txt = '', img = '') {

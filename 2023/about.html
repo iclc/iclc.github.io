@@ -6,6 +6,18 @@
 
 	<title>About</title>
 
+	<meta property="og:title" content="ICLC 2023 - About" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iclc.toplap.org/2023/" />
+    <meta property="og:description" content="International Conference on Live Coding 2023, April 19 to April 23,  Utrecht (NL)" />
+
+    <meta property="og:image" content="https://iclc.toplap.org/2023/assets/img/open-graph.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="og:locale" content="en_US" />   
+
 	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 	
 	<!-- Font Awesome icons (free version)-->
@@ -16,12 +28,15 @@
 </head>
 <body id="page-top">
 	<!-- Generate the main menu bar -->
-	<script src="./js/scripts-extension.js"></script>
+	<script src="./js/scripts-extension.js?cachebust=100001"></script>
 	<script>makeMenu();</script>
 
 	<section class="about-section" id="about"></section>
 	<script>
 		// add a paragraph, arguments: section-id, header, text
+
+		paragraph('about', '<h4><a href="open-call.html">Open Call</a></h4>', "");
+
 		paragraph('about', 'About',
 		`The International Conference on Live Coding (ICLC) is dedicated to practices and research focused on technologies and philosophies that interpret the use of computer code as gesture within the context of live performances. In its previous editions the community has offered important insights on this practice from many diverse perspectives &ndash; technical, philosophical, educational, political and more.<br><br>
 		ICLC 2023 takes place in Utrecht, The Netherlands from April 19 to April 23 2023, and we wish to challenge our community to bridge even further to its multidisciplinary strengths. We are pleased to host this year's ICLC and hope it will be full of amazing theoretical works, live and live-recorded audio/visual performances, videos, workshops and satellite events.
