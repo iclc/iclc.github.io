@@ -2,6 +2,7 @@
 let publishCall = false;
 let publishWorkshops = true;
 let publishAbout = true;
+let publishCatalogue = false;
 let publishTravel = true;
 let publishVenues = false;
 let publishSatellite = true;
@@ -21,10 +22,11 @@ function makeMenu() {
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
-				${(publishRegistration)?`<li class="nav-item"><a class="nav-link" href="./registration.html">Registration</a></li>`:''}
-				${(publishTickets)?`<li class="nav-item"><a class="nav-link" href="./tickets.html">Passes & Tickets</a></li>`:''}
-				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link" href="./workshops.html">Workshops</a></li>`:''}
 				${(publishTable)?`<li class="nav-item"><a class="nav-link" href="./timetable.html">Timetable</a></li>`:''}
+				${(publishCatalogue)?`<li class="nav-item"><a class="nav-link" href="./catalogue/">Catalogue</a></li>`:''}
+				${(publishRegistration)?`<li class="nav-item"><a class="nav-link" href="./registration.html">Registration</a></li>`:''}
+				${(publishTickets)?`<li class="nav-item"><a class="nav-link" href="./tickets.html">Tickets & Info</a></li>`:''}
+				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link" href="./workshops.html">Workshops</a></li>`:''}
 				${(publishMap)?`<li class="nav-item"><a class="nav-link" href="./map.html">Map</a></li>`:''}
 				${(publishVenues)?`<li class="nav-item"><a class="nav-link" href="./venues.html">Venues</a></li>`:''}
 				${(publishTravel)?`<li class="nav-item"><a class="nav-link" href="./travel-stay.html">Travel & Stay</a></li>`:''}
