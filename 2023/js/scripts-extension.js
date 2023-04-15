@@ -2,13 +2,13 @@
 let publishCall = false;
 let publishWorkshops = true;
 let publishAbout = true;
-let publishCatalogue = false;
+let publishCatalogue = true;
 let publishTravel = true;
 let publishVenues = false;
 let publishSatellite = true;
 let publishTable = true;
-let publishMap = true;
-let publishRegistration = true;
+let publishMap = false;
+let publishRegistration = false;
 let publishTickets = true;
 
 function makeMenu() {
