@@ -23,7 +23,7 @@ function makeMenu() {
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
-				${(publishStream)?`<li class="nav-item blink"><a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=ZzDSW08IAdU">Stream</a></li>`:''}
+				${(publishStream)?`<li class="nav-item blink"><a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=_Z71KQtWpMk">Stream</a></li>`:''}
 				${(publishTable)?`<li class="nav-item"><a class="nav-link" href="./timetable.html">Timetable</a></li>`:''}
 				${(publishCatalogue)?`<li class="nav-item"><a class="nav-link" href="./catalogue/">Catalogue</a></li>`:''}
 				${(publishRegistration)?`<li class="nav-item"><a class="nav-link" href="./registration.html">Registration</a></li>`:''}
