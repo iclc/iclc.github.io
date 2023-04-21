@@ -1,5 +1,5 @@
 // publish bools
-let publishStream = true;
+let publishStream = false;
 let publishCall = false;
 let publishWorkshops = true;
 let publishAbout = true;
