@@ -1,7 +1,7 @@
 // publish bools
 let publishStream = false;
 let publishCall = false;
-let publishWorkshops = true;
+let publishWorkshops = false;
 let publishAbout = true;
 let publishCatalogue = true;
 let publishTravel = true;
@@ -10,7 +10,7 @@ let publishSatellite = true;
 let publishTable = true;
 let publishMap = false;
 let publishRegistration = false;
-let publishTickets = true;
+let publishTickets = false;
 
 function makeMenu() {
 	document.body.innerHTML += `
