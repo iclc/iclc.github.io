@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<meta property="og:title" content="ICLC 2023 - Timetable" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iclc.toplap.org/2023/timetable.html" />
+	<meta property="og:description"
+		content="International Conference on Live Coding 2023, April 19 to April 23,  Utrecht (NL)" />
+
+	<meta property="og:image" content="https://iclc.toplap.org/2023/assets/img/open-graph.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<meta property="og:locale" content="en_US" />
+
+
+	<title>Timetable</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;display=swap"
+		rel="stylesheet">
+
+	<!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="css/styles.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="./lib/timetablejs.css">
+	<script src="./lib/timetable.js"></script>
+</head>
+
+<body id="page-top">
+	<!-- Generate the main menu bar -->
+	<script src="./js/scripts-extension.js?cachebust=1010209"></script>
+	<script>makeMenu();</script>
+
+	<!-- Page contents here -->
+	<!-- <h2>Saturday 22 April</h2> -->
+	<!-- <div id="table" class="timetable"></div> -->
+	<script>
+		// entries structured as
+		// "Event name" : {
+		// 	"Date" : [year, month (0-indexed), day],
+		// 	"Venue" : [
+		// 		[ "Event", [starthour, startminute], [lengthhour, lengthminute], 'url' (optional)]
+		// 	]
+		// }
+		var schedule = {
+			"Tuesday 18 April": {
+				"Date": [2023, 3, 18],
+				"Institute of Sonology": [
+					["Multi-channel Satellite Concert", [17,00], [2,00], "http://sonology.org/iclc-satellite-event-at-sonology-on-18-april/"]
+				]
+			},
+			"Wednesday 19 April": {
+				"Date": [2023, 3, 19],
+				"VOGELFREI Bar": [
+					["Collect your Badge", [9,00], [3,00]],
+				],
+				"VOGELFREI": [
+					["Welcome & Paper Session 1", [9, 45], [1, 30], "catalogue/event/paper-session-1.html"],
+					["Paper Session 2", [11, 30], [1, 15], "catalogue/event/paper-session-2.html"],
+					["Opening & Keynote", [13, 45], [1, 15], "catalogue/event/keynote-1.html"],
+					["Paper Session 3", [15, 15], [1, 45], "catalogue/event/paper-session-3.html"]
+				],
+				"NAR - Café der Kunsten": [
+					["Lunch", [12, 45], [1,00]]
+				],
+				"Het Huis Utrecht": [
+					["Choreographic Coding", [19, 30], [3, 30], "catalogue/event/choreographic-coding.html"],
+				]
+			},
+			"Thursday 20 April": {
+				"Date": [2023, 3, 20],
+				"VOGELFREI Bar": [
+					["Collect your Badge", [9, 30], [3,00]],
+				],
+				"VOGELFREI": [
+					["Paper Session 4", [10,00], [1, 15], "catalogue/event/paper-session-4.html"],
+					["Paper Session 5", [11, 30], [1, 15], "catalogue/event/paper-session-5.html"],
+					["Keynote", [14,00], [1,00], "catalogue/event/keynote-2.html"],
+					["Workshops", [15, 15], [2,00], "catalogue/event/workshops-1.html"],
+				],
+				"NAR - Café der Kunsten": [
+					["Lunch & Concert", [12, 45], [1, 15], "catalogue/event/lunch-concert-1.html"],
+				],
+				"EKKO": [
+					["Alternative Algorithms", [19, 30], [3,00], "catalogue/event/alternative-algorithms.html"],
+				],
+				// "Bar Walden" : [
+				// 	[ "From Scratch", [23,00], [2,00]]
+				// ]
+			},
+			"Friday 21 April": {
+				"Date": [2023, 3, 21],
+				"VOGELFREI Bar": [
+					["Collect your Badge", [9, 30], [3,00]],
+				],
+				"VOGELFREI": [
+					["Community Session 1", [10,00], [1,00], "catalogue/event/community-session-1.html"],
+					["Community Session 2", [11, 15], [1, 30], "catalogue/event/community-session-2.html"],
+					["Keynote & Closing Words", [14,00], [1, 15], "catalogue/event/keynote-3.html"],
+					["Workshops", [15, 30], [2,00], "catalogue/event/workshops-2.html"],
+				],
+				"NAR - Café der Kunsten": [
+					["Lunch & Concert", [12, 45], [1, 15], "catalogue/event/lunch-concert-2.html"],
+				],
+				"HKU IBB-Laan": [
+					["WaveFieldSynthesis by HKU students (register)", [16,00], [1, 30], 'https://ccu.stager.nl/web/tickets/111290585'],
+				],
+				"Former Pieter Baan Centrum": [
+					["Immersed in Code", [19, 30], [4,00], "catalogue/event/immersed-in-code.html"],
+				]
+			},
+			"Saturday 22 April": {
+				"Date": [2023, 3, 22],
+				"HKU IBB-Laan": [
+					["Workshops", [12,00], [3, 45], "catalogue/event/workshops-3.html"],
+				],
+				"TivoliVredenburg": [
+					["Algorave", [21, 45], [5, 15], "catalogue/event/algorave.html"],
+				]
+			},
+			"Sunday 23 April": {
+				"Date": [2023, 3, 23],
+				"Nicolaïkerk": [
+					["Hybrid Acoustics", [15, 30], [3, 30], "catalogue/event/hybrid-acoustics.html"],
+				]
+			}
+		}
+
+		// prototype to add hours/minutes to a Date()
+		Date.prototype.addTime = function (hours = 0, minutes = 0) {
+			this.setTime(this.getTime() + (hours * 60 + minutes) * 60000);
+			return this;
+		}
+
+
+		Object.keys(schedule).forEach((day) => {
+			let header = day;
+			let date = [2023, 3, 19];
+
+			var t = new Timetable();
+			t.setScope(8, 4); // optional, only whole hours between 0 and 23
+
+			Object.keys(schedule[day]).forEach((venue) => {
+				if (venue === 'Date') {
+					date = schedule[day][venue];
+					return;
+				}
+				try {
+					t.addLocations([venue]);
+				} catch (e) { }
+
+				schedule[day][venue].map((event) => {
+					let name = event[0];
+					let starttime = new Date(...date, ...event[1]);
+					let endtime = new Date(starttime.getTime()).addTime(...event[2]);
+					let url = event[3];
+
+					if (url) {
+						t.addEvent(name, venue, starttime, endtime, { url: url });
+					} else {
+						t.addEvent(name, venue, starttime, endtime);
+					}
+				});
+			});
+
+			document.body.innerHTML += `
+			<section class="about-section" style="max-width: 1920px;margin-left: auto;margin-right: auto;">
+				<div style="margin:10px">
+					<h2>${header}</h2>
+					<div id="${header}" class="timetable"></div>
+					<p class="blink">scroll →</p>
+				</div>
+			</section>`
+
+			var renderer = new Timetable.Renderer(t);
+			renderer.draw(`${header}`);
+		});
+	</script>
+
+	<!-- Generate contacs and copyright footer -->
+	<script>
+		socials();
+		footer();
+	</script>
+
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
