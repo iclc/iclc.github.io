@@ -1,23 +1,27 @@
-// publish bools
-let publishStream = false;
-let publishCall = false;
-let publishWorkshops = false;
-let publishAbout = true;
-let publishCatalogue = true;
-let publishTravel = true;
-let publishVenues = false;
-let publishSatellite = true;
-let publishTable = true;
-let publishMap = false;
-let publishRegistration = false;
-let publishTickets = false;
+/* PUBLISHING TOOLS */
 
-function makeMenu() {
+// deactivated links
+let publishStream = false;
+let publishTable = false;
+let publishCatalogue = false;
+let publishRegistration = false;
+let publishWorkshops = false;
+let publishMap = false;
+let publishVenues = false;
+let publishTickets = false;
+let publishTravel = false;
+let publishSatellite = false;
+
+// activated links
+let publishCall = true;
+let publishAbout = true;
+
+function navigationBar() {
 	document.body.innerHTML += `
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-black fixed-top" id="mainNav">
 		<div class="container px-4 px-lg-5">
-			<a class="navbar-brand" href="./index.html">ICLC2024</a>
+			<a class="navbar-brand" href="./index.html">ICLC 2024</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i>
 			</button>
@@ -216,6 +220,10 @@ function socials() {
 function footer() {
 	let c = 'ICLC 2024';
 	document.body.innerHTML += `
-	<footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; ${c}</div></footer>
+	<footer class="footer bg-black small text-center text-white-50">
+		<div class="container px-4 px-lg-5">
+		  Copyright &copy; ${c}
+	  </div>
+  </footer>
 	`
 }
