@@ -17,8 +17,7 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  /* color: #64a19d; */
-  color: var(--primary);
+  color: var(--bs-primary);
   border: 1px solid #FFFFFF;
 }
 
@@ -27,8 +26,7 @@ body {
 }
 
 #mainNav .navbar-brand {
-  /* color: #000; */
-  color: var(--primary);
+  color: var(--bs-primary);
   opacity: 0.6;
   font-weight: 700;
   padding: 0.9rem 0;
@@ -58,7 +56,7 @@ body {
 
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: var(--primary);
+    color: var(--bs-primary);
     opacity: 0.6;
   }
 
@@ -88,27 +86,27 @@ body {
 
   #mainNav.navbar-shrink .nav-link {
     /* color: #000; */
-    /* color: var(--primary); */
+    /* color: var(--bs-primary); */
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
 
   #mainNav.navbar-shrink .nav-link:hover {
     /* color: #64a19d; */
-    /* color: var(--primary); */
-    color: var(--secondary);
+    /* color: var(--bs-primary); */
+    color: var(--bs-secondary);
   }
 
   #mainNav.navbar-shrink .nav-link:active {
     /* color: #467370; */
-    color: var(--primary);
+    color: var(--bs-primary);
   }
 
   #mainNav.navbar-shrink .nav-link.active {
     /* color: #64a19d; */
-    color: var(--primary);
+    color: var(--bs-primary);
     outline: none;
-    border-bottom: 0.25rem solid --primary;
+    border-bottom: 0.25rem solid --bs-primary;
   }
 }
 
@@ -129,11 +127,14 @@ body {
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/algo2-paulus-van-dorsten.jpg");
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 90%, #000 100%); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+.masthead-gradient {
+  background: linear-gradient(to bottom, rgb(var(--bs-body-bg-rgb), 0) 60%, rgb(var(--bs-body-bg-rgb), 1) 100%);
 }
 
 .masthead h1,
@@ -188,8 +189,7 @@ body {
 
 .about-section {
   padding-top: 6rem;
-  /* padding-top: 10rem; */
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  /* background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%); */
 }
 
 .about-section p {
@@ -289,7 +289,7 @@ body {
 
 .contact-section .social a:hover {
   /* color: rgba(255, 255, 255, 0.5); */
-  color: var(--primary);
+  color: var(--bs-primary);
 }
 
 .contact-section .social a:active {
@@ -313,4 +313,21 @@ body {
 h2 a {
   text-decoration: none !important;
   color: white;
+}
+
+#container-p5 {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+
+  transform-origin: top left;
+  transform: scale(0.5);
+}
+
+#container-three {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-image: var(--bs-bg-gradient);
 }
