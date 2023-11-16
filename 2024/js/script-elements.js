@@ -170,12 +170,12 @@ function socials() {
 	<section class="contact-section">
 		<div class="container px-4 px-lg-5">
 			<div class="social d-flex justify-content-center">
-				<a class="mx-3" href="mailto:iclc@creativecodingutrecht.nl"><i class="fa-regular fa-envelope"></i></a>
-				<a class="mx-3" href="https://t.me/iclc2024" target="blank"><i class="fab fa-telegram"></i></a>
-				<a class="mx-3" href="https://discord.com/channels/790732544491913216/795094107327561748" target="blank"><i class="fab fa-discord"></i></a>
-				<a class="mx-3" href="https://assemblag.es/@incolico" target="blank"><i class="fab fa-mastodon"></i></a>
-				<a class="mx-3" href="https://www.instagram.com/iclc_2024/" target="blank"><i class="fab fa-instagram"></i></a>
-				<a class="mx-3" href="https://www.facebook.com/livecodenet" target="blank"><i class="fab fa-facebook"></i></a>
+				<a class="mx-3" href="mailto:shanghai.iclc24@nyu.edu"><i class="fa-regular fa-envelope"></i></a>
+				<!-- <a class="mx-3" href="https://t.me/iclc2024" target="blank"><i class="fab fa-telegram"></i></a> -->
+				<a class="mx-3" href="https://discord.com/channels/790732544491913216/790984416629358632" target="blank"><i class="fab fa-discord"></i></a>
+				<!-- <a class="mx-3" href="https://assemblag.es/@incolico" target="blank"><i class="fab fa-mastodon"></i></a> -->
+				<!-- <a class="mx-3" href="https://www.instagram.com/iclc_2024/" target="blank"><i class="fab fa-instagram"></i></a> -->
+				<!-- <a class="mx-3" href="https://www.facebook.com/livecodenet" target="blank"><i class="fab fa-facebook"></i></a> -->
 				<!-- <a class="mx-3" href="https://www.youtube.com/@Eulerroom" target="blank"><i class="fab fa-youtube"></i></a> -->
 				<!-- <a class="mx-3" href="https://twitter.com/incolico" target="blank"><i class="fab fa-twitter"></i></a> -->
 			</div>
