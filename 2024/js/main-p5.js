@@ -16,6 +16,7 @@ function detectDeviceAndWidth() {
 
   if (isMobile) {
     console.log("Mobile Device Detected");
+    canvas.hide();
     noLoop();
   } else {
     console.log("Detected a desktop device.");
