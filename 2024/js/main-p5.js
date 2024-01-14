@@ -6,18 +6,39 @@ function setup() {
   canvas = createCanvas(940, 400);
   canvas.parent("container-p5");
 
-  initThree(); // ***
+  detectDeviceAndWidth();
+}
+
+function detectDeviceAndWidth() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  const isMobile = /android|webos|iphone|ipod|blackberry|windows phone/i.test(userAgent); // ipad is not included.
+  const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if (isMobile) {
+    console.log("Mobile Device Detected");
+    noLoop();
+  } else {
+    console.log("Detected a desktop device.");
+    if (width >= 768) {
+      // large width (e.g., tablets, desktops)
+      console.log("Width is 768px or more.");
+
+      clear();
+      drawLogo();
+      noLoop();
+
+      initThree(); // ***
+    }
+  }
 }
 
 function draw() {
-  clear();
-  drawLogo();
-  noLoop();
+  //
 }
 
 function keyPressed() {
-  clear();
-  drawLogo();
+  //clear();
+  //drawLogo();
 }
 
 function drawLogo() {
