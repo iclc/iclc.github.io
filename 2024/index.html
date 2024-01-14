@@ -51,14 +51,19 @@
 	<script type="module">
 		import * as THREE from 'three';
 		import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+		import { BoxLineGeometry } from "three/addons/geometries/BoxLineGeometry.js";
 		window.THREE = THREE;
 		window.OrbitControls = OrbitControls;
+		window.BoxLineGeometry = BoxLineGeometry;
 	</script>
 
 	<!-- Scripts for main visuals -->
-	<script defer src="js/setup-three.js"></script>
-	<script defer src="js/setup-p5.js"></script>
+	<script src="js/NodePlane.js"></script>
+	<script defer src="js/main-three.js"></script>
+	<script defer src="js/main-p5.js"></script>
+	<script defer src="js/main-utils.js"></script>
 	<script defer src="js/main.js"></script>
+
 
 	<!-- Scripts that generate HTML elements on the main page. -->
 	<script src="js/script-elements.js"></script>
@@ -66,19 +71,24 @@
 </head>
 
 <body id="page-top">
+	<div id="container-three"></div>
 
 	<script>navigationBar();</script>
-
-	<div id="container-three"></div>
-	<div id="container-p5"></div>
 
 	<!-- Masthead-->
 	<header class="masthead masthead-gradient" id="m1">
 		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
 			<div class="d-flex justify-content-center">
 				<div class="text-center">
-					<h1 class="mx-auto my-0 text-uppercase">International Conference on Live Coding</h1>
-					<h2 class="text-white mx-auto mt-4 mb-5">May 30 - June 1 2024 in Shanghai, China</h2>
+					<div id="container-p5">
+						<!-- p5 canvas will be appended here -->
+					</div>
+					<h1 class="mx-auto my-0 text-uppercase">
+						International Conference <br> on Live Coding
+					</h1>
+					<h2 class="text-white mx-auto mt-4 mb-5">
+						May 30 - June 1 2024 in Shanghai, China
+					</h2>
 					<br>
 					<a class="btn btn-primary" href="open-call.html" style="font-weight: bold;">
 						Call for Submission
@@ -97,8 +107,6 @@
 		// remove the background image and make transparent for p5 sketch;
 		// document.getElementById('m1').style.background = "rgb(0,0,0,0)";
 	</script>
-
-	<!-- <script src="./lib/logo.js"></script> -->
 
 	<!-- About-->
 	<section class="about-section" id="about">

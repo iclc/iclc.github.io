@@ -173,10 +173,11 @@ body {
     padding: 0;
   }
 
+  /* *** */
   .masthead h1,
   .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     letter-spacing: 0.8rem;
   }
 
@@ -316,12 +317,9 @@ h2 a {
 }
 
 #container-p5 {
-  position: fixed;
-  left: 30px;
-  bottom: 30px;
-
-  transform-origin: top left;
-  transform: scale(0.5);
+  /* background-color: magenta; */
+  margin-bottom: 10px;
+  transform: scale(0.8);
 }
 
 #container-three {
