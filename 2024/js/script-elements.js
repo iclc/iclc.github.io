@@ -4,16 +4,16 @@
 let publishStream = false;
 let publishTable = false;
 let publishCatalogue = false;
-let publishRegistration = false;
 let publishWorkshops = false;
 let publishMap = false;
 let publishVenues = false;
 let publishTickets = false;
-let publishTravel = false;
 let publishSatellite = false;
+let publishCall = false;
 
 // activated links
-let publishCall = true;
+let publishTravel = true;
+let publishRegistration = true;
 let publishAbout = true;
 
 function navigationBar() {
@@ -58,13 +58,51 @@ function header(id, head = '') {
 	</div>`;
 }
 
+function backgroundImage(url = '') {
+	document.body.innerHTML += `
+		<div class="dimmed-background" style="background-image: url('${url}');">
+			<div class="dimmed-gradient"></div>
+		</div>
+  `
+}
+
+function menu(id, txt = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+			<div class="row gx-4 gx-lg-5 justify-content-center">
+				<div class="col-lg-8">
+					<h4>
+						<ul class="mt-5 mb-1">
+							${txt}
+						</ul>
+					</h4>
+				</div>
+			</div>
+		</div>
+	`;
+}
+
+function horizontalLine(id) {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-lg-8">
+				<hr class="mt-5" />
+			</div>
+		</div>
+	</div>
+	`;
+}
+
 function paragraph(id, head = '', txt = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
 	<div class="container px-4 px-lg-5">
 		<div class="row gx-4 gx-lg-5 justify-content-center">
 			<div class="col-lg-8">
-			<h2 class="mt-5 mb-5" id="themes">${head}</h2>
+			<h2 class="mt-2 mb-5" id="themes">${head}</h2>
 			<p>${txt}</p>
 			</div>
 		</div>
@@ -91,11 +129,11 @@ function workshop(id, anchor = '', title = '', artists = '', date = '', venue = 
 		<div class="row gx-4 gx-lg-5 justify-content-center">
 			<div class="col-lg-8">
 			<h3 class="mt-5 mb-5" id="${anchor}">${title}</h3>
-			<p><strong>Date:</strong> ${date}<br>
-			<strong>Location:</strong> ${venue}<br>
-			<strong>Host${artists.includes(",") ? "s" : ""}:</strong> ${artists}</p>
+			<p><b>Date:</b> ${date}<br>
+			<b>Location:</b> ${venue}<br>
+			<b>Host${artists.includes(",") ? "s" : ""}:</b> ${artists}</p>
 			<p>${text}</p>
-			<p><strong>Requirements:</strong> ${requirements}</p>
+			<p><b>Requirements:</b> ${requirements}</p>
 			<p><em>${bio}</em></p>
 			<hr />
 			</div>
@@ -104,7 +142,7 @@ function workshop(id, anchor = '', title = '', artists = '', date = '', venue = 
 
 	let o = document.getElementById("workshops-overview");
 	o.innerHTML += `
-		<li><a href="#${anchor}"><strong>${title}</strong></a></li>
+		<li><a href="#${anchor}"><b>${title}</b></a></li>
 	`;
 }
 
@@ -134,7 +172,31 @@ function paragraphImageLeft(id, head = '', txt = '', img = '') {
 	</div>`;
 }
 
-function paragraphImageRight(id, head = '', txt = '', img = '') {
+function paragraphImageRight(id, img = '', head = '', txt = '',) {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-lg-8">
+				<div class="row gx-0 justify-content-center">
+					<div class="col-lg-6"><img class="img-fluid" src="${img}" alt="..." /></div>
+					<div class="col-lg-6 order-lg-first">
+						<div class="bg-black h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-lg-right">
+								<h4 class="mt-5 mb-3">${head}</h4>
+								<p class="mb-0 text-white-50">${txt}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+		</div>
+	</div>`;
+}
+
+function paragraphImageRight_old(id, head = '', txt = '', img = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
 	<div class="row gx-0 justify-content-center">
@@ -216,6 +278,14 @@ function socials() {
 // 		</div>
 // 	</div>
 // </div> -->
+
+function spacer(id, h = "1rem") {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<div style="height: ${h}"> </div>
+		`;
+}
+
 
 function footer() {
 	let c = 'ICLC 2024';
