@@ -181,7 +181,7 @@ function paragraphImageRight(id, img = '', head = '', txt = '',) {
 				<div class="row gx-0 justify-content-center">
 					<div class="col-lg-6"><img class="img-fluid" src="${img}" alt="..." /></div>
 					<div class="col-lg-6 order-lg-first">
-						<div class="bg-black h-100 project">
+						<div class="h-100 project">
 							<div class="d-flex h-100">
 								<div class="project-text w-100 my-auto text-lg-right">
 								<h4 class="mt-5 mb-3">${head}</h4>
