@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<meta property="og:title" content="ICLC 2024 Open Call" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iclc.toplap.org/2024/open-call.html" />
+	<meta property="og:description"
+		content="International Conference on Live Coding 2024, May 30 - June 1 2024 in Shanghai, China" />
+
+	<meta property="og:image" content="https://iclc.toplap.org/2024/assets/img/open-graph.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<meta property="og:locale" content="en_US" />
+
+	<title>Open Call | ICLC2024</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto:wght@100;400;900&display=swap"
+		rel="stylesheet">
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="js/script-elements.js"></script>
+	<script defer src="js/script.js"></script>
+
+</head>
+
+<body id="page-top">
+
+	<script>backgroundImage('../assets/img/cloud-nine.jpg');</script>
+
+	<script>navigationBar();</script>
+
+	<!-- Menu -->
+	<section class="menu-section" id="menu"></section>
+	<script>
+		menu('menu', `
+			<li><a href="#registration">Registration</a></li>
+			<li><a href="#program">Program</a></li>
+			<li><a href="#contact">Contact</a></li>
+		`);
+	</script>
+
+	<!-- Registration -->
+	<section class="main-section" id="registration"></section>
+	<script>
+		horizontalLine('registration');
+		paragraph('registration', 'Registration', `
+			<p>ICLC 2024 is offering the following registration tiers:</p>
+			<ul>
+				<li>Contributors without institutional affiliation/support: RMB 0</li>
+				<li>Contributors with limited support &amp; Students: RMB 350 (49 USD)</li>
+				<li>Contributors with institutional affiliation/support &amp; General Attendance: RMB 700 (90 USD)</li>
+			</ul>
+			<p>
+				All passes include full access to all conference events, concerts, and registration for workshops. For the
+				general public, there will be separate concert tickets available at a later date as well.
+			</p>
+			<p>
+				The platform for registering for ICLC 2024 will be available <b class="text-info">later this month</b>. For
+				contributors: make
+				sure to register before <b class="text-info">April 15</b> to confirm your participation.
+			</p>
+		`);
+		paragraph('registration', '会议注册', `
+			<p>ICLC 2024 为不同参会者提供以下几种参会注册选项：</p>
+			<ul>
+				<li>无机构支持的参会者：0元人民币</li>
+				<li>学生 或 有限支持的参会者： 350元人民币（49美元）</li>
+				<li>有机构支持的参会者 或 普通参会者 ： 700元人民币 （90美元）</li>
+			</ul>
+			<p>所有类型的通行证都包括所有会议活动，音乐会以及工作坊的访问权限。对于公众，我们将在稍后提供单独的音乐会门票。</p>
+			<p>
+				ICLC 2024 会议的注册平台将于<b class="text-info">本月晚些时候</b>开放。所有意向参与者请注意：请您务必在<b class="text-info">4月15日</b>之前完成注册，以确保您的参会席位。
+			</p>
+		`);
+	</script>
+
+	<!-- Program -->
+	<section class="main-section" id="program"></section>
+	<script>
+		horizontalLine('program');
+		paragraph('program', 'Program', `
+				<p>Please expect a preliminary schedule after venues and participants are confirmed (ca. April 15).</p>
+			`);
+		paragraph('program', '日程安排', `
+				<p>请您继续关注会议网站。我们将在场地和参与者确认后发布初步的会议日程。（预计于 4月15日左右）</p>
+			`);
+	</script>
+
+	<!-- Contact -->
+	<section class="main-section" id="contact"></section>
+	<script>
+		horizontalLine('contact');
+		paragraph('contact', 'Contact', `
+		<p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
+		`);
+	</script>
+
+	<script>
+		socials();
+		footer();
+	</script>
+</body>
+
+</html>

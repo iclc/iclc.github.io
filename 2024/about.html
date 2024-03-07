@@ -29,38 +29,42 @@
 <body id="page-top">
 	<script>navigationBar();</script>
 
-	<section class="about-section" id="about"></section>
+	<section class="menu-section" id="menu">
+		<!-- empty -->
+	</section>
+
+	<section class="main-section" id="about"></section>
 	<script>
 		// add a paragraph, arguments: section-id, header, text
-
-		paragraph('about', '<h4><a href="open-call.html">Open Call</a></h4>', "");
-
+		//paragraph('main', '<h4><a href="open-call.html">Open Call</a></h4>', "");
+		horizontalLine('about');
 		paragraph('about', 'About',
 			`The International Conference on Live Coding (ICLC) is dedicated to practices and research focused on technologies and philosophies that interpret the use of computer code as gesture within the context of live performances. In its previous editions the community has offered important insights on this practice from many diverse perspectives &ndash; technical, philosophical, educational, political and more.<br><br>`);
 
+		horizontalLine('about');
 		paragraph('about', "ICLC 2024 Programming Committee",
 			`
 			</p>
 
-			<strong>Organizing Committee Chairs</strong>
+			<b>Organizing Committee Chairs</b>
 			<ul style="margin-top: 10px;">
 				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/gottfried-haider">Gottfried Haider</a>, NYU Shanghai</li>
 				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/eric-parren">Eric Parren</a>, NYU Shanghai</li>
 			</ul>
 
-			<strong>Paper Chairs</strong>
+			<b>Paper Chairs</b>
 			<ul style="margin-top: 10px;">
 				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/eric-parren">Eric Parren</a>, NYU Shanghai</li>
 				<li><a href="https://engineering.nyu.edu/faculty/gus-xia">Gus (Guangyu) Xia</a>, NYU Shanghai & NYU New York</li>
 			</ul>
 
-			<strong>Performance Chairs</strong>
+			<b>Performance Chairs</b>
 			<ul style="margin-top: 10px;">
 				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/gottfried-haider">Gottfried Haider</a>, NYU Shanghai</li>
 				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/jung-hyun-moon">Jung Hyun Moon</a>, NYU Shanghai</li>
 			</ul>
 
-			<strong>Workshop Chairs</strong>
+			<b>Workshop Chairs</b>
 			<ul style="margin-top: 10px;">
 				<li><a href="https://steinhardt.nyu.edu/people/s-alex-ruthmann">Alex Ruthmann</a>, NYU Shanghai & NYU New York</li>
 				<li>Qin Yi, Shanghai Conservatory of Music</li>
@@ -70,8 +74,14 @@
 		`
 		)
 
+		horizontalLine('about');
 		paragraph('about', 'Partners',
-			`<strong>Media Partner</strong><div><a href="https://www.manamana.net/"><img src="assets/logos/MANA_with_url_white.png" alt="Mana" title="MANA" width="200" style="position: relative; left: -30px; top: -50px;"></a></div>`);
+			`<b>Media Partner</b>
+			<div>
+				<a href="https://www.manamana.net/">
+					<img src="assets/logos/MANA_with_url_white.png" alt="Mana" title="MANA" width="200" style="position: relative; left: -30px; top: -50px;">
+				</a>
+			</div>`);
 	</script>
 
 	<script>

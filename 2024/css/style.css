@@ -53,14 +53,14 @@
 
   --bs-body-color: #eff;
   --bs-body-color-rgb: 255, 255, 255;
-  --bs-body-bg: #040007;
-  --bs-body-bg-rgb: 4, 1, 7;
+  --bs-body-bg: #040019;
+  --bs-body-bg-rgb: 8, 3, 24;
 
   --bs-bg-gradient: radial-gradient(circle at top center, #405878 0%, #2e1c51 40%, #000 100%);
   --bs-gradient: linear-gradient(180deg, rgba(5, 5, 5, 0.15), rgba(255, 255, 255, 0));
 
-  --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #F00;
+  --bs-link-color: #aa55ff;
+  --bs-link-hover-color: #0dcaf0;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 
