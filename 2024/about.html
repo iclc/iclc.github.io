@@ -27,16 +27,18 @@
 </head>
 
 <body id="page-top">
-	<script>navigationBar();</script>
-
-	<section class="menu-section" id="menu">
-		<!-- empty -->
-	</section>
-
-	<section class="main-section" id="about"></section>
 	<script>
-		// add a paragraph, arguments: section-id, header, text
-		//paragraph('main', '<h4><a href="open-call.html">Open Call</a></h4>', "");
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// MENU
+		section('menu', 'menu-section'); // empty section. just for spacer now.
+
+		// ABOUT
+		section('about', 'main-section');
 		horizontalLine('about');
 		paragraph('about', 'About',
 			`The International Conference on Live Coding (ICLC) is dedicated to practices and research focused on technologies and philosophies that interpret the use of computer code as gesture within the context of live performances. In its previous editions the community has offered important insights on this practice from many diverse perspectives &ndash; technical, philosophical, educational, political and more.<br><br>`);
@@ -78,13 +80,10 @@
 		paragraph('about', 'Partners',
 			`<b>Media Partner</b>
 			<div>
-				<a href="https://www.manamana.net/">
-					<img src="assets/logos/MANA_with_url_white.png" alt="Mana" title="MANA" width="200" style="position: relative; left: -30px; top: -50px;">
-				</a>
+				<a href="https://www.manamana.net/"><img src="assets/logos/MANA_with_url_white.png" alt="Mana" title="MANA" width="200" style="position: relative; left: -30px; top: -50px;"></a>
 			</div>`);
-	</script>
 
-	<script>
+		// FOOTER
 		socials();
 		footer();
 	</script>

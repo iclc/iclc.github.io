@@ -6,14 +6,14 @@ let publishTable = false;
 let publishCatalogue = false;
 let publishWorkshops = false;
 let publishMap = false;
-let publishVenues = false;
 let publishTickets = false;
 let publishSatellite = false;
 let publishCall = false;
 
 // activated links
-let publishTravel = true;
 let publishRegistration = true;
+let publishTravel = true;
+let publishVenues = true;
 let publishAbout = true;
 
 function navigationBar() {
@@ -66,79 +66,101 @@ function backgroundImage(url = '') {
   `
 }
 
+function mainContainer() {
+	document.body.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-lg-8" id="main-container">
+
+			</div>
+		</div>
+	</div>
+	`
+}
+
+function section(id, className) {
+	let d = document.getElementById("main-container");
+	d.innerHTML += `
+	  <section class=${className} id=${id}></section>
+	`
+}
+
 function menu(id, txt = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-	<div class="container px-4 px-lg-5">
-			<div class="row gx-4 gx-lg-5 justify-content-center">
-				<div class="col-lg-8">
-					<h4>
-						<ul class="mt-5 mb-1">
-							${txt}
-						</ul>
-					</h4>
-				</div>
-			</div>
-		</div>
+		<h4>
+			<ul class="mt-5 mb-1">
+				${txt}
+			</ul>
+		</h4>
 	`;
 }
 
 function horizontalLine(id) {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8">
-				<hr class="mt-5" />
-			</div>
-		</div>
-	</div>
+		<hr class="mt-5" />
 	`;
+}
+
+function html(id, html = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `${html}`;
 }
 
 function paragraph(id, head = '', txt = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8">
-			<h2 class="mt-2 mb-5" id="themes">${head}</h2>
-			<p>${txt}</p>
+		<h2 class="mt-2 mb-5" id="themes">${head}</h2>
+		<p>${txt}</p>
+	`;
+}
+
+function buttonBox(id, head = '', txt = '', buttons = '', bgColor = '#401F71') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<div class="button-box" style="background-color:${bgColor}">
+		  <div class="button-box-text">
+				<h4>${head}</h4>
+				<p>
+					${txt}
+				</p>
+			</div>
+			<div class="button-box-buttons">
+				${buttons}
 			</div>
 		</div>
-	</div>`;
+	`;
+}
+
+
+function googleMap(id, src, width = "100%", height = "500") {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<iframe src="${src}" width="${width}" height="${height}"></iframe>
+	`;
 }
 
 function satelliteEvent(id, anchor = '', head = '', txt = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8">
-			<h2 class="mt-5 mb-5" id="${anchor}">${head}</h2>
-			<p>${txt}</p>
-			</div>
-		</div>
-	</div>`;
+		<h2 class="mt-5 mb-5" id="${anchor}">${head}</h2>
+		<p>${txt}</p>
+	`;
 }
 
 function workshop(id, anchor = '', title = '', artists = '', date = '', venue = '', text = '', requirements = '', bio = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8">
-			<h3 class="mt-5 mb-5" id="${anchor}">${title}</h3>
-			<p><b>Date:</b> ${date}<br>
-			<b>Location:</b> ${venue}<br>
-			<b>Host${artists.includes(",") ? "s" : ""}:</b> ${artists}</p>
-			<p>${text}</p>
-			<p><b>Requirements:</b> ${requirements}</p>
-			<p><em>${bio}</em></p>
-			<hr />
-			</div>
-		</div>
-	</div>`;
+		<h3 class="mt-5 mb-5" id="${anchor}">${title}</h3>
+		<p><b>Date:</b> ${date}<br>
+		<b>Location:</b> ${venue}<br>
+		<b>Host${artists.includes(",") ? "s" : ""}:</b> ${artists}</p>
+		<p>${text}</p>
+		<p><b>Requirements:</b> ${requirements}</p>
+		<p><em>${bio}</em></p>
+		<hr />
+	`;
 
 	let o = document.getElementById("workshops-overview");
 	o.innerHTML += `
@@ -153,66 +175,46 @@ function workshop_date(date = '') {
 	`;
 }
 
-function paragraphImageLeft(id, head = '', txt = '', img = '') {
+function paragraphImageLeft(id, img = '', head = '', txt = '',) {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-	<div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-		<div class="col-lg-6"><img class="img-fluid" src="${img}" alt="..." /></div>
-		<div class="col-lg-6">
-			<div class="bg-black h-100 project">
-				<div class="d-flex h-100">
-					<div class="project-text w-100 my-auto text-lg-left">
-					<h4 class="mt-5 mb-3">${head}</h4>
-					<p class="mb-0 text-white-50">${txt}</p>
-					<hr class="d-none d-lg-block mb-0 ms-0" />
+		<div class="row gx-0 justify-content-center">
+			<div class="col-lg-6">
+				<img class="img-fluid" src="${img}" alt="..." />
+			</div>
+			<div class="col-lg-6">
+				<div class="h-100 project">
+					<div class="d-flex h-100">
+						<div class="project-text w-100 my-auto text-lg-left">
+						<h4 class="mt-5 mb-3">${head}</h4>
+						<p class="mb-0 text-white-50">${txt}</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>`;
+	`;
 }
 
 function paragraphImageRight(id, img = '', head = '', txt = '',) {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8">
-				<div class="row gx-0 justify-content-center">
-					<div class="col-lg-6"><img class="img-fluid" src="${img}" alt="..." /></div>
-					<div class="col-lg-6 order-lg-first">
-						<div class="h-100 project">
-							<div class="d-flex h-100">
-								<div class="project-text w-100 my-auto text-lg-right">
-								<h4 class="mt-5 mb-3">${head}</h4>
-								<p class="mb-0 text-white-50">${txt}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					</div>
+		<div class="row gx-0 justify-content-center">
+			<div class="col-lg-6">
+				<img class="img-fluid" src="${img}" alt="..." />
 			</div>
-		</div>
-	</div>`;
-}
-
-function paragraphImageRight_old(id, head = '', txt = '', img = '') {
-	let d = document.getElementById(id);
-	d.innerHTML += `
-	<div class="row gx-0 justify-content-center">
-		<div class="col-lg-6"><img class="img-fluid" src="${img}" alt="..." /></div>
-		<div class="col-lg-6 order-lg-first">
-			<div class="bg-black h-100 project">
-				<div class="d-flex h-100">
-					<div class="project-text w-100 my-auto text-lg-right">
-					<h4 class="mt-5 mb-3">${head}</h4>
-					<p class="mb-0 text-white-50">${txt}</p>
-					<hr class="d-none d-lg-block mb-0 me-0" />
+			<div class="col-lg-6 order-lg-first">
+				<div class="h-100 project">
+					<div class="d-flex h-100">
+						<div class="project-text w-100 my-auto text-lg-right">
+						<h4 class="mt-5 mb-3">${head}</h4>
+						<p class="mb-0 text-white-50">${txt}</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>`;
+	`;
 }
 
 // <!-- Featured Project Row-->

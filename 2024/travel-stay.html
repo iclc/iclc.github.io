@@ -41,37 +41,27 @@
 </head>
 
 <body id="page-top">
-
-	<!-- <script>backgroundImage('https://iclc.toplap.org/2024/assets/img/algo1.jpg');</script> -->
-
-	<script>navigationBar();</script>
-
-	<!-- Menu -->
-	<section class="menu-section" id="menu"></section>
 	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// MENU
+		section('menu', 'menu-section');
 		menu('menu', `
 			<li><a href="#travel-visa">Travel &gt; Visa</a></li>
 			<li><a href="#stay-accommodation">Stay &gt; Accommodation</a></li>
 			<li><a href="#contact">Contact</a></li>
 		`);
-	</script>
 
-	<!-- Map-->
-	<section class="main-section" id="map">
-		<div class="container px-4 px-lg-5">
-			<div class="row gx-4 gx-lg-5 justify-content-center">
-				<div class="col-lg-8">
-					<h4>Map</h4>
-					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rfkKbMi2EaeMemMavEkf1zRzJLWTUIc&ehbc=2E312F"
-						width="100%" height="500"></iframe>
-				</div>
-			</div>
-		</div>
-	</section>
+		// MAP
+		section('map', 'main-section');
+		googleMap('map', "https://www.google.com/maps/d/u/0/embed?mid=1rfkKbMi2EaeMemMavEkf1zRzJLWTUIc&ehbc=2E312F");
 
-	<!-- Travel & Visa -->
-	<section class="main-section" id="travel-visa"></section>
-	<script>
+		// TRAVEL & VISA
+		section('travel-visa', 'main-section');
 		horizontalLine('travel-visa');
 		paragraph('travel-visa', 'Travel &gt; Visa', `
 			<h4>Visa Waiver Policies</h4>
@@ -132,11 +122,9 @@
 				visa <b class="text-info">50 days</b> prior to the conference.
 			</p>
 		`);
-	</script>
 
-	<!-- Travel & Visa -->
-	<section class="main-section" id="stay-accommodation"></section>
-	<script>
+		// STAY & ACCOMMODATION
+		section('stay-accommodation', 'main-section');
 		horizontalLine('stay-accommodation');
 		paragraph('stay-accommodation', 'Stay &gt; Accommodation', `
 			<h4>Artyzen Habitat Qiantan Shanghai</h4>
@@ -147,7 +135,7 @@
 				arrival.)
 			</p>
 	  `);
-		paragraphImageRight('stay-accommodation', 'assets/img/accommodation-artyzen.jpg', '', `
+		paragraphImageLeft('stay-accommodation', 'assets/img/accommodation-artyzen.jpg', '', `
 			<ul>
 				<li>Address: 596 West Yangsi Road, Pudong, Shanghai, 200126, China</li>
 				<li>Phone: +86 21 5027 8888</li>
@@ -163,20 +151,15 @@
 				<li>Address: 533 Jiming Road, Pudong, Shanghai, 200126, China</li>
 			</ul>	
 	  `);
-	</script>
 
-
-
-	<!-- Contact -->
-	<section class="main-section" id="contact"></section>
-	<script>
+		// CONTACT
+		section('contact', 'main-section');
 		horizontalLine('contact');
 		paragraph('contact', 'Contact', `
 		  <p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
 		`);
-	</script>
 
-	<script>
+		// FOOTER
 		socials();
 		footer();
 	</script>
