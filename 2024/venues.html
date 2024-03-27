@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>Venues | ICLC2024</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto:wght@100;400;900&display=swap"
+		rel="stylesheet">
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="js/script-elements.js"></script>
+	<script defer src="js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// MENU
+		section('menu', 'menu-section');
+		menu('menu', `
+			<li><a href="#shanghai-concert-hall">Shanghai Concert Hall</a></li>
+			<li><a href="#system">SYSTEM</a></li>
+			<li><a href="#nyu-shanghai">NYU Shanghai</a></li>
+		`);
+
+		// SHANGHAI CONCERT HALL
+		section('shanghai-concert-hall', 'main-section');
+		horizontalLine('shanghai-concert-hall');
+		heading('shanghai-concert-hall', 'Shanghai Concert Hall (凯迪拉克上海音乐厅)');
+		paragraph('shanghai-concert-hall',
+			`The Shanghai Concert Hall is notable for its central location, historic European architecture, and engineering feat of being relocated to preserve its heritage.`);
+		html('shanghai-concert-hall', `
+			<div class="row">
+				<div>
+					<img src="assets/venues/shanghai-concert-hall.jpg" alt="Shanghai Concert Hall" title="Shanghai Concert Hall" width="100%">
+				  </br></br>
+				</div>
+			  	
+				<div class="col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.772670646061!2d121.47525307722815!3d31.22702697434958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27068c31bf6d1%3A0x4215ef32f088d991!2sShanghai%20Concert%20Hall!5e0!3m2!1sen!2s!4v1711497029281!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+
+				<div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
+					<ul>
+						<li>The <b class="text-info">concerts</b> will be hosted within <b class="text-info">the black box space</b> situated on <b class="text-info">the 4th floor</b>.</li>
+						<li>Close to People’s Park and  Shanghai Museum, located in Huangpu district</li>
+						<li>Address: 523 Yan’an East Road (延安东路), Huangpu District, Shanghai</li>
+						<li>Website: <a href="http://www.shanghaiconcerthall.org/" target="_blank">shanghaiconcerthall.org</a></li>
+					</ul>
+				</div>
+			</div>
+		`);
+
+
+		// SYSTEM
+		section('system', 'main-section');
+		horizontalLine('system');
+		heading('system', 'SYSTEM (卢湾区)');
+		paragraph('system', `SYSTEM is a multi-purpose venue that serves as a club, theatre, art gallery, live house, and more. It operates with the aim to inspire creativity through music, arts, performances, and drinks. `);
+		html('system', `
+			<div class="row">
+				<div>
+					<img src="assets/venues/system.jpg" alt="SYSTEM" title="SYSTEM" width="100%">
+				  </br></br>
+				</div>
+			  	
+				<div class="col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13647.400749251614!2d121.4793512!3d31.2248797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b2706f572df56f%3A0x5b03743763998b04!2sSYSTEM!5e0!3m2!1sen!2s!4v1711496986522!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+
+				<div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
+					<ul>  
+						<li>The <b class="text-info">Algoraves</b> will be hosted at System Shanghai.</li>
+						<li>Address: SYSTEM 3F, Yunhai Mansion,1329 Huaihai Zhong Road (淮海中路), near Hengshan Road, Xuhui District, Shanghai</li>
+						<li>Instagram: <a href="https://www.instagram.com/system_shanghai/" target="_blank">system_shanghai</a></li>
+						<li>Email: <a href="mailto:contact@systemshanghai.com.cn">contact@systemshanghai.com.cn</a></li>
+					</ul>
+				</div>
+			</div>
+		`);
+
+		// NYU SHANGHAI
+		section('nyu-shanghai', 'main-section');
+		horizontalLine('nyu-shanghai');
+		heading('nyu-shanghai', 'NYU Shanghai (上海纽约大学)');
+		paragraph('nyu-shanghai', `
+			NYU Shanghai is a vibrant, globally-connected university that offers a unique blend of Eastern and Western educational practices. The campus is known for its diverse student body, innovative programs, and strong emphasis on global citizenship. NYU Shanghai aims to prepare students for a rapidly changing world by offering a broad range of disciplines and fostering a community of critical thinkers and leaders.
+		`);
+		html('nyu-shanghai', `
+			<div class="row">
+				<div>
+					<img src="assets/venues/nyu-shanghai-1.jpg" alt="NYU Shanghai" title="NYU Shanghai" width="100%">
+				  </br></br>
+				</div>
+				<div>
+					<img src="assets/venues/nyu-shanghai-2.jpg" alt="NYU Shanghai" title="NYU Shanghai" width="100%">
+				  </br></br>
+				</div>
+			  	
+				<div class="col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3217.41278127906!2d121.48123668159556!3d31.14859197083528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d31.1488336!2d121.4814499!5e0!3m2!1sen!2s!4v1711501447812!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+
+				<div class="col-lg-6" style="display: flex; justify-content: center; align-items: center;">
+					<ul>
+						<li>The <b class="text-info">conference</b> will be hosted on the campus.</li>
+						<li>Address: Address: 567 West Yangsi Road (杨思西路), Pudong New District, Shanghai</li>
+						<li>Website: <a href="https://shanghai.nyu.edu/" target="_blank">shanghai.nyu.edu</a></li>
+					</ul>
+				</div>
+			</div>
+		`);
+
+		// CONTACT
+		section('contact', 'main-section');
+		horizontalLine('contact');
+		heading('contact', 'Contact');
+		paragraph('contact', `
+		  <p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
+		`);
+
+		// FOOTER
+		socials();
+		footer();
+	</script>
+</body>
+
+</html>

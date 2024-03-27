@@ -41,39 +41,30 @@
 </head>
 
 <body id="page-top">
-
-	<!-- <script>backgroundImage('https://iclc.toplap.org/2024/assets/img/algo1.jpg');</script> -->
-
-	<script>navigationBar();</script>
-
-	<!-- Menu -->
-	<section class="menu-section" id="menu"></section>
 	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// MENU
+		section('menu', 'menu-section');
 		menu('menu', `
 			<li><a href="#travel-visa">Travel &gt; Visa</a></li>
 			<li><a href="#stay-accommodation">Stay &gt; Accommodation</a></li>
 			<li><a href="#contact">Contact</a></li>
 		`);
-	</script>
 
-	<!-- Map-->
-	<section class="main-section" id="map">
-		<div class="container px-4 px-lg-5">
-			<div class="row gx-4 gx-lg-5 justify-content-center">
-				<div class="col-lg-8">
-					<h4>Map</h4>
-					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rfkKbMi2EaeMemMavEkf1zRzJLWTUIc&ehbc=2E312F"
-						width="100%" height="500"></iframe>
-				</div>
-			</div>
-		</div>
-	</section>
+		// MAP
+		section('map', 'main-section');
+		googleMap('map', "https://www.google.com/maps/d/u/0/embed?mid=1rfkKbMi2EaeMemMavEkf1zRzJLWTUIc&ehbc=2E312F");
 
-	<!-- Travel & Visa -->
-	<section class="main-section" id="travel-visa"></section>
-	<script>
+		// TRAVEL & VISA
+		section('travel-visa', 'main-section');
 		horizontalLine('travel-visa');
-		paragraph('travel-visa', 'Travel &gt; Visa', `
+		heading('travel-visa', 'Travel &gt; Visa');
+		paragraph('travel-visa', `
 			<h4>Visa Waiver Policies</h4>
 			<p>
 				Currently, the following countries have visa exemption agreements for regular passport holders. These countries
@@ -132,13 +123,12 @@
 				visa <b class="text-info">50 days</b> prior to the conference.
 			</p>
 		`);
-	</script>
 
-	<!-- Travel & Visa -->
-	<section class="main-section" id="stay-accommodation"></section>
-	<script>
+		// STAY & ACCOMMODATION
+		section('stay-accommodation', 'main-section');
 		horizontalLine('stay-accommodation');
-		paragraph('stay-accommodation', 'Stay &gt; Accommodation', `
+		heading('stay-accommodation', 'Stay &gt; Accommodation');
+		paragraph('stay-accommodation', `
 			<h4>Artyzen Habitat Qiantan Shanghai</h4>
 			<p>Artyzen Habitat is the partner hotel of NYU Shanghai, located just across the street from the university campus.
 				You can make use of the partner rate of <b class="text-info">RMB 450/night</b> (63 USD) including breakfast for one
@@ -147,7 +137,7 @@
 				arrival.)
 			</p>
 	  `);
-		paragraphImageRight('stay-accommodation', 'assets/img/accommodation-artyzen.jpg', '', `
+		paragraphImageLeft('stay-accommodation', 'assets/img/accommodation-artyzen.jpg', '', `
 			<ul>
 				<li>Address: 596 West Yangsi Road, Pudong, Shanghai, 200126, China</li>
 				<li>Phone: +86 21 5027 8888</li>
@@ -155,7 +145,7 @@
 				<li><a target="_blank" href="https://www.artyzen.com/en/hotels/artyzen-habitat-qiantan-shanghai/">Website</a></li>
 			</ul>
 		`);
-		paragraph('stay-accommodation', '', `
+		paragraph('stay-accommodation', `
 			<h4>Jingyao Residence Hall</h4>
 			<p>We are currently exploring whether we can also offer accommodation at NYU Shanghai’s residence halls, in the
 				vicinity of the university campus, to conference participants. Stay tuned!</p>
@@ -163,20 +153,16 @@
 				<li>Address: 533 Jiming Road, Pudong, Shanghai, 200126, China</li>
 			</ul>	
 	  `);
-	</script>
 
-
-
-	<!-- Contact -->
-	<section class="main-section" id="contact"></section>
-	<script>
+		// CONTACT
+		section('contact', 'main-section');
 		horizontalLine('contact');
-		paragraph('contact', 'Contact', `
+		heading('contact', 'Contact');
+		paragraph('contact', `
 		  <p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
 		`);
-	</script>
 
-	<script>
+		// FOOTER
 		socials();
 		footer();
 	</script>

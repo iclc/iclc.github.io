@@ -194,7 +194,6 @@ body {
 
 .main-section {
   padding-top: 2rem;
-  /* background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%); */
 }
 
 .main-section p {
@@ -278,7 +277,7 @@ body {
 }
 
 .contact-section .social {
-  margin-top: 5rem;
+  margin-top: rem;
 }
 
 .contact-section .social a {
@@ -348,4 +347,69 @@ h2 a {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(var(--bs-body-bg-rgb), 0.5) 0%, rgba(var(--bs-body-bg-rgb), 1.0) 100%);
+}
+
+
+.button-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.button-box {
+  flex: 1;
+  min-width: calc(33.333% - 30px);
+  /* adjust px based on gap */
+
+  padding: 15px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-box-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.button-box-text h3 {}
+
+.button-box-text p {
+  /* line-height: 1.8rem; */
+}
+
+.button-box-text b {
+  color: var(--bs-cyan)
+}
+
+.button-box-buttons {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  width: 100%;
+}
+
+.button-box-buttons button {
+  padding: 5px 10px;
+  background-color: #fff;
+  /* border: 1px solid #000; */
+  border: none;
+  border-radius: 5px;
+  margin: 3px 0;
+  color: var(--bs-link-color);
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .m-square {
+    min-width: 100%;
+    padding-top: 100%;
+  }
 }
