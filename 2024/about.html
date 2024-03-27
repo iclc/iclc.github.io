@@ -40,48 +40,61 @@
 		// ABOUT
 		section('about', 'main-section');
 		horizontalLine('about');
-		paragraph('about', 'About',
+		heading('about', 'About');
+		paragraph('about',
 			`The International Conference on Live Coding (ICLC) is dedicated to practices and research focused on technologies and philosophies that interpret the use of computer code as gesture within the context of live performances. In its previous editions the community has offered important insights on this practice from many diverse perspectives &ndash; technical, philosophical, educational, political and more.<br><br>`);
 
-		horizontalLine('about');
-		paragraph('about', "ICLC 2024 Programming Committee",
-			`
-			</p>
+		// COMMITTEE
+		section('committee', 'main-section');
+		horizontalLine('committee');
+		heading('committee', 'ICLC 2024 Programming Committee');
+		paragraph('committee', `
+				</p>
 
-			<b>Organizing Committee Chairs</b>
-			<ul style="margin-top: 10px;">
-				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/gottfried-haider">Gottfried Haider</a>, NYU Shanghai</li>
-				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/eric-parren">Eric Parren</a>, NYU Shanghai</li>
-			</ul>
+				<b>Organizing Committee Chairs</b>
+				<ul style="margin-top: 10px;">
+					<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/gottfried-haider">Gottfried Haider</a>, NYU Shanghai</li>
+					<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/eric-parren">Eric Parren</a>, NYU Shanghai</li>
+				</ul>
 
-			<b>Paper Chairs</b>
-			<ul style="margin-top: 10px;">
-				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/eric-parren">Eric Parren</a>, NYU Shanghai</li>
-				<li><a href="https://engineering.nyu.edu/faculty/gus-xia">Gus (Guangyu) Xia</a>, NYU Shanghai & NYU New York</li>
-			</ul>
+				<b>Paper Chairs</b>
+				<ul style="margin-top: 10px;">
+					<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/eric-parren">Eric Parren</a>, NYU Shanghai</li>
+					<li><a href="https://engineering.nyu.edu/faculty/gus-xia">Gus (Guangyu) Xia</a>, NYU Shanghai & NYU New York</li>
+				</ul>
 
-			<b>Performance Chairs</b>
-			<ul style="margin-top: 10px;">
-				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/gottfried-haider">Gottfried Haider</a>, NYU Shanghai</li>
-				<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/jung-hyun-moon">Jung Hyun Moon</a>, NYU Shanghai</li>
-			</ul>
+				<b>Performance Chairs</b>
+				<ul style="margin-top: 10px;">
+					<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/gottfried-haider">Gottfried Haider</a>, NYU Shanghai</li>
+					<li><a href="https://shanghai.nyu.edu/academics/faculty/directory/jung-hyun-moon">Jung Hyun Moon</a>, NYU Shanghai</li>
+				</ul>
 
-			<b>Workshop Chairs</b>
-			<ul style="margin-top: 10px;">
-				<li><a href="https://steinhardt.nyu.edu/people/s-alex-ruthmann">Alex Ruthmann</a>, NYU Shanghai & NYU New York</li>
-				<li>Qin Yi, Shanghai Conservatory of Music</li>
-			</ul>
+				<b>Workshop Chairs</b>
+				<ul style="margin-top: 10px;">
+					<li><a href="https://steinhardt.nyu.edu/people/s-alex-ruthmann">Alex Ruthmann</a>, NYU Shanghai & NYU New York</li>
+					<li>Qin Yi, Shanghai Conservatory of Music</li>
+				</ul>
 
-			<p>
-		`
-		)
+				<p>
+			`);
 
-		horizontalLine('about');
-		paragraph('about', 'Partners',
-			`<b>Media Partner</b>
+		// CODE OF CONDUCT
+		section('code-of-conduct', 'main-section');
+		horizontalLine('code-of-conduct');
+		heading('code-of-conduct', 'Code of Conduct');
+		paragraph('code-of-conduct',
+			`All participants are expected to read and adhere to <a href="code-of-conduct.html">the ICLC 2024 official Code of Conduct</a>, not only at the Conference but in all related proceedings and interactions with the ICLC community, online or in person.`);
+
+		// PARTNERS
+		section('partners', 'main-section');
+		horizontalLine('partners');
+		heading('partners', 'Partners');
+		paragraph('partners', `
+		  <b>Media Partner</b>
 			<div>
 				<a href="https://www.manamana.net/"><img src="assets/logos/MANA_with_url_white.png" alt="Mana" title="MANA" width="200" style="position: relative; left: -30px; top: -50px;"></a>
-			</div>`);
+			</div>
+			`);
 
 		// FOOTER
 		socials();

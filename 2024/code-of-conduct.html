@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>Code of Conduct | ICLC2024</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto:wght@100;400;900&display=swap"
+		rel="stylesheet">
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="js/script-elements.js"></script>
+	<script defer src="js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// MENU
+		section('menu', 'menu-section'); // empty section. just for spacer now.
+
+		// CODE OF CONDUCT
+		section('code-of-conduct', 'main-section');
+		horizontalLine('code-of-conduct');
+		heading('code-of-conduct', 'Code of Conduct');
+		paragraph('code-of-conduct', `
+			<p>
+				With the aim of promoting a safe, inclusive and open space at ICLC 2024, the organizing team propose a code of conduct in continuity with the prior conferences on live coding. We invite everyone attending the conference and the communities around it to work for a respectful and positive environment. As organizers we work hard to preserve the warm and open atmosphere that characterize past live coding conferences.
+			</p>
+			<p>
+				As participants, please be mindful of the effect your words and actions may have on others and that your boundaries may not be the same as the boundaries of others for either cultural, education or personal reasons. If you act or speak in a way that someone finds inappropriate, it’s inappropriate to that time, place and/or person. If somebody tells you that you are making them uncomfortable, please stop doing so.
+			</p>
+			<p>
+				Harassment, and other exclusionary behaviour are not welcome at the conference. Harassment includes: offensive verbal comments or attitudes related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, religion; deliberate intimidation, stalking or following; discriminatory jokes and language; sustained disruption of events, talks or performances; inappropriate physical contact, and unwelcome sexual or suggestive remarks; inappropriate use of imagery or other material which others may find offensive.
+			</p>
+			<p>
+				This applies to all events and venues of the conference whether they be talks, performances, late-night events, at the bar, or through Facebook or Twitter or other online media.
+			</p>
+			<p>
+				If you have any concerns please find a member of the organising team (they'll be clearly identifiable during the conference) and let them know, or otherwise send an email to <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.
+			</p>
+			<p>
+				This text was developed at the <a href="https://iclc.toplap.org/2020/" target="_blank">2020 edition of ICLC at the University of Limerick</a> and adapted for the 2024 edition of ICLC in NYU Shanghai.
+			</p>
+			`);
+
+		// FOOTER
+		socials();
+		footer();
+	</script>
+</body>
+
+</html>

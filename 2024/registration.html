@@ -41,13 +41,8 @@
 </head>
 
 <body id="page-top">
-	<!-- <ul>
-				<li>Contributors without institutional affiliation/support: RMB 0</li>
-				<li>Contributors with limited support &amp; Students: RMB 350 (49 USD)</li>
-				<li>Contributors with institutional affiliation/support &amp; General Attendance: RMB 700 (90 USD)</li>
-			</ul> -->
-	<script>
 
+	<script>
 		// HEADER
 		navigationBar();
 
@@ -64,9 +59,11 @@
 
 		// REGISTRATION
 		section('registration-title', 'main-section');
+
 		horizontalLine('registration-title');
-		paragraph('registration-title', 'Registration', `
-			<p>ICLC 2024 is offering the following registration tiers:</p>
+		heading('registration-title', 'Registration');
+		paragraph('registration-title', `
+			ICLC 2024 is offering the following registration tiers:
 		`);
 
 		// REGISTRATION BUTTONS
@@ -114,8 +111,9 @@
 			'#FDAF7B'
 		);
 
-		section('registration', 'main-section');
-		paragraph('registration', ' ', `
+		// REGISTRATION DETAILS
+		section('registration-details', 'main-section');
+		html('registration-details', `
 			<p style="color: var(--bs-code-color)">
 				All passes include full access to all conference events, concerts, and registration for workshops. For the
 				general public, there will be separate concert tickets available at a later date as well.
@@ -126,7 +124,47 @@
 				sure to register before <b class="text-info">April 15</b> to confirm your participation.
 			</p>
 		`);
-		paragraph('registration', '会议注册', `
+
+		// REGISTRATION INSTRUCTIONS
+		section('instruction', 'main-section');
+
+		horizontalLine('instruction');
+		heading('instruction', 'Registration Instructions', 0);
+		paragraph('instruction', `
+			First, choose the currency you would like to pay with:
+		`);
+
+		heading('instruction', 'Payment with RMB', 4, 5, 4);
+		html('instruction', `
+			<p>Please follow the instructions below to complete your registration:</p>
+			<ol>
+				<li>Click on the registration button that corresponds to your registration tier.</li>
+				<li>Sign up for an account with our NYU Shanghai's payment processor to complete the payment. Important: Use Non-NYU User to sign up, even though you are an NYU user.</li>
+				<li>You may need to fill in the amount of the registration fee manually.</li>
+				<li>Complete the registration form and payment method with your personal information.</li>
+				<li>Once your payment is confirmed, you will receive a confirmation email with your registration details.</li>
+			</ol>
+		`);
+
+		heading('instruction', 'Payment with Other Currency', 4, 5, 4);
+		html('instruction', `
+			<p>Please follow the instructions below to complete your registration:</p>
+			<ol>
+				<li>Click on the registration button that corresponds to your registration tier.</li>
+				<li>Fill in the registration form with your personal information.</li>
+				<li>Complete the registration form and payment method with your personal information.</li>
+				<li>Once your payment is confirmed, you will receive a confirmation email with your registration details.</li>
+			</ol>
+		`);
+
+
+
+
+
+
+		/*
+		heading('registration-cn', '会议注册');
+		paragraph('registration-cn', `
 			<p>ICLC 2024 为不同参会者提供以下几种参会注册选项：</p>
 			<ul>
 				<li>有机构支持的参会者 或 普通参会者 ： 700元人民币 （90美元）</li>
@@ -138,21 +176,27 @@
 				ICLC 2024 会议的注册平台将于<b class="text-info">本月晚些时候</b>开放。所有意向参与者请注意：请您务必在<b class="text-info">4月15日</b>之前完成注册，以确保您的参会席位。
 			</p>
 		`);
+		*/
 
+		/*
 		// PROGRAM
 		section('program', 'main-section');
 		horizontalLine('program');
-		paragraph('program', 'Program', `
+		heading('program', 'Program', 0);
+		paragraph('program', `
 				<p>Please expect a preliminary schedule after venues and participants are confirmed (ca. April 15).</p>
 			`);
-		paragraph('program', '日程安排', `
+		heading('program', '日程安排');
+		paragraph('program', `
 				<p>请您继续关注会议网站。我们将在场地和参与者确认后发布初步的会议日程。（预计于 4月15日左右）</p>
 			`);
+		*/
 
 		// CONTACT
 		section('contact', 'main-section');
 		horizontalLine('contact');
-		paragraph('contact', 'Contact', `
+		heading('contact', 'Contact', 0);
+		paragraph('contact', `
 				<p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
 			`);
 

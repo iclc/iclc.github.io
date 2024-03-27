@@ -78,6 +78,21 @@ function mainContainer() {
 	`
 }
 
+function mainContainerStart() {
+	document.body.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-center">
+			<div class="col-lg-8" id="main-container">
+	`
+}
+function mainContainerEnd() {
+	document.body.innerHTML += `
+			</div>
+		</div>
+	</div>
+	`
+}
+
 function section(id, className) {
 	let d = document.getElementById("main-container");
 	d.innerHTML += `
@@ -103,17 +118,30 @@ function horizontalLine(id) {
 	`;
 }
 
-function html(id, html = '') {
+function heading(id, head = '', level = 2, marginTop = 2, marginBottom = 5) {
 	let d = document.getElementById(id);
-	d.innerHTML += `${html}`;
+	if (level < 1 || level > 6) level = 2;
+	d.innerHTML += `<h${level} class="mt-${marginTop} mb-${marginBottom}" id="themes">${head}</h${level}>`;
 }
 
-function paragraph(id, head = '', txt = '') {
+function paragraph(id, txt = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<p>${txt}</p>
+	`;
+}
+
+function heading_paragraph(id, head = '', txt = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
 		<h2 class="mt-2 mb-5" id="themes">${head}</h2>
 		<p>${txt}</p>
 	`;
+}
+
+function html(id, html = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += html;
 }
 
 function buttonBox(id, head = '', txt = '', buttons = '', bgColor = '#401F71') {
