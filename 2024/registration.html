@@ -42,6 +42,14 @@
 
 <body id="page-top">
 
+	<div class="quick-links-container">
+		<span>Quick Link:</span>
+		<button type="button">Link 1</button>
+		<button type="button">Link 2</button>
+		<button type="button">Link 3</button>
+		<!-- Add more buttons as needed -->
+	</div>
+
 	<script>
 		// HEADER
 		navigationBar();
@@ -63,7 +71,8 @@
 		horizontalLine('registration-title');
 		heading('registration-title', 'Registration');
 		paragraph('registration-title', `
-			ICLC 2024 is offering the following registration tiers:
+			ICLC 2024 is offering the following registration tiers: </br></br>
+			<b class="text-info">(The payment method will be enabled shortly.)</b>
 		`);
 
 		// REGISTRATION BUTTONS
@@ -126,6 +135,7 @@
 		`);
 
 		// REGISTRATION INSTRUCTIONS
+		/*
 		section('instruction', 'main-section');
 
 		horizontalLine('instruction');
@@ -156,11 +166,7 @@
 				<li>Once your payment is confirmed, you will receive a confirmation email with your registration details.</li>
 			</ol>
 		`);
-
-
-
-
-
+		*/
 
 		/*
 		heading('registration-cn', '会议注册');
@@ -178,14 +184,15 @@
 		`);
 		*/
 
-		/*
+
 		// PROGRAM
 		section('program', 'main-section');
 		horizontalLine('program');
-		heading('program', 'Program', 0);
+		heading('program', 'Program');
 		paragraph('program', `
 				<p>Please expect a preliminary schedule after venues and participants are confirmed (ca. April 15).</p>
 			`);
+		/*
 		heading('program', '日程安排');
 		paragraph('program', `
 				<p>请您继续关注会议网站。我们将在场地和参与者确认后发布初步的会议日程。（预计于 4月15日左右）</p>
@@ -195,7 +202,7 @@
 		// CONTACT
 		section('contact', 'main-section');
 		horizontalLine('contact');
-		heading('contact', 'Contact', 0);
+		heading('contact', 'Contact');
 		paragraph('contact', `
 				<p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
 			`);
