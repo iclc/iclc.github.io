@@ -70,7 +70,7 @@ function mainContainer() {
 	document.body.innerHTML += `
 	<div class="container px-4 px-lg-5">
 		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8" id="main-container">
+			<div class="col-lg-9" id="main-container">
 
 			</div>
 		</div>
@@ -78,19 +78,18 @@ function mainContainer() {
 	`
 }
 
-function mainContainerStart() {
-	document.body.innerHTML += `
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8" id="main-container">
-	`
-}
-function mainContainerEnd() {
-	document.body.innerHTML += `
+function heroTitle(id, title = '', links = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<div class="hero-title">
+			<h1 class="text-white font-weight-bold">${title}</h1>
+			<hr/>
+			<div>
+				${links}
 			</div>
+			<div class="scroll-indicator">╲╱</div>
 		</div>
-	</div>
-	`
+	`;
 }
 
 function section(id, className) {
@@ -101,6 +100,7 @@ function section(id, className) {
 }
 
 function menu(id, txt = '') {
+	// will be removed.
 	let d = document.getElementById(id);
 	d.innerHTML += `
 		<h4>
@@ -111,14 +111,14 @@ function menu(id, txt = '') {
 	`;
 }
 
-function horizontalLine(id) {
+function horizontalLine(id, marginTop = 5) {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-		<hr class="mt-5" />
+		<hr class="mt-${marginTop}" />
 	`;
 }
 
-function heading(id, head = '', level = 2, marginTop = 2, marginBottom = 5) {
+function heading(id, head = '', level = 2, marginTop = 1, marginBottom = 5) {
 	let d = document.getElementById(id);
 	if (level < 1 || level > 6) level = 2;
 	d.innerHTML += `<h${level} class="mt-${marginTop} mb-${marginBottom}" id="themes">${head}</h${level}>`;
@@ -144,10 +144,10 @@ function html(id, html = '') {
 	d.innerHTML += html;
 }
 
-function buttonBox(id, head = '', txt = '', buttons = '', bgColor = '#401F71') {
+function buttonBox(id, head = '', txt = '', buttons = '', bgColor = '#260b4d') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-		<div class="button-box" style="background-color:${bgColor}">
+		<div class="button-box rounded-lefttop" style="background-color:${bgColor}">
 		  <div class="button-box-text">
 				<h4>${head}</h4>
 				<p>

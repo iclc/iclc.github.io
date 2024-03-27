@@ -45,23 +45,25 @@
 		// HEADER
 		navigationBar();
 
+		// BACKGROUND IMAGE
+		backgroundImage('./assets/img/bg15.jpg');
+
 		// MAIN
 		mainContainer(); // required for the section() function to be appended to the main container
 
-		// MENU
-		section('menu', 'menu-section');
-		menu('menu', `
-			<li><a href="#registration">Registration</a></li>
-			<li><a href="#program">Program</a></li>
-			<li><a href="#contact">Contact</a></li>
+		// HERO + TITLE
+		section('hero-title', 'hero-section');
+		heroTitle('hero-title', 'REGISTRATION', `
+		<a href="#registration">Registration</a>
+			<a href="#program">Program</a>
 		`);
 
 		// REGISTRATION
-		section('registration-title', 'main-section');
+		section('registration', 'main-section');
 
-		horizontalLine('registration-title');
-		heading('registration-title', 'Registration');
-		paragraph('registration-title', `
+		horizontalLine('registration');
+		heading('registration', 'Registration');
+		paragraph('registration', `
 			ICLC 2024 is offering the following registration tiers: </br></br>
 			<b class="text-info">(The payment method will be enabled shortly.)</b>
 		`);
@@ -94,26 +96,26 @@
 			<b>RMB 700 (90 USD)</b>`,
 			`<button>RMB</button>
 			<button>Other Currency</button>`,
-			'#824D74'
+			'#0c1c4f'
 		);
 		buttonBox('registration-button',
 			'Students',
 			`</br> <b>RMB 150 (20 USD)</b>`,
 			`<button>RMB</button>
 			<button>Other Currency</button>`,
-			'#BE7B72'
+			'#0b3742'
 		);
 		buttonBox('registration-button',
 			'Event Tickets',
 			`will be available</br>at a later date.`,
 			`<button>RMB</button>`,
-			'#FDAF7B'
+			'#3b0a28'
 		);
 
 		// REGISTRATION DETAILS
 		section('registration-details', 'main-section');
 		html('registration-details', `
-			<p style="color: var(--bs-code-color)">
+			<p style="color: var(--bs-danger)">
 				All passes include full access to all conference events, concerts, and registration for workshops. For the
 				general public, there will be separate concert tickets available at a later date as well.
 			</p>
