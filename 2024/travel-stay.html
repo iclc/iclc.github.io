@@ -45,15 +45,17 @@
 		// HEADER
 		navigationBar();
 
+		// BACKGROUND IMAGE
+		backgroundImage('./assets/img/algo9.jpg');
+
 		// MAIN
 		mainContainer(); // required for the section() function to be appended to the main container
 
-		// MENU
-		section('menu', 'menu-section');
-		menu('menu', `
-			<li><a href="#travel-visa">Travel &gt; Visa</a></li>
-			<li><a href="#stay-accommodation">Stay &gt; Accommodation</a></li>
-			<li><a href="#contact">Contact</a></li>
+		// HERO + TITLE
+		section('hero-title', 'hero-section');
+		heroTitle('hero-title', 'TRAVEL & STAY', `
+			<a href="#travel-visa">Visa</a>
+			<a href="#stay-accommodation">Accommodation</a>
 		`);
 
 		// MAP
@@ -63,7 +65,7 @@
 		// TRAVEL & VISA
 		section('travel-visa', 'main-section');
 		horizontalLine('travel-visa');
-		heading('travel-visa', 'Travel &gt; Visa');
+		heading('travel-visa', 'Visa');
 		paragraph('travel-visa', `
 			<h4>Visa Waiver Policies</h4>
 			<p>
@@ -127,7 +129,7 @@
 		// STAY & ACCOMMODATION
 		section('stay-accommodation', 'main-section');
 		horizontalLine('stay-accommodation');
-		heading('stay-accommodation', 'Stay &gt; Accommodation');
+		heading('stay-accommodation', 'Accommodation');
 		paragraph('stay-accommodation', `
 			<h4>Artyzen Habitat Qiantan Shanghai</h4>
 			<p>Artyzen Habitat is the partner hotel of NYU Shanghai, located just across the street from the university campus.
@@ -137,7 +139,7 @@
 				arrival.)
 			</p>
 	  `);
-		paragraphImageLeft('stay-accommodation', 'assets/img/accommodation-artyzen.jpg', '', `
+		paragraphImageLeft('stay-accommodation', 'assets/travel-stay/accommodation-artyzen.jpg', '', `
 			<ul>
 				<li>Address: 596 West Yangsi Road, Pudong, Shanghai, 200126, China</li>
 				<li>Phone: +86 21 5027 8888</li>

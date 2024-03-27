@@ -31,15 +31,17 @@
 		// HEADER
 		navigationBar();
 
+		backgroundImage('./assets/img/algo1.jpg');
+
 		// MAIN
 		mainContainer(); // required for the section() function to be appended to the main container
 
-		// MENU
-		section('menu', 'menu-section');
-		menu('menu', `
-			<li><a href="#shanghai-concert-hall">Shanghai Concert Hall</a></li>
-			<li><a href="#system">SYSTEM</a></li>
-			<li><a href="#nyu-shanghai">NYU Shanghai</a></li>
+		// HERO + TITLE
+		section('hero-title', 'hero-section');
+		heroTitle('hero-title', 'VENUES', `
+			<a href="#shanghai-concert-hall">Shanghai Concert Hall</a>
+			<a href="#system">SYSTEM</a>
+			<a href="#nyu-shanghai">NYU Shanghai</a>
 		`);
 
 		// SHANGHAI CONCERT HALL
