@@ -94,12 +94,12 @@ iframe {
   }
 
   #mainNav.navbar-shrink .nav-link {
-    /* color: var(--bs-primary); */
+    color: var(--bs-primary);
     padding: 1.5rem;
   }
 
   #mainNav.navbar-shrink .nav-link:hover {
-    /* color: var(--bs-primary); */
+    color: var(--bs-primary);
   }
 }
 
