@@ -46,18 +46,6 @@ function navigationBar() {
 	</nav>`;
 }
 
-function header(id, head = '') {
-	let d = document.getElementById(id);
-	d.innerHTML += `
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 justify-content-center">
-			<div class="col-lg-8">
-			<h1 class="mt-5 mb-5" id="themes">${head}</h1>
-			</div>
-		</div>
-	</div>`;
-}
-
 function backgroundImage(url = '') {
 	document.body.innerHTML += `
 		<div class="dimmed-background" style="background-image: url('${url}');">
@@ -82,7 +70,7 @@ function heroTitle(id, title = '', links = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
 		<div class="hero-title">
-			<h1 class="text-white font-weight-bold">${title}</h1>
+			<h1 class="text-white">${title}</h1>
 			<hr/>
 			<div>
 				${links}
@@ -119,9 +107,12 @@ function horizontalLine(id, marginTop = 5) {
 }
 
 function heading(id, head = '', level = 2, marginTop = 1, marginBottom = 5) {
+	const customStyles = `
+		font-weight: 200;
+	`;
 	let d = document.getElementById(id);
 	if (level < 1 || level > 6) level = 2;
-	d.innerHTML += `<h${level} class="mt-${marginTop} mb-${marginBottom}" id="themes">${head}</h${level}>`;
+	d.innerHTML += `<h${level} class="mt-${marginTop} mb-${marginBottom}" style="${customStyles}">${head}</h${level}>`;
 }
 
 function paragraph(id, txt = '') {
@@ -134,7 +125,7 @@ function paragraph(id, txt = '') {
 function heading_paragraph(id, head = '', txt = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-		<h2 class="mt-2 mb-5" id="themes">${head}</h2>
+		<h2 class="mt-2 mb-5" >${head}</h2>
 		<p>${txt}</p>
 	`;
 }
@@ -165,7 +156,7 @@ function buttonBox(id, head = '', txt = '', buttons = '', bgColor = '#260b4d') {
 function googleMap(id, src, width = "100%", height = "500") {
 	let d = document.getElementById(id);
 	d.innerHTML += `
-		<iframe src="${src}" width="${width}" height="${height}"></iframe>
+		<iframe src="${src}" width="${width}" height="${height}" loading="lazy"></iframe>
 	`;
 }
 
