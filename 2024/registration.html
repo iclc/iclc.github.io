@@ -64,7 +64,6 @@
 		heading('registration', 'Registration');
 		paragraph('registration', `
 			ICLC 2024 is offering the following registration tiers: </br></br>
-			<b class="text-info">(The payment method will be enabled shortly.)</b>
 		`);
 
 		// REGISTRATION BUTTONS
@@ -73,15 +72,15 @@
 			'Contributors',
 			`With Institutional Affiliation/Support</br></br>
 			<b>RMB 700 (90 USD)</b>`,
-			`<button>RMB</button>
-			<button>Other Currency</button>`
+			`<button onclick="window.location='#domestic';">RMB</button>
+			<button onclick="window.location='#international';">Other Currency</button>`
 		);
 		buttonBox('registration-button',
 			'Contributors',
 			`With Limited Support</br></br></br>
 			<b>RMB 350 (49 USD)</b>`,
-			`<button>RMB</button>
-			<button>Other Currency</button>`
+			`<button onclick="window.location='#domestic';">RMB</button>
+			<button onclick="window.location='#international';">Other Currency</button>`
 		);
 		buttonBox('registration-button',
 			'Contributors',
@@ -93,15 +92,15 @@
 			'General</br>Attendance',
 			`</br>
 			<b>RMB 700 (90 USD)</b>`,
-			`<button>RMB</button>
-			<button>Other Currency</button>`,
+			`<button onclick="window.location='#domestic';">RMB</button>
+			<button onclick="window.location='#international';">Other Currency</button>`,
 			'#0c1c4f'
 		);
 		buttonBox('registration-button',
 			'Students',
 			`</br> <b>RMB 150 (20 USD)</b>`,
-			`<button>RMB</button>
-			<button>Other Currency</button>`,
+			`<button onclick="window.location='#domestic';">RMB</button>
+			<button onclick="window.location='#international';">Other Currency</button>`,
 			'#0b3742'
 		);
 		buttonBox('registration-button',
@@ -119,45 +118,39 @@
 				general public, there will be separate concert tickets available at a later date as well.
 			</p>
 			<p>
-				The platform for registering for ICLC 2024 will be available <b class="text-info">later this month</b>. For
-				contributors: make
-				sure to register before <b class="text-info">April 15</b> to confirm your participation.
+				For contributors: make sure to register before <b class="text-info">April 15</b> to confirm your participation.
 			</p>
 		`);
 
 		// REGISTRATION INSTRUCTIONS
-		/*
 		section('instruction', 'main-section');
 
 		horizontalLine('instruction');
 		heading('instruction', 'Registration Instructions', 0);
-		paragraph('instruction', `
-			First, choose the currency you would like to pay with:
-		`);
 
-		heading('instruction', 'Payment with RMB', 4, 5, 4);
+		heading('instruction', '<a name="domestic">Domestic Payment (in RMB)', 4, 5, 4);
 		html('instruction', `
 			<p>Please follow the instructions below to complete your registration:</p>
-			<ol>
-				<li>Click on the registration button that corresponds to your registration tier.</li>
-				<li>Sign up for an account with our NYU Shanghai's payment processor to complete the payment. Important: Use Non-NYU User to sign up, even though you are an NYU user.</li>
-				<li>You may need to fill in the amount of the registration fee manually.</li>
+			<ul>
+				<li>Create an account on <a href="https://epay.shanghai.nyu.edu/">epay.shanghai.nyu.edu</a>, or log in with your NYU NetID.</li>
+				<li>On the main menu, select the “International Conference on Live Coding 2024”, and proceed to payment for the “ICLC 2024” conference registration.</li>
+				<li>Discounts (see above) can be applied as part of the checkout process.</li>
+				<li>Complete the registration form and payment method with your personal information. Payment via WeChat Pay, Alipay & UnionPay is supported.</li>
+				<li>Once your payment is confirmed, you will receive a confirmation email with your registration details.</li>
+				<li>For external guests, we will be able to provide you with Fapiaos after the end of the conference (make sure to fill out the related fields during checkout).</li>
+			</ol>
+		`);
+
+		heading('instruction', '<a name="international">International Payment', 4, 5, 4);
+		html('instruction', `
+			<p>Please follow the instructions below to complete your registration:</p>
+			<ul>
+				<li>Use <a href="https://www.flywire.com/pay/nyushmeetingfee/">this payment portal by FlyWire</a> to transfer the registration fees in the RMB amount listed above. This service will offer different payment methods, based on your location.</li>
+				<li>Make sure to select the “International Conference on Live Coding 2024” as the full name of your meeting or conference.</li>
 				<li>Complete the registration form and payment method with your personal information.</li>
 				<li>Once your payment is confirmed, you will receive a confirmation email with your registration details.</li>
 			</ol>
 		`);
-
-		heading('instruction', 'Payment with Other Currency', 4, 5, 4);
-		html('instruction', `
-			<p>Please follow the instructions below to complete your registration:</p>
-			<ol>
-				<li>Click on the registration button that corresponds to your registration tier.</li>
-				<li>Fill in the registration form with your personal information.</li>
-				<li>Complete the registration form and payment method with your personal information.</li>
-				<li>Once your payment is confirmed, you will receive a confirmation email with your registration details.</li>
-			</ol>
-		`);
-		*/
 
 		/*
 		heading('registration-cn', '会议注册');
