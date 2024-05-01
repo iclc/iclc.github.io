@@ -2,7 +2,6 @@
 
 // deactivated links
 let publishStream = false;
-let publishTable = false;
 let publishCatalogue = false;
 let publishWorkshops = false;
 let publishMap = false;
@@ -11,6 +10,7 @@ let publishSatellite = false;
 let publishCall = false;
 
 // activated links
+let publishProgram = true;
 let publishRegistration = true;
 let publishTravel = true;
 let publishVenues = true;
@@ -28,8 +28,8 @@ function navigationBar() {
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 				${(publishStream) ? `<li class="nav-item blink"><a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>` : ''}
-				${(publishTable) ? `<li class="nav-item"><a class="nav-link" href="./timetable.html">Timetable</a></li>` : ''}
 				${(publishCatalogue) ? `<li class="nav-item"><a class="nav-link" href="./catalogue/">Catalogue</a></li>` : ''}
+				${(publishProgram) ? `<li class="nav-item"><a class="nav-link" href="./program.html">Program</a></li>` : ''}
 				${(publishRegistration) ? `<li class="nav-item"><a class="nav-link" href="./registration.html">Registration</a></li>` : ''}
 				${(publishTickets) ? `<li class="nav-item"><a class="nav-link" href="./tickets.html">Tickets & Info</a></li>` : ''}
 				${(publishWorkshops) ? `<li class="nav-item"><a class="nav-link" href="./workshops.html">Workshops</a></li>` : ''}
@@ -135,6 +135,42 @@ function html(id, html = '') {
 	d.innerHTML += html;
 }
 
+function table(id, tableId = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<div id="${tableId}" class="flex-table">
+		</div>
+	`;
+}
+
+function tableHeader(id, columns = [], columnsNumber = 4) {
+	// if some values are empty, the value will be filled with ""
+	for (let i = columns.length; i < columnsNumber; i++) {
+		columns.push("");
+	}
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<div class="flex-row header">
+			<div class="flex-cell">${columns[0]}</div>
+			<div class="flex-cell">${columns[1]}</div>
+			<div class="flex-cell">${columns[2]}</div>
+			<div class="flex-cell content">${columns[3]}</div>
+		</div>
+	`;
+}
+
+function tableRow(id, columns = []) {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+		<div class="flex-row">
+			<div class="flex-cell">${columns[0]}</div>
+			<div class="flex-cell">${columns[1]}</div>
+			<div class="flex-cell">${columns[2]}</div>
+			<div class="flex-cell content">${columns[3]}</div>
+		</div>
+	`;
+}
+
 function buttonBox(id, head = '', txt = '', buttons = '', bgColor = '#260b4d') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
@@ -152,13 +188,20 @@ function buttonBox(id, head = '', txt = '', buttons = '', bgColor = '#260b4d') {
 	`;
 }
 
-
 function googleMap(id, src, width = "100%", height = "500") {
 	let d = document.getElementById(id);
 	d.innerHTML += `
 		<iframe src="${src}" width="${width}" height="${height}" loading="lazy"></iframe>
 	`;
 }
+
+
+
+
+
+
+
+// from ICLC 2023
 
 function satelliteEvent(id, anchor = '', head = '', txt = '') {
 	let d = document.getElementById(id);
