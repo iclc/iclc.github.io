@@ -394,6 +394,37 @@ h2 a {
   font-weight: bold;
 }
 
+/* TABLE WITH FLEXBOX */
+.flex-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+}
+
+.flex-cell {
+  flex: 1;
+  /* Distributes space evenly by default */
+  padding: 8px;
+  /* border: 1px solid #ddd; */
+  text-align: left;
+  vertical-align: top;
+}
+
+.header .flex-cell {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.content {
+  flex: 4;
+}
+
 /* responsive adjustments */
 @media (max-width: 600px) {
   .m-square {
