@@ -44,7 +44,7 @@
 		navigationBar();
 
 		// BACKGROUND IMAGE
-		backgroundImage('./assets/img/algo9.jpg');
+		backgroundImage('./assets/img/algo10.png');
 
 		// MAIN
 		mainContainer(); // required for the section() function to be appended to the main container
@@ -57,21 +57,12 @@
 			<a href="#table-day3">Day 3</a>
 		`);
 
-		// TRAVEL & VISA
-		// section('travel-visa', 'main-section');
-		// horizontalLine('travel-visa');
-		// heading('travel-visa', 'Visa');
-		// paragraph('travel-visa', `
-		// 	<h4>test</h4>
-		// 	<p>
-		// 		test
-		// 	</p>
-		// `);
-
 		// PROGRAM
 		section('program', 'main-section');
 		horizontalLine('program');
 		heading('program', 'Program &amp; Schedule');
+
+		spacer('program', "1px");
 
 		// DAY 1
 		heading('program', 'NYU Shanghai | Thursday, May 30', 4, 5, 2);
@@ -94,8 +85,8 @@
 			'19:30',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Pre(N)ature</a> </br>
-				by <a href="" target="_blank">Ivan Abreu</a> &amp; <a href="" target="_blank">CNDSD</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Pre(N)ature</a> </br>
+				by <a href="#" onclick="event.preventDefault()">Ivan Abreu</a> &amp; <a href="#" onclick="event.preventDefault()">CNDSD</a></p>
 			 </div>`
 		]);
 		tableRow('table-day1', [
@@ -103,10 +94,12 @@
 			'20:15',
 			'Courtyard',
 			`<div>
-				<p><a href="" target="_blank">Conversations Beyond Code: Bridging Human Creativity and Algorithms</a> </br>
-				by <a href="" target="_blank">Atsushi Tadokoro</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Conversations Beyond Code: Bridging Human Creativity and Algorithms</a> </br>
+				by <a href="#" onclick="event.preventDefault()">Atsushi Tadokoro</a></p>
 			 </div>`
 		]);
+
+		spacer('program', "3rem");
 
 		// DAY 2
 		heading('program', 'NYU Shanghai | Friday, May 31', 4, 5, 2);
@@ -117,8 +110,8 @@
 			'10:00',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">The Dark Forest Theory of the Internet</a> </br>
-				by <a href="" target="_blank">Bogna Konior</a></p>
+				<p><a href="#" onclick="event.preventDefault()">The Dark Forest Theory of the Internet</a> </br>
+				by <a href="#" onclick="event.preventDefault()">Bogna Konior</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -126,8 +119,8 @@
 			'11:00 - 11:20',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Symbolic is the New Live</a></br>
-				by <a href="" target="_blank">Iván Paz</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Symbolic is the New Live</a></br>
+				by <a href="#" onclick="event.preventDefault()">Iván Paz</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -135,8 +128,8 @@
 			'11:20 - 11:40',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Updating maximilian.js for Modern JavaScript Live Coding</a></br>
-				by <a href="" target="_blank">Louis McCallum</a> &amp; <a href="" target="_blank">Mick S Grierson</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Updating maximilian.js for Modern JavaScript Live Coding</a></br>
+				by <a href="#" onclick="event.preventDefault()">Louis McCallum</a> &amp; <a href="#" onclick="event.preventDefault()">Mick S Grierson</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -144,8 +137,8 @@
 			'11:40 - 12:00',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Live Coding Dynamical Systems</a></br>
-				by <a href="" target="_blank">Yoni Maltsman</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Live Coding Dynamical Systems</a></br>
+				by <a href="#" onclick="event.preventDefault()">Yoni Maltsman</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -153,8 +146,8 @@
 			'12:00 - 12:20',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Enlivening Performance Art: Enhanced Interactivity through Embodied Cognition and Real-Time Physical Visualization on Swarm Tangible Interfaces</a></br>
-				by <a href="" target="_blank">Yue Zhu</a>, <a href="" target="_blank">Zhiyuan Zhou</a>, <a href="" target="_blank">Fenggui Rao</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Enlivening Performance Art: Enhanced Interactivity through Embodied Cognition and Real-Time Physical Visualization on Swarm Tangible Interfaces</a></br>
+				by <a href="#" onclick="event.preventDefault()">Yue Zhu</a>, <a href="#" onclick="event.preventDefault()">Zhiyuan Zhou</a>, <a href="#" onclick="event.preventDefault()">Fenggui Rao</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -162,8 +155,8 @@
 			'12:30 - 13:00',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Coiled Soma</a></br>
-				by <a href="" target="_blank">Ilze Briede (Kavi)</a> &amp; <a href="" target="_blank">Hryso</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Coiled Soma</a></br>
+				by <a href="#" onclick="event.preventDefault()">Ilze Briede (Kavi)</a> &amp; <a href="#" onclick="event.preventDefault()">Hryso</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -171,8 +164,8 @@
 			'14:00 - 17:00',
 			'N305',
 			`<div>
-				<p><a href="" target="_blank">Livecoding Fractal Flames with Bl4st</a></br>
-				by <a href="" target="_blank">Cameron Alexander</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Livecoding Fractal Flames with Bl4st</a></br>
+				by <a href="#" onclick="event.preventDefault()">Cameron Alexander</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -180,8 +173,8 @@
 			'',
 			'TBD',
 			`<div>
-				<p><a href="" target="_blank">GravField: Inter-bodily Live-coding Performance &amp; Workshop</a></br>
-				by <a href="" target="_blank">Botao A Hu</a>, <a href="" target="_blank">Yuemin Huang</a>, <a href="" target="_blank">Mingze Chai</a>, <a href="" target="_blank">Yilan Tao</a>, <a href="" target="_blank">Aaron Hu</a></p>
+				<p><a href="#" onclick="event.preventDefault()">GravField: Inter-bodily Live-coding Performance &amp; Workshop</a></br>
+				by <a href="#" onclick="event.preventDefault()">Botao A Hu</a>, <a href="#" onclick="event.preventDefault()">Yuemin Huang</a>, <a href="#" onclick="event.preventDefault()">Mingze Chai</a>, <a href="#" onclick="event.preventDefault()">Yilan Tao</a>, <a href="#" onclick="event.preventDefault()">Aaron Hu</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -189,8 +182,8 @@
 			'',
 			'N306',
 			`<div>
-				<p><a href="" target="_blank">CrossReality Performance &amp; Workshop</a></br>
-				by <a href="" target="_blank">Kaiqing Huang</a>, <a href="" target="_blank">Chu Zhang</a>, <a href="" target="_blank">Wangyu Ping</a>, <a href="" target="_blank">Zhao Boxiong</a>, <a href="" target="_blank">Botao A Hu</a></p>
+				<p><a href="#" onclick="event.preventDefault()">CrossReality Performance &amp; Workshop</a></br>
+				by <a href="#" onclick="event.preventDefault()">Kaiqing Huang</a>, <a href="#" onclick="event.preventDefault()">Chu Zhang</a>, <a href="#" onclick="event.preventDefault()">Wangyu Ping</a>, <a href="#" onclick="event.preventDefault()">Zhao Boxiong</a>, <a href="#" onclick="event.preventDefault()">Botao A Hu</a></p>
 			 </div>`
 		]);
 		tableRow('table-day2', [
@@ -198,9 +191,11 @@
 			'',
 			'N406',
 			`<div>
-				<p><a href="" target="_blank">Open Meetup</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Open Meetup</a></p>
 			 </div>`
 		]);
+
+		spacer('program', "3rem");
 
 		// DAY 2 - Shanghai Concert Hall
 		heading('program', 'Shanghai Concert Hall | Friday, May 31', 4, 5, 2);
@@ -217,8 +212,8 @@
 			'19:30',
 			'SCH',
 			`<div>
-				<p><a href="" target="_blank">Really Useful Engines</a></br>
-				by <a href="" target="_blank">Reckoner</a> with <a href="" target="_blank">Kastakila</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Really Useful Engines</a></br>
+				by <a href="#" onclick="event.preventDefault()">Reckoner</a> with <a href="#" onclick="event.preventDefault()">Kastakila</a></p>
 			 </div>`
 		]);
 		tableRow('table-sch', [
@@ -226,8 +221,8 @@
 			'20:00',
 			'SCH',
 			`<div>
-				<p><a href="" target="_blank">结</a> </br>
-				by <a href="" target="_blank">Eadin Wang</a> &amp; <a href="" target="_blank">Xiaochen Yu</a></p>
+				<p><a href="#" onclick="event.preventDefault()">结</a> </br>
+				by <a href="#" onclick="event.preventDefault()">Eadin Wang</a> &amp; <a href="#" onclick="event.preventDefault()">Xiaochen Yu</a></p>
 			 </div>`
 		]);
 		tableRow('table-sch', [
@@ -235,8 +230,8 @@
 			'20:30',
 			'SCH',
 			`<div>
-				<p><a href="" target="_blank">Tutoriation</a></br>
-				by <a href="" target="_blank">Joulez</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Tutoriation</a></br>
+				by <a href="#" onclick="event.preventDefault()">Joulez</a></p>
 			 </div>`
 		]);
 		tableRow('table-sch', [
@@ -244,8 +239,8 @@
 			'21:00',
 			'SCH',
 			`<div>
-				<p><a href="" target="_blank">Echoes of the Esai</a></br>
-				by <a href="" target="_blank">Colonel Panix</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Echoes of the Esai</a></br>
+				by <a href="#" onclick="event.preventDefault()">Colonel Panix</a></p>
 			 </div>`
 		]);
 		tableRow('table-sch', [
@@ -253,8 +248,8 @@
 			'21:30',
 			'SCH',
 			`<div>
-				<p><a href="" target="_blank">TECHNIFRO-185</a></br>
-					by <a href="" target="_blank">Fetle Wondimu Nega (Nū)</a></p>
+				<p><a href="#" onclick="event.preventDefault()">TECHNIFRO-185</a></br>
+					by <a href="#" onclick="event.preventDefault()">Fetle Wondimu Nega (Nū)</a></p>
 			 </div>`
 		]);
 		tableRow('table-sch', [
@@ -262,8 +257,8 @@
 			'22:00',
 			'SCH',
 			`<div>
-				<p><a href="" target="_blank">Coloring Code - Live Drawing and Coding</a></br>
-				by <a href="" target="_blank">Ben Swift</a> with <a href="" target="_blank">LXT</a> &amp; <a href="" target="_blank">Beverley Edwards</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Coloring Code - Live Drawing and Coding</a></br>
+				by <a href="#" onclick="event.preventDefault()">Ben Swift</a> with <a href="#" onclick="event.preventDefault()">LXT</a> &amp; <a href="#" onclick="event.preventDefault()">Beverley Edwards</a></p>
 			 </div>`
 		]);
 		tableRow('table-sch', [
@@ -271,8 +266,8 @@
 			'22:30',
 			'SCH',
 			`<div>
-				<p><a href="" target="_blank">Repetition, Coincidence, Computer! Live Coding</a></br>
-				by <a href="" target="_blank">Dahee Park</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Repetition, Coincidence, Computer! Live Coding</a></br>
+				by <a href="#" onclick="event.preventDefault()">Dahee Park</a></p>
 			 </div>`
 		]);
 		tableRow('table-sch', [
@@ -281,6 +276,8 @@
 			'SCH',
 			'Concert Ends'
 		]);
+
+		spacer('program', "3rem");
 
 		// DAY 3
 		heading('program', 'NYU Shanghai | Saturday, June 1', 4, 5, 2);
@@ -291,8 +288,8 @@
 			'10:00',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Live Coding in the Wild: On-the-fly Programming in a Broader Musical Ecosystem</a> </br>
-				by <a href="" target="_blank">Scott Wilson</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Live Coding in the Wild: On-the-fly Programming in a Broader Musical Ecosystem</a> </br>
+				by <a href="#" onclick="event.preventDefault()">Scott Wilson</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -300,8 +297,8 @@
 			'11:00 - 11:20',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Pop Live Coding Encounters: Reflections on Practice</a></br>
-				by <a href="" target="_blank">Sarah Davis</a>, <a href="" target="_blank">Jack Armitage</a>, <a href="" target="_blank">Gus Lobban</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Pop Live Coding Encounters: Reflections on Practice</a></br>
+				by <a href="#" onclick="event.preventDefault()">Sarah Davis</a>, <a href="#" onclick="event.preventDefault()">Jack Armitage</a>, <a href="#" onclick="event.preventDefault()">Gus Lobban</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -309,8 +306,8 @@
 			'11:20 - 11:40',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Dancing together in Greece and Japan: Live Coding in Telematic Dance With Sensors</a></br>
-				by <a href="" target="_blank">Iannis Zannos</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Dancing together in Greece and Japan: Live Coding in Telematic Dance With Sensors</a></br>
+				by <a href="#" onclick="event.preventDefault()">Iannis Zannos</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -318,8 +315,8 @@
 			'11:40 - 12:00',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">From Lick the Toad to Craft the Code</a></br>
-				by <a href="" target="_blank">Konstantinos Vasilakos</a></p>
+				<p><a href="#" onclick="event.preventDefault()">From Lick the Toad to Craft the Code</a></br>
+				by <a href="#" onclick="event.preventDefault()">Konstantinos Vasilakos</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -327,8 +324,8 @@
 			'12:00 - 12:20',
 			'E101',
 			`<div>
-				<p><a href="" target="_blank">Teaching Strudel to Young Girls: Realizing Live Coding through Performance Practice</a></br>
-				by <a href="" target="_blank">Georgios Diapoulis</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Teaching Strudel to Young Girls: Realizing Live Coding through Performance Practice</a></br>
+				by <a href="#" onclick="event.preventDefault()">Georgios Diapoulis</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -336,8 +333,8 @@
 			'14:00 - 17:00',
 			'N305',
 			`<div>
-				<p><a href="" target="_blank">Live Coding in a Kaleidoscope Sphere: Audio Reactive Visual with Shaders in Unity</a></br>
-				by <a href="" target="_blank">Hengshi Kang</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Live Coding in a Kaleidoscope Sphere: Audio Reactive Visual with Shaders in Unity</a></br>
+				by <a href="#" onclick="event.preventDefault()">Hengshi Kang</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -345,8 +342,8 @@
 			'',
 			'TBD',
 			`<div>
-				<p><a href="" target="_blank">GravField: Inter-bodily Live-coding Performance &amp; Workshop</a></br>
-				by <a href="" target="_blank">Botao A Hu</a>, <a href="" target="_blank">Yuemin Huang</a>, <a href="" target="_blank">Mingze Chai</a>, <a href="" target="_blank">Yilan Tao</a>, <a href="" target="_blank">Aaron Hu</a></p>
+				<p><a href="#" onclick="event.preventDefault()">GravField: Inter-bodily Live-coding Performance &amp; Workshop</a></br>
+				by <a href="#" onclick="event.preventDefault()">Botao A Hu</a>, <a href="#" onclick="event.preventDefault()">Yuemin Huang</a>, <a href="#" onclick="event.preventDefault()">Mingze Chai</a>, <a href="#" onclick="event.preventDefault()">Yilan Tao</a>, <a href="#" onclick="event.preventDefault()">Aaron Hu</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -354,8 +351,8 @@
 			'',
 			'N306',
 			`<div>
-				<p><a href="" target="_blank">CrossReality Performance &amp; Workshop</a></br>
-				by <a href="" target="_blank">Kaiqing Huang</a>, <a href="" target="_blank">Chu Zhang</a>, <a href="" target="_blank">Wangyu Ping</a>, <a href="" target="_blank">Zhao Boxiong</a>, <a href="" target="_blank">Botao A Hu</a></p>
+				<p><a href="#" onclick="event.preventDefault()">CrossReality Performance &amp; Workshop</a></br>
+				by <a href="#" onclick="event.preventDefault()">Kaiqing Huang</a>, <a href="#" onclick="event.preventDefault()">Chu Zhang</a>, <a href="#" onclick="event.preventDefault()">Wangyu Ping</a>, <a href="#" onclick="event.preventDefault()">Zhao Boxiong</a>, <a href="#" onclick="event.preventDefault()">Botao A Hu</a></p>
 			 </div>`
 		]);
 		tableRow('table-day3', [
@@ -363,10 +360,12 @@
 			'',
 			'N405',
 			`<div>
-				<p><a href="" target="_blank">Introduction to Nix for Live-Coding Software Packaging</a></br>
-				by <a href="" target="_blank">Alejandro Sánchez Medina</a></p>
+				<p><a href="#" onclick="event.preventDefault()">Introduction to Nix for Live-Coding Software Packaging</a></br>
+				by <a href="#" onclick="event.preventDefault()">Alejandro Sánchez Medina</a></p>
 			 </div>`
 		]);
+
+		spacer('program', "3rem");
 
 		// DAY 3 - Algorave at SYSTEM
 		heading('program', 'Algorave | SYSTEM | Saturday, June 1', 4, 5, 2);
@@ -384,8 +383,8 @@
 			'SYSTEM',
 			`<div>
 				<p>
-					<a href="" target="_blank">Visceral Realists ICLC24</a></br>
-					by <a href="" target="_blank">Zona Zanjeros</a>, <a href="" target="_blank">Andy Borsz</a>, <a href="" target="_blank">Messica Arson</a>
+					<a href="#" onclick="event.preventDefault()">Visceral Realists ICLC24</a></br>
+					by <a href="#" onclick="event.preventDefault()">Zona Zanjeros</a>, <a href="#" onclick="event.preventDefault()">Andy Borsz</a>, <a href="#" onclick="event.preventDefault()">Messica Arson</a>
 				</p>
 			 </div>`
 		]);
@@ -395,8 +394,8 @@
 			'SYSTEM',
 			`<div>
 				<p>
-					<a href="" target="_blank">Coypus and Dragons - The Evolutionist Pharage</a></br>
-					by <a href="" target="_blank">Domenico Cipriani</a>
+					<a href="#" onclick="event.preventDefault()">Coypus and Dragons - The Evolutionist Pharage</a></br>
+					by <a href="#" onclick="event.preventDefault()">Domenico Cipriani</a>
 				</p>
 			 </div>`
 		]);
@@ -406,8 +405,8 @@
 			'SYSTEM',
 			`<div>
 				<p>
-					<a href="" target="_blank">{ }kurivari</a></br>
-					by <a href="" target="_blank">Alo Allik</a>
+					<a href="#" onclick="event.preventDefault()">{ }kurivari</a></br>
+					by <a href="#" onclick="event.preventDefault()">Alo Allik</a>
 				</p>
 			 </div>`
 		]);
@@ -417,8 +416,8 @@
 			'SYSTEM',
 			`<div>
 				<p>
-					<a href="" target="_blank">Exencises</a></br>
-					by <a href="" target="_blank">Bito</a> with <a href="" target="_blank">Ivan Dianov</a>
+					<a href="#" onclick="event.preventDefault()">Exencises</a></br>
+					by <a href="#" onclick="event.preventDefault()">Bito</a> with <a href="#" onclick="event.preventDefault()">Ivan Dianov</a>
 				</p>
 			 </div>`
 		]);
@@ -428,8 +427,8 @@
 			'SYSTEM',
 			`<div>
 				<p>
-					<a href="" target="_blank">ShanghaiFF##</a></br>
-					by <a href="" target="_blank">Chunk No_Reace</a>
+					<a href="#" onclick="event.preventDefault()">ShanghaiFF##</a></br>
+					by <a href="#" onclick="event.preventDefault()">Chunk No_Reace</a>
 				</p>
 			 </div>`
 		]);
@@ -439,8 +438,8 @@
 			'SYSTEM',
 			`<div>
 				<p>
-					<a href="" target="_blank">Phoneme Dance</a></br>
-					by <a href="" target="_blank">R Tyler</a> with <a href="" target="_blank">VJ GND</a>
+					<a href="#" onclick="event.preventDefault()">Phoneme Dance</a></br>
+					by <a href="#" onclick="event.preventDefault()">R Tyler</a> with <a href="#" onclick="event.preventDefault()">VJ GND</a>
 				</p>
 			 </div>`
 		]);
@@ -450,8 +449,8 @@
 			'SYSTEM',
 			`<div>
 				<p>
-					<a href="" target="_blank">Love Going Algorave</a></br>
-					by <a href="" target="_blank">+777000</a> &amp; <a href="" target="_blank">nunez</a>
+					<a href="#" onclick="event.preventDefault()">Love Going Algorave</a></br>
+					by <a href="#" onclick="event.preventDefault()">+777000</a> &amp; <a href="#" onclick="event.preventDefault()">nunez</a>
 				</p>
 			 </div>`
 		]);

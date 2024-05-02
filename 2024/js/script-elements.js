@@ -136,9 +136,12 @@ function html(id, html = '') {
 }
 
 function table(id, tableId = '') {
+	const customStyles = `
+		scroll-margin-top: 6rem;
+	`;
 	let d = document.getElementById(id);
 	d.innerHTML += `
-		<div id="${tableId}" class="flex-table">
+		<div id="${tableId}" class="flex-table" style="${customStyles}">
 		</div>
 	`;
 }
@@ -353,10 +356,11 @@ function spacer(id, h = "1rem") {
 
 function footer() {
 	let c = 'ICLC 2024';
+	let credit = `Background image by Paulus van Dorsten (with modifications), licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA</a>.`;
 	document.body.innerHTML += `
 	<footer class="footer small text-center text-white-50">
 		<div class="container px-4 px-lg-5">
-		  Copyright &copy; ${c}
+		  Copyright &copy; ${c}, ${credit}
 	  </div>
   </footer>
 	`
