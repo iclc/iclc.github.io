@@ -409,9 +409,8 @@ h2 a {
 
 .flex-cell {
   flex: 1;
-  /* Distributes space evenly by default */
   padding: 8px;
-  /* border: 1px solid #ddd; */
+  /* border: 1px solid #ccc; */
   text-align: left;
   vertical-align: top;
 }
@@ -425,11 +424,35 @@ h2 a {
   flex: 4;
 }
 
+.category {
+  color: aqua;
+}
+
 /* responsive adjustments */
 @media (max-width: 600px) {
   .m-square {
     min-width: 100%;
     padding-top: 100%;
+  }
+
+  .flex-row {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .flex-cell,
+  .content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .category {
+    color: aqua;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .flex-cell p {
+    margin: 0;
   }
 }
 

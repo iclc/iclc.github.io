@@ -151,7 +151,7 @@ function tableHeader(id, columns = [], columnsNumber = 4) {
 	let d = document.getElementById(id);
 	d.innerHTML += `
 		<div class="flex-row header">
-			<div class="flex-cell">${columns[0]}</div>
+			<div class="flex-cell category">${columns[0]}</div>
 			<div class="flex-cell">${columns[1]}</div>
 			<div class="flex-cell">${columns[2]}</div>
 			<div class="flex-cell content">${columns[3]}</div>
@@ -163,7 +163,7 @@ function tableRow(id, columns = []) {
 	let d = document.getElementById(id);
 	d.innerHTML += `
 		<div class="flex-row">
-			<div class="flex-cell">${columns[0]}</div>
+			<div class="flex-cell category">${columns[0]}</div>
 			<div class="flex-cell">${columns[1]}</div>
 			<div class="flex-cell">${columns[2]}</div>
 			<div class="flex-cell content">${columns[3]}</div>
