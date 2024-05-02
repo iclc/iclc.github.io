@@ -47,7 +47,8 @@
   --bs-info-rgb: 255, 255, 255;
   --bs-warning: #ffc107;
   --bs-warning-rgb: 255, 193, 7;
-  --bs-danger: #ff0088;
+  /* --bs-danger: #ff0088; */
+  --bs-danger: #0dcaf0;
   --bs-danger-rgb: 252, 0, 136;
   --bs-light: #f8f9fa;
   --bs-light-rgb: 248, 249, 250;
@@ -290,12 +291,15 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
-  text-decoration: underline
+  /* color: var(--bs-link-color); */
+  color: var(--bs-white);
+  text-decoration: underline;
+  text-decoration-color: var(--bs-link-color);
 }
 
 a:hover {
-  color: var(--bs-link-hover-color)
+  /* color: var(--bs-link-hover-color) */
+  color: var(--bs-primary)
 }
 
 a:not([href]):not([class]),
