@@ -435,7 +435,7 @@ h2 a {
 }
 
 /* responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .m-square {
     min-width: 100%;
     padding-top: 100%;
