@@ -12,7 +12,7 @@
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
+  --bs-purple: #8950f4;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
@@ -186,7 +186,8 @@ h3 {
 
 .h4,
 h4 {
-  font-size: calc(1.275rem + .3vw)
+  font-size: calc(1.275rem + .3vw);
+  color: var(--bs-primary);
 }
 
 @media (min-width:1200px) {

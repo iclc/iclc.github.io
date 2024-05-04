@@ -48,62 +48,6 @@ iframe {
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.5s ease-in-out;
-  }
-
-  #mainNav .navbar-brand {
-    padding: 0.5rem 0;
-    color: var(--bs-primary);
-  }
-
-  #mainNav .navbar-brand:hover {
-    color: var(--bs-link-hover-color);
-  }
-
-  #mainNav .nav-link {
-    transition: none;
-    padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  #mainNav .nav-link:hover {
-    color: var(--bs-link-hover-color);
-  }
-
-  #mainNav .nav-link:active {
-    color: #fff;
-  }
-
-  #mainNav.navbar-shrink {
-    /* background-color: #1f1931; */
-    background: linear-gradient(to bottom, var(--bs-body-bg) 0%, #150229 100%);
-    opacity: 0.95;
-  }
-
-  #mainNav.navbar-shrink .navbar-brand {
-    color: white;
-  }
-
-  #mainNav.navbar-shrink .navbar-brand:hover {
-    color: var(--bs-link-hover-color);
-  }
-
-  #mainNav.navbar-shrink .nav-link {
-    color: var(--bs-primary);
-    padding: 1.5rem;
-  }
-
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: var(--bs-primary);
-  }
-}
-
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -148,36 +92,6 @@ iframe {
   /* mix-blend-mode: difference; */
 }
 
-@media (min-width: 768px) {
-
-  .masthead h1,
-  .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-
-  /* *** */
-  .masthead h1,
-  .masthead .h1 {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-    letter-spacing: 0.8rem;
-  }
-
-  .masthead h2,
-  .masthead .h2 {
-    max-width: 30rem;
-    font-size: 2.25rem;
-  }
-}
-
 .menu-section {
   margin-top: 6rem;
 }
@@ -199,28 +113,9 @@ iframe {
   padding: 2rem;
 }
 
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    /* border-left: 0.5rem solid #64a19d; */
-  }
-}
-
 .projects-section .project-text {
   padding: 2rem;
   font-size: 90%;
-}
-
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 2rem;
-  }
-
-  .projects-section .project-text hr {
-    /* border-color: #64a19d; */
-    border-width: 0.25rem;
-    width: 30%;
-  }
 }
 
 .signup-section {
@@ -431,10 +326,175 @@ h2 a {
 }
 
 .category {
-  color: var(--bs-primary);
+  color: var(--bs-purple);
 }
 
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-title h1 {
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 0.8rem;
+}
+
+
+
+.hero-title hr {
+  margin: 20px 0 40px 0;
+}
+
+.hero-title div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem 3.2rem;
+}
+
+.hero-title div a {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.hero-title div a:hover {
+  color: rgba(255, 255, 255, 1.0);
+  /* color: var(--bs-link-hover-color); */
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 25px;
+  /* Adjust as necessary */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  /* Adjust the size of the arrow */
+  color: white;
+  /* Color of the arrow */
+  animation: blink 1.5s infinite;
+}
+
+
 /* responsive adjustments */
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: var(--bs-primary);
+  }
+
+  #mainNav .navbar-brand:hover {
+    color: var(--bs-link-hover-color);
+  }
+
+  #mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  #mainNav .nav-link:hover {
+    color: var(--bs-link-hover-color);
+  }
+
+  #mainNav .nav-link:active {
+    color: #fff;
+  }
+
+  #mainNav.navbar-shrink {
+    /* background-color: #1f1931; */
+    background: linear-gradient(to bottom, var(--bs-body-bg) 0%, #150229 100%);
+    opacity: 0.95;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    color: white;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand:hover {
+    color: var(--bs-link-hover-color);
+  }
+
+  #mainNav.navbar-shrink .nav-link {
+    color: var(--bs-primary);
+    padding: 1.5rem;
+  }
+
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: var(--bs-primary);
+  }
+
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.8rem;
+  }
+
+  .masthead h2,
+  .masthead .h2 {
+    max-width: 30rem;
+    font-size: 2.25rem;
+  }
+
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    /* border-left: 0.5rem solid #64a19d; */
+  }
+
+  .projects-section .project-text {
+    padding: 2rem;
+  }
+
+  .projects-section .project-text hr {
+    /* border-color: #64a19d; */
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
 @media (max-width: 767px) {
   .m-square {
     min-width: 100%;
@@ -463,69 +523,7 @@ h2 a {
   }
 }
 
-/* Hero Section */
-.hero-section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-title {
-  width: 100%;
-  padding: 50px;
-  text-align: center;
-}
-
-.hero-title h1 {
-  color: white;
-  font-size: 3.5rem;
-  letter-spacing: 0.8rem;
-}
-
-@media (max-width: 600px) {
-  .hero-title h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-}
-
-.hero-title hr {
-  margin: 20px 0 40px 0;
-}
-
-.hero-title div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.hero-title div a {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-.hero-title div a:hover {
-  color: rgba(255, 255, 255, 1.0);
-  /* color: var(--bs-link-hover-color); */
-}
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 25px;
-  /* Adjust as necessary */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 15px;
-  /* Adjust the size of the arrow */
-  color: white;
-  /* Color of the arrow */
-  animation: blink 1.5s infinite;
-}
-
+/* Animation */
 @keyframes blink {
 
   0%,

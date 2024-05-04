@@ -6,14 +6,14 @@ let publishCatalogue = false;
 let publishWorkshops = false;
 let publishMap = false;
 let publishTickets = false;
-let publishSatellite = false;
 let publishCall = false;
 
 // activated links
 let publishProgram = true;
 let publishRegistration = true;
-let publishTravel = true;
 let publishVenues = true;
+let publishTravel = true;
+let publishSatellite = true;
 let publishAbout = true;
 
 function navigationBar() {
@@ -67,12 +67,18 @@ function mainContainer() {
 }
 
 function heroTitle(id, title = '', links = '') {
+	const customStyles = `
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	`;
 	let d = document.getElementById(id);
 	d.innerHTML += `
 		<div class="hero-title">
 			<h1 class="text-white">${title}</h1>
 			<hr/>
-			<div>
+			<div style="${customStyles}">
 				${links}
 			</div>
 			<div class="scroll-indicator">╲╱</div>

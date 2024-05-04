@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<meta property="og:title" content="ICLC 2024 Open Call" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iclc.toplap.org/2024/open-call.html" />
+	<meta property="og:description"
+		content="International Conference on Live Coding 2024, May 30 - June 1 2024 in Shanghai, China" />
+
+	<meta property="og:image" content="https://iclc.toplap.org/2024/assets/img/open-graph.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<meta property="og:locale" content="en_US" />
+
+	<title>Satellite Events | ICLC2024</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="js/script-elements.js"></script>
+	<script defer src="js/script.js"></script>
+
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// BACKGROUND IMAGE
+		backgroundImage('./assets/img/bg15.jpg');
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// HERO + TITLE
+		section('hero-title', 'hero-section');
+		heroTitle('hero-title', 'SATELLITE EVENTS', `
+		  <a href="#karlsruhe">Karlsruhe, DE</a>
+		  <a href="#livecode-nyc">Livecode.NYC, USA</a>
+			<a href="#toplap">TOPLAP, Online</a>
+			<a href="#corfu">Corfu, GR</a>							  
+			<a href="#london">London, UK</a>
+			<a href="#iceland">Iceland</a>
+			<a href="#toronto">Toronto, CA</a>
+			<a href="#piksel">Piksel, Online</a>
+			<a href="#zwickau">Zwickau, DE</a>
+		`);
+
+		// INTRODUCTION
+		section('introduction', 'main-section');
+		horizontalLine('introduction');
+		heading('introduction', 'Introduction');
+		paragraph('introduction', `
+			We have invited live coding communities from across the world to host satellite events around ICLC 2024. Our goal is to provide traveling artists with opportunities to perform or conduct workshops at various locations.
+		`);
+		paragraph('introduction', `
+			Please note that ICLC satellite events are organized independently from the main ICLC program. If you have any questions regarding a specific event, we encourage you to contact the event organizers directly.
+		`);
+
+		// SCHEDULE
+		heading('introduction', 'Satellite Event Schedule', 4, 5, 2);
+		table('introduction', 'schedule');
+		tableHeader('schedule');
+		tableRow('schedule', [
+			'April 13',
+			'13:30-23:00',
+			'<a href="#karlsruhe">Karlsruhe, DE</a>',
+			'<div>CodeCollision (Live Coding Workshops)</div>'
+		]);
+		tableRow('schedule', [
+			'April 26-May 5',
+			'&nbsp;',
+			'<a href="#livecode-nyc">Livecode.NYC, USA</a>',
+			'<div>MY _____ IS AN ECOSYSTEM (Exhibition for 2 Weekends)</div>'
+		]);
+		tableRow('schedule', [
+			'May 24',
+			'&nbsp;',
+			'<a href="#toplap">TOPLAP, Online</a>',
+			'<div>24 hr Live Streaming ICLC satellite event</div>'
+		]);
+		tableRow('schedule', [
+			'May 25',
+			'17:00-23:00 EET',
+			'<a href="#corfu">Corfu, GR</a>',
+			'<div>Live Coding concert</div>'
+		]);
+		tableRow('schedule', [
+			'June 4',
+			'&nbsp;',
+			'<a href="#london">London, UK</a>',
+			'<div>Performances and workshops</div>'
+		]);
+		tableRow('schedule', [
+			'June 4-9',
+			'&nbsp;',
+			'<a href="#iceland">Iceland</a>',
+			'<div>Algorave, workshops, and translation event</div>'
+		]);
+		tableRow('schedule', [
+			'June 8',
+			'&nbsp;',
+			'<a href="#toronto">Toronto, CA</a>',
+			'<div>Planet Tkaronto</div>'
+		]);
+		tableRow('schedule', [
+			'June 8',
+			'&nbsp;',
+			'<a href="#piksel">Piksel, Online</a>',
+			'<div>Remote performance with virtual audio and visual instruments</div>'
+		]);
+		tableRow('schedule', [
+			'June 14-16',
+			'&nbsp;',
+			'<a href="#zwickau">Zwickau, DE</a>',
+			'<div>Futur AAA - Live-Coding Festival</div>'
+		]);
+
+		// KARLSRUHE
+		section('karlsruhe', 'main-section');
+		horizontalLine('karlsruhe');
+		heading('karlsruhe', 'April 13 | Karlsruhe, DE', 0);
+		html('karlsruhe', `
+		  <h4>CodeCollision</h4>
+			</br>
+			<p><b>Date/Time</b>: April 13</p>
+			<p><b>Venue</b>: Jubez</p>
+			<p><b>Live Coding Workshops</b>:</p>
+			<ul>
+				<li>SuperCollider (13:30–15:30) [Anselm Weber, Daniel Höpfner, Michele Samarotto]</li>
+				<li>Strudel (13:30–15:30) [Felix Roos]</li>
+				<li>Computational Poetry (15:30–17:30) [Text generator in p5.js] [Jasmin Meerhoff]</li>
+			</ul>
+			<p><b>Concert Line-up</b>:</p>
+			<ul>
+				<li>Daniel Höpfner</li>
+				<li>eddyflux</li>
+				<li>Elmo</li>
+				<li>Michele Samarotto</li>
+				<li>nervousdata</li>
+			</ul>
+			<p><b>Website</b>: <a href="https://toplap-ka.de/events/code-collision-2024-04-13.html">CodeCollision</a></p>
+		`);
+
+		// LIVECODE.NYC
+		section('livecode-nyc', 'main-section');
+		horizontalLine('livecode-nyc');
+		heading('livecode-nyc', 'April 26 - May 5 | Livecode.NYC, USA', 0);
+		html('livecode-nyc', `
+			<h4>MY _____ IS AN ECOSYSTEM</h4>
+			</br>
+		  <p><b>Date/Time</b>: April 26 - May 5 (Exhibition for 2 Weekends)</p>
+			<ul>
+				<li>Friday to Sunday (April 26, 27, 28)</li>
+				<li>Friday to Sunday (May 3, 4, 5)</li>
+			</ul>
+			
+			
+		  </br>
+			<p><b>Location</b>: 10A Nolan Park, Harvestworks Art and Technology Building on Governors Island</p>
+			<p><b>A LiveCode.NYC residency at the Harvestworks Art and Technology Building on Governors Island</b></br>We are organizing a six day, two weekend exhibition on Governors Island this spring featuring performances, workshops, installation, video, and more. This will be similar to our exhibition last year in the same location, Regen Circuit. The open call for this show is still open. We are currently looking for proposals discussing the following: nature, climate change, sustainability, ecosystems, world building, and more. We can share more details (like the exhibition title, schedule, and description) after we sort through submissions.</p>
+			<p><b>Website</b>: <a href="https://www.harvestworks.org/livecodenyc2024-apr-26-may-5/">Livecode.NYC</a></p>
+			<p><b>Principal Contact</b>: <a href="mailto: melodyloveless@gmail.com">Melody Loveless</a>
+		`);
+
+		// TOPLAP
+		section('toplap', 'main-section');
+		horizontalLine('toplap');
+		heading('toplap', 'May 24 | TOPLAP / Online', 0);
+		html('toplap', `
+			<h4>TOPLAP | 24 hr Live Streaming ICLC satellite event</h4>
+			</br>
+			<p><b>Date/Time</b>: May 24</p>
+			<p><b>Venue</b>: Online</p>
+			<p><b>Line-up</b>: -</p>
+			<p>TOPLAP will host a 24 hr Live Streaming ICLC satellite event with an open signup for individuals. To sync with ICLC, we will open registration first to participants from Asia, Australia and New Zealand. Closer to the event we will open registration to anyone globally.</p>
+			<p><b>Organizing Committee</b>: <a href="mailto:highharmonics@gmail.com">HighHarmonics</a>, Alex McClean</p>
+		`);
+
+		// CORFU
+		section('corfu', 'main-section');
+		horizontalLine('corfu');
+		heading('corfu', 'May 25 | Corfu, GR', 0);
+		html('corfu', `
+			<h4>TOPLAP Athens</h4>
+			</br>
+			<p><b>Date/Time</b>: May 25</p>
+			<p><b>Venue</b>: Polytechno Live House, Corfu Old Town, Corfu, Greece</p>
+			<p><b>Time</b>: 17:00-23:00 EET</p>
+			<p><b>Line-up</b>: -</p>
+			<p>TOPLAP Athens intends to participate in collaboration with the Department of Audiovisual Arts of the Ionian University with an online Live Coding concert. We will support the following participation formats:</p>
+			<ul>
+				<li>Remote shared coding on SuperCollider via OscGroups. We offer an OscGroups server, OscGroups clients compiled apps for Linux, Mac, Windows, and a SuperCollider library for broadcasting own code and evaluating code received from remote evaluations from other members of the group. (sc-hacks-redux).</li>
+				<li>Estuary.  We invite groups who intend to perform using Estuary or similar online platforms and would work with them to present their performance live at the venue in Corfu.</li>
+			</ul>
+			<p>An open call will be issued on Discord. The event will form part of the annual Festival of the Department of Audiovisual Arts of the Ionian University, and will be streamed live from the university’s Youtube channel.</p>
+			<p><b>Organizing Committee</b>: <a href="mailto:zannos@gmail.com">Iannis Zannos</a>, Vasilis Agiomyrgianakis, Georgios Diapoulis, Penny Anastasopoulou, and friends (TBA)</p>
+		`);
+
+		// LONDON
+		section('london', 'main-section');
+		horizontalLine('london');
+		heading('london', 'June 4 | London, UK', 0);
+		html('london', `
+			<h4>London</h4>
+			</br>
+			<p><b>Date/Time</b>: June 4</p>
+			<p><b>Venue</b>: TBD (spaces associated with UAL)</p>
+			<p><b>Line-up</b>: -</p>
+			<p>We would like to plan an evening of performances and potentially a day program with workshops, plus also some streaming events around the time of the conference for those in the UK who cannot make the international conference to attend.</p>
+			<p>We are currently in the process of expanding this programme. We have a number of experienced and upcoming performers based in London who have expressed interest, such as digital selves, BITPRINT, Mahalia, Joanna, Ulysses Popple, Michael-Jon Mizra.</p>
+			<p>Our indicative schedule would be a day of workshops around live-coding, specifically one aimed at interactive 3D printing using the LivePrinter system (led by Evan), and another around algorithmic pattern through relating the heritage practice of tablet weaving to live coding (led by Lizzie). These workshops would be followed by a night of performances at a venue to be determined.</p>
+			<p><b>Organizing Committee</b>: <a href="mailto:e.j.wilson@arts.ac.uk">Lizzie Wilson</a>, Mahalia Henry-Richards, Joana Chicau, Evan Raskob</p>
+		`);
+
+		// ICELAND
+		section('iceland', 'main-section');
+		horizontalLine('iceland');
+		heading('iceland', 'June 4-9, Iceland', 0);
+		html('iceland', `
+			<h4>Iceland</h4>
+			</br>
+			<p><b>Date/Time</b>: June 4-9</p>
+			<p><b>Venues</b>: Borgarbókasafnið Music Makerspace for free live coding workshops, Radar for late night Algorave</p>
+			<p><b>Line-up</b>: -</p>
+			<p>We aim to host an algorave, pedagogical workshops, and an event where we translate live coding resources into Icelandic.</p>
+			<p><b>Organizing Committee</b>: <a href="mailto:jack@lhi.is">Jack Armitage</a></p>
+
+		`);
+
+		// TORONTO
+		section('toronto', 'main-section');
+		horizontalLine('toronto');
+		heading('toronto', 'June 8 | Toronto, CA', 0);
+		html('toronto', `
+			<h4>Planet Tkaronto</h4>
+			</br>
+			<p><b>Date/Time</b>: June 8</p>
+			<p><b>Venue</b>: InterAccess, a gallery, educational facility, production studio, festival, and registered charity dedicated to new media and emerging practices in art and technology., 950 Dupont St., Toronto</p>
+			<p><b>Line-up</b>: -</p>
+			<p>An immersive 360° audio/visual live coding performance -- with four confirmed performers from Toronto and Hamilton (cymatiste, magfoto, alexjsmac, afrancob) and a signup form for additional community members to participate. Visiting performers would be welcome! More information in the call for performers: <a href="http://bit.ly/planet-tkaronto">Planet Tkaronto</a></p>
+			<p><b>Organizing Committee</b>: 
+			<a href="mailto:sarahimrisek@gmail.com">Sarah Imrisek</a></p>
+		`);
+
+		// PIKSEL
+		section('piksel', 'main-section');
+		horizontalLine('piksel');
+		heading('piksel', 'June 8 | Piksel (Online)', 0);
+		html('piksel', `
+			<h4>Piksel</h4>
+			</br>
+			<p><b>Date/Time</b>: June 8</p>
+			<p><b>Venue</b>: Online</p>
+			<p><b>Line-up</b>: Blaz Pavlica (SI), Flor de Fuego (DE)</p>
+			<p>The Inclusive Digital Laboratory for Experimental Art (IDLE), based in Studio 207, Bergen, is an innovative art project focused on making art more accessible via the internet. Initiated by Piksel, IDLE has undergone significant development, including the establishment of a virtual gallery, integration of IoT systems into Studio 207, and the creation of virtual audio and visual instruments for remote performances.</p>
+			<p>Artists Blaz Pavlica and Flor de Fuego will perform in Bergen with the virtual instrument they have created for IDLE using Hydra.</p>
+			<p><b>Principal Contact</b>: <a href="mailto:maite@piksel.no">Maite Cajaraville</p>
+		`);
+
+		// ZWICKAU
+		section('zwickau', 'main-section');
+		horizontalLine('zwickau');
+		heading('zwickau', 'June 14-16 | Zwickau, DE', 0);
+		html('zwickau', `
+			<h4>Futur AAA</h4>
+			</br>
+			<p><b>Date/Time</b>: June 14-16</p>
+			<p><b>Venue</b>: Projekt 46 + Kunstplantage</p>
+			<p><b>Line-up</b>: See below</p>
+			<p>Futur AAA is a Live-Coding Festival that brings together the diversity of the international Live-Coding scene in Zwickau while also promoting the location as a vibrant cultural hub. Live-Coding is a creative practice where artists program in real-time to generate music, visuals, animations, and more. The festival aims to support alternative culture in the region, foster interdisciplinary arts and culture, and support the next generation of Live-Coders. Additionally, it seeks to merge the Live-Coding scene with the regional DJ scene and enliven alternative cultural venues in Zwickau.</p>
+			<p><b>Live Coding Workshops</b>:</p>
+			<ul>
+				<li>Introduction to LC (June 14th, visual and audio by LOL group)</li>
+				<li>Live coding for DJs and producers (June 15th, tba.)</li>
+				<li>DJing for Live coders (June 15th, tba)</li>
+				<li>live coding brunch - an open live coding show and tell (June 16th)</li>
+			</ul>
+			<p><b>Concert Line-up</b>:</p>
+			<ul>
+				<li>opening-ceremony (June 14th, Mc Algorhythm and harte echtzeit)</li>
+				<li>interactive live coding performance (June 14th)</li>
+				<li>live coding x DJing creative jam session (June 15th)</li>
+				<li>Algorave( June 15th, lineup tba.)</li>
+			</ul>
+			<p><b>Website</b>: <a href="https://futur-aaa.com/">Futur AAA</a></p>
+		`);
+
+		// CONTACT
+		section('contact', 'main-section');
+		horizontalLine('contact');
+		heading('contact', 'Contact');
+		paragraph('contact', `
+				<p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
+			`);
+
+		// FOOTER
+		socials();
+		footer();
+	</script>
+</body>
+
+</html>
