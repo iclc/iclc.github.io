@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>Act | ICLC2024</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="js/script-elements.js"></script>
+	<script defer src="js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// BACKGROUND IMAGE
+		//backgroundImage('./assets/img/algo6.jpg');
+		// note: I am not sure if we need a backgroud image for these pages
+		// we can have a random shuffling of images in the background?
+		// or generate a random sketch using p5.js?
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Pre(N)ature');
+		heading('act', 'Ivan Abreu, CNDSD', 4);
+		html('act',
+			`<p>Generative audiovisual composition based on AI and audiovisual algorithmic processes.
+				We use language as a speculative laboratory and as a tool of digital creativity, hybridizing formal language, which is creative coding or programming with its very high algorithmic certainty, with the natural language processing of AI, with the beauty of uncertainty, drift , and interpretive ambiguity. Two forms of writing to build audiovisual and musical expression.</p><p>Pre(N)atura emerges as a speculative experiment and fiction inspired by post-natural studies. We write Prompts (AI) that, combined with guided training, imagine and hallucinate the sounds that support this fiction of living glass flutes and disturbing organic breath instruments.<p>`);
+
+		// FOOTER
+		socials();
+		footer();
+	</script>
+</body>
+
+</html>
