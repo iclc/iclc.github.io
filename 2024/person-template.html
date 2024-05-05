@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
-	<title>ICLC2024: TITLE</title>
+	<title>ICLC2024: NAME</title>
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,12 +30,6 @@
 		// HEADER
 		navigationBar();
 
-		// BACKGROUND IMAGE
-		//backgroundImage('./assets/img/algo6.jpg');
-		// note: I am not sure if we need a backgroud image for these pages
-		// we can have a random shuffling of images in the background?
-		// or generate a random sketch using p5.js?
-
 		// MAIN
 		mainContainer(); // required for the section() function to be appended to the main container
 
@@ -52,10 +46,11 @@
 		// ABOUT
 		section('act', 'main-section');
 		horizontalLine('act');
-		heading('act', 'TITLE', 1);
-		heading('act', 'PERSONS', 4);
+		heading('act', 'NAME', 1, 0, 3);
+		heading('act', 'REALNAME', 5);
+		heading('act', 'AFFILIATION', 5);
 		html('act',
-			`DESCRIPTION`);
+			`BIO`);
 
 		spacer("act", "5rem");
 
