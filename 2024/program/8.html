@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Conversations Beyond Code: Bridging Human Creativity and Algorithms</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// BACKGROUND IMAGE
+		//backgroundImage('./assets/img/algo6.jpg');
+		// note: I am not sure if we need a backgroud image for these pages
+		// we can have a random shuffling of images in the background?
+		// or generate a random sketch using p5.js?
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Conversations Beyond Code: Bridging Human Creativity and Algorithms', 1);
+		heading('act', '<a href="../persons/atsushi-tadokoro.html">Atsushi Tadokoro</a>', 4);
+		html('act',
+			`<p>In this live coding performance, I explore the captivating contrast between the logical precision of coding and the creation of instinctive, emotional experiences. This performance goes beyond the realms of conventional coding, tapping into the primal power of rhythm and color to evoke deep emotions in the audience. I use real-time coding to generate an evolving soundscape, accompanied by visuals that dynamically respond to the music, creating a rich, multi-sensory experience.</p><p>Central to this performance is the interactive element, where audience reactions shape the flow, making each moment unique. This is not just a showcase of technical skills but a journey into the heart of artistic expression, where each line of code and every beat creates a connection between technology and emotion.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

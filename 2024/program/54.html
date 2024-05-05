@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Coloring Code - Live Drawing and Coding</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// BACKGROUND IMAGE
+		//backgroundImage('./assets/img/algo6.jpg');
+		// note: I am not sure if we need a backgroud image for these pages
+		// we can have a random shuffling of images in the background?
+		// or generate a random sketch using p5.js?
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Coloring Code - Live Drawing and Coding', 1);
+		heading('act', '<a href="../persons/ben-swift.html">Ben Swift</a>, <a href="../persons/lxt.html">LXT</a>, <a href="../persons/beverley-edwards.html">Beverley Edwards</a>', 4);
+		html('act',
+			`<p>Ben Swift spent the past 12 months (and 2 of the last 5 years) as primary carer to his three kids. From March ’24 he is heading back to his uni job, and this livecoded algorave set will explore what it means to work—both at home and away—and his experience of heading “back to work”.</p><p>LXT and Beverley Edwards&#x27; “Groovy Hearts Club” is a playful and vibrant live performance that delves into the dynamic interplay between digital illustration and live coding. Creating a kaleidoscope of color and joy, it resembles an improvisational dance between the two mediums. The performance unfolds as the illustrator creates colorful and entertaining images, while the live coder transforms these drawings into mesmerizing visual patterns using the p5live programming environment.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

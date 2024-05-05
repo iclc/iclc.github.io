@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Yilan Tao</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Yilan Tao', 1, 0, 3);
+		heading('act', '', 5);
+		heading('act', 'Holo Interactive', 5);
+		html('act',
+			`<p>Yilan (Elan) Tao is a user-experience designer and architect who specializes in the interaction between people and 3D spaces. She is currently a designer and research assistant at Holo Interactive, focusing on XR design theory. Her remarkable skills in design and presentation have played a vital role in the success of Holo Interactive’s award-winning projects showcased at top conferences such as CHI, SXSW, ISMAR, as well as recognized by prestigious awards including the CHI Best Interactivity, Red Dot Design Award, Webby Awards, and Core77 Design Award. Prior to her current role, Yilan worked as a senior architect at Neri&amp;Hu Design and Research Office in Shanghai, where she successfully completed the Shanghai Qiantan Cultural Center Theater and Hotel. She holds a Bachelor’s degree in Architecture from Tsinghua University and a Master’s degree in Architecture from Cornell University.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

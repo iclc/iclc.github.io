@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Atsushi Tadokoro</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Atsushi Tadokoro', 1, 0, 3);
+		heading('act', '', 5);
+		heading('act', 'Maebashi Institute of Technology', 5);
+		html('act',
+			`<p>Live Coder / Creative Coder / Associate Professor at Maebashi Institute of Technology / Adjunct Lecturer at Tokyo University of the Arts / Adjunct Lecturer at Keio University. Born in 1972. He creates musical works by synthesizing sounds using algorithms and improvises with sounds and images using laptop computers. At university, he lectures on &quot;creative coding&quot; such as openFrameworks, Processing, and p5.js. His lecture materials are available on the website (https://yoppa.org/) and are used by many students and creators. He is the author of &quot;Beyond Interaction - A Practical Guide to openFrameworks for Creative Coding&quot; BNN, &quot;Performative Programming, The Art and Practice of Live Coding - Show us your screens.&quot; BNN.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

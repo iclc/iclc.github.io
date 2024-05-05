@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Yuemin Huang</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Yuemin Huang', 1, 0, 3);
+		heading('act', '', 5);
+		heading('act', 'East China Normal University', 5);
+		html('act',
+			`<p>Yuemin Huang is a Shanghai-born artist and researcher interested in how culture-constructed media shapes cognition, engaging with themes such as materiality of digital infrastructure, polycentric self-organizing structures, artistic/technical protocols and constructible perception. Yuemin is also a co-founder of TINAG, an art game group, focusing on experimenting with different organizational structures through games, creating shared experiences within communities, and exploring the alternative reality gaming method. With works appearing in festivals, distributed papers and alternative written forms, including SeP Shanghai(2023), Hastac(2023), ICA(2023). Yuemin is the lecturer at in East China Normal University with the course ”Alternative-reality Cross media Game Practice”, ”Virtual Space and Net Art”, ”Physical computation...” She holds a bachelor’s degree in Public Art from East China Normal University and a master’s degree in Art and Technology Studies in the School of the art Institute of Chicago.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

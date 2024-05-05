@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Introduction to Nix for Live-Coding Software Packaging</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// BACKGROUND IMAGE
+		//backgroundImage('./assets/img/algo6.jpg');
+		// note: I am not sure if we need a backgroud image for these pages
+		// we can have a random shuffling of images in the background?
+		// or generate a random sketch using p5.js?
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Introduction to Nix for Live-Coding Software Packaging', 1);
+		heading('act', '<a href="../persons/alejandro-sánchez-medina.html">Alejandro Sánchez Medina</a>', 4);
+		html('act',
+			`<p>This workshop will provide a guided introduction to Nix (https://nixos.org/), a declarative software dependecy manager. The workshop will consist of:</p><p>• An introduction to the principles of declarative software dependency management.</p><p>• A guided tutorial to the Nix language.</p><p>• A presentation of common packaging examples and patterns.</p><p>• On-site tutoring packaging the live-coding software chosen by the participant.</p><p>Requirements for participation: bring your personal laptop to work during the practical part of the workshop. Windows users are encouraged to come with a Linux Virtual Machine. Nix can work from within the WindowsSubsystem for Linux, albeit with some limitations compared to native *nix systems. It is highly recommended that participants come with their own project to package, or a project they already want to use but could not manage to make it work in a specific setup.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

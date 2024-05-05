@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Domenico Cipriani</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Domenico Cipriani', 1, 0, 3);
+		heading('act', '', 5);
+		heading('act', '', 5);
+		html('act',
+			`<p>Domenico Cipriani a.k.a. Lucretio has been releasing raw minimalist dance music for more than a decade.With his many monikers and groups (including collaborations with Blawan and Objekt) he has released more than 100 vinyls and performed all around Europe, including Berghain, Tresor, Fabric, Zukunft, Rex, just to name a few. His label Restoration (co-founded with Marieu) has played an active role in the vinyl resurgence of the late 2000. After his graduation the S.A.E. Institute of Barcelona, he has further developed his research on social semiotic with an M.A. in Linguistics at the University of Padova, focusing on an evolutionary approach to explaining language change. He has discovered Smalltalk with Symbolic Sound Kyma in 2016. In 2019, he presented at the »Sonic Experiments« festival at the ZKM an interactive performance based on network distributed Open Sound Control. He has been live coding with Kyma and Pharo since April 2020.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

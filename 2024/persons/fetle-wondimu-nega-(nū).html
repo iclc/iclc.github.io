@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Fetle Wondimu Nega (Nū)</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Fetle Wondimu Nega (Nū)', 1, 0, 3);
+		heading('act', '', 5);
+		heading('act', '', 5);
+		html('act',
+			`<p>Fetle Wondimu Nega, an Ethiopian-Australian musician and co-design facilitator in Naarm/Melbourne, explores cross-cultural experiences, non-western musical traditions, and Afrofuturism. With a Bachelor of Science (Mathematics) from The University of Melbourne and currently pursuing an Advanced Diploma of Music Performance (Voice), Fetle&#x27;s diverse creative practice involves experimental sound production, improvisational vocals, and live coding with Sonic Pi. As the recipient of Creative Victoria&#x27;s Creators Fund in 2023, she delves into Afrofuturism&#x27;s application in storytelling from the African Australian diaspora. Under alias Nū, she has exhibited her work, CODE-SWITCH, through the 2022 Signal Arts Screen and Sound Commission, and released her debut ambient electronic single, &quot;Night Time,&quot; in October 2023. Nū has performed at Melbourne Music Week in 2021, captivating audiences at sold-out shows at 86 festival and Make It Up Club in 2023, showcasing her innovative contributions to the Australian music and sound art scene.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

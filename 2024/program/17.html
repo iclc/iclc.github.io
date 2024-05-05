@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Dancing together in Greece and Japan: Live Coding in Telematic Dance With Sensors</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// BACKGROUND IMAGE
+		//backgroundImage('./assets/img/algo6.jpg');
+		// note: I am not sure if we need a backgroud image for these pages
+		// we can have a random shuffling of images in the background?
+		// or generate a random sketch using p5.js?
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Dancing together in Greece and Japan: Live Coding in Telematic Dance With Sensors', 1);
+		heading('act', '<a href="../persons/iannis-zannos.html">Iannis Zannos</a>', 4);
+		html('act',
+			`<p>This paper presents the results of work embodied performance with dances using sensor combined with live coding in telematic dance performances and discusses it in the context of recent performances realized between Greece and Japan. It presents sc-hacks-redux, a SuperCollider library that enables live coding of the sound vocabulary as well as the interaction mode between dancers and sound producing algorithms, through the broadcasting sensor data as well as code using the open-source software OscGroups. The paper focusses on collaborative aspects, and on the interaction between data and code in the creation process. While coding on the keyboard radically differs from dancing as computer interaction modality, it can be argued that the live combination of recorded movement data with code opens new possibilities to interpret dance movement as a complement to code. Recorded movement data take the place of code in capturing reproducible aspects of performance, and in this way bring dancers closer to coding. We describe different strategies used to create performances, and the role of dancers/choreographers vs coders in the design process. Finally we discuss tools created to help dancers themselves to select sounds, refine interaction parameters and rehearse while independently running the library on their own computer during networked rehearsals.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

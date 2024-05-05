@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: Zona Zanjeros</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'Zona Zanjeros', 1, 0, 3);
+		heading('act', '', 5);
+		heading('act', '', 5);
+		html('act',
+			`<p>Zona Zanjeros, a vital force in Visceral Realism, is a multimedia artist and essential member of &quot;Computer,&quot; a sound-based performance art group in New York. In rebellion against commercialized art, Zona employs open-source software like SuperCollider and Puredata for their sonic explorations. As a Visceral Realist, Zona transcends boundaries, using samples and original compositions that undergo metamorphosis through SuperCollider. Zona&#x27;s performances challenge conventions, offering a fusion of traditional and digital, inviting audiences to confront the ever-changing technological landscape. In a dialectical conversation with technology, Zona expresses both fear and attraction, creating intense, introspective experiences. Zona Zanjeros&#x27; work serves as a poignant reminder to navigate technology&#x27;s impact with care, advocating for a connection to the natural world. Zona has collaborated with musicians like Elliott Sharp and Weasel Walter for performances and recordings.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<title>ICLC2024: VJ GND</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// SPACER
+		spacer("main-container", "15vh");
+
+		// BACK BUTTON
+		html('main-container',
+			`<a href="javascript:history.back()" class="back-button">
+				Back
+			</a>`
+		);
+
+		// ABOUT
+		section('act', 'main-section');
+		horizontalLine('act');
+		heading('act', 'VJ GND', 1, 0, 3);
+		heading('act', 'Peter Gonda', 5);
+		heading('act', '', 5);
+		html('act',
+			`<p>Peter Gonda (aka gnd, 1983) is a theatre director, vj and computer scientist. In 2004 gnd became a member of Bratislava&#x27;s first media lab Burundi, and after its demise co-founded the Itchy Bit collective, focused on happenings on the intersection of art, social issues and technology. Apart from performing solo, gnd is also a member of Kolektiv - a loose improvisational / live-coding body of creators of algorithmic music and visuals based in Prague. His visuals are usually live-coded in environments such as Pure Data, his own glslr, or pijockey on Raspberry PI. Besides his visual work, gnd holds a MA from theatre direction at the DAMU Theatre Academy in Prague. Since 2010 he directed several theatre performances often working with non-actors or mixed ensembles of professional actors and non-actors.</p>`);
+
+		spacer("act", "5rem");
+
+		// FOOTER
+		//socials();
+		//footer();
+	</script>
+</body>
+
+</html>
