@@ -13,17 +13,16 @@
 	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
 	<!-- CSS sheets -->
-	<link href="css/style.css" rel="stylesheet" />
-	<link href="css/style-customized.css" rel="stylesheet" />
+	<link href="../css/style.css" rel="stylesheet" />
+	<link href="../css/style-customized.css" rel="stylesheet" />
 
 	<!-- Bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 	<!-- Script that generates HTML elements on the main page. -->
-	<script src="js/script-elements.js"></script>
-	<script defer src="js/script.js"></script>
-	<base href="https://iclc.toplap.org/2024/">
+	<script src="../js/script-elements.js"></script>
+	<script defer src="../js/script.js"></script>
 </head>
 
 <body id="page-top">
@@ -54,7 +53,7 @@
 		section('act', 'main-section');
 		horizontalLine('act');
 		heading('act', 'Introduction to Nix for Live-Coding Software Packaging', 1);
-		heading('act', '<a href="persons/alejandro-sánchez-medina.html">Alejandro Sánchez Medina</a>', 4);
+		heading('act', '<a href="../persons/alejandro-sánchez-medina.html">Alejandro Sánchez Medina</a>', 4);
 		html('act',
 			`<p>This workshop will provide a guided introduction to Nix (https://nixos.org/), a declarative software dependecy manager. The workshop will consist of:</p><p>• An introduction to the principles of declarative software dependency management.</p><p>• A guided tutorial to the Nix language.</p><p>• A presentation of common packaging examples and patterns.</p><p>• On-site tutoring packaging the live-coding software chosen by the participant.</p><p>Requirements for participation: bring your personal laptop to work during the practical part of the workshop. Windows users are encouraged to come with a Linux Virtual Machine. Nix can work from within the WindowsSubsystem for Linux, albeit with some limitations compared to native *nix systems. It is highly recommended that participants come with their own project to package, or a project they already want to use but could not manage to make it work in a specific setup.</p>`);
 
