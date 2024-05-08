@@ -26,7 +26,7 @@ for act in acts:
 	for person in persons_list:
 		if len(persons_html):
 			persons_html += ', '
-		persons_html += '<a href="../persons/' + name_to_fn(person) + '.html">' + person + '</a>'
+		persons_html += '<a href="persons/' + name_to_fn(person) + '.html">' + person + '</a>'
 	out = out.replace('PERSONS', persons_html)
 	description_nl = '<p>' + html.escape(act[3], True).replace('  ', '</p><p>') + '</p>'
 	out = out.replace('DESCRIPTION', description_nl)
