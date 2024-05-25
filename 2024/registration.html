@@ -49,7 +49,7 @@
 		horizontalLine('registration');
 		heading('registration', 'Registration');
 		paragraph('registration', `
-			ICLC 2024 is offering the following registration tiers. All passes include full access to all conference events, concerts, and registration for workshops.</br></br>
+			ICLC 2024 is offering the following registration tiers. <!-- All passes include full access to all conference events, concerts, and registration for workshops. --></br></br>
 		`);
 
 		// REGISTRATION BUTTONS
@@ -79,14 +79,14 @@
 		buttonBox('registration-button',
 			'General</br>Attendance',
 			`<b>RMB 700 (90 USD)</b>`,
-			`<button onclick="window.location='#domestic';">RMB</button>
-			<button onclick="window.location='#international';">Other Currency</button>`
+			`<b>Closed</b>`,
+			'#111'
 		);
 		buttonBox('registration-button',
 			'Students',
 			`</br> <b>RMB 150 (20 USD)</b>`,
-			`<button onclick="window.location='#domestic';">RMB</button>
-			<button onclick="window.location='#international';">Other Currency</button>`
+			`<b>Closed</b>`,
+			'#111'
 		);
 		buttonBox('registration-button',
 			'Event Tickets',
@@ -109,7 +109,7 @@
 			</ul>
 			<p style="margin-bottom: 1rem; margin-top: 2rem;">For the Concert at Shanghai Concert Hall on May 31:</p>
 			<ul>
-				<li><a href="https://www.wjx.cn/vm/r2ggFTh.aspx">RSVP here</a> for a chance to receive complementary tickets.</li>
+				<li>RSVP has concluded. Selected audience will be notified before Wednesday, May 29, via SMS.
 			</ul>
 			<p style="margin-bottom: 1rem; margin-top: 2rem;">For the Algorave at SYSTEM on June 1:</p>
 			<ul>
@@ -119,6 +119,7 @@
 		`);
 
 		// REGISTRATION INSTRUCTIONS
+		/*
 		section('instruction', 'main-section');
 
 		horizontalLine('instruction');
@@ -148,7 +149,6 @@
 			</ul>
 		`);
 
-		/*
 		heading('registration-cn', '会议注册');
 		paragraph('registration-cn', `
 			<p>ICLC 2024 为不同参会者提供以下几种参会注册选项：</p>
