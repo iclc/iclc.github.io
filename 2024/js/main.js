@@ -86,4 +86,20 @@ window.addEventListener("resize", function () {
     worldBox = getWorldBox();
     world.add(worldBox);
   }
+
+  changeHeroDivScale();
 });
+
+window.addEventListener("load", function (event) {
+  changeHeroDivScale();
+});
+
+function changeHeroDivScale() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  const isMobile = /android|webos|iphone|ipod|blackberry|windows phone/i.test(userAgent); // ipad is not included.
+  const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if (!isMobile) {
+    document.getElementById("main-hero-container").style.transform = `scale(${window.innerHeight / 1000})`;
+  }
+}
