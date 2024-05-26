@@ -56,6 +56,10 @@ iframe {
   border: 0;
 }
 
+#main-hero-container {
+  /* this scale is being controlled by JS. */
+}
+
 .masthead {
   position: relative;
   width: 100%;
