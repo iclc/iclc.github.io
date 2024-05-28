@@ -28,6 +28,14 @@ for act in acts:
 			persons_html += ', '
 		persons_html += '<a href="../persons/' + name_to_fn(person) + '.html">' + person + '</a>'
 	out = out.replace('PERSONS', persons_html)
+	proceedings_html = ''
+	proceedings_list = act[4].split(', ')
+	for proceeding in proceedings_list:
+		if len(proceedings_html):
+			proceedings_html += ', '
+		if len(proceeding):
+			proceedings_html += '<a href="' + proceeding + '" target="_blank">Entry in Proceedings</a>'
+	out = out.replace('PROCEEDINGS', proceedings_html)
 	description_nl = '<p>' + html.escape(act[3], True).replace('  ', '</p><p>') + '</p>'
 	out = out.replace('DESCRIPTION', description_nl)
 	f = open('program/' + act[0] + '.html', 'w')
