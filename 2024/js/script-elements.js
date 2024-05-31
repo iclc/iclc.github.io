@@ -29,7 +29,7 @@ function navigationBar() {
 				<ul class="navbar-nav ms-auto">
 				${(publishStream) ? `<li class="nav-item blink"><a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>` : ''}
 				${(publishProgram) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/program.html">Program</a></li>` : ''}
-				${(publishDocumentation) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/documentation/">Documentation</a></li>` : ''}
+				${(publishDocumentation) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/documentation.html">Documentation</a></li>` : ''}
 				${(publishRegistration) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/registration.html">Registration</a></li>` : ''}
 				${(publishTickets) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/tickets.html">Tickets & Info</a></li>` : ''}
 				${(publishWorkshops) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/workshops.html">Workshops</a></li>` : ''}
