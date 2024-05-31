@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+	<meta property="og:title" content="ICLC 2024 Satellite Events" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iclc.toplap.org/2024/satellite.html" />
+	<meta property="og:description"
+		content="International Conference on Live Coding 2024, May 30 - June 1 2024 in Shanghai, China" />
+
+	<meta property="og:image" content="https://iclc.toplap.org/2024/assets/img/open-graph.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<meta property="og:locale" content="en_US" />
+
+	<title>Documentation | ICLC 2024</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+	<!-- CSS sheets -->
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/style-customized.css" rel="stylesheet" />
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Script that generates HTML elements on the main page. -->
+	<script src="js/script-elements.js"></script>
+	<script defer src="js/script.js"></script>
+
+</head>
+
+<body id="page-top">
+	<script>
+		// HEADER
+		navigationBar();
+
+		// BACKGROUND IMAGE
+		backgroundImage('./assets/img/iclc23.png');
+
+		// MAIN
+		mainContainer(); // required for the section() function to be appended to the main container
+
+		// HERO + TITLE
+		section('hero-title', 'hero-section');
+		heroTitle('hero-title', 'DOCUMENTATION', `
+		  <a href="#submissions">Open Submissions</a>
+		`);
+
+		// DOCUMENTATION
+		section('documentation', 'main-section');
+		horizontalLine('documentation');
+		heading('documentation', 'Documentation');
+		html('documentation', `
+			<div>
+				<p>Publications, Media and Recordings are accessible from within the Documentation. You can also browse them on these sites:</p>
+				<ui>
+					<li><a href="https://zenodo.org/communities/iclc/" target="zenodo">Zenodo (Proceedings)</a></li>
+					<li><a href="https://www.instagram.com/iclc2024/" target="insta">Instagram (Photographs of the Events)</a></li>
+					<li>Youtube (Coming Soon)</li>
+				</ui>
+			</div>
+		`);
+
+		// SUBMISSIONS
+		section('submissions', 'main-section');
+		horizontalLine('submissions');
+		heading('submissions', 'Open Submissions');
+		html('submissions', `
+			<div>
+				<p>Publications are available for the following projects:</p>
+
+				<h4>Papers</h4>
+					<ul>
+						<li>
+							Pop Live Coding Encounters: Reflections on
+								Practice: <a href="https://iclc.toplap.org/2024/program/6.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11350025" target="zenodo">Publication</a>
+						</li>
+						<li>
+							Teaching Strudel to Young Girls: Realizing Live Coding through Performance Practice: <a href="https://iclc.toplap.org/2024/program/38.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11350109" target="zenodo">Publication</a>
+						</li>
+						<li>
+							From the Screen to the Stage: Live Coding in the Context of Contemporary Dance: <a href="https://iclc.toplap.org/2024/program/16.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11350187" target="zenodo">Publication</a>
+						</li>
+						<li>
+							From Lick the Toad to Craft the Code: <a href="https://iclc.toplap.org/2024/program/25.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11350311" target="zenodo">Publication</a>
+						</li>
+						<li>
+							The Dancer as Coder: Live Coding in Telematic Dance With Sensors: <a href="https://iclc.toplap.org/2024/program/17.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11350361" target="zenodo">Publication</a>
+						</li>
+						<li>
+							Enlivening Performance Art: Enhanced Interactivity through Embodied Cognition and Real-Time Physical Visualization on Swarm Tangible Interfaces: <a href="https://iclc.toplap.org/2024/program/66.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11350409" target="zenodo">Publication</a>
+						</li>
+						<li>
+							Updating maximilian.js for Modern JavaScript Live Coding: <a href="https://iclc.toplap.org/2024/program/30.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11363673" target="zenodo">Publication</a>
+						</li>
+						<li>
+							Symbolic is the New Live: <a href="https://iclc.toplap.org/2024/program/67.html" target="_self">Program</a>, Publication (Coming Soon)
+						</li>
+					</ul>
+				
+
+				<h4>Open Submissions</h4>
+				<ul>
+					<li>
+						IDLE, Inclusive Digital Laboratory forExperimental Art, Hydra as a virtual instrumet, from live coding to a collaborative installation: <a href="https://doi.org/10.5281/zenodo.11346931" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Urban Arboretum: <a href="https://doi.org/10.5281/zenodo.11347476" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Live Joking: Live Coding Algorithmic Comedy: <a href="https://doi.org/10.5281/zenodo.11348471" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Way of Schesa: <a href="https://doi.org/10.5281/zenodo.11348560" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Synaptic Soundwaves: <a href="https://doi.org/10.5281/zenodo.11348644" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Virtual biome: Exploring The Definition of Life, Self-Organization, and Artificial Intervention: <a href="https://doi.org/10.5281/zenodo.11348752" target="zenodo">Publication</a>
+					</li>
+				</ul>
+
+				<h4>Live Performance</h4>
+				<ul>
+					<li>
+						Coypus and Dragons - The Evolunionist Pharage: 
+						<a href="https://iclc.toplap.org/2024/program/15.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11337649" target="zenodo">Publication</a>
+					</li>
+					<li>
+						CrossReality: <a href="https://iclc.toplap.org/2024/program/44.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11337997" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Repetition, Coincidence, Computer! Live Coding: <a href="https://iclc.toplap.org/2024/program/56.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11343861" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Tutoriation: <a href="https://iclc.toplap.org/2024/program/50.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11344520" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Echoes of the Esai: <a href="https://iclc.toplap.org/2024/program/77.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11344738" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Coloring Code - Live Drawing and Coding: <a href="https://iclc.toplap.org/2024/program/54.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11345528" target="zenodo">Publication</a>
+					</li>
+					<li>
+						Conversations Beyond Code: Bridging Human Creativity and Algorithms: <a href="https://iclc.toplap.org/2024/program/8.html" target="_self">Program</a>, <a href="https://doi.org/10.5281/zenodo.11345391" target="zenodo">Publication</a>
+					</li>
+				</ul>
+			</div>
+		`);
+
+		// CONTACT
+		section('contact', 'main-section');
+		horizontalLine('contact');
+		heading('contact', 'Contact');
+		paragraph('contact', `
+				<p>Please feel free to contact us via <a href="mailto:shanghai.iclc24@nyu.edu">shanghai.iclc24@nyu.edu</a>.</p>
+			`);
+
+		// FOOTER
+		socials();
+		footer();
+	</script>
+
+</body>
+
+</html>
