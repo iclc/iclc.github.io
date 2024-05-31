@@ -2,7 +2,6 @@
 
 // deactivated links
 let publishStream = false;
-let publishCatalogue = false;
 let publishWorkshops = false;
 let publishMap = false;
 let publishTickets = false;
@@ -11,6 +10,7 @@ let publishCall = false;
 // activated links
 let publishProgram = true;
 let publishRegistration = true;
+let publishDocumentation = true;
 let publishVenues = true;
 let publishTravel = true;
 let publishSatellite = true;
@@ -28,8 +28,8 @@ function navigationBar() {
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 				${(publishStream) ? `<li class="nav-item blink"><a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>` : ''}
-				${(publishCatalogue) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/catalogue/">Catalogue</a></li>` : ''}
 				${(publishProgram) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/program.html">Program</a></li>` : ''}
+				${(publishDocumentation) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/documentation/">Documentation</a></li>` : ''}
 				${(publishRegistration) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/registration.html">Registration</a></li>` : ''}
 				${(publishTickets) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/tickets.html">Tickets & Info</a></li>` : ''}
 				${(publishWorkshops) ? `<li class="nav-item"><a class="nav-link" href="https://iclc.toplap.org/2024/workshops.html">Workshops</a></li>` : ''}
@@ -306,7 +306,7 @@ function socials() {
 		<div class="container px-4 px-lg-5">
 			<div class="social d-flex justify-content-center">
 				<a class="mx-3" href="mailto:shanghai.iclc24@nyu.edu"><i class="fa-regular fa-envelope"></i></a>
-				<!-- <a class="mx-3" href="https://t.me/iclc2024" target="blank"><i class="fab fa-telegram"></i></a> -->
+				<!-- <a class="mx-3" href="https://t.me/ICLC 2024" target="blank"><i class="fab fa-telegram"></i></a> -->
 				<a class="mx-3" href="https://discord.com/channels/790732544491913216/790984416629358632" target="blank"><i class="fab fa-discord"></i></a>
 				<!-- <a class="mx-3" href="https://assemblag.es/@incolico" target="blank"><i class="fab fa-mastodon"></i></a> -->
 				<!-- <a class="mx-3" href="https://www.instagram.com/iclc_2024/" target="blank"><i class="fab fa-instagram"></i></a> -->
