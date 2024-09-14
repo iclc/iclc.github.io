@@ -36,6 +36,10 @@ for act in acts:
 		if len(proceeding):
 			proceedings_html += '<a href="' + proceeding + '" target="_blank">Entry in Proceedings</a>'
 	out = out.replace('PROCEEDINGS', proceedings_html)
+	video_html = ''
+	if (len(act[5])):
+		video_html += '<a href="https://www.youtube.com/watch?v=' + act[5] + '&list=PLQvkt3KblW27G-Rzym71PkIzJOCPTlueP" class="video"><img src="https://img.youtube.com/vi/' + act[5] + '/0.jpg"></a>';
+	out = out.replace('VIDEO', video_html)
 	description_nl = '<p>' + html.escape(act[3], True).replace('  ', '</p><p>') + '</p>'
 	out = out.replace('DESCRIPTION', description_nl)
 	f = open('program/' + act[0] + '.html', 'w')
