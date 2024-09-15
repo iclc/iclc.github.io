@@ -141,6 +141,27 @@ function html(id, html = '') {
 	d.innerHTML += html;
 }
 
+function youtube(id, link, poster, title = "", author = "", width = "100%", height = "500px") {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+			<div class="youtube-container" style="width: ${width}; height: ${height}; background-image: url('${poster}');">
+					<div class="youtube-overlay">
+							<div>
+									${title || author ? `
+									<div class="youtube-title-author">
+											${title ? `<h3>${title}</h3>` : ""}
+											${author ? `<p>${author}</p>` : ""}
+									</div>` : ""}
+							</div>
+							<button class="youtube-play-button" onclick="window.open('${link}', '_blank')">
+									<div class="youtube-play-icon">&#9658;</div>
+									<p class="youtube-play-text">Play on YouTube</p>
+							</button>
+					</div>
+			</div>
+	`;
+}
+
 function table(id, tableId = '') {
 	const customStyles = `
 		scroll-margin-top: 6rem;
