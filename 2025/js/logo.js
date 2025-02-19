@@ -22,7 +22,7 @@ function setup() {
 
   noStroke();
   createTiles();
-  bgnColor = 0;
+  bgnColor = "#77ee99";
   fgnColor = 255;
 }
 
@@ -184,12 +184,16 @@ class MosaicTile {
 }
 
 function buildUI() {
-  createP();
+  let uiContainer = select("#ui-container"); // Select the div
+
+  createP().parent(uiContainer);
 
   let a_button = createButton("TOGGLE BN");
   a_button.mousePressed(function () {
     toggleFilters = !toggleFilters;
   });
+  a_button.parent(uiContainer); // Attach to div
+
   let w_btn = createButton("TOGGLE BACKGROUND");
   w_btn.mousePressed(function () {
     if (bgnColor == 0) {
@@ -200,30 +204,31 @@ function buildUI() {
       fgnColor = 255;
     }
   });
+  w_btn.parent(uiContainer);
 
   let recreate = createButton("REDRAW");
-
   recreate.mousePressed(function () {
     createTiles();
   });
+  recreate.parent(uiContainer);
 
-  createP();
-  createSpan("TYPOGRAPHY RESOLUTION ");
-  sampleFactor = createSlider(0.0, 1.0, 0.18, 0.01);
+  createP().parent(uiContainer);
+  createSpan("TYPOGRAPHY RESOLUTION ").parent(uiContainer);
+  sampleFactor = createSlider(0.0, 1.0, 0.18, 0.01).parent(uiContainer);
 
-  createP();
-  createSpan("MOSAIC MAX SLIDES");
-  mosaicMaxSides = createSlider(6, 20, 6, 1);
+  createP().parent(uiContainer);
+  createSpan("MOSAIC MAX SLIDES").parent(uiContainer);
+  mosaicMaxSides = createSlider(6, 20, 6, 1).parent(uiContainer);
 
-  createP();
-  createSpan("MOUSE DIASPORA STRENGTH");
-  mouseDiaspora = createSlider(10, 220, 65, 1);
+  createP().parent(uiContainer);
+  createSpan("MOUSE DIASPORA STRENGTH").parent(uiContainer);
+  mouseDiaspora = createSlider(10, 220, 65, 1).parent(uiContainer);
 
-  createP();
-  createSpan("MIN MOSAIC SIZE");
-  minMosaicSize = createSlider(1, 100, 5, 1);
+  createP().parent(uiContainer);
+  createSpan("MIN MOSAIC SIZE").parent(uiContainer);
+  minMosaicSize = createSlider(1, 100, 5, 1).parent(uiContainer);
 
-  createP();
-  createSpan("MAX MOSAIC SIZE");
-  maxMosaicSize = createSlider(1, 100, 15, 1);
+  createP().parent(uiContainer);
+  createSpan("MAX MOSAIC SIZE").parent(uiContainer);
+  maxMosaicSize = createSlider(1, 100, 15, 1).parent(uiContainer);
 }
