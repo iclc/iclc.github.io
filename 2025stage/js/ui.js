@@ -3,7 +3,7 @@ function buildUI() {
 
   createP().parent(uiContainer);
 
-  let a_button = createButton("TOGGLE BN");
+  let a_button = createButton("TOGGLE BW");
   a_button.mousePressed(function () {
     toggleFilters = !toggleFilters;
   });
