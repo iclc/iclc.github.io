@@ -11605,7 +11605,7 @@ body {
   height: auto;
   min-height: 55rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/gaudi_roof_desat.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/gaudi-roof-desat.jpg");
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 90%, #000 100%); */
   background-position: center;
   background-repeat: no-repeat;
