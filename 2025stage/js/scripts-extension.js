@@ -1,14 +1,14 @@
 // publish bools
 let publishStream = false;
-let publishCall = false;
-let publishWorkshops = false;
-let publishAbout = false;
+let publishCall = true;
+let publishWorkshops = true;
+let publishAbout = true;
 let publishCatalogue = false;
-let publishTravel = false;
-let publishVenues = false;
-let publishSatellite = false;
-let publishTable = false;
-let publishMap = false;
+let publishTravel = true;
+let publishVenues = true;
+let publishSatellite = true;
+let publishTable = true;
+let publishMap = true;
 let publishRegistration = false;
 let publishTickets = false;
 
