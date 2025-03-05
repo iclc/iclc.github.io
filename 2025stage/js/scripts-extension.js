@@ -17,7 +17,7 @@ function makeMenu() {
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-black fixed-top" id="mainNav">
 		<div class="container px-4 px-lg-5">
-			<a class="navbar-brand" href="./index.html">ICLC2023</a>
+			<a class="navbar-brand" href="./index.html">ICLC2025</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i>
 			</button>
@@ -167,10 +167,10 @@ function socials() {
 		<div class="container px-4 px-lg-5">
 			<div class="social d-flex justify-content-center">
 				<a class="mx-2" href="mailto:iclc@creativecodingutrecht.nl"><i class="fa-regular fa-envelope"></i></a>
-				<a class="mx-2" href="https://t.me/iclc2023" target="blank"><i class="fab fa-telegram"></i></a>
-				<a class="mx-2" href="https://discord.com/channels/790732544491913216/795094107327561748" target="blank"><i class="fab fa-discord"></i></a>
+				<a class="mx-2" href="https://t.me/iclc_news" target="blank"><i class="fab fa-telegram"></i></a>
+				<a class="mx-2" href="https://discord.gg/XjCYAXZF" target="blank"><i class="fab fa-discord"></i></a>
 				<a class="mx-2" href="https://assemblag.es/@incolico" target="blank"><i class="fab fa-mastodon"></i></a>
-				<a class="mx-2" href="https://www.instagram.com/iclc_2023/" target="blank"><i class="fab fa-instagram"></i></a>
+				<a class="mx-2" href="https://www.instagram.com/iclc_2025/" target="blank"><i class="fab fa-instagram"></i></a>
 				<a class="mx-2" href="https://www.facebook.com/livecodenet" target="blank"><i class="fab fa-facebook"></i></a>
 				<!-- <a class="mx-2" href="https://www.youtube.com/@Eulerroom" target="blank"><i class="fab fa-youtube"></i></a> -->
 				<!-- <a class="mx-2" href="https://twitter.com/incolico" target="blank"><i class="fab fa-twitter"></i></a> -->
@@ -214,7 +214,7 @@ function socials() {
 // </div> -->
 
 function footer() {
-	let c = 'ICLC 2023';
+	let c = 'ICLC 2025';
 	document.body.innerHTML += `
 	<footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; ${c}</div></footer>
 	`
