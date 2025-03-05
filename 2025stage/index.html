@@ -9,13 +9,6 @@
 	<!-- Core theme CSS (includes Bootstrap)-->
 	<link href="css/styles.css" rel="stylesheet" />
 
-	<!-- p5.js include for visual logo -->
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
-	<!-- Fonts for logo -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
-
 	<style>
 		h2 a {
 			text-decoration: none !important;
@@ -23,19 +16,41 @@
 		}
 	</style>
 
-	<meta property="og:title" content="ICLC 2023" />
+	<meta property="og:title" content="ICLC 2025" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://iclc.toplap.org/2023/" />
-	<meta property="og:description" content="International Conference on Live Coding 2023, April 19 to April 23,  Utrecht (NL)" />
+	<meta property="og:url" content="https://iclc.toplap.org/2025/" />
+	<meta property="og:description" content="International Conference on Live Coding 2025, May 27 to May 31, Barcelona" />
 
-	<meta property="og:image" content="https://iclc.toplap.org/2023/assets/img/open-graph.png" />
+	<meta property="og:image" content="https://iclc.toplap.org/2025/assets/img/open-graph.png" />
 	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 
-	<meta property="og:locale" content="en_US" />   
+	<meta property="og:locale" content="en_US" />
 
-	<title>ICLC 2023</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+	<script>
+		let tiles = [];
+		let font;
+		let toggleFilters = false;
+		let fgnColor;
+		let sampleFactor;
+		let mosaicMaxSides = 6;
+		let mouseDiaspora = 65;
+		let minMosaicSize = 5;
+		let maxMosaicSize = 15;
+
+		function preload() {
+			font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
+			copyFont = loadFont("assets/AnonymousPro-Regular.ttf");
+			headingFont = loadFont("assets/ZenDots-Regular.ttf");
+		}
+	</script>
+	<script type="text/javascript" id="logo" src="js/logo.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+
+	<title>ICLC 2025</title>
 </head>
 <body id="page-top">
 	<!-- Generate the main menu bar -->
@@ -43,42 +58,19 @@
 	<script>makeMenu();</script>
 
 	
-	<div id="p5Canvas" style="display:block;position:absolute"></div>
-	
 	<!-- Masthead-->
 	<header class="masthead" id="m1">
-		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-			<div class="d-flex justify-content-center">
-				<div class="text-center">
-					<h1 class="mx-auto my-0 text-uppercase">ICLC 2023</h1>
-					<h2 class="text-white mx-auto mt-4 mb-5">19 - 23 April in Utrecht, The Netherlands</h2>
-					<br>
-					<a class="btn btn-primary" href="./catalogue/" style="font-weight: bold;">Catalogue, Media & Publications</a>
-
-					<!-- <h2 class="text-white mx-auto" style="background:none"><a href="#about">⬇︎</a></h2> -->
-				</div>
-			</div>
+		<div id="canvas-container">
+			<div id="editor"></div>
 		</div>
+		<div id="ui-container"></div>
 	</header>
-
-	<script>
-		// remove the background image and make transparent for p5 sketch;
-		document.getElementById('m1').style.background = "rgb(0,0,0,0.25)";
-	</script>
-
-	<script>
-		socials();
-	</script>
-
-	<script src="./lib/logo.js"></script>
-	<!-- <script src="./lib/p5test.js"></script> -->
-
 	<!-- About-->
 	<section class="about-section" id="about">
 		<script>
-paragraph('about', 'Theme: Displacement',
-`(<a href="https://en.wikipedia.org/wiki/Displacement">Wikipedia</a>: <strong><em>Displacement (linguistics)</em></strong>, the ability of humans (and possibly some animals) to communicate ideas that are remote in time and/or space. <strong><em>Forced displacement</em></strong>, by persecution or violence. <strong><em>Displacement (psychology)</em></strong>, a sub-conscious defense mechanism.)</p>
-<p>It has been ten years since the first ICLC call for participation, which proposed “[…] exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.” In the subsequent decade, we have collectively and collaboratively experimented with varying levels of live coding abstraction, developed domain-specific languages, and explored the levels of agency offered by models created manually, or sometimes with the assistance of learning algorithms. We have invented and played with numerous interfaces to interact with algorithms and the world around us during performances. These explorations revolve around defining what processes we actually want to showcase, and in which formats we want to express them, while “thinking algorithmically” with an audience.</p>
+socials();
+paragraph('about', 'Theme: Liveness',
+`<p>It has been ten years since the first ICLC call for participation, which proposed “[…] exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.” In the subsequent decade, we have collectively and collaboratively experimented with varying levels of live coding abstraction, developed domain-specific languages, and explored the levels of agency offered by models created manually, or sometimes with the assistance of learning algorithms. We have invented and played with numerous interfaces to interact with algorithms and the world around us during performances. These explorations revolve around defining what processes we actually want to showcase, and in which formats we want to express them, while “thinking algorithmically” with an audience.</p>
 
 <p>On this, the 9th edition of the conference, we invite the community to reflect about liveness and its many forms and consequences within live coding. We believe the tension between what is live and what is not is a key element of live coding. What effects does it have on the processes, technologies and forms in the performance? How do the many forms of liveness impact and transform the hybridization between the digital/algorithmic and the material? How does liveness relate to and/or define the socio-cultural aspects of live coding communities</p>
 
@@ -179,6 +171,6 @@ photo by Paulus van Dorsten`,
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
-	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	<!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
 </body>
 </html>

@@ -11603,7 +11603,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
+  min-height: 55rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/algo2-paulus-van-dorsten.jpg");
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 90%, #000 100%); */
@@ -11611,6 +11611,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+	text-align: center;
 }
 .masthead h1, .masthead .h1 {
   /* font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
@@ -11638,7 +11639,7 @@ body {
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
-    padding: 0;
+    padding: 2rem;
   }
   .masthead h1, .masthead .h1 {
     font-size: 6.5rem;
@@ -11649,6 +11650,20 @@ body {
     max-width: 30rem;
     font-size: 2.25rem;
   }
+}
+
+#canvas-container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#editor {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .about-section {
