@@ -182,7 +182,7 @@
 }
 
 .timetable .time-entry {
-    background-color: rgb(0, 82, 142);
+    background-color: #0095ff;
 	opacity: 1;
     transition: background-color .2s;
     height: var(--entry-height);
@@ -205,6 +205,6 @@
 }
 
 .timetable .time-entry:hover {
-    background-color: rgb(246, 149, 0);
+    background-color: #6ed6a2;
 }
 
