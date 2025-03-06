@@ -36,12 +36,6 @@ function draw() {
   textFont(font);
   textSize(20);
   fill(255, 255, 0);
-  /*
-  text("TYPOGRAPHY RESOLUTION: " + sampleFactor.value(), 10, height - 15);
-  text("MAX MOSAIC SIZE: " + maxMosaicSize.value(), 10, height - 35);
-  text("MIN MOSAIC SIZE: " + minMosaicSize.value(), 10, height - 55);
-  text("MOSAIC MAX SLIDES: " + mosaicMaxSides.value(), 10, height - 75);
-  */
 }
 
 // Crear los mosaicos que forman las letras
@@ -81,7 +75,6 @@ class MosaicTile {
     this.breathingAmount = random(0.2, 0.005); // Cantidad de "respiración" aleatoria
     this.breathingSpeed = random(0.01, 0.003); // Velocidad de respiración
     this.breathingDirection = -1; // Dirección de la respiración
-    this.points = []; // store all actual points for SVG export
 
     // Nueva propiedad para el "reset" a posición original
     this.timeToReset = random(2, 9) * 1000; // Tiempo en milisegundos (entre 2 y 9 segundos)
@@ -157,21 +150,13 @@ class MosaicTile {
     strokeWeight(0.5);
     stroke(brightness(this.color), 55);
     beginShape();
-    this.points = [];
     for (let i = 0; i < this.sides; i++) {
       let angle = map(i, 0, this.sides, 0, TWO_PI + this.randomAngle); // Usar el ángulo aleatorio único
       let sx = this.x + sin(angle) * this.size * 1.2;
       let sy = this.y + cos(angle) * this.size * 1.234;
       vertex(sx, sy);
-      this.points.push([sx, sy]); // store the actual final vertex so we can export it later as SVG
     }
     endShape(CLOSE);
-  }
-
-  getSVG() {
-    let fillRGB = this.color.levels.slice(0,3),
-        strokeRGB = this.color.levels.map(l=>Math.floor(l*0.55)).slice(0,3);
-    return `<polygon points="${this.points.map(p=>p.toString()).join(' ')}" style="fill:rgb(${fillRGB.join(',')});stroke:rgb(${strokeRGB.join(',')});stroke-width:0.5" />`;
   }
 }
 
