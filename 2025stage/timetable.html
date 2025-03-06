@@ -24,6 +24,24 @@
 	<!-- Font Awesome icons (free version)-->
 	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
+	<script>
+		let tiles = [];
+		let font;
+		let toggleFilters = false;
+		let fgnColor;
+		let sampleFactor;
+		let mosaicMaxSides = 6;
+		let mouseDiaspora = 65;
+		let minMosaicSize = 5;
+		let maxMosaicSize = 15;
+
+		function preload() {
+			font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
+			copyFont = loadFont("assets/AnonymousPro-Regular.ttf");
+			headingFont = loadFont("assets/ZenDots-Regular.ttf");
+		}
+	</script>
+
 	<!-- Core theme CSS (includes Bootstrap)-->
 	<link href="css/styles.css" rel="stylesheet" />
 
