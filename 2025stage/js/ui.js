@@ -42,20 +42,25 @@ function buildUI() {
   createP().parent(uiContainer);
   createSpan("TYPOGRAPHY RESOLUTION ").parent(uiContainer);
   sampleFactor = createSlider(0.0, 1.0, 0.18, 0.01).parent(uiContainer);
+  sampleFactor.changed(function () { createTiles(); });
 
   createP().parent(uiContainer);
-  createSpan("MOSAIC MAX SLIDES").parent(uiContainer);
+  createSpan("MOSAIC MAX SIDES").parent(uiContainer);
   mosaicMaxSides = createSlider(6, 20, 6, 1).parent(uiContainer);
+  mosaicMaxSides.changed(function () { createTiles(); });
 
   createP().parent(uiContainer);
   createSpan("MOUSE DIASPORA STRENGTH").parent(uiContainer);
   mouseDiaspora = createSlider(10, 220, 65, 1).parent(uiContainer);
+  mouseDiaspora.changed(function () { createTiles(); });
 
   createP().parent(uiContainer);
   createSpan("MIN MOSAIC SIZE").parent(uiContainer);
   minMosaicSize = createSlider(1, 100, 5, 1).parent(uiContainer);
+  minMosaicSize.changed(function () { createTiles(); });
 
   createP().parent(uiContainer);
   createSpan("MAX MOSAIC SIZE").parent(uiContainer);
   maxMosaicSize = createSlider(1, 100, 15, 1).parent(uiContainer);
+  sampleFactor.changed(function () { createTiles(); });
 }

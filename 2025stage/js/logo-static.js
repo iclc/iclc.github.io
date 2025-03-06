@@ -38,7 +38,7 @@ function draw() {
 	text("TYPOGRAPHY RESOLUTION: " + sampleFactor.value(), 10, height - 15);
 	text("MAX MOSAIC SIZE: " + maxMosaicSize.value(), 10, height - 35);
 	text("MIN MOSAIC SIZE: " + minMosaicSize.value(), 10, height - 55);
-	text("MOSAIC MAX SLIDES: " + mosaicMaxSides.value(), 10, height - 75);
+	text("MOSAIC MAX SIDES: " + mosaicMaxSides.value(), 10, height - 75);
 }
 
 // Crear los mosaicos que forman las letras
@@ -146,7 +146,7 @@ function buildUI() {
 	sampleFactor.changed(function () { createTiles(); });
 
 	createP().parent(uiContainer);
-	createSpan("MOSAIC MAX SLIDES").parent(uiContainer);
+	createSpan("MOSAIC MAX SIDES").parent(uiContainer);
 	mosaicMaxSides = createSlider(6, 20, 6, 1).parent(uiContainer);
 	mosaicMaxSides.changed(function () { createTiles(); });
 
