@@ -11,6 +11,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@font-face {
+  font-family: AnonymousPro-Regular;
+  src: url(/assets/AnonymousPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: ZenDots-Regular;
+  src: url(/assets/ZenDots-Regular.ttf);
+}
+
 :root {
   --primary: white;
   --secondary: #39b8b8;
@@ -126,6 +136,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
+  font-family: ZenDots-Regular;
   line-height: 1.2;
   text-transform: uppercase;
 }
