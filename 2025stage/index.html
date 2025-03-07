@@ -58,9 +58,19 @@
 
 	
 	<!-- Masthead-->
-	<header class="masthead" id="m1">
-		<div id="canvas-container">
+	<header class="masthead" id="m1" style="overflow: hidden">
+		<div
+		  style="
+			position: relative;
+			height: 600px;
+			max-width: 800px;
+			width: 100%;
+			margin: 0 auto;
+		  "
+		>
+		  <div id="canvas-container" class="canvas-container">
 			<div id="editor"></div>
+		  </div>
 		</div>
 		<div id="ui-container"></div>
 	</header>
