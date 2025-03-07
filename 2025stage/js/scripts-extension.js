@@ -13,29 +13,30 @@ let publishRegistration = false;
 let publishTickets = false;
 
 function makeMenu() {
-	document.body.innerHTML += `
+  // prettier-ignore
+  document.body.innerHTML += `
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-black fixed-top" id="mainNav">
-		<div class="container px-4 px-lg-5">
+		<div class="container" style="max-width: 1200px">
 			<a class="navbar-brand" href="./index.html">ICLC2025</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ms-auto">
-				${(publishStream)?`<li class="nav-item blink"><a class="nav-link" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>`:''}
-				${(publishTable)?`<li class="nav-item"><a class="nav-link" href="./timetable.html">Timetable</a></li>`:''}
-				${(publishCatalogue)?`<li class="nav-item"><a class="nav-link" href="./catalogue/">Catalogue</a></li>`:''}
-				${(publishRegistration)?`<li class="nav-item"><a class="nav-link" href="./registration.html">Registration</a></li>`:''}
-				${(publishTickets)?`<li class="nav-item"><a class="nav-link" href="./tickets.html">Tickets & Info</a></li>`:''}
-				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link" href="./workshops.html">Workshops</a></li>`:''}
-				${(publishMap)?`<li class="nav-item"><a class="nav-link" href="./map.html">Map</a></li>`:''}
-				${(publishVenues)?`<li class="nav-item"><a class="nav-link" href="./venues.html">Venues</a></li>`:''}
-				${(publishTravel)?`<li class="nav-item"><a class="nav-link" href="./travel-stay.html">Travel & Stay</a></li>`:''}
-				${(publishSatellite)?`<li class="nav-item"><a class="nav-link" href="./satellite.html">Satellite Events</a></li>`:''}
-				${(publishCall)?`<li class="nav-item"><a class="nav-link" href="./open-call.html">Open Call</a></li>`:''}
-				${(publishAbout)?`<li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>`:''}
-					<!--<li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>-->
+				<ul class="navbar-nav ms-auto"; style="flex-grow: 1; justify-content: space-between;">
+				${(publishStream)?`<li class="nav-item blink"><a class="nav-link p-2" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>`:''}
+				${(publishTable)?`<li class="nav-item"><a class="nav-link p-2" href="./timetable.html">Timetable</a></li>`:''}
+				${(publishCatalogue)?`<li class="nav-item"><a class="nav-link p-2" href="./catalogue/">Catalogue</a></li>`:''}
+				${(publishRegistration)?`<li class="nav-item"><a class="nav-link p-2" href="./registration.html">Registration</a></li>`:''}
+				${(publishTickets)?`<li class="nav-item"><a class="nav-link p-2" href="./tickets.html">Tickets & Info</a></li>`:''}
+				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link p-2" href="./workshops.html">Workshops</a></li>`:''}
+				${(publishMap)?`<li class="nav-item"><a class="nav-link p-2" href="./map.html">Map</a></li>`:''}
+				${(publishVenues)?`<li class="nav-item"><a class="nav-link p-2" href="./venues.html">Venues</a></li>`:''}
+				${(publishTravel)?`<li class="nav-item"><a class="nav-link p-2" href="./travel-stay.html">Travel & Stay</a></li>`:''}
+				${(publishSatellite)?`<li class="nav-item"><a class="nav-link p-2" href="./satellite.html">Satellite Events</a></li>`:''}
+				${(publishCall)?`<li class="nav-item"><a class="nav-link p-2" href="./open-call.html">Open Call</a></li>`:''}
+				${(publishAbout)?`<li class="nav-item"><a class="nav-link p-2" href="./about.html">About</a></li>`:''}
+					<!--<li class="nav-item"><a class="nav-link p-2" href="#signup">Contact</a></li>-->
 				</ul>
 			</div>
 		</div>
