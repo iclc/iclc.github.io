@@ -4181,6 +4181,7 @@ textarea.form-control-lg {
 
 .navbar {
   font-family: ZenDots-Regular;
+  font-size: 0.85rem;
   position: relative;
   display: flex;
   flex-wrap: wrap;
