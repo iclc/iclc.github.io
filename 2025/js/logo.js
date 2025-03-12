@@ -1,33 +1,15 @@
-let tiles = [];
-let font;
-let toggleFilters = false;
-let bgnColor;
-let fgnColor;
-let sampleFactor;
-let mosaicMaxSides = 6;
-let mouseDiaspora = 65;
-let minMosaicSize = 5;
-let maxMosaicSize = 15;
-
-function preload() {
-  font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
-  copyFont = loadFont("assets/AnonymousPro-Regular.ttf");
-  headingFont = loadFont("assets/ZenDots-Regular.ttf");
-}
-
 function setup() {
   const container = select("#canvas-container"); // Select the div
-  createCanvas(800, 800).parent(container); // Create canvas inside the div
+  createCanvas(800, 600).parent(container); // Create canvas inside the div
   buildUI();
 
   noStroke();
   createTiles();
-  bgnColor = "#77ee99";
   fgnColor = 255;
 }
 
 function draw() {
-  background(bgnColor);
+  clear();
 
   // Dibujar los mosaicos
   for (let tile of tiles) {
@@ -54,10 +36,6 @@ function draw() {
   textFont(font);
   textSize(20);
   fill(255, 255, 0);
-  text("TYPOGRAPHY RESOLUTION: " + sampleFactor.value(), 10, height - 15);
-  text("MAX MOSAIC SIZE: " + maxMosaicSize.value(), 10, height - 35);
-  text("MIN MOSAIC SIZE: " + minMosaicSize.value(), 10, height - 55);
-  text("MOSAIC MAX SLIDES: " + mosaicMaxSides.value(), 10, height - 75);
 }
 
 // Crear los mosaicos que forman las letras
@@ -71,7 +49,6 @@ function createTiles() {
   for (let pt of points) {
     tiles.push(new MosaicTile(pt.x, pt.y));
   }
-  //   save("mySVG.svg"); // give file name
 }
 
 // Clase para los mosaicos
@@ -183,52 +160,4 @@ class MosaicTile {
   }
 }
 
-function buildUI() {
-  let uiContainer = select("#ui-container"); // Select the div
 
-  createP().parent(uiContainer);
-
-  let a_button = createButton("TOGGLE BN");
-  a_button.mousePressed(function () {
-    toggleFilters = !toggleFilters;
-  });
-  a_button.parent(uiContainer); // Attach to div
-
-  let w_btn = createButton("TOGGLE BACKGROUND");
-  w_btn.mousePressed(function () {
-    if (bgnColor == 0) {
-      bgnColor = 255;
-      fgnColor = 0;
-    } else {
-      bgnColor = 0;
-      fgnColor = 255;
-    }
-  });
-  w_btn.parent(uiContainer);
-
-  let recreate = createButton("REDRAW");
-  recreate.mousePressed(function () {
-    createTiles();
-  });
-  recreate.parent(uiContainer);
-
-  createP().parent(uiContainer);
-  createSpan("TYPOGRAPHY RESOLUTION ").parent(uiContainer);
-  sampleFactor = createSlider(0.0, 1.0, 0.18, 0.01).parent(uiContainer);
-
-  createP().parent(uiContainer);
-  createSpan("MOSAIC MAX SLIDES").parent(uiContainer);
-  mosaicMaxSides = createSlider(6, 20, 6, 1).parent(uiContainer);
-
-  createP().parent(uiContainer);
-  createSpan("MOUSE DIASPORA STRENGTH").parent(uiContainer);
-  mouseDiaspora = createSlider(10, 220, 65, 1).parent(uiContainer);
-
-  createP().parent(uiContainer);
-  createSpan("MIN MOSAIC SIZE").parent(uiContainer);
-  minMosaicSize = createSlider(1, 100, 5, 1).parent(uiContainer);
-
-  createP().parent(uiContainer);
-  createSpan("MAX MOSAIC SIZE").parent(uiContainer);
-  maxMosaicSize = createSlider(1, 100, 15, 1).parent(uiContainer);
-}
