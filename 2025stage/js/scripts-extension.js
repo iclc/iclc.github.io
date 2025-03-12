@@ -1,6 +1,6 @@
 // publish bools
 let publishStream = false;
-let publishCall = false;
+let publishCall = true;
 let publishWorkshops = false;
 let publishAbout = true;
 let publishCatalogue = false;
@@ -34,7 +34,7 @@ function makeMenu() {
 				${(publishVenues)?`<li class="nav-item"><a class="nav-link p-2" href="./venues.html">Venues</a></li>`:''}
 				${(publishTravel)?`<li class="nav-item"><a class="nav-link p-2" href="./travel-stay.html">Travel & Stay</a></li>`:''}
 				${(publishSatellite)?`<li class="nav-item"><a class="nav-link p-2" href="./satellite.html">Satellite Events</a></li>`:''}
-				${(publishCall)?`<li class="nav-item"><a class="nav-link p-2" href="./open-call.html">Open Call</a></li>`:''}
+				${(publishCall)?`<li class="nav-item"><a class="nav-link p-2" href="./call.html">Call</a></li>`:''}
 				${(publishAbout)?`<li class="nav-item"><a class="nav-link p-2" href="./about.html">About</a></li>`:''}
 					<!--<li class="nav-item"><a class="nav-link p-2" href="#signup">Contact</a></li>-->
 				</ul>
