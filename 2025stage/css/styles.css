@@ -11855,3 +11855,13 @@ body {
   outline: none;
   background: rgba(255, 255, 255, 0.1);
 }
+
+.call-item {}
+
+.call-item.complete {
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+.text-green {
+  color: #6ed6a2 
+}
