@@ -61,7 +61,7 @@ function paragraph(id, head = '', txt = '') {
 	<div class="container px-4 px-lg-5">
 		<div class="row gx-4 gx-lg-5 justify-content-center">
 			<div class="col-lg-8">
-			<h2 class="mt-5 mb-5" id="themes">${head}</h2>
+			<h2 class="mt-5 mb-5 justify-content-center" id="themes">${head}</h2>
 			<p>${txt}</p>
 			</div>
 		</div>
@@ -121,7 +121,7 @@ function paragraphImageLeft(id, head = '', txt = '', img = '') {
 			<div class="bg-black h-100 project">
 				<div class="d-flex h-100">
 					<div class="project-text w-100 my-auto text-lg-left">
-					<h4 class="mt-5 mb-3">${head}</h4>
+					<h4 class="mt-1 mb-1">${head}</h4>
 					<p class="mb-0 text-white-50">${txt}</p>
 					<hr class="d-none d-lg-block mb-0 ms-0" />
 					</div>
@@ -140,7 +140,7 @@ function paragraphImageRight(id, head = '', txt = '', img = '') {
 			<div class="bg-black h-100 project">
 				<div class="d-flex h-100">
 					<div class="project-text w-100 my-auto text-lg-right">
-					<h4 class="mt-5 mb-3">${head}</h4>
+					<h4 class="mt-1 mb-1">${head}</h4>
 					<p class="mb-0 text-white-50">${txt}</p>
 					<hr class="d-none d-lg-block mb-0 me-0" />
 					</div>
