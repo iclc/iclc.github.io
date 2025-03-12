@@ -5,11 +5,11 @@ let publishWorkshops = true;
 let publishAbout = true;
 let publishCatalogue = false;
 let publishTravel = true;
-let publishVenues = true;
+let publishVenues = false;
 let publishSatellite = true;
 let publishTable = true;
-let publishMap = true;
-let publishRegistration = false;
+let publishMap = false;
+let publishRegistration = true;
 let publishTickets = false;
 
 function makeMenu() {
