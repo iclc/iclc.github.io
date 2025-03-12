@@ -23,7 +23,7 @@ function makeMenu() {
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ms-auto"; style="flex-grow: 1; justify-content: space-between;">
+				<ul class="navbar-nav ms-auto"; style="flex-grow: 1; justify-content: flex-end; gap: 16px;">
 				${(publishStream)?`<li class="nav-item blink"><a class="nav-link p-2" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>`:''}
 				${(publishTable)?`<li class="nav-item"><a class="nav-link p-2" href="./timetable.html">Timetable</a></li>`:''}
 				${(publishCatalogue)?`<li class="nav-item"><a class="nav-link p-2" href="./catalogue/">Catalogue</a></li>`:''}
