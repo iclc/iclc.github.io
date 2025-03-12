@@ -1,15 +1,15 @@
 // publish bools
 let publishStream = false;
-let publishCall = true;
-let publishWorkshops = true;
+let publishCall = false;
+let publishWorkshops = false;
 let publishAbout = true;
 let publishCatalogue = false;
 let publishTravel = true;
 let publishVenues = false;
-let publishSatellite = true;
+let publishSatellite = false;
 let publishTable = true;
 let publishMap = false;
-let publishRegistration = true;
+let publishRegistration = false;
 let publishTickets = false;
 
 function makeMenu() {
