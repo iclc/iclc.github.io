@@ -11833,3 +11833,25 @@ body {
     transform: translateX(-50%) scale(0.6);
   }
 }
+
+
+.btn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background: transparent;
+}
+
+.btn-circle:focus, .btn-circle:hover {
+  color: white;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
