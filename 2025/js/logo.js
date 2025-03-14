@@ -1,7 +1,12 @@
 function setup() {
-  const container = select("#canvas-container"); // Select the div
-  createCanvas(800, 600).parent(container); // Create canvas inside the div
-  buildUI();
+  const container = document.querySelector("#canvas-container"); // Select the div
+  createCanvas(800, 420).parent(container); // Create canvas inside the div
+
+  sampleFactor = 0.18;
+  mosaicMaxSides = 6;
+  mouseDiaspora = 65;
+  minMosaicSize = 5;
+  maxMosaicSize = 15;
 
   noStroke();
   createTiles();
@@ -11,37 +16,32 @@ function setup() {
 function draw() {
   clear();
 
-  // Dibujar los mosaicos
+  // Draw each tile
   for (let tile of tiles) {
     tile.update(mouseX, mouseY);
     tile.display();
-  }
-
-  if (toggleFilters) {
-    //filter(INVERT );
-    filter(GRAY);
   }
 
   textFont(copyFont);
   stroke(255, 255, 255);
   fill(fgnColor);
   textSize(26);
-  text("INTERNATIONAL CONFERENCE ON LIVE CODING", 122, 444);
+  text("INTERNATIONAL CONFERENCE ON LIVE CODING", 122, 330);
 
   textFont(headingFont);
   fill(fgnColor);
   textSize(45.5);
-  text("BARCELONA 2025", 122, 492);
+  text("BARCELONA 2025", 122, 378);
 
   textFont(font);
   textSize(20);
   fill(255, 255, 0);
 }
 
-// Crear los mosaicos que forman las letras
+// Create all individual tiles in the shape of the logo characters
 function createTiles() {
-  let points = font.textToPoints("ICLC", 100, height / 2, 300, {
-    sampleFactor: sampleFactor.value(), // Densidad de puntos
+  let points = font.textToPoints("ICLC", 100, height * 3/5, 300, {
+    sampleFactor: sampleFactor,
     simplifyThreshold: 0,
   });
 
@@ -51,16 +51,16 @@ function createTiles() {
   }
 }
 
-// Clase para los mosaicos
+// Individual tile class
 class MosaicTile {
   constructor(x, y) {
     this.originX = x;
     this.originY = y;
-    this.x = x + random(-10, 10); // Posición inicial con ligera variación
+    this.x = x + random(-10, 10); // Initial position, with some randomness applied
     this.y = y + random(-10, 10);
-    this.size = random(minMosaicSize.value(), maxMosaicSize.value()); // Tamaño aleatorio
-    this.sides = int(random(3, mosaicMaxSides.value())); // Número aleatorio de lados (entre 3 y 5)
-    this.rotation = random(TWO_PI); // Rotación aleatoria inicial
+    this.size = random(minMosaicSize, maxMosaicSize); // Random size
+    this.sides = int(random(3, mosaicMaxSides)); // Random number of sides
+    this.rotation = random(TWO_PI); // Initial random rotation
     this.color = random([
       color(0, 82, 142),
       color(246, 149, 0),
@@ -70,53 +70,51 @@ class MosaicTile {
       color(255, 204, 0),
       color(255, 255, 255),
     ]);
-    this.offsetX = random(-0.5, 10.5); // Movimiento horizontal suave
-    this.offsetY = random(-10.5, 0.5); // Movimiento vertical suave
-    this.breathingAmount = random(0.2, 0.005); // Cantidad de "respiración" aleatoria
-    this.breathingSpeed = random(0.01, 0.003); // Velocidad de respiración
-    this.breathingDirection = -1; // Dirección de la respiración
+    this.offsetX = random(-0.5, 10.5); // Soft horizontal movement
+    this.offsetY = random(-10.5, 0.5); // Soft vertical movement
+    this.breathingAmount = random(0.2, 0.005); // Random breathing factor
+    this.breathingSpeed = random(0.01, 0.003); // Breathing speed
+    this.breathingDirection = -1; // Breathing direction
 
-    // Nueva propiedad para el "reset" a posición original
-    this.timeToReset = random(2, 9) * 1000; // Tiempo en milisegundos (entre 2 y 9 segundos)
+    // Properties to support resetting the tile to its original position periodically
+    this.timeToReset = random(2, 9) * 1000; // Time in milliseconds (2~9s)
     this.lastResetTime = millis();
     this.isAtOriginalPosition = false;
 
-    // Asignar un ángulo aleatorio único para cada mosaico
-    this.randomAngle = random(-PI, PI); // Ángulo aleatorio único por mosaico
+    this.randomAngle = random(-PI, PI); // Unique random angle for each tile
   }
 
   update(mouseX, mouseY) {
-    // Verificar si es el momento de "resetear" la posición
+    // Check whether it's time to reset to original position
     if (
       millis() - this.lastResetTime >= this.timeToReset &&
       !this.isAtOriginalPosition
     ) {
       this.x = this.originX;
       this.y = this.originY;
-      //this.size = random(5, 15); // Resetear tamaño aleatorio
       this.isAtOriginalPosition = true;
       this.lastResetTime = millis();
     }
 
-    // Mantener la posición original durante un tiempo (entre 2 y 9 segundos)
+    // Stay at original position for a bit (2~9s)
     if (this.isAtOriginalPosition && millis() - this.lastResetTime >= 1000) {
       this.isAtOriginalPosition = false;
-      this.timeToReset = random(2, 9) * 1000; // Resetea el tiempo para el siguiente ciclo
+      this.timeToReset = random(2, 9) * 1000; // Reset time for next cycle
     }
 
-    // Movimiento suave dentro de un área limitada
+    // Soft contained movement
     if (!this.isAtOriginalPosition) {
       this.x += this.offsetX;
       this.y += this.offsetY;
 
-      // Limitar el movimiento para que no se aleje demasiado
+      // Restrict movement so it doesn't go too far
       this.x = constrain(this.x, this.originX - 15, this.originX + 15);
       this.y = constrain(this.y, this.originY - 15, this.originY + 15);
     }
 
-    // Efecto de paralaje al mover el mouse
+    // Parallax effect when mouse moves
     let distance = dist(mouseX, mouseY, this.originX, this.originY);
-    if (distance < mouseDiaspora.value()) {
+    if (distance < mouseDiaspora) {
       this.x += (this.originX - mouseX) * 0.2151;
       this.y += (this.originY - mouseY) * 0.121611;
       this.rotation = this.rotate * sin(TWO_PI);
@@ -124,34 +122,34 @@ class MosaicTile {
 
     this.rotation *= cos(this.rotation * TWO_PI);
 
-    // Efecto de respiración
+    // Breathing effect
     if (!this.isAtOriginalPosition) {
       this.size += this.breathingDirection * this.breathingSpeed;
       if (this.size >= this.breathingAmount || this.size <= 5) {
-        this.breathingDirection *= -1; // Invertir la dirección de la respiración
+        this.breathingDirection *= -1; // Invert breathing direction
       }
     }
   }
 
   display() {
-    // Dibujar la sombra
-    fill(0, 86); // Sombra con color oscuro y un poco de transparencia
+    // Draw shadow
+    fill(0, 86); // Shadow is dark and semi transparent
     beginShape();
     for (let i = 0; i < this.sides; i++) {
-      let angle = map(i, 0, this.sides, 0, TWO_PI + this.randomAngle); // Usar el ángulo aleatorio único
-      let sx = this.x + cos(angle) * this.size + 3; // Desplazamiento para la sombra
-      let sy = this.y + sin(angle) * this.size + 3; // Desplazamiento para la sombra
+      let angle = map(i, 0, this.sides, 0, TWO_PI + this.randomAngle); // Unique random angle
+      let sx = this.x + cos(angle) * this.size + 3; // Shadow offset
+      let sy = this.y + sin(angle) * this.size + 3; // Shadow offset
       vertex(sx, sy);
     }
     endShape(CLOSE);
 
-    // Dibujar el mosaico
+    // Draw the mosaic
     fill(this.color);
     strokeWeight(0.5);
     stroke(brightness(this.color), 55);
     beginShape();
     for (let i = 0; i < this.sides; i++) {
-      let angle = map(i, 0, this.sides, 0, TWO_PI + this.randomAngle); // Usar el ángulo aleatorio único
+      let angle = map(i, 0, this.sides, 0, TWO_PI + this.randomAngle); // Unique random angle
       let sx = this.x + sin(angle) * this.size * 1.2;
       let sy = this.y + cos(angle) * this.size * 1.234;
       vertex(sx, sy);

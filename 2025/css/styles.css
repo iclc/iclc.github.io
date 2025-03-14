@@ -11700,11 +11700,25 @@ body {
 #editor {
   width: 100%;
   height: 100%;
-  display: none;
   position: absolute;
+  top: 0; /* on top of logo */
   background-color: rgba(0,0,0,0.5);
+  display: block;
 }
 
+#editor.hidden {
+  display: none;
+}
+
+.close-button {
+  display: block;
+  position: absolute;
+  color: coral;
+  z-index: 1000;
+  right: 8px;
+  top: 5px;
+  cursor: pointer;
+}
 .about-section {
   padding-top: 6rem;
   /* padding-top: 10rem; */
