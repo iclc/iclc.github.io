@@ -5,12 +5,12 @@ let publishWorkshops = false;
 let publishAbout = true;
 let publishCatalogue = false;
 let publishTravel = true;
-let publishVenues = false;
+let publishVenues = true;
 let publishSatellite = false;
 let publishTable = true;
 let publishMap = false;
-let publishRegistration = false;
-let publishTickets = false;
+let publishRegistration = true;
+let publishTickets = true;
 
 function makeMenu() {
   // prettier-ignore
