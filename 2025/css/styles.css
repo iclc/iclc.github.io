@@ -17,6 +17,11 @@
 }
 
 @font-face {
+  font-family: ZenDots-Regular;
+  src: url(../assets/ZenDots-Regular.ttf);
+}
+
+@font-face {
   font-family: SpaceMono-Bold;
   src: url(../assets/SpaceMono-Bold.ttf);
 }
