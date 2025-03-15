@@ -39,6 +39,30 @@
 
 </head>
 <body id="page-top">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+	<div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel" style="color:#000;">
+	    <!-- Modal Title goes here !!!-->
+	    Modal title
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	</div>
+	<div class="modal-body" style="color:#000;"
+	     <!-- Modal Text goes here !!!-->
+             This is ONLY for contributors !!!
+	     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+        <a type="button" class="btn btn-primary" href="https://ccu.stager.nl/iclc-contributors/tickets">Continue</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 	<!-- Generate the main menu bar -->
 	<script src="./js/scripts-extension.js?cachebust=1201009"></script>
 	<script>makeMenu();</script>
@@ -46,15 +70,16 @@
 	<header class="masthead" id="m1">
 		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
 			<div class="d-flex justify-content-center">
-				<div class="text-center">
+			  <div class="text-center">
+
 					
 					<!-- <h1 class="text-white mx-auto mt-4 mb-5">Registration</h1> -->
 					<br><br><br><br>
 					<h2 class="mt-8 mb-8">Registration for Contributors</h2>
 					<div>
-					<a class="btn btn-primary" href="https://ccu.stager.nl/iclc-contributors/tickets">Contributor (Unsupported) - €96.90</a><br>
-					<a class="btn btn-primary" href="https://ccu.stager.nl/iclc-contributors/tickets">Contributor (Supported) - €147.90</a><br>
-					<a class="btn btn-primary" href="https://ccu.stager.nl/iclc-contributors/tickets">Contributor (Supporter) - €295.80</a><br>
+					<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Contributor (Unsupported) - €96.90</a><br>
+					<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Contributor (Supported) - €147.90</a><br>
+					<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Contributor (Supporter) - €295.80</a><br>
 					</div>	
 					<h4 class="mx-auto mt-4 mb-5">Please register before May 1!</h4>
 					<br>
