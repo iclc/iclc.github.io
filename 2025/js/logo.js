@@ -10,7 +10,7 @@ function setup() {
 
   noStroke();
   createTiles();
-  fgnColor = 0;
+  fgnColor = 255;
 }
 
 function draw() {
