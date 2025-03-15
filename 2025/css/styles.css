@@ -141,7 +141,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  font-family: ZenDots-Regular;
+  font-family: SpaceMono-Bold;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -4185,7 +4185,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  font-family: ZenDots-Regular;
+  font-family: SpaceMono-Bold;
   font-size: 0.85rem;
   position: relative;
   display: flex;
@@ -11652,7 +11652,7 @@ body {
 	text-align: center;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "ZenDots-Regular", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "SpaceMono-Bold", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
