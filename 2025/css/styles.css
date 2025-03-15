@@ -8093,7 +8093,7 @@ textarea.form-control-lg {
 .bg-black {
   --bs-bg-opacity: 1;
   /* background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important; */
-  background: rgb(20, 20, 20,);
+  background: rgb(20, 20, 20);
 }
 
 .bg-white {
@@ -11598,7 +11598,7 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background: rgb(20, 20, 20,);
+    background: rgb(20, 20, 20);
     background-color: black;
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -11642,11 +11642,11 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 55rem;
+  min-height: 15rem;
   padding: 2rem 0;
   /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/gaudi-roof-desat.jpg");*/
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 90%, #000 100%); */
-  background: rgb(20, 20, 20,);
+  background: rgb(20, 20, 20);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11730,7 +11730,7 @@ body {
   padding-top: 6rem;
   /* padding-top: 10rem; */
   /* background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%); */
-  background: rgb(20, 20, 20,);
+  background: rgb(20, 20, 20);
 }
 .about-section p {
   margin-bottom: 2rem;
