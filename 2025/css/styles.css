@@ -17,9 +17,8 @@
 }
 
 @font-face {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+  font-family: SpaceMono-Bold;
+  src: url(../assets/SpaceMono-Bold.ttf);
 }
 
 :root {
