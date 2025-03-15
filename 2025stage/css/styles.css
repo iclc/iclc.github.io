@@ -21,11 +21,6 @@
   src: url(../assets/ZenDots-Regular.ttf);
 }
 
-@font-face {
-  font-family: SpaceMono-Bold;
-  src: url(../assets/SpaceMono-Bold.ttf);
-}
-
 :root {
   --primary: white;
   --secondary: #0095ff;
