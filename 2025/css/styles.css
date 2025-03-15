@@ -11599,7 +11599,7 @@ body {
   }
   #mainNav.navbar-shrink {
     background: rgb(20, 20, 20);
-    background-color: black;
+    background-color: rgb(20, 20, 20);
   }
   #mainNav.navbar-shrink .navbar-brand {
     /* color: #000; */
