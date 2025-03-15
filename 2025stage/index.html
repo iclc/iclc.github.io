@@ -32,12 +32,14 @@
 	<script>
 		let tiles = [];
 		let font;
+		let toggleFilters = false;
 		let fgnColor;
 		let sampleFactor;
 		let mosaicMaxSides;
 		let mouseDiaspora;
 		let minMosaicSize;
 		let maxMosaicSize;
+
 
 		function preload() {
 			font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
@@ -46,6 +48,7 @@
 		}
 	</script>
 	<script type="text/javascript" id="logo" src="js/logo.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
 
 	<title>ICLC 2025</title>
 </head>
@@ -63,26 +66,30 @@
 			max-width: 800px;
 			width: 100%;
 			margin: 4rem auto 0 auto;
-			"
-			>
+		  "
+		>
+
                     <div id="canvas-container" class="canvas-container" onclick="openEditor()"></div>
                     <div id="editor" class="hidden"></div>
 		</div>
 		<script type="text/javascript" src="js/livecode.js"></script>
-		<a href="#about" class="btn btn-circle js-scroll-trigger" style="position: relative;">
-			<i class="fa fa-angle-double-down animated" style="
-								position: absolute;
-								top: 50%;
-								left: 50%;
-								transform: translate(-50%, -50%);
-								"></i>
-		</a>
+		<!-- <a href="#about" class="btn btn-circle js-scroll-trigger" style="position: relative;">
+			<i class="fa fa-angle-double-down animated"
+			style="
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			"></i>
+		  </a> -->
+
+		<div id="ui-container"></div>
 	</header>
 	<!-- About-->
 	<section class="about-section" id="about">
 		<script>
-			socials();
-			paragraph('about', 'Theme: Liveness',
+
+paragraph('about', 'Theme: Liveness',
 `<p>It has been ten years since the first ICLC call for participation, which proposed “[…] exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.” In the subsequent decade, we have collectively and collaboratively experimented with varying levels of live coding abstraction, developed domain-specific languages, and explored the levels of agency offered by models created manually, or sometimes with the assistance of learning algorithms. We have invented and played with numerous interfaces to interact with algorithms and the world around us during performances. These explorations revolve around defining what processes we actually want to showcase, and in which formats we want to express them, while “thinking algorithmically” with an audience.</p>
 
 <p>On this, the 9th edition of the conference, we invite the community to reflect about liveness and its many forms and consequences within live coding. We believe the tension between what is live and what is not is a key element of live coding. What effects does it have on the processes, technologies and forms in the performance? How do the many forms of liveness impact and transform the hybridization between the digital/algorithmic and the material? How does liveness relate to and/or define the socio-cultural aspects of live coding communities</p>
@@ -112,7 +119,7 @@ Ten years after the first ICLC, we encourage our community to leverage its multi
 <a href="#session4">Speculative Futures</a>, 
 <a href="#session5">Communities and Artistic Practices</a>,
 <a href="#session6">Collaborative Livecoding</a>.`
-			);
+);
 		</script>
 	</section>
 
@@ -121,80 +128,80 @@ Ten years after the first ICLC, we encourage our community to leverage its multi
 		<div class="container px-4 px-lg-5" id="p1">
 			<script>
 				paragraph('p1', 'Session Topics',
-					`<span id="session1">&nbsp</span>`,
+				`<span id="session1">&nbsp</span>`,
 				);
 
 				paragraphImageLeft('p1', 
-					'Specialized Tools and DSLs',
-					`text about ...
+				'Specialized Tools and DSLs',
+				`text about ...
 				<br><br>
 				photo by Citlali Hernández
 				<br><span id="session2">&nbsp</span>`,
-					`assets/img/bcn_photo_CitH_2024-09-26_fromscratch.jpeg`,
+				`assets/img/bcn_photo_CitH_2024-09-26_fromscratch.jpeg`,
 				);
 
 				paragraphImageRight('p1',
-					'Live Coding Beyond Computers and interfaces',
-					`text about ...
+				'Live Coding Beyond Computers and interfaces',
+				`text about ...
 				<br><br>
 				photo by Alfonso Pardo
 				<br><span id="session3">&nbsp</span>`,
-					`assets/img/bcn_photo_AlfP_2024-03-09_Plantavibras.jpeg`,
+				`assets/img/bcn_photo_AlfP_2024-03-09_Plantavibras.jpeg`,
 				);
 
 				paragraphImageLeft('p1',
-					'Audio-visual Livecoding',
-					`text about ...
+				'Audio-visual Livecoding',
+				`text about ...
 				<br><br>
 				photo by Lina Bautista
 				<br><span id="session4">&nbsp</span>`,
-					`assets/img/bcn_photo_LinaB_2025-12-13_Algorave-Vic.jpeg`,
+				`assets/img/bcn_photo_LinaB_2025-12-13_Algorave-Vic.jpeg`,
 				);
 
 				paragraphImageRight('p1',
-					'Speculative Futures',
-					`text about ...
+				'Speculative Futures',
+				`text about ...
 				<br><br>
 				photo by Niklas Reppel
 				<br><span id="session5">&nbsp</span>`,
-					`assets/img/bcn_photo_NikR_2024-02-03_patterns.jpeg`,
-
+				`assets/img/bcn_photo_NikR_2024-02-03_patterns.jpeg`,
 				);
 
 				paragraphImageLeft('p1',
-					'Communities and Artistic Practices',
-					`text about ...
+				'Communities and Artistic Practices',
+				`text about ...
 				<br><br>
 				photo by Alicia Champlin
 				<br><span id="session6">&nbsp</span>`,
-					`assets/img/bcn_photo_AliC_2024-03-09_M8_Axolot.jpeg`,
+				`assets/img/bcn_photo_AliC_2024-03-09_M8_Axolot.jpeg`,
 				);
 
 				paragraphImageRight('p1',
-					'Collaborative Livecoding',
-					`text about ...
+				'Collaborative Livecoding',
+				`text about ...
 				<br><br>
 				photo by Roger Pibernat`,
-					`assets/img/bcn_photo_RogerP_2023-04-28_VIUalgoexperimental.jpg`,
+				`assets/img/bcn_photo_RogerP_2023-04-28_VIUalgoexperimental.jpg`,
 				);
 			</script>
 		</div>
 	</section>
 	<!-- Signup-->
 	<!-- <section class="signup-section" id="signup">
-		</section> -->
+	</section> -->
 
-		<!-- Contact-->
-		<!-- Footer-->
-		<script>
-			// socials();
-			footer();
-		</script>
+	<!-- Contact-->
+	<!-- Footer-->
+	<script>
+		socials();
+		footer();
+	</script>
 
-		<!-- Bootstrap core JS-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- Core theme JS-->
-		<script src="js/scripts.js"></script>
-		<!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+	
 </body>
 </html>
