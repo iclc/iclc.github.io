@@ -92,7 +92,7 @@
   /* --bs-body-color: #212529; */
   --bs-body-color: var(--primary);
   /* --bs-body-bg: #fff; */
-  --bs-body-bg:246, 149, 0;
+  --bs-body-bg: 246, 149, 0;
 }
 
 *,
