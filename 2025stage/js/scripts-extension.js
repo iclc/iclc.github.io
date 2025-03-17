@@ -6,11 +6,11 @@ let publishAbout = true;
 let publishCatalogue = false;
 let publishTravel = true;
 let publishVenues = true;
-let publishSatellite = false;
+let publishSatellite = true;
 let publishTable = true;
 let publishMap = false;
 let publishRegistration = true;
-let publishTickets = true;
+let publishTickets = false;
 
 function makeMenu() {
   // prettier-ignore
