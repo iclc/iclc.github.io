@@ -23,7 +23,7 @@
 
 :root {
   --primary: white;
-  --secondary: #0095ff;
+  --secondary: #F69500;
   --paragraph: rgb(255, 255, 255, 0.6);
   --btn-color: rgb(255, 255, 255, 0.7);
   /* --btn-color: rgb(0, 0, 0, 0.5); */
@@ -39,7 +39,7 @@
   --bs-orange: #fd7e14;
   --bs-yellow: #e4c662;
   --bs-green: #67c29c;
-  --bs-teal: #64a19d;
+  --bs-teal: #F69500;
   --bs-cyan: #1cabc4;
   --bs-white: #fff;
   --bs-gray: #6c757d;
@@ -53,7 +53,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #64a19d;
+  --bs-primary: #F69500;
   --bs-secondary: #7464a1;
   --bs-success: #67c29c;
   --bs-info: #1cabc4;
@@ -66,7 +66,7 @@
   --bs-primary-rgb: 100, 161, 157;
   --bs-secondary-rgb: 116, 100, 161;
   --bs-success-rgb: 103, 194, 156;
-  --bs-info-rgb: 28, 171, 196;
+  --bs-info-rgb: #F69500;
   --bs-warning-rgb: 228, 198, 98;
   --bs-danger-rgb: 161, 100, 104;
   --bs-light-rgb: 248, 249, 250;
@@ -630,7 +630,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #F69500;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -662,7 +662,7 @@ progress {
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: #F69500;
 }
 
 .container,
@@ -4151,7 +4151,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #64a19d;
+  background-color: #F69500;
 }
 
 .nav-fill > .nav-link,
@@ -4988,8 +4988,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #F69500;
+  border-color: #F69500;
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -11883,7 +11883,17 @@ body {
   color: #6ed6a2 
 }
 
+
+
+/* background timetable */
 body{
   margin-top:20px;
   background:#141414
+}
+
+
+/* img grayscale */
+img {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
 }
