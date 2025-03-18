@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<meta property="og:title" content="ICLC 2025 - Timetable" />
+	<meta property="og:title" content="ICLC 2025 - Program" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://iclc.toplap.org/2025/timetable.html" />
     <meta property="og:description" content="International Conference on Live Coding 2025, May 27 to 31, Barcelona" />
@@ -33,9 +33,13 @@
 	<script src="./js/scripts-extension.js?cachebust=1010209"></script>
 	<script>makeMenu();</script>
 
+
+
 	<!-- Page contents here -->
 	<!-- <h2>Saturday 22 April</h2> -->
 	<!-- <div id="table" class="timetable"></div> -->
+
+	<!--
 	<script>
 	// entries structured as
 	// "Event name" : {
@@ -44,6 +48,8 @@
 	// 		[ "Event", [starthour, startminute], [lengthhour, lengthminute], 'url' (optional)]
 	// 	]
 	// }
+
+	
 	var schedule = {
 		"Tuesday May 27" : {				
 			"Date" : [2025, 4, 27], 
@@ -167,6 +173,421 @@
 	});
 	</script>
 
+	
+-->
+<br><br><br><br>
+<div class="container py-9 py-lg-11 position-relative z-index-1">
+    <div class="row">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <h5 class="mb-4 text-info aos-init aos-animate" data-aos="fade-up">Conference Program</h5>
+                <div class="nav nav-pills flex-column aos-init aos-animate" id="myTab" role="tablist" data-aos="fade-up">
+                    <button class="nav-link px-4 text-start mb-3 active" id="d1-tab" data-bs-toggle="tab" data-bs-target="#day1" type="button" role="tab" aria-controls="day1" aria-selected="true">
+                        <span class="d-block fs-5 fw-bold">Tuesday</span>
+                        <span class="small">May 27</span>
+                    </button>
+                    
+                    <button class="nav-link px-4 text-start" id="d2-tab" data-bs-toggle="tab" data-bs-target="#day2" type="button" role="tab" aria-controls="day2" aria-selected="false" tabindex="-1">
+                        <span class="d-block fs-5 fw-bold">Wednesday</span>
+						<span class="small">May 28</span>
+                    </button>
+
+					<button class="nav-link px-4 text-start" id="d3-tab" data-bs-toggle="tab" data-bs-target="#day3" type="button" role="tab" aria-controls="day3" aria-selected="false" tabindex="-1">
+                        <span class="d-block fs-5 fw-bold">Thursday</span>
+						<span class="small">May 29</span>
+                    </button>
+
+
+					<button class="nav-link px-4 text-start" id="d4-tab" data-bs-toggle="tab" data-bs-target="#day4" type="button" role="tab" aria-controls="day4" aria-selected="false" tabindex="-1">
+                        <span class="d-block fs-5 fw-bold">Friday</span>
+						<span class="small">May 30</span>
+                    </button>
+
+
+					<button class="nav-link px-4 text-start" id="d5-tab" data-bs-toggle="tab" data-bs-target="#day5" type="button" role="tab" aria-controls="day5" aria-selected="false" tabindex="-1">
+                        <span class="d-block fs-5 fw-bold">Saturday</span>
+						<span class="small">May 31</span>
+                    </button>
+                </div>
+            </div>
+
+			<div class="col-lg-7 col-xl-6">
+                <div data-aos="fade-up" class="tab-content aos-init aos-animate" id="myTabContent">
+                    <!-- tue-->
+					<div class="tab-pane fade active show" id="day1" role="tabpanel" aria-labelledby="d1-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
+                            <li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									18:30- 20:30 </span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Opening Concert</h4>
+                                    <p class="mb-0 small text-muted">
+                                        Phonos/UPF - Sala Aranyo
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+					<!-- wed-->
+                    <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="d2-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
+                            <li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									09:00 - 09:30				</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Registration</h4>
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									09:30 - 10:00</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Welcome Remarks</h4>
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										10:00 - 11:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Live Coding Beyond Computers & Interfaces </h4>
+									<p class="mb-0">
+										Paper Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> -- Coffee Break -- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										12:00 - 13:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Speculative Futures</h4>
+									<p class="mb-0">
+										Paper Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> -- Lunch -- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										14:30 - 15:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Concert 2</h4>
+									<p class="mb-0">
+										<!-- Speculative Futures -->
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										15:30 - 16:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4> Live Coding Beyond Computers, Interfaces & Speculative Futures</h4>
+									<p class="mb-0">
+										Demo/Poster Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										16:30 - 17:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Keynote 1</h4>
+									<p class="mb-0">
+										<!-- TBA -->
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> ----- </p> 
+                                </div>
+                            </li>
+
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										18:30 - 22:00</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Concert 3</h4>
+									<p class="mb-0">
+										<!-- TBA -->
+                                    <p class="mb-0 small text-muted">
+                                        Sala Beckett
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
+					<!-- thu-->
+					<div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="d3-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									09:00 - 10:00		</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Registration</h4>
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										10:00 - 11:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Audio-visual Livecoding</h4>
+									<p class="mb-0">
+										Paper Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> -- Coffee Break -- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										12:00 - 13:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Specialized Tools and Domain Specific Languages (DSLs)</h4>
+									<p class="mb-0">
+										Paper Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> -- Lunch -- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										14:30 - 15:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Audio-visual Livecoding & Specialized Tools and DSLs</h4>
+									<p class="mb-0">
+										Demo/Poster Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										15:30 - 16:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Concert 4</h4>
+									<p class="mb-0">
+										<!-- Speculative Futures -->
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										16:30 - 17:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Keynote 2</h4>
+									<p class="mb-0">
+										<!-- TBA -->
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> ----- </p> 
+                                </div>
+                            </li>
+
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										19:00 - 22:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Concert 5</h4>
+									<p class="mb-0">
+										<!-- Speculative Futures -->
+                                    <p class="mb-0 small text-muted">
+                                        Sala Beckett 
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+					</div>
+					<!-- fri-->
+					<div class="tab-pane fade" id="day4" role="tabpanel" aria-labelledby="d4-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									09:00 - 10:00		</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Registration</h4>
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										10:00 - 11:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Communities and Artistic Practices</h4>
+									<p class="mb-0">
+										Paper Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> -- Coffee Break -- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										12:00 - 13:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Collaborative Livecoding</h4>
+									<p class="mb-0">
+										Paper Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> -- Lunch -- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										14:30 - 15:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Artistic Practice and Reflections</h4>
+									<p class="mb-0">
+										Demo/Poster Session
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										15:30 - 16:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Lightning Unconference</h4>
+									<p class="mb-0">
+										<!-- Speculative Futures -->
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+							
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										16:30 - 17:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Keynote 3</h4>
+									<p class="mb-0">
+										<!-- TBA -->
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+                                </div>
+                            </li>
+
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										17:30 - 18:30</span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Concert 6</h4>
+									<p class="mb-0">
+										<!-- Speculative Futures -->
+                                    <p class="mb-0 small text-muted">
+                                        UOC Auditori
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> ----- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+										21:00 - 1:30 </span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Concert 7</h4>
+									<p class="mb-0">
+										<!-- Speculative Futures -->
+                                    <p class="mb-0 small text-muted">
+                                        La NAU
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>	
+					<!-- sat-->
+					<div class="tab-pane fade" id="day5" role="tabpanel" aria-labelledby="d5-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
+                            <li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									11:00- 13:00 </span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Workshop Session 1</h4>
+                                    <p class="mb-0 small text-muted">
+                                        Canòdrom 
+                                    </p>
+									<br>
+									<p class="mb-0 small text-muted"> -- Lunch -- </p> 
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									14:00- 16:00 </span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Workshop Session 2</h4>
+                                    <p class="mb-0 small text-muted">
+                                        Canòdrom 
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									16:00- 18:00 </span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Workshop Session 3</h4>
+                                    <p class="mb-0 small text-muted">
+                                        Canòdrom 
+                                    </p>
+                                </div>
+                            </li>
+							<li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">
+									20:00- 22:50 </span>
+                                <div class="flex-grow-1 ps-4">
+                                    <h4>Concert 8</h4>
+                                    <p class="mb-0 small text-muted">
+                                        LAUT  
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+	<br><br>
+	<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
+	<br><br>
 	<!-- Generate contacs and copyright footer -->
 	<script>
 		socials();

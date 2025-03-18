@@ -20,13 +20,13 @@
 	<meta property="og:url" content="https://iclc.toplap.org/2025/" />
 	<meta property="og:description" content="International Conference on Live Coding 2025, May 27 to May 31, Barcelona" />
 
-	<meta property="og:image" content="./assets/img/2025 logo color.png" />
-	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image" content="https://github.com/diegovdc/iclc/blob/master/2025stage/assets/img/2025logocolor.jpg" />
+	<!-- <meta property="og:image:type" content="image/png" /> -->
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 
 	<meta property="og:locale" content="en_US" />
-
+<br><br>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
 	<script>
@@ -84,10 +84,13 @@
 		  </a> -->
 
 		<div id="ui-container"></div>
+		<br><br><br>
+		<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
 	</header>
 	<!-- About-->
 	<section class="about-section" id="about">
 		<script>
+
 
 paragraph('about', 'Theme: Liveness',
 `<p>It has been ten years since the first ICLC call for participation, which proposed “[…] exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.” In the subsequent decade, we have collectively and collaboratively experimented with varying levels of live coding abstraction, developed domain-specific languages, and explored the levels of agency offered by models created manually, or sometimes with the assistance of learning algorithms. We have invented and played with numerous interfaces to interact with algorithms and the world around us during performances. These explorations revolve around defining what processes we actually want to showcase, and in which formats we want to express them, while “thinking algorithmically” with an audience.</p>
@@ -121,6 +124,8 @@ Ten years after the first ICLC, we encourage our community to leverage its multi
 <a href="#session6">Collaborative Livecoding</a>.`
 );
 		</script>
+<br>
+		<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">	
 	</section>
 
 	<!-- Text with images -->
@@ -131,59 +136,71 @@ Ten years after the first ICLC, we encourage our community to leverage its multi
 				`<span id="session1">&nbsp</span>`,
 				);
 
-				paragraphImageLeft('p1', 
-				'Specialized Tools and DSLs',
-				`text about ...
-				<br><br>
-				photo by Citlali Hernández
-				<br><span id="session2">&nbsp</span>`,
-				`assets/img/bcn_photo_CitH_2024-09-26_fromscratch.jpeg`,
-				);
-
 				paragraphImageRight('p1',
 				'Live Coding Beyond Computers and interfaces',
-				`text about ...
+				`This sesion is dedicated to explore practices such as robotics or choreography approached 
+				from a live coding perspective, and to explore the interfaces among the agents involved in a 
+				live performance from different angles.
 				<br><br>
-				photo by Alfonso Pardo
+				photo by @mm1quel
 				<br><span id="session3">&nbsp</span>`,
-				`assets/img/bcn_photo_AlfP_2024-03-09_Plantavibras.jpeg`,
-				);
-
-				paragraphImageLeft('p1',
-				'Audio-visual Livecoding',
-				`text about ...
-				<br><br>
-				photo by Lina Bautista
-				<br><span id="session4">&nbsp</span>`,
-				`assets/img/bcn_photo_LinaB_2025-12-13_Algorave-Vic.jpeg`,
+				`assets/img/2025-LiveCodingBeyondComputersandinterfaces.jpg`,
 				);
 
 				paragraphImageRight('p1',
 				'Speculative Futures',
-				`text about ...
+				`Live coding is constantly reframed, shaped by its historical roots and the changing cultural and technological landscapes. 
+				This session explores how these views open up new possibilities for the practice. It invites speculation on the diverse 
+				futures or presents that may arise from its continuous practice.
 				<br><br>
-				photo by Niklas Reppel
+				photo by @brava_arts 
 				<br><span id="session5">&nbsp</span>`,
-				`assets/img/bcn_photo_NikR_2024-02-03_patterns.jpeg`,
+				`assets/img/2025-SpeculativeFutures.jpg`,
 				);
 
 				paragraphImageLeft('p1',
-				'Communities and Artistic Practices',
-				`text about ...
+				'Audio-visual Livecoding',
+				`This session is dedicated to the live coding of visual narratives, often in dialogue with unfolding sound, and to the tools that encode their visual grammars. It also includes explorations of systems for 
+				audiovisual live coding that enable the simultaneous manipulation of sound and visuals.
 				<br><br>
-				photo by Alicia Champlin
+				photo by Andrés Costa
+				<br><span id="session4">&nbsp</span>`,
+				`assets/img/2025-Audio-visualLivecoding.jpg`,
+				);
+
+				paragraphImageLeft('p1', 
+				'Specialized Tools and Domain Specific Languages (DSLs)',
+				`This session will focus on domain-specific languages, exploring their possible grammars, abstraction levels,
+				 and tools developed to extend language functionalities or to explore specific tasks.
+				<br><br>
+				photo by Andrés Costa
+				<br><span id="session2">&nbsp</span>`,
+				`assets/img/2025-SpecializedToolsandDSLs.jpg`,
+				);
+
+
+				paragraphImageLeft('p1',
+				'Communities and Artistic Practices',
+				`
+				Community shapes live coding practices, opens spaces, define the course, aesthetics, and influence its reach. This session is dedicated 
+				to explore live coding communities and the diversity of artistic practices that emerge from them.
+				<br><br>
+				photo by Andrés Costa
 				<br><span id="session6">&nbsp</span>`,
-				`assets/img/bcn_photo_AliC_2024-03-09_M8_Axolot.jpeg`,
+				`assets/img/2025-CommunitiesandArtisticPractices.jpg`,
 				);
 
 				paragraphImageRight('p1',
 				'Collaborative Livecoding',
-				`text about ...
+				`This session will explore the dynamics of live coding as a collective practice, focusing on how collaboration and sharing code during performances transform the experience. 
+				We will discuss the tools and methods that enable real-time collaborative play.
 				<br><br>
-				photo by Roger Pibernat`,
-				`assets/img/bcn_photo_RogerP_2023-04-28_VIUalgoexperimental.jpg`,
+				photo by Andrés Costa`,
+				`assets/img/2025-CollaborativeLivecoding.jpg`,
 				);
 			</script>
+			<br><br>
+			<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
 		</div>
 	</section>
 	<!-- Signup-->
@@ -192,6 +209,8 @@ Ten years after the first ICLC, we encourage our community to leverage its multi
 
 	<!-- Contact-->
 	<!-- Footer-->
+
+	
 	<script>
 		socials();
 		footer();
