@@ -9,7 +9,7 @@ let publishVenues = false;
 let publishSatellite = false;
 let publishTable = true;
 let publishMap = false;
-let publishRegistration = false;
+let publishRegistration = true;
 let publishTickets = false;
 
 function makeMenu() {
