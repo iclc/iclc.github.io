@@ -177,6 +177,26 @@ function paragraphImageRight(id, head = '', txt = '', img = '') {
 	</div>`;
 }
 
+
+function paragraphMapRight(id, head = '', txt = '', img = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="row gx-0 justify-content-center">
+	 <div class="col-lg-6"> <iframe src="https://www.google.com/maps/d/embed?mid=1dzrlaxIh8qgHAHNvXLJy6zyXQ0FODc4&ehbc=2E312F" style="min-height: 600px; position: static; height:40%; width:100%;" class="map"></iframe> </div>
+	 <div class="col-lg-6 order-lg-first">
+	  <div class="bg-black h-100 project">
+	   <div class="d-flex h-100">
+		<div class="project-text w-100 my-auto text-lg-right">
+		<h4 class="mt-1 mb-1">${head}</h4>
+		<p class="mb-0 text-white-50">${txt}</p>
+		<hr class="d-none d-lg-block mb-0 me-0" />
+		</div>
+	   </div>
+	  </div>
+	 </div>
+	</div>`;
+   }
+
 // <!-- Featured Project Row-->
 // <!-- <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
 // 	<div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/algo1.jpg" alt="..." /></div>
