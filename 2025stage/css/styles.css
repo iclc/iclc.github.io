@@ -11901,5 +11901,5 @@ body{
 /* img grayscale */
 img {
   -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
+  filter: grayscale(100%) brightness(140%);
 }
