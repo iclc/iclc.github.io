@@ -11689,8 +11689,14 @@ body {
 
 @media (max-width: 520px) {
   .masthead {
-    padding: 4rem;
+    padding: 4rem 2rem;
   }
+}
+
+img.logo {
+	filter: none;
+	-webkit-filter: none;
+	width: 100%;
 }
 
 #canvas-container {
