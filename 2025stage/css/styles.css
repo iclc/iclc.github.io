@@ -11813,10 +11813,10 @@ img.logo {
   border-radius: 100%;
   line-height: 2rem;
   color: rgba(255, 255, 255, 0.5);
-  scale: 1.5;
+  scale: 1;
 }
 .contact-section .social a:hover {
-  /* color: rgba(255, 255, 255, 0.5); */
+ color: rgba(255, 255, 255, 0.5); 
   color: var(--primary);
 }
 .contact-section .social a:active {

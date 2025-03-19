@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://iclc.toplap.org/2025stage/travel-stay.html" />
     <meta property="og:description" content="International Conference on Live Coding 2025, May 27 to 31, Barcelona" />
 
-    <meta property="og:image" content="https://iclc.toplap.org/2025stage/assets/img/2025 color logo.png" />
+    <meta property="og:image" content="./assets/img/2025logocolor.jpg" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -30,13 +30,44 @@
 
 	<!-- Page contents here -->
 
-
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		/* Create two equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 50%;
+		  padding: 10px;
+		  height: 300px; /* Should be removed. Only for demonstration */
+		}
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		</style>
 	
 	<section class="projects-section bg-black" id="projects">
 		<div class="container px-4 px-lg-5" id="p1">
-			<h4>Map</h4>
-			<iframe src="https://www.google.com/maps/d/embed?mid=1dzrlaxIh8qgHAHNvXLJy6zyXQ0FODc4&ehbc=2E312F" style="min-height: 600px; position: static; height:50%;width:100%;"></iframe>
-			<br><br>
+
+
+<div class="row">
+	<div class="column" >
+		<h4>Getting Around During the Conference</h4>
+		<p>Most of the Conference venues are located in the Poblenou district, within a walking distance of about 20 minutes. Please consult the map for various locations.</p>
+	  </div>
+	<div class="column">
+	  <h2></h2>
+	  <iframe src="https://www.google.com/maps/d/embed?mid=1dzrlaxIh8qgHAHNvXLJy6zyXQ0FODc4&ehbc=2E312F" style="min-height: 600px; position: static; height:50%;width:100%;"></iframe>
+
+	</div>
+	
+  </div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
 	<script>
 
 
@@ -44,82 +75,82 @@
 		// add a paragraph with arguments: section-id, header, text
 		paragraphImageLeft('p1', 'Getting Here',
 		`
-		<b>By train: <b> To minimize your environmental impact, we recommend train travel whenever possible. Barcelona is connected by high-speed rail to the rest of Spain and France, with connections through Paris, Lyon and Perpignan. The city's main station is Barcelona-Sants.
-		We recommend using RailEurope.com or theTrainline.com to plan international train and bus trips, as well as long- to medium-distance travel in Spain. 
+		By train: To minimize your environmental impact, we recommend train travel whenever possible. Barcelona is connected by high-speed rail to the rest of Spain and France, with connections through Paris, Lyon and Perpignan. The city's main station is Barcelona-Sants.
+		We recommend using RailEurope.com or theTrainline.com to plan international train and bus trips, as well as long to medium distance travel in Spain. 
+		<br><a href = "https://www.barcelonaturisme.com/wv3/en/page/31/how-to-get-there.html" > More options to arrive </a>
+				<br><br>Connections between Barcelona and the airport and back:	<br>
+		Train (RENFE):
+		R2 Nord from airport Terminal 2B runs every half hour and reaches the city center (2,65€ one-way). The 5th stop, Barcelona-El Clot, is walking distance to UOC.
+		<br>
+		Metro (TMB):
+		L9 Sud metro line connects the city directly to airport Terminals 1 and 2, with an extra ticket required at the airport stations, and a change to metro line L1 required at Torrassa station. It takes approx one hour to Catalunya metro station. For a one-way ticket, it costs 5,70€.
+		<br>
+		Bus:
+		Line 46 (Outside the T1 airport station - 2,65€ approx) https://www.tmb.cat/en/barcelona/buses/-/lineabus/46 Takes about 45 minutes and connects to the Espanya Metro Station.
+		<br>
+		Aerobús (A1 and A2)
+		Connects to Plaça Catalunya in about 35 min. It needs an extra ticket, currently costing 7,45€ one-way or 12,85€ round-trip.
+ 		<br>
+		<a href = "https://www.barcelonaturisme.com/wv3/en/page/33/plane.html" >More options and further info</a> 
 
-		(Photo unattributed)
 		`, `assets/img/barcelona-sants.jpg`);
 
-		paragraphImageRight('p1', 'Getting Around During the Conference', `
-		Most of the Conference venues are located within a walking distance of about 20 minutes, in the Poblenou district (pronouced po-bla-KNOW). Please consult the map for various locations. <a href="https://uoc.edu">UOC</a>, the home of our ICLC day program, is situated at the very top of the Rambla de Poblenou, a long walking boulevard full of shops and restaurants that leads directly to the beach. 
-		<br><br>
-		Barcelona walking (and public transport) directions are well-integrated and accurate in Google Maps, which allows you to download areas you choose for offline use in case you expect to be without a data connection. We aren't endorsing any Google app here, but if you need a practical solution, this is at least a popular and accessible one.
-		<br><br>
-		(Photo © Martin Drapela)
-		`,  `assets/img/bcn-Avinguda-Diagonal-MartinDrapela.jpg`);
 
-		paragraphImageLeft('p1', 'Public Transport', `
+
+		paragraphImageRight('p1', 'Public Transport', `
+		Public transport such as the metro, tram and FGC trains are the quickest, simplest, most convenient and most sustainable way of getting around Barcelona. 
+		You can choose from the different ticket types and travel cards, but if you expect to use public transport a few times throughout the conference, the most economical would be a T-casual card, which comes with ten fares for 12,55 € (plus the cost of the rechargeable card, which costs 1 € to obtain).
+		https://www.tmb.cat/en/barcelona-fares-metro-bus  <br><br>
+		To purchase the tickets, we suggest using a ticket machine in any metro station and buying the reusable/rechargeable paper ticket. 
+
 		You can pay for public transport in 2 different ways:
-		<br><br>
-		- By using your contactless debit card, credit card, or phone to purchase a single ride for €2.65. On the bus or tram you just tap to pay at the front door, and in the Metro, use a ticket machine to purchase the single ticket.
-		<br><br>
-		- (Preferred) By using a rechargeable ticket. We recommend (if you will need a few trips) the T-Casual, €12.55 for 10 rides (individual use, you can't double up). Good for all TMB buses, trams, and subways in Zone 1, which is basically the whole city + close suburbs. In theory, you can buy metro tickets online and add to your mobile phone, but trust us, you are better off using a ticket machine in any metro station and buying the reusable/rechargeable paper ticket. If you want to try, fine, but we gave you a fair warning! :) Bonus: with the paper ticket, you can give your unused rides to a local when you leave! 
-		<br><br>
+		<br>	
+		- By using your contactless debit card, credit card, or phone to purchase a single ride for 2,65 €. On the bus or tram you just tap to pay at the front door, and in the Metro, use a ticket machine to purchase the single ticket.
+		<br>
+		- (Preferred) By using an anonymous rechargeable ticket, called T-casual. You only need to buy for one zone, which covers the city of Barcelona and to the airport via RENFE regional train.
+		<br>
 		(Photo © flickr user <a href="https://www.flickr.com/photos/spag85/">spag85</a>)
 		`, `assets/img/bcn-liceu-metro-spag85.jpg`);
 
-		paragraphImageRight('p1', 'Bike Rental', `
-		There are several ebike and scooter rental services in the city, though the Bicing (red) bikes are available by annual resident subscription only. As an alternative, many locals seem to recommend the Bolt app, which allows on-demand use. It seems you may need to download the app in order to see availability and prices. 
+		paragraphImageLeft('p1', 'Visiting', `
+		Barcelona, like many other cities, is subject to over-tourism and intense gentrification. However, it remains home to our TOPLAP Barcelona community, which actively contributes to preserving the city's dynamic underground cultural scene. Barcelona warmly welcomes the global TOPLAP community and all ICLC participants. 
+<br>
+		Our desire is for the live coding community to be part of the solution of overtourism through our creative and cultural initiative, ensuring that ICLC genuinely contributes to Barcelona and its people in a meaningful and positive way, embracing everyone with kindness and inclusivity. We invite you to experience our city mindfully and considerately.
+
 		<br><br>
-		Another option is to rent by the day for your whole visit, though this will entail having a suitable place to lock it up off the street at night.
-		<br><br>
+
+		Staying Safe
+Barcelona is no more or less safe than any other major metropolis. When visiting and exploring a new place, being mindful and respectful of your surroundings is essential. Beyond ensuring our own safety, we should be mindful and contribute positively to the well-being of those who call the city home.
+<br>
+<a href= https://www.barcelonaturisme.com/wv3/en/page/2467/safety-coexistence-and-health.html>More info about safety and health</a>
+
+
+
 		(Photo © Ferran Nadeu)
 		`, `assets/img/bici-arc-de-triomf-FerranNadeu.webp`);
 
-		paragraph('p1', 'Staying Safe', `
-		Barcelona is no more or less safe than any other major metro, but here are our recommendations on where to pay attention. We hope these are mostly common sense; the main point is simply not to be the easiest target. Overall, our best advice for nighttime fun is to stick together, and keep a low profile.<br>
-		<ol>
-			<li>Avoid being visibly drunk in public; you will make yourself a perfect target for mugging, especially in nightlife areas or while carrying a bag/backpack.</li>
-			<li>Beware of how you engage with anyone offering trinkets, tissues, etc. or asking for help with a lost ID - it can be a distraction for another pickpocket.</li>
-			<li>Don't carry your phone or wallet in your back pocket; keep backpack zippers closed and out of easy reach, especially in the metro.</li>
-			<li>Cameras/camera bags should be strapped to you at all times, keeping zippers where you can see them.</li>
-			<li>Beware new friends who ask for your phone to add their number/IG/etc. Never hand your phone to someone you don't know.</li>
-			<li>Don't bring your laptop to a crowded bar/club at night if you can avoid it. There is no safe place for it.</li>
-			<li>Don't leave valuables in your jacket if you put it down/on the back of a chair.</li>
-			<li>In outdoor tables, never leave your backpack/laptop bag in plain sight without it being secured. Always anchor it to yourself or a table/chair leg to prevent a passing scooter from grabbing it.</li>
-			<li>Always pay for your meal/drinks directly to the server or at the counter, never leaving cash on the table. It can disappear under your eyes.</li>
-		</ol><br>
-		Official Barcelona taxis (black and yellow) are well-regulated and quite safe. If you run into uncomfortable situations like unwanted attention in a bar, most bartenders also take these things quite seriously and will step in if you signal for help.
-		<br><br>
-		`);
+		
 
-		paragraphImageLeft('p1', 'Food & Drinks', `
-		Barcelona has every cuisine you would expect to find in a multicultural city, as well as ubiquitous tapas bars at all price points. 
-		<br><br>
-		A typical breakfast option is a bakery or cafe for coffee and pastries, and sometimes light sandwich options. The famous 3-course lunch "menu del dia" is typically served between 12:30/13:00 until around 15:30 at latest, primarily at neighborhood bars and restaurants. Look for handwritten chalkboards at the front entrance with the daily options, with price ranges from 10.50 to 17 or so, generally including 2 or 3 homestyle courses (usually a choice of first and second plates, + dessert or coffee) and a drink. This is a superb way to try everyday Catalan comfort food. Lunch time is also the best time of day if you're looking for a paella, which is less typical at night (except in tourist traps!).
-		<br><br>
-		Neighborhood bars around the city usually serve drinks until around midnight, though it can be tough to get seated after 23:30. In the center and more touristic areas, you will find a more lively late night scene, maybe until 1 or 2, and there are underground clubs that open around that time for the true nightowls. 
-		<br><br>
+		paragraphImageRight('p1', 'Food & Drinks', `
+		Barcelona has every cuisine you would expect to find in a multicultural city, as well as ubiquitous tapas bars at all price points.
+
+A typical breakfast option is a bakery or café for coffee and pastries, and sometimes light sandwich options. The 3-course lunch "menu del dia" is typically served between 12:30/13:00 until around 15:30 at the latest, primarily at neighborhood bars and restaurants. For dinner many restaurants will open the kitchen around 20h, but it is usually possible to find options at all times.<br>
 		(Photo by <a href="https://www.pexels.com/@liza-bakay-134459655/">Liza Bakay</a>)
 		`, `assets/img/bcn-chiringuito-LizaBakay.jpeg`);
 
-		paragraphImageRight('p1', 'Meals during ICLC', `
-		During the ICLC weekday program at UOC, because we are so numerous and the time to enjoy lunch is finite, we will offer a catered lunch to those who pre-purchase vouchers from the Registration portal. In case an off-campus break is preferred, there are a few nearby spots, of which we would most recommend the food court in the Glóries (pronounced Glorius) shopping complex 1 block to the west of UOC, for reasons of capacity and efficiency. In the courtyard and lower level there are many fast and healthy options.
-		<br><br>
-		In off-hours of the afternoon, you can usually find a bar on any other corner which will have various "bocadillos," the Spanish answer to a basic sandwich on baguette. In general, tapas bars are easy to find serving small plates from around 17:00 on, and the best open secret is that you may often find basic chinese offerings on the last page of the menu. We do tend to eat dinner quite late in Barcelona: you will find that most formal and semi-formal dining establishments will not open for dinner until 19:30 or even later. In a pinch, tapas bars are the answer. 
-		<br><br>
-		It is a time-honored tradition in Barcelona to enjoy late-night tapas, pinchos, or bocadillos together with a few drinks after an evening show. We generally expect there to be lots of options open after our concerts on Tuesday, Wednesday, and Thursday. Keep an eye on the curated map, where we may list some of our favorite spots.
-		<br><br>
-		(Photo by Lina Bautista)
-		`, `assets/img/bcn_photo_LinaB_2024-01-24_eating-together.jpg`);
+		paragraphImageLeft('p1', 'Meals during ICLC', `
+		During the ICLC weekday program at UOC,  we will offer a catered lunch to those who pre-purchase vouchers from the Registration portal. In case an off-campus break is preferred, there are a few nearby spots, of which we would most recommend the food court in the Glòries shopping complex 1 block to the west of UOC, for reasons of capacity and efficiency. In the courtyard and lower level there are many fast and healthy options.
+		<br>
+		It is a time-honored tradition in Barcelona to enjoy late-night tapas, pinchos, or bocadillos together after an evening show. We generally expect there to be lots of options open after our concerts on Tuesday, Wednesday, and Thursday. Keep an eye on the curated map, where we may list some of our favorite spots.
+
+		`, `assets/img/2025-meals.jpg`);
 		
-		paragraphImageLeft('p1', 'Accommodation',`
-		The city of Barcelona has thousands of hotels and hostels in various price ranges. We have listed a handful of nearby accommodations in different price categories in our map above. We do not have purchasing or discount deals with any of them - we simply researched and identified several from each price bracket (2, 3, or 4 stars) which seemed to offer straightforward transportation and had decent reviews. Their icons are coded such that each is marked as walking distance to UOC, biking distance, tram or metro connection. Prices will continue to fluctuate up and down with demand. Again, there may be many other suitable options - we are noting these few just to give some examples of easy transportation connections so that people don't get stuck commuting 45 minutes each way. As mentioned, Google Maps has our public transport well integrated, so you can search any two locations and know the best connection any time of day.
-		<br><br>
+		paragraphImageRight('p1', 'Accommodation',`
+The city of Barcelona has thousands of hotels and hostels in various price ranges. We have listed a handful of nearby accommodations in different price categories in our map above. We do not have purchasing or discount deals with any of them - we simply researched and identified several from each price bracket (2, 3, or 4 stars) which seemed to offer straightforward transportation and had decent reviews. Their icons are coded such that each is marked as walking distance to UOC, biking distance, tram or metro connection. 		<br><br>
 		(Photo by <a href="https://www.pexels.com/@tomas-anunziata-129267/">Tomas Anunziata</a>)
 		`, `assets/img/bcn-residencias-TomasAnunziata.jpg`);
 
-		paragraph('p1', 'Any doubts?', `If you have any questions regarding your travel or stay, please don't hesitate to give us a shout at <a href="mailto:iclc@toplap.cat">iclc@toplap.cat</a>`);
+		columnLeft('p1', 'Any doubts?', `If you have any questions regarding your travel or stay, please don't hesitate to give us a shout at <a href="mailto:iclc@toplap.cat">iclc@toplap.cat</a>`);
 
 	</script>
 		</div>

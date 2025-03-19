@@ -68,6 +68,33 @@ function paragraph(id, head = '', txt = '') {
 	</div>`;
 }
 
+function columnLeft(id, head = '', txt = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-left">
+			<div class="col-lg-8">
+			<h4 class="mt-5 mb-5 justify-content-left" id="themes">${head}</h4>
+			<p class="mb-0 text-white-50">${txt}</p>
+			</div>
+		</div>
+	</div>`;
+}
+
+function columnRight(id, head = '', txt = '') {
+	let d = document.getElementById(id);
+	d.innerHTML += `
+	<div class="container px-4 px-lg-5">
+		<div class="row gx-4 gx-lg-5 justify-content-right">
+			<div class="col-lg-8">
+			<h4 class="mt-5 mb-5 justify-content-right" id="themes">${head}</h4>
+			<p class="mb-0 text-white-50">${txt}</p>
+			</div>
+		</div>
+	</div>`;
+}
+
+
 function satelliteEvent(id, anchor = '', head = '', txt = '') {
 	let d = document.getElementById(id);
 	d.innerHTML += `
@@ -167,12 +194,12 @@ function socials() {
 	<section class="contact-section bg-black">
 		<div class="container px-4 px-lg-5">
 			<div class="social d-flex justify-content-center">
-				<a class="mx-2" href="mailto:iclc@creativecodingutrecht.nl"><i class="fa-regular fa-envelope"></i></a>
+				<a class="mx-2" href="mailto:iclc@toplap.cat"><i class="fa-regular fa-envelope"></i></a>
 				<a class="mx-2" href="https://t.me/iclc_news" target="blank"><i class="fab fa-telegram"></i></a>
-				<a class="mx-2" href="https://discord.gg/XjCYAXZF" target="blank"><i class="fab fa-discord"></i></a>
+				<a class="mx-2" href="https://discord.gg/rnUSM3cQRP" target="blank"><i class="fab fa-discord"></i></a>
 				<a class="mx-2" href="https://assemblag.es/@incolico" target="blank"><i class="fab fa-mastodon"></i></a>
 				<a class="mx-2" href="https://www.instagram.com/iclc_2025/" target="blank"><i class="fab fa-instagram"></i></a>
-				<a class="mx-2" href="https://www.facebook.com/livecodenet" target="blank"><i class="fab fa-facebook"></i></a>
+				<!-- <a class="mx-2" href="https://www.facebook.com/livecodenet" target="blank"><i class="fab fa-facebook"></i></a> -->
 				<!-- <a class="mx-2" href="https://www.youtube.com/@Eulerroom" target="blank"><i class="fab fa-youtube"></i></a> -->
 				<!-- <a class="mx-2" href="https://twitter.com/incolico" target="blank"><i class="fab fa-twitter"></i></a> -->
 			</div>
