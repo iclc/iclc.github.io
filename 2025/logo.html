@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta property="og:title" content="ICLC 2025" />
+		<meta property="og:type" content="website" />
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.min.js"></script>
+		<script>
+			let tiles = [];
+			let font;
+			let toggleFilters = false;
+			let fgnColor;
+			let sampleFactor;
+			let mosaicMaxSides = 6;
+			let mouseDiaspora = 65;
+			let minMosaicSize = 5;
+			let maxMosaicSize = 15;
+
+			function preload() {
+				font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
+				copyFont = loadFont("assets/AnonymousPro-Regular.ttf");
+				headingFont = loadFont("assets/ZenDots-Regular.ttf");
+			}
+
+			function exportLogo() {
+				let svg =
+`<svg height="600" width="800" xmlns="http://www.w3.org/2000/svg">
+					${tiles.map(t=>t.getSVG()).join('\n')}
+</svg>`;
+				saveStrings([svg],'logo','svg');
+			}
+		</script>
+		<script type="text/javascript" id="logo" src="js/logo-static.js"></script>
+		<title>ICLC 2025</title>
+	</head>
+	<body id="page-top" style="background:black; color:lightgray;">
+		<div id="canvas-container"></div>
+		<div id="ui-container"></div>
+	</body>
+</html>
