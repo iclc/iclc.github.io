@@ -1,119 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<!-- Font Awesome icons (free version)-->
-	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-	<!-- Core theme CSS (includes Bootstrap)-->
-	<link href="css/styles.css" rel="stylesheet" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 
-	<style>
-		h2 a {
-			text-decoration: none !important;
-			color: white;
-		}
-	</style>
+    <style>
+      h2 a {
+	  text-decoration: none !important;
+	  color: white;
+      }
+    </style>
 
-	<meta property="og:title" content="ICLC 2025" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://iclc.toplap.org/2025/" />
-	<meta property="og:description" content="International Conference on Live Coding 2025, May 27 to May 31, Barcelona" />
+    <meta property="og:title" content="ICLC 2025" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iclc.toplap.org/2025/" />
+    <meta property="og:description" content="International Conference on Live Coding 2025, May 27 to May 31, Barcelona" />
 
-	<meta property="og:image" content="https://github.com/diegovdc/iclc/blob/master/2025stage/assets/img/2025logocolor.jpg" />
-	<!-- <meta property="og:image:type" content="image/png" /> -->
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://github.com/diegovdc/iclc/blob/master/2025stage/assets/img/2025logocolor.jpg" />
+    <!-- <meta property="og:image:type" content="image/png" /> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-	<meta property="og:locale" content="en_US" />
-	<br><br>
+    <meta property="og:locale" content="en_US" />
+    <br><br>
 
-	<title>ICLC 2025</title>
-</head>
-<body id="page-top">
-	<!-- Generate the main menu bar -->
-	<script src="./js/scripts-extension.js?cachebust=1020104"></script>
-	<script>makeMenu();</script>
-
-
-	<!-- Masthead-->
-	<header class="masthead" id="m1" style="overflow: hidden">
-		<div
-				style="
-							 position: relative;
-							 max-width: 800px;
-							 width: 100%;
-							 margin: 4rem auto 0 auto;
-							 "
-				id="logo-container"
-			>
-
-				<div id="canvas-container" class="canvas-container" onclick="openEditor()"></div>
-				<div id="editor" class="hidden"></div>
-				<script>
-					// detect mobile browser
-					if (window.matchMedia('only screen and (max-width: 760px)').matches) {
-
-						// If on mobile, load a static logo image
-						let img = document.createElement('img');
-						img.src = 'assets/img/logo.svg';
-						img.classList.add('logo');
-						document.querySelector('#logo-container').replaceWith(img);
-
-					} else {
-
-						// If on desktop, load the fancy dynamic logo
-						function loadScript(url) {
-							let script = document.createElement('script');
-							script.type = 'text/javascript'
-							script.src = url;
-							document.body.appendChild(script);
-						};
-
-						['p5.js/1.11.2/p5.min.js', 'ace/1.4.12/ace.js'].forEach(
-							path => loadScript('https://cdnjs.cloudflare.com/ajax/libs/' + path)
-						);
-
-						var tiles = [];
-						var font;
-						var toggleFilters = false;
-						var fgnColor;
-						var sampleFactor;
-						var mosaicMaxSides;
-						var mouseDiaspora;
-						var minMosaicSize;
-						var maxMosaicSize;
-
-						function preload() {
-							font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
-							copyFont = loadFont("assets/AnonymousPro-Regular.ttf");
-							headingFont = loadFont("assets/ZenDots-Regular.ttf");
-						}
-
-						['js/logo.js', 'js/livecode.js'].forEach(path => loadScript(path));
-
-					}
-				</script>
-		</div>
-		<!-- <a href="#about" class="btn btn-circle js-scroll-trigger" style="position: relative;">
-			<i class="fa fa-angle-double-down animated"
-			style="
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			"></i>
-			</a> -->
-			<br><br><br>
-			<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
-	</header>
-	<!-- About-->
-	<section class="about-section" id="about">
-		<script>
+    <title>ICLC 2025</title>
+  </head>
+  <body id="page-top">
+    <!-- Generate the main menu bar -->
+    <script src="./js/scripts-extension.js?cachebust=1020104"></script>
+    <script>makeMenu();</script>
 
 
-			paragraph('about', 'Theme: Liveness',
-`<p>It has been ten years since the first ICLC call for participation, which proposed “[…] exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.” In the subsequent decade, we have collectively and collaboratively experimented with varying levels of live coding abstraction, developed domain-specific languages, and explored the levels of agency offered by models created manually, or sometimes with the assistance of learning algorithms. We have invented and played with numerous interfaces to interact with algorithms and the world around us during performances. These explorations revolve around defining what processes we actually want to showcase, and in which formats we want to express them, while “thinking algorithmically” with an audience.</p>
+    <!-- Masthead-->
+    <header class="masthead" id="m1" style="overflow: hidden">
+      <div
+	style="
+	       position: relative;
+	       max-width: 800px;
+	       width: 100%;
+	       margin: 4rem auto 0 auto;
+	       "
+	id="logo-container"
+	>
+
+	<div id="canvas-container" class="canvas-container" onclick="openEditor()"></div>
+	<div id="editor" class="hidden"></div>
+	<script>
+	  // detect mobile browser
+	  if (window.matchMedia('only screen and (max-width: 760px)').matches) {
+
+	      // If on mobile, load a static logo image
+	      let img = document.createElement('img');
+	      img.src = 'assets/img/logo.svg';
+	      img.classList.add('logo');
+	      document.querySelector('#logo-container').replaceWith(img);
+
+	  } else {
+
+	      // If on desktop, load the fancy dynamic logo
+	      function loadScript(url) {
+		  let script = document.createElement('script');
+		  script.type = 'text/javascript'
+		  script.src = url;
+		  document.body.appendChild(script);
+	      };
+
+	      ['p5.js/1.11.2/p5.min.js', 'ace/1.4.12/ace.js'].forEach(
+		  path => loadScript('https://cdnjs.cloudflare.com/ajax/libs/' + path)
+	      );
+
+	      var tiles = [];
+	      var font;
+	      var toggleFilters = false;
+	      var fgnColor;
+	      var sampleFactor;
+	      var mosaicMaxSides;
+	      var mouseDiaspora;
+	      var minMosaicSize;
+	      var maxMosaicSize;
+
+	      function preload() {
+		  font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
+		  copyFont = loadFont("assets/AnonymousPro-Regular.ttf");
+		  headingFont = loadFont("assets/ZenDots-Regular.ttf");
+	      }
+
+	      ['js/logo.js', 'js/livecode.js'].forEach(path => loadScript(path));
+
+	  }
+	</script>
+      </div>
+      <!-- <a href="#about" class="btn btn-circle js-scroll-trigger" style="position: relative;">
+	   <i class="fa fa-angle-double-down animated"
+	      style="
+		     position: absolute;
+		     top: 50%;
+		     left: 50%;
+		     transform: translate(-50%, -50%);
+		     "></i>
+		     </a> -->
+<br><br><br>
+<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
+</header>
+<!-- About-->
+<section class="about-section" id="about">
+  <script>
+
+
+    paragraph('about', 'Theme: Liveness',
+	      `<p>It has been ten years since the first ICLC call for participation, which proposed “[…] exploring liveness in symbolic abstractions, and understanding the perceptual, creative, productive, philosophical and cultural consequences.” In the subsequent decade, we have collectively and collaboratively experimented with varying levels of live coding abstraction, developed domain-specific languages, and explored the levels of agency offered by models created manually, or sometimes with the assistance of learning algorithms. We have invented and played with numerous interfaces to interact with algorithms and the world around us during performances. These explorations revolve around defining what processes we actually want to showcase, and in which formats we want to express them, while “thinking algorithmically” with an audience.</p>
 
 <p>On this, the 9th edition of the conference, we invite the community to reflect about liveness and its many forms and consequences within live coding. We believe the tension between what is live and what is not is a key element of live coding. What effects does it have on the processes, technologies and forms in the performance? How do the many forms of liveness impact and transform the hybridization between the digital/algorithmic and the material? How does liveness relate to and/or define the socio-cultural aspects of live coding communities</p>
 
@@ -142,105 +142,105 @@ Ten years after the first ICLC, we encourage our community to leverage its multi
 <a href="#session4">Speculative Futures</a>, 
 <a href="#session5">Communities and Artistic Practices</a>,
 <a href="#session6">Collaborative Livecoding</a>.`
-			);
-		</script>
-		<br>
-		<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">	
-	</section>
+	     );
+	     </script>
+  <br>
+  <hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">	
+</section>
 
-	<!-- Text with images -->
-	<section class="projects-section bg-black" id="sessions">
-		<div class="container px-4 px-lg-5" id="p1">
-			<script>
-				paragraph('p1', 'Session Topics',
-					`<span id="session1">&nbsp</span>`,
-				);
+<!-- Text with images -->
+<section class="projects-section bg-black" id="sessions">
+  <div class="container px-4 px-lg-5" id="p1">
+    <script>
+      paragraph('p1', 'Session Topics',
+		`<span id="session1">&nbsp</span>`,
+	       );
 
-				paragraphImageRight('p1',
-					'Live Coding Beyond Computers and interfaces',
-					`This sesion is dedicated to explore practices such as robotics or choreography approached 
+      paragraphImageRight('p1',
+			  'Live Coding Beyond Computers and interfaces',
+			  `This sesion is dedicated to explore practices such as robotics or choreography approached 
 				from a live coding perspective, and to explore the interfaces among the agents involved in a 
 				live performance from different angles.
 				<br><br>
 				photo by @mm1quel
 				<br><span id="session3">&nbsp</span>`,
-					`assets/img/2025-LiveCodingBeyondComputersandinterfaces.jpg`,
-				);
+			  `assets/img/2025-LiveCodingBeyondComputersandinterfaces.jpg`,
+			 );
 
-				paragraphImageRight('p1',
-					'Speculative Futures',
-					`Live coding is constantly reframed, shaped by its historical roots and the changing cultural and technological landscapes. 
+      paragraphImageRight('p1',
+			  'Speculative Futures',
+			  `Live coding is constantly reframed, shaped by its historical roots and the changing cultural and technological landscapes. 
 				This session explores how these views open up new possibilities for the practice. It invites speculation on the diverse 
 				futures or presents that may arise from its continuous practice.
 				<br><br>
 				photo by @brava_arts 
 				<br><span id="session5">&nbsp</span>`,
-					`assets/img/2025-SpeculativeFutures.jpg`,
-				);
+			  `assets/img/2025-SpeculativeFutures.jpg`,
+			 );
 
-				paragraphImageLeft('p1',
-					'Audio-visual Livecoding',
-					`This session is dedicated to the live coding of visual narratives, often in dialogue with unfolding sound, and to the tools that encode their visual grammars. It also includes explorations of systems for 
+      paragraphImageLeft('p1',
+			 'Audio-visual Livecoding',
+			 `This session is dedicated to the live coding of visual narratives, often in dialogue with unfolding sound, and to the tools that encode their visual grammars. It also includes explorations of systems for 
 				audiovisual live coding that enable the simultaneous manipulation of sound and visuals.
 				<br><br>
 				photo by Andrés Costa
 				<br><span id="session4">&nbsp</span>`,
-					`assets/img/2025-Audio-visualLivecoding.jpg`,
-				);
+			 `assets/img/2025-Audio-visualLivecoding.jpg`,
+			);
 
-				paragraphImageLeft('p1', 
-					'Specialized Tools and Domain Specific Languages (DSLs)',
-					`This session will focus on domain-specific languages, exploring their possible grammars, abstraction levels,
+      paragraphImageLeft('p1', 
+			 'Specialized Tools and Domain Specific Languages (DSLs)',
+			 `This session will focus on domain-specific languages, exploring their possible grammars, abstraction levels,
 				 and tools developed to extend language functionalities or to explore specific tasks.
 				<br><br>
 				photo by Andrés Costa
 				<br><span id="session2">&nbsp</span>`,
-					`assets/img/2025-SpecializedToolsandDSLs.jpg`,
-				);
+			 `assets/img/2025-SpecializedToolsandDSLs.jpg`,
+			);
 
 
-				paragraphImageRight('p1',
-					'Communities and Artistic Practices',
-					`
+      paragraphImageRight('p1',
+			  'Communities and Artistic Practices',
+			  `
 				Community shapes live coding practices, opens spaces, define the course, aesthetics, and influence its reach. This session is dedicated 
 				to explore live coding communities and the diversity of artistic practices that emerge from them.
 				<br><br>
 				photo by Andrés Costa
 				<br><span id="session6">&nbsp</span>`,
-					`assets/img/2025-CommunitiesandArtisticPractices.jpg`,
-				);
+			  `assets/img/2025-CommunitiesandArtisticPractices.jpg`,
+			 );
 
-				paragraphImageRight('p1',
-					'Collaborative Livecoding',
-					`This session will explore the dynamics of live coding as a collective practice, focusing on how collaboration and sharing code during performances transform the experience. 
+      paragraphImageRight('p1',
+			  'Collaborative Livecoding',
+			  `This session will explore the dynamics of live coding as a collective practice, focusing on how collaboration and sharing code during performances transform the experience. 
 				We will discuss the tools and methods that enable real-time collaborative play.
 				<br><br>
 				photo by Andrés Costa`,
-					`assets/img/2025-CollaborativeLivecoding.jpg`,
-				);
-			</script>
-			<br><br>
-			<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
-		</div>
-	</section>
-	<!-- Signup-->
-	<!-- <section class="signup-section" id="signup">
-		</section> -->
+			  `assets/img/2025-CollaborativeLivecoding.jpg`,
+			 );
+			 </script>
+    <br><br>
+    <hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
+  </div>
+</section>
+<!-- Signup-->
+<!-- <section class="signup-section" id="signup">
+     </section> -->
 
-		<!-- Contact-->
-		<!-- Footer-->
+<!-- Contact-->
+<!-- Footer-->
 
 
-		<script>
-			socials();
-			footer();
-		</script>
+<script>
+  socials();
+  footer();
+</script>
 
-		<!-- Bootstrap core JS-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-		<!-- Core theme JS-->
-		<script src="js/scripts.js"></script>
-		<!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
 
 </body>
 </html>
