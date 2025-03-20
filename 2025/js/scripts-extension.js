@@ -1,6 +1,7 @@
 // publish bools
 let publishStream = false;
 let publishCall = true;
+let publishImportantDates = true;
 let publishWorkshops = false;
 let publishAbout = true;
 let publishCatalogue = false;
@@ -25,8 +26,9 @@ function makeMenu() {
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto"; style="flex-grow: 1; justify-content: flex-end; gap: 16px;">
 				${(publishStream)?`<li class="nav-item blink"><a class="nav-link p-2" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>`:''}
+                                ${(publishImportantDates)?`<li class="nav-item"><a class="nav-link p-2" href="./important-dates.html">Important Dates</a></li>`:''}
 				${(publishTable)?`<li class="nav-item"><a class="nav-link p-2" href="./timetable.html">Timetable</a></li>`:''}
-				${(publishCatalogue)?`<li class="nav-item"><a class="nav-link p-2" href="./catalogue/">Catalogue</a></li>`:''}
+                                ${(publishCatalogue)?`<li class="nav-item"><a class="nav-link p-2" href="./catalogue/">Catalogue</a></li>`:''}
 				${(publishRegistration)?`<li class="nav-item"><a class="nav-link p-2" href="./registration.html">Registration</a></li>`:''}
 				${(publishTickets)?`<li class="nav-item"><a class="nav-link p-2" href="./tickets.html">Tickets & Info</a></li>`:''}
 				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link p-2" href="./workshops.html">Workshops</a></li>`:''}
