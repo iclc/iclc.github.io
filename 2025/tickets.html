@@ -26,11 +26,41 @@
 	<!-- Core theme CSS (includes Bootstrap)-->
 	<link href="css/styles.css" rel="stylesheet" />
 
-	<link rel="stylesheet" href="./lib/timetablejs.css">
-	<link rel="stylesheet" href="./lib/timetablejs2.css">
-	<script src="./lib/timetable.js"></script>
 </head>
 <body id="page-top">
+
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+	<div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel" style="color:#000000">
+	    <!-- Modal Title goes here !!!-->
+	    Hi!
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	</div>
+	<div class="modal-body" style="color:#000;"
+	     <!-- Modal Text goes here !!! -->
+            These tickets are for people attending ICLC 2025 without presenting. If you're presenting, please register as contributor!
+			<br><br>
+			Attendee options: <br><br>
+			<b>Independent Attendee: </b> Attendees without institutional funding (Students, Independent Artists and Researchers): €147,90 <br><br>
+			<b>Supported Attendee: </b> Attendees with institutional or other funding: €249,90 <br><br>
+			<b>Supporting Attendee:</b> Attendees with institutional or other funding who can support at a level that will help to offset the costs of others: €357,00 	<br><br>
+
+			DISCLAIMER: the Entradium platform is an outsourced service, and we do not endorse their additional donation suggestion, the related charity, nor the Newsletter opt-in.
+
+	     </div>
+      <div class="modal-footer">
+       <!-- <button class="btn btn-primary" data-bs-dismiss="modal">BACK</button> -->
+	<a href="registration.html" target="_blank" class="btn btn-primary">I'm a contributor, take me to registration</a>
+        <a href="https://entradium.com/en/events/iclc-2025-general-attendees-barcelona" target="_blank" class="btn btn-secondary">Continue as a attendee</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
 	<!-- Generate the main menu bar -->
 	<script src="./js/scripts-extension.js?cachebust=1010209"></script>
 	<script>makeMenu();</script>
@@ -40,148 +70,65 @@
 		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
 			<div class="d-flex justify-content-center">
 				<div class="text-center">
-					<h2 class="text-white mx-auto mt-4 mb-5 text-center">Tickets & Info</h2>
-
-					<a class="btn btn-primary" href="#passes" style="font-weight:bold">Conference Passes</a><br>
-					<a class="btn btn-primary" href="#tickets" style="font-weight:bold">Concert Tickets</a><br>
+					<br><br><br><br>
+					<h3 class="mx-auto mt-4 mb-5 justify-content: center">Tickets & Info</h3>
 					<br>
-					<a class="btn btn-primary" href="registration.html" style="font-weight:bold">Registration (for Contributors)</a><br>
+						<div>
+					<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy full conference ticket here!</a><br>
 
-					<br><br>
-					<h4 class="text-white mx-auto blink" style="background:none;"><a href="#conference">Conference Info</a></h4><br>
-					<h4 class="text-white mx-auto blink" style="background:none;"><a href="#concerts">Concerts Info</a></h4><br>
-					<!-- <h4 class="text-white mx-auto blink" style="background:none;"><a href="#tickets">⬇︎ Concert Tickets ⬇︎</a></h4> -->
+						</div>
+					<p class="mx-auto mt-4 mb-5">Tickets for individual concerts and workshops will be added at a later date!</p>
+					<br>
+					<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">
 				</div>
 			</div>
 		</div>
 	</header>
 	
-	<section class="about-section" id="passes">
+	<section class="about-section" id="about">
 		<div class="container px-4 px-lg-5 text-center">
-			<h2 class="text-white mx-auto mt-4 mb-5 text-center">Passes</h2>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271931" style="font-weight:bold">Full Conference Pass</a> incl. Presentations, Keynotes, Workshops, Concerts<br>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275255">Daypass Wednesday 19-04</a> incl. Presentations, Keynote<br>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275258">Daypass Thursday 20-04</a> incl. Presentations, Lunch Concert, Keynote<br>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275261">Daypass Friday 21-04</a> incl. Presentations, Lunch Concert, Keynote<br>
+
+					<script>
+				paragraph('about', 'Full Conference Tickets', `
+
+<br><br>
+This year we have 3 options of registration for attendees: 
+				<br><br>
+				<b>Independent Attendee: </b>  Presenting contributors without institutional funding (Students, Independent Artists and Researchers): €147,90 
+				<br><br>
+				<b>Supported Attendee: </b> Presenting contributors with institutional or other funding: €249,90 
+				<br><br>
+				<b>Supporting Attendee:</b> Presenting contributors with institutional or other funding who can support at a level that will help to offset the costs of others: €357,00
+				<br><br>
+				Please note, if this reduced-rate attendence still presents a financial hardship, you may contact us at iclc@toplap.cat to request to volunteer in exchange for a discount. 
+				<br><br>
+				As in previous ICLCs, the option you select depends on the honor system. Your choice to contribute as much as you can (or what your Institution/University can) helps to make sure ICLC remains as open and accessible as possible. Because ICLC 2025 itself is not institutionally funded, our fees are necessarily higher than many other years to help cover the costs of venues and logistics.
+				<br><br>
+
+All passes include full access to all conference events, concerts, and workshops. However, you will still have to RSVP for individual workshops and for the Opening Concert on May 27th, as seating for these is limited. We will open up these reservations soon.
+				<br><br>
+				If you need a refund or an invoice, please send an email to iclc@toplap.cat with [Tickets] in the subject line.
+<br><br>
+				For <b> contributor registration</b> (for those who are presenting something) see <a href='registration.html'>here</a>.
+				<br><br>
+				Please note that the Entradium platform is an outsourced service, and we do not endorse their additional donation suggestion, the related charity, nor the Newsletter opt-in.`);
+
+					  				paragraph('about', 'More info about Entradium and our payment partners', `For registrations and tickets, we are using a platform called Entradium. When you link to the tickets above, you will leave our website and land on Entradium. You will see the tickets presented by Axolot Collective, one of ICLC 2025's organizing partners. At checkout you will see the payment itself is being processed by Crocantickets SL.
+				<br><br>
+				Please note that the Entradium platform is an outsourced service, and we do not endorse their additional donation suggestion, the related charity, nor the Newsletter opt-in.`);
+
+
+					  
+					  </script>
 		</div>
 	</section>
 	
 	<section class="about-section" id="tickets">
 		<div class="container px-4 px-lg-5 text-center">
-			<h2 class="text-white mx-auto mt-4 mb-5 text-center">Concert Tickets</h2>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271929">Wed 19-04: Choreographic Coding @ Het Huis Utrecht</a><br>
-			<a class="btn btn-primary" href="https://ekko.nl/event/alternative-algorithms/">Thu 20-04: Alternative Algorithms @ EKKO</a><br>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111290585">Fri 21-04: WaveFieldSynthesis Concert by HKU Music Technology students @ HKU IBB-Laan</a><br>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275268">Fri 21-04: Immersed in Code @ Former Pieter Baan Centrum</a><br>
-			<a class="btn btn-primary" href="https://tivolivredenburg.nl/algorave">Sat 22-04: Algorave @ TivoliVredenburg</a><br>
-			<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271930">Sun 23-04: Hybric Acoustics @ Nicolaïkerk</a><br>
+			
 		</div>
 	</section>
-
-	<section class="projects-section bg-black">
-		<div class="container px-4 px-lg-5" id="concerts">
-			<script>
-		paragraphImageLeft('concerts', 'Choreographic Coding', `
-		19 April, Doors: 19:30 / Show: 20:00 (until around 23:00)<br>
-		<a href="https://hethuisutrecht.nl/">Het Huis Utrecht</a><br>
-		Boorstraat 107, 3513 SE Utrecht<br><br>
-
-		The future of dance and choreography comes alive at the Choreographic Coding concert and dance performance on April 19th. Discover how technology and electronic music will change the dance industry forever and experience the fusion of body and code - human and machine - software and sentience. Watch as talented performers use code to generate stunning visuals and unique soundscapes, all while expertly choreographed dancers move to the beat. Whether you're a fan of electronic music or contemporary dance, this is an event not to be missed.
-		<br><br>
-		<a href="catalogue/event/choreographic-coding.html"><strong>More info and full line-up</strong></a>
-		<br><br>
-		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271929">Wed 19-04: Choreographic Coding @ Het Huis Utrecht</a><br><br><br>
-		`, `assets/img/choreographic-coding.png`);
-
-		paragraphImageRight('concerts', 'Alternative Algorithms', `
-		20 April, Doors: 19:30 / Show: 20:00 (until around 22:30)<br>
-		<a href="https://ekko.nl/">EKKO</a><br>
-		Bemuurde Weerd Westzijde 3, 3513 BH Utrecht<br><br>
-		Experience the cutting-edge sounds of our talented live performers during the thrilling electronic concert Alternative Algorithms at EKKO. With an intimate venue and atmosphere, you'll feel like you're part of something truly special. 
-		<br><br>
-		You'll be taken on an immersive journey from algorithmic krautrock via vaporwave, ambient and glitch to simulated behaviours of biological systems.
-		<br><br>
-		<a href="catalogue/event/alternative-algorithms.html"><strong>More info and full line-up</strong></a>
-		<br><br>
-		<a class="btn btn-primary" href="https://ekko.nl/event/alternative-algorithms/">Thu 20-04: Alternative Algorithms @ EKKO</a><br><br><br>
-		`, `assets/img/alternative-algorithms.png`);
-
-		paragraphImageLeft('concerts', 'A/V night: Immersed in Code', `
-		21 April, Doors/Pre-Show: 19:30 / Concert: 20:00 <!-- (until around 23:15) --><br>
-		Former Pieter Baan Centrum<br>
-		Gansstraat 162, 3582 EP Utrecht<br><br>
-		Join us for an unforgettable live coded music evening that will capture all your senses during Immersed in Code. Experience a unique blend of glitchy visual effects and sounds from outer space, featuring a diverse lineup of talented artists. The seamless collaboration between sound and image will transport you into imaginary worlds and sensational adventures.
-		<br><br>
-		<a href="catalogue/event/immersed-in-code.html"><strong>More info and full line-up</strong></a>
-		<br><br>
-		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275268">Fri 21-04: Immersed in Code @<br>Former Pieter Baan Centrum</a><br><br><br>
-		`, `assets/img/immersed-in-code.png`);
-
-		paragraphImageRight('concerts', 'Algorave', `
-		22 April, Doors: 21:45 / Show: 22:00 (until around 03:00)<br>
-		<a href="https://www.tivolivredenburg.nl/">TivoliVredenburg</a><br>
-		Vredenburgkade 11, 3511 WC Utrecht<br><br>
-		During this club night, the raw edges of raves come together with futuristic sounds, having the crowd dance to algorithms! Algoraves are a new movement in club culture. The artists, who take center stage, create their beats and visuals by writing code in real-time. This will be the biggest Algorave in Utrecht so far with a line-up packed with international artists from the livecoding community. Come and experience it yourself!
-		<br><br>
-		<a href="catalogue/event/algorave.html"><strong>More info and full line-up</strong></a>
-		<br><br>
-
-		<a class="btn btn-primary" href="https://tivolivredenburg.nl/algorave">Sat 22-04: Algorave @ TivoliVredenburg</a><br><br><br>
-		`, `assets/img/algorave.png`);
-
-		paragraphImageLeft('concerts', 'Matinée concert: Hybric Acoustics', `
-		23 April, Doors: 15:30 / Show: 16:00 (until around 19:00)<br>
-		<a href="https://www.nicolaikerk.nl/">Nicolaïkerk</a><br>
-		Nicolaaskerkhof 8, 3512 XC Utrecht<br><br>
-		After a busy weekend, there's nothing like unwinding at a relaxing, laid-back instrumental concert. Come to the Nicolaïchurch on Sunday, April 23, for just that: electro-acoustic and instrumental musicians will take the stage and help you end the weekend with a cozy feel.
-		<br><br>
-		<a href="catalogue/event/hybrid-acoustics.html"><strong>More info and full line-up</strong></a>
-		<br><br>
-		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271930">Sun 23-04: Hybric Acoustics @ Nicolaïkerk</a><br><br><br>
-		`, `assets/img/hybrid-acoustics.png`);
-
-			</script>
-		</div>
-	</section>
-
-	<section class="projects-section bg-black">
-		<div class="container px-4 px-lg-5" id="conference">
-			<script>
-		paragraphImageRight('conference', 'Conference Passes', `
-		If you are interested in visiting the International Conference on Live Coding (ICLC) program for one or multiple days, you can purchase a full conference pass or daypass. ICLC is dedicated to practices and research focused on technologies and philosophies that interpret the use of computer code as gesture within the context of live performances. In its previous editions the community has offered important insights on this practice from many diverse perspectives – technical, philosophical, educational, political and more. Find out more about the conference in the <a href="./about.html">About</a>
-		<br><br> 
-		The conference takes place at De Havenloods, Utrecht in the venue VOGELFREI. You can find all the details on the <a href="./map.html">map</a>
-
-		A full conference ticket gives you acces to:<br>
-		- the full conference (Wed – Fri) <br>
-		- all concerts (Wed – Sun) <br>
-		- free sign up for the workshops (Thu - Sat) <br>
-		<br>
-		(NB: workshops have limited access so make sure to sign up when the workshops open up.)
-		<br><br>
-		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111271931" style="font-weight:bold">Full Conference Pass</a>
-		<br><br>
-
-		The organisation and community of ICLC highly value the accessibility and diversity of the conference and its visitors, and we wish to allow anyone to attend the conference. For this we offer a number of <strong>solidarity tickets</strong> for visitors of the conference. This ticket is available for anyone who would be unable to pay for the conference for whichever reason, but is still very eager to join. Please apply for a solidarity ticket by filling in this <a href="https://forms.gle/71JgAJtyDQGkncL36">sign up sheet</a>, so we can get insight in the necessity. We will be in contact with you. If you have any questions, you can email <a href="mailto:iclc@creativecodingutrecht.nl">iclc@creativecodingutrecht.nl</a>.
-		<br><br>
-
-		(Photo © Maren van der Burgth)
-		`, 'assets/img/havenloods-maren-van-der-burght.jpg')
-
-		paragraphImageLeft('conference', 'Day Passes', `
-		These tickets give access to the conference of this specific day. It does not give access to the concert or workshop on this day, you can purchase separate tickets for those on this webpage.
-		<br><br>
-
-		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275255">Daypass Wednesday 19-04</a><br>
-		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275258">Daypass Thursday 20-04</a><br>
-		<a class="btn btn-primary" href="https://ccu.stager.nl/web/tickets/111275261">Daypass Friday 21-04</a><br>
-		<br>
-		(Photo © Vogelfrei)
-		`, `assets/img/vogelfrei.jpg`);
-			</script>
-		</div>
-	</section>
-
+	
 	<!-- Generate contacs and copyright footer -->
 	<script>
 		socials();
@@ -192,6 +139,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
-	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
 </body>
 </html>
