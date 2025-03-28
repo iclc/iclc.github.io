@@ -11,7 +11,7 @@ let publishSatellite = false;
 let publishTable = true;
 let publishMap = false;
 let publishRegistration = true;
-let publishTickets = false;
+let publishTickets = true;
 
 function makeMenu() {
   // prettier-ignore
@@ -29,7 +29,7 @@ function makeMenu() {
                                 ${(publishImportantDates)?`<li class="nav-item"><a class="nav-link p-2" href="./important-dates.html">Important Dates</a></li>`:''}
 				${(publishTable)?`<li class="nav-item"><a class="nav-link p-2" href="./timetable.html">Timetable</a></li>`:''}
                                 ${(publishCatalogue)?`<li class="nav-item"><a class="nav-link p-2" href="./catalogue/">Catalogue</a></li>`:''}
-				${(publishRegistration)?`<li class="nav-item"><a class="nav-link p-2" href="./registration.html">Registration</a></li>`:''}
+				${(publishRegistration)?`<li class="nav-item"><a class="nav-link p-2" href="./registration.html">(Contributor) Registration</a></li>`:''}
 				${(publishTickets)?`<li class="nav-item"><a class="nav-link p-2" href="./tickets.html">Tickets & Info</a></li>`:''}
 				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link p-2" href="./workshops.html">Workshops</a></li>`:''}
 				${(publishMap)?`<li class="nav-item"><a class="nav-link p-2" href="./map.html">Map</a></li>`:''}
