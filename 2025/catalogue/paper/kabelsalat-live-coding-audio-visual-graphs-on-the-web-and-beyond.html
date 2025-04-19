@@ -67,7 +67,16 @@
         
         
         <h4>Abstract</h4>
-        <p>TBD</p>
+        <p>This paper introduces KabelSalat, a graph-based live coding environment that targets multiple platforms and languages. It
+works by translating a Domain Specific Language (DSL) based on JavaScript into a signal flow graph. This graph can
+be compiled into a sequence of instructions optimized for real time signal processing. The compiler can either output
+JavaScript code to run in the browser or optimized C code to run natively. The possibility of adding other target languages
+is an integral part of KabelSalat’s design. The browser version includes a REPL and features a range of audio DSP nodes
+reminiscent of modular synthesizers. Notable features include single sample feedback and multi-channel expansion inspired
+by the SuperCollider audio engine. The core module of KabelSalat has also been used to implement a stripped down
+version of the Hydra video synthesizer, thus demonstrating that the same underlying principles can be adapted both to audio
+and video processing. In the future, KabelSalat might become an alternative audio engine for Strudel, offering more sound
+design capabilities, compared to the current SuperDough engine, which uses the browser’s built-in Web Audio graph</p>
     
 	  </div>
 	</div>
