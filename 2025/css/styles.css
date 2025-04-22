@@ -11673,7 +11673,6 @@ body {
 }
 @media (max-width: 992px) {
   .masthead {
-    height: 100vh;
     padding: 2rem;
   }
   .masthead h1, .masthead .h1 {
