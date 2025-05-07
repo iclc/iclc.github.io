@@ -1,13 +1,13 @@
 // publish bools
 let publishStream = false;
 let publishCall = true;
-let publishImportantDates = true;
+let publishImportantDates = false;
 let publishWorkshops = false;
 let publishAbout = true;
 let publishCatalogue = false;
 let publishTravel = true;
 let publishVenues = false;
-let publishSatellite = false;
+let publishSatellite = true;
 let publishTable = true;
 let publishMap = false;
 let publishRegistration = true;

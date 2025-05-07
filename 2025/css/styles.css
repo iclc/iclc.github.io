@@ -11901,8 +11901,12 @@ body{
 img {
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%) brightness(140%);
+  transition: filter 0.3s ease; 
 }
 
+img.grayscale-hover:hover {
+  filter: none;
+}
 
 .map {
   -webkit-filter: grayscale(100%);
