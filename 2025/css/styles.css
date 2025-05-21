@@ -11937,7 +11937,7 @@ img.grayscale-hover:hover {
   width: 100%;
   left: 0;
   top: 0;bottom: 0;right: 0;
-  opacity: 1;-webkit-transition: all 0.4s ease-in-out 0s;-moz-transition: all 0.4s ease-in-out 0s;transition: all 0.4s ease-in-out 0s
+  opacity: 1; -webkit-transition: all 0.4s ease-in-out 0s;-moz-transition: all 0.4s ease-in-out 0s;transition: all 0.4s ease-in-out 0s
 }
 
 .content:hover .content-overlay{opacity: 1}.content-image{width: 100%}img{box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 255);border-radius: 5px}
