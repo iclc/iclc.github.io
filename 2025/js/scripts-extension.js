@@ -6,11 +6,11 @@ let publishWorkshops = false;
 let publishAbout = true;
 let publishCatalogue = true;
 let publishTravel = true;
-let publishVenues = false;
+let publishVenues = true;
 let publishSatellite = true;
 let publishTable = true;
 let publishMap = false;
-let publishRegistration = true;
+let publishRegistration = false;
 let publishTickets = true;
 
 function makeMenu() {
