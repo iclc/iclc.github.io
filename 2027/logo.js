@@ -18,8 +18,10 @@ let vword = ["dance", "collaboration","classical", "jazz", "algorave", "livecodi
 let hword = ["classical", "jazz", "algorave", "livecoding","classical", "jazz", "algorave", "livecoding"]
 let font;
 
-let windowWidth = 700;
-let windowHeight = 700;
+// let windowWidth = document.get;
+// let windowHeight = 700;
+// let ww = window.innerWidth/3;
+// let wh = window.innerHeight/3;
 
 let libs = ['https://unpkg.com/hydra-synth', 'includes/libs/hydra-synth.js']
 // hydra canvas + init
@@ -38,7 +40,7 @@ function preload() {
 
 function setup() {
     const container = select("#logocontainer")
-    createCanvas(windowWidth, windowHeight, WEBGL).parent(container)
+    createCanvas(window.innerWidth, window.innerHeight, WEBGL).parent(container)
     // angleMode(DEGREES)
     textFont(font);
     // setupAudio(true)
