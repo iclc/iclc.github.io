@@ -13,13 +13,18 @@ let date_7 = [[1,1,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1]]
 let vwidth = 0
 let hheight = 0
 let disc = 0.3
+let amp = 1
 let vword = ["dance", "collaboration","classical", "jazz", "algorave", "livecoding","dance", "collaboration"]
 let hword = ["classical", "jazz", "algorave", "livecoding","classical", "jazz", "algorave", "livecoding"]
 let font;
 
+let windowWidth = 700;
+let windowHeight = 700;
+
 let libs = ['https://unpkg.com/hydra-synth', 'includes/libs/hydra-synth.js']
 // hydra canvas + init
 let hc = document.createElement('canvas') // hydra canvas + custom size
+// let hc = document.getElementById("toto");
 hc.width = boxsize // window.innerWidth // for full res
 hc.height = boxsize // window.innerHeight // for full res
 let hydra = new Hydra({detectAudio: false,canvas: hc})
@@ -27,34 +32,23 @@ noize = noise // use noize() since noise() is taken by p5js
 
 let pg // store hydra texture
 
-
-// sandbox - start
-pattern = () => osc(200, 0).kaleid(200).scale(1, 0.4)
-//
-pattern()
-  .scrollX(0.1, 0.01)
-  .mult(pattern())
-  .out()
-  
-
-// sandbox - stop
-
 function preload() {
-  font = loadFont("includes/demos-data/fonts/RobotoMono-Regular.otf")
+  font = loadFont("fonts/RobotoMono-Regular.otf")
 }
 
 function setup() {
-	createCanvas(windowWidth, windowHeight, WEBGL)
-	// angleMode(DEGREES)
-	textFont(font);
-	setupAudio(true)
-	pg = createGraphics(hc.width, hc.height)
-	let strudel = createElement('iframe');
-	strudel.attribute("src", "https://strudel.cc")
-	  // Set the element's style and position.
-	  strudel.style('color', 'deeppink');
-	  strudel.size(800,150)
-	  strudel.position(1030, 715);
+    const container = select("#logocontainer")
+    createCanvas(windowWidth, windowHeight, WEBGL).parent(container)
+    // angleMode(DEGREES)
+    textFont(font);
+    // setupAudio(true)
+    pg = createGraphics(hc.width, hc.height)
+    let strudel = createElement('iframe')
+    strudel.attribute("src", "https://strudel.cc")
+    // Set the element's style and position.
+    strudel.style('color', 'deeppink');
+    strudel.size(800,150)
+    strudel.position(700, 500);
 	  
 }
 
@@ -70,7 +64,7 @@ function off() {
 }
 
 function draw() {
-	updateAudio()
+	// updateAudio()
 	background(0)
 	orbitControl(5)
 

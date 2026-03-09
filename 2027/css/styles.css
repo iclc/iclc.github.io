@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+
+.todo {
+    color: red;
+}
+
+em {
+    color: #f0f0f0;
+}
+
+em em {
+    color: #f0f0f0;
+}
+
+#logocontainer {
+    margin: auto;
+}
