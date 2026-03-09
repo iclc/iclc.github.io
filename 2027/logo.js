@@ -34,6 +34,18 @@ noize = noise // use noize() since noise() is taken by p5js
 
 let pg // store hydra texture
 
+// sandbox - start
+pattern = () => osc(20, 0).kaleid(2).colorama(0.4).diff(voronoi(2)).scale(1, 0.4)
+//
+pattern()
+  .scrollX(0.1, 0.01)
+  .mult(pattern())
+  .out()
+  
+
+// sandbox - stop
+
+
 function preload() {
   font = loadFont("fonts/RobotoMono-Regular.otf")
 }
@@ -45,8 +57,8 @@ function setup() {
     textFont(font);
     // setupAudio(true)
     pg = createGraphics(hc.width, hc.height)
-
-    perspective(0.2, 1.5, 600, 1200);
+	camera(0,0,2000)
+    perspective(0.2, 1.5, 0, 5200);
     /* let strudel = createElement('iframe')
     strudel.attribute("src", "https://strudel.cc")
     // Set the element's style and position.
@@ -72,7 +84,7 @@ function draw() {
 	background(0)
 	orbitControl(5)
 
-	ortho()
+	// ortho()
 
 	if(mouseIsPressed) {
 
