@@ -43,13 +43,14 @@ function setup() {
     textFont(font);
     // setupAudio(true)
     pg = createGraphics(hc.width, hc.height)
-    let strudel = createElement('iframe')
+
+    /* let strudel = createElement('iframe')
     strudel.attribute("src", "https://strudel.cc")
     // Set the element's style and position.
     strudel.style('color', 'deeppink');
     strudel.size(800,150)
     strudel.position(700, 500);
-	  
+    */
 }
 
 function on() {
