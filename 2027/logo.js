@@ -2,7 +2,7 @@
 
 let v = .003
 let mouseon = true
-let size  = 30
+let size  = 15
 let boxsize = 15*size
 let char_i = [[1],[0],[1],[1],[1],[1]]
 let char_c = [[1,1,1],[1],[1],[1],[1],[1,1,1]]
@@ -40,12 +40,13 @@ function preload() {
 
 function setup() {
     const container = select("#logocontainer")
-    createCanvas(window.innerWidth, window.innerHeight, WEBGL).parent(container)
+    createCanvas(windowWidth/2, windowHeight/2, WEBGL).parent(container)
     // angleMode(DEGREES)
     textFont(font);
     // setupAudio(true)
     pg = createGraphics(hc.width, hc.height)
 
+    perspective(0.2, 1.5, 600, 1200);
     /* let strudel = createElement('iframe')
     strudel.attribute("src", "https://strudel.cc")
     // Set the element's style and position.
