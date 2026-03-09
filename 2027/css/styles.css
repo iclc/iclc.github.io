@@ -14,18 +14,23 @@ p {
     padding: 10px;
 }
 
-.todo {
-    color: red;
-}
-
 em {
-    color: #f0f0f0;
-}
-
-em em {
     color: #f0f0f0;
 }
 
 #logocontainer {
     margin: auto;
+}
+
+a:visited {
+    color: deeppink;
+}
+
+a {
+    color: deeppink;
+}
+
+.theme {
+    font-size: 2em;
+    text-align: center;
 }
