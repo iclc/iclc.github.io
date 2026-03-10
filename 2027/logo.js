@@ -14,8 +14,8 @@ let vwidth = 0
 let hheight = 0
 let disc = 0.3
 let amp = 1
-let vword = ["dance", "collaboration","classical", "jazz", "algorave", "livecoding","dance", "collaboration"]
-let hword = ["classical", "jazz", "algorave", "livecoding","classical", "jazz", "algorave", "livecoding"]
+let vword = ["dance", "collaboration","classical", "jazz", "algorave", "livecoding","dance", "choreography"]
+let hword = ["choreography", "jazz", "algorave", "livecoding","classical", "jazz", "algorave", "livecoding"]
 let font;
 
 // let windowWidth = document.get;
@@ -34,8 +34,20 @@ noize = noise // use noize() since noise() is taken by p5js
 
 let pg // store hydra texture
 
+// sandbox - start
+pattern = () => osc(20, 0).kaleid(3).colorama(()=> time*0.03+0.5 ).rotate(()=> time ).diff(voronoi([2])).scale(1, 0.4)
+//
+pattern()
+  .scrollX(0.1, 0.01)
+  .mult(pattern())
+  .out()
+  
+
+// sandbox - stop
+
+
 function preload() {
-  font = loadFont("fonts/RobotoMono-Regular.otf")
+  font = loadFont("fonts/PressStart2P-Regular.otf")
 }
 
 function setup() {
@@ -45,8 +57,8 @@ function setup() {
     textFont(font);
     // setupAudio(true)
     pg = createGraphics(hc.width, hc.height)
-
-    perspective(0.2, 1.5, 600, 1200);
+	camera(0,0,2000)
+    perspective(0.2, 1.5, 0, 5200);
     /* let strudel = createElement('iframe')
     strudel.attribute("src", "https://strudel.cc")
     // Set the element's style and position.
@@ -72,7 +84,7 @@ function draw() {
 	background(0)
 	orbitControl(5)
 
-	ortho()
+	// ortho()
 
 	if(mouseIsPressed) {
 
@@ -89,9 +101,9 @@ function draw() {
 	// rotateX(frameCount / 4)
 	// rotateZ(frameCount / 2)
 	// rotateY(frameCount / 2)
-	rotateX((sin(frameCount/30))*0.005)
-	rotateY((sin(frameCount/30))*0.002)
-	rotateZ((sin(frameCount/30))*0.001)
+	rotateX((sin(frameCount/800))*0.5)
+	rotateY((sin(frameCount/3000))*0.2)
+	rotateZ((sin(frameCount/300))*0.1)
 	push()
 	translate(-6*size,-3*size,0)
 	ii(-6, -3, 0, sizeA, char_i)
@@ -126,10 +138,10 @@ function horiPlane(tex) {
 	hindex = int((hheight+boxsize)/boxsize*hword.length-2)
 	// hheight = (mouseY-windowHeight/2)/windowHeight*boxsize
 	hheight= sin(frameCount/305)*boxsize/2
-	textSize(36);
-	fill('deeppink')
+	textSize(14);
+	fill('yellow')
 	// text(-1*((mouseY-windowHeight/2)/windowHeight-0.5), (windowWidth/2)-490, 121)
-	text(hindex, (windowWidth/2)-490, 121)
+	// text(hindex, (windowWidth/2)-490, 121)
 	line(-boxsize/2, hheight , -boxsize/2, boxsize/2,hheight,-boxsize/2 );
 	line(-boxsize/2, hheight , boxsize/2, -boxsize/2,hheight,-boxsize/2 );
 	line(-boxsize/2, hheight , boxsize/2, boxsize/2,hheight,boxsize/2 );
@@ -137,6 +149,7 @@ function horiPlane(tex) {
 	push()
 	rotateY(radians(90))
 	translate(0,0,hheight)
+	tint(255, 127);
 	texture(tex)
 	noStroke()
 	plane(boxsize, boxsize)
@@ -153,8 +166,8 @@ function vertiPlane(tex) {
 	// vwidth = (mouseX-windowWidth/2)/windowWidth*boxsize
 	vindex = int((vwidth+boxsize)/boxsize*vword.length-2)
 	vwidth=sin(frameCount/300)*boxsize/2
-	textSize(36);
-	fill('deeppink')
+	textSize(14);
+	fill('yellow')
 	// text(-1*((mouseX-windowWidth/2)/windowWidth-0.5), (windowWidth/2)-490, 151)
 	
 	line(vwidth ,boxsize/2, -boxsize/2, vwidth, -boxsize/2, -boxsize/2 );
@@ -164,6 +177,7 @@ function vertiPlane(tex) {
 	push()
 	rotateX(radians(90))
 	translate(0,0,vwidth)
+	tint(255, 127);
 	texture(tex)
 	noStroke()
 	plane(boxsize, boxsize)
