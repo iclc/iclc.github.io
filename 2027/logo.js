@@ -149,6 +149,7 @@ function horiPlane(tex) {
 	push()
 	rotateY(radians(90))
 	translate(0,0,hheight)
+	tint(255, 127);
 	texture(tex)
 	noStroke()
 	plane(boxsize, boxsize)
@@ -176,6 +177,7 @@ function vertiPlane(tex) {
 	push()
 	rotateX(radians(90))
 	translate(0,0,vwidth)
+	tint(255, 127);
 	texture(tex)
 	noStroke()
 	plane(boxsize, boxsize)
