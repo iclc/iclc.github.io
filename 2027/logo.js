@@ -14,8 +14,8 @@ let vwidth = 0
 let hheight = 0
 let disc = 0.3
 let amp = 1
-let vword = ["dance", "collaboration","classical", "jazz", "algorave", "livecoding","dance", "collaboration"]
-let hword = ["classical", "jazz", "algorave", "livecoding","classical", "jazz", "algorave", "livecoding"]
+let vword = ["dance", "collaboration","classical", "jazz", "algorave", "livecoding","dance", "choreography"]
+let hword = ["choreography", "jazz", "algorave", "livecoding","classical", "jazz", "algorave", "livecoding"]
 let font;
 
 // let windowWidth = document.get;
@@ -35,7 +35,7 @@ noize = noise // use noize() since noise() is taken by p5js
 let pg // store hydra texture
 
 // sandbox - start
-pattern = () => osc(20, 0).kaleid(2).colorama(0.4).diff(voronoi(2)).scale(1, 0.4)
+pattern = () => osc(20, 0).kaleid(3).colorama(()=> time*0.03+0.5 ).rotate(()=> time ).diff(voronoi([2])).scale(1, 0.4)
 //
 pattern()
   .scrollX(0.1, 0.01)
@@ -47,7 +47,7 @@ pattern()
 
 
 function preload() {
-  font = loadFont("fonts/RobotoMono-Regular.otf")
+  font = loadFont("fonts/PressStart2P-Regular.otf")
 }
 
 function setup() {
@@ -138,10 +138,10 @@ function horiPlane(tex) {
 	hindex = int((hheight+boxsize)/boxsize*hword.length-2)
 	// hheight = (mouseY-windowHeight/2)/windowHeight*boxsize
 	hheight= sin(frameCount/305)*boxsize/2
-	textSize(36);
-	fill('deeppink')
+	textSize(14);
+	fill('yellow')
 	// text(-1*((mouseY-windowHeight/2)/windowHeight-0.5), (windowWidth/2)-490, 121)
-	text(hindex, (windowWidth/2)-490, 121)
+	// text(hindex, (windowWidth/2)-490, 121)
 	line(-boxsize/2, hheight , -boxsize/2, boxsize/2,hheight,-boxsize/2 );
 	line(-boxsize/2, hheight , boxsize/2, -boxsize/2,hheight,-boxsize/2 );
 	line(-boxsize/2, hheight , boxsize/2, boxsize/2,hheight,boxsize/2 );
@@ -165,8 +165,8 @@ function vertiPlane(tex) {
 	// vwidth = (mouseX-windowWidth/2)/windowWidth*boxsize
 	vindex = int((vwidth+boxsize)/boxsize*vword.length-2)
 	vwidth=sin(frameCount/300)*boxsize/2
-	textSize(36);
-	fill('deeppink')
+	textSize(14);
+	fill('yellow')
 	// text(-1*((mouseX-windowWidth/2)/windowWidth-0.5), (windowWidth/2)-490, 151)
 	
 	line(vwidth ,boxsize/2, -boxsize/2, vwidth, -boxsize/2, -boxsize/2 );
