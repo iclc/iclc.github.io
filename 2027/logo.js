@@ -50,15 +50,28 @@ function preload() {
   font = loadFont("fonts/PressStart2P-Regular.otf")
 }
 
+function windowResized() {
+	const container = select("#logocontainer")
+	let s = container.size()
+	resizeCanvas(s.width, s.height);
+	// if (s.width < 250) {
+	// 	size = 10;
+	// 	boxsize = 15*size;
+	// }
+}
+
 function setup() {
     const container = select("#logocontainer")
-    createCanvas(windowWidth/2, windowHeight/2, WEBGL).parent(container)
+	let s = container.size()
+	createCanvas(s.width, s.height, WEBGL).parent(container)
+
+
     // angleMode(DEGREES)
     textFont(font);
     // setupAudio(true)
     pg = createGraphics(hc.width, hc.height)
-	camera(0,0,2000)
-    perspective(0.2, 1.5, 0, 5200);
+	camera(0,0,500)
+    // perspective(0.2, 1.5, 0, 5200);
     /* let strudel = createElement('iframe')
     strudel.attribute("src", "https://strudel.cc")
     // Set the element's style and position.

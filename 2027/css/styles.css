@@ -4,24 +4,33 @@ body {
     padding: 50px;
     font-family: monospace;
     font-size: 18px;
+    line-height: 1.6; /* Improved readability */
 }
 
-h1 {
+
+h1, h2, h3{
     text-align: center;
+    margin-bottom: 20px; /* Added some spacing below h1 elements */
 }
+
+h4{
+    text-align: left;
+    margin-bottom: 20px; /* Added some spacing below h1 elements */
+}
+
 
 p {
     padding: 10px;
+    max-width: 800px;  /* Sets a maximum width for paragraphs */
+    margin: 0 auto; /* Centers the paragraph within its container */
 }
 
 em {
     color: #f0f0f0;
 }
 
-#logocontainer {
-    margin: auto;
-    text-align: center;
-}
+
+
 
 a:visited {
     color: deeppink;
@@ -34,12 +43,92 @@ a {
 .theme {
     font-size: 2em;
     text-align: center;
+    margin-bottom: 20px; /* Added spacing */
 }
 
 ul {
-    max-width: 80%;
+    padding: 10px;
+    max-width: 730px;  /* Sets a maximum width for paragraphs */
+    margin: 0 auto; /* Centers the paragraph within its container */
 }
 
 li {
     padding: 10px;
+    list-style-type: disc; /* Adds bullet points to the list */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;  /* Reduce padding on small screens */
+    }
+    p {
+        max-width: 100%; /* Paragraphs take full width on small screens */
+        padding: 5px; /* Smaller padding */
+    }
+    ul {
+        max-width: 100%; /* List takes full width on small screens */
+    }
+    h1 {
+        font-size: 1em; /* Slightly smaller h1 on smaller screens */
+    }
+
+    #content-container {
+        /* max-width: 768px; */
+        margin: 0 auto;  /* Centers the container */
+    }
+
+    #header {
+        text-align: center;
+    }
+
+    #logocontainer {
+        position: fixed; 
+        top: 130px;          
+        left: 10px;         
+        /* width: 550px;       
+        height: 550px;       */
+        /* transform: scale(0.5);  */
+        transition: transform 0.3s ease; 
+        z-index: -1000;       
+        text-align: left;    
+    }
+    
+    #content {
+        position: absolute;
+        top: 550px; 
+        transition: transform 0.3s ease; 
+    }
+
+
+}
+
+
+/* Desktop Media Query */
+@media (min-width: 769px) { 
+
+    #content-container {
+        max-width: 800px;
+        margin: 0 auto;  /* Centers the container */
+    }
+
+
+    #logocontainer {
+        position: fixed; 
+        top: 330px;          
+        /* left: 10px;          */
+        width: 769px;       
+        height: 769px;      
+        transform: scale(1); 
+        transition: transform 0.3s ease; 
+        z-index: -1000;       
+        text-align: center;    
+    }
+
+    #content {
+        position: absolute;
+        top: 1056px; 
+        transition: transform 0.3s ease; 
+    }
+
 }
