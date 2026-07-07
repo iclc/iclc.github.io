@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- ace editor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.39.0/ace.js" charset="utf-8"></script>
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+      h2 a {
+	  text-decoration: none !important;
+	  color: white;
+      }
+    </style>
+
+    <meta property="og:title" content="ICLC 2025" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://iclc.toplap.org/2025/" />
+    <meta property="og:description" content="International Conference on Live Coding 2025, May 27 to May 31, Barcelona" />
+
+    <meta property="og:image" content="https://github.com/diegovdc/iclc/blob/master/2025stage/assets/img/2025logocolor.jpg" />
+    <!-- <meta property="og:image:type" content="image/png" /> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="og:locale" content="en_US" />
+    <br><br>
+
+    <title>ICLC 2025</title>
+  </head>
+  <body id="page-top">
+    <!-- Generate the main menu bar -->
+    <script src="./js/scripts-extension.js?cachebust=1020104"></script>   
+    <script>
+      makeMenuCat();
+    </script>
+
+    <!-- Masthead-->
+    <header class="masthead" id="m1" style="overflow: hidden">
+      <div
+	style="
+	       position: relative;
+	       max-width: 800px;
+	       width: 100%;
+	       margin: 4rem auto 0 auto;
+	       "
+	id="logo-container"
+	>
+
+	<div id="canvas-container" class="canvas-container" onclick="openEditor()"></div>
+	<div id="editor" class="hidden"></div>
+	<script>
+	  // detect mobile browser
+	  if (window.matchMedia('only screen and (max-width: 760px)').matches) {
+
+	      // If on mobile, load a static logo image
+	      let img = document.createElement('img');
+	      img.src = 'assets/img/logo.svg';
+	      img.classList.add('logo');
+	      document.querySelector('#logo-container').replaceWith(img);
+
+	  } else {
+
+	      // If on desktop, load the fancy dynamic logo
+	      function loadScript(url) {
+		  let script = document.createElement('script');
+		  script.type = 'text/javascript'
+		  script.src = url;
+		  document.body.appendChild(script);
+	      };
+
+	      ['p5.js/1.11.2/p5.min.js', 'ace/1.4.12/ace.js'].forEach(
+		  path => loadScript('https://cdnjs.cloudflare.com/ajax/libs/' + path)
+	      );
+
+	      var tiles = [];
+	      var font;
+	      var toggleFilters = false;
+	      var fgnColor;
+	      var sampleFactor;
+	      var mosaicMaxSides;
+	      var mouseDiaspora;
+	      var minMosaicSize;
+	      var maxMosaicSize;
+
+	      function preload() {
+		  font = loadFont("assets/SourceSans3-VariableFont_wght.ttf");
+		  copyFont = loadFont("assets/AnonymousPro-Regular.ttf");
+		  headingFont = loadFont("assets/ZenDots-Regular.ttf");
+	      }
+
+	      ['js/logo.js', 'js/livecode.js'].forEach(path => loadScript(path));
+
+	  }
+	</script>
+	
+      </div>
+      <!-- <a href="#about" class="btn btn-circle js-scroll-trigger" style="position: relative;">
+	   <i class="fa fa-angle-double-down animated"
+	      style="
+		     position: absolute;
+		     top: 50%;
+		     left: 50%;
+		     transform: translate(-50%, -50%);
+		     "></i>
+      </a> -->
+      
+    </header>
+    <p style="font-size: 24px; font-weight: bold; position: relative;
+	       max-width: 800px;
+	       width: 100%;
+	       text-align:center;
+	       margin: -1em auto 0 auto;">Maig 27-31, 2025</p>
+    <!-- About-->
+    <section class="about-section" id="about">
+      <script>
+	
+
+	paragraph('about', 'Tema: Liveness (Vivacitat)',
+		  `<p>Han passat deu anys des de la primera convocatòria de participació de l'ICLC, que proposava "[...] explorar la vivacitat (liveness) en abstraccions simbòliques i comprendre les conseqüències perceptives, creatives, productives, filosòfiques i culturals". En la dècada següent, hem experimentat col·lectivament i col·laborativament amb diversos nivells d'abstracció de codificació en directe, hem desenvolupat llenguatges específics de domini i hem explorat els nivells d'agència que ofereixen els models creats manualment o, de vegades, amb l'ajuda d'algoritmes d'aprenentatge. Hem inventat i jugat amb nombroses interfícies per interactuar amb els algoritmes i el món que ens envolta durant les actuacions. Aquestes exploracions giren al voltant de definir quins processos realment volem mostrar i en quins formats volem expressar-los, mentre "pensem algorítmicament" amb un públic.</p>
+
+<p>En aquesta 9a edició de la conferència, convidem la comunitat a reflexionar sobre la vivacitat i les seves múltiples formes i conseqüències dins del live coding. Creiem que la tensió entre allò que és viu i allò que no ho és és un element clau del live coding. Quins efectes té en els processos, les tecnologies i les formes de la performance? Com ​​impacten i transformen les múltiples formes de vivacitat la hibridació entre allò digital/algorítmic i allò material? Com ​​es relaciona la vivacitat amb i/o defineix els aspectes socioculturals de les comunitats de live coding?</p>
+
+	<p>L'ICLC 2025 va convidar a propostes relacionades amb el tema d'enguany, vivacitat (liveness), tal com es destaca en qualsevol dels següents o fins i tot en algun altre tema:
+
+	  <ul>
+	    <li>Liveness en els contextos socials i culturals del live coding</li>
+	    <li>Liveness i algoritmes</li>
+	    <li>Liveness i interfícies</li>
+	    <li>Liveness i llunyania</li>
+	    <li>Liveness i agents de programari</li>
+	    <li>Llenguatges de live coding que integren altres vocabularis artístics</li>
+	    <li>Formes d'expressió artística que integren el live coding</li>
+	    <li>Interfícies híbrides i eines fora de pantalla en el rendiment del live coding</li>
+	    <li>Hibridació entre el digital i el material en les pràctiques de codificació en directe</li>
+	    <li>Creació i manteniment de comunitats de codificació en directe</li>
+	    <li>L'estat social del live coding: diversitat, equitat, inclusió i el manifest TOPLAP després de 10 anys d'ICLC</li>
+	    <li>Accessibilitat en llenguatges, interfícies i actuacions de codificació en directe</li>
+	  </ul>
+	Deu anys després del primer ICLC, animem la nostra comunitat a aprofitar els seus punts forts multidisciplinaris i descobrir nous límits per descobrir, expandir o mutar.</p>
+
+	<p class="mt-5">Accordingly, the 2025 program will take shape along the lines of the following session topics:
+	  <a href="#session2">Eines especialitzades i DSLs</a>,
+	  <a href="#session1">Live Coding més enllà dels ordinadors i les interfícies</a>, 
+	  <a href="#session3">Live Coding audiovisual</a>, 
+	  <a href="#session4">Futurs especulatius</a>, 
+	  <a href="#session5">Comunitats i pràctiques artístiques</a>,
+	  <a href="#session6">Live Coding col·laboratiu</a>.`
+	  );
+      </script>
+      <br>
+      <hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">	
+    </section>
+
+    <!-- Text with images -->
+    <section class="projects-section bg-black" id="sessions">
+      <div class="container px-4 px-lg-5" id="p1">
+	<script>
+	  paragraph('p1', 'Session Topics',
+	  `<span id="session1">&nbsp</span>`,
+	  );
+
+	  paragraphImageRight('p1',
+	  'Live Coding més enllà dels ordinadors i les interfícies',
+	  `Aquesta sessió està dedicada a explorar pràctiques com la robòtica o la coreografia abordades
+des d'una perspectiva de codificació en directe, i a explorar les interfícies entre els agents implicats en una
+actuació en directe des de diferents angles.
+	  <br><br>
+	  photo by @mm1quel
+	  <br><span id="session3">&nbsp</span>`,
+	  `assets/img/2025-LiveCodingBeyondComputersandinterfaces.jpg`,
+	  );
+
+	  paragraphImageRight('p1',
+	  'Futurs especulatius',
+	  `La codificació en directe es reformula constantment, modelada per les seves arrels històriques i els paisatges culturals i tecnològics canviants.
+Aquesta sessió explora com aquestes visions obren noves possibilitats per a la pràctica. Convida a l'especulació sobre els diversos
+futurs o presents que poden sorgir de la seva pràctica contínua.
+	  <br><br>
+	  photo by @brava_arts 
+	  <br><span id="session5">&nbsp</span>`,
+	  `assets/img/2025-SpeculativeFutures.jpg`,
+	  );
+
+	  paragraphImageLeft('p1',
+	  'Live Coding audiovisual',
+	  `Aquesta sessió està dedicada a la codificació en directe de narratives visuals, sovint en diàleg amb el so que es desplega, i a les eines que codifiquen les seves gramàtiques visuals. També inclou exploracions de sistemes de codificació audiovisual en directe que permeten la manipulació simultània de so i elements visuals.
+	  <br><br>
+	  photo by Andrés Costa
+	  <br><span id="session4">&nbsp</span>`,
+	  `assets/img/2025-Audio-visualLivecoding.jpg`,
+	  );
+
+	  paragraphImageLeft('p1', 
+	  'Eines especialitzades i DSLs',
+	  `Aquesta sessió se va centrar en llenguatges específics de cada domini, explorant les seves possibles gramàtiques, nivells d'abstracció i eines desenvolupades per ampliar les funcionalitats del llenguatge o per explorar tasques específiques.
+	  <br><br>
+	  photo by Andrés Costa
+	  <br><span id="session2">&nbsp</span>`,
+	  `assets/img/2025-SpecializedToolsandDSLs.jpg`,
+	  );
+
+
+	  paragraphImageRight('p1',
+	  'Comunitats i pràctiques artístiques',
+	  `
+	  La comunitat dóna forma a les pràctiques de codificació en directe, obre espais, defineix el curs, l'estètica i influeix en el seu abast. Aquesta sessió està dedicada a explorar les comunitats de codificació en directe i la diversitat de pràctiques artístiques que en sorgeixen.
+	  <br><br>
+	  photo by Andrés Costa
+	  <br><span id="session6">&nbsp</span>`,
+	  `assets/img/2025-CommunitiesandArtisticPractices.jpg`,
+	  );
+
+	  paragraphImageRight('p1',
+	  'Live Coding col·laboratiu',
+	  `Aquesta sessió va explorarà les dinàmiques de la codificació en directe com a pràctica col·lectiva, centrant-se en com la col·laboració i l'intercanvi de codi durant les actuacions transformen l'experiència.
+Parlarem de les eines i els mètodes que permeten el joc col·laboratiu en temps real.
+	  <br><br>
+	  photo by Andrés Costa`,
+	  `assets/img/2025-CollaborativeLivecoding.jpg`,
+	  );
+	</script>
+	<br><br>
+	<hr style="border: 1px solid white; width:50%; margin: 20px auto; display:block;">		
+      </div>
+    </section>
+    <!-- Signup-->
+    <!-- <section class="signup-section" id="signup">
+	 </section> -->
+
+    <!-- Contact-->
+    <!-- Footer-->
+
+
+    <script>
+      socials();
+      footer();
+    </script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+
+  </body>
+</html>

@@ -13,6 +13,8 @@ let publishMap = false;
 let publishRegistration = false;
 let publishTickets = true;
 
+// flag icons from https://github.com/lipis/flag-icons
+
 function makeMenu() {
   // prettier-ignore
   document.body.innerHTML += `
@@ -38,7 +40,39 @@ function makeMenu() {
 				${(publishSatellite)?`<li class="nav-item"><a class="nav-link p-2" href="./satellite.html">Satellite Events</a></li>`:''}
 				${(publishCall)?`<li class="nav-item"><a class="nav-link p-2" href="./call.html">Call</a></li>`:''}
 				${(publishAbout)?`<li class="nav-item"><a class="nav-link p-2" href="./about.html">About</a></li>`:''}
-					<!--<li class="nav-item"><a class="nav-link p-2" href="#signup">Contact</a></li>-->
+			        <li class="nav-item"><a class="nav-link p-2" href="index_cat.html">CAT&nbsp;<img src="flag-cat.svg" style="all:unset;width:14px;"></img></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>`;
+}
+
+function makeMenuCat() {
+  // prettier-ignore
+  document.body.innerHTML += `
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-black fixed-top" id="mainNav">
+		<div class="container" style="max-width: 1200px">
+			<a class="navbar-brand" href="./index.html">ICLC2025</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto"; style="flex-grow: 1; justify-content: flex-end; gap: 16px;">
+				${(publishStream)?`<li class="nav-item blink"><a class="nav-link p-2" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>`:''}
+                                ${(publishImportantDates)?`<li class="nav-item"><a class="nav-link p-2" href="./important-dates.html">Dates importants</a></li>`:''}
+				${(publishTable)?`<li class="nav-item"><a class="nav-link p-2" href="./timetable.html">Horari</a></li>`:''}
+                                ${(publishCatalogue)?`<li class="nav-item"><a class="nav-link p-2" href="./catalogue/">Catalég</a></li>`:''}
+				${(publishRegistration)?`<li class="nav-item"><a class="nav-link p-2" href="./registration.html">(Contributor) Registration</a></li>`:''}
+				${(publishTickets)?`<li class="nav-item"><a class="nav-link p-2" href="./tickets.html">Entrades i info</a></li>`:''}
+				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link p-2" href="./workshops.html">Tallers</a></li>`:''}
+				${(publishMap)?`<li class="nav-item"><a class="nav-link p-2" href="./map.html">Mapa</a></li>`:''}
+				${(publishVenues)?`<li class="nav-item"><a class="nav-link p-2" href="./venues.html">Espais</a></li>`:''}
+				${(publishTravel)?`<li class="nav-item"><a class="nav-link p-2" href="./travel-stay.html">Viatge</a></li>`:''}
+				${(publishSatellite)?`<li class="nav-item"><a class="nav-link p-2" href="./satellite.html">Esdeveniments satèl·lit</a></li>`:''}
+				${(publishCall)?`<li class="nav-item"><a class="nav-link p-2" href="./call.html">Convocatòria</a></li>`:''}
+				${(publishAbout)?`<li class="nav-item"><a class="nav-link p-2" href="./about_cat.html">Sobre</a></li>`:''}
+			        <li class="nav-item"><a class="nav-link p-2" href="index.html">EN&nbsp;<img src="flag-eng.svg" style="all:unset;width:14px;"></img></a></li>
 				</ul>
 			</div>
 		</div>
