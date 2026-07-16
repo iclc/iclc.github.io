@@ -67,10 +67,10 @@ function makeMenuCat() {
 				${(publishTickets)?`<li class="nav-item"><a class="nav-link p-2" href="./tickets.html">Entrades i info</a></li>`:''}
 				${(publishWorkshops)?`<li class="nav-item"><a class="nav-link p-2" href="./workshops.html">Tallers</a></li>`:''}
 				${(publishMap)?`<li class="nav-item"><a class="nav-link p-2" href="./map.html">Mapa</a></li>`:''}
-				${(publishVenues)?`<li class="nav-item"><a class="nav-link p-2" href="./venues.html">Espais</a></li>`:''}
+				${(publishVenues)?`<li class="nav-item"><a class="nav-link p-2" href="./venues_cat.html">Espais</a></li>`:''}
 				${(publishTravel)?`<li class="nav-item"><a class="nav-link p-2" href="./travel-stay.html">Viatge</a></li>`:''}
-				${(publishSatellite)?`<li class="nav-item"><a class="nav-link p-2" href="./satellite.html">Esdeveniments satèl·lit</a></li>`:''}
-				${(publishCall)?`<li class="nav-item"><a class="nav-link p-2" href="./call.html">Convocatòria</a></li>`:''}
+				${(publishSatellite)?`<li class="nav-item"><a class="nav-link p-2" href="./satellite_cat.html">Esdeveniments satèl·lit</a></li>`:''}
+				${(publishCall)?`<li class="nav-item"><a class="nav-link p-2" href="./call_cat.html">Convocatòria</a></li>`:''}
 				${(publishAbout)?`<li class="nav-item"><a class="nav-link p-2" href="./about_cat.html">Sobre</a></li>`:''}
 			        <li class="nav-item"><a class="nav-link p-2" href="index.html">EN&nbsp;<img src="flag-eng.svg" style="all:unset;width:14px;"></img></a></li>
 				</ul>
