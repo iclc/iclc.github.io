@@ -61,7 +61,7 @@ function makeMenuCat() {
 				<ul class="navbar-nav ms-auto"; style="flex-grow: 1; justify-content: flex-end; gap: 16px;">
 				${(publishStream)?`<li class="nav-item blink"><a class="nav-link p-2" target="_blank" href="https://www.youtube.com/watch?v=FSBtvtxP008">Stream</a></li>`:''}
                                 ${(publishImportantDates)?`<li class="nav-item"><a class="nav-link p-2" href="./important-dates.html">Dates importants</a></li>`:''}
-				${(publishTable)?`<li class="nav-item"><a class="nav-link p-2" href="./timetable.html">Horari</a></li>`:''}
+				${(publishTable)?`<li class="nav-item"><a class="nav-link p-2" href="./timetable_cat.html">Horari</a></li>`:''}
                                 ${(publishCatalogue)?`<li class="nav-item"><a class="nav-link p-2" href="./catalogue/">Catalég</a></li>`:''}
 				${(publishRegistration)?`<li class="nav-item"><a class="nav-link p-2" href="./registration.html">(Contributor) Registration</a></li>`:''}
 				${(publishTickets)?`<li class="nav-item"><a class="nav-link p-2" href="./tickets.html">Entrades i info</a></li>`:''}
