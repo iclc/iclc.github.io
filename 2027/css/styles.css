@@ -29,7 +29,9 @@ em {
     color: #f0f0f0;
 }
 
-
+del {
+    text-decoration: strike;
+}
 
 
 a:visited {
