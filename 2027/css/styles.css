@@ -5,6 +5,7 @@ body {
     font-family: monospace;
     font-size: 18px;
     line-height: 1.6; /* Improved readability */
+    
 }
 
 
@@ -59,6 +60,12 @@ li {
     list-style-type: disc; /* Adds bullet points to the list */
 }
 
+    .row {
+    display: flex;
+    align-items: center;
+    max-width: 768px;
+    gap: 1rem;
+    }
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     body {
@@ -102,6 +109,22 @@ li {
         transition: transform 0.3s ease; 
     }
 
+    .row {
+            flex-direction: column;
+                align-items:  center;
+    }
+
+      .lambdalogo {
+    width: 40%;
+  }
+        .desingellogo {
+    width: 40%;
+  }
+        .aplogo {
+    width: 70%;
+
+  }
+
 
 }
 
@@ -132,5 +155,36 @@ li {
         top: 1056px; 
         transition: transform 0.3s ease; 
     }
+
+    .logo{
+            display: table;
+    float: left;
+    overflow: hidden;
+    }
+
+.logo a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+      .lambdalogo {
+    width: 33%;
+flex: 0 0 auto;
+     /* padding: 5%; */
+  }
+        .desingellogo {
+    width: 33%;
+flex: 0 0 auto;
+    /* padding: 5%; */
+  }
+        .aplogo {
+    width: 33%;
+flex: 0 0 auto; 
+    /* padding: 2%; */
+  }
+
+
 
 }
